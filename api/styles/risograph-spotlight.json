@@ -17,5 +17,6 @@
     "spotlight",
     "textured"
   ],
+  "removeBackground": false,
   "createdAt": "2026-02-10T16:27:43.841Z"
 }

@@ -17,5 +17,6 @@
     "schematic",
     "minimalism"
   ],
+  "removeBackground": true,
   "createdAt": "2026-02-10T16:29:06.811Z"
 }

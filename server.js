@@ -41,8 +41,8 @@ function buildApi(styles) {
   if (!existsSync(API_DIR)) mkdirSync(API_DIR, { recursive: true });
   if (!existsSync(STYLES_DIR)) mkdirSync(STYLES_DIR, { recursive: true });
 
-  const index = styles.map(({ id, title, description, image, tags, createdAt }) => ({
-    id, title, description, image, tags, createdAt
+  const index = styles.map(({ id, title, description, image, tags, removeBackground, createdAt }) => ({
+    id, title, description, image, tags, removeBackground: !!removeBackground, createdAt
   }));
   writeFileSync(join(API_DIR, 'styles.json'), JSON.stringify(index, null, 2));
 
@@ -69,7 +69,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, prompt, image, tags, variables } = req.body;
+  const { title, description, prompt, image, tags, variables, removeBackground } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -87,6 +87,7 @@ app.post('/api/styles', (req, res) => {
     ...(variables && { variables }),
     image: image || '',
     tags: tags || [],
+    removeBackground: !!removeBackground,
     createdAt: new Date().toISOString()
   };
 
@@ -103,7 +104,7 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, prompt, image, tags, variables } = req.body;
+  const { title, description, prompt, image, tags, variables, removeBackground } = req.body;
   styles[index] = {
     ...styles[index],
     ...(title !== undefined && { title }),
@@ -112,6 +113,7 @@ app.put('/api/styles/:id', (req, res) => {
     ...(variables !== undefined && { variables }),
     ...(image !== undefined && { image }),
     ...(tags !== undefined && { tags }),
+    ...(removeBackground !== undefined && { removeBackground: !!removeBackground }),
   };
 
   writeStyles(styles);
@@ -282,7 +284,7 @@ app.post('/api/push', (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3003;
 app.listen(PORT, () => {
   console.log(`\n🎨 Style Manager — http://localhost:${PORT}`);
   console.log(`   API           — http://localhost:${PORT}/api/styles`);

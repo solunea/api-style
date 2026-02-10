@@ -17,5 +17,6 @@
     "matte",
     "soft"
   ],
+  "removeBackground": true,
   "createdAt": "2026-02-10T16:23:17.069Z"
 }

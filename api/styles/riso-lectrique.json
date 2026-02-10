@@ -17,5 +17,6 @@
     "halftone",
     "lo-fi"
   ],
+  "removeBackground": false,
   "createdAt": "2026-02-10T15:43:14.191Z"
 }

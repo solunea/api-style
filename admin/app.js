@@ -191,6 +191,7 @@ function openModal(editId) {
     document.getElementById('form-description').value = style.description || '';
     document.getElementById('form-prompt').value = style.prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
+    document.getElementById('form-remove-bg').checked = !!style.removeBackground;
     if (style.image) {
       switchImageTab('url');
       document.getElementById('form-image-url').value = style.image;
@@ -277,7 +278,8 @@ async function handleSubmit(e) {
     // Auto-detect variables from prompt
     const varMatches = [...prompt.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
     const variables = [...new Set(varMatches)];
-    const data = { title, description, prompt, image, tags, variables: variables.length > 0 ? variables : undefined };
+    const removeBackground = document.getElementById('form-remove-bg').checked;
+    const data = { title, description, prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground };
 
     if (editingId) {
       await updateStyle(editingId, data);

@@ -12,6 +12,7 @@
       "halftone",
       "lo-fi"
     ],
+    "removeBackground": false,
     "createdAt": "2026-02-10T15:43:14.191Z"
   },
   {
@@ -27,6 +28,7 @@
       "naive",
       "flat"
     ],
+    "removeBackground": false,
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
@@ -42,6 +44,7 @@
       "playful",
       "vector"
     ],
+    "removeBackground": true,
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
@@ -57,6 +60,7 @@
       "vibrant",
       "geometric"
     ],
+    "removeBackground": false,
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
   {
@@ -72,6 +76,7 @@
       "abstract",
       "elegant"
     ],
+    "removeBackground": true,
     "createdAt": "2026-02-10T15:54:45.706Z"
   },
   {
@@ -87,6 +92,7 @@
       "matte",
       "soft"
     ],
+    "removeBackground": true,
     "createdAt": "2026-02-10T16:23:17.069Z"
   },
   {
@@ -102,6 +108,7 @@
       "corporate",
       "illustration"
     ],
+    "removeBackground": true,
     "createdAt": "2026-02-10T16:24:16.950Z"
   },
   {
@@ -117,6 +124,7 @@
       "spotlight",
       "textured"
     ],
+    "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
@@ -132,6 +140,7 @@
       "illustration",
       "minimalist"
     ],
+    "removeBackground": false,
     "createdAt": "2026-02-10T16:28:35.685Z"
   },
   {
@@ -147,6 +156,7 @@
       "schematic",
       "minimalism"
     ],
+    "removeBackground": true,
     "createdAt": "2026-02-10T16:29:06.811Z"
   }
 ]
