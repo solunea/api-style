@@ -4,6 +4,7 @@ import multer from 'multer';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync, copyFileSync } from 'fs';
 import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = join(__dirname, 'data', 'styles.json');
@@ -161,6 +162,36 @@ app.post('/api/build', (req, res) => {
   const styles = readStyles();
   buildApi(styles);
   res.json({ message: `API regénérée (${styles.length} styles)` });
+});
+
+// POST push to Git (commit + push → CDN)
+app.post('/api/push', (req, res) => {
+  try {
+    const opts = { cwd: __dirname, encoding: 'utf-8' };
+
+    // Build API first
+    const styles = readStyles();
+    buildApi(styles);
+
+    // Git add, commit, push
+    execSync('git add -A', opts);
+
+    // Check if there are changes to commit
+    try {
+      execSync('git diff --cached --quiet', opts);
+      return res.json({ message: 'Rien à publier, tout est déjà à jour.' });
+    } catch {
+      // There are staged changes, continue
+    }
+
+    const msg = `Update styles - ${new Date().toLocaleString('fr-FR')}`;
+    execSync(`git commit -m "${msg}"`, opts);
+    execSync('git push', opts);
+
+    res.json({ message: `Publié sur le CDN (${styles.length} styles)` });
+  } catch (err) {
+    res.status(500).json({ error: `Erreur push : ${err.message}` });
+  }
 });
 
 const PORT = process.env.PORT || 3000;

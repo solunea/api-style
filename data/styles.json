@@ -12,7 +12,11 @@
       }
     },
     "image": "",
-    "tags": ["cyberpunk", "neon", "futuristic"],
+    "tags": [
+      "cyberpunk",
+      "neon",
+      "futuristic"
+    ],
     "createdAt": "2026-02-10T10:00:00Z"
   },
   {
@@ -28,7 +32,11 @@
       }
     },
     "image": "",
-    "tags": ["watercolor", "pastel", "dreamy"],
+    "tags": [
+      "watercolor",
+      "pastel",
+      "dreamy"
+    ],
     "createdAt": "2026-02-10T10:00:00Z"
   },
   {
@@ -68,8 +76,14 @@
         "placeholder": "coral red, mustard yellow, teal blue"
       }
     },
-    "image": "images/whimsical-illustrations.jpg",
-    "tags": ["whimsical", "illustration", "flat", "playful", "modern"],
+    "image": "/images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
+    "tags": [
+      "whimsical",
+      "illustration",
+      "flat",
+      "playful",
+      "modern"
+    ],
     "createdAt": "2026-02-10T12:22:00Z"
   }
 ]

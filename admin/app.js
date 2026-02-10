@@ -91,6 +91,24 @@ async function buildApi() {
   }
 }
 
+async function pushToCDN() {
+  const btn = document.getElementById('push-btn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Publication...';
+
+  try {
+    const res = await fetch(`${API}/api/push`, { method: 'POST' });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error);
+    showToast(data.message, 'success');
+  } catch (err) {
+    showToast(err.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🚀 Publier sur CDN';
+  }
+}
+
 // --- Rendering ---
 
 function renderStyles(styles) {
