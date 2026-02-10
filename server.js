@@ -1,17 +1,18 @@
 import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync, copyFileSync } from 'fs';
 import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
-import { uploadToArweave, loadWallet, checkBalance } from './scripts/upload-arweave.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = join(__dirname, 'data', 'styles.json');
 const API_DIR = join(__dirname, 'api');
 const STYLES_DIR = join(API_DIR, 'styles');
+const IMAGES_DIR = join(__dirname, 'images');
 const UPLOAD_DIR = join(__dirname, 'uploads');
 
+if (!existsSync(IMAGES_DIR)) mkdirSync(IMAGES_DIR, { recursive: true });
 if (!existsSync(UPLOAD_DIR)) mkdirSync(UPLOAD_DIR, { recursive: true });
 
 const upload = multer({ dest: UPLOAD_DIR });
@@ -20,6 +21,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.static(join(__dirname, 'admin')));
+app.use('/images', express.static(IMAGES_DIR));
 
 // --- Helpers ---
 
@@ -127,39 +129,30 @@ app.delete('/api/styles/:id', async (req, res) => {
   // Remove individual API file
   const apiFile = join(STYLES_DIR, `${deleted.id}.json`);
   if (existsSync(apiFile)) {
-    const { unlinkSync } = await import('fs');
     unlinkSync(apiFile);
   }
 
   res.json({ message: `Style "${deleted.title}" supprimé`, style: deleted });
 });
 
-// POST upload image to Arweave
-app.post('/api/upload', upload.single('image'), async (req, res) => {
+// POST upload image locally
+app.post('/api/upload', upload.single('image'), (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'Aucune image fournie' });
 
   try {
-    const wallet = loadWallet();
-    const result = await uploadToArweave(req.file.path, wallet);
+    const ext = extname(req.file.originalname).toLowerCase() || '.jpg';
+    const filename = req.file.originalname
+      .replace(/\s+/g, '-')
+      .replace(/[^a-zA-Z0-9._-]/g, '')
+      .toLowerCase() || `image-${Date.now()}${ext}`;
 
-    // Cleanup temp file
-    const { unlinkSync } = await import('fs');
+    const destPath = join(IMAGES_DIR, filename);
+    copyFileSync(req.file.path, destPath);
     unlinkSync(req.file.path);
 
-    res.json({ url: result.url, txId: result.id });
+    res.json({ url: `/images/${filename}`, filename });
   } catch (err) {
     res.status(500).json({ error: err.message });
-  }
-});
-
-// GET wallet info
-app.get('/api/wallet', async (req, res) => {
-  try {
-    const wallet = loadWallet();
-    const info = await checkBalance(wallet);
-    res.json(info);
-  } catch (err) {
-    res.json({ error: err.message, address: null, balanceAR: '0' });
   }
 });
 

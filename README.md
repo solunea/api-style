@@ -1,7 +1,7 @@
 # API Style
 
-API statique JSON pour gérer des styles (image Arweave, prompt, titre, description).  
-Hébergée sur Git, accessible depuis n'importe quelle application web JS.
+API statique JSON pour gérer des styles (image, prompt avec variables, titre, description).  
+Hébergée sur Git, accessible depuis n'importe quelle application web JS via jsDelivr CDN.
 
 ## Structure
 
@@ -13,12 +13,12 @@ api-style/
 │   ├── styles.json           # Liste de tous les styles (généré)
 │   └── styles/
 │       └── {id}.json         # Détail d'un style (généré)
+├── images/                   # Images des styles (stockées dans le repo)
+├── admin/                    # Interface web d'administration
 ├── scripts/
 │   ├── build.js              # Génère les fichiers API
-│   ├── add-style.js          # Assistant interactif (avec upload Arweave)
-│   ├── upload-arweave.js     # Upload d'image vers Arweave
-│   └── check-balance.js      # Vérifier le solde du wallet
-├── wallet.json               # ⚠️ Wallet Arweave JWK (gitignored)
+│   └── add-style.js          # Assistant interactif CLI
+├── server.js                 # Serveur admin local
 └── package.json
 ```
 
@@ -26,65 +26,49 @@ api-style/
 
 ```json
 {
-  "id": "cyberpunk-neon",
-  "title": "Cyberpunk Neon",
-  "description": "Style futuriste avec des néons vibrants.",
-  "prompt": "cyberpunk neon city, vibrant colors, dark atmosphere",
-  "image": "https://arweave.net/TX_ID",
-  "tags": ["cyberpunk", "neon"],
-  "createdAt": "2026-02-10T10:00:00Z"
+  "id": "whimsical-illustrations",
+  "title": "Whimsical Illustrations",
+  "description": "Illustrations fantaisistes et ludiques.",
+  "prompt": "Create a whimsical illustration featuring {{subject}} wearing {{clothing}}...",
+  "variables": {
+    "subject": {
+      "label": "Sujet",
+      "description": "Le personnage central",
+      "placeholder": "a young artist"
+    },
+    "clothing": {
+      "label": "Vêtements",
+      "description": "Vêtements du personnage",
+      "placeholder": "a beret and apron"
+    }
+  },
+  "image": "images/whimsical-illustrations.jpg",
+  "tags": ["whimsical", "illustration"],
+  "createdAt": "2026-02-10T12:22:00Z"
 }
 ```
 
-## Configuration Arweave
-
-### 1. Wallet
-
-Placez votre fichier wallet Arweave (JWK) à la racine du projet :
-
-```
-wallet.json   ← gitignored automatiquement
-```
-
-Vous pouvez obtenir un wallet sur :
-- [arweave.app](https://arweave.app)
-- [ArConnect](https://www.arconnect.io) (extension navigateur)
-
-### 2. Vérifier le solde
-
-```bash
-npm run balance
-```
-
-### 3. Upload une image seule
-
-```bash
-npm run upload -- images/mon-image.png
-```
-
-Retourne l'URL Arweave (`https://arweave.net/<TX_ID>`).
+Les prompts utilisent des `{{variables}}` remplaçables par l'application consommatrice.
 
 ## Utilisation
 
-### Ajouter un style (avec upload intégré)
+### Interface admin (recommandé)
+
+```bash
+npm run dev
+```
+
+Ouvre http://localhost:3000 — permet d'ajouter, modifier, supprimer des styles avec upload d'images et éditeur de variables.
+
+### CLI
 
 ```bash
 npm run add
 ```
 
-L'assistant interactif demande les infos du style. Pour l'image, vous pouvez fournir :
-- **Un chemin local** (`images/mon-image.png`) → upload automatique vers Arweave
-- **Une URL Arweave existante** (`https://arweave.net/...`) → utilisée directement
-
-Puis régénérez l'API :
-
-```bash
-npm run build
-```
-
 ### Ajouter manuellement
 
-Éditer `data/styles.json` puis lancer `npm run build`.
+Éditer `data/styles.json`, placer l'image dans `images/`, puis lancer `npm run build`.
 
 ### Endpoints (via jsDelivr CDN)
 

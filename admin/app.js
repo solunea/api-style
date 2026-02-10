@@ -6,7 +6,6 @@ let deleteTargetId = null;
 // --- Init ---
 document.addEventListener('DOMContentLoaded', () => {
   loadStyles();
-  loadWallet();
   document.getElementById('search-input').addEventListener('input', handleSearch);
 
   // Drag & drop on upload zone
@@ -33,29 +32,6 @@ async function loadStyles() {
     updateStats();
   } catch (err) {
     showToast('Erreur de chargement des styles', 'error');
-  }
-}
-
-async function loadWallet() {
-  try {
-    const res = await fetch(`${API}/api/wallet`);
-    const data = await res.json();
-    const addrEl = document.getElementById('wallet-address');
-    const balEl = document.getElementById('wallet-balance');
-    const dotEl = document.querySelector('.wallet-dot');
-
-    if (data.error) {
-      addrEl.textContent = 'Wallet non configuré';
-      dotEl.classList.add('offline');
-      balEl.textContent = '';
-    } else {
-      addrEl.textContent = data.address.slice(0, 6) + '...' + data.address.slice(-4);
-      balEl.textContent = parseFloat(data.balanceAR).toFixed(4) + ' AR';
-      dotEl.classList.remove('offline');
-    }
-  } catch {
-    document.getElementById('wallet-address').textContent = 'Hors ligne';
-    document.querySelector('.wallet-dot').classList.add('offline');
   }
 }
 
@@ -272,13 +248,13 @@ async function handleSubmit(e) {
       const statusEl = document.getElementById('upload-status');
       statusEl.style.display = 'block';
       statusEl.className = 'upload-status uploading';
-      statusEl.textContent = '⏳ Upload vers Arweave en cours...';
+      statusEl.textContent = '⏳ Upload en cours...';
 
       const result = await uploadImage(selectedFile);
       image = result.url;
 
       statusEl.className = 'upload-status success';
-      statusEl.textContent = `✔ ${result.url}`;
+      statusEl.textContent = `✔ ${result.filename}`;
     }
 
     const variables = collectVariables();

@@ -11,7 +11,7 @@
         "placeholder": "a samurai warrior"
       }
     },
-    "image": "https://arweave.net/EXAMPLE_TX_ID_1",
+    "image": "",
     "tags": ["cyberpunk", "neon", "futuristic"],
     "createdAt": "2026-02-10T10:00:00Z"
   },
@@ -27,7 +27,7 @@
         "placeholder": "a girl reading a book"
       }
     },
-    "image": "https://arweave.net/EXAMPLE_TX_ID_2",
+    "image": "",
     "tags": ["watercolor", "pastel", "dreamy"],
     "createdAt": "2026-02-10T10:00:00Z"
   },
@@ -68,7 +68,7 @@
         "placeholder": "coral red, mustard yellow, teal blue"
       }
     },
-    "image": "https://arweave.net/YBPJaJV2oUgU35ch25ql2oiaxFC6gigAI-pfO0gkTgI",
+    "image": "images/whimsical-illustrations.jpg",
     "tags": ["whimsical", "illustration", "flat", "playful", "modern"],
     "createdAt": "2026-02-10T12:22:00Z"
   }
