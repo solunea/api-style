@@ -1,0 +1,19 @@
+{
+  "id": "doodle-pop",
+  "title": "Doodle Pop",
+  "description": "Ce style unique mélange le dessin au trait noir spontané type \"doodle\" avec une palette de couleurs stricte composée de jaune moutarde, de blanc et de noir. L'ambiance est ludique et créative, intégrant des formes géométriques abstraites et des éléments graphiques manuscrits sur un fond beige doux.",
+  "prompt": "A highly stylized, hand-drawn doodle illustration of {{subject}}. The artwork features bold, uneven black ink outlines that mimic a thick marker pen on paper. The color palette is strictly limited to mustard yellow, crisp white, and deep black, set against a solid warm beige or cream background. Surrounding the main subject are energetic abstract elements: striped geometric shapes, stylized oversized flowers, floating squiggles, speech bubbles, and handwritten exclamations. The rendering is flat with no shading or gradients, emphasizing high contrast and a playful, creative brainstorming aesthetic. The overall look is modern, whimsical, and reminiscent of expressive sketchbook art or fun corporate graphics.",
+  "variables": [
+    "subject"
+  ],
+  "image": "images/hatijpwaeaa5f-g.jpg",
+  "tags": [
+    "doodle",
+    "illustration",
+    "hand-drawn",
+    "minimalist",
+    "sketch",
+    "playful"
+  ],
+  "createdAt": "2026-02-10T15:49:04.146Z"
+}

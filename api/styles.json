@@ -28,5 +28,20 @@
       "naive art"
     ],
     "createdAt": "2026-02-10T15:44:41.253Z"
+  },
+  {
+    "id": "doodle-pop",
+    "title": "Doodle Pop",
+    "description": "Ce style unique mélange le dessin au trait noir spontané type \"doodle\" avec une palette de couleurs stricte composée de jaune moutarde, de blanc et de noir. L'ambiance est ludique et créative, intégrant des formes géométriques abstraites et des éléments graphiques manuscrits sur un fond beige doux.",
+    "image": "images/hatijpwaeaa5f-g.jpg",
+    "tags": [
+      "doodle",
+      "illustration",
+      "hand-drawn",
+      "minimalist",
+      "sketch",
+      "playful"
+    ],
+    "createdAt": "2026-02-10T15:49:04.146Z"
   }
 ]
