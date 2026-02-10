@@ -1,6 +1,6 @@
 {
   "id": "riso-lectrique",
-  "title": "Riso Électrique",
+  "title": "Riso Electric",
   "description": "Ce style reproduit l'esthétique de l'impression Risograph avec une palette néon saturée et une texture de papier granuleuse marquée. Il combine des traits d'encre bruts et des effets de trame pour un rendu graphique urbain et vintage.",
   "prompt": "A bold, high-contrast Risograph art style illustration of {{subject}}. The visual aesthetic is defined by a limited, electric color palette dominated by deep cyan blue, hot magenta pink, and acid lime green. The rendering simulates vintage screen printing techniques featuring heavy film grain, noise, and a rough paper texture. Lines are scratchy, bold, and hand-drawn with simulated ink bleed effects, while shading utilizes stippling or coarse halftone dots. The composition is flat and graphic, reminiscent of underground zine art, retro street posters, or punk album covers. Imperfect color registration and distressed edges add to the raw, energetic, and urban grunge atmosphere.",
   "variables": [

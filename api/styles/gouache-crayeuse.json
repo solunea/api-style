@@ -1,0 +1,19 @@
+{
+  "id": "gouache-crayeuse",
+  "title": "Chalky Gouache",
+  "description": "Ce style évoque l'illustration de livre pour enfants avec un mélange charmant de gouache opaque et de traits de crayons texturés sur papier granuleux. Il se caractérise par des couleurs vives et saturées, une perspective aplatie et une esthétique naïve et artisanale pleine de chaleur.",
+  "prompt": "A charming, high-quality children's book illustration of {{subject}}, rendered in a textured mixed-media style. The artwork mimics the appearance of opaque gouache paint layered with scratchy colored pencils and wax crayons on heavy, rough-grain paper. The aesthetic is playful, naive, and whimsical, featuring flattened perspectives, exaggerated proportions, and simplified, stylized shapes. The color palette is warm, retro, and highly saturated, dominated by mustard yellows, earthy terracottas, teal blues, and deep greens. Visible texture is essential: include scuff marks, pencil hatching, crayon debris, and paper grain to create a tactile, handcrafted feel. The lighting is flat and illustrative, avoiding realistic shadows in favor of graphical clarity and cozy atmosphere. The composition is busy but balanced, reminiscent of indie editorial art or mid-century modern picture books.",
+  "variables": [
+    "subject"
+  ],
+  "image": "images/g__6vlgwoaamdym.jpg",
+  "tags": [
+    "children's book",
+    "mixed media",
+    "gouache",
+    "textured illustration",
+    "whimsical",
+    "naive art"
+  ],
+  "createdAt": "2026-02-10T15:44:41.253Z"
+}
