@@ -55,5 +55,24 @@
       "playful"
     ],
     "createdAt": "2026-02-10T15:49:04.146Z"
+  },
+  {
+    "id": "vibrant-vector",
+    "title": "Vibrant Vector",
+    "description": "Ce style se caractérise par une illustration vectorielle moderne de type 'flat design', utilisant des formes géométriques épurées et sans contours. Il privilégie des aplats de couleurs vives et saturées, accentués par des ombres nettes et minimalistes, rappelant l'esthétique joyeuse des illustrations éditoriales d'entreprise.",
+    "prompt": "A high-quality digital vector illustration of {{subject}} rendered in a modern, vibrant flat design style. The artwork relies on clean, crisp geometry with lineless edges and simplified, stylized proportions. Utilize a bold, high-contrast color palette featuring saturated primary tones like royal blue, sunny yellow, and crisp white, set against a solid, monochromatic background (such as deep pink or magenta). The shading technique is strictly hard-edged (cel-shaded) with solid blocks of darker tones to create depth, avoiding any gradients, noise, or soft blurring. The overall aesthetic should be polished, cheerful, and professional, reminiscent of high-end tech editorial illustrations or refined corporate Memphis art, focusing on sharp silhouettes and a clean, texture-free finish.",
+    "variables": [
+      "subject"
+    ],
+    "image": "images/g_shmfdxoaa8jyb.jpg",
+    "tags": [
+      "vector art",
+      "flat design",
+      "minimalist",
+      "colorful",
+      "geometric",
+      "editorial"
+    ],
+    "createdAt": "2026-02-10T15:52:37.052Z"
   }
 ]

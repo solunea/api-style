@@ -43,5 +43,20 @@
       "playful"
     ],
     "createdAt": "2026-02-10T15:49:04.146Z"
+  },
+  {
+    "id": "vibrant-vector",
+    "title": "Vibrant Vector",
+    "description": "Ce style se caractérise par une illustration vectorielle moderne de type 'flat design', utilisant des formes géométriques épurées et sans contours. Il privilégie des aplats de couleurs vives et saturées, accentués par des ombres nettes et minimalistes, rappelant l'esthétique joyeuse des illustrations éditoriales d'entreprise.",
+    "image": "images/g_shmfdxoaa8jyb.jpg",
+    "tags": [
+      "vector art",
+      "flat design",
+      "minimalist",
+      "colorful",
+      "geometric",
+      "editorial"
+    ],
+    "createdAt": "2026-02-10T15:52:37.052Z"
   }
 ]
