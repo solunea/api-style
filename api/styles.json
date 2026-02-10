@@ -1,17 +1,5 @@
 [
   {
-    "id": "cyberpunk-neon",
-    "title": "Cyberpunk Neon",
-    "description": "Style futuriste avec des néons vibrants et une atmosphère cyberpunk sombre.",
-    "image": "images/ce06e87f-da8b-48f2-b43b-0f729a3977f5.webp",
-    "tags": [
-      "cyberpunk",
-      "neon",
-      "futuristic"
-    ],
-    "createdAt": "2026-02-10T10:00:00Z"
-  },
-  {
     "id": "watercolor-dream",
     "title": "Watercolor Dream",
     "description": "Style aquarelle doux et onirique avec des couleurs pastel.",
@@ -36,13 +24,5 @@
       "modern"
     ],
     "createdAt": "2026-02-10T12:22:00Z"
-  },
-  {
-    "id": "test",
-    "title": "test",
-    "description": "",
-    "image": "",
-    "tags": [],
-    "createdAt": "2026-02-10T12:38:22.263Z"
   }
 ]
