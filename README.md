@@ -70,33 +70,34 @@ npm run add
 
 Éditer `data/styles.json`, placer l'image dans `images/`, puis lancer `npm run build`.
 
-### Endpoints (via jsDelivr CDN)
+### Endpoints
 
-Les fichiers JSON sont accessibles publiquement via [jsDelivr](https://www.jsdelivr.com/) (CDN gratuit avec CORS) :
+Les fichiers JSON sont accessibles publiquement via GitHub raw (CORS supporté, cache ~5 min) :
 
 | Endpoint | URL |
 |---|---|
-| Tous les styles | `https://cdn.jsdelivr.net/gh/solunea/api-style@main/api/styles.json` |
-| Un style | `https://cdn.jsdelivr.net/gh/solunea/api-style@main/api/styles/{id}.json` |
+| Tous les styles | `https://raw.githubusercontent.com/solunea/api-style/main/api/styles.json` |
+| Un style | `https://raw.githubusercontent.com/solunea/api-style/main/api/styles/{id}.json` |
+| Image | `https://raw.githubusercontent.com/solunea/api-style/main/images/{filename}` |
 
 ### Exemple depuis une app JS
 
 ```js
-const BASE = 'https://cdn.jsdelivr.net/gh/solunea/api-style@main/api';
+const BASE = 'https://raw.githubusercontent.com/solunea/api-style/main/api';
+const IMG_BASE = 'https://raw.githubusercontent.com/solunea/api-style/main';
 
 // Tous les styles
 const styles = await fetch(`${BASE}/styles.json`).then(r => r.json());
 
 // Un style spécifique
 const style = await fetch(`${BASE}/styles/${styles[0].id}.json`).then(r => r.json());
-console.log(style.prompt, style.image);
+
+// URL complète de l'image
+const imageUrl = `${IMG_BASE}/${style.image}`;
 ```
 
 ## Déploiement
 
-1. Modifier les styles (`npm run dev` pour l'interface admin, ou éditer `data/styles.json`)
-2. Regénérer l'API : `npm run build`
-3. Commit & push : les fichiers sont immédiatement accessibles via jsDelivr
-
-> **Note** : jsDelivr met en cache les fichiers. Pour forcer un rafraîchissement, purgez le cache :  
-> `https://purge.jsdelivr.net/gh/solunea/api-style@main/api/styles.json`
+1. Modifier les styles via l'interface admin (`npm run dev`)
+2. Cliquer **🚀 Publier sur CDN** — build + commit + push automatique
+3. Les fichiers sont disponibles en ~5 min sur GitHub raw
