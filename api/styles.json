@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cyberpunk-neon",
+    "title": "Cyberpunk Neon",
+    "description": "Style futuriste avec des néons vibrants et une atmosphère cyberpunk sombre.",
+    "image": "https://arweave.net/EXAMPLE_TX_ID_1",
+    "tags": [
+      "cyberpunk",
+      "neon",
+      "futuristic"
+    ],
+    "createdAt": "2026-02-10T10:00:00Z"
+  },
+  {
+    "id": "watercolor-dream",
+    "title": "Watercolor Dream",
+    "description": "Style aquarelle doux et onirique avec des couleurs pastel.",
+    "image": "https://arweave.net/EXAMPLE_TX_ID_2",
+    "tags": [
+      "watercolor",
+      "pastel",
+      "dreamy"
+    ],
+    "createdAt": "2026-02-10T10:00:00Z"
+  }
+]

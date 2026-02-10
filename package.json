@@ -1,0 +1,11 @@
+{
+  "name": "api-style",
+  "version": "1.0.0",
+  "description": "API statique pour gérer des styles (image Arweave, prompt, titre, description)",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "add": "node scripts/add-style.js"
+  },
+  "type": "module",
+  "license": "MIT"
+}

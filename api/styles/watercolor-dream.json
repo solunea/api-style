@@ -1,0 +1,13 @@
+{
+  "id": "watercolor-dream",
+  "title": "Watercolor Dream",
+  "description": "Style aquarelle doux et onirique avec des couleurs pastel.",
+  "prompt": "soft watercolor painting, dreamy atmosphere, pastel colors, gentle brush strokes, artistic",
+  "image": "https://arweave.net/EXAMPLE_TX_ID_2",
+  "tags": [
+    "watercolor",
+    "pastel",
+    "dreamy"
+  ],
+  "createdAt": "2026-02-10T10:00:00Z"
+}
