@@ -164,8 +164,8 @@ app.post('/api/build', (req, res) => {
   res.json({ message: `API regénérée (${styles.length} styles)` });
 });
 
-// POST push to Git (commit + push → CDN)
-app.post('/api/push', (req, res) => {
+// POST push to Git (commit + push → CDN + purge cache)
+app.post('/api/push', async (req, res) => {
   try {
     const opts = { cwd: __dirname, encoding: 'utf-8' };
 
@@ -187,6 +187,15 @@ app.post('/api/push', (req, res) => {
     const msg = `Update styles - ${new Date().toLocaleString('fr-FR')}`;
     execSync(`git commit -m "${msg}"`, opts);
     execSync('git push', opts);
+
+    // Purge jsDelivr cache
+    const CDN_BASE = 'https://purge.jsdelivr.net/gh/solunea/api-style@main';
+    const purgeUrls = [
+      `${CDN_BASE}/api/styles.json`,
+      ...styles.map((s) => `${CDN_BASE}/api/styles/${s.id}.json`),
+      ...styles.filter((s) => s.image).map((s) => `${CDN_BASE}/${s.image}`),
+    ];
+    await Promise.allSettled(purgeUrls.map((url) => fetch(url)));
 
     res.json({ message: `Publié sur le CDN (${styles.length} styles)` });
   } catch (err) {
