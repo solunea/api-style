@@ -151,7 +151,7 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
     copyFileSync(req.file.path, destPath);
     unlinkSync(req.file.path);
 
-    res.json({ url: `/images/${filename}`, filename });
+    res.json({ url: `images/${filename}`, filename });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
