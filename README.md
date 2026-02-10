@@ -86,41 +86,33 @@ npm run build
 
 Éditer `data/styles.json` puis lancer `npm run build`.
 
-### Endpoints
+### Endpoints (via jsDelivr CDN)
 
-Une fois sur GitHub, les fichiers sont accessibles via GitHub Pages ou raw :
+Les fichiers JSON sont accessibles publiquement via [jsDelivr](https://www.jsdelivr.com/) (CDN gratuit avec CORS) :
 
-| Endpoint | Description |
+| Endpoint | URL |
 |---|---|
-| `api/styles.json` | Liste de tous les styles (sans prompt) |
-| `api/styles/{id}.json` | Détail complet d'un style |
+| Tous les styles | `https://cdn.jsdelivr.net/gh/solunea/api-style@main/api/styles.json` |
+| Un style | `https://cdn.jsdelivr.net/gh/solunea/api-style@main/api/styles/{id}.json` |
 
 ### Exemple depuis une app JS
 
 ```js
+const BASE = 'https://cdn.jsdelivr.net/gh/solunea/api-style@main/api';
+
 // Tous les styles
-const res = await fetch('https://<user>.github.io/api-style/api/styles.json');
-const styles = await res.json();
+const styles = await fetch(`${BASE}/styles.json`).then(r => r.json());
 
 // Un style spécifique
-const detail = await fetch(`https://<user>.github.io/api-style/api/styles/${styles[0].id}.json`);
-const style = await detail.json();
+const style = await fetch(`${BASE}/styles/${styles[0].id}.json`).then(r => r.json());
 console.log(style.prompt, style.image);
 ```
 
 ## Déploiement
 
-1. Créer un repo GitHub
-2. Push le projet
-3. Activer **GitHub Pages** (branche `main`, dossier `/` ou `/api`)
-4. L'API est accessible publiquement
+1. Modifier les styles (`npm run dev` pour l'interface admin, ou éditer `data/styles.json`)
+2. Regénérer l'API : `npm run build`
+3. Commit & push : les fichiers sont immédiatement accessibles via jsDelivr
 
-Alternativement, utiliser les URLs raw de GitHub :
-```
-https://raw.githubusercontent.com/<user>/api-style/main/api/styles.json
-```
-
-## CORS
-
-Les fichiers statiques sur GitHub Pages sont servis avec les bons headers CORS.  
-Pour les URLs `raw.githubusercontent.com`, utiliser un proxy CORS si nécessaire, ou préférer GitHub Pages.
+> **Note** : jsDelivr met en cache les fichiers. Pour forcer un rafraîchissement, purgez le cache :  
+> `https://purge.jsdelivr.net/gh/solunea/api-style@main/api/styles.json`
