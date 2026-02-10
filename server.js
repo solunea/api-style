@@ -181,18 +181,25 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
     // Clean up temp file
     unlinkSync(req.file.path);
 
-    const prompt = `Analyze this image and return ONLY a valid JSON object with these fields:
-- "title": a short catchy title for this visual style (in French)
-- "description": a detailed description of the visual style (2-3 sentences, in French)
-- "prompt": an English prompt to reproduce this style in an AI image generator. Use variables in double curly braces for customizable elements (e.g. {{subject}}, {{color}}, {{mood}})
-- "tags": an array of 3 to 6 relevant tags (English, lowercase)
+    const prompt = `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
 
-Return ONLY the raw JSON object. No markdown, no code fences, no explanation.`;
+Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
+
+Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject so the style can be applied universally.
+
+Return ONLY a valid JSON object with these fields:
+- "title": an original creative name for this style in exactly 2 words (in French, like "Néon Urbain", "Brume Dorée", "Éclat Céleste")
+- "description": describe what makes this style unique and recognizable (2-3 sentences, in French)
+- "prompt": a long, highly detailed English prompt (at least 80 words) that reproduces this exact visual style. Describe precisely: the lighting setup, color grading, texture quality, contrast levels, saturation, depth of field, lens effects, artistic rendering technique, atmosphere, mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable. You may also use {{background}}, {{mood}}, {{lighting}} if relevant. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
+- "tags": an array of 3 to 6 relevant style tags (English, lowercase)
+
+Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
 
     const output = await replicate.run('google/gemini-3-pro', {
       input: {
         prompt: prompt,
-        image: dataUri,
+        images: [dataUri],
+        temperature: 0.7,
       }
     });
 
@@ -203,8 +210,8 @@ Return ONLY the raw JSON object. No markdown, no code fences, no explanation.`;
     console.log(raw);
     console.log('--- END RAW OUTPUT ---');
 
-    // Remove markdown code fences if present
-    raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '');
+    // Remove markdown code fences if present (handles ```json\n...\n```)
+    raw = raw.replace(/^```(?:json)?\s*\n?/i, '').replace(/\n?\s*```\s*$/i, '');
 
     // Extract the first balanced JSON object using brace depth tracking
     let jsonStr = null;

@@ -1,12 +1,17 @@
 [
   {
-    "id": "playful-crayon",
-    "title": "Playful Crayon",
-    "description": "",
-    "image": "images/g__6vlgwoaamdym.jpg",
+    "id": "riso-lectrique",
+    "title": "Riso Électrique",
+    "description": "Ce style reproduit l'esthétique de l'impression Risograph avec une palette néon saturée et une texture de papier granuleuse marquée. Il combine des traits d'encre bruts et des effets de trame pour un rendu graphique urbain et vintage.",
+    "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
     "tags": [
-      "playful"
+      "risograph",
+      "screen print",
+      "neon",
+      "grunge",
+      "pop art",
+      "illustration"
     ],
-    "createdAt": "2026-02-10T15:20:07.472Z"
+    "createdAt": "2026-02-10T15:43:14.191Z"
   }
 ]
