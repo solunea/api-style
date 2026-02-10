@@ -15,7 +15,10 @@ api-style/
 │       └── {id}.json         # Détail d'un style (généré)
 ├── scripts/
 │   ├── build.js              # Génère les fichiers API
-│   └── add-style.js          # Assistant interactif pour ajouter un style
+│   ├── add-style.js          # Assistant interactif (avec upload Arweave)
+│   ├── upload-arweave.js     # Upload d'image vers Arweave
+│   └── check-balance.js      # Vérifier le solde du wallet
+├── wallet.json               # ⚠️ Wallet Arweave JWK (gitignored)
 └── package.json
 ```
 
@@ -33,15 +36,47 @@ api-style/
 }
 ```
 
+## Configuration Arweave
+
+### 1. Wallet
+
+Placez votre fichier wallet Arweave (JWK) à la racine du projet :
+
+```
+wallet.json   ← gitignored automatiquement
+```
+
+Vous pouvez obtenir un wallet sur :
+- [arweave.app](https://arweave.app)
+- [ArConnect](https://www.arconnect.io) (extension navigateur)
+
+### 2. Vérifier le solde
+
+```bash
+npm run balance
+```
+
+### 3. Upload une image seule
+
+```bash
+npm run upload -- images/mon-image.png
+```
+
+Retourne l'URL Arweave (`https://arweave.net/<TX_ID>`).
+
 ## Utilisation
 
-### Ajouter un style
+### Ajouter un style (avec upload intégré)
 
 ```bash
 npm run add
 ```
 
-Répond aux questions interactives, puis régénère l'API :
+L'assistant interactif demande les infos du style. Pour l'image, vous pouvez fournir :
+- **Un chemin local** (`images/mon-image.png`) → upload automatique vers Arweave
+- **Une URL Arweave existante** (`https://arweave.net/...`) → utilisée directement
+
+Puis régénérez l'API :
 
 ```bash
 npm run build

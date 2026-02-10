@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Header -->
+    <header>
+      <div class="header-left">
+        <h1>🎨 Style Manager</h1>
+      </div>
+      <div class="header-right">
+        <div id="wallet-info" class="wallet-badge">
+          <span class="wallet-dot"></span>
+          <span id="wallet-address">Chargement...</span>
+          <span id="wallet-balance" class="wallet-balance"></span>
+        </div>
+        <button class="btn btn-primary" onclick="openModal()">+ Nouveau style</button>
+      </div>
+    </header>
+
+    <!-- Stats bar -->
+    <div class="stats-bar">
+      <div class="stat">
+        <span class="stat-value" id="stat-total">0</span>
+        <span class="stat-label">Styles</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value" id="stat-tags">0</span>
+        <span class="stat-label">Tags</span>
+      </div>
+      <div class="actions-bar">
+        <input type="text" id="search-input" placeholder="Rechercher..." class="search-input">
+        <button class="btn btn-ghost" onclick="buildApi()">🔄 Rebuild API</button>
+      </div>
+    </div>
+
+    <!-- Styles Grid -->
+    <main>
+      <div id="styles-grid" class="styles-grid">
+        <!-- Dynamic content -->
+      </div>
+      <div id="empty-state" class="empty-state" style="display:none">
+        <p>Aucun style trouvé</p>
+        <button class="btn btn-primary" onclick="openModal()">Créer votre premier style</button>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal-overlay" class="modal-overlay" onclick="closeModal(event)">
+      <div class="modal" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <h2 id="modal-title">Nouveau style</h2>
+          <button class="btn-close" onclick="closeModal()">&times;</button>
+        </div>
+        <form id="style-form" onsubmit="handleSubmit(event)">
+          <input type="hidden" id="form-editing-id">
+
+          <div class="form-group">
+            <label for="form-title">Titre *</label>
+            <input type="text" id="form-title" required placeholder="Ex: Cyberpunk Neon">
+          </div>
+
+          <div class="form-group">
+            <label for="form-description">Description</label>
+            <textarea id="form-description" rows="2" placeholder="Description du style..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="form-prompt">Prompt</label>
+            <textarea id="form-prompt" rows="3" placeholder="Le prompt utilisé pour générer ce style..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Image</label>
+            <div class="image-input-group">
+              <div class="tab-switch">
+                <button type="button" class="tab active" onclick="switchImageTab('upload')">Upload</button>
+                <button type="button" class="tab" onclick="switchImageTab('url')">URL existante</button>
+              </div>
+              <div id="tab-upload" class="tab-content">
+                <div class="upload-zone" id="upload-zone" onclick="document.getElementById('form-image-file').click()">
+                  <input type="file" id="form-image-file" accept="image/*" onchange="handleFileSelect(event)" hidden>
+                  <div id="upload-preview" class="upload-preview">
+                    <span class="upload-icon">📁</span>
+                    <span>Cliquer ou glisser une image</span>
+                  </div>
+                </div>
+                <div id="upload-status" class="upload-status" style="display:none"></div>
+              </div>
+              <div id="tab-url" class="tab-content" style="display:none">
+                <input type="text" id="form-image-url" placeholder="https://arweave.net/...">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="form-tags">Tags</label>
+            <input type="text" id="form-tags" placeholder="cyberpunk, neon, futuristic">
+            <small>Séparés par des virgules</small>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" class="btn btn-ghost" onclick="closeModal()">Annuler</button>
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">Créer le style</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Delete Confirm Modal -->
+    <div id="delete-overlay" class="modal-overlay" onclick="closeDeleteModal(event)" style="display:none">
+      <div class="modal modal-sm" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <h2>Confirmer la suppression</h2>
+          <button class="btn-close" onclick="closeDeleteModal()">&times;</button>
+        </div>
+        <p id="delete-message" style="padding:0 1.5rem">Êtes-vous sûr de vouloir supprimer ce style ?</p>
+        <div class="form-actions" style="padding:1rem 1.5rem">
+          <button class="btn btn-ghost" onclick="closeDeleteModal()">Annuler</button>
+          <button class="btn btn-danger" id="delete-confirm-btn" onclick="confirmDelete()">Supprimer</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -3,9 +3,19 @@
   "version": "1.0.0",
   "description": "API statique pour gérer des styles (image Arweave, prompt, titre, description)",
   "scripts": {
+    "dev": "node server.js",
     "build": "node scripts/build.js",
-    "add": "node scripts/add-style.js"
+    "add": "node scripts/add-style.js",
+    "upload": "node scripts/upload-arweave.js",
+    "balance": "node scripts/check-balance.js",
+    "wallet:generate": "node scripts/generate-wallet.js"
   },
   "type": "module",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "arweave": "^1.15.7",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "multer": "^2.0.2"
+  }
 }

@@ -1,3 +1,10 @@
 node_modules/
 .DS_Store
 Thumbs.db
+
+# Wallet Arweave — NE JAMAIS COMMIT
+wallet.json
+
+# Images locales (temporaires avant upload)
+images/
+uploads/
