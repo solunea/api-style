@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Style — Solunea</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, 'Inter', sans-serif;
+      background: #0a0a0b;
+      color: #fafafa;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      text-align: center;
+      max-width: 480px;
+      padding: 2rem;
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    p { color: #a1a1aa; margin-bottom: 2rem; line-height: 1.6; }
+    .endpoints { text-align: left; background: #141416; border: 1px solid #27272a; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
+    .endpoints h3 { font-size: 0.85rem; color: #71717a; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+    .endpoint { margin-bottom: 0.75rem; }
+    .endpoint a { color: #8b5cf6; text-decoration: none; font-family: 'SF Mono', monospace; font-size: 0.9rem; }
+    .endpoint a:hover { text-decoration: underline; }
+    .endpoint span { display: block; font-size: 0.8rem; color: #71717a; margin-top: 0.15rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 API Style</h1>
+    <p>API statique JSON pour les styles Solunea.<br>Images hébergées sur Arweave.</p>
+    <div class="endpoints">
+      <h3>Endpoints</h3>
+      <div class="endpoint">
+        <a href="./api/styles.json">GET /api/styles.json</a>
+        <span>Liste de tous les styles</span>
+      </div>
+      <div class="endpoint">
+        <a href="./api/styles/">GET /api/styles/{id}.json</a>
+        <span>Détail d'un style</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
