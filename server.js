@@ -185,12 +185,12 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
 
 Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
 
-Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject so the style can be applied universally.
+Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject, {{primary_color}} for the dominant color, and {{accent_color}} for the accent color, so the style can be applied universally with any color theme.
 
 Return ONLY a valid JSON object with these fields:
 - "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
 - "description": describe what makes this style unique and recognizable (2-3 sentences, in French)
-- "prompt": a long, highly detailed English prompt (at least 80 words) that reproduces this exact visual style. Describe precisely: the lighting setup, color grading, texture quality, contrast levels, saturation, depth of field, lens effects, artistic rendering technique, atmosphere, mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable. You may also use {{background}}, {{mood}}, {{lighting}} if relevant. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
+- "prompt": a long, highly detailed English prompt (at least 80 words) that reproduces this exact visual style. Describe precisely: the lighting setup, color grading, texture quality, contrast levels, saturation, depth of field, lens effects, artistic rendering technique, atmosphere, mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color and {{accent_color}} for the accent color. You may also use {{background}}, {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a comma-separated list of reinforcement tags (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows") to strengthen the style interpretation. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
 - "tags": an array of 3 to 6 relevant style tags (English, lowercase)
 
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;

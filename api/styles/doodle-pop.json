@@ -1,19 +1,21 @@
 {
   "id": "doodle-pop",
   "title": "Doodle Pop",
-  "description": "Ce style unique mélange le dessin au trait noir spontané type \"doodle\" avec une palette de couleurs stricte composée de jaune moutarde, de blanc et de noir. L'ambiance est ludique et créative, intégrant des formes géométriques abstraites et des éléments graphiques manuscrits sur un fond beige doux.",
-  "prompt": "A highly stylized, hand-drawn doodle illustration of {{subject}}. The artwork features bold, uneven black ink outlines that mimic a thick marker pen on paper. The color palette is strictly limited to mustard yellow, crisp white, and deep black, set against a solid warm beige or cream background. Surrounding the main subject are energetic abstract elements: striped geometric shapes, stylized oversized flowers, floating squiggles, speech bubbles, and handwritten exclamations. The rendering is flat with no shading or gradients, emphasizing high contrast and a playful, creative brainstorming aesthetic. The overall look is modern, whimsical, and reminiscent of expressive sketchbook art or fun corporate graphics.",
+  "description": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
+  "prompt": "A playful, hand-drawn doodle illustration of {{subject}} rendered in a bold ink sketch style with thick, expressive black outlines. The composition uses a strict, limited color palette featuring broad flat fills of {{primary_color}} and small pops of {{accent_color}}, set against a clean, soft cream or off-white background. The aesthetic is characterized by high-contrast graphic elements, including heavy diagonal stripe patterns, geometric shapes, and whimsical floating details like squiggles, dots, and comic-style action lines surrounding the subject. The rendering is flat and vector-like, mimicking a modern corporate creative sketch with a spontaneous, energetic vibe. No shading, high contrast, clean linework, minimalist composition, 2D vector art, ink illustration, creative motif.",
   "variables": [
-    "subject"
+    "subject",
+    "primary_color",
+    "accent_color"
   ],
   "image": "images/hatijpwaeaa5f-g.jpg",
   "tags": [
     "doodle",
     "illustration",
-    "hand-drawn",
-    "minimalist",
     "sketch",
-    "playful"
+    "minimalist",
+    "playful",
+    "vector"
   ],
   "createdAt": "2026-02-10T15:49:04.146Z"
 }

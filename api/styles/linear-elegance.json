@@ -1,0 +1,21 @@
+{
+  "id": "linear-elegance",
+  "title": "Linear Elegance",
+  "description": "Ce style minimaliste se distingue par un dessin au trait continu fluide sur un fond de papier texturé blanc cassé. L'œuvre capture l'essence du sujet avec une simplicité sophistiquée, rehaussée par de subtiles touches d'aquarelle pastel.",
+  "prompt": "A sophisticated continuous line drawing depicting {{subject}}, created with a single, fluid black ink stroke that defines the form without lifting the pen. The style emphasizes negative space, organic curves, and elegant simplicity. The background is a high-quality, textured off-white paper with visible grain. Incorporate a soft, artistic splash of {{primary_color}} watercolor wash to suggest volume, paired with a faint hint of {{accent_color}} for delicate emphasis. The rendering is ultra-minimalist, flat, and clean, combining vector precision with analog warmth. Lighting is even and flat to highlight the line work, minimal, vector style, clean lines, high contrast, fine art, ink illustration, 2d, simple, abstract.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/g_blh8hbyaajtnp.jpg",
+  "tags": [
+    "continuous line",
+    "minimalist",
+    "ink drawing",
+    "sketch",
+    "abstract",
+    "elegant"
+  ],
+  "createdAt": "2026-02-10T15:54:45.706Z"
+}

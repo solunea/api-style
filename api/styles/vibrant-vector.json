@@ -1,19 +1,21 @@
 {
   "id": "vibrant-vector",
-  "title": "Vibrant Vector",
-  "description": "Ce style se caractérise par une illustration vectorielle moderne de type 'flat design', utilisant des formes géométriques épurées et sans contours. Il privilégie des aplats de couleurs vives et saturées, accentués par des ombres nettes et minimalistes, rappelant l'esthétique joyeuse des illustrations éditoriales d'entreprise.",
-  "prompt": "A high-quality digital vector illustration of {{subject}} rendered in a modern, vibrant flat design style. The artwork relies on clean, crisp geometry with lineless edges and simplified, stylized proportions. Utilize a bold, high-contrast color palette featuring saturated primary tones like royal blue, sunny yellow, and crisp white, set against a solid, monochromatic background (such as deep pink or magenta). The shading technique is strictly hard-edged (cel-shaded) with solid blocks of darker tones to create depth, avoiding any gradients, noise, or soft blurring. The overall aesthetic should be polished, cheerful, and professional, reminiscent of high-end tech editorial illustrations or refined corporate Memphis art, focusing on sharp silhouettes and a clean, texture-free finish.",
+  "title": "Modern Vector",
+  "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
+  "prompt": "A high-quality flat vector illustration of {{subject}}, designed in a trendy modern corporate art style reminiscent of tech startup branding. The visual aesthetic is defined by bold geometric shapes, exaggerated yet pleasing proportions, and razor-sharp edges with absolutely no outlines. The lighting is uniform and flat, utilizing only hard-edged, solid-colored shadows to create depth without gradients or texture noise. The color palette is vivid and highly saturated, featuring a dominant {{primary_color}} tone that contrasts cleanly with the subject, while distinct {{accent_color}} elements provide visual pop and energy. The composition is clean and centered, conveying a mood of approachability and professionalism. The rendering is perfectly smooth, digital, and crisp.",
   "variables": [
-    "subject"
+    "subject",
+    "primary_color",
+    "accent_color"
   ],
   "image": "images/g_shmfdxoaa8jyb.jpg",
   "tags": [
-    "vector art",
     "flat design",
+    "vector art",
+    "corporate memphis",
     "minimalist",
-    "colorful",
-    "geometric",
-    "editorial"
+    "vibrant",
+    "geometric"
   ],
   "createdAt": "2026-02-10T15:52:37.052Z"
 }

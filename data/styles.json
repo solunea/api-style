@@ -1,78 +1,107 @@
 [
   {
     "id": "riso-lectrique",
-    "title": "Riso Electric",
-    "description": "Ce style reproduit l'esthétique de l'impression Risograph avec une palette néon saturée et une texture de papier granuleuse marquée. Il combine des traits d'encre bruts et des effets de trame pour un rendu graphique urbain et vintage.",
-    "prompt": "A bold, high-contrast Risograph art style illustration of {{subject}}. The visual aesthetic is defined by a limited, electric color palette dominated by deep cyan blue, hot magenta pink, and acid lime green. The rendering simulates vintage screen printing techniques featuring heavy film grain, noise, and a rough paper texture. Lines are scratchy, bold, and hand-drawn with simulated ink bleed effects, while shading utilizes stippling or coarse halftone dots. The composition is flat and graphic, reminiscent of underground zine art, retro street posters, or punk album covers. Imperfect color registration and distressed edges add to the raw, energetic, and urban grunge atmosphere.",
+    "title": "Toxic Riso",
+    "description": "Ce style évoque une impression risograph granuleuse aux couleurs néon explosives et aux textures de papier vieilli. Il combine l'énergie du manga rétro avec des défauts d'impression lo-fi pour un rendu urbain et chaotique.",
+    "prompt": "A high-energy vintage risograph print illustration of {{subject}}. The aesthetic is defined by a gritty, lo-fi screen printing technique featuring heavy grain, noise, and visible paper texture. The color palette is restricted yet vibrant, dominated by {{primary_color}} with electric flashes of {{accent_color}} and hot magenta to create a toxic, high-contrast look. The rendering mimics retro manga covers or underground comic art, with rough ink bleeds, misaligned registration, and bold halftone patterns. The composition feels raw and chaotic, utilizing flat shading and jagged outlines to emphasize a rebellious, urban mood.",
     "variables": [
-      "subject"
+      "subject",
+      "primary_color",
+      "accent_color"
     ],
     "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
     "tags": [
       "risograph",
-      "screen print",
-      "neon",
+      "retro manga",
       "grunge",
-      "pop art",
-      "illustration"
+      "screen print",
+      "halftone",
+      "lo-fi"
     ],
     "createdAt": "2026-02-10T15:43:14.191Z"
   },
   {
     "id": "gouache-crayeuse",
-    "title": "Chalky Gouache",
-    "description": "Ce style évoque l'illustration de livre pour enfants avec un mélange charmant de gouache opaque et de traits de crayons texturés sur papier granuleux. Il se caractérise par des couleurs vives et saturées, une perspective aplatie et une esthétique naïve et artisanale pleine de chaleur.",
-    "prompt": "A charming, high-quality children's book illustration of {{subject}}, rendered in a textured mixed-media style. The artwork mimics the appearance of opaque gouache paint layered with scratchy colored pencils and wax crayons on heavy, rough-grain paper. The aesthetic is playful, naive, and whimsical, featuring flattened perspectives, exaggerated proportions, and simplified, stylized shapes. The color palette is warm, retro, and highly saturated, dominated by mustard yellows, earthy terracottas, teal blues, and deep greens. Visible texture is essential: include scuff marks, pencil hatching, crayon debris, and paper grain to create a tactile, handcrafted feel. The lighting is flat and illustrative, avoiding realistic shadows in favor of graphical clarity and cozy atmosphere. The composition is busy but balanced, reminiscent of indie editorial art or mid-century modern picture books.",
+    "title": "Textured Whimsy",
+    "description": "Ce style imite les techniques traditionnelles comme le crayon de couleur et la gouache sèche avec une texture granuleuse marquée. L'esthétique est plate, naïve et chaleureuse, rappelant les illustrations modernes et ludiques des livres pour enfants.",
+    "prompt": "A charming, hand-drawn illustration of {{subject}} rendered in a mixed-media style imitating colored pencils, wax crayons, and dry gouache. The image features a heavy, grainy texture with visible paper tooth and rough, dry brush strokes. The composition is flat with a naive, 2D perspective and simplified geometric shapes. The color palette is warm and earthy, dominated by {{primary_color}} hues with vibrant {{accent_color}} details. The atmosphere is cozy, creative, and playful, evocative of indie children's picture books, textured illustration, naive art, flat design, dry brush, grainy, whimsical, hand-drawn style, matte finish.",
     "variables": [
-      "subject"
+      "subject",
+      "primary_color",
+      "accent_color"
     ],
     "image": "images/g__6vlgwoaamdym.jpg",
     "tags": [
-      "children's book",
-      "mixed media",
-      "gouache",
-      "textured illustration",
-      "whimsical",
-      "naive art"
+      "textured",
+      "whimsy",
+      "illustration",
+      "crayon",
+      "naive",
+      "flat"
     ],
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
     "id": "doodle-pop",
     "title": "Doodle Pop",
-    "description": "Ce style unique mélange le dessin au trait noir spontané type \"doodle\" avec une palette de couleurs stricte composée de jaune moutarde, de blanc et de noir. L'ambiance est ludique et créative, intégrant des formes géométriques abstraites et des éléments graphiques manuscrits sur un fond beige doux.",
-    "prompt": "A highly stylized, hand-drawn doodle illustration of {{subject}}. The artwork features bold, uneven black ink outlines that mimic a thick marker pen on paper. The color palette is strictly limited to mustard yellow, crisp white, and deep black, set against a solid warm beige or cream background. Surrounding the main subject are energetic abstract elements: striped geometric shapes, stylized oversized flowers, floating squiggles, speech bubbles, and handwritten exclamations. The rendering is flat with no shading or gradients, emphasizing high contrast and a playful, creative brainstorming aesthetic. The overall look is modern, whimsical, and reminiscent of expressive sketchbook art or fun corporate graphics.",
+    "description": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
+    "prompt": "A playful, hand-drawn doodle illustration of {{subject}} rendered in a bold ink sketch style with thick, expressive black outlines. The composition uses a strict, limited color palette featuring broad flat fills of {{primary_color}} and small pops of {{accent_color}}, set against a clean, soft cream or off-white background. The aesthetic is characterized by high-contrast graphic elements, including heavy diagonal stripe patterns, geometric shapes, and whimsical floating details like squiggles, dots, and comic-style action lines surrounding the subject. The rendering is flat and vector-like, mimicking a modern corporate creative sketch with a spontaneous, energetic vibe. No shading, high contrast, clean linework, minimalist composition, 2D vector art, ink illustration, creative motif.",
     "variables": [
-      "subject"
+      "subject",
+      "primary_color",
+      "accent_color"
     ],
     "image": "images/hatijpwaeaa5f-g.jpg",
     "tags": [
       "doodle",
       "illustration",
-      "hand-drawn",
-      "minimalist",
       "sketch",
-      "playful"
+      "minimalist",
+      "playful",
+      "vector"
     ],
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
     "id": "vibrant-vector",
-    "title": "Vibrant Vector",
-    "description": "Ce style se caractérise par une illustration vectorielle moderne de type 'flat design', utilisant des formes géométriques épurées et sans contours. Il privilégie des aplats de couleurs vives et saturées, accentués par des ombres nettes et minimalistes, rappelant l'esthétique joyeuse des illustrations éditoriales d'entreprise.",
-    "prompt": "A high-quality digital vector illustration of {{subject}} rendered in a modern, vibrant flat design style. The artwork relies on clean, crisp geometry with lineless edges and simplified, stylized proportions. Utilize a bold, high-contrast color palette featuring saturated primary tones like royal blue, sunny yellow, and crisp white, set against a solid, monochromatic background (such as deep pink or magenta). The shading technique is strictly hard-edged (cel-shaded) with solid blocks of darker tones to create depth, avoiding any gradients, noise, or soft blurring. The overall aesthetic should be polished, cheerful, and professional, reminiscent of high-end tech editorial illustrations or refined corporate Memphis art, focusing on sharp silhouettes and a clean, texture-free finish.",
+    "title": "Modern Vector",
+    "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
+    "prompt": "A high-quality flat vector illustration of {{subject}}, designed in a trendy modern corporate art style reminiscent of tech startup branding. The visual aesthetic is defined by bold geometric shapes, exaggerated yet pleasing proportions, and razor-sharp edges with absolutely no outlines. The lighting is uniform and flat, utilizing only hard-edged, solid-colored shadows to create depth without gradients or texture noise. The color palette is vivid and highly saturated, featuring a dominant {{primary_color}} tone that contrasts cleanly with the subject, while distinct {{accent_color}} elements provide visual pop and energy. The composition is clean and centered, conveying a mood of approachability and professionalism. The rendering is perfectly smooth, digital, and crisp.",
     "variables": [
-      "subject"
+      "subject",
+      "primary_color",
+      "accent_color"
     ],
     "image": "images/g_shmfdxoaa8jyb.jpg",
     "tags": [
-      "vector art",
       "flat design",
+      "vector art",
+      "corporate memphis",
       "minimalist",
-      "colorful",
-      "geometric",
-      "editorial"
+      "vibrant",
+      "geometric"
     ],
     "createdAt": "2026-02-10T15:52:37.052Z"
+  },
+  {
+    "id": "linear-elegance",
+    "title": "Linear Elegance",
+    "description": "Ce style minimaliste se distingue par un dessin au trait continu fluide sur un fond de papier texturé blanc cassé. L'œuvre capture l'essence du sujet avec une simplicité sophistiquée, rehaussée par de subtiles touches d'aquarelle pastel.",
+    "prompt": "A sophisticated continuous line drawing depicting {{subject}}, created with a single, fluid black ink stroke that defines the form without lifting the pen. The style emphasizes negative space, organic curves, and elegant simplicity. The background is a high-quality, textured off-white paper with visible grain. Incorporate a soft, artistic splash of {{primary_color}} watercolor wash to suggest volume, paired with a faint hint of {{accent_color}} for delicate emphasis. The rendering is ultra-minimalist, flat, and clean, combining vector precision with analog warmth. Lighting is even and flat to highlight the line work, minimal, vector style, clean lines, high contrast, fine art, ink illustration, 2d, simple, abstract.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color"
+    ],
+    "image": "images/g_blh8hbyaajtnp.jpg",
+    "tags": [
+      "continuous line",
+      "minimalist",
+      "ink drawing",
+      "sketch",
+      "abstract",
+      "elegant"
+    ],
+    "createdAt": "2026-02-10T15:54:45.706Z"
   }
 ]

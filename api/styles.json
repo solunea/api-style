@@ -1,62 +1,77 @@
 [
   {
     "id": "riso-lectrique",
-    "title": "Riso Electric",
-    "description": "Ce style reproduit l'esthétique de l'impression Risograph avec une palette néon saturée et une texture de papier granuleuse marquée. Il combine des traits d'encre bruts et des effets de trame pour un rendu graphique urbain et vintage.",
+    "title": "Toxic Riso",
+    "description": "Ce style évoque une impression risograph granuleuse aux couleurs néon explosives et aux textures de papier vieilli. Il combine l'énergie du manga rétro avec des défauts d'impression lo-fi pour un rendu urbain et chaotique.",
     "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
     "tags": [
       "risograph",
-      "screen print",
-      "neon",
+      "retro manga",
       "grunge",
-      "pop art",
-      "illustration"
+      "screen print",
+      "halftone",
+      "lo-fi"
     ],
     "createdAt": "2026-02-10T15:43:14.191Z"
   },
   {
     "id": "gouache-crayeuse",
-    "title": "Chalky Gouache",
-    "description": "Ce style évoque l'illustration de livre pour enfants avec un mélange charmant de gouache opaque et de traits de crayons texturés sur papier granuleux. Il se caractérise par des couleurs vives et saturées, une perspective aplatie et une esthétique naïve et artisanale pleine de chaleur.",
+    "title": "Textured Whimsy",
+    "description": "Ce style imite les techniques traditionnelles comme le crayon de couleur et la gouache sèche avec une texture granuleuse marquée. L'esthétique est plate, naïve et chaleureuse, rappelant les illustrations modernes et ludiques des livres pour enfants.",
     "image": "images/g__6vlgwoaamdym.jpg",
     "tags": [
-      "children's book",
-      "mixed media",
-      "gouache",
-      "textured illustration",
-      "whimsical",
-      "naive art"
+      "textured",
+      "whimsy",
+      "illustration",
+      "crayon",
+      "naive",
+      "flat"
     ],
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
     "id": "doodle-pop",
     "title": "Doodle Pop",
-    "description": "Ce style unique mélange le dessin au trait noir spontané type \"doodle\" avec une palette de couleurs stricte composée de jaune moutarde, de blanc et de noir. L'ambiance est ludique et créative, intégrant des formes géométriques abstraites et des éléments graphiques manuscrits sur un fond beige doux.",
+    "description": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
     "image": "images/hatijpwaeaa5f-g.jpg",
     "tags": [
       "doodle",
       "illustration",
-      "hand-drawn",
-      "minimalist",
       "sketch",
-      "playful"
+      "minimalist",
+      "playful",
+      "vector"
     ],
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
     "id": "vibrant-vector",
-    "title": "Vibrant Vector",
-    "description": "Ce style se caractérise par une illustration vectorielle moderne de type 'flat design', utilisant des formes géométriques épurées et sans contours. Il privilégie des aplats de couleurs vives et saturées, accentués par des ombres nettes et minimalistes, rappelant l'esthétique joyeuse des illustrations éditoriales d'entreprise.",
+    "title": "Modern Vector",
+    "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
     "image": "images/g_shmfdxoaa8jyb.jpg",
     "tags": [
-      "vector art",
       "flat design",
+      "vector art",
+      "corporate memphis",
       "minimalist",
-      "colorful",
-      "geometric",
-      "editorial"
+      "vibrant",
+      "geometric"
     ],
     "createdAt": "2026-02-10T15:52:37.052Z"
+  },
+  {
+    "id": "linear-elegance",
+    "title": "Linear Elegance",
+    "description": "Ce style minimaliste se distingue par un dessin au trait continu fluide sur un fond de papier texturé blanc cassé. L'œuvre capture l'essence du sujet avec une simplicité sophistiquée, rehaussée par de subtiles touches d'aquarelle pastel.",
+    "image": "images/g_blh8hbyaajtnp.jpg",
+    "tags": [
+      "continuous line",
+      "minimalist",
+      "ink drawing",
+      "sketch",
+      "abstract",
+      "elegant"
+    ],
+    "createdAt": "2026-02-10T15:54:45.706Z"
   }
 ]

@@ -1,19 +1,21 @@
 {
   "id": "riso-lectrique",
-  "title": "Riso Electric",
-  "description": "Ce style reproduit l'esthétique de l'impression Risograph avec une palette néon saturée et une texture de papier granuleuse marquée. Il combine des traits d'encre bruts et des effets de trame pour un rendu graphique urbain et vintage.",
-  "prompt": "A bold, high-contrast Risograph art style illustration of {{subject}}. The visual aesthetic is defined by a limited, electric color palette dominated by deep cyan blue, hot magenta pink, and acid lime green. The rendering simulates vintage screen printing techniques featuring heavy film grain, noise, and a rough paper texture. Lines are scratchy, bold, and hand-drawn with simulated ink bleed effects, while shading utilizes stippling or coarse halftone dots. The composition is flat and graphic, reminiscent of underground zine art, retro street posters, or punk album covers. Imperfect color registration and distressed edges add to the raw, energetic, and urban grunge atmosphere.",
+  "title": "Toxic Riso",
+  "description": "Ce style évoque une impression risograph granuleuse aux couleurs néon explosives et aux textures de papier vieilli. Il combine l'énergie du manga rétro avec des défauts d'impression lo-fi pour un rendu urbain et chaotique.",
+  "prompt": "A high-energy vintage risograph print illustration of {{subject}}. The aesthetic is defined by a gritty, lo-fi screen printing technique featuring heavy grain, noise, and visible paper texture. The color palette is restricted yet vibrant, dominated by {{primary_color}} with electric flashes of {{accent_color}} and hot magenta to create a toxic, high-contrast look. The rendering mimics retro manga covers or underground comic art, with rough ink bleeds, misaligned registration, and bold halftone patterns. The composition feels raw and chaotic, utilizing flat shading and jagged outlines to emphasize a rebellious, urban mood.",
   "variables": [
-    "subject"
+    "subject",
+    "primary_color",
+    "accent_color"
   ],
   "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
   "tags": [
     "risograph",
-    "screen print",
-    "neon",
+    "retro manga",
     "grunge",
-    "pop art",
-    "illustration"
+    "screen print",
+    "halftone",
+    "lo-fi"
   ],
   "createdAt": "2026-02-10T15:43:14.191Z"
 }
