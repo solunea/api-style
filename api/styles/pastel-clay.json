@@ -1,0 +1,21 @@
+{
+  "id": "pastel-clay",
+  "title": "Pastel Clay",
+  "description": "Ce style se distingue par un rendu 3D minimaliste aux textures mates et douces, rappelant la pâte à modeler ou le plastique lisse de haute qualité. L'éclairage diffus et les couleurs pastel créent une esthétique apaisante, propre et ludique, privilégiant les formes géométriques simples.",
+  "prompt": "A pristine, minimalist 3D studio render of {{subject}} characterized by a soft, tactile surface finish resembling matte clay or smooth plastic. The object is rendered in {{primary_color}} with clean geometric lines, rounded edges, and a toy-like simplicity. The lighting is soft, diffuse, and uniform, utilizing global illumination to cast gentle, non-intrusive shadows against a flat, seamless {{accent_color}} background. The aesthetic is clean, modern, and soothing, avoiding excessive detail, noise, or harsh reflections to maintain a velvety appearance. 3d render, blender cycles, claymorphism, soft focus, pastel tones, matte finish, high fidelity, c4d, studio lighting, minimal, isometric view.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
+  "tags": [
+    "3d render",
+    "minimalist",
+    "claymorphism",
+    "pastel",
+    "matte",
+    "soft"
+  ],
+  "createdAt": "2026-02-10T16:23:17.069Z"
+}

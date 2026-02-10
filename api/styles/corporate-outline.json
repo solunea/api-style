@@ -1,0 +1,22 @@
+{
+  "id": "corporate-outline",
+  "title": "Corporate Outline",
+  "description": "Illustration vectorielle minimaliste caractérisée par des contours noirs nets et des aplats de couleurs simples sans dégradés. Ce style épuré et professionnel rappelle les dessins techniques ou les graphismes d'entreprise sur fond blanc.",
+  "prompt": "A clean, minimalist vector illustration depicting {{subject}} rendered in a professional corporate sketch style. The artwork relies on distinct, slightly organic black ink outlines that define the shapes clearly with varying line weights. Coloration consists of flat, unshaded fills using a limited palette dominated by {{primary_color}} with strategic touches of {{accent_color}} to guide the eye. There are absolutely no gradients, shadows, or complex textures; the aesthetic is purely 2D, graphical, and efficient. The background is stark white {{background}} to maintain focus on the figures and action. The visual language is instructional and clear, similar to architectural concept drawings or business editorial art.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background"
+  ],
+  "image": "images/de2a56790ec9d64647c9656553635390.jpg",
+  "tags": [
+    "minimalist",
+    "vector",
+    "line art",
+    "flat design",
+    "corporate",
+    "illustration"
+  ],
+  "createdAt": "2026-02-10T16:24:16.950Z"
+}

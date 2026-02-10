@@ -103,5 +103,111 @@
       "elegant"
     ],
     "createdAt": "2026-02-10T15:54:45.706Z"
+  },
+  {
+    "id": "pastel-clay",
+    "title": "Pastel Clay",
+    "description": "Ce style se distingue par un rendu 3D minimaliste aux textures mates et douces, rappelant la pâte à modeler ou le plastique lisse de haute qualité. L'éclairage diffus et les couleurs pastel créent une esthétique apaisante, propre et ludique, privilégiant les formes géométriques simples.",
+    "prompt": "A pristine, minimalist 3D studio render of {{subject}} characterized by a soft, tactile surface finish resembling matte clay or smooth plastic. The object is rendered in {{primary_color}} with clean geometric lines, rounded edges, and a toy-like simplicity. The lighting is soft, diffuse, and uniform, utilizing global illumination to cast gentle, non-intrusive shadows against a flat, seamless {{accent_color}} background. The aesthetic is clean, modern, and soothing, avoiding excessive detail, noise, or harsh reflections to maintain a velvety appearance. 3d render, blender cycles, claymorphism, soft focus, pastel tones, matte finish, high fidelity, c4d, studio lighting, minimal, isometric view.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color"
+    ],
+    "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
+    "tags": [
+      "3d render",
+      "minimalist",
+      "claymorphism",
+      "pastel",
+      "matte",
+      "soft"
+    ],
+    "createdAt": "2026-02-10T16:23:17.069Z"
+  },
+  {
+    "id": "corporate-outline",
+    "title": "Corporate Outline",
+    "description": "Illustration vectorielle minimaliste caractérisée par des contours noirs nets et des aplats de couleurs simples sans dégradés. Ce style épuré et professionnel rappelle les dessins techniques ou les graphismes d'entreprise sur fond blanc.",
+    "prompt": "A clean, minimalist vector illustration depicting {{subject}} rendered in a professional corporate sketch style. The artwork relies on distinct, slightly organic black ink outlines that define the shapes clearly with varying line weights. Coloration consists of flat, unshaded fills using a limited palette dominated by {{primary_color}} with strategic touches of {{accent_color}} to guide the eye. There are absolutely no gradients, shadows, or complex textures; the aesthetic is purely 2D, graphical, and efficient. The background is stark white {{background}} to maintain focus on the figures and action. The visual language is instructional and clear, similar to architectural concept drawings or business editorial art.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background"
+    ],
+    "image": "images/de2a56790ec9d64647c9656553635390.jpg",
+    "tags": [
+      "minimalist",
+      "vector",
+      "line art",
+      "flat design",
+      "corporate",
+      "illustration"
+    ],
+    "createdAt": "2026-02-10T16:24:16.950Z"
+  },
+  {
+    "id": "risograph-spotlight",
+    "title": "Risograph Spotlight",
+    "description": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
+    "prompt": "A flat editorial illustration of {{subject}} rendered in a textured risograph art style. The scene is defined by a dramatic, hard-edged cone of light that cuts through the composition, brightly illuminating the {{subject}} while casting the surrounding areas into deep, flat shadows. The visual texture is heavy and tactile, featuring a grainy, speckled noise overlay that mimics chalk, pastel, or coarse paper printing. The color palette is limited and retro-modern, dominated by shades of {{primary_color}} with striking details in {{accent_color}}. The rendering avoids realistic 3D depth, opting for stylized 2D shapes with slightly imperfect, organic edges. The atmosphere is cozy, whimsical, and creative, reminiscent of high-end tech blog illustrations or indie magazine art, grainy texture, risograph print, hard shadows, flat design, editorial illustration, noise overlay, retro palette, 2D vector art, textured paper, high contrast lighting.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color"
+    ],
+    "image": "images/ffd2d063ffed34950f43897583e6c0a1.jpg",
+    "tags": [
+      "risograph",
+      "flat illustration",
+      "grainy",
+      "editorial",
+      "spotlight",
+      "textured"
+    ],
+    "createdAt": "2026-02-10T16:27:43.841Z"
+  },
+  {
+    "id": "bold-outline",
+    "title": "Bold Outline",
+    "description": "Ce style graphique se distingue par des contours noirs épais et uniformes entourant des aplats de couleurs vives sans aucun dégradé. L'esthétique rappelle le pop art et les icônes vectorielles modernes, privilégiant la clarté géométrique et un fort contraste visuel.",
+    "prompt": "A bold, minimalist vector illustration of {{subject}} rendered in a clean 'ligne claire' style. The design features thick, uniform black outlines defining every shape, contrasting sharply against flat, saturated color fills. The color palette is dominated by {{primary_color}} with striking highlights in {{accent_color}}. There are no gradients, shadows, or textures; the aesthetic is purely 2D, graphic, and icon-like. The composition is centered and symmetrical, reminiscent of a high-quality sticker, patch design, or modern clip art. The forms are simplified and geometric, prioritizing readability and visual punch over realism. The background is a solid, untextured hue that makes the central figure stand out immediately, vector art, thick lines, flat color, cel shaded, sticker art, pop art, 2d, minimalist, clean lines",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color"
+    ],
+    "image": "images/a265efcf60138a9d95e829dee9067f7a.jpg",
+    "tags": [
+      "vector",
+      "flat design",
+      "thick lines",
+      "pop art",
+      "illustration",
+      "minimalist"
+    ],
+    "createdAt": "2026-02-10T16:28:35.685Z"
+  },
+  {
+    "id": "spotlight-schematic",
+    "title": "Spotlight Schematic",
+    "description": "Ce style unique imite une illustration technique isométrique tracée au trait fin sur un papier beige texturé et granuleux. Il se distingue par un cône de lumière géométrique et translucide qui met en valeur le sujet central, contrastant avec le minimalisme du reste de la composition.",
+    "prompt": "A precise, minimalist technical illustration of {{subject}} rendered in fine, uniform lines of {{primary_color}} against a background of textured, speckled beige paper. The composition is defined by a striking lighting effect: a distinct, geometric cone of translucent {{accent_color}} light highlights the central focal point of the {{subject}}, washing it in color while leaving the surrounding areas as simple, unshaded line work. The aesthetic combines vintage architectural drafting with clean vector art in an isometric or axonometric perspective. The paper texture is prominent and tactile, adding grain to the clean lines. No shadows or gradients outside the specific light beam, emphasizing a schematic and analytical mood.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color"
+    ],
+    "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
+    "tags": [
+      "technical illustration",
+      "isometric",
+      "line art",
+      "paper texture",
+      "schematic",
+      "minimalism"
+    ],
+    "createdAt": "2026-02-10T16:29:06.811Z"
   }
 ]

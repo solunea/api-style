@@ -73,5 +73,80 @@
       "elegant"
     ],
     "createdAt": "2026-02-10T15:54:45.706Z"
+  },
+  {
+    "id": "pastel-clay",
+    "title": "Pastel Clay",
+    "description": "Ce style se distingue par un rendu 3D minimaliste aux textures mates et douces, rappelant la pâte à modeler ou le plastique lisse de haute qualité. L'éclairage diffus et les couleurs pastel créent une esthétique apaisante, propre et ludique, privilégiant les formes géométriques simples.",
+    "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
+    "tags": [
+      "3d render",
+      "minimalist",
+      "claymorphism",
+      "pastel",
+      "matte",
+      "soft"
+    ],
+    "createdAt": "2026-02-10T16:23:17.069Z"
+  },
+  {
+    "id": "corporate-outline",
+    "title": "Corporate Outline",
+    "description": "Illustration vectorielle minimaliste caractérisée par des contours noirs nets et des aplats de couleurs simples sans dégradés. Ce style épuré et professionnel rappelle les dessins techniques ou les graphismes d'entreprise sur fond blanc.",
+    "image": "images/de2a56790ec9d64647c9656553635390.jpg",
+    "tags": [
+      "minimalist",
+      "vector",
+      "line art",
+      "flat design",
+      "corporate",
+      "illustration"
+    ],
+    "createdAt": "2026-02-10T16:24:16.950Z"
+  },
+  {
+    "id": "risograph-spotlight",
+    "title": "Risograph Spotlight",
+    "description": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
+    "image": "images/ffd2d063ffed34950f43897583e6c0a1.jpg",
+    "tags": [
+      "risograph",
+      "flat illustration",
+      "grainy",
+      "editorial",
+      "spotlight",
+      "textured"
+    ],
+    "createdAt": "2026-02-10T16:27:43.841Z"
+  },
+  {
+    "id": "bold-outline",
+    "title": "Bold Outline",
+    "description": "Ce style graphique se distingue par des contours noirs épais et uniformes entourant des aplats de couleurs vives sans aucun dégradé. L'esthétique rappelle le pop art et les icônes vectorielles modernes, privilégiant la clarté géométrique et un fort contraste visuel.",
+    "image": "images/a265efcf60138a9d95e829dee9067f7a.jpg",
+    "tags": [
+      "vector",
+      "flat design",
+      "thick lines",
+      "pop art",
+      "illustration",
+      "minimalist"
+    ],
+    "createdAt": "2026-02-10T16:28:35.685Z"
+  },
+  {
+    "id": "spotlight-schematic",
+    "title": "Spotlight Schematic",
+    "description": "Ce style unique imite une illustration technique isométrique tracée au trait fin sur un papier beige texturé et granuleux. Il se distingue par un cône de lumière géométrique et translucide qui met en valeur le sujet central, contrastant avec le minimalisme du reste de la composition.",
+    "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
+    "tags": [
+      "technical illustration",
+      "isometric",
+      "line art",
+      "paper texture",
+      "schematic",
+      "minimalism"
+    ],
+    "createdAt": "2026-02-10T16:29:06.811Z"
   }
 ]
