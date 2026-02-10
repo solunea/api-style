@@ -1,0 +1,47 @@
+{
+  "id": "whimsical-illustrations",
+  "title": "Whimsical Illustrations",
+  "description": "Illustrations fantaisistes et ludiques avec des formes abstraites surdimensionnées, un line art épuré et une palette de couleurs limitée sur fond neutre.",
+  "prompt": "Create a whimsical, playful illustration featuring {{subject}} as the central focus. The character is drawn with simplified features, a small rounded head, and minimal facial detail, wearing {{clothing}}. They are positioned among oversized abstract shapes and organic elements such as {{decorative_elements}}, creating a sense of imaginative scale. The character is interacting with {{action}}, adding narrative interest. Decorative graphic elements like {{symbols}} float around the subject to enhance expression and energy. Use clean, simple linework and a limited color palette of {{colors}}, keeping the illustration bold and cohesive. The background is a soft neutral tone such as beige or off-white. The overall style is modern, flat, and illustrative, with a lively, creative, and slightly abstract atmosphere.",
+  "variables": {
+    "subject": {
+      "label": "Sujet",
+      "description": "Le personnage ou sujet central de l'illustration",
+      "placeholder": "a young artist"
+    },
+    "clothing": {
+      "label": "Vêtements",
+      "description": "Description des vêtements ou accessoires du personnage",
+      "placeholder": "a beret and a paint-splattered apron"
+    },
+    "decorative_elements": {
+      "label": "Éléments décoratifs",
+      "description": "Objets floraux ou symboliques autour du sujet",
+      "placeholder": "giant flowers, abstract leaves, floating circles"
+    },
+    "action": {
+      "label": "Action",
+      "description": "L'objet ou l'action avec laquelle le personnage interagit",
+      "placeholder": "painting on a large canvas"
+    },
+    "symbols": {
+      "label": "Symboles",
+      "description": "Éléments graphiques décoratifs flottants",
+      "placeholder": "exclamation points, music notes, small stars, scribbles"
+    },
+    "colors": {
+      "label": "Couleurs",
+      "description": "Palette de couleurs principale (2-4 couleurs)",
+      "placeholder": "coral red, mustard yellow, teal blue"
+    }
+  },
+  "image": "https://arweave.net/YBPJaJV2oUgU35ch25ql2oiaxFC6gigAI-pfO0gkTgI",
+  "tags": [
+    "whimsical",
+    "illustration",
+    "flat",
+    "playful",
+    "modern"
+  ],
+  "createdAt": "2026-02-10T12:22:00Z"
+}

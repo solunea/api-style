@@ -22,5 +22,19 @@
       "dreamy"
     ],
     "createdAt": "2026-02-10T10:00:00Z"
+  },
+  {
+    "id": "whimsical-illustrations",
+    "title": "Whimsical Illustrations",
+    "description": "Illustrations fantaisistes et ludiques avec des formes abstraites surdimensionnées, un line art épuré et une palette de couleurs limitée sur fond neutre.",
+    "image": "https://arweave.net/YBPJaJV2oUgU35ch25ql2oiaxFC6gigAI-pfO0gkTgI",
+    "tags": [
+      "whimsical",
+      "illustration",
+      "flat",
+      "playful",
+      "modern"
+    ],
+    "createdAt": "2026-02-10T12:22:00Z"
   }
 ]

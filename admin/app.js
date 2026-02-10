@@ -144,7 +144,8 @@ function renderStyles(styles) {
           </div>
         </div>
         ${s.description ? `<p class="card-description">${esc(s.description)}</p>` : ''}
-        ${s.prompt ? `<div class="card-prompt">${esc(s.prompt)}</div>` : ''}
+        ${s.prompt ? `<div class="card-prompt">${highlightVars(s.prompt)}</div>` : ''}
+        ${renderVarBadges(s.variables)}
         <div class="card-tags">
           ${(s.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
         </div>
@@ -185,6 +186,8 @@ function openModal(editId) {
   document.getElementById('form-editing-id').value = '';
   switchImageTab('upload');
 
+  renderVariablesEditor({});
+
   if (editId) {
     const style = allStyles.find((s) => s.id === editId);
     if (!style) return;
@@ -196,6 +199,7 @@ function openModal(editId) {
     document.getElementById('form-description').value = style.description || '';
     document.getElementById('form-prompt').value = style.prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
+    renderVariablesEditor(style.variables || {});
 
     if (style.image) {
       switchImageTab('url');
@@ -277,7 +281,8 @@ async function handleSubmit(e) {
       statusEl.textContent = `✔ ${result.url}`;
     }
 
-    const data = { title, description, prompt, image, tags };
+    const variables = collectVariables();
+    const data = { title, description, prompt, image, tags, variables };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -352,4 +357,67 @@ function esc(str) {
   const div = document.createElement('div');
   div.textContent = str || '';
   return div.innerHTML;
+}
+
+function highlightVars(prompt) {
+  return esc(prompt).replace(/\{\{(\w+)\}\}/g, '<span class="var-highlight">{{$1}}</span>');
+}
+
+function renderVarBadges(variables) {
+  if (!variables || Object.keys(variables).length === 0) return '';
+  const badges = Object.entries(variables).map(([key, v]) =>
+    `<span class="var-badge" title="${esc(v.description || '')}\nEx: ${esc(v.placeholder || '')}">{{${key}}}</span>`
+  ).join('');
+  return `<div class="card-vars">${badges}</div>`;
+}
+
+// --- Variables Editor ---
+
+let varCount = 0;
+
+function renderVariablesEditor(variables) {
+  const container = document.getElementById('variables-container');
+  container.innerHTML = '';
+  varCount = 0;
+
+  if (variables && Object.keys(variables).length > 0) {
+    for (const [key, v] of Object.entries(variables)) {
+      addVariableRow(key, v.label || '', v.description || '', v.placeholder || '');
+    }
+  }
+}
+
+function addVariableRow(key = '', label = '', desc = '', placeholder = '') {
+  const container = document.getElementById('variables-container');
+  const idx = varCount++;
+  const row = document.createElement('div');
+  row.className = 'var-row';
+  row.dataset.idx = idx;
+  row.innerHTML = `
+    <div class="var-row-header">
+      <input type="text" class="var-key" value="${esc(key)}" placeholder="clé (ex: subject)">
+      <input type="text" class="var-label" value="${esc(label)}" placeholder="Label">
+      <button type="button" class="btn-icon danger" onclick="this.closest('.var-row').remove()" title="Supprimer">✕</button>
+    </div>
+    <div class="var-row-body">
+      <input type="text" class="var-desc" value="${esc(desc)}" placeholder="Description">
+      <input type="text" class="var-placeholder" value="${esc(placeholder)}" placeholder="Exemple de valeur">
+    </div>
+  `;
+  container.appendChild(row);
+}
+
+function collectVariables() {
+  const rows = document.querySelectorAll('.var-row');
+  const variables = {};
+  rows.forEach((row) => {
+    const key = row.querySelector('.var-key').value.trim();
+    if (!key) return;
+    variables[key] = {
+      label: row.querySelector('.var-label').value.trim(),
+      description: row.querySelector('.var-desc').value.trim(),
+      placeholder: row.querySelector('.var-placeholder').value.trim(),
+    };
+  });
+  return Object.keys(variables).length > 0 ? variables : undefined;
 }

@@ -63,7 +63,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, prompt, image, tags } = req.body;
+  const { title, description, prompt, image, tags, variables } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -78,6 +78,7 @@ app.post('/api/styles', (req, res) => {
     title,
     description: description || '',
     prompt: prompt || '',
+    ...(variables && { variables }),
     image: image || '',
     tags: tags || [],
     createdAt: new Date().toISOString()
@@ -96,12 +97,13 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, prompt, image, tags } = req.body;
+  const { title, description, prompt, image, tags, variables } = req.body;
   styles[index] = {
     ...styles[index],
     ...(title !== undefined && { title }),
     ...(description !== undefined && { description }),
     ...(prompt !== undefined && { prompt }),
+    ...(variables !== undefined && { variables }),
     ...(image !== undefined && { image }),
     ...(tags !== undefined && { tags }),
   };

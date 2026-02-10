@@ -2,7 +2,14 @@
   "id": "cyberpunk-neon",
   "title": "Cyberpunk Neon",
   "description": "Style futuriste avec des néons vibrants et une atmosphère cyberpunk sombre.",
-  "prompt": "cyberpunk neon city, vibrant colors, dark atmosphere, futuristic, rain-soaked streets, glowing signs",
+  "prompt": "cyberpunk neon city, {{subject}}, vibrant colors, dark atmosphere, futuristic, rain-soaked streets, glowing signs",
+  "variables": {
+    "subject": {
+      "label": "Sujet",
+      "description": "Le sujet principal de l'image",
+      "placeholder": "a samurai warrior"
+    }
+  },
   "image": "https://arweave.net/EXAMPLE_TX_ID_1",
   "tags": [
     "cyberpunk",

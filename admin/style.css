@@ -320,6 +320,94 @@ main {
   font-weight: 500;
 }
 
+/* Variables on cards */
+.var-highlight {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.card-vars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.var-badge {
+  padding: 0.15rem 0.45rem;
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  cursor: help;
+}
+
+/* Variables editor */
+.variables-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.var-row {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem;
+}
+
+.var-row-header {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.var-row-header input {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+
+.var-row-header input:first-child {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  color: var(--warning);
+  max-width: 140px;
+}
+
+.var-row-header input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.var-row-body {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.var-row-body input {
+  flex: 1;
+  padding: 0.3rem 0.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.78rem;
+}
+
+.var-row-body input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
 /* Empty state */
 .empty-state {
   text-align: center;
