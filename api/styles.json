@@ -1,28 +1,12 @@
 [
   {
-    "id": "watercolor-dream",
-    "title": "Watercolor Dream",
-    "description": "Style aquarelle doux et onirique avec des couleurs pastel.",
-    "image": "images/645c731c-a10a-4ab3-ab07-656f1e340ca4.webp",
+    "id": "playful-crayon",
+    "title": "Playful Crayon",
+    "description": "",
+    "image": "images/g__6vlgwoaamdym.jpg",
     "tags": [
-      "watercolor",
-      "pastel",
-      "dreamy"
+      "playful"
     ],
-    "createdAt": "2026-02-10T10:00:00Z"
-  },
-  {
-    "id": "whimsical-illustrations",
-    "title": "Whimsical Illustrations",
-    "description": "Illustrations fantaisistes et ludiques avec des formes abstraites surdimensionnées, un line art épuré et une palette de couleurs limitée sur fond neutre.",
-    "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
-    "tags": [
-      "whimsical",
-      "illustration",
-      "flat",
-      "playful",
-      "modern"
-    ],
-    "createdAt": "2026-02-10T12:22:00Z"
+    "createdAt": "2026-02-10T15:20:07.472Z"
   }
 ]

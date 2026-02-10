@@ -229,6 +229,8 @@ function handleFileSelect(e) {
     preview.innerHTML = `<img src="${ev.target.result}" alt="Preview"><span>${file.name} (${(file.size / 1024).toFixed(1)} Ko)</span>`;
   };
   reader.readAsDataURL(file);
+
+  document.getElementById('analyze-btn').style.display = '';
 }
 
 function resetUploadPreview() {
@@ -238,6 +240,7 @@ function resetUploadPreview() {
   statusEl.style.display = 'none';
   statusEl.className = 'upload-status';
   statusEl.textContent = '';
+  document.getElementById('analyze-btn').style.display = 'none';
 }
 
 async function handleSubmit(e) {
@@ -297,6 +300,41 @@ async function handleSubmit(e) {
   } finally {
     submitBtn.disabled = false;
     submitBtn.textContent = editingId ? 'Enregistrer' : 'Créer le style';
+  }
+}
+
+// --- AI Analyze ---
+
+async function analyzeImage() {
+  if (!selectedFile) return showToast('Sélectionnez d\'abord une image', 'error');
+
+  const btn = document.getElementById('analyze-btn');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Analyse en cours...';
+
+  try {
+    const formData = new FormData();
+    formData.append('image', selectedFile);
+
+    const res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error);
+    }
+
+    const data = await res.json();
+
+    if (data.title) document.getElementById('form-title').value = data.title;
+    if (data.description) document.getElementById('form-description').value = data.description;
+    if (data.prompt) document.getElementById('form-prompt').value = data.prompt;
+    if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');
+
+    showToast('Champs remplis automatiquement par l\'IA', 'success');
+  } catch (err) {
+    showToast(err.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🤖 Auto-remplir avec IA';
   }
 }
 

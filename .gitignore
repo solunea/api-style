@@ -4,3 +4,6 @@ Thumbs.db
 
 # Fichiers temporaires d'upload
 uploads/
+
+# Secrets
+.env

@@ -1,41 +1,13 @@
 [
   {
-    "id": "watercolor-dream",
-    "title": "Watercolor Dream",
-    "description": "Style aquarelle doux et onirique avec des couleurs pastel.",
-    "prompt": "soft watercolor painting of {{subject}}, dreamy atmosphere, pastel colors, gentle brush strokes, artistic",
-    "variables": [
-      "subject"
-    ],
-    "image": "images/645c731c-a10a-4ab3-ab07-656f1e340ca4.webp",
+    "id": "playful-crayon",
+    "title": "Playful Crayon",
+    "description": "",
+    "prompt": "Cheerful children's book style with a textured, crayon-like finish. Features bright yellow and green tones, cute characters, and a naive, hand-drawn warmth.",
+    "image": "images/g__6vlgwoaamdym.jpg",
     "tags": [
-      "watercolor",
-      "pastel",
-      "dreamy"
+      "playful"
     ],
-    "createdAt": "2026-02-10T10:00:00Z"
-  },
-  {
-    "id": "whimsical-illustrations",
-    "title": "Whimsical Illustrations",
-    "description": "Illustrations fantaisistes et ludiques avec des formes abstraites surdimensionnées, un line art épuré et une palette de couleurs limitée sur fond neutre.",
-    "prompt": "Create a whimsical, playful illustration featuring {{subject}} as the central focus. The character is drawn with simplified features, a small rounded head, and minimal facial detail, wearing {{clothing}}. They are positioned among oversized abstract shapes and organic elements such as {{decorative_elements}}, creating a sense of imaginative scale. The character is interacting with {{action}}, adding narrative interest. Decorative graphic elements like {{symbols}} float around the subject to enhance expression and energy. Use clean, simple linework and a limited color palette of {{colors}}, keeping the illustration bold and cohesive. The background is a soft neutral tone such as beige or off-white. The overall style is modern, flat, and illustrative, with a lively, creative, and slightly abstract atmosphere.",
-    "variables": [
-      "subject",
-      "clothing",
-      "decorative_elements",
-      "action",
-      "symbols",
-      "colors"
-    ],
-    "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
-    "tags": [
-      "whimsical",
-      "illustration",
-      "flat",
-      "playful",
-      "modern"
-    ],
-    "createdAt": "2026-02-10T12:22:00Z"
+    "createdAt": "2026-02-10T15:20:07.472Z"
   }
 ]

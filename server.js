@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
@@ -5,6 +6,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync, copyFil
 import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
+import Replicate from 'replicate';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = join(__dirname, 'data', 'styles.json');
@@ -18,6 +20,7 @@ if (!existsSync(UPLOAD_DIR)) mkdirSync(UPLOAD_DIR, { recursive: true });
 
 const upload = multer({ dest: UPLOAD_DIR });
 const app = express();
+const replicate = new Replicate();
 
 app.use(cors());
 app.use(express.json());
@@ -162,6 +165,76 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
     res.json({ url: `images/${filename}`, filename });
   } catch (err) {
     res.status(500).json({ error: err.message });
+  }
+});
+
+// POST analyze image with Gemini 3 Pro via Replicate
+app.post('/api/analyze', upload.single('image'), async (req, res) => {
+  if (!req.file) return res.status(400).json({ error: 'Aucune image fournie' });
+
+  try {
+    const imageBuffer = readFileSync(req.file.path);
+    const base64 = imageBuffer.toString('base64');
+    const mimeType = req.file.mimetype || 'image/jpeg';
+    const dataUri = `data:${mimeType};base64,${base64}`;
+
+    // Clean up temp file
+    unlinkSync(req.file.path);
+
+    const prompt = `Analyze this image and return ONLY a valid JSON object with these fields:
+- "title": a short catchy title for this visual style (in French)
+- "description": a detailed description of the visual style (2-3 sentences, in French)
+- "prompt": an English prompt to reproduce this style in an AI image generator. Use variables in double curly braces for customizable elements (e.g. {{subject}}, {{color}}, {{mood}})
+- "tags": an array of 3 to 6 relevant tags (English, lowercase)
+
+Return ONLY the raw JSON object. No markdown, no code fences, no explanation.`;
+
+    const output = await replicate.run('google/gemini-3-pro', {
+      input: {
+        prompt: prompt,
+        image: dataUri,
+      }
+    });
+
+    // output can be a string or an array of strings
+    let raw = Array.isArray(output) ? output.join('') : String(output);
+    raw = raw.trim();
+    console.log('--- RAW MODEL OUTPUT ---');
+    console.log(raw);
+    console.log('--- END RAW OUTPUT ---');
+
+    // Remove markdown code fences if present
+    raw = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '');
+
+    // Extract the first balanced JSON object using brace depth tracking
+    let jsonStr = null;
+    const startIdx = raw.indexOf('{');
+    if (startIdx !== -1) {
+      let depth = 0;
+      let inStr = false;
+      let esc = false;
+      for (let i = startIdx; i < raw.length; i++) {
+        const ch = raw[i];
+        if (esc) { esc = false; continue; }
+        if (ch === '\\' && inStr) { esc = true; continue; }
+        if (ch === '"') { inStr = !inStr; continue; }
+        if (inStr) continue;
+        if (ch === '{') depth++;
+        if (ch === '}') { depth--; if (depth === 0) { jsonStr = raw.slice(startIdx, i + 1); break; } }
+      }
+    }
+    if (!jsonStr) throw new Error('Aucun JSON valide trouvé dans la réponse du modèle');
+
+    const parsed = JSON.parse(jsonStr);
+    res.json({
+      title: parsed.title || '',
+      description: parsed.description || '',
+      prompt: parsed.prompt || '',
+      tags: parsed.tags || [],
+    });
+  } catch (err) {
+    console.error('Analyze error:', err);
+    res.status(500).json({ error: `Erreur d'analyse : ${err.message}` });
   }
 });
 
