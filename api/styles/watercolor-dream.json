@@ -3,14 +3,10 @@
   "title": "Watercolor Dream",
   "description": "Style aquarelle doux et onirique avec des couleurs pastel.",
   "prompt": "soft watercolor painting of {{subject}}, dreamy atmosphere, pastel colors, gentle brush strokes, artistic",
-  "variables": {
-    "subject": {
-      "label": "Sujet",
-      "description": "Le sujet principal de l'image",
-      "placeholder": "a girl reading a book"
-    }
-  },
-  "image": "images/g_wsh1bwqaambqi.jpg",
+  "variables": [
+    "subject"
+  ],
+  "image": "images/645c731c-a10a-4ab3-ab07-656f1e340ca4.webp",
   "tags": [
     "watercolor",
     "pastel",

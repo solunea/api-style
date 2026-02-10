@@ -133,6 +133,14 @@ app.delete('/api/styles/:id', async (req, res) => {
     unlinkSync(apiFile);
   }
 
+  // Remove image file
+  if (deleted.image) {
+    const imgPath = join(__dirname, deleted.image);
+    if (existsSync(imgPath)) {
+      unlinkSync(imgPath);
+    }
+  }
+
   res.json({ message: `Style "${deleted.title}" supprimé`, style: deleted });
 });
 
