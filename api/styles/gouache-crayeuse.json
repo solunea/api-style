@@ -17,7 +17,7 @@
     "flat design",
     "hand-drawn"
   ],
-  "removeBackground": false,
+  "removeBackground": true,
   "createdAt": "2026-02-10T15:44:41.253Z",
   "background_prompt": "A highly textured, flat background scene featuring a creative environment filled with eclectic sketches, pinned posters, and organic shapes. The scene is rendered in a {{primary_color}} wash with {{accent_color}} details, using a dry brush and colored pencil technique. Elements like potted plants, paper scraps, shelves, and geometric patterns create a busy, artistic atmosphere without a central subject. The texture is grainy and matte, resembling a crowded sketchbook page or a decorated studio wall, framing the center with decorative clutter."
 }
