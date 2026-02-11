@@ -138,8 +138,6 @@ function renderStyles(styles) {
           </div>
         </div>
         ${s.description ? `<p class="card-description">${esc(s.description)}</p>` : ''}
-        ${s.prompt ? `<div class="card-prompt">${highlightVars(s.prompt)}</div>` : ''}
-        ${renderVarBadges(s.variables)}
         <div class="card-tags">
           ${(s.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
         </div>
@@ -190,11 +188,15 @@ function openModal(editId) {
     document.getElementById('form-title').value = style.title;
     document.getElementById('form-description').value = style.description || '';
     document.getElementById('form-prompt').value = style.prompt || '';
+    document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-remove-bg').checked = !!style.removeBackground;
     if (style.image) {
       switchImageTab('url');
       document.getElementById('form-image-url').value = style.image;
+      if (style.image.startsWith('images/')) {
+        document.getElementById('analyze-url-btn').style.display = '';
+      }
     }
   } else {
     titleEl.textContent = 'Nouveau style';
@@ -242,6 +244,7 @@ function resetUploadPreview() {
   statusEl.className = 'upload-status';
   statusEl.textContent = '';
   document.getElementById('analyze-btn').style.display = 'none';
+  document.getElementById('analyze-url-btn').style.display = 'none';
 }
 
 async function handleSubmit(e) {
@@ -251,6 +254,7 @@ async function handleSubmit(e) {
   const title = document.getElementById('form-title').value.trim();
   const description = document.getElementById('form-description').value.trim();
   const prompt = document.getElementById('form-prompt').value.trim();
+  const background_prompt = document.getElementById('form-background-prompt').value.trim();
   const tagsRaw = document.getElementById('form-tags').value;
   const tags = tagsRaw.split(',').map((t) => t.trim()).filter(Boolean);
 
@@ -279,7 +283,7 @@ async function handleSubmit(e) {
     const varMatches = [...prompt.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
     const variables = [...new Set(varMatches)];
     const removeBackground = document.getElementById('form-remove-bg').checked;
-    const data = { title, description, prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground };
+    const data = { title, description, prompt, background_prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -308,17 +312,31 @@ async function handleSubmit(e) {
 // --- AI Analyze ---
 
 async function analyzeImage() {
-  if (!selectedFile) return showToast('Sélectionnez d\'abord une image', 'error');
+  const imageUrl = document.getElementById('form-image-url').value.trim();
+  const useExisting = !selectedFile && imageUrl && imageUrl.startsWith('images/');
 
+  if (!selectedFile && !useExisting) return showToast('Sélectionnez d\'abord une image', 'error');
+
+  // Disable both buttons
   const btn = document.getElementById('analyze-btn');
-  btn.disabled = true;
-  btn.innerHTML = '<span class="spinner"></span> Analyse en cours...';
+  const urlBtn = document.getElementById('analyze-url-btn');
+  const activeBtn = useExisting ? urlBtn : btn;
+  activeBtn.disabled = true;
+  activeBtn.innerHTML = '<span class="spinner"></span> Analyse en cours...';
 
   try {
-    const formData = new FormData();
-    formData.append('image', selectedFile);
+    let res;
+    if (useExisting) {
+      // Send existing image path as JSON via FormData text field
+      const formData = new FormData();
+      formData.append('image_path', imageUrl);
+      res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
+    } else {
+      const formData = new FormData();
+      formData.append('image', selectedFile);
+      res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
+    }
 
-    const res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     if (!res.ok) {
       const err = await res.json();
       throw new Error(err.error);
@@ -329,14 +347,15 @@ async function analyzeImage() {
     if (data.title) document.getElementById('form-title').value = data.title;
     if (data.description) document.getElementById('form-description').value = data.description;
     if (data.prompt) document.getElementById('form-prompt').value = data.prompt;
+    if (data.background_prompt) document.getElementById('form-background-prompt').value = data.background_prompt;
     if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');
 
     showToast('Champs remplis automatiquement par l\'IA', 'success');
   } catch (err) {
     showToast(err.message, 'error');
   } finally {
-    btn.disabled = false;
-    btn.innerHTML = '🤖 Auto-remplir avec IA';
+    activeBtn.disabled = false;
+    activeBtn.innerHTML = '🤖 Auto-remplir avec IA';
   }
 }
 

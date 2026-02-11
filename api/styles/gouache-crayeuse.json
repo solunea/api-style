@@ -1,8 +1,8 @@
 {
   "id": "gouache-crayeuse",
-  "title": "Textured Whimsy",
-  "description": "Ce style imite les techniques traditionnelles comme le crayon de couleur et la gouache sèche avec une texture granuleuse marquée. L'esthétique est plate, naïve et chaleureuse, rappelant les illustrations modernes et ludiques des livres pour enfants.",
-  "prompt": "A charming, hand-drawn illustration of {{subject}} rendered in a mixed-media style imitating colored pencils, wax crayons, and dry gouache. The image features a heavy, grainy texture with visible paper tooth and rough, dry brush strokes. The composition is flat with a naive, 2D perspective and simplified geometric shapes. The color palette is warm and earthy, dominated by {{primary_color}} hues with vibrant {{accent_color}} details. The atmosphere is cozy, creative, and playful, evocative of indie children's picture books, textured illustration, naive art, flat design, dry brush, grainy, whimsical, hand-drawn style, matte finish.",
+  "title": "Textured Storybook",
+  "description": "Ce style évoque une illustration de livre pour enfants moderne, caractérisée par une texture granuleuse imitant les crayons de couleur et la gouache sèche. L'esthétique est plate, fantaisiste et artisanale, privilégiant des formes naïves et des couleurs vibrantes mais mates.",
+  "prompt": "A charming, high-quality children's book illustration style depicting {{subject}}. The artwork mimics the tactile texture of dry media, blending the look of colored pencils, wax crayons, and matte gouache on rough grain paper. The rendering is distinctly flat and 2D, avoiding photorealistic perspective in favor of a whimsical, hand-drawn aesthetic. The color palette is warm and inviting, dominated by shades of {{primary_color}} with playful, scribbled contrasts in {{accent_color}}. The strokes are visible, energetic, and slightly messy, giving the image a raw, artisanal feel. The edges of shapes are imperfect and organic, enhancing the quirky character design. The lighting is flat and uniform, emphasizing the rich surface texture and the interplay of colors rather than shadows. The overall mood is creative, innocent, and cozy, textured illustration, flat design, crayon texture, whimsical art, matte finish, visible strokes, playful character design, high resolution scan, rough paper grain, indie editorial style",
   "variables": [
     "subject",
     "primary_color",
@@ -10,13 +10,14 @@
   ],
   "image": "images/g__6vlgwoaamdym.jpg",
   "tags": [
-    "textured",
-    "whimsy",
-    "illustration",
-    "crayon",
-    "naive",
-    "flat"
+    "children's book",
+    "textured illustration",
+    "crayon art",
+    "whimsical",
+    "flat design",
+    "hand-drawn"
   ],
   "removeBackground": false,
-  "createdAt": "2026-02-10T15:44:41.253Z"
+  "createdAt": "2026-02-10T15:44:41.253Z",
+  "background_prompt": "A highly textured, flat background scene featuring a creative environment filled with eclectic sketches, pinned posters, and organic shapes. The scene is rendered in a {{primary_color}} wash with {{accent_color}} details, using a dry brush and colored pencil technique. Elements like potted plants, paper scraps, shelves, and geometric patterns create a busy, artistic atmosphere without a central subject. The texture is grainy and matte, resembling a crowded sketchbook page or a decorated studio wall, framing the center with decorative clutter."
 }

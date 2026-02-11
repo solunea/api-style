@@ -17,16 +17,16 @@
   },
   {
     "id": "gouache-crayeuse",
-    "title": "Textured Whimsy",
-    "description": "Ce style imite les techniques traditionnelles comme le crayon de couleur et la gouache sèche avec une texture granuleuse marquée. L'esthétique est plate, naïve et chaleureuse, rappelant les illustrations modernes et ludiques des livres pour enfants.",
+    "title": "Textured Storybook",
+    "description": "Ce style évoque une illustration de livre pour enfants moderne, caractérisée par une texture granuleuse imitant les crayons de couleur et la gouache sèche. L'esthétique est plate, fantaisiste et artisanale, privilégiant des formes naïves et des couleurs vibrantes mais mates.",
     "image": "images/g__6vlgwoaamdym.jpg",
     "tags": [
-      "textured",
-      "whimsy",
-      "illustration",
-      "crayon",
-      "naive",
-      "flat"
+      "children's book",
+      "textured illustration",
+      "crayon art",
+      "whimsical",
+      "flat design",
+      "hand-drawn"
     ],
     "removeBackground": false,
     "createdAt": "2026-02-10T15:44:41.253Z"

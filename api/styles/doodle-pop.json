@@ -18,5 +18,6 @@
     "vector"
   ],
   "removeBackground": true,
-  "createdAt": "2026-02-10T15:49:04.146Z"
+  "createdAt": "2026-02-10T15:49:04.146Z",
+  "background_prompt": "A creative pattern of hand-drawn doodle elements and abstract shapes scattered across a neutral background. The scene features bold black and white striped geometric blocks, oversized stylized organic leaves, and playful scribble marks like spirals, asterisks, and motion lines. Scattered handwritten typography fragments and empty speech bubbles add texture to the environment. The design uses flat fills of {{primary_color}} and sharp hits of {{accent_color}} to create a vibrant, chaotic yet balanced framing device or wallpaper texture, completely void of any central character."
 }

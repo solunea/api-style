@@ -69,7 +69,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, prompt, image, tags, variables, removeBackground } = req.body;
+  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -84,6 +84,7 @@ app.post('/api/styles', (req, res) => {
     title,
     description: description || '',
     prompt: prompt || '',
+    background_prompt: background_prompt || '',
     ...(variables && { variables }),
     image: image || '',
     tags: tags || [],
@@ -104,12 +105,13 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, prompt, image, tags, variables, removeBackground } = req.body;
+  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground } = req.body;
   styles[index] = {
     ...styles[index],
     ...(title !== undefined && { title }),
     ...(description !== undefined && { description }),
     ...(prompt !== undefined && { prompt }),
+    ...(background_prompt !== undefined && { background_prompt }),
     ...(variables !== undefined && { variables }),
     ...(image !== undefined && { image }),
     ...(tags !== undefined && { tags }),
@@ -172,16 +174,29 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
 
 // POST analyze image with Gemini 3 Pro via Replicate
 app.post('/api/analyze', upload.single('image'), async (req, res) => {
-  if (!req.file) return res.status(400).json({ error: 'Aucune image fournie' });
-
   try {
-    const imageBuffer = readFileSync(req.file.path);
-    const base64 = imageBuffer.toString('base64');
-    const mimeType = req.file.mimetype || 'image/jpeg';
-    const dataUri = `data:${mimeType};base64,${base64}`;
+    let dataUri;
 
-    // Clean up temp file
-    unlinkSync(req.file.path);
+    if (req.file) {
+      // File uploaded directly
+      const imageBuffer = readFileSync(req.file.path);
+      const base64 = imageBuffer.toString('base64');
+      const mimeType = req.file.mimetype || 'image/jpeg';
+      dataUri = `data:${mimeType};base64,${base64}`;
+      unlinkSync(req.file.path);
+    } else if (req.body && req.body.image_path) {
+      // Existing local image path (e.g. "images/xxx.jpg")
+      const imgPath = join(__dirname, req.body.image_path);
+      if (!existsSync(imgPath)) return res.status(404).json({ error: 'Image introuvable sur le serveur' });
+      const imageBuffer = readFileSync(imgPath);
+      const base64 = imageBuffer.toString('base64');
+      const ext = extname(req.body.image_path).toLowerCase();
+      const mimeMap = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.webp': 'image/webp' };
+      const mimeType = mimeMap[ext] || 'image/jpeg';
+      dataUri = `data:${mimeType};base64,${base64}`;
+    } else {
+      return res.status(400).json({ error: 'Aucune image fournie' });
+    }
 
     const prompt = `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
 
@@ -193,6 +208,7 @@ Return ONLY a valid JSON object with these fields:
 - "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
 - "description": describe what makes this style unique and recognizable (2-3 sentences, in French)
 - "prompt": a long, highly detailed English prompt (at least 80 words) that reproduces this exact visual style. Describe precisely: the lighting setup, color grading, texture quality, contrast levels, saturation, depth of field, lens effects, artistic rendering technique, atmosphere, mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color and {{accent_color}} for the accent color. You may also use {{background}}, {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a comma-separated list of reinforcement tags (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows") to strengthen the style interpretation. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
+- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use {{primary_color}} and {{accent_color}} variables. Do NOT include any subject in this prompt, only the scene and environment.
 - "tags": an array of 3 to 6 relevant style tags (English, lowercase)
 
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
@@ -239,6 +255,7 @@ Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
       title: parsed.title || '',
       description: parsed.description || '',
       prompt: parsed.prompt || '',
+      background_prompt: parsed.background_prompt || '',
       tags: parsed.tags || [],
     });
   } catch (err) {
