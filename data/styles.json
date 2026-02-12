@@ -69,25 +69,30 @@
   },
   {
     "id": "linear-elegance",
-    "title": "Linear Elegance",
-    "description": "Ce style minimaliste se distingue par un dessin au trait continu fluide sur un fond de papier texturé blanc cassé. L'œuvre capture l'essence du sujet avec une simplicité sophistiquée, rehaussée par de subtiles touches d'aquarelle pastel.",
-    "prompt": "A sophisticated continuous line drawing depicting {{subject}}, created with a single, fluid black ink stroke that defines the form without lifting the pen. The style emphasizes negative space, organic curves, and elegant simplicity. The background is a high-quality, textured off-white paper with visible grain. Incorporate a soft, artistic splash of {{primary_color}} watercolor wash to suggest volume, paired with a faint hint of {{accent_color}} for delicate emphasis. The rendering is ultra-minimalist, flat, and clean, combining vector precision with analog warmth. Lighting is even and flat to highlight the line work, minimal, vector style, clean lines, high contrast, fine art, ink illustration, 2d, simple, abstract.",
+    "title": "Minimalist Contour",
+    "description": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste.",
+    "prompt": "A sophisticated minimalist illustration of {{subject}} executed in a masterfully fluid continuous line art style. The artwork features organic, unbroken black ink contours that define the form with elegance and simplicity, utilizing ample negative space to suggest volume without shading. The line weight is consistent, resembling a fine-tip archival marker or fountain pen gliding across the surface. Soft, translucent watercolor washes in {{accent_color}} provide a delicate splash of color, loosely following the contours or highlighting focal points without filling the shapes completely, adding a dreamlike, hand-painted quality. The underlying texture mimics high-quality cold-press watercolor paper with visible grain and organic irregularities. The composition is centered and balanced, emphasizing the purity of the line work and the abstraction of the {{subject}}. The color palette is primarily monochromatic ink against the paper, with {{primary_color}} used for any additional defining lines. The lighting is flat and uniform, typical of vector illustration or scanned ink drawings, ensuring high contrast between the dark lines and the surface. The overall aesthetic is modern, chic, and understated. The image is composited on a clean {{background_color}} surface to facilitate easy background removal while maintaining the paper texture edges. No complex shading, no photorealism, purely graphic and artistic.",
     "variables": [
       "subject",
+      "accent_color",
       "primary_color",
-      "accent_color"
+      "background_color"
     ],
     "image": "images/g_blh8hbyaajtnp.jpg",
     "tags": [
-      "continuous line",
+      "line art",
       "minimalist",
-      "ink drawing",
-      "sketch",
-      "abstract",
+      "continuous line",
+      "contour drawing",
+      "watercolor",
       "elegant"
     ],
     "removeBackground": true,
-    "createdAt": "2026-02-10T15:54:45.706Z"
+    "createdAt": "2026-02-10T15:54:45.706Z",
+    "background_prompt": "A macro close-up of high-quality textured art paper in a shade of {{background_color}}. The surface exhibits a subtle, organic grain similar to cold-press watercolor paper or heavy cardstock. Faint, abstract watercolor washes or ink splatters in {{accent_color}} and {{primary_color}} frame the edges gently, leaving the center open and clean. The lighting is soft and even, highlighting the tactile quality of the paper fiber without creating harsh shadows. Minimalist, artistic stationery background.",
+    "supportImageReference": false,
+    "description_en": "This style features sophisticated continuous line art with fluid black contours and subtle watercolor accents. It utilizes negative space and textured paper effects for a modern, elegant, and minimalist aesthetic.",
+    "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste."
   },
   {
     "id": "pastel-clay",
