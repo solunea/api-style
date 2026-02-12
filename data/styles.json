@@ -100,9 +100,9 @@
   },
   {
     "id": "pastel-clay",
-    "title": "Pastel Clay",
-    "description": "",
-    "prompt": "A premium 3D isometric rendering of {{subject}}, designed with a minimalist and cute aesthetic. The object features a smooth, matte finish resembling soft clay or high-quality silicone, with rounded edges and simplified geometry. The color palette utilizes soft {{primary_color}} as the dominant hue, complemented by subtle {{accent_color}} details to create a gentle contrast. The lighting is incredibly soft and diffuse, simulating global illumination with ambient occlusion, resulting in creamy, non-intrusive shadows and a lack of harsh specular highlights. The rendering is ultra-clean and noise-free, evoking a sense of playfulness and modern UI design. The subject is composited on a clean {{background_color}} surface, ensuring distinct edges for easy isolation, c4d, blender render, unreal engine 5, toy-like, volumetric soft light, 8k resolution, pastel tones, smooth shading, high fidelity.",
+    "title": "Soft Clay",
+    "description": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
+    "prompt": "A high-fidelity 3D rendering of {{subject}} executed in a charming, minimalistic claymorphism style. The subject is modeled with smooth, rounded edges and a pristine matte finish that mimics soft-touch plastic, hardened fondant, or refined clay. The surface texture is uniform and velvety, absorbing light gently without harsh specular highlights. The color scheme features {{primary_color}} as the dominant tone for the main structure, accented by {{accent_color}} for smaller details or text elements to create a pleasing visual balance. The lighting is composed of a soft, diffuse studio setup with large area lights, generating gentle, wrap-around illumination and soft, feathered shadows that ground the object. The scene is set against a clean, seamless {{background_color}} background, ensuring a smooth transition between the subject and the environment. The rendering style emulates high-end motion graphics software like Cinema 4D with Octane Render or Blender Cycles, prioritizing a clean, toy-like aesthetic with physically based rendering (PBR) materials that feel synthetic yet incredibly tactile and satisfying. The composition is uncluttered, focusing entirely on the purity of form and color interaction.",
     "variables": [
       "subject",
       "primary_color",
@@ -115,13 +115,15 @@
       "claymorphism",
       "minimalist",
       "pastel",
-      "isometric",
-      "cute"
+      "matte",
+      "softbox"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:23:17.069Z",
-    "background_prompt": "A soft, minimalist 3D abstract environment featuring smooth geometric shapes like spheres, rounded cubes, and flowing curves. The scene is rendered with a matte, clay-like texture in shades of {{primary_color}} and {{accent_color}}. Soft, diffuse lighting creates gentle gradients on the forms. The elements are arranged to frame a central empty space, set against a seamless {{background_color}} backdrop, creating a calm and playful atmosphere perfect for a product showcase.",
-    "supportImageReference": false
+    "background_prompt": "A minimal, seamless 3D studio environment featuring a smooth infinite backdrop in {{background_color}}. The space is illuminated by soft, diffuse global illumination that creates gentle gradients across the curved surface. Subtle, abstract geometric primitives (spheres, cubes, or cylinders) in soft shades of {{primary_color}} and {{accent_color}} are placed in the periphery or blurred in the distance to add depth without distracting from the center. The floor has a matte texture that catches soft, directional shadows.",
+    "supportImageReference": false,
+    "description_en": "A minimal 3D rendering style featuring smooth, matte textures reminiscent of soft plastic or refined clay. It utilizes pastel color palettes, diffuse studio lighting, and rounded geometry to create a clean, tactile, and comforting aesthetic.",
+    "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante."
   },
   {
     "id": "corporate-outline",

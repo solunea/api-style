@@ -69,16 +69,18 @@
   },
   {
     "id": "pastel-clay",
-    "title": "Pastel Clay",
-    "description": "",
+    "title": "Soft Clay",
+    "description": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
+    "description_en": "A minimal 3D rendering style featuring smooth, matte textures reminiscent of soft plastic or refined clay. It utilizes pastel color palettes, diffuse studio lighting, and rounded geometry to create a clean, tactile, and comforting aesthetic.",
+    "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
     "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
     "tags": [
       "3d render",
       "claymorphism",
       "minimalist",
       "pastel",
-      "isometric",
-      "cute"
+      "matte",
+      "softbox"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:23:17.069Z"
