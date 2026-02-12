@@ -179,27 +179,27 @@
     "createdAt": "2026-02-10T16:29:06.811Z"
   },
   {
-    "id": "floating-mockup",
-    "title": "Floating Mockup",
-    "description": "Ce style se caractérise par une esthétique de maquette (mockup) 3D ultra-propre et minimaliste, idéale pour la présentation professionnelle de produits. L'éclairage de studio doux et diffus crée des ombres portées réalistes sur un fond neutre, donnant l'impression que le sujet flotte élégamment dans l'espace avec une netteté cristalline.",
-    "prompt": "A high-end professional product mockup featuring {{subject}} floating effortlessly in mid-air against a clean, neutral studio background. The visual style is ultra-minimalist and sleek, mimicking a premium 3D design template. The {{subject}} is rendered with a smooth, premium texture—either matte or satin—dominated by {{primary_color}} tones with subtle highlights in {{accent_color}}. The lighting is exquisite: soft, diffused studio softbox lighting that eliminates harsh glare but casts realistic, soft drop shadows on the floor far below to establish depth and volume. The composition is balanced with ample negative space to emphasize the object. The rendering is hyper-realistic, resembling a high-quality Cinema 4D or Blender Cycles render with global illumination, ambient occlusion, and ray-traced reflections. The atmosphere is commercial, polished, and pristine, focusing entirely on the form and design of the object, product photography, 3d render, octane render, studio lighting, soft shadows, clean background, minimalist, 8k, ultra detailed, commercial look, sharp focus, no noise.",
-    "background_prompt": "A pristine, empty minimalist studio environment with a seamless infinite background. The setting features a soft, neutral gradient ranging from white to light grey, acting as a clean slate. Soft, diffused lighting creates a gentle atmosphere with subtle ambient occlusion. There are no central objects, just a clean, high-quality stage ready for product placement. The lighting setup suggests a softbox source from the top left, creating a smooth transition of light across the empty space, perfectly suited to complement a {{primary_color}} and {{accent_color}} color scheme without distraction.",
+    "id": "shadow-studio",
+    "title": "Shadow Studio",
+    "description": "Ce style capture l'essence de la photographie de produit minimaliste avec un éclairage solaire dur et direct qui crée des ombres géométriques tranchées. L'atmosphère est propre, moderne et réaliste, mettant en valeur le sujet par un jeu de contrastes forts entre la lumière vive et les zones d'ombre profondes.",
+    "prompt": "A professional, high-angle studio product photograph of {{subject}}, showcasing a clean and modern minimalist aesthetic. The scene is illuminated by harsh, direct natural sunlight, casting sharp, diagonal geometric shadows across the {{subject}} and the surrounding surface, mimicking light filtering through a window frame or blinds. The composition is uncluttered, focusing entirely on the texture and form of the object. The color grading is bright and airy, utilizing {{primary_color}} as the dominant tone for the subject's highlights, while {{accent_color}} provides subtle contrast in the details or branding elements. The surface texture is smooth, matte, and pristine. The lighting creates a high-contrast look with deep, defined blacks and blown-out whites in the sun-drenched areas, evoking a warm, lazy afternoon atmosphere suitable for high-end mockups, photorealistic, hard lighting, shadow play, 8k, ultra detailed, depth of field, ray tracing, sharp focus, commercial photography.",
+    "background_prompt": "A pristine, minimalist surface composed of smooth, matte white or light grey material, bathed in bright, hard natural sunlight. Sharp, distinct diagonal shadows cut across the scene, creating a strong geometric pattern of light and dark, suggestive of a window frame or architectural element out of view. The atmosphere is clean and airy, with subtle ambient reflections of {{primary_color}} and {{accent_color}} bouncing off the neutral ground. The texture is uniform and high-quality, designed to create a sense of depth through the interplay of harsh light and deep shadow without any central subject.",
     "variables": [
       "subject",
       "primary_color",
       "accent_color"
     ],
-    "image": "images/maquette-carte-cadeau-qui-tombe_1332-60633.avif",
+    "image": "images/mllfll-083-1-millefeuille-mockup.jpg",
     "tags": [
-      "mockup",
-      "minimalist",
-      "studio",
-      "clean",
-      "3d",
-      "product"
+      "hard lighting",
+      "minimalism",
+      "shadow play",
+      "product photography",
+      "mockup style",
+      "high contrast"
     ],
-    "removeBackground": true,
+    "removeBackground": false,
     "supportImageReference": true,
-    "createdAt": "2026-02-12T07:52:29.717Z"
+    "createdAt": "2026-02-12T07:56:16.160Z"
   }
 ]
