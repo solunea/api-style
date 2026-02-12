@@ -113,16 +113,16 @@
   },
   {
     "id": "spotlight-schematic",
-    "title": "Spotlight Schematic",
-    "description": "Ce style unique imite une illustration technique isométrique tracée au trait fin sur un papier beige texturé et granuleux. Il se distingue par un cône de lumière géométrique et translucide qui met en valeur le sujet central, contrastant avec le minimalisme du reste de la composition.",
+    "title": "Spotlight Lineart",
+    "description": "",
     "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
     "tags": [
-      "technical illustration",
       "isometric",
       "line art",
-      "paper texture",
-      "schematic",
-      "minimalism"
+      "spotlight",
+      "editorial",
+      "minimalist",
+      "technical drawing"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:29:06.811Z"

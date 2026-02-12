@@ -161,25 +161,28 @@
   },
   {
     "id": "spotlight-schematic",
-    "title": "Spotlight Schematic",
-    "description": "Ce style unique imite une illustration technique isométrique tracée au trait fin sur un papier beige texturé et granuleux. Il se distingue par un cône de lumière géométrique et translucide qui met en valeur le sujet central, contrastant avec le minimalisme du reste de la composition.",
-    "prompt": "A precise, minimalist technical illustration of {{subject}} rendered in fine, uniform lines of {{primary_color}} against a background of textured, speckled beige paper. The composition is defined by a striking lighting effect: a distinct, geometric cone of translucent {{accent_color}} light highlights the central focal point of the {{subject}}, washing it in color while leaving the surrounding areas as simple, unshaded line work. The aesthetic combines vintage architectural drafting with clean vector art in an isometric or axonometric perspective. The paper texture is prominent and tactile, adding grain to the clean lines. No shadows or gradients outside the specific light beam, emphasizing a schematic and analytical mood.",
+    "title": "Spotlight Lineart",
+    "description": "",
+    "prompt": "A precise isometric line art illustration of {{subject}}, rendered with fine, consistent ink outlines in {{primary_color}}. The drawing style is technical yet whimsical, set upon a textured, off-white paper surface with visible grain and speckles. A dramatic, semi-transparent conical spotlight beam in {{accent_color}} shines down from above, illuminating a specific circular section of the {{subject}}. Inside this pool of light, the details are filled with solid flat {{accent_color}} tones, creating a focal point, while elements outside the beam remain as clean, unfilled skeletal outlines. The composition is minimalist with ample negative space, composited on a clean {{background_color}} background to ensure sharp edge definition.",
     "variables": [
       "subject",
       "primary_color",
-      "accent_color"
+      "accent_color",
+      "background_color"
     ],
     "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
     "tags": [
-      "technical illustration",
       "isometric",
       "line art",
-      "paper texture",
-      "schematic",
-      "minimalism"
+      "spotlight",
+      "editorial",
+      "minimalist",
+      "technical drawing"
     ],
     "removeBackground": true,
-    "createdAt": "2026-02-10T16:29:06.811Z"
+    "createdAt": "2026-02-10T16:29:06.811Z",
+    "background_prompt": "A textured vintage paper surface featuring a geometric conical spotlight beam descending from the top center in {{accent_color}}. The beam casts a defined circular pool of flat color on the ground plane, meant to highlight a central element. The surrounding area is composed of negative space with subtle paper grain, faint speckles, and minimal {{primary_color}} texture marks, all set against a {{background_color}} backdrop.",
+    "supportImageReference": false
   },
   {
     "id": "shadow-studio",
