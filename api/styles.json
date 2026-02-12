@@ -1,21 +1,5 @@
 [
   {
-    "id": "riso-lectrique",
-    "title": "Toxic Riso",
-    "description": "Ce style évoque une impression risograph granuleuse aux couleurs néon explosives et aux textures de papier vieilli. Il combine l'énergie du manga rétro avec des défauts d'impression lo-fi pour un rendu urbain et chaotique.",
-    "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
-    "tags": [
-      "risograph",
-      "retro manga",
-      "grunge",
-      "screen print",
-      "halftone",
-      "lo-fi"
-    ],
-    "removeBackground": false,
-    "createdAt": "2026-02-10T15:43:14.191Z"
-  },
-  {
     "id": "gouache-crayeuse",
     "title": "Textured Storybook",
     "description": "Ce style évoque une illustration de livre pour enfants moderne, caractérisée par une texture granuleuse imitant les crayons de couleur et la gouache sèche. L'esthétique est plate, fantaisiste et artisanale, privilégiant des formes naïves et des couleurs vibrantes mais mates.",
@@ -128,22 +112,6 @@
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
-    "id": "bold-outline",
-    "title": "Bold Outline",
-    "description": "Ce style graphique se distingue par des contours noirs épais et uniformes entourant des aplats de couleurs vives sans aucun dégradé. L'esthétique rappelle le pop art et les icônes vectorielles modernes, privilégiant la clarté géométrique et un fort contraste visuel.",
-    "image": "images/a265efcf60138a9d95e829dee9067f7a.jpg",
-    "tags": [
-      "vector",
-      "flat design",
-      "thick lines",
-      "pop art",
-      "illustration",
-      "minimalist"
-    ],
-    "removeBackground": false,
-    "createdAt": "2026-02-10T16:28:35.685Z"
-  },
-  {
     "id": "spotlight-schematic",
     "title": "Spotlight Schematic",
     "description": "Ce style unique imite une illustration technique isométrique tracée au trait fin sur un papier beige texturé et granuleux. Il se distingue par un cône de lumière géométrique et translucide qui met en valeur le sujet central, contrastant avec le minimalisme du reste de la composition.",
@@ -158,5 +126,21 @@
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:29:06.811Z"
+  },
+  {
+    "id": "floating-mockup",
+    "title": "Floating Mockup",
+    "description": "Ce style se caractérise par une esthétique de maquette (mockup) 3D ultra-propre et minimaliste, idéale pour la présentation professionnelle de produits. L'éclairage de studio doux et diffus crée des ombres portées réalistes sur un fond neutre, donnant l'impression que le sujet flotte élégamment dans l'espace avec une netteté cristalline.",
+    "image": "images/maquette-carte-cadeau-qui-tombe_1332-60633.avif",
+    "tags": [
+      "mockup",
+      "minimalist",
+      "studio",
+      "clean",
+      "3d",
+      "product"
+    ],
+    "removeBackground": true,
+    "createdAt": "2026-02-12T07:52:29.717Z"
   }
 ]

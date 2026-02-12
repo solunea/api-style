@@ -69,7 +69,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground } = req.body;
+  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -89,6 +89,7 @@ app.post('/api/styles', (req, res) => {
     image: image || '',
     tags: tags || [],
     removeBackground: !!removeBackground,
+    supportImageReference: !!supportImageReference,
     createdAt: new Date().toISOString()
   };
 
@@ -105,7 +106,7 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground } = req.body;
+  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
   styles[index] = {
     ...styles[index],
     ...(title !== undefined && { title }),
@@ -116,6 +117,7 @@ app.put('/api/styles/:id', (req, res) => {
     ...(image !== undefined && { image }),
     ...(tags !== undefined && { tags }),
     ...(removeBackground !== undefined && { removeBackground: !!removeBackground }),
+    ...(supportImageReference !== undefined && { supportImageReference: !!supportImageReference }),
   };
 
   writeStyles(styles);
@@ -198,7 +200,24 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
       return res.status(400).json({ error: 'Aucune image fournie' });
     }
 
-    const prompt = `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
+    const useImageRef = req.body && req.body.supportImageReference === 'true';
+
+    const prompt = useImageRef
+      ? `You are an expert prompt engineer specialized in AI image-to-image style transfer (Midjourney, Stable Diffusion, DALL-E, Flux).
+
+Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
+
+Then generate a high-quality style transfer prompt optimized for img2img workflows. The prompt must describe ONLY the visual style to apply — NOT the subject or content (the user will provide their own reference image). Focus on: rendering technique, color grading, texture quality, lighting mood, contrast, saturation, artistic medium, and visual effects. Use {{primary_color}} for the dominant color and {{accent_color}} for the accent color so the style can be adapted to any color theme.
+
+Return ONLY a valid JSON object with these fields:
+- "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
+- "description": describe what makes this style unique and recognizable (2-3 sentences, in French)
+- "prompt": a long, highly detailed English style transfer prompt (at least 80 words) that describes ONLY the visual style to apply to any input image. Do NOT describe a subject or scene — the user provides a reference image. Describe precisely: the rendering technique, artistic medium, color grading, texture quality, contrast levels, saturation, lighting mood, lens effects, atmosphere. Use {{primary_color}} and {{accent_color}} as color variables. End with comma-separated reinforcement tags (e.g. "style transfer, same composition, sharp focus, cinematic lighting, 8k, ultra detailed"). The prompt should be professional quality, ready to use in img2img or style reference mode.
+- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use {{primary_color}} and {{accent_color}} variables. Do NOT include any subject in this prompt, only the scene and environment.
+- "tags": an array of 3 to 6 relevant style tags (English, lowercase)
+
+Return ONLY the raw JSON. No markdown, no code fences, no extra text.`
+      : `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
 
 Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
 

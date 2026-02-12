@@ -1,27 +1,5 @@
 [
   {
-    "id": "riso-lectrique",
-    "title": "Toxic Riso",
-    "description": "Ce style évoque une impression risograph granuleuse aux couleurs néon explosives et aux textures de papier vieilli. Il combine l'énergie du manga rétro avec des défauts d'impression lo-fi pour un rendu urbain et chaotique.",
-    "prompt": "A high-energy vintage risograph print illustration of {{subject}}. The aesthetic is defined by a gritty, lo-fi screen printing technique featuring heavy grain, noise, and visible paper texture. The color palette is restricted yet vibrant, dominated by {{primary_color}} with electric flashes of {{accent_color}} and hot magenta to create a toxic, high-contrast look. The rendering mimics retro manga covers or underground comic art, with rough ink bleeds, misaligned registration, and bold halftone patterns. The composition feels raw and chaotic, utilizing flat shading and jagged outlines to emphasize a rebellious, urban mood.",
-    "variables": [
-      "subject",
-      "primary_color",
-      "accent_color"
-    ],
-    "image": "images/aae0ddd53c85ba896005eb2e0b80fb47.jpg",
-    "tags": [
-      "risograph",
-      "retro manga",
-      "grunge",
-      "screen print",
-      "halftone",
-      "lo-fi"
-    ],
-    "removeBackground": false,
-    "createdAt": "2026-02-10T15:43:14.191Z"
-  },
-  {
     "id": "gouache-crayeuse",
     "title": "Textured Storybook",
     "description": "Ce style évoque une illustration de livre pour enfants moderne, caractérisée par une texture granuleuse imitant les crayons de couleur et la gouache sèche. L'esthétique est plate, fantaisiste et artisanale, privilégiant des formes naïves et des couleurs vibrantes mais mates.",
@@ -179,28 +157,6 @@
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
-    "id": "bold-outline",
-    "title": "Bold Outline",
-    "description": "Ce style graphique se distingue par des contours noirs épais et uniformes entourant des aplats de couleurs vives sans aucun dégradé. L'esthétique rappelle le pop art et les icônes vectorielles modernes, privilégiant la clarté géométrique et un fort contraste visuel.",
-    "prompt": "A bold, minimalist vector illustration of {{subject}} rendered in a clean 'ligne claire' style. The design features thick, uniform black outlines defining every shape, contrasting sharply against flat, saturated color fills. The color palette is dominated by {{primary_color}} with striking highlights in {{accent_color}}. There are no gradients, shadows, or textures; the aesthetic is purely 2D, graphic, and icon-like. The composition is centered and symmetrical, reminiscent of a high-quality sticker, patch design, or modern clip art. The forms are simplified and geometric, prioritizing readability and visual punch over realism. The background is a solid, untextured hue that makes the central figure stand out immediately, vector art, thick lines, flat color, cel shaded, sticker art, pop art, 2d, minimalist, clean lines",
-    "variables": [
-      "subject",
-      "primary_color",
-      "accent_color"
-    ],
-    "image": "images/a265efcf60138a9d95e829dee9067f7a.jpg",
-    "tags": [
-      "vector",
-      "flat design",
-      "thick lines",
-      "pop art",
-      "illustration",
-      "minimalist"
-    ],
-    "removeBackground": false,
-    "createdAt": "2026-02-10T16:28:35.685Z"
-  },
-  {
     "id": "spotlight-schematic",
     "title": "Spotlight Schematic",
     "description": "Ce style unique imite une illustration technique isométrique tracée au trait fin sur un papier beige texturé et granuleux. Il se distingue par un cône de lumière géométrique et translucide qui met en valeur le sujet central, contrastant avec le minimalisme du reste de la composition.",
@@ -221,5 +177,29 @@
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:29:06.811Z"
+  },
+  {
+    "id": "floating-mockup",
+    "title": "Floating Mockup",
+    "description": "Ce style se caractérise par une esthétique de maquette (mockup) 3D ultra-propre et minimaliste, idéale pour la présentation professionnelle de produits. L'éclairage de studio doux et diffus crée des ombres portées réalistes sur un fond neutre, donnant l'impression que le sujet flotte élégamment dans l'espace avec une netteté cristalline.",
+    "prompt": "A high-end professional product mockup featuring {{subject}} floating effortlessly in mid-air against a clean, neutral studio background. The visual style is ultra-minimalist and sleek, mimicking a premium 3D design template. The {{subject}} is rendered with a smooth, premium texture—either matte or satin—dominated by {{primary_color}} tones with subtle highlights in {{accent_color}}. The lighting is exquisite: soft, diffused studio softbox lighting that eliminates harsh glare but casts realistic, soft drop shadows on the floor far below to establish depth and volume. The composition is balanced with ample negative space to emphasize the object. The rendering is hyper-realistic, resembling a high-quality Cinema 4D or Blender Cycles render with global illumination, ambient occlusion, and ray-traced reflections. The atmosphere is commercial, polished, and pristine, focusing entirely on the form and design of the object, product photography, 3d render, octane render, studio lighting, soft shadows, clean background, minimalist, 8k, ultra detailed, commercial look, sharp focus, no noise.",
+    "background_prompt": "A pristine, empty minimalist studio environment with a seamless infinite background. The setting features a soft, neutral gradient ranging from white to light grey, acting as a clean slate. Soft, diffused lighting creates a gentle atmosphere with subtle ambient occlusion. There are no central objects, just a clean, high-quality stage ready for product placement. The lighting setup suggests a softbox source from the top left, creating a smooth transition of light across the empty space, perfectly suited to complement a {{primary_color}} and {{accent_color}} color scheme without distraction.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color"
+    ],
+    "image": "images/maquette-carte-cadeau-qui-tombe_1332-60633.avif",
+    "tags": [
+      "mockup",
+      "minimalist",
+      "studio",
+      "clean",
+      "3d",
+      "product"
+    ],
+    "removeBackground": true,
+    "supportImageReference": true,
+    "createdAt": "2026-02-12T07:52:29.717Z"
   }
 ]

@@ -191,6 +191,7 @@ function openModal(editId) {
     document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-remove-bg').checked = !!style.removeBackground;
+    document.getElementById('form-support-image-ref').checked = !!style.supportImageReference;
     if (style.image) {
       switchImageTab('url');
       document.getElementById('form-image-url').value = style.image;
@@ -283,7 +284,8 @@ async function handleSubmit(e) {
     const varMatches = [...prompt.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
     const variables = [...new Set(varMatches)];
     const removeBackground = document.getElementById('form-remove-bg').checked;
-    const data = { title, description, prompt, background_prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground };
+    const supportImageReference = document.getElementById('form-support-image-ref').checked;
+    const data = { title, description, prompt, background_prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground, supportImageReference };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -325,15 +327,17 @@ async function analyzeImage() {
   activeBtn.innerHTML = '<span class="spinner"></span> Analyse en cours...';
 
   try {
+    const supportImageRef = document.getElementById('form-support-image-ref').checked;
     let res;
     if (useExisting) {
-      // Send existing image path as JSON via FormData text field
       const formData = new FormData();
       formData.append('image_path', imageUrl);
+      formData.append('supportImageReference', String(supportImageRef));
       res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     } else {
       const formData = new FormData();
       formData.append('image', selectedFile);
+      formData.append('supportImageReference', String(supportImageRef));
       res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     }
 
