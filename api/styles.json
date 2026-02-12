@@ -66,15 +66,15 @@
   {
     "id": "pastel-clay",
     "title": "Pastel Clay",
-    "description": "Ce style se distingue par un rendu 3D minimaliste aux textures mates et douces, rappelant la pâte à modeler ou le plastique lisse de haute qualité. L'éclairage diffus et les couleurs pastel créent une esthétique apaisante, propre et ludique, privilégiant les formes géométriques simples.",
+    "description": "",
     "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
     "tags": [
       "3d render",
-      "minimalist",
       "claymorphism",
+      "minimalist",
       "pastel",
-      "matte",
-      "soft"
+      "isometric",
+      "cute"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:23:17.069Z"

@@ -92,24 +92,27 @@
   {
     "id": "pastel-clay",
     "title": "Pastel Clay",
-    "description": "Ce style se distingue par un rendu 3D minimaliste aux textures mates et douces, rappelant la pâte à modeler ou le plastique lisse de haute qualité. L'éclairage diffus et les couleurs pastel créent une esthétique apaisante, propre et ludique, privilégiant les formes géométriques simples.",
-    "prompt": "A pristine, minimalist 3D studio render of {{subject}} characterized by a soft, tactile surface finish resembling matte clay or smooth plastic. The object is rendered in {{primary_color}} with clean geometric lines, rounded edges, and a toy-like simplicity. The lighting is soft, diffuse, and uniform, utilizing global illumination to cast gentle, non-intrusive shadows against a flat, seamless {{accent_color}} background. The aesthetic is clean, modern, and soothing, avoiding excessive detail, noise, or harsh reflections to maintain a velvety appearance. 3d render, blender cycles, claymorphism, soft focus, pastel tones, matte finish, high fidelity, c4d, studio lighting, minimal, isometric view.",
+    "description": "",
+    "prompt": "A premium 3D isometric rendering of {{subject}}, designed with a minimalist and cute aesthetic. The object features a smooth, matte finish resembling soft clay or high-quality silicone, with rounded edges and simplified geometry. The color palette utilizes soft {{primary_color}} as the dominant hue, complemented by subtle {{accent_color}} details to create a gentle contrast. The lighting is incredibly soft and diffuse, simulating global illumination with ambient occlusion, resulting in creamy, non-intrusive shadows and a lack of harsh specular highlights. The rendering is ultra-clean and noise-free, evoking a sense of playfulness and modern UI design. The subject is composited on a clean {{background_color}} surface, ensuring distinct edges for easy isolation, c4d, blender render, unreal engine 5, toy-like, volumetric soft light, 8k resolution, pastel tones, smooth shading, high fidelity.",
     "variables": [
       "subject",
       "primary_color",
-      "accent_color"
+      "accent_color",
+      "background_color"
     ],
     "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
     "tags": [
       "3d render",
-      "minimalist",
       "claymorphism",
+      "minimalist",
       "pastel",
-      "matte",
-      "soft"
+      "isometric",
+      "cute"
     ],
     "removeBackground": true,
-    "createdAt": "2026-02-10T16:23:17.069Z"
+    "createdAt": "2026-02-10T16:23:17.069Z",
+    "background_prompt": "A soft, minimalist 3D abstract environment featuring smooth geometric shapes like spheres, rounded cubes, and flowing curves. The scene is rendered with a matte, clay-like texture in shades of {{primary_color}} and {{accent_color}}. Soft, diffuse lighting creates gentle gradients on the forms. The elements are arranged to frame a central empty space, set against a seamless {{background_color}} backdrop, creating a calm and playful atmosphere perfect for a product showcase.",
+    "supportImageReference": false
   },
   {
     "id": "corporate-outline",
