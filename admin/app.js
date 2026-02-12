@@ -265,7 +265,7 @@ async function handleSubmit(e) {
   const title = document.getElementById('form-title').value.trim();
   const description_en = document.getElementById('form-description-en').value.trim();
   const description_fr = document.getElementById('form-description-fr').value.trim();
-  const description = description_en;
+  const description = description_fr;
   const prompt = document.getElementById('form-prompt').value.trim();
   const background_prompt = document.getElementById('form-background-prompt').value.trim();
   const tagsRaw = document.getElementById('form-tags').value;
@@ -364,8 +364,8 @@ async function analyzeImage() {
     const data = await res.json();
 
     if (data.title) document.getElementById('form-title').value = data.title;
-    if (data.description_en) document.getElementById('form-description-en').value = data.description_en;
-    if (data.description_fr) document.getElementById('form-description-fr').value = data.description_fr;
+    document.getElementById('form-description-en').value = data.description_en || '';
+    document.getElementById('form-description-fr').value = data.description_fr || '';
     if (data.prompt) document.getElementById('form-prompt').value = data.prompt;
     if (data.background_prompt) document.getElementById('form-background-prompt').value = data.background_prompt;
     if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');

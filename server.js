@@ -82,7 +82,7 @@ app.post('/api/styles', (req, res) => {
   const style = {
     id,
     title,
-    description: description || description_fr || '',
+    description: description_fr || description || '',
     description_en: description_en || '',
     description_fr: description_fr || description || '',
     prompt: prompt || '',
