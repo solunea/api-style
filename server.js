@@ -41,8 +41,8 @@ function buildApi(styles) {
   if (!existsSync(API_DIR)) mkdirSync(API_DIR, { recursive: true });
   if (!existsSync(STYLES_DIR)) mkdirSync(STYLES_DIR, { recursive: true });
 
-  const index = styles.map(({ id, title, description, image, tags, removeBackground, createdAt }) => ({
-    id, title, description, image, tags, removeBackground: !!removeBackground, createdAt
+  const index = styles.map(({ id, title, description, description_en, description_fr, image, tags, removeBackground, createdAt }) => ({
+    id, title, description, description_en, description_fr, image, tags, removeBackground: !!removeBackground, createdAt
   }));
   writeFileSync(join(API_DIR, 'styles.json'), JSON.stringify(index, null, 2));
 
@@ -69,7 +69,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
+  const { title, description, description_en, description_fr, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -82,7 +82,9 @@ app.post('/api/styles', (req, res) => {
   const style = {
     id,
     title,
-    description: description || '',
+    description: description || description_fr || '',
+    description_en: description_en || '',
+    description_fr: description_fr || description || '',
     prompt: prompt || '',
     background_prompt: background_prompt || '',
     ...(variables && { variables }),
@@ -106,11 +108,13 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
+  const { title, description, description_en, description_fr, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
   styles[index] = {
     ...styles[index],
     ...(title !== undefined && { title }),
     ...(description !== undefined && { description }),
+    ...(description_en !== undefined && { description_en }),
+    ...(description_fr !== undefined && { description_fr }),
     ...(prompt !== undefined && { prompt }),
     ...(background_prompt !== undefined && { background_prompt }),
     ...(variables !== undefined && { variables }),
@@ -201,19 +205,35 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
     }
 
     const useImageRef = req.body && req.body.supportImageReference === 'true';
+    const useRemoveBg = req.body && req.body.removeBackground === 'true';
+
+    const bgColorIntro = useRemoveBg
+      ? ', and {{background_color}} for the background color on which the final image will be displayed (important for contrast and edge rendering when the background is removed)'
+      : '';
+
+    const bgColorVarsLabel = useRemoveBg ? ', {{accent_color}} and {{background_color}}' : ' and {{accent_color}}';
+
+    const bgColorPromptRule = useRemoveBg
+      ? ` Also use {{background_color}} in the prompt. IMPORTANT: {{background_color}} is the color of the surface on which the final image will be placed after background removal. You MUST reference {{background_color}} explicitly, for example: "set against a {{background_color}} background", or "composited on a clean {{background_color}} surface". Never hardcode a background color like "white background" — always use {{background_color}} instead.`
+      : '';
+
+    const bgColorBgPromptVars = useRemoveBg
+      ? '{{primary_color}}, {{accent_color}} and {{background_color}}'
+      : '{{primary_color}} and {{accent_color}}';
 
     const prompt = useImageRef
       ? `You are an expert prompt engineer specialized in AI image-to-image style transfer (Midjourney, Stable Diffusion, DALL-E, Flux).
 
 Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
 
-Then generate a high-quality style transfer prompt optimized for img2img workflows. The prompt must describe ONLY the visual style to apply — NOT the subject or content (the user will provide their own reference image). Focus on: rendering technique, color grading, texture quality, lighting mood, contrast, saturation, artistic medium, and visual effects. Use {{primary_color}} for the dominant color, {{accent_color}} for the accent color, and {{background_color}} for the background color on which the final image will be displayed (important for contrast and edge rendering when the background is removed). These variables allow the style to be adapted to any color theme.
+Then generate a high-quality style transfer prompt optimized for img2img workflows. The prompt must describe ONLY the visual style to apply — NOT the subject or content (the user will provide their own reference image). Focus on: rendering technique, color grading, texture quality, lighting mood, contrast, saturation, artistic medium, and visual effects. Use {{primary_color}} for the dominant color, {{accent_color}} for the accent color${bgColorIntro}. These variables allow the style to be adapted to any color theme.
 
 Return ONLY a valid JSON object with these fields:
 - "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
-- "description": describe what makes this style unique and recognizable (2-3 sentences, in French)
-- "prompt": a long, highly detailed English style transfer prompt (at least 80 words) that describes ONLY the visual style to apply to any input image. Do NOT describe a subject or scene — the user provides a reference image. Describe precisely: the rendering technique, artistic medium, color grading, texture quality, contrast levels, saturation, lighting mood, lens effects, atmosphere. Use {{primary_color}}, {{accent_color}} and {{background_color}} as color variables. {{background_color}} represents the color on which the final image will be composited after background removal — use it to ensure proper edge rendering, contrast, and visual harmony against the destination surface. End with comma-separated reinforcement tags (e.g. "style transfer, same composition, sharp focus, cinematic lighting, 8k, ultra detailed"). The prompt should be professional quality, ready to use in img2img or style reference mode.
-- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use {{primary_color}}, {{accent_color}} and {{background_color}} variables. Do NOT include any subject in this prompt, only the scene and environment.
+- "description_en": describe what makes this style unique and recognizable (2-3 sentences, in English)
+- "description_fr": the same description translated in French (2-3 sentences, in French)
+- "prompt": a long, highly detailed English style transfer prompt (at least 80 words) that describes ONLY the visual style to apply to any input image. Do NOT describe a subject or scene — the user provides a reference image. Describe precisely: the rendering technique, artistic medium, color grading, texture quality, contrast levels, saturation, lighting mood, lens effects, atmosphere. Use {{primary_color}}${bgColorVarsLabel} as color variables.${bgColorPromptRule} End with comma-separated reinforcement tags (e.g. "style transfer, same composition, sharp focus, cinematic lighting, 8k, ultra detailed"). The prompt should be professional quality, ready to use in img2img or style reference mode.
+- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use ${bgColorBgPromptVars} variables. Do NOT include any subject in this prompt, only the scene and environment.
 - "tags": an array of 3 to 6 relevant style tags (English, lowercase)
 
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`
@@ -221,13 +241,14 @@ Return ONLY the raw JSON. No markdown, no code fences, no extra text.`
 
 Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
 
-Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject, {{primary_color}} for the dominant color, {{accent_color}} for the accent color, and {{background_color}} for the background color on which the final image will be displayed (important for contrast and edge rendering when the background is removed). These variables allow the style to be applied universally with any color theme.
+Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject, {{primary_color}} for the dominant color, {{accent_color}} for the accent color${bgColorIntro}. These variables allow the style to be applied universally with any color theme.
 
 Return ONLY a valid JSON object with these fields:
 - "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
-- "description": describe what makes this style unique and recognizable (2-3 sentences, in French)
-- "prompt": a long, highly detailed English prompt (at least 80 words) that reproduces this exact visual style. Describe precisely: the lighting setup, color grading, texture quality, contrast levels, saturation, depth of field, lens effects, artistic rendering technique, atmosphere, mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color, {{accent_color}} for the accent color, and {{background_color}} for the background color on which the image will be composited after background removal — use it to ensure proper edge rendering, contrast, and visual harmony against the destination surface. You may also use {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a comma-separated list of reinforcement tags (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows") to strengthen the style interpretation. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
-- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use {{primary_color}}, {{accent_color}} and {{background_color}} variables. Do NOT include any subject in this prompt, only the scene and environment.
+- "description_en": describe what makes this style unique and recognizable (2-3 sentences, in English)
+- "description_fr": the same description translated in French (2-3 sentences, in French)
+- "prompt": a long, highly detailed English prompt (at least 80 words) that reproduces this exact visual style. Describe precisely: the lighting setup, color grading, texture quality, contrast levels, saturation, depth of field, lens effects, artistic rendering technique, atmosphere, mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color${bgColorVarsLabel} for the accent color.${bgColorPromptRule} You may also use {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a comma-separated list of reinforcement tags (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows") to strengthen the style interpretation. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
+- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use ${bgColorBgPromptVars} variables. Do NOT include any subject in this prompt, only the scene and environment.
 - "tags": an array of 3 to 6 relevant style tags (English, lowercase)
 
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
@@ -272,7 +293,8 @@ Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
     const parsed = JSON.parse(jsonStr);
     res.json({
       title: parsed.title || '',
-      description: parsed.description || '',
+      description_en: parsed.description_en || parsed.description || '',
+      description_fr: parsed.description_fr || '',
       prompt: parsed.prompt || '',
       background_prompt: parsed.background_prompt || '',
       tags: parsed.tags || [],

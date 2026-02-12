@@ -137,7 +137,7 @@ function renderStyles(styles) {
             <button class="btn-icon danger" onclick="openDeleteModal('${s.id}', '${esc(s.title)}')" title="Supprimer">🗑️</button>
           </div>
         </div>
-        ${s.description ? `<p class="card-description">${esc(s.description)}</p>` : ''}
+        ${(s.description_fr || s.description) ? `<p class="card-description">${esc(s.description_fr || s.description)}</p>` : ''}
         <div class="card-tags">
           ${(s.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
         </div>
@@ -158,7 +158,8 @@ function handleSearch(e) {
 
   const filtered = allStyles.filter((s) =>
     s.title.toLowerCase().includes(q) ||
-    (s.description || '').toLowerCase().includes(q) ||
+    (s.description_en || s.description || '').toLowerCase().includes(q) ||
+    (s.description_fr || '').toLowerCase().includes(q) ||
     (s.prompt || '').toLowerCase().includes(q) ||
     (s.tags || []).some((t) => t.toLowerCase().includes(q))
   );
@@ -186,7 +187,9 @@ function openModal(editId) {
     submitBtn.textContent = 'Enregistrer';
     document.getElementById('form-editing-id').value = style.id;
     document.getElementById('form-title').value = style.title;
-    document.getElementById('form-description').value = style.description || '';
+    document.getElementById('form-description-fr').value = style.description_fr || style.description || '';
+    document.getElementById('form-description-en').value = style.description_en || '';
+    switchDescLang('fr');
     document.getElementById('form-prompt').value = style.prompt || '';
     document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
@@ -210,6 +213,13 @@ function openModal(editId) {
 function closeModal(e) {
   if (e && e.target !== e.currentTarget) return;
   document.getElementById('modal-overlay').classList.remove('open');
+}
+
+function switchDescLang(lang) {
+  document.getElementById('form-description-en').style.display = lang === 'en' ? '' : 'none';
+  document.getElementById('form-description-fr').style.display = lang === 'fr' ? '' : 'none';
+  document.getElementById('desc-tab-en').classList.toggle('active', lang === 'en');
+  document.getElementById('desc-tab-fr').classList.toggle('active', lang === 'fr');
 }
 
 function switchImageTab(tab) {
@@ -253,7 +263,9 @@ async function handleSubmit(e) {
 
   const editingId = document.getElementById('form-editing-id').value;
   const title = document.getElementById('form-title').value.trim();
-  const description = document.getElementById('form-description').value.trim();
+  const description_en = document.getElementById('form-description-en').value.trim();
+  const description_fr = document.getElementById('form-description-fr').value.trim();
+  const description = description_en;
   const prompt = document.getElementById('form-prompt').value.trim();
   const background_prompt = document.getElementById('form-background-prompt').value.trim();
   const tagsRaw = document.getElementById('form-tags').value;
@@ -285,7 +297,7 @@ async function handleSubmit(e) {
     const variables = [...new Set(varMatches)];
     const removeBackground = document.getElementById('form-remove-bg').checked;
     const supportImageReference = document.getElementById('form-support-image-ref').checked;
-    const data = { title, description, prompt, background_prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground, supportImageReference };
+    const data = { title, description, description_en, description_fr, prompt, background_prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground, supportImageReference };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -328,16 +340,19 @@ async function analyzeImage() {
 
   try {
     const supportImageRef = document.getElementById('form-support-image-ref').checked;
+    const removeBg = document.getElementById('form-remove-bg').checked;
     let res;
     if (useExisting) {
       const formData = new FormData();
       formData.append('image_path', imageUrl);
       formData.append('supportImageReference', String(supportImageRef));
+      formData.append('removeBackground', String(removeBg));
       res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     } else {
       const formData = new FormData();
       formData.append('image', selectedFile);
       formData.append('supportImageReference', String(supportImageRef));
+      formData.append('removeBackground', String(removeBg));
       res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     }
 
@@ -349,7 +364,8 @@ async function analyzeImage() {
     const data = await res.json();
 
     if (data.title) document.getElementById('form-title').value = data.title;
-    if (data.description) document.getElementById('form-description').value = data.description;
+    if (data.description_en) document.getElementById('form-description-en').value = data.description_en;
+    if (data.description_fr) document.getElementById('form-description-fr').value = data.description_fr;
     if (data.prompt) document.getElementById('form-prompt').value = data.prompt;
     if (data.background_prompt) document.getElementById('form-background-prompt').value = data.background_prompt;
     if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');
