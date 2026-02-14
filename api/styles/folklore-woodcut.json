@@ -1,0 +1,27 @@
+{
+  "id": "folklore-woodcut",
+  "title": "Folklore Woodcut",
+  "description": "Ce style imite les gravures sur bois ou linogravures vintage utilisant une palette stricte de deux tons sur papier crème texturé. Il présente des hachures lourdes, des textures pointillées et une esthétique brute et tamponnée, typique des illustrations fantastiques du milieu du siècle et des vieilles cartes de tarot.",
+  "description_en": "This style emulates vintage woodblock or linocut prints using a strict two-tone color palette on textured cream paper. It features heavy hatching, stippling textures, and a rough, hand-stamped aesthetic typical of mid-century fantasy illustrations and old tarot cards.",
+  "description_fr": "Ce style imite les gravures sur bois ou linogravures vintage utilisant une palette stricte de deux tons sur papier crème texturé. Il présente des hachures lourdes, des textures pointillées et une esthétique brute et tamponnée, typique des illustrations fantastiques du milieu du siècle et des vieilles cartes de tarot.",
+  "prompt": "A vintage illustration of {{subject}} rendered in the style of a classic woodcut or linocut print. The artwork features a distinct, limited two-color ink process set against a textured, off-white cream paper background. The {{subject}} is depicted primarily in deep {{primary_color}} ink, utilizing heavy cross-hatching, etching lines, and stippling to define form and volume without smooth gradients. The surrounding environmental details, ground textures, or magical effects are accented with {{accent_color}} ink, creating a striking duotone contrast that separates the figure from the setting. The aesthetic is rough, tactile, and analog, mimicking the imperfections of a hand-pressed stamp or old offset risograph printing, with visible paper grain, slight ink bleed, and uneven coverage. The composition is flat with a focus on silhouette and line work rather than realistic depth. The lighting is implied solely through the density of the ink strokes, evoking the nostalgic feel of mid-20th-century fantasy paperback covers, ancient tarot decks, or medieval manuscripts. High contrast, sharp edges, no blur, illustrative style, ink on paper texture, engraved look, folk art influence, retro print aesthetic.",
+  "background_prompt": "A vintage textured background scene featuring rough terrain, foliage, or abstract nature patterns rendered in a woodcut print style. The environment is inked primarily in {{accent_color}} with touches of {{primary_color}} for deep shadows, set against a coarse cream paper texture. The image features heavy grain, stippling, and cross-hatching to suggest ground and vegetation without a central subject. Analog print imperfections, ink bleed, and a decorative, frame-like composition suitable for a backdrop.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/haec6aowsaag52z.jpg",
+  "preview_image": "images/preview-1771104818976.webp",
+  "tags": [
+    "woodcut",
+    "linocut",
+    "duotone",
+    "vintage illustration",
+    "risograph",
+    "engraving"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-14T21:33:46.992Z"
+}

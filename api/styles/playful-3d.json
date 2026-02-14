@@ -1,0 +1,27 @@
+{
+  "id": "playful-3d",
+  "title": "Playful 3D",
+  "description": "Un style de rendu de personnage 3D haut de gamme rappelant les studios d'animation modernes comme Pixar ou Illumination. Il présente des textures mates et douces, un éclairage de studio diffus avec diffusion sous-surface, et une esthétique propre aux dégradés pastel.",
+  "description_en": "A high-end 3D character rendering style reminiscent of modern feature animation studios like Pixar or Illumination. It features smooth matte textures, soft studio lighting with subsurface scattering, and a clean, pastel gradient aesthetic.",
+  "description_fr": "Un style de rendu de personnage 3D haut de gamme rappelant les studios d'animation modernes comme Pixar ou Illumination. Il présente des textures mates et douces, un éclairage de studio diffus avec diffusion sous-surface, et une esthétique propre aux dégradés pastel.",
+  "prompt": "A stunning, high-fidelity 3D character render of {{subject}} visualized in a premium animation style reminiscent of modern Pixar or Disney feature films. The rendering technique utilizes physically based rendering (PBR) with stylized, exaggerated proportions and soft, rounded edges to create a friendly and appealing aesthetic. The surface materials are exquisite, featuring smooth matte clay, soft high-quality cotton fabrics, or pristine vinyl textures in {{primary_color}}, accented by subtle details in {{accent_color}}. Apply heavy subsurface scattering (SSS) to skin or organic surfaces to create a warm, translucent, living glow, particularly around thin areas like ears or extremities. The lighting setup is a professional softbox studio arrangement: a large, diffuse key light provides even illumination, while a gentle rim light separates the subject from the background. The color palette is vibrant yet pastel, avoiding harsh contrasts. The camera uses a portrait lens (85mm equivalent) with a shallow depth of field, keeping the focus sharp on the eyes and face while blurring the edges. 3D render, cgi, cinema4d, octane render, redshift, unreal engine 5, 8k resolution, raytracing, global illumination, ambient occlusion, cartoon realism, cute, expressive, volumetric light, smooth shading, masterpiece, digital art.",
+  "background_prompt": "A clean, soft-focus studio backdrop featuring a smooth gradient transition. The background blends pastel tones of {{primary_color}} and {{accent_color}} into a creamy, neutral horizon. Minimalist and atmospheric, with a subtle vignette and soft ambient occlusion shadows to suggest a curved infinity wall or seamless paper background. No distinct objects, just pure color and light.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/haxv01ibaaayb77.jpg",
+  "preview_image": "images/preview-1771104969260.webp",
+  "tags": [
+    "3d render",
+    "pixar style",
+    "character design",
+    "cartoon",
+    "cgi",
+    "cute"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-14T21:36:25.982Z"
+}

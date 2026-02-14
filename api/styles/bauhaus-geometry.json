@@ -1,0 +1,27 @@
+{
+  "id": "bauhaus-geometry",
+  "title": "Bauhaus Geometry",
+  "description": "Ce style présente une esthétique minimaliste inspirée du Bauhaus où les sujets sont déconstruits en formes géométriques primitives audacieuses comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs plates à fort contraste avec des accents noirs sur un fond blanc cassé texturé, imitant l'aspect de la sérigraphie vintage ou de l'art vectoriel.",
+  "description_en": "This style features a minimalist Bauhaus-inspired aesthetic where subjects are deconstructed into bold geometric primitives like circles, triangles, and rectangles. It utilizes a flat, high-contrast color palette with black accents set against a textured off-white background, mimicking the look of vintage screen printing or vector art.",
+  "description_fr": "Ce style présente une esthétique minimaliste inspirée du Bauhaus où les sujets sont déconstruits en formes géométriques primitives audacieuses comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs plates à fort contraste avec des accents noirs sur un fond blanc cassé texturé, imitant l'aspect de la sérigraphie vintage ou de l'art vectoriel.",
+  "prompt": "A highly stylized, minimalist vector illustration of {{subject}} constructed entirely from bold geometric primitives. The visual language draws heavily from Bauhaus and Constructivism movements, reducing complex forms into simple arrangements of circles, triangles, and rectangles. The rendering is completely flat with zero depth, shading, or gradients. The color palette is strictly limited and high-contrast, utilizing large blocks of {{primary_color}} as the dominant tone, balanced by sharp geometric accents in {{accent_color}}, and anchored by solid black structural elements or thick lines. The composition is set against a plain, warm off-white or beige background that mimics the texture of heavy matte cardstock or vintage lithograph paper. There is a subtle, uniform grain overlay across the entire image to emulate a screen-printed aesthetic or riser print. The shapes interlock precisely like a tangram puzzle. The lines are sharp and precise, emphasizing structure and form over realistic detail. The overall mood is intellectual, modern, and graphically striking, focusing on the interplay of pure shape and color. No shadows, no perspective, pure 2D abstraction.",
+  "background_prompt": "A minimalist abstract background featuring arranged geometric primitives and architectural lines in a flat Bauhaus style. Scattered floating shapes including triangles, circles, and rectangles rendered in solid blocks of {{primary_color}} and {{accent_color}} alongside solid black structural bars. The composition is balanced and asymmetrical, set on a textured, warm beige or off-white paper background with a subtle screen-print grain. No central subject, just a decorative graphic pattern of pure geometry.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/g_v0edxauaack44.jpg",
+  "preview_image": "images/preview-1771105074562.webp",
+  "tags": [
+    "bauhaus",
+    "geometric",
+    "minimalist",
+    "flat design",
+    "constructivism",
+    "vector"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-14T21:38:22.504Z"
+}

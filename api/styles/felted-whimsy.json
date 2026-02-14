@@ -1,0 +1,27 @@
+{
+  "id": "felted-whimsy",
+  "title": "Felted Whimsy",
+  "description": "Ce style imite la texture tactile et duveteuse des sculptures en laine cardée (feutrage à l'aiguille) capturées par la macrophotographie. Il présente des palettes de couleurs pastel douces, des formes arrondies adorables et une profondeur de champ extrêmement faible qui met en valeur les détails fibreux du matériau tout en floutant l'arrière-plan dans une douceur onirique.",
+  "description_en": "This style imitates the tactile, fuzzy texture of handcrafted needle-felted wool sculptures captured through macro photography. It features soft pastel color palettes, adorable rounded shapes, and an extremely shallow depth of field that emphasizes the fibrous material details while blurring the background into a dreamy softness.",
+  "description_fr": "Ce style imite la texture tactile et duveteuse des sculptures en laine cardée (feutrage à l'aiguille) capturées par la macrophotographie. Il présente des palettes de couleurs pastel douces, des formes arrondies adorables et une profondeur de champ extrêmement faible qui met en valeur les détails fibreux du matériau tout en floutant l'arrière-plan dans une douceur onirique.",
+  "prompt": "A hyper-realistic macro photograph of a handcrafted needle-felted wool masterpiece featuring {{subject}}. The image captures the exquisite tactile nature of the medium, showcasing visible stray wool fibers, matted textures, and the soft, fuzzy surface of the felted material. The {{subject}} is rendered with rounded, simplified forms and a charming, innocent aesthetic reminiscent of high-quality stop-motion animation puppets or artisanal soft sculptures. The color palette is dominated by gentle hues of {{primary_color}}, creating a soothing and airy base, while details in {{accent_color}} add warmth and visual interest without breaking the softness. The lighting is high-key, bright, and diffuse, mimicking a softbox studio setup that eliminates harsh shadows and bathes the scene in a gentle glow. The composition employs a tilt-shift lens effect with an extremely shallow depth of field, keeping the main subject in razor-sharp focus to highlight the fabric grain, while the foreground and background dissolve into a creamy, heavy bokeh blur. The atmosphere is cozy, whimsical, and heartwarming, evoking the feeling of a miniature handmade world. no perspective, sharp focus on texture, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic, craftcore, fibrous texture, wool grain, miniature photography, diorama style.",
+  "background_prompt": "A blurred, soft-focus environment resembling a miniature landscape made entirely of needle-felted wool. Rolling hills and abstract organic shapes crafted from fuzzy, matted fibers in shades of {{primary_color}} and {{accent_color}} create a plush, dreamlike setting. The texture is visibly fibrous and soft, with stray wool hairs catching the light. Large, rounded forms suggest soft clouds or vegetation in the distance, rendered with heavy bokeh and tilt-shift blur to create a sense of tiny scale. The lighting is bright, airy, and cheerful, perfect for a backdrop behind a miniature subject or a fuzzy foreground frame.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/g_o1exrboaa5n_d.jpg",
+  "preview_image": "images/preview-1771105153551.webp",
+  "tags": [
+    "needle felting",
+    "wool texture",
+    "macro photography",
+    "cute",
+    "craftcore",
+    "soft focus"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-14T21:39:17.824Z"
+}
