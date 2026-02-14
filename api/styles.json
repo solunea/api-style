@@ -63,6 +63,7 @@
     "description_en": "This style features sophisticated continuous line art with fluid black contours and subtle watercolor accents. It utilizes negative space and textured paper effects for a modern, elegant, and minimalist aesthetic.",
     "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste.",
     "image": "images/g_blh8hbyaajtnp.jpg",
+    "preview_image": "",
     "tags": [
       "line art",
       "minimalist",
@@ -81,6 +82,7 @@
     "description_en": "A minimal 3D rendering style featuring smooth, matte textures reminiscent of soft plastic or refined clay. It utilizes pastel color palettes, diffuse studio lighting, and rounded geometry to create a clean, tactile, and comforting aesthetic.",
     "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
     "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
+    "preview_image": "",
     "tags": [
       "3d render",
       "claymorphism",
@@ -116,6 +118,7 @@
     "title": "Risograph Spotlight",
     "description": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
     "image": "images/ffd2d063ffed34950f43897583e6c0a1.jpg",
+    "preview_image": "",
     "tags": [
       "risograph",
       "flat illustration",
@@ -132,6 +135,7 @@
     "title": "Spotlight Lineart",
     "description": "",
     "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
+    "preview_image": "",
     "tags": [
       "isometric",
       "line art",
@@ -148,6 +152,7 @@
     "title": "Shadow Studio",
     "description": "Ce style capture l'essence de la photographie de produit minimaliste avec un éclairage solaire dur et direct qui crée des ombres géométriques tranchées. L'atmosphère est propre, moderne et réaliste, mettant en valeur le sujet par un jeu de contrastes forts entre la lumière vive et les zones d'ombre profondes.",
     "image": "images/mllfll-083-1-millefeuille-mockup.jpg",
+    "preview_image": "",
     "tags": [
       "hard lighting",
       "minimalism",
