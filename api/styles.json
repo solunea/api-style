@@ -6,7 +6,7 @@
     "description_en": "A charming illustration style that mimics traditional dry media like colored pencils, wax crayons, and gouache on rough paper. It features naive perspectives, organic shapes, and a highly tactile, grainy texture that evokes a cozy, storybook atmosphere.",
     "description_fr": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
     "image": "images/g__6vlgwoaamdym.jpg",
-    "preview_image": "",
+    "preview_image": "images/preview-1771075469997.webp",
     "tags": [
       "illustration",
       "textured",
@@ -25,6 +25,7 @@
     "description_en": "",
     "description_fr": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
     "image": "images/hatijpwaeaa5f-g.jpg",
+    "preview_image": "images/preview-1771075512299.webp",
     "tags": [
       "doodle",
       "illustration",
@@ -40,7 +41,10 @@
     "id": "vibrant-vector",
     "title": "Modern Vector",
     "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
+    "description_en": "",
+    "description_fr": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
     "image": "images/g_shmfdxoaa8jyb.jpg",
+    "preview_image": "images/preview-1771075533367.webp",
     "tags": [
       "flat design",
       "vector art",

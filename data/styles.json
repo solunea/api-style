@@ -25,7 +25,7 @@
     "description_en": "A charming illustration style that mimics traditional dry media like colored pencils, wax crayons, and gouache on rough paper. It features naive perspectives, organic shapes, and a highly tactile, grainy texture that evokes a cozy, storybook atmosphere.",
     "description_fr": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
     "supportImageReference": false,
-    "preview_image": ""
+    "preview_image": "images/preview-1771075469997.webp"
   },
   {
     "id": "doodle-pop",
@@ -51,7 +51,8 @@
     "background_prompt": "A creative pattern of hand-drawn doodle elements and abstract shapes scattered across a neutral background. The scene features bold black and white striped geometric blocks, oversized stylized organic leaves, and playful scribble marks like spirals, asterisks, and motion lines. Scattered handwritten typography fragments and empty speech bubbles add texture to the environment. The design uses flat fills of {{primary_color}} and sharp hits of {{accent_color}} to create a vibrant, chaotic yet balanced framing device or wallpaper texture, completely void of any central character.",
     "description_en": "",
     "description_fr": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
-    "supportImageReference": false
+    "supportImageReference": false,
+    "preview_image": "images/preview-1771075512299.webp"
   },
   {
     "id": "vibrant-vector",
@@ -73,7 +74,12 @@
       "geometric"
     ],
     "removeBackground": false,
-    "createdAt": "2026-02-10T15:52:37.052Z"
+    "createdAt": "2026-02-10T15:52:37.052Z",
+    "description_en": "",
+    "description_fr": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
+    "background_prompt": "",
+    "preview_image": "images/preview-1771075533367.webp",
+    "supportImageReference": false
   },
   {
     "id": "linear-elegance",

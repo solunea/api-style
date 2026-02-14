@@ -447,7 +447,26 @@ app.post('/api/generate-preview', async (req, res) => {
     const destPath = join(IMAGES_DIR, filename);
     writeFileSync(destPath, buffer);
 
-    res.json({ url: `images/${filename}` });
+    const previewUrl = `images/${filename}`;
+
+    // Auto-save preview_image on the style if style_id is provided
+    if (req.body.style_id) {
+      const styles = readStyles();
+      const idx = styles.findIndex((s) => s.id === req.body.style_id);
+      if (idx !== -1) {
+        // Delete old preview file
+        const oldPreview = styles[idx].preview_image;
+        if (oldPreview && oldPreview.startsWith('images/preview-')) {
+          const oldPath = join(__dirname, oldPreview);
+          if (existsSync(oldPath)) unlinkSync(oldPath);
+        }
+        styles[idx].preview_image = previewUrl;
+        writeStyles(styles);
+        buildApi(styles);
+      }
+    }
+
+    res.json({ url: previewUrl });
   } catch (err) {
     console.error('Generate preview error:', err);
     res.status(500).json({ error: `Erreur de génération : ${err.message}` });

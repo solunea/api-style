@@ -459,6 +459,7 @@ async function generatePreview() {
   const container = document.getElementById('preview-container');
   const supportImageRef = document.getElementById('form-support-image-ref').checked;
   const referenceImage = localStorage.getItem('preview-ref-image') || '';
+  const styleId = document.getElementById('form-editing-id').value;
 
   btn.disabled = true;
   btn.innerHTML = '<span class="spinner"></span> Génération...';
@@ -470,6 +471,7 @@ async function generatePreview() {
   try {
     const body = { prompt, supportImageReference: supportImageRef, mode };
     if (referenceImage) body.reference_image = referenceImage;
+    if (styleId) body.style_id = styleId;
 
     const res = await fetch(`${API}/api/generate-preview`, {
       method: 'POST',
@@ -485,8 +487,9 @@ async function generatePreview() {
     const data = await res.json();
     const img = document.getElementById('preview-image');
     img.src = data.url;
+    document.getElementById('form-preview-image').value = data.url;
     container.style.display = '';
-    showToast('Aperçu généré avec succès', 'success');
+    showToast('Aperçu généré et enregistré', 'success');
   } catch (err) {
     showToast(err.message, 'error');
   } finally {
