@@ -135,7 +135,10 @@
                 <button type="button" class="btn btn-ai" id="analyze-btn" onclick="analyzeImage()" style="display:none">🤖 Auto-remplir avec IA</button>
               </div>
               <div id="tab-url" class="tab-content" style="display:none">
-                <input type="text" id="form-image-url" placeholder="https://arweave.net/...">
+                <input type="text" id="form-image-url" placeholder="https://arweave.net/..." oninput="updateUrlPreview()">
+                <div id="url-image-preview" class="url-image-preview" style="display:none">
+                  <img src="" alt="Preview" onerror="this.parentElement.style.display='none'">
+                </div>
                 <input type="hidden" id="form-preview-image" value="">
                 <button type="button" class="btn btn-ai" id="analyze-url-btn" onclick="analyzeImage()" style="display:none;margin-top:8px">🤖 Auto-remplir avec IA</button>
               </div>

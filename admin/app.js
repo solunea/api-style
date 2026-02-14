@@ -212,6 +212,7 @@ function openModal(editId) {
     if (style.image) {
       switchImageTab('url');
       document.getElementById('form-image-url').value = style.image;
+      updateUrlPreview();
       if (style.image.startsWith('images/')) {
         document.getElementById('analyze-url-btn').style.display = '';
       }
@@ -243,6 +244,20 @@ function switchImageTab(tab) {
   document.getElementById('tab-url').style.display = tab === 'url' ? '' : 'none';
   event.target ? event.target.classList.add('active') :
     document.querySelector(`.tab:${tab === 'upload' ? 'first' : 'last'}-child`).classList.add('active');
+  if (tab === 'url') updateUrlPreview();
+}
+
+function updateUrlPreview() {
+  const url = document.getElementById('form-image-url').value.trim();
+  const preview = document.getElementById('url-image-preview');
+  const img = preview.querySelector('img');
+  if (url) {
+    img.src = url;
+    preview.style.display = '';
+  } else {
+    preview.style.display = 'none';
+    img.src = '';
+  }
 }
 
 let selectedFile = null;

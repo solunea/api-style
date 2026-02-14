@@ -548,14 +548,14 @@ main {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   width: 100%;
-  max-width: 540px;
-  max-height: 90vh;
+  max-width: 800px;
+  max-height: 95vh;
   overflow-y: auto;
   box-shadow: 0 24px 48px rgba(0,0,0,0.4);
 }
 
 .modal-sm {
-  max-width: 400px;
+  max-width: 480px;
 }
 
 .modal-header {
@@ -735,6 +735,21 @@ main {
 }
 
 .upload-preview img {
+  max-width: 100%;
+  max-height: 120px;
+  border-radius: var(--radius-sm);
+}
+
+.url-image-preview {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.url-image-preview img {
   max-width: 100%;
   max-height: 120px;
   border-radius: var(--radius-sm);
