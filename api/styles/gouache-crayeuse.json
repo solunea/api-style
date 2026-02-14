@@ -23,5 +23,6 @@
   "background_prompt": "A detailed background scene depicting a cozy, creative environment or textured pattern without any central subject. The style mimics dry gouache and colored pencil on grainy paper, featuring elements like pinned art prints, potted plants, or abstract organic shapes. The colors are warm and earthy, utilizing shades of {{primary_color}} and {{accent_color}} to create a cluttered but harmonious backdrop. The texture is heavy and scratchy, with visible stroke marks and a matte finish, all composed on a {{background_color}} canvas to frame the scene.",
   "description_en": "A charming illustration style that mimics traditional dry media like colored pencils, wax crayons, and gouache on rough paper. It features naive perspectives, organic shapes, and a highly tactile, grainy texture that evokes a cozy, storybook atmosphere.",
   "description_fr": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
-  "supportImageReference": false
+  "supportImageReference": false,
+  "preview_image": ""
 }

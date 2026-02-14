@@ -133,10 +133,12 @@ function renderStyles(styles) {
   grid.style.display = '';
   empty.style.display = 'none';
 
-  grid.innerHTML = styles.map((s) => `
+  grid.innerHTML = styles.map((s) => {
+    const displayImage = s.preview_image || s.image;
+    return `
     <div class="style-card" data-id="${s.id}">
-      ${s.image
-        ? `<img class="card-image" src="${s.image}" alt="${s.title}" onerror="this.outerHTML='<div class=\\'card-image-placeholder\\'>🎨</div>'">`
+      ${displayImage
+        ? `<img class="card-image" src="${displayImage}" alt="${s.title}" onerror="this.outerHTML='<div class=\'card-image-placeholder\'>🎨</div>'">`
         : '<div class="card-image-placeholder">🎨</div>'}
       <div class="card-body">
         <div class="card-header">
@@ -152,7 +154,7 @@ function renderStyles(styles) {
         </div>
       </div>
     </div>
-  `).join('');
+  `;}).join('');
 }
 
 function updateStats() {
