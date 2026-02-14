@@ -57,25 +57,6 @@
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
   {
-    "id": "linear-elegance",
-    "title": "Minimalist Contour",
-    "description": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste.",
-    "description_en": "This style features sophisticated continuous line art with fluid black contours and subtle watercolor accents. It utilizes negative space and textured paper effects for a modern, elegant, and minimalist aesthetic.",
-    "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste.",
-    "image": "images/g_blh8hbyaajtnp.jpg",
-    "preview_image": "images/preview-1771076185755.webp",
-    "tags": [
-      "line art",
-      "minimalist",
-      "continuous line",
-      "contour drawing",
-      "watercolor",
-      "elegant"
-    ],
-    "removeBackground": true,
-    "createdAt": "2026-02-10T15:54:45.706Z"
-  },
-  {
     "id": "pastel-clay",
     "title": "Soft Clay",
     "description": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
@@ -167,5 +148,24 @@
     ],
     "removeBackground": false,
     "createdAt": "2026-02-12T07:56:16.160Z"
+  },
+  {
+    "id": "risograph-folk",
+    "title": "Risograph Folk",
+    "description": "Un style d'illustration texturé et audacieux imitant la risographie ou la linogravure avec une palette limitée et du bruit granuleux. Il présente des sujets plats et stylisés ornés de motifs primitifs et entourés de glyphes abstraits ressemblant à de la calligraphie.",
+    "description_en": "A bold, textured illustration style mimicking risograph or block printing with a limited color palette and grainy noise. It features flat, stylized subjects adorned with primitive patterns and surrounded by abstract, calligraphy-like glyphs.",
+    "description_fr": "Un style d'illustration texturé et audacieux imitant la risographie ou la linogravure avec une palette limitée et du bruit granuleux. Il présente des sujets plats et stylisés ornés de motifs primitifs et entourés de glyphes abstraits ressemblant à de la calligraphie.",
+    "image": "images/g_lqwptweaaztt8.jpg",
+    "preview_image": "images/preview-1771104163515.webp",
+    "tags": [
+      "risograph",
+      "block print",
+      "folk art",
+      "textured illustration",
+      "flat design",
+      "screen print"
+    ],
+    "removeBackground": false,
+    "createdAt": "2026-02-14T21:22:51.245Z"
   }
 ]

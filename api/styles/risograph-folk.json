@@ -1,0 +1,28 @@
+{
+  "id": "risograph-folk",
+  "title": "Risograph Folk",
+  "description": "Un style d'illustration texturé et audacieux imitant la risographie ou la linogravure avec une palette limitée et du bruit granuleux. Il présente des sujets plats et stylisés ornés de motifs primitifs et entourés de glyphes abstraits ressemblant à de la calligraphie.",
+  "description_en": "A bold, textured illustration style mimicking risograph or block printing with a limited color palette and grainy noise. It features flat, stylized subjects adorned with primitive patterns and surrounded by abstract, calligraphy-like glyphs.",
+  "description_fr": "Un style d'illustration texturé et audacieux imitant la risographie ou la linogravure avec une palette limitée et du bruit granuleux. Il présente des sujets plats et stylisés ornés de motifs primitifs et entourés de glyphes abstraits ressemblant à de la calligraphie.",
+  "prompt": "A striking, poster-style flat illustration of {{subject}} rendered in a textured risograph and linocut aesthetic. The visual style combines contemporary graphic design with primitive folk art, featuring bold, confident linework and rough, organic edges. The color palette is strictly limited, dominated by a vibrant {{primary_color}} background and structural elements, contrasted with {{accent_color}} for key details and patterns, creating a high-impact visual pop. The surface texture is heavily stylized to resemble coarse paper stock or screen printing, complete with stippling, speckled noise, ink bleed, and slight misregistration effects that add a handmade, tactile quality. The subject is adorned with eclectic, doodle-like tattoos, tribal markings, and geometric shapes. Surrounding the main figure are floating abstract glyphs, faux-calligraphy characters, and loose brushstrokes in white and contrasting tones. The composition is flat with no depth of field, emphasizing the graphic shapes and the raw, expressive nature of the medium. {{lighting}}.",
+  "background_prompt": "A textured, flat background in a dominant {{primary_color}} hue, heavily treated with a grainy, speckled noise texture resembling rough paper or a risograph print. The scene is filled with floating, abstract white and {{accent_color}} glyphs, faux-calligraphy symbols, and rough, hand-painted brushstrokes that act as a decorative frame. The aesthetic is graphic and two-dimensional, focusing on the interplay of negative space and primitive, block-print style markings.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "lighting"
+  ],
+  "image": "images/g_lqwptweaaztt8.jpg",
+  "preview_image": "images/preview-1771104163515.webp",
+  "tags": [
+    "risograph",
+    "block print",
+    "folk art",
+    "textured illustration",
+    "flat design",
+    "screen print"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-14T21:22:51.245Z"
+}
