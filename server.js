@@ -41,8 +41,17 @@ function buildApi(styles) {
   if (!existsSync(API_DIR)) mkdirSync(API_DIR, { recursive: true });
   if (!existsSync(STYLES_DIR)) mkdirSync(STYLES_DIR, { recursive: true });
 
-  const index = styles.map(({ id, title, description, description_en, description_fr, image, preview_image, tags, removeBackground, createdAt }) => ({
-    id, title, description, description_en, description_fr, image, preview_image, tags, removeBackground: !!removeBackground, createdAt
+  const index = styles.map((s) => ({
+    id: s.id,
+    title: s.title,
+    description: s.description,
+    description_en: s.description_en,
+    description_fr: s.description_fr,
+    image: s.image,
+    preview_image: s.preview_image || '',
+    tags: s.tags,
+    removeBackground: !!s.removeBackground,
+    createdAt: s.createdAt
   }));
   writeFileSync(join(API_DIR, 'styles.json'), JSON.stringify(index, null, 2));
 
