@@ -18,5 +18,10 @@
     "textured"
   ],
   "removeBackground": false,
-  "createdAt": "2026-02-10T16:27:43.841Z"
+  "createdAt": "2026-02-10T16:27:43.841Z",
+  "preview_image": "images/preview-1771076139799.webp",
+  "description_en": "",
+  "description_fr": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
+  "background_prompt": "",
+  "supportImageReference": false
 }

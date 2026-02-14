@@ -21,5 +21,8 @@
   "removeBackground": true,
   "createdAt": "2026-02-10T16:29:06.811Z",
   "background_prompt": "A textured vintage paper surface featuring a geometric conical spotlight beam descending from the top center in {{accent_color}}. The beam casts a defined circular pool of flat color on the ground plane, meant to highlight a central element. The surrounding area is composed of negative space with subtle paper grain, faint speckles, and minimal {{primary_color}} texture marks, all set against a {{background_color}} backdrop.",
-  "supportImageReference": false
+  "supportImageReference": false,
+  "preview_image": "images/preview-1771076160839.webp",
+  "description_en": "",
+  "description_fr": ""
 }

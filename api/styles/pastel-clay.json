@@ -23,5 +23,6 @@
   "background_prompt": "A minimal, seamless 3D studio environment featuring a smooth infinite backdrop in {{background_color}}. The space is illuminated by soft, diffuse global illumination that creates gentle gradients across the curved surface. Subtle, abstract geometric primitives (spheres, cubes, or cylinders) in soft shades of {{primary_color}} and {{accent_color}} are placed in the periphery or blurred in the distance to add depth without distracting from the center. The floor has a matte texture that catches soft, directional shadows.",
   "supportImageReference": false,
   "description_en": "A minimal 3D rendering style featuring smooth, matte textures reminiscent of soft plastic or refined clay. It utilizes pastel color palettes, diffuse studio lighting, and rounded geometry to create a clean, tactile, and comforting aesthetic.",
-  "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante."
+  "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
+  "preview_image": "images/preview-1771076200955.webp"
 }

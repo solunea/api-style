@@ -23,5 +23,6 @@
   "background_prompt": "A macro close-up of high-quality textured art paper in a shade of {{background_color}}. The surface exhibits a subtle, organic grain similar to cold-press watercolor paper or heavy cardstock. Faint, abstract watercolor washes or ink splatters in {{accent_color}} and {{primary_color}} frame the edges gently, leaving the center open and clean. The lighting is soft and even, highlighting the tactile quality of the paper fiber without creating harsh shadows. Minimalist, artistic stationery background.",
   "supportImageReference": false,
   "description_en": "This style features sophisticated continuous line art with fluid black contours and subtle watercolor accents. It utilizes negative space and textured paper effects for a modern, elegant, and minimalist aesthetic.",
-  "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste."
+  "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste.",
+  "preview_image": "images/preview-1771076185755.webp"
 }

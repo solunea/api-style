@@ -106,7 +106,8 @@
     "background_prompt": "A macro close-up of high-quality textured art paper in a shade of {{background_color}}. The surface exhibits a subtle, organic grain similar to cold-press watercolor paper or heavy cardstock. Faint, abstract watercolor washes or ink splatters in {{accent_color}} and {{primary_color}} frame the edges gently, leaving the center open and clean. The lighting is soft and even, highlighting the tactile quality of the paper fiber without creating harsh shadows. Minimalist, artistic stationery background.",
     "supportImageReference": false,
     "description_en": "This style features sophisticated continuous line art with fluid black contours and subtle watercolor accents. It utilizes negative space and textured paper effects for a modern, elegant, and minimalist aesthetic.",
-    "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste."
+    "description_fr": "Ce style présente un art linéaire continu sophistiqué avec des contours noirs fluides et de subtiles touches d'aquarelle. Il utilise l'espace négatif et des effets de papier texturé pour une esthétique moderne, élégante et minimaliste.",
+    "preview_image": "images/preview-1771076185755.webp"
   },
   {
     "id": "pastel-clay",
@@ -133,7 +134,8 @@
     "background_prompt": "A minimal, seamless 3D studio environment featuring a smooth infinite backdrop in {{background_color}}. The space is illuminated by soft, diffuse global illumination that creates gentle gradients across the curved surface. Subtle, abstract geometric primitives (spheres, cubes, or cylinders) in soft shades of {{primary_color}} and {{accent_color}} are placed in the periphery or blurred in the distance to add depth without distracting from the center. The floor has a matte texture that catches soft, directional shadows.",
     "supportImageReference": false,
     "description_en": "A minimal 3D rendering style featuring smooth, matte textures reminiscent of soft plastic or refined clay. It utilizes pastel color palettes, diffuse studio lighting, and rounded geometry to create a clean, tactile, and comforting aesthetic.",
-    "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante."
+    "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
+    "preview_image": "images/preview-1771076200955.webp"
   },
   {
     "id": "corporate-outline",
@@ -182,7 +184,12 @@
       "textured"
     ],
     "removeBackground": false,
-    "createdAt": "2026-02-10T16:27:43.841Z"
+    "createdAt": "2026-02-10T16:27:43.841Z",
+    "preview_image": "images/preview-1771076139799.webp",
+    "description_en": "",
+    "description_fr": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
+    "background_prompt": "",
+    "supportImageReference": false
   },
   {
     "id": "spotlight-schematic",
@@ -207,7 +214,10 @@
     "removeBackground": true,
     "createdAt": "2026-02-10T16:29:06.811Z",
     "background_prompt": "A textured vintage paper surface featuring a geometric conical spotlight beam descending from the top center in {{accent_color}}. The beam casts a defined circular pool of flat color on the ground plane, meant to highlight a central element. The surrounding area is composed of negative space with subtle paper grain, faint speckles, and minimal {{primary_color}} texture marks, all set against a {{background_color}} backdrop.",
-    "supportImageReference": false
+    "supportImageReference": false,
+    "preview_image": "images/preview-1771076160839.webp",
+    "description_en": "",
+    "description_fr": ""
   },
   {
     "id": "shadow-studio",
