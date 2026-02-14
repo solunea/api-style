@@ -173,11 +173,11 @@
   {
     "id": "bauhaus-geometry",
     "title": "Bauhaus Geometry",
-    "description": "Ce style présente une esthétique minimaliste inspirée du Bauhaus où les sujets sont déconstruits en formes géométriques primitives audacieuses comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs plates à fort contraste avec des accents noirs sur un fond blanc cassé texturé, imitant l'aspect de la sérigraphie vintage ou de l'art vectoriel.",
-    "description_en": "This style features a minimalist Bauhaus-inspired aesthetic where subjects are deconstructed into bold geometric primitives like circles, triangles, and rectangles. It utilizes a flat, high-contrast color palette with black accents set against a textured off-white background, mimicking the look of vintage screen printing or vector art.",
-    "description_fr": "Ce style présente une esthétique minimaliste inspirée du Bauhaus où les sujets sont déconstruits en formes géométriques primitives audacieuses comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs plates à fort contraste avec des accents noirs sur un fond blanc cassé texturé, imitant l'aspect de la sérigraphie vintage ou de l'art vectoriel.",
+    "description": "Ce style présente une esthétique minimaliste et plate inspirée des mouvements Bauhaus et Constructiviste, caractérisée par la réduction de sujets complexes en formes géométriques fondamentales comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs audacieuse et limitée avec des blocs de couleur unis, des bords nets et une absence de dégradés ou d'ombrages, souvent recouverts d'une subtile texture de papier vintage.",
+    "description_en": "This style features a minimalist, flat aesthetic inspired by the Bauhaus and Constructivist movements, characterized by reducing complex subjects into fundamental geometric shapes like circles, triangles, and rectangles. It utilizes a bold, limited color palette with solid blocks of color, sharp edges, and a lack of gradients or shading, often overlaid with a subtle vintage paper texture.",
+    "description_fr": "Ce style présente une esthétique minimaliste et plate inspirée des mouvements Bauhaus et Constructiviste, caractérisée par la réduction de sujets complexes en formes géométriques fondamentales comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs audacieuse et limitée avec des blocs de couleur unis, des bords nets et une absence de dégradés ou d'ombrages, souvent recouverts d'une subtile texture de papier vintage.",
     "image": "images/g_v0edxauaack44.jpg",
-    "preview_image": "images/preview-1771105074562.webp",
+    "preview_image": "images/preview-1771105753645.webp",
     "tags": [
       "bauhaus",
       "geometric",
@@ -186,7 +186,7 @@
       "constructivism",
       "vector"
     ],
-    "removeBackground": false,
+    "removeBackground": true,
     "createdAt": "2026-02-14T21:38:22.504Z"
   },
   {
