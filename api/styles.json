@@ -226,5 +226,24 @@
     ],
     "removeBackground": false,
     "createdAt": "2026-02-14T21:40:48.938Z"
+  },
+  {
+    "id": "textured-riso",
+    "title": "Textured Riso",
+    "description": "Un style d'illustration contemporain audacieux qui mélange des formes vectorielles géométriques plates avec des textures de pinceau sec et un grain risographique. Il présente une palette de couleurs limitée et très contrastée avec des formes abstraites et des détails griffonnés sur un fond couleur crème.",
+    "description_en": "A bold contemporary illustration style that blends flat geometric vector shapes with rough, dry-brush textures and risograph grain. It features a limited, high-contrast color palette with abstract forms and squiggly details on a cream-colored background.",
+    "description_fr": "Un style d'illustration contemporain audacieux qui mélange des formes vectorielles géométriques plates avec des textures de pinceau sec et un grain risographique. Il présente une palette de couleurs limitée et très contrastée avec des formes abstraites et des détails griffonnés sur un fond couleur crème.",
+    "image": "images/370bf13127fd26952d309ce97e9cb311.jpg",
+    "preview_image": "images/preview-1771105514124.webp",
+    "tags": [
+      "risograph",
+      "editorial illustration",
+      "flat design",
+      "textured",
+      "abstract",
+      "pop art"
+    ],
+    "removeBackground": false,
+    "createdAt": "2026-02-14T21:45:30.360Z"
   }
 ]

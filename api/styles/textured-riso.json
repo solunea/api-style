@@ -1,0 +1,27 @@
+{
+  "id": "textured-riso",
+  "title": "Textured Riso",
+  "description": "Un style d'illustration contemporain audacieux qui mélange des formes vectorielles géométriques plates avec des textures de pinceau sec et un grain risographique. Il présente une palette de couleurs limitée et très contrastée avec des formes abstraites et des détails griffonnés sur un fond couleur crème.",
+  "description_en": "A bold contemporary illustration style that blends flat geometric vector shapes with rough, dry-brush textures and risograph grain. It features a limited, high-contrast color palette with abstract forms and squiggly details on a cream-colored background.",
+  "description_fr": "Un style d'illustration contemporain audacieux qui mélange des formes vectorielles géométriques plates avec des textures de pinceau sec et un grain risographique. Il présente une palette de couleurs limitée et très contrastée avec des formes abstraites et des détails griffonnés sur un fond couleur crème.",
+  "prompt": "A striking, avant-garde editorial illustration of {{subject}} rendered in a textured risograph and screen-print style. The artwork is defined by a mix of flat, geometric abstraction and organic, rough-edged textures. The subject is constructed using bold blocks of solid color rather than realistic shading, utilizing a limited palette where {{primary_color}} dominates the main forms and {{accent_color}} provides vibrant, contrasting highlights. The rendering mimics the look of dry pastel or chalk on paper, with jagged, dry-brush edges on black silhouettes and thick, squiggly lines adding playful details. There are no smooth gradients; instead, depth is suggested through hard-edged color separation and overlapping shapes. The texture is grainy and noisy, resembling a high-quality analogue print on matte surface. The background is a solid, warm off-white or cream color that maximizes the contrast of the bold figures. The overall aesthetic is minimalist yet expressive, combining elements of cubism with modern graphic design. artistic, flat design, screen print aesthetic, chalk texture, noise overlay, abstract features, bold graphic lines, high contrast, 8k resolution, vector style with texture.",
+  "background_prompt": "A minimalist abstract composition featuring rough, dry-brush textures and geometric shapes on a cream-colored paper background. The scene uses bold blocks of {{primary_color}} and {{accent_color}} arranged in a flat, screen-print style. Scattered black squiggly lines and chalky textures create a decorative frame. High-contrast risograph grain, artistic noise, negative space, avant-garde pattern, matte finish.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/370bf13127fd26952d309ce97e9cb311.jpg",
+  "preview_image": "images/preview-1771105514124.webp",
+  "tags": [
+    "risograph",
+    "editorial illustration",
+    "flat design",
+    "textured",
+    "abstract",
+    "pop art"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-14T21:45:30.360Z"
+}
