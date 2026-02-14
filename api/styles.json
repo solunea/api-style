@@ -21,6 +21,8 @@
     "id": "doodle-pop",
     "title": "Doodle Pop",
     "description": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
+    "description_en": "",
+    "description_fr": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
     "image": "images/hatijpwaeaa5f-g.jpg",
     "tags": [
       "doodle",
@@ -30,7 +32,7 @@
       "playful",
       "vector"
     ],
-    "removeBackground": true,
+    "removeBackground": false,
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
