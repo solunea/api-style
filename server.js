@@ -2,7 +2,7 @@ import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import multer from 'multer';
-import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync, copyFileSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync, copyFileSync, readdirSync, statSync } from 'fs';
 import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
@@ -41,8 +41,8 @@ function buildApi(styles) {
   if (!existsSync(API_DIR)) mkdirSync(API_DIR, { recursive: true });
   if (!existsSync(STYLES_DIR)) mkdirSync(STYLES_DIR, { recursive: true });
 
-  const index = styles.map(({ id, title, description, description_en, description_fr, image, tags, removeBackground, createdAt }) => ({
-    id, title, description, description_en, description_fr, image, tags, removeBackground: !!removeBackground, createdAt
+  const index = styles.map(({ id, title, description, description_en, description_fr, image, preview_image, tags, removeBackground, createdAt }) => ({
+    id, title, description, description_en, description_fr, image, preview_image, tags, removeBackground: !!removeBackground, createdAt
   }));
   writeFileSync(join(API_DIR, 'styles.json'), JSON.stringify(index, null, 2));
 
@@ -69,7 +69,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, description_en, description_fr, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
+  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables, removeBackground, supportImageReference } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -89,6 +89,7 @@ app.post('/api/styles', (req, res) => {
     background_prompt: background_prompt || '',
     ...(variables && { variables }),
     image: image || '',
+    preview_image: preview_image || '',
     tags: tags || [],
     removeBackground: !!removeBackground,
     supportImageReference: !!supportImageReference,
@@ -108,7 +109,17 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, description_en, description_fr, prompt, background_prompt, image, tags, variables, removeBackground, supportImageReference } = req.body;
+  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables, removeBackground, supportImageReference } = req.body;
+
+  // Delete old preview file if a new one is being set
+  const oldPreview = styles[index].preview_image;
+  if (preview_image !== undefined && preview_image !== oldPreview && oldPreview && oldPreview.startsWith('images/preview-')) {
+    const oldPath = join(__dirname, oldPreview);
+    if (existsSync(oldPath)) {
+      unlinkSync(oldPath);
+    }
+  }
+
   styles[index] = {
     ...styles[index],
     ...(title !== undefined && { title }),
@@ -119,6 +130,7 @@ app.put('/api/styles/:id', (req, res) => {
     ...(background_prompt !== undefined && { background_prompt }),
     ...(variables !== undefined && { variables }),
     ...(image !== undefined && { image }),
+    ...(preview_image !== undefined && { preview_image }),
     ...(tags !== undefined && { tags }),
     ...(removeBackground !== undefined && { removeBackground: !!removeBackground }),
     ...(supportImageReference !== undefined && { supportImageReference: !!supportImageReference }),
@@ -151,6 +163,14 @@ app.delete('/api/styles/:id', async (req, res) => {
     const imgPath = join(__dirname, deleted.image);
     if (existsSync(imgPath)) {
       unlinkSync(imgPath);
+    }
+  }
+
+  // Remove preview image file
+  if (deleted.preview_image) {
+    const previewPath = join(__dirname, deleted.preview_image);
+    if (existsSync(previewPath)) {
+      unlinkSync(previewPath);
     }
   }
 
@@ -302,6 +322,143 @@ Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
   } catch (err) {
     console.error('Analyze error:', err);
     res.status(500).json({ error: `Erreur d'analyse : ${err.message}` });
+  }
+});
+
+// Prompt used by VLM mode to describe the subject of the reference image
+const IMAGE_DESCRIPTION_PROMPT =
+  "Describe the main subject of this image in 5 to 15 words for use as a {{subject}} placeholder. " +
+  "Focus only on WHAT is depicted: the main object, person, animal, or scene. " +
+  "Be specific but concise. Examples: 'a golden retriever puppy sitting on grass', 'a red sports car on a mountain road', 'a smiling woman in a blue dress'. " +
+  "Do NOT describe style, lighting, mood, colors, or background details. " +
+  "Write in English. Start directly with the subject description.";
+
+// Helper: resolve a reference_image field to a data URI
+function resolveImageToDataUri(reference_image) {
+  if (reference_image.startsWith('http://') || reference_image.startsWith('https://')) {
+    return reference_image;
+  }
+  const refPath = join(__dirname, reference_image);
+  if (!existsSync(refPath)) throw new Error('Image de référence introuvable');
+  const refBuffer = readFileSync(refPath);
+  const refBase64 = refBuffer.toString('base64');
+  const ext = extname(reference_image).toLowerCase();
+  const mimeMap = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.webp': 'image/webp' };
+  const mimeType = mimeMap[ext] || 'image/jpeg';
+  return `data:${mimeType};base64,${refBase64}`;
+}
+
+// POST generate preview image from prompt via z-image-turbo on Replicate
+// Two modes:
+//   "direct"  → img2img with prunaai/z-image-turbo-img2img (reference image as input)
+//   "vlm"     → describe reference image with openai/gpt-5-nano, then text-to-image with z-image-turbo
+app.post('/api/generate-preview', async (req, res) => {
+  try {
+    const { prompt, supportImageReference, reference_image, mode } = req.body;
+    if (!prompt) return res.status(400).json({ error: 'Aucun prompt fourni' });
+
+    // Replace template variables with sample values for preview
+    const sampleVars = {
+      subject: 'a luxury perfume bottle',
+      primary_color: 'deep navy blue',
+      accent_color: 'gold',
+      background_color: 'white',
+      mood: 'elegant and sophisticated',
+      lighting: 'soft studio lighting',
+    };
+
+    let resolvedPrompt = prompt;
+
+    // --- VLM mode: describe the reference image first, use description as {{subject}} ---
+    if (mode === 'vlm' && reference_image) {
+      console.log('--- VLM MODE: describing reference image ---');
+      const refUri = resolveImageToDataUri(reference_image);
+
+      const vlmOutput = await replicate.run('openai/gpt-5-nano', {
+        input: {
+          prompt: IMAGE_DESCRIPTION_PROMPT,
+          image_input: [refUri],
+          temperature: 0.3,
+        }
+      });
+
+      const subjectDescription = (Array.isArray(vlmOutput) ? vlmOutput.join('') : String(vlmOutput)).trim();
+      console.log('VLM subject description:', subjectDescription);
+
+      // Override the sample subject with the real description
+      sampleVars.subject = subjectDescription;
+    }
+
+    // Replace all template variables
+    for (const [key, value] of Object.entries(sampleVars)) {
+      resolvedPrompt = resolvedPrompt.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), value);
+    }
+
+    // Truncate if too long
+    if (resolvedPrompt.length > 1500) {
+      resolvedPrompt = resolvedPrompt.slice(0, 1500);
+    }
+
+    console.log('--- PREVIEW PROMPT ---');
+    console.log(resolvedPrompt.slice(0, 400) + '...');
+    console.log(`Mode: ${mode || 'direct'} | Reference: ${reference_image || 'none'}`);
+    console.log('--- END PREVIEW PROMPT ---');
+
+    let output;
+
+    if (mode === 'direct' && reference_image) {
+      // img2img: apply style on reference image directly
+      const refUri = resolveImageToDataUri(reference_image);
+      output = await replicate.run('prunaai/z-image-turbo-img2img', {
+        input: {
+          prompt: resolvedPrompt,
+          image: refUri,
+          strength: 0.75,
+        }
+      });
+    } else {
+      // text-to-image (used by VLM mode, or when no reference image)
+      output = await replicate.run('prunaai/z-image-turbo', {
+        input: {
+          prompt: resolvedPrompt,
+        }
+      });
+    }
+
+    // output is an array of URLs (or FileOutput objects)
+    const imageUrl = Array.isArray(output) ? String(output[0]) : String(output);
+
+    // Download the image and save locally
+    const response = await fetch(imageUrl);
+    if (!response.ok) throw new Error('Impossible de télécharger l\'image générée');
+    const arrayBuffer = await response.arrayBuffer();
+    const buffer = Buffer.from(arrayBuffer);
+
+    const filename = `preview-${Date.now()}.webp`;
+    const destPath = join(IMAGES_DIR, filename);
+    writeFileSync(destPath, buffer);
+
+    res.json({ url: `images/${filename}` });
+  } catch (err) {
+    console.error('Generate preview error:', err);
+    res.status(500).json({ error: `Erreur de génération : ${err.message}` });
+  }
+});
+
+// GET list all preview images
+app.get('/api/previews', (req, res) => {
+  try {
+    const files = readdirSync(IMAGES_DIR)
+      .filter(f => f.startsWith('preview-') && f.endsWith('.webp'))
+      .map(f => ({
+        filename: f,
+        url: `images/${f}`,
+        createdAt: statSync(join(IMAGES_DIR, f)).mtime.toISOString()
+      }))
+      .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+    res.json(files);
+  } catch (err) {
+    res.status(500).json({ error: `Erreur: ${err.message}` });
   }
 });
 

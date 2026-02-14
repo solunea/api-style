@@ -4,6 +4,7 @@
   "description": "API statique pour gérer des styles (image, prompt, titre, description)",
   "scripts": {
     "dev": "node server.js",
+    "dev:watch": "nodemon server.js",
     "build": "node scripts/build.js",
     "add": "node scripts/add-style.js"
   },
@@ -15,5 +16,8 @@
     "express": "^5.2.1",
     "multer": "^2.0.2",
     "replicate": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

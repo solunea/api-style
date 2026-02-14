@@ -15,6 +15,19 @@
       <div class="header-left">
         <h1>🎨 Style Manager</h1>
       </div>
+      <div class="header-center">
+        <div class="ref-bar-compact">
+          <div class="preview-ref-thumb" id="preview-ref-thumb" title="Cliquez pour changer l'image de référence"></div>
+          <input type="file" id="preview-ref-file" accept="image/*" onchange="handleRefFileSelect(event)" hidden>
+          <div class="ref-bar-bottom-row">
+            <div class="tab-switch tab-switch-xs">
+              <button type="button" class="tab active" id="mode-tab-direct" onclick="switchPreviewMode('direct')">Image directe</button>
+              <button type="button" class="tab" id="mode-tab-vlm" onclick="switchPreviewMode('vlm')">Description VLM</button>
+            </div>
+            <small id="preview-mode-hint">img2img</small>
+          </div>
+        </div>
+      </div>
       <div class="header-right">
         <button class="btn btn-primary" onclick="openModal()">+ Nouveau style</button>
       </div>
@@ -81,6 +94,23 @@
           </div>
 
           <div class="form-group">
+            <div class="preview-section" id="preview-section" style="display:none">
+              <div class="preview-header">
+                <span class="preview-label">Preview IA</span>
+                <button type="button" class="btn btn-ai btn-ai-sm" id="generate-preview-btn" onclick="generatePreview()">🖼️ Générer un aperçu</button>
+              </div>
+              <div id="preview-container" class="preview-container" style="display:none">
+                <img id="preview-image" src="" alt="Preview générée">
+                <button type="button" class="btn btn-sm btn-ghost preview-use-btn" id="preview-use-btn" onclick="usePreviewAsImage()">Utiliser comme preview du style</button>
+              </div>
+              <div id="preview-loading" class="preview-loading" style="display:none">
+                <span class="spinner"></span>
+                <span>Génération en cours (~3s)...</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
             <label for="form-background-prompt">Background Prompt</label>
             <textarea id="form-background-prompt" rows="3" placeholder="Prompt pour générer le fond (arrière-plan + premier plan)..."></textarea>
             <small>Prompt dédié au décor : fonctionne derrière ET devant le sujet</small>
@@ -106,6 +136,7 @@
               </div>
               <div id="tab-url" class="tab-content" style="display:none">
                 <input type="text" id="form-image-url" placeholder="https://arweave.net/...">
+                <input type="hidden" id="form-preview-image" value="">
                 <button type="button" class="btn btn-ai" id="analyze-url-btn" onclick="analyzeImage()" style="display:none;margin-top:8px">🤖 Auto-remplir avec IA</button>
               </div>
             </div>

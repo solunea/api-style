@@ -6,7 +6,16 @@ let deleteTargetId = null;
 // --- Init ---
 document.addEventListener('DOMContentLoaded', () => {
   loadStyles();
+  loadRefImage();
+  loadPreviewMode();
+
+  // Click thumbnail to upload
+  document.getElementById('preview-ref-thumb').addEventListener('click', () => {
+    document.getElementById('preview-ref-file').click();
+  });
+
   document.getElementById('search-input').addEventListener('input', handleSearch);
+  document.getElementById('form-prompt').addEventListener('input', showPreviewSection);
 
   // Drag & drop on upload zone
   const zone = document.getElementById('upload-zone');
@@ -176,7 +185,9 @@ function openModal(editId) {
 
   form.reset();
   resetUploadPreview();
+  resetPreviewSection();
   document.getElementById('form-editing-id').value = '';
+  document.getElementById('form-preview-image').value = '';
   switchImageTab('upload');
 
   if (editId) {
@@ -195,6 +206,7 @@ function openModal(editId) {
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-remove-bg').checked = !!style.removeBackground;
     document.getElementById('form-support-image-ref').checked = !!style.supportImageReference;
+    document.getElementById('form-preview-image').value = style.preview_image || '';
     if (style.image) {
       switchImageTab('url');
       document.getElementById('form-image-url').value = style.image;
@@ -202,6 +214,7 @@ function openModal(editId) {
         document.getElementById('analyze-url-btn').style.display = '';
       }
     }
+    showPreviewSection();
   } else {
     titleEl.textContent = 'Nouveau style';
     submitBtn.textContent = 'Créer le style';
@@ -297,7 +310,8 @@ async function handleSubmit(e) {
     const variables = [...new Set(varMatches)];
     const removeBackground = document.getElementById('form-remove-bg').checked;
     const supportImageReference = document.getElementById('form-support-image-ref').checked;
-    const data = { title, description, description_en, description_fr, prompt, background_prompt, image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground, supportImageReference };
+    const preview_image = document.getElementById('form-preview-image').value.trim();
+    const data = { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables: variables.length > 0 ? variables : undefined, removeBackground, supportImageReference };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -371,12 +385,132 @@ async function analyzeImage() {
     if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');
 
     showToast('Champs remplis automatiquement par l\'IA', 'success');
+    showPreviewSection();
   } catch (err) {
     showToast(err.message, 'error');
   } finally {
     activeBtn.disabled = false;
     activeBtn.innerHTML = '🤖 Auto-remplir avec IA';
   }
+}
+
+// --- AI Preview ---
+
+function showPreviewSection() {
+  const prompt = document.getElementById('form-prompt').value.trim();
+  const section = document.getElementById('preview-section');
+  section.style.display = prompt ? '' : 'none';
+}
+
+function loadRefImage() {
+  const saved = localStorage.getItem('preview-ref-image') || '';
+  updateRefThumb(saved);
+}
+
+function switchPreviewMode(mode) {
+  localStorage.setItem('preview-mode', mode);
+  document.getElementById('mode-tab-direct').classList.toggle('active', mode === 'direct');
+  document.getElementById('mode-tab-vlm').classList.toggle('active', mode === 'vlm');
+  document.getElementById('preview-mode-hint').textContent = mode === 'direct'
+    ? 'img2img'
+    : 'VLM → text-to-image';
+}
+
+function loadPreviewMode() {
+  const mode = localStorage.getItem('preview-mode') || 'direct';
+  switchPreviewMode(mode);
+}
+
+function saveRefImage() {
+  // No longer needed - ref image is only set via file upload
+}
+
+function updateRefThumb(src) {
+  const thumb = document.getElementById('preview-ref-thumb');
+  if (src) {
+    thumb.innerHTML = `<img src="${src}" alt="ref" onerror="this.parentElement.innerHTML='?'">`;
+  } else {
+    thumb.innerHTML = '?';
+  }
+}
+
+async function handleRefFileSelect(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  try {
+    const result = await uploadImage(file);
+    localStorage.setItem('preview-ref-image', result.url);
+    updateRefThumb(result.url);
+    showToast('Image de référence uploadée', 'success');
+  } catch (err) {
+    showToast(err.message, 'error');
+  }
+}
+
+async function generatePreview() {
+  const prompt = document.getElementById('form-prompt').value.trim();
+  if (!prompt) return showToast('Remplissez d\'abord le prompt', 'error');
+
+  const btn = document.getElementById('generate-preview-btn');
+  const loading = document.getElementById('preview-loading');
+  const container = document.getElementById('preview-container');
+  const supportImageRef = document.getElementById('form-support-image-ref').checked;
+  const referenceImage = localStorage.getItem('preview-ref-image') || '';
+
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Génération...';
+  loading.style.display = 'flex';
+  container.style.display = 'none';
+
+  const mode = localStorage.getItem('preview-mode') || 'direct';
+
+  try {
+    const body = { prompt, supportImageReference: supportImageRef, mode };
+    if (referenceImage) body.reference_image = referenceImage;
+
+    const res = await fetch(`${API}/api/generate-preview`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.error);
+    }
+
+    const data = await res.json();
+    const img = document.getElementById('preview-image');
+    img.src = data.url;
+    container.style.display = '';
+    showToast('Aperçu généré avec succès', 'success');
+  } catch (err) {
+    showToast(err.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '🖼️ Générer un aperçu';
+    loading.style.display = 'none';
+  }
+}
+
+function usePreviewAsImage() {
+  const previewSrc = document.getElementById('preview-image').src;
+  if (!previewSrc) return;
+
+  // Extract relative path (images/preview-xxx.webp) from the full URL
+  const url = new URL(previewSrc);
+  const relativePath = url.pathname.replace(/^\//, '');
+
+  document.getElementById('form-preview-image').value = relativePath;
+  showToast('Image de preview définie', 'success');
+}
+
+function resetPreviewSection() {
+  document.getElementById('preview-section').style.display = 'none';
+  document.getElementById('preview-container').style.display = 'none';
+  document.getElementById('preview-loading').style.display = 'none';
+  document.getElementById('preview-image').src = '';
 }
 
 // --- Delete Modal ---
