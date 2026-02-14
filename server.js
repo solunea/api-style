@@ -506,6 +506,28 @@ app.post('/api/push', (req, res) => {
     const styles = readStyles();
     buildApi(styles);
 
+    // Cleanup orphaned preview files (not referenced by any style)
+    const allPreviewImages = new Set(
+      styles.map(s => s.preview_image).filter(Boolean)
+    );
+    const files = readdirSync(IMAGES_DIR);
+    let deletedCount = 0;
+    for (const file of files) {
+      if (file.startsWith('preview-') && file.endsWith('.webp')) {
+        const filePath = `images/${file}`;
+        if (!allPreviewImages.has(filePath)) {
+          const fullPath = join(IMAGES_DIR, file);
+          if (existsSync(fullPath)) {
+            unlinkSync(fullPath);
+            deletedCount++;
+          }
+        }
+      }
+    }
+    if (deletedCount > 0) {
+      console.log(`Cleaned up ${deletedCount} orphaned preview files`);
+    }
+
     // Git add
     execSync('git add -A', opts);
 
