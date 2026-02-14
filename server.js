@@ -472,13 +472,13 @@ app.post('/api/build', (req, res) => {
 // POST push to Git (commit + push → disponible en ~5 min sur GitHub raw)
 app.post('/api/push', (req, res) => {
   try {
-    const opts = { cwd: __dirname, encoding: 'utf-8' };
+    const opts = { cwd: __dirname, encoding: 'utf-8', timeout: 60000 };
 
     // Build API first
     const styles = readStyles();
     buildApi(styles);
 
-    // Git add, commit, push
+    // Git add
     execSync('git add -A', opts);
 
     // Check if there are changes to commit
@@ -491,10 +491,18 @@ app.post('/api/push', (req, res) => {
 
     const msg = `Update styles - ${new Date().toLocaleString('fr-FR')}`;
     execSync(`git commit -m "${msg}"`, opts);
-    execSync('git push', opts);
+    
+    // Git push with timeout
+    try {
+      execSync('git push', { ...opts, timeout: 120000 });
+    } catch (pushErr) {
+      console.error('Git push error:', pushErr);
+      return res.status(500).json({ error: `Erreur git push : ${pushErr.message}. Vérifiez votre connexion et les credentials.` });
+    }
 
     res.json({ message: `Publié (${styles.length} styles) — disponible sur le CDN dans ~5 min` });
   } catch (err) {
+    console.error('Push error:', err);
     res.status(500).json({ error: `Erreur push : ${err.message}` });
   }
 });
