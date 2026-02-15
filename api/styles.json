@@ -39,21 +39,21 @@
   },
   {
     "id": "vibrant-vector",
-    "title": "Modern Vector",
-    "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
-    "description_en": "",
-    "description_fr": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
+    "title": "Geometric Vector",
+    "description": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
+    "description_en": "A modern, flat vector illustration style characterized by clean geometric shapes, exaggerated proportions, and vibrant solid colors. It creates a cheerful, corporate-tech aesthetic with lineless art and minimal, hard-edged shading.",
+    "description_fr": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
     "image": "images/g_shmfdxoaa8jyb.jpg",
-    "preview_image": "images/preview-1771153519512.webp",
+    "preview_image": "images/preview-1771153877037.webp",
     "tags": [
       "flat design",
-      "vector art",
+      "vector illustration",
       "corporate memphis",
+      "geometric",
       "minimalist",
-      "vibrant",
-      "geometric"
+      "colorful"
     ],
-    "removeBackground": false,
+    "removeBackground": true,
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
   {
@@ -96,19 +96,19 @@
   },
   {
     "id": "risograph-spotlight",
-    "title": "Risograph Spotlight",
-    "description": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
-    "description_en": "",
-    "description_fr": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
+    "title": "Grainy Risograph",
+    "description": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
+    "description_en": "This style features a charming flat illustration aesthetic mimicking Risograph or screen printing, characterized by heavy grain textures and stipple shading. It utilizes distinct hard-edged spotlight effects to create dramatic contrast between lit areas and solid-colored shadows, resulting in a cozy, retro indie-zine vibe.",
+    "description_fr": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
     "image": "images/ffd2d063ffed34950f43897583e6c0a1.jpg",
-    "preview_image": "images/preview-1771153525413.webp",
+    "preview_image": "images/preview-1771153928359.webp",
     "tags": [
       "risograph",
       "flat illustration",
-      "grainy",
-      "editorial",
+      "grainy texture",
       "spotlight",
-      "textured"
+      "lo-fi",
+      "screen print"
     ],
     "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z"
@@ -134,21 +134,21 @@
   },
   {
     "id": "folklore-woodcut",
-    "title": "Folklore Woodcut",
-    "description": "Ce style imite les gravures sur bois ou linogravures vintage utilisant une palette stricte de deux tons sur papier crème texturé. Il présente des hachures lourdes, des textures pointillées et une esthétique brute et tamponnée, typique des illustrations fantastiques du milieu du siècle et des vieilles cartes de tarot.",
-    "description_en": "This style emulates vintage woodblock or linocut prints using a strict two-tone color palette on textured cream paper. It features heavy hatching, stippling textures, and a rough, hand-stamped aesthetic typical of mid-century fantasy illustrations and old tarot cards.",
-    "description_fr": "Ce style imite les gravures sur bois ou linogravures vintage utilisant une palette stricte de deux tons sur papier crème texturé. Il présente des hachures lourdes, des textures pointillées et une esthétique brute et tamponnée, typique des illustrations fantastiques du milieu du siècle et des vieilles cartes de tarot.",
+    "title": "Vintage Woodcut",
+    "description": "Ce style imite les techniques traditionnelles d'impression en relief comme la gravure sur bois ou le linoléum, caractérisé par des lignes audacieuses, des textures rugueuses et une palette de couleurs limitée. Il présente une esthétique nostalgique et lo-fi avec un grain d'encre visible et des effets de pointillés, rappelant les illustrations de vieux livres ou les timbres anciens.",
+    "description_en": "This style mimics traditional relief printing techniques like woodblock or linocut, characterized by bold lines, rough textures, and a limited color palette. It features a nostalgic, lo-fi aesthetic with visible ink grain and stippling effects, reminiscent of old book illustrations or vintage stamps.",
+    "description_fr": "Ce style imite les techniques traditionnelles d'impression en relief comme la gravure sur bois ou le linoléum, caractérisé par des lignes audacieuses, des textures rugueuses et une palette de couleurs limitée. Il présente une esthétique nostalgique et lo-fi avec un grain d'encre visible et des effets de pointillés, rappelant les illustrations de vieux livres ou les timbres anciens.",
     "image": "images/haec6aowsaag52z.jpg",
     "preview_image": "images/preview-1771153526646.webp",
     "tags": [
       "woodcut",
       "linocut",
-      "duotone",
-      "vintage illustration",
+      "vintage",
       "risograph",
-      "engraving"
+      "engraving",
+      "illustration"
     ],
-    "removeBackground": false,
+    "removeBackground": true,
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
   {

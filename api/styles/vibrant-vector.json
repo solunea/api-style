@@ -1,27 +1,28 @@
 {
   "id": "vibrant-vector",
-  "title": "Modern Vector",
-  "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
-  "prompt": "A high-quality flat vector illustration of {{subject}}, designed in a trendy modern corporate art style reminiscent of tech startup branding. The visual aesthetic is defined by bold geometric shapes, exaggerated yet pleasing proportions, and razor-sharp edges with absolutely no outlines. The lighting is uniform and flat, utilizing only hard-edged, solid-colored shadows to create depth without gradients or texture noise. The color palette is vivid and highly saturated, featuring a dominant {{primary_color}} tone that contrasts cleanly with the subject, while distinct {{accent_color}} elements provide visual pop and energy. The composition is clean and centered, conveying a mood of approachability and professionalism. The rendering is perfectly smooth, digital, and crisp.",
+  "title": "Geometric Vector",
+  "description": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
+  "prompt": "A high-quality, modern flat vector illustration of {{subject}}, executed in a distinct 'Corporate Memphis' or tech-editorial aesthetic. The artwork is constructed entirely from clean, solid geometric shapes with fluid curves and sharp angles, completely devoid of black outlines or strokes. The rendering style is strictly 2D flat design, utilizing a vibrant and high-contrast color palette dominated by {{primary_color}}, with playful and striking details in {{accent_color}}. Shading is minimal and stylized, using only hard-edged blocks of slightly darker solid colors to indicate depth and separation of layers, creating a paper-cutout feel without any gradients, noise, or texture. The surface finish is perfectly smooth, matte, and digital, mimicking the precision of vector software like Adobe Illustrator. Proportions are stylized and slightly exaggerated to enhance the friendly and approachable mood. The composition is bold and graphic, set against a solid {{background_color}} background to ensure crisp edge definition and easy background removal. The lighting implies a soft, global illumination that eliminates harsh cast shadows, maintaining a cheerful and optimistic atmosphere typical of modern UI/UX illustrations. reinforcement tags: flat design, vector art, lineless, minimal, trending on Dribbble, Behance, high saturation, sharp focus, 8k, commercial art, editorial illustration, crisp edges, vivid colors, geometric abstraction.",
   "variables": [
     "subject",
     "primary_color",
-    "accent_color"
+    "accent_color",
+    "background_color"
   ],
   "image": "images/g_shmfdxoaa8jyb.jpg",
   "tags": [
     "flat design",
-    "vector art",
+    "vector illustration",
     "corporate memphis",
+    "geometric",
     "minimalist",
-    "vibrant",
-    "geometric"
+    "colorful"
   ],
-  "removeBackground": false,
+  "removeBackground": true,
   "createdAt": "2026-02-10T15:52:37.052Z",
-  "description_en": "",
-  "description_fr": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
-  "background_prompt": "",
-  "preview_image": "images/preview-1771153519512.webp",
+  "description_en": "A modern, flat vector illustration style characterized by clean geometric shapes, exaggerated proportions, and vibrant solid colors. It creates a cheerful, corporate-tech aesthetic with lineless art and minimal, hard-edged shading.",
+  "description_fr": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
+  "background_prompt": "A seamless abstract background pattern composed of floating geometric shapes and playful vector elements. The scene features scattered circles, squiggles, triangles, and organic blobs rendered in flat {{primary_color}} and {{accent_color}} tones. The design is completely lineless with a smooth matte finish, set against a clean {{background_color}} surface. The arrangement is balanced and decorative, creating a modern tech-editorial atmosphere without any central subject, perfect for use as a backdrop or graphical overlay.",
+  "preview_image": "images/preview-1771153877037.webp",
   "supportImageReference": false
 }

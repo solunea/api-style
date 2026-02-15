@@ -56,29 +56,30 @@
   },
   {
     "id": "vibrant-vector",
-    "title": "Modern Vector",
-    "description": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
-    "prompt": "A high-quality flat vector illustration of {{subject}}, designed in a trendy modern corporate art style reminiscent of tech startup branding. The visual aesthetic is defined by bold geometric shapes, exaggerated yet pleasing proportions, and razor-sharp edges with absolutely no outlines. The lighting is uniform and flat, utilizing only hard-edged, solid-colored shadows to create depth without gradients or texture noise. The color palette is vivid and highly saturated, featuring a dominant {{primary_color}} tone that contrasts cleanly with the subject, while distinct {{accent_color}} elements provide visual pop and energy. The composition is clean and centered, conveying a mood of approachability and professionalism. The rendering is perfectly smooth, digital, and crisp.",
+    "title": "Geometric Vector",
+    "description": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
+    "prompt": "A high-quality, modern flat vector illustration of {{subject}}, executed in a distinct 'Corporate Memphis' or tech-editorial aesthetic. The artwork is constructed entirely from clean, solid geometric shapes with fluid curves and sharp angles, completely devoid of black outlines or strokes. The rendering style is strictly 2D flat design, utilizing a vibrant and high-contrast color palette dominated by {{primary_color}}, with playful and striking details in {{accent_color}}. Shading is minimal and stylized, using only hard-edged blocks of slightly darker solid colors to indicate depth and separation of layers, creating a paper-cutout feel without any gradients, noise, or texture. The surface finish is perfectly smooth, matte, and digital, mimicking the precision of vector software like Adobe Illustrator. Proportions are stylized and slightly exaggerated to enhance the friendly and approachable mood. The composition is bold and graphic, set against a solid {{background_color}} background to ensure crisp edge definition and easy background removal. The lighting implies a soft, global illumination that eliminates harsh cast shadows, maintaining a cheerful and optimistic atmosphere typical of modern UI/UX illustrations. reinforcement tags: flat design, vector art, lineless, minimal, trending on Dribbble, Behance, high saturation, sharp focus, 8k, commercial art, editorial illustration, crisp edges, vivid colors, geometric abstraction.",
     "variables": [
       "subject",
       "primary_color",
-      "accent_color"
+      "accent_color",
+      "background_color"
     ],
     "image": "images/g_shmfdxoaa8jyb.jpg",
     "tags": [
       "flat design",
-      "vector art",
+      "vector illustration",
       "corporate memphis",
+      "geometric",
       "minimalist",
-      "vibrant",
-      "geometric"
+      "colorful"
     ],
-    "removeBackground": false,
+    "removeBackground": true,
     "createdAt": "2026-02-10T15:52:37.052Z",
-    "description_en": "",
-    "description_fr": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
-    "background_prompt": "",
-    "preview_image": "images/preview-1771153519512.webp",
+    "description_en": "A modern, flat vector illustration style characterized by clean geometric shapes, exaggerated proportions, and vibrant solid colors. It creates a cheerful, corporate-tech aesthetic with lineless art and minimal, hard-edged shading.",
+    "description_fr": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
+    "background_prompt": "A seamless abstract background pattern composed of floating geometric shapes and playful vector elements. The scene features scattered circles, squiggles, triangles, and organic blobs rendered in flat {{primary_color}} and {{accent_color}} tones. The design is completely lineless with a smooth matte finish, set against a clean {{background_color}} surface. The arrangement is balanced and decorative, creating a modern tech-editorial atmosphere without any central subject, perfect for use as a backdrop or graphical overlay.",
+    "preview_image": "images/preview-1771153877037.webp",
     "supportImageReference": false
   },
   {
@@ -138,9 +139,9 @@
   },
   {
     "id": "risograph-spotlight",
-    "title": "Risograph Spotlight",
-    "description": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
-    "prompt": "A flat editorial illustration of {{subject}} rendered in a textured risograph art style. The scene is defined by a dramatic, hard-edged cone of light that cuts through the composition, brightly illuminating the {{subject}} while casting the surrounding areas into deep, flat shadows. The visual texture is heavy and tactile, featuring a grainy, speckled noise overlay that mimics chalk, pastel, or coarse paper printing. The color palette is limited and retro-modern, dominated by shades of {{primary_color}} with striking details in {{accent_color}}. The rendering avoids realistic 3D depth, opting for stylized 2D shapes with slightly imperfect, organic edges. The atmosphere is cozy, whimsical, and creative, reminiscent of high-end tech blog illustrations or indie magazine art, grainy texture, risograph print, hard shadows, flat design, editorial illustration, noise overlay, retro palette, 2D vector art, textured paper, high contrast lighting.",
+    "title": "Grainy Risograph",
+    "description": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
+    "prompt": "A textured, flat-style digital illustration of {{subject}} rendered in the aesthetic of a Risograph print or grainy screen print. The visual style is defined by a distinct, hard-edged spotlight effect: a cone of bright light cuts across the scene, creating a sharp geometric division between the illuminated focal point and the surrounding shadows. The lighting is not soft or diffuse; it creates bold, solid shapes of light and dark. The color palette utilizes {{primary_color}} as the dominant hue within the light, contrasting with deep, muted tones of {{accent_color}} in the shadowed areas. The surface texture is heavily emphasized with a rough paper grain, chalky noise, and stipple shading, avoiding all smooth digital gradients in favor of solid color blocks and speckled dithering. Outlines are simple, slightly imperfect, and hand-drawn, contributing to a cozy, lo-fi, and indie editorial look. The composition is 2D or slight isometric, focusing on shape and texture over realistic perspective. Reinforce the tactile feel of ink on matte construction paper.",
     "variables": [
       "subject",
       "primary_color",
@@ -150,17 +151,17 @@
     "tags": [
       "risograph",
       "flat illustration",
-      "grainy",
-      "editorial",
+      "grainy texture",
       "spotlight",
-      "textured"
+      "lo-fi",
+      "screen print"
     ],
     "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z",
-    "preview_image": "images/preview-1771153525413.webp",
-    "description_en": "",
-    "description_fr": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
-    "background_prompt": "",
+    "preview_image": "images/preview-1771153928359.webp",
+    "description_en": "This style features a charming flat illustration aesthetic mimicking Risograph or screen printing, characterized by heavy grain textures and stipple shading. It utilizes distinct hard-edged spotlight effects to create dramatic contrast between lit areas and solid-colored shadows, resulting in a cozy, retro indie-zine vibe.",
+    "description_fr": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
+    "background_prompt": "A textured background environment featuring abstract geometric shapes, stylized plants, or simple interior elements rendered in a flat Risograph style. A dramatic, hard-edged beam of light creates a diagonal slice across the composition, illuminating a section in bright {{primary_color}} while leaving the rest in a shadowed {{accent_color}}. The texture is heavy with stipple noise and paper grain, with no central subject, serving as a retro, lo-fi backdrop or decorative frame.",
     "supportImageReference": false
   },
   {
@@ -193,28 +194,29 @@
   },
   {
     "id": "folklore-woodcut",
-    "title": "Folklore Woodcut",
-    "description": "Ce style imite les gravures sur bois ou linogravures vintage utilisant une palette stricte de deux tons sur papier crème texturé. Il présente des hachures lourdes, des textures pointillées et une esthétique brute et tamponnée, typique des illustrations fantastiques du milieu du siècle et des vieilles cartes de tarot.",
-    "description_en": "This style emulates vintage woodblock or linocut prints using a strict two-tone color palette on textured cream paper. It features heavy hatching, stippling textures, and a rough, hand-stamped aesthetic typical of mid-century fantasy illustrations and old tarot cards.",
-    "description_fr": "Ce style imite les gravures sur bois ou linogravures vintage utilisant une palette stricte de deux tons sur papier crème texturé. Il présente des hachures lourdes, des textures pointillées et une esthétique brute et tamponnée, typique des illustrations fantastiques du milieu du siècle et des vieilles cartes de tarot.",
-    "prompt": "A vintage illustration of {{subject}} rendered in the style of a classic woodcut or linocut print. The artwork features a distinct, limited two-color ink process set against a textured, off-white cream paper background. The {{subject}} is depicted primarily in deep {{primary_color}} ink, utilizing heavy cross-hatching, etching lines, and stippling to define form and volume without smooth gradients. The surrounding environmental details, ground textures, or magical effects are accented with {{accent_color}} ink, creating a striking duotone contrast that separates the figure from the setting. The aesthetic is rough, tactile, and analog, mimicking the imperfections of a hand-pressed stamp or old offset risograph printing, with visible paper grain, slight ink bleed, and uneven coverage. The composition is flat with a focus on silhouette and line work rather than realistic depth. The lighting is implied solely through the density of the ink strokes, evoking the nostalgic feel of mid-20th-century fantasy paperback covers, ancient tarot decks, or medieval manuscripts. High contrast, sharp edges, no blur, illustrative style, ink on paper texture, engraved look, folk art influence, retro print aesthetic.",
-    "background_prompt": "A vintage textured background scene featuring rough terrain, foliage, or abstract nature patterns rendered in a woodcut print style. The environment is inked primarily in {{accent_color}} with touches of {{primary_color}} for deep shadows, set against a coarse cream paper texture. The image features heavy grain, stippling, and cross-hatching to suggest ground and vegetation without a central subject. Analog print imperfections, ink bleed, and a decorative, frame-like composition suitable for a backdrop.",
+    "title": "Vintage Woodcut",
+    "description": "Ce style imite les techniques traditionnelles d'impression en relief comme la gravure sur bois ou le linoléum, caractérisé par des lignes audacieuses, des textures rugueuses et une palette de couleurs limitée. Il présente une esthétique nostalgique et lo-fi avec un grain d'encre visible et des effets de pointillés, rappelant les illustrations de vieux livres ou les timbres anciens.",
+    "description_en": "This style mimics traditional relief printing techniques like woodblock or linocut, characterized by bold lines, rough textures, and a limited color palette. It features a nostalgic, lo-fi aesthetic with visible ink grain and stippling effects, reminiscent of old book illustrations or vintage stamps.",
+    "description_fr": "Ce style imite les techniques traditionnelles d'impression en relief comme la gravure sur bois ou le linoléum, caractérisé par des lignes audacieuses, des textures rugueuses et une palette de couleurs limitée. Il présente une esthétique nostalgique et lo-fi avec un grain d'encre visible et des effets de pointillés, rappelant les illustrations de vieux livres ou les timbres anciens.",
+    "prompt": "A highly detailed vintage woodcut or linocut illustration of {{subject}}, rendered in a classic relief printing style. The artwork mimics the aesthetic of an antique book plate, a hand-carved block print, or a retro ink stamp. The visual language relies on bold, expressive ink lines, rough cross-hatching, and stippling textures to create form and volume, completely eschewing smooth digital gradients or photorealistic shading. The color palette is restricted to a striking duotone or tritone scheme, utilizing {{primary_color}} as the dominant heavy ink for the main subject's structure and {{accent_color}} for secondary details, ground elements, or highlights. The texture is intentionally imperfect and tactile, featuring the characteristic noise, grain, and slight ink bleed of a risograph or screen print. The lines have a jagged, organic quality, suggesting the physical resistance of wood or linoleum against a carving tool. The composition focuses on a strong, graphic silhouette, set distinctly against a clean {{background_color}} background to ensure sharp contrast and edge definition. The overall atmosphere is nostalgic, folkloric, and handcrafted, evoking the feeling of 19th-century fantasy illustrations. Reinforcement tags: relief print, etching style, retro illustration, grainy texture, ink stamp aesthetic, high contrast, flat colors, coarse grain, antique, folk art, 2D, vector-like clarity with textured finish, analog aesthetic, rough edges, no 3D render.",
+    "background_prompt": "A textured vintage woodcut environment featuring rough ground terrain, etched landscape lines, and abstract foliage elements rendered in {{accent_color}} and {{primary_color}} ink. The scene depicts a minimalist setting with stippled shadows and distressed ink textures, resembling the background of an antique map or engraved nature scene. It is designed as a decorative layer with paper grain noise, set against a {{background_color}} surface.",
     "variables": [
       "subject",
       "primary_color",
-      "accent_color"
+      "accent_color",
+      "background_color"
     ],
     "image": "images/haec6aowsaag52z.jpg",
     "preview_image": "images/preview-1771153526646.webp",
     "tags": [
       "woodcut",
       "linocut",
-      "duotone",
-      "vintage illustration",
+      "vintage",
       "risograph",
-      "engraving"
+      "engraving",
+      "illustration"
     ],
-    "removeBackground": false,
+    "removeBackground": true,
     "supportImageReference": false,
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
