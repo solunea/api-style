@@ -25,7 +25,7 @@
     "description_en": "A charming illustration style that mimics traditional dry media like colored pencils, wax crayons, and gouache on rough paper. It features naive perspectives, organic shapes, and a highly tactile, grainy texture that evokes a cozy, storybook atmosphere.",
     "description_fr": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
     "supportImageReference": false,
-    "preview_image": "images/preview-1771075469997.webp"
+    "preview_image": "images/preview-1771153516999.webp"
   },
   {
     "id": "doodle-pop",
@@ -52,7 +52,7 @@
     "description_en": "",
     "description_fr": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
     "supportImageReference": false,
-    "preview_image": "images/preview-1771075512299.webp"
+    "preview_image": "images/preview-1771153518680.webp"
   },
   {
     "id": "vibrant-vector",
@@ -78,7 +78,7 @@
     "description_en": "",
     "description_fr": "Ce style se caractérise par une illustration vectorielle plate aux couleurs vives et aux formes géométriques épurées. Il privilégie les aplats de couleurs saturées, l'absence de contours et un ombrage minimaliste pour une esthétique moderne et professionnelle.",
     "background_prompt": "",
-    "preview_image": "images/preview-1771075533367.webp",
+    "preview_image": "images/preview-1771153519512.webp",
     "supportImageReference": false
   },
   {
@@ -107,7 +107,7 @@
     "supportImageReference": false,
     "description_en": "A minimal 3D rendering style featuring smooth, matte textures reminiscent of soft plastic or refined clay. It utilizes pastel color palettes, diffuse studio lighting, and rounded geometry to create a clean, tactile, and comforting aesthetic.",
     "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
-    "preview_image": "images/preview-1771076200955.webp"
+    "preview_image": "images/preview-1771153517919.webp"
   },
   {
     "id": "corporate-outline",
@@ -133,7 +133,7 @@
     "background_prompt": "A minimal, abstract background setting featuring sparse architectural lines and simple geometric forms drawn in a sketchy black outline style. The environment uses flat fills of {{primary_color}} and {{accent_color}} to suggest spatial structure without visual clutter. The design relies heavily on white negative space and complete 2D flatness, creating a clean, professional atmosphere suitable for corporate presentations or editorial layouts.",
     "description_en": "",
     "description_fr": "Ce style se caractérise par une illustration vectorielle minimaliste aux contours noirs façon croquis et aux aplats de couleurs unies sans ombrage. L'esthétique est épurée et professionnelle, utilisant largement l'espace négatif blanc pour une clarté maximale.",
-    "preview_image": "images/preview-1771075902172.webp",
+    "preview_image": "images/preview-1771153518022.webp",
     "supportImageReference": false
   },
   {
@@ -157,7 +157,7 @@
     ],
     "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z",
-    "preview_image": "images/preview-1771076139799.webp",
+    "preview_image": "images/preview-1771153525413.webp",
     "description_en": "",
     "description_fr": "Ce style unique combine l'illustration vectorielle plate avec une texture granuleuse et bruyante rappelant l'impression risographique ou le dessin à la craie. Il se distingue par un éclairage dramatique en forme de cône (spotlight) qui crée un contraste géométrique net entre les zones éclairées et les ombres.",
     "background_prompt": "",
@@ -187,7 +187,7 @@
     "createdAt": "2026-02-10T16:29:06.811Z",
     "background_prompt": "A textured vintage paper surface featuring a geometric conical spotlight beam descending from the top center in {{accent_color}}. The beam casts a defined circular pool of flat color on the ground plane, meant to highlight a central element. The surrounding area is composed of negative space with subtle paper grain, faint speckles, and minimal {{primary_color}} texture marks, all set against a {{background_color}} backdrop.",
     "supportImageReference": false,
-    "preview_image": "images/preview-1771076160839.webp",
+    "preview_image": "images/preview-1771153525569.webp",
     "description_en": "",
     "description_fr": ""
   },
@@ -205,7 +205,7 @@
       "accent_color"
     ],
     "image": "images/haec6aowsaag52z.jpg",
-    "preview_image": "images/preview-1771104818976.webp",
+    "preview_image": "images/preview-1771153526646.webp",
     "tags": [
       "woodcut",
       "linocut",
@@ -232,7 +232,7 @@
       "accent_color"
     ],
     "image": "images/haxv01ibaaayb77.jpg",
-    "preview_image": "images/preview-1771104969260.webp",
+    "preview_image": "images/preview-1771153524575.webp",
     "tags": [
       "3d render",
       "pixar style",
@@ -260,7 +260,7 @@
       "background_color"
     ],
     "image": "images/g_v0edxauaack44.jpg",
-    "preview_image": "images/preview-1771105753645.webp",
+    "preview_image": "images/preview-1771153526789.webp",
     "tags": [
       "bauhaus",
       "geometric",
@@ -287,7 +287,7 @@
       "accent_color"
     ],
     "image": "images/g_o1exrboaa5n_d.jpg",
-    "preview_image": "images/preview-1771105153551.webp",
+    "preview_image": "images/preview-1771153531962.webp",
     "tags": [
       "needle felting",
       "wool texture",
@@ -314,7 +314,7 @@
       "accent_color"
     ],
     "image": "images/g_g17_8xwaewa7b.jpg",
-    "preview_image": "images/preview-1771105246374.webp",
+    "preview_image": "images/preview-1771153532936.webp",
     "tags": [
       "flat illustration",
       "vector art",
@@ -341,7 +341,7 @@
       "accent_color"
     ],
     "image": "images/370bf13127fd26952d309ce97e9cb311.jpg",
-    "preview_image": "images/preview-1771105514124.webp",
+    "preview_image": "images/preview-1771153531608.webp",
     "tags": [
       "risograph",
       "editorial illustration",

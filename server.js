@@ -423,6 +423,8 @@ app.post('/api/generate-preview', async (req, res) => {
           prompt: resolvedPrompt,
           image: refUri,
           strength: 0.75,
+          width: 512,
+          height: 512,
         }
       });
     } else {
@@ -430,6 +432,8 @@ app.post('/api/generate-preview', async (req, res) => {
       output = await replicate.run('prunaai/z-image-turbo', {
         input: {
           prompt: resolvedPrompt,
+          width: 512,
+          height: 512,
         }
       });
     }
@@ -470,6 +474,139 @@ app.post('/api/generate-preview', async (req, res) => {
   } catch (err) {
     console.error('Generate preview error:', err);
     res.status(500).json({ error: `Erreur de génération : ${err.message}` });
+  }
+});
+
+// POST generate all previews for all styles (concurrent processing)
+app.post('/api/generate-all-previews', async (req, res) => {
+  try {
+    const { reference_image, mode } = req.body;
+    const styles = readStyles();
+    const results = [];
+    const errors = [];
+    const CONCURRENCY = 5; // Max parallel generations
+
+    // Helper to process a single style
+    async function processStyle(style) {
+      if (!style.prompt) {
+        return { type: 'error', data: { id: style.id, error: 'Pas de prompt' } };
+      }
+
+      try {
+        // Replace template variables with sample values for preview
+        const sampleVars = {
+          subject: 'a luxury perfume bottle',
+          primary_color: 'deep navy blue',
+          accent_color: 'gold',
+          background_color: 'white',
+          mood: 'elegant and sophisticated',
+          lighting: 'soft studio lighting',
+        };
+
+        let resolvedPrompt = style.prompt;
+
+        // --- VLM mode: describe the reference image first ---
+        if (mode === 'vlm' && reference_image) {
+          const refUri = resolveImageToDataUri(reference_image);
+          const vlmOutput = await replicate.run('openai/gpt-5-nano', {
+            input: {
+              prompt: IMAGE_DESCRIPTION_PROMPT,
+              image_input: [refUri],
+              temperature: 0.3,
+            }
+          });
+          const subjectDescription = (Array.isArray(vlmOutput) ? vlmOutput.join('') : String(vlmOutput)).trim();
+          sampleVars.subject = subjectDescription;
+        }
+
+        // Replace all template variables
+        for (const [key, value] of Object.entries(sampleVars)) {
+          resolvedPrompt = resolvedPrompt.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), value);
+        }
+
+        // Truncate if too long
+        if (resolvedPrompt.length > 1500) {
+          resolvedPrompt = resolvedPrompt.slice(0, 1500);
+        }
+
+        let output;
+
+        if (mode === 'direct' && reference_image) {
+          const refUri = resolveImageToDataUri(reference_image);
+          output = await replicate.run('prunaai/z-image-turbo-img2img', {
+            input: {
+              prompt: resolvedPrompt,
+              image: refUri,
+              strength: 0.75,
+              width: 512,
+              height: 512,
+            }
+          });
+        } else {
+          output = await replicate.run('prunaai/z-image-turbo', {
+            input: { 
+              prompt: resolvedPrompt,
+              width: 512,
+              height: 512,
+            }
+          });
+        }
+
+        const imageUrl = Array.isArray(output) ? String(output[0]) : String(output);
+        const response = await fetch(imageUrl);
+        if (!response.ok) throw new Error('Impossible de télécharger l\'image');
+        
+        const arrayBuffer = await response.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
+        const filename = `preview-${Date.now()}.webp`;
+        const destPath = join(IMAGES_DIR, filename);
+        writeFileSync(destPath, buffer);
+        const previewUrl = `images/${filename}`;
+
+        return { type: 'success', style, previewUrl };
+
+      } catch (err) {
+        console.error(`Error generating preview for ${style.id}:`, err);
+        return { type: 'error', data: { id: style.id, error: err.message } };
+      }
+    }
+
+    // Process styles in batches of CONCURRENCY
+    for (let i = 0; i < styles.length; i += CONCURRENCY) {
+      const batch = styles.slice(i, i + CONCURRENCY);
+      const batchResults = await Promise.all(batch.map(processStyle));
+      
+      for (const result of batchResults) {
+        if (result.type === 'success') {
+          const { style, previewUrl } = result;
+          // Delete old preview and save new one
+          if (style.preview_image && style.preview_image.startsWith('images/preview-')) {
+            const oldPath = join(__dirname, style.preview_image);
+            if (existsSync(oldPath)) unlinkSync(oldPath);
+          }
+          style.preview_image = previewUrl;
+          results.push({ id: style.id, preview_image: previewUrl });
+        } else {
+          errors.push(result.data);
+        }
+      }
+      
+      console.log(`Batch ${Math.floor(i / CONCURRENCY) + 1}/${Math.ceil(styles.length / CONCURRENCY)} completed`);
+    }
+
+    // Save all updated styles
+    writeStyles(styles);
+    buildApi(styles);
+
+    res.json({ 
+      message: `Généré ${results.length}/${styles.length} previews (en parallèle)`,
+      generated: results,
+      errors: errors
+    });
+
+  } catch (err) {
+    console.error('Generate all previews error:', err);
+    res.status(500).json({ error: `Erreur : ${err.message}` });
   }
 });
 

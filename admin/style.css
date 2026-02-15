@@ -214,6 +214,15 @@ header h1 {
   background: var(--primary-hover);
 }
 
+.btn-secondary {
+  background: var(--success);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #16a34a;
+}
+
 .btn-ghost {
   background: transparent;
   color: var(--text-muted);

@@ -118,6 +118,49 @@ async function pushToCDN() {
   }
 }
 
+async function generateAllPreviews() {
+  const btn = document.getElementById('generate-all-btn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Génération en cours...';
+
+  const referenceImage = localStorage.getItem('preview-ref-image') || '';
+  const mode = localStorage.getItem('preview-mode') || 'direct';
+
+  if (!referenceImage && mode === 'direct') {
+    showToast('Veuillez d\'abord définir une image de référence', 'error');
+    btn.disabled = false;
+    btn.textContent = '🖼️ Générer tous les previews';
+    return;
+  }
+
+  showToast('Génération de tous les previews en cours... Cela peut prendre plusieurs minutes.', 'success');
+
+  try {
+    const body = { mode };
+    if (referenceImage) body.reference_image = referenceImage;
+
+    const res = await fetch(`${API}/api/generate-all-previews`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error);
+
+    await loadStyles();
+    showToast(`${data.message}`, 'success');
+    if (data.errors && data.errors.length > 0) {
+      console.error('Preview generation errors:', data.errors);
+    }
+  } catch (err) {
+    showToast(err.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🖼️ Générer tous les previews';
+  }
+}
+
 // --- Rendering ---
 
 function renderStyles(styles) {
