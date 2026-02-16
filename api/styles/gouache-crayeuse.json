@@ -1,28 +1,27 @@
 {
   "id": "gouache-crayeuse",
   "title": "Textured Whimsy",
-  "description": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
-  "prompt": "A high-quality, hand-drawn style illustration of {{subject}} rendered with a charming, naive aesthetic reminiscent of contemporary children's books and editorial art. The artistic technique mimics a blend of dry gouache, wax crayons, and colored pencils applied vigorously to heavy-grain paper, resulting in a rich, tactile surface full of scratchy strokes, stippling, and visible paper texture. The forms are organic and slightly flattened, rejecting strict realism in favor of a playful, whimsical interpretation of the {{subject}}. The color palette utilizes a dominant wash of {{primary_color}} to establish the mood, with vibrant details highlighted in {{accent_color}} to create visual interest and contrast. The lighting is soft, diffuse, and illustrative, avoiding harsh photorealistic shadows to maintain a flat, graphical look. The edges of the subject are rough and imperfect, characteristic of manual drawing tools. The image is set against a solid {{background_color}} background, ensuring high contrast for the textured edges and easy separation of the subject from the negative space. The atmosphere is warm, creative, and inviting, capturing a sense of handcrafted authenticity.",
+  "description": "Ce style capture le charme des illustrations contemporaines de livres pour enfants en utilisant une approche technique mixte de crayons de couleur, de gouache sèche et de craies de cire. Il présente une perspective naïve et plate avec des textures grattées visibles, des traits organiques et une esthétique chaleureuse faite à la main.",
+  "prompt": "A charming, highly textured mixed-media illustration of {{subject}} rendered in the whimsical style of a modern children's book. The artwork simulates the tactile look of dry gouache layered with colored pencils and wax crayons on rough-grain paper. The rendering technique focuses on visible stroke marks, scratchy cross-hatching for shading, and organic, uneven outlines that emphasize a hand-drawn feel. The perspective is flattened and stylized, rejecting photorealism in favor of a naive, folk-art aesthetic with simplified geometric forms and exaggerated proportions. The color palette is warm and inviting, utilizing a dominant wash of {{primary_color}} to set the mood, punctuated by vibrant details in {{accent_color}}. The lighting is flat and ambient, avoiding harsh shadows to maintain a soft, illustrative quality. Textures are grainy and matte, mimicking the imperfections of traditional analog art supplies. The overall atmosphere is playful, creative, and cozy, evoking a sense of storytelling and artisanal craft. illustration, naive art, textured paper, visible strokes, dry brush, matte finish, soft edges, folk art aesthetic, highly detailed texture, 4k, artistic, creative, joyful, colored pencil drawing, flat design.",
   "variables": [
     "subject",
     "primary_color",
-    "accent_color",
-    "background_color"
+    "accent_color"
   ],
   "image": "images/g__6vlgwoaamdym.jpg",
   "tags": [
-    "illustration",
-    "textured",
-    "whimsical",
+    "children's book",
+    "mixed media",
     "crayon",
+    "textured",
     "naive art",
-    "children's book"
+    "whimsical"
   ],
   "removeBackground": true,
   "createdAt": "2026-02-10T15:44:41.253Z",
-  "background_prompt": "A detailed background scene depicting a cozy, creative environment or textured pattern without any central subject. The style mimics dry gouache and colored pencil on grainy paper, featuring elements like pinned art prints, potted plants, or abstract organic shapes. The colors are warm and earthy, utilizing shades of {{primary_color}} and {{accent_color}} to create a cluttered but harmonious backdrop. The texture is heavy and scratchy, with visible stroke marks and a matte finish, all composed on a {{background_color}} canvas to frame the scene.",
-  "description_en": "A charming illustration style that mimics traditional dry media like colored pencils, wax crayons, and gouache on rough paper. It features naive perspectives, organic shapes, and a highly tactile, grainy texture that evokes a cozy, storybook atmosphere.",
-  "description_fr": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
+  "background_prompt": "A textured, illustrative background scene depicting a cozy environment or abstract wall filled with hand-drawn details. The scene uses {{primary_color}} as the base tone with scribbled patterns and organic shapes in {{accent_color}}. The rendering mimics dry gouache and crayon on rough paper, featuring flat perspective, scattered background elements like posters or plants, and a grainy, matte surface texture without any main subject.",
+  "description_en": "This style captures the charm of contemporary children's book illustrations using a mixed-media approach of colored pencils, dry gouache, and wax crayons. It features a naive, flat perspective with visible scratchy textures, organic strokes, and a cozy, hand-drawn aesthetic.",
+  "description_fr": "Ce style capture le charme des illustrations contemporaines de livres pour enfants en utilisant une approche technique mixte de crayons de couleur, de gouache sèche et de craies de cire. Il présente une perspective naïve et plate avec des textures grattées visibles, des traits organiques et une esthétique chaleureuse faite à la main.",
   "supportImageReference": false,
-  "preview_image": "images/preview-1771153516999.webp"
+  "preview_image": "images/preview-1771244889721.webp"
 }

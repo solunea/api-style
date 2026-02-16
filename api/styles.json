@@ -2,18 +2,18 @@
   {
     "id": "gouache-crayeuse",
     "title": "Textured Whimsy",
-    "description": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
-    "description_en": "A charming illustration style that mimics traditional dry media like colored pencils, wax crayons, and gouache on rough paper. It features naive perspectives, organic shapes, and a highly tactile, grainy texture that evokes a cozy, storybook atmosphere.",
-    "description_fr": "Un style d'illustration charmant qui imite les médias secs traditionnels comme les crayons de couleur, les crayons de cire et la gouache sur du papier rugueux. Il présente des perspectives naïves, des formes organiques et une texture granuleuse très tactile qui évoque une atmosphère chaleureuse de livre de contes.",
+    "description": "Ce style capture le charme des illustrations contemporaines de livres pour enfants en utilisant une approche technique mixte de crayons de couleur, de gouache sèche et de craies de cire. Il présente une perspective naïve et plate avec des textures grattées visibles, des traits organiques et une esthétique chaleureuse faite à la main.",
+    "description_en": "This style captures the charm of contemporary children's book illustrations using a mixed-media approach of colored pencils, dry gouache, and wax crayons. It features a naive, flat perspective with visible scratchy textures, organic strokes, and a cozy, hand-drawn aesthetic.",
+    "description_fr": "Ce style capture le charme des illustrations contemporaines de livres pour enfants en utilisant une approche technique mixte de crayons de couleur, de gouache sèche et de craies de cire. Il présente une perspective naïve et plate avec des textures grattées visibles, des traits organiques et une esthétique chaleureuse faite à la main.",
     "image": "images/g__6vlgwoaamdym.jpg",
-    "preview_image": "images/preview-1771153516999.webp",
+    "preview_image": "images/preview-1771244889721.webp",
     "tags": [
-      "illustration",
-      "textured",
-      "whimsical",
+      "children's book",
+      "mixed media",
       "crayon",
+      "textured",
       "naive art",
-      "children's book"
+      "whimsical"
     ],
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
@@ -37,19 +37,19 @@
   },
   {
     "id": "vibrant-vector",
-    "title": "Geometric Vector",
-    "description": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
-    "description_en": "A modern, flat vector illustration style characterized by clean geometric shapes, exaggerated proportions, and vibrant solid colors. It creates a cheerful, corporate-tech aesthetic with lineless art and minimal, hard-edged shading.",
-    "description_fr": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
+    "title": "Vibrant Vector",
+    "description": "Un style d'illustration vectorielle moderne utilisant des couleurs unies audacieuses et des formes géométriques épurées. Présente un ombrage minimal à bords nets sans contours, typique de l'art d'entreprise et éditorial haut de gamme.",
+    "description_en": "A modern flat vector illustration style utilizing bold solid colors and clean geometric shapes. Features minimal hard-edged shading and crisp lines without outlines, typical of high-end corporate and editorial art.",
+    "description_fr": "Un style d'illustration vectorielle moderne utilisant des couleurs unies audacieuses et des formes géométriques épurées. Présente un ombrage minimal à bords nets sans contours, typique de l'art d'entreprise et éditorial haut de gamme.",
     "image": "images/g_shmfdxoaa8jyb.jpg",
-    "preview_image": "images/preview-1771153877037.webp",
+    "preview_image": "images/preview-1771244973821.webp",
     "tags": [
-      "flat design",
-      "vector illustration",
-      "corporate memphis",
+      "vector",
+      "flat",
       "geometric",
-      "minimalist",
-      "colorful"
+      "corporate",
+      "illustration",
+      "minimalist"
     ],
     "createdAt": "2026-02-10T15:52:37.052Z"
   },

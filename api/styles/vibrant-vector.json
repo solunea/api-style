@@ -1,8 +1,8 @@
 {
   "id": "vibrant-vector",
-  "title": "Geometric Vector",
-  "description": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
-  "prompt": "A high-quality, modern flat vector illustration of {{subject}}, executed in a distinct 'Corporate Memphis' or tech-editorial aesthetic. The artwork is constructed entirely from clean, solid geometric shapes with fluid curves and sharp angles, completely devoid of black outlines or strokes. The rendering style is strictly 2D flat design, utilizing a vibrant and high-contrast color palette dominated by {{primary_color}}, with playful and striking details in {{accent_color}}. Shading is minimal and stylized, using only hard-edged blocks of slightly darker solid colors to indicate depth and separation of layers, creating a paper-cutout feel without any gradients, noise, or texture. The surface finish is perfectly smooth, matte, and digital, mimicking the precision of vector software like Adobe Illustrator. Proportions are stylized and slightly exaggerated to enhance the friendly and approachable mood. The composition is bold and graphic, set against a solid {{background_color}} background to ensure crisp edge definition and easy background removal. The lighting implies a soft, global illumination that eliminates harsh cast shadows, maintaining a cheerful and optimistic atmosphere typical of modern UI/UX illustrations. reinforcement tags: flat design, vector art, lineless, minimal, trending on Dribbble, Behance, high saturation, sharp focus, 8k, commercial art, editorial illustration, crisp edges, vivid colors, geometric abstraction.",
+  "title": "Vibrant Vector",
+  "description": "Un style d'illustration vectorielle moderne utilisant des couleurs unies audacieuses et des formes géométriques épurées. Présente un ombrage minimal à bords nets sans contours, typique de l'art d'entreprise et éditorial haut de gamme.",
+  "prompt": "A premium flat vector illustration of {{subject}}, executed in a modern corporate art style commonly seen in high-end tech branding and editorial design. The artwork relies entirely on bold geometric shapes, clean curves, and solid color fills, completely eschewing gradients, textures, brushstrokes, or noise for a pristine digital look. The rendering technique mimics vector graphics software like Adobe Illustrator, focusing on razor-sharp edges and simplified, stylized forms. The color palette is vibrant, punchy, and saturated, utilizing {{primary_color}} as the dominant tone for the main structural elements, vividly contrasted by energetic pops of {{accent_color}} to highlight key details, patterns, and accessories. Lighting is purely stylistic and flat, where shadows are rendered not as soft gradients but as distinct, hard-edged geometric shapes in a slightly darker shade, creating a crisp sense of depth without breaking the 2D aesthetic. The composition is balanced and graphic, with a focus on visual clarity and shape hierarchy. The mood is optimistic, professional, approachable, and dynamic. The final image is composited on a clean, solid {{background_color}} surface, ensuring distinct separation between the subject and the negative space for perfect contrast. No outlines, lineless art style, flat design, vector aesthetics, trending on Dribbble, Behance, 8k resolution, crisp details, minimalist shading, high contrast, vivid colors, commercial art.",
   "variables": [
     "subject",
     "primary_color",
@@ -11,18 +11,18 @@
   ],
   "image": "images/g_shmfdxoaa8jyb.jpg",
   "tags": [
-    "flat design",
-    "vector illustration",
-    "corporate memphis",
+    "vector",
+    "flat",
     "geometric",
-    "minimalist",
-    "colorful"
+    "corporate",
+    "illustration",
+    "minimalist"
   ],
   "removeBackground": true,
   "createdAt": "2026-02-10T15:52:37.052Z",
-  "description_en": "A modern, flat vector illustration style characterized by clean geometric shapes, exaggerated proportions, and vibrant solid colors. It creates a cheerful, corporate-tech aesthetic with lineless art and minimal, hard-edged shading.",
-  "description_fr": "Un style d'illustration vectorielle moderne et plat, caractérisé par des formes géométriques épurées, des proportions exagérées et des couleurs unies vives. Il crée une esthétique technologique d'entreprise joyeuse avec un art sans contours et un ombrage minimal à bords nets.",
-  "background_prompt": "A seamless abstract background pattern composed of floating geometric shapes and playful vector elements. The scene features scattered circles, squiggles, triangles, and organic blobs rendered in flat {{primary_color}} and {{accent_color}} tones. The design is completely lineless with a smooth matte finish, set against a clean {{background_color}} surface. The arrangement is balanced and decorative, creating a modern tech-editorial atmosphere without any central subject, perfect for use as a backdrop or graphical overlay.",
-  "preview_image": "images/preview-1771153877037.webp",
+  "description_en": "A modern flat vector illustration style utilizing bold solid colors and clean geometric shapes. Features minimal hard-edged shading and crisp lines without outlines, typical of high-end corporate and editorial art.",
+  "description_fr": "Un style d'illustration vectorielle moderne utilisant des couleurs unies audacieuses et des formes géométriques épurées. Présente un ombrage minimal à bords nets sans contours, typique de l'art d'entreprise et éditorial haut de gamme.",
+  "background_prompt": "A flat vector background pattern featuring abstract geometric shapes, floating circles, and angular blocks in a modern corporate art style. The composition uses solid fills of {{primary_color}} and {{accent_color}} with hard-edged shadows and no gradients. Clean, minimalist, and decorative design elements arranged on a solid {{background_color}} surface.",
+  "preview_image": "images/preview-1771244973821.webp",
   "supportImageReference": false
 }
