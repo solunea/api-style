@@ -77,7 +77,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, tags, variables } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -94,7 +94,9 @@ app.post('/api/styles', (req, res) => {
     description_en: description_en || '',
     description_fr: description_fr || description || '',
     prompt: prompt || '',
+    prompt_removebg: prompt_removebg || '',
     background_prompt: background_prompt || '',
+    background_prompt_removebg: background_prompt_removebg || '',
     ...(variables && { variables }),
     image: image || '',
     preview_image: preview_image || '',
@@ -115,7 +117,7 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, tags, variables } = req.body;
 
   // Delete old preview file if a new one is being set
   const oldPreview = styles[index].preview_image;
@@ -133,7 +135,9 @@ app.put('/api/styles/:id', (req, res) => {
     ...(description_en !== undefined && { description_en }),
     ...(description_fr !== undefined && { description_fr }),
     ...(prompt !== undefined && { prompt }),
+    ...(prompt_removebg !== undefined && { prompt_removebg }),
     ...(background_prompt !== undefined && { background_prompt }),
+    ...(background_prompt_removebg !== undefined && { background_prompt_removebg }),
     ...(variables !== undefined && { variables }),
     ...(image !== undefined && { image }),
     ...(preview_image !== undefined && { preview_image }),

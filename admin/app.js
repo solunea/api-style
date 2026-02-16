@@ -254,6 +254,11 @@ function openModal(editId) {
     document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-preview-image').value = style.preview_image || '';
+    generatedPrompts.standard = style.prompt || '';
+    generatedPrompts.removebg = style.prompt_removebg || '';
+    generatedBgPrompts.standard = style.background_prompt || '';
+    generatedBgPrompts.removebg = style.background_prompt_removebg || '';
+    switchPromptMode('standard');
     if (style.image) {
       switchImageTab('url');
       document.getElementById('form-image-url').value = style.image;
@@ -367,11 +372,14 @@ async function handleSubmit(e) {
       statusEl.textContent = `✔ ${result.filename}`;
     }
 
-    // Auto-detect variables from prompt
-    const varMatches = [...prompt.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
+    // Auto-detect variables from all prompt variants
+    const allPromptText = [prompt, generatedPrompts.removebg, background_prompt, generatedBgPrompts.removebg].join(' ');
+    const varMatches = [...allPromptText.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
     const variables = [...new Set(varMatches)];
+    const prompt_removebg = generatedPrompts.removebg || '';
+    const background_prompt_removebg = generatedBgPrompts.removebg || '';
     const preview_image = document.getElementById('form-preview-image').value.trim();
-    const data = { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables: variables.length > 0 ? variables : undefined };
+    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, tags, variables: variables.length > 0 ? variables : undefined };
 
     if (editingId) {
       await updateStyle(editingId, data);
