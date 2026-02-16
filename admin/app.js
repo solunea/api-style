@@ -121,6 +121,37 @@ async function pushToCDN() {
   }
 }
 
+async function regenerateAllPrompts() {
+  const btn = document.getElementById('regenerate-all-btn');
+  btn.disabled = true;
+  btn.textContent = '⏳ Régénération en cours...';
+
+  showToast('Régénération de tous les prompts en cours... Cela peut prendre plusieurs minutes.', 'success');
+
+  try {
+    const res = await fetch(`${API}/api/analyze-all`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error);
+
+    await loadStyles();
+    let msg = `${data.processed} styles traités, ${data.skipped} ignorés`;
+    if (data.errors && data.errors.length > 0) {
+      msg += `, ${data.errors.length} erreurs`;
+      console.error('Analyze-all errors:', data.errors);
+    }
+    showToast(msg, 'success');
+  } catch (err) {
+    showToast(err.message, 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '🤖 Regénérer tous les prompts';
+  }
+}
+
 async function generateAllPreviews() {
   const btn = document.getElementById('generate-all-btn');
   btn.disabled = true;

@@ -329,6 +329,82 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
   }
 });
 
+// POST regenerate prompts for ALL styles that have an image
+app.post('/api/analyze-all', async (req, res) => {
+  try {
+    const styles = readStyles();
+    const results = { total: styles.length, processed: 0, skipped: 0, errors: [] };
+
+    // Prepare processable styles with their data URIs
+    const processable = [];
+    for (const style of styles) {
+      if (!style.image) { results.skipped++; continue; }
+      if (style.image.startsWith('http://') || style.image.startsWith('https://')) { results.skipped++; continue; }
+      const imgPath = join(__dirname, style.image);
+      if (!existsSync(imgPath)) {
+        results.skipped++;
+        results.errors.push(`${style.id}: image introuvable (${style.image})`);
+        continue;
+      }
+      const imageBuffer = readFileSync(imgPath);
+      const base64 = imageBuffer.toString('base64');
+      const ext = extname(style.image).toLowerCase();
+      const mimeMap = { '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.png': 'image/png', '.gif': 'image/gif', '.webp': 'image/webp' };
+      const mimeType = mimeMap[ext] || 'image/jpeg';
+      processable.push({ style, dataUri: `data:${mimeType};base64,${base64}` });
+    }
+
+    // Process in batches of 3
+    const BATCH_SIZE = 10;
+    for (let i = 0; i < processable.length; i += BATCH_SIZE) {
+      const batch = processable.slice(i, i + BATCH_SIZE);
+      console.log(`[analyze-all] Batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(processable.length / BATCH_SIZE)} (${batch.map(b => b.style.id).join(', ')})`);
+
+      const batchResults = await Promise.allSettled(batch.map(async ({ style, dataUri }) => {
+        const [parsedStd, parsedBg] = await Promise.all([
+          callGemini(ANALYZE_PROMPT_DEFAULT, dataUri),
+          callGemini(ANALYZE_PROMPT_REMOVEBG, dataUri),
+        ]);
+
+        style.title = parsedStd.title || style.title;
+        style.description_en = parsedStd.description_en || parsedStd.description || style.description_en;
+        style.description_fr = parsedStd.description_fr || style.description_fr;
+        style.description = style.description_fr;
+        style.prompt = parsedStd.prompt || style.prompt;
+        style.prompt_removebg = parsedBg.prompt || style.prompt_removebg || '';
+        style.background_prompt = parsedStd.background_prompt || style.background_prompt;
+        style.background_prompt_removebg = parsedBg.background_prompt || style.background_prompt_removebg || '';
+        style.tags = parsedStd.tags || style.tags;
+
+        const allText = [style.prompt, style.prompt_removebg, style.background_prompt, style.background_prompt_removebg].join(' ');
+        const varMatches = [...allText.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
+        style.variables = [...new Set(varMatches)];
+
+        return style.id;
+      }));
+
+      for (let j = 0; j < batchResults.length; j++) {
+        if (batchResults[j].status === 'fulfilled') {
+          results.processed++;
+          console.log(`[analyze-all] ✔ ${batchResults[j].value} done`);
+        } else {
+          const id = batch[j].style.id;
+          results.errors.push(`${id}: ${batchResults[j].reason?.message || 'Unknown error'}`);
+          console.error(`[analyze-all] ✖ ${id}:`, batchResults[j].reason?.message);
+        }
+      }
+    }
+
+    writeStyles(styles);
+    buildApi(styles);
+
+    res.json(results);
+  } catch (err) {
+    console.error('Analyze-all error:', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // Prompt used by VLM mode to describe the subject of the reference image
 const IMAGE_DESCRIPTION_PROMPT =
   "Describe the main subject of this image in 5 to 15 words for use as a {{subject}} placeholder. " +
