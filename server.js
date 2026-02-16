@@ -50,7 +50,6 @@ function buildApi(styles) {
     image: s.image,
     preview_image: s.preview_image || '',
     tags: s.tags,
-    removeBackground: !!s.removeBackground,
     createdAt: s.createdAt
   }));
   writeFileSync(join(API_DIR, 'styles.json'), JSON.stringify(index, null, 2));
@@ -78,7 +77,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables, removeBackground, supportImageReference } = req.body;
+  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -100,8 +99,6 @@ app.post('/api/styles', (req, res) => {
     image: image || '',
     preview_image: preview_image || '',
     tags: tags || [],
-    removeBackground: !!removeBackground,
-    supportImageReference: !!supportImageReference,
     createdAt: new Date().toISOString()
   };
 
@@ -118,7 +115,7 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables, removeBackground, supportImageReference } = req.body;
+  const { title, description, description_en, description_fr, prompt, background_prompt, image, preview_image, tags, variables } = req.body;
 
   // Delete old preview file if a new one is being set
   const oldPreview = styles[index].preview_image;
@@ -141,8 +138,6 @@ app.put('/api/styles/:id', (req, res) => {
     ...(image !== undefined && { image }),
     ...(preview_image !== undefined && { preview_image }),
     ...(tags !== undefined && { tags }),
-    ...(removeBackground !== undefined && { removeBackground: !!removeBackground }),
-    ...(supportImageReference !== undefined && { supportImageReference: !!supportImageReference }),
   };
 
   writeStyles(styles);
@@ -207,7 +202,82 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
   }
 });
 
+// Default analyze prompts
+const ANALYZE_PROMPT_DEFAULT = `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
+
+Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
+
+Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject, {{primary_color}} for the dominant color, {{accent_color}} for the accent color. These variables allow the style to be applied universally with any color theme.
+
+Return ONLY a valid JSON object with these fields:
+- "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
+- "description_en": describe what makes this style unique and recognizable (2-3 sentences, in English)
+- "description_fr": the same description translated in French (2-3 sentences, in French)
+- "prompt": a long, highly detailed English prompt (at least 150 words) that reproduces this exact visual style. Be extremely specific and descriptive — vague terms produce poor results. Describe precisely: the artistic rendering technique (e.g. "digital painting", "pencil sketch", "3D render", "vector illustration"), the medium and surface texture (e.g. "rough watercolor paper", "smooth matte plastic", "grainy film stock"), color grading and palette behavior, contrast levels, saturation, lighting setup with specific keywords (e.g. "golden hour", "studio lighting", "soft diffuse ambient light", "hard directional sunlight", "rim lighting"), depth of field and lens effects (e.g. "shallow depth of field", "bokeh", "tilt-shift"), and atmosphere/mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color and {{accent_color}} for the accent color. You may also use {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a long comma-separated list of reinforcement tags to strengthen the style interpretation (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic"). The more specific and descriptive the prompt, the better the results. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
+- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use {{primary_color}} and {{accent_color}} variables. Do NOT include any subject in this prompt, only the scene and environment.
+- "tags": an array of 3 to 6 relevant style tags (English, lowercase)
+
+Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
+
+const ANALYZE_PROMPT_REMOVEBG = `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
+
+Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
+
+Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject, {{primary_color}} for the dominant color, {{accent_color}} for the accent color, and {{background_color}} for the background color on which the final image will be displayed (important for contrast and edge rendering when the background is removed). These variables allow the style to be applied universally with any color theme.
+
+Return ONLY a valid JSON object with these fields:
+- "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
+- "description_en": describe what makes this style unique and recognizable (2-3 sentences, in English)
+- "description_fr": the same description translated in French (2-3 sentences, in French)
+- "prompt": a long, highly detailed English prompt (at least 150 words) that reproduces this exact visual style. Be extremely specific and descriptive — vague terms produce poor results. Describe precisely: the artistic rendering technique (e.g. "digital painting", "pencil sketch", "3D render", "vector illustration"), the medium and surface texture (e.g. "rough watercolor paper", "smooth matte plastic", "grainy film stock"), color grading and palette behavior, contrast levels, saturation, lighting setup with specific keywords (e.g. "golden hour", "studio lighting", "soft diffuse ambient light", "hard directional sunlight", "rim lighting"), depth of field and lens effects (e.g. "shallow depth of field", "bokeh", "tilt-shift"), and atmosphere/mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color, {{accent_color}} and {{background_color}} for the accent color. Also use {{background_color}} in the prompt. IMPORTANT: {{background_color}} is the color of the surface on which the final image will be placed after background removal. You MUST reference {{background_color}} explicitly, for example: "set against a {{background_color}} background", or "composited on a clean {{background_color}} surface". Never hardcode a background color like "white background" — always use {{background_color}} instead. You may also use {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a long comma-separated list of reinforcement tags to strengthen the style interpretation (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic"). The more specific and descriptive the prompt, the better the results. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
+- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use {{primary_color}}, {{accent_color}} and {{background_color}} variables. Do NOT include any subject in this prompt, only the scene and environment.
+- "tags": an array of 3 to 6 relevant style tags (English, lowercase)
+
+Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
+
+// Helper: parse raw model output into JSON
+function parseModelJson(raw) {
+  raw = raw.trim();
+  raw = raw.replace(/^```(?:json)?\s*\n?/i, '').replace(/\n?\s*```\s*$/i, '');
+
+  let jsonStr = null;
+  const startIdx = raw.indexOf('{');
+  if (startIdx !== -1) {
+    let depth = 0;
+    let inStr = false;
+    let esc = false;
+    for (let i = startIdx; i < raw.length; i++) {
+      const ch = raw[i];
+      if (esc) { esc = false; continue; }
+      if (ch === '\\' && inStr) { esc = true; continue; }
+      if (ch === '"') { inStr = !inStr; continue; }
+      if (inStr) continue;
+      if (ch === '{') depth++;
+      if (ch === '}') { depth--; if (depth === 0) { jsonStr = raw.slice(startIdx, i + 1); break; } }
+    }
+  }
+  if (!jsonStr) throw new Error('Aucun JSON valide trouvé dans la réponse du modèle');
+  return JSON.parse(jsonStr);
+}
+
+// Helper: call Gemini with a prompt and image
+async function callGemini(analyzePrompt, dataUri) {
+  const output = await replicate.run('google/gemini-3-pro', {
+    input: {
+      prompt: analyzePrompt,
+      images: [dataUri],
+      temperature: 0.7,
+    }
+  });
+  let raw = Array.isArray(output) ? output.join('') : String(output);
+  console.log('--- RAW MODEL OUTPUT ---');
+  console.log(raw.slice(0, 500));
+  console.log('--- END RAW OUTPUT ---');
+  return parseModelJson(raw);
+}
+
 // POST analyze image with Gemini 3 Pro via Replicate
+// Calls the model TWICE (standard + removebg) and returns both prompt versions
 app.post('/api/analyze', upload.single('image'), async (req, res) => {
   try {
     let dataUri;
@@ -233,100 +303,21 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
       return res.status(400).json({ error: 'Aucune image fournie' });
     }
 
-    const useImageRef = req.body && req.body.supportImageReference === 'true';
-    const useRemoveBg = req.body && req.body.removeBackground === 'true';
+    // Call model twice in parallel: standard + removebg
+    const [parsedStd, parsedBg] = await Promise.all([
+      callGemini(ANALYZE_PROMPT_DEFAULT, dataUri),
+      callGemini(ANALYZE_PROMPT_REMOVEBG, dataUri),
+    ]);
 
-    const bgColorIntro = useRemoveBg
-      ? ', and {{background_color}} for the background color on which the final image will be displayed (important for contrast and edge rendering when the background is removed)'
-      : '';
-
-    const bgColorVarsLabel = useRemoveBg ? ', {{accent_color}} and {{background_color}}' : ' and {{accent_color}}';
-
-    const bgColorPromptRule = useRemoveBg
-      ? ` Also use {{background_color}} in the prompt. IMPORTANT: {{background_color}} is the color of the surface on which the final image will be placed after background removal. You MUST reference {{background_color}} explicitly, for example: "set against a {{background_color}} background", or "composited on a clean {{background_color}} surface". Never hardcode a background color like "white background" — always use {{background_color}} instead.`
-      : '';
-
-    const bgColorBgPromptVars = useRemoveBg
-      ? '{{primary_color}}, {{accent_color}} and {{background_color}}'
-      : '{{primary_color}} and {{accent_color}}';
-
-    const prompt = useImageRef
-      ? `You are an expert prompt engineer specialized in AI image-to-image style transfer (Midjourney, Stable Diffusion, DALL-E, Flux).
-
-Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
-
-Then generate a high-quality style transfer prompt optimized for img2img workflows. The prompt must describe ONLY the visual style to apply — NOT the subject or content (the user will provide their own reference image). Focus on: rendering technique, color grading, texture quality, lighting mood, contrast, saturation, artistic medium, and visual effects. Use {{primary_color}} for the dominant color, {{accent_color}} for the accent color${bgColorIntro}. These variables allow the style to be adapted to any color theme.
-
-Return ONLY a valid JSON object with these fields:
-- "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
-- "description_en": describe what makes this style unique and recognizable (2-3 sentences, in English)
-- "description_fr": the same description translated in French (2-3 sentences, in French)
-- "prompt": a long, highly detailed English style transfer prompt (at least 150 words) that describes ONLY the visual style to apply to any input image. Do NOT describe a subject or scene — the user provides a reference image. Be extremely specific and descriptive — vague terms produce poor results. Describe precisely: the rendering technique (e.g. "digital painting", "pencil sketch", "3D render", "vector illustration"), the artistic medium and surface texture (e.g. "rough watercolor paper", "smooth matte plastic", "grainy film stock"), color grading and palette behavior, contrast levels, saturation, lighting setup with specific keywords (e.g. "golden hour", "studio lighting", "soft diffuse ambient light", "hard directional sunlight", "rim lighting"), lens effects (e.g. "shallow depth of field", "bokeh", "tilt-shift"), and atmosphere/mood. Use {{primary_color}}${bgColorVarsLabel} as color variables.${bgColorPromptRule} End with a long comma-separated list of reinforcement tags to strengthen the style interpretation (e.g. "style transfer, same composition, sharp focus, cinematic lighting, 8k, ultra detailed, photorealistic, volumetric light"). The more specific and descriptive the prompt, the better the results. The prompt should be professional quality, ready to use in img2img or style reference mode.
-- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use ${bgColorBgPromptVars} variables. Do NOT include any subject in this prompt, only the scene and environment.
-- "tags": an array of 3 to 6 relevant style tags (English, lowercase)
-
-Return ONLY the raw JSON. No markdown, no code fences, no extra text.`
-      : `You are an expert prompt engineer specialized in AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
-
-Analyze the visual style of this image in detail: lighting, color palette, textures, composition, artistic technique, mood, atmosphere, rendering style, etc.
-
-Then generate a high-quality, reusable style prompt that can be applied to ANY other image or subject. The prompt must capture the essence of the style, not the specific content of the image. Use {{subject}} as a placeholder for the main subject, {{primary_color}} for the dominant color, {{accent_color}} for the accent color${bgColorIntro}. These variables allow the style to be applied universally with any color theme.
-
-Return ONLY a valid JSON object with these fields:
-- "title": an original creative name for this style in exactly 2 words (in English, like "Neon Glow", "Golden Haze", "Celestial Burst")
-- "description_en": describe what makes this style unique and recognizable (2-3 sentences, in English)
-- "description_fr": the same description translated in French (2-3 sentences, in French)
-- "prompt": a long, highly detailed English prompt (at least 150 words) that reproduces this exact visual style. Be extremely specific and descriptive — vague terms produce poor results. Describe precisely: the artistic rendering technique (e.g. "digital painting", "pencil sketch", "3D render", "vector illustration"), the medium and surface texture (e.g. "rough watercolor paper", "smooth matte plastic", "grainy film stock"), color grading and palette behavior, contrast levels, saturation, lighting setup with specific keywords (e.g. "golden hour", "studio lighting", "soft diffuse ambient light", "hard directional sunlight", "rim lighting"), depth of field and lens effects (e.g. "shallow depth of field", "bokeh", "tilt-shift"), and atmosphere/mood. It must be generic and reusable on any subject. Include {{subject}} as the main variable, {{primary_color}} for the dominant color${bgColorVarsLabel} for the accent color.${bgColorPromptRule} You may also use {{mood}}, {{lighting}} if relevant. At the end of the prompt, append a long comma-separated list of reinforcement tags to strengthen the style interpretation (e.g. "no perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic"). The more specific and descriptive the prompt, the better the results. The prompt should be professional quality, extremely descriptive, ready to copy-paste into Midjourney or Flux.
-- "background_prompt": a detailed English prompt (at least 40 words) that describes ONLY a background scene or environment matching this visual style. This prompt must work in two ways: (1) as a background layer placed behind a subject, and (2) as a foreground decorative frame or overlay placed in front of the subject to create depth. Describe environment elements, patterns, textures, colors, and atmospheric effects that complement the main style. Use ${bgColorBgPromptVars} variables. Do NOT include any subject in this prompt, only the scene and environment.
-- "tags": an array of 3 to 6 relevant style tags (English, lowercase)
-
-Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
-
-    const output = await replicate.run('google/gemini-3-pro', {
-      input: {
-        prompt: prompt,
-        images: [dataUri],
-        temperature: 0.7,
-      }
-    });
-
-    // output can be a string or an array of strings
-    let raw = Array.isArray(output) ? output.join('') : String(output);
-    raw = raw.trim();
-    console.log('--- RAW MODEL OUTPUT ---');
-    console.log(raw);
-    console.log('--- END RAW OUTPUT ---');
-
-    // Remove markdown code fences if present (handles ```json\n...\n```)
-    raw = raw.replace(/^```(?:json)?\s*\n?/i, '').replace(/\n?\s*```\s*$/i, '');
-
-    // Extract the first balanced JSON object using brace depth tracking
-    let jsonStr = null;
-    const startIdx = raw.indexOf('{');
-    if (startIdx !== -1) {
-      let depth = 0;
-      let inStr = false;
-      let esc = false;
-      for (let i = startIdx; i < raw.length; i++) {
-        const ch = raw[i];
-        if (esc) { esc = false; continue; }
-        if (ch === '\\' && inStr) { esc = true; continue; }
-        if (ch === '"') { inStr = !inStr; continue; }
-        if (inStr) continue;
-        if (ch === '{') depth++;
-        if (ch === '}') { depth--; if (depth === 0) { jsonStr = raw.slice(startIdx, i + 1); break; } }
-      }
-    }
-    if (!jsonStr) throw new Error('Aucun JSON valide trouvé dans la réponse du modèle');
-
-    const parsed = JSON.parse(jsonStr);
     res.json({
-      title: parsed.title || '',
-      description_en: parsed.description_en || parsed.description || '',
-      description_fr: parsed.description_fr || '',
-      prompt: parsed.prompt || '',
-      background_prompt: parsed.background_prompt || '',
-      tags: parsed.tags || [],
+      title: parsedStd.title || '',
+      description_en: parsedStd.description_en || parsedStd.description || '',
+      description_fr: parsedStd.description_fr || '',
+      prompt: parsedStd.prompt || '',
+      prompt_removebg: parsedBg.prompt || '',
+      background_prompt: parsedStd.background_prompt || '',
+      background_prompt_removebg: parsedBg.background_prompt || '',
+      tags: parsedStd.tags || [],
     });
   } catch (err) {
     console.error('Analyze error:', err);

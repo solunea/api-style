@@ -15,26 +15,24 @@
       "naive art",
       "children's book"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
     "id": "doodle-pop",
     "title": "Doodle Pop",
-    "description": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
-    "description_en": "",
-    "description_fr": "Ce style combine des illustrations de type gribouillage à l'encre noire avec des aplats de couleurs vives et limitées sur un fond crème. Il se distingue par l'utilisation de motifs rayés, de formes géométriques abstraites et d'éléments graphiques ludiques comme des traits d'action.",
+    "description": "Un style d'illustration ludique dessiné à la main, caractérisé par des contours noirs audacieux et une palette de couleurs limitée à fort contraste. Il présente des gribouillages environnementaux énergiques, des motifs rayés abstraits et des éléments manuscrits entourant le sujet pour créer une atmosphère dynamique de brainstorming.",
+    "description_en": "A playful, hand-drawn illustration style characterized by bold black ink outlines and a limited, high-contrast color palette. It features energetic environmental doodles, abstract striped patterns, and handwritten elements surrounding the subject to create a dynamic, brainstorming atmosphere.",
+    "description_fr": "Un style d'illustration ludique dessiné à la main, caractérisé par des contours noirs audacieux et une palette de couleurs limitée à fort contraste. Il présente des gribouillages environnementaux énergiques, des motifs rayés abstraits et des éléments manuscrits entourant le sujet pour créer une atmosphère dynamique de brainstorming.",
     "image": "images/hatijpwaeaa5f-g.jpg",
-    "preview_image": "images/preview-1771153518680.webp",
+    "preview_image": "images/preview-1771244550276.webp",
     "tags": [
       "doodle",
       "illustration",
-      "sketch",
+      "hand-drawn",
+      "vector",
       "minimalist",
-      "playful",
-      "vector"
+      "playful"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
@@ -53,7 +51,6 @@
       "minimalist",
       "colorful"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
   {
@@ -72,7 +69,6 @@
       "matte",
       "softbox"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-10T16:23:17.069Z"
   },
   {
@@ -91,7 +87,6 @@
       "corporate",
       "illustration"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-10T16:24:16.950Z"
   },
   {
@@ -110,7 +105,6 @@
       "lo-fi",
       "screen print"
     ],
-    "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
@@ -129,7 +123,6 @@
       "minimalist",
       "technical drawing"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-10T16:29:06.811Z"
   },
   {
@@ -148,7 +141,6 @@
       "engraving",
       "illustration"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
   {
@@ -167,7 +159,6 @@
       "cgi",
       "cute"
     ],
-    "removeBackground": false,
     "createdAt": "2026-02-14T21:36:25.982Z"
   },
   {
@@ -186,7 +177,6 @@
       "constructivism",
       "vector"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-14T21:38:22.504Z"
   },
   {
@@ -205,7 +195,6 @@
       "craftcore",
       "soft focus"
     ],
-    "removeBackground": false,
     "createdAt": "2026-02-14T21:39:17.824Z"
   },
   {
@@ -224,7 +213,6 @@
       "corporate memphis",
       "soft lighting"
     ],
-    "removeBackground": false,
     "createdAt": "2026-02-14T21:40:48.938Z"
   },
   {
@@ -243,7 +231,6 @@
       "abstract",
       "pop art"
     ],
-    "removeBackground": true,
     "createdAt": "2026-02-14T21:45:30.360Z"
   },
   {
@@ -253,7 +240,7 @@
     "description_en": "This style captures the iconic, heartwarming aesthetic of Studio Ghibli animations, featuring lush, hand-painted backgrounds and clean, cel-shaded subjects. It emphasizes natural lighting, dappled sunlight (komorebi), and a rich, organic color palette that evokes a sense of wonder and peaceful melancholy.",
     "description_fr": "Ce style capture l'esthétique emblématique et chaleureuse des animations du Studio Ghibli, avec des arrière-plans luxuriants peints à la main et des sujets aux contours nets (cel-shading). Il met l'accent sur l'éclairage naturel, la lumière du soleil tachetée (komorebi) et une palette de couleurs riche et organique qui évoque un sentiment d'émerveillement et de mélancolie paisible.",
     "image": "images/ghibli-vl-media-1140x694.jpg",
-    "preview_image": "images/preview-1771239407006.webp",
+    "preview_image": "images/preview-1771243364114.webp",
     "tags": [
       "anime",
       "ghibli",
@@ -262,7 +249,6 @@
       "scenic",
       "cel-shaded"
     ],
-    "removeBackground": false,
     "createdAt": "2026-02-16T10:56:51.901Z"
   }
 ]

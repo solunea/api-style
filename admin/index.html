@@ -90,7 +90,13 @@
           </div>
 
           <div class="form-group">
-            <label for="form-prompt">Prompt</label>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <label for="form-prompt">Prompt</label>
+              <div class="tab-switch" style="margin:0">
+                <button type="button" class="tab active" id="prompt-tab-standard" onclick="switchPromptMode('standard')">Standard</button>
+                <button type="button" class="tab" id="prompt-tab-removebg" onclick="switchPromptMode('removebg')">RemoveBg</button>
+              </div>
+            </div>
             <textarea id="form-prompt" rows="3" placeholder="Le prompt utilisé pour générer ce style..."></textarea>
           </div>
 
@@ -112,7 +118,13 @@
           </div>
 
           <div class="form-group">
-            <label for="form-background-prompt">Background Prompt</label>
+            <div style="display:flex;align-items:center;justify-content:space-between">
+              <label for="form-background-prompt">Background Prompt</label>
+              <div class="tab-switch" style="margin:0">
+                <button type="button" class="tab active" id="bg-prompt-tab-standard" onclick="switchPromptMode('standard')">Standard</button>
+                <button type="button" class="tab" id="bg-prompt-tab-removebg" onclick="switchPromptMode('removebg')">RemoveBg</button>
+              </div>
+            </div>
             <textarea id="form-background-prompt" rows="3" placeholder="Prompt pour générer le fond (arrière-plan + premier plan)..."></textarea>
             <small>Prompt dédié au décor : fonctionne derrière ET devant le sujet</small>
           </div>
@@ -133,7 +145,7 @@
                   </div>
                 </div>
                 <div id="upload-status" class="upload-status" style="display:none"></div>
-                <button type="button" class="btn btn-ai" id="analyze-btn" onclick="analyzeImage()" style="display:none">🤖 Auto-remplir avec IA</button>
+                <button type="button" class="btn btn-ai" id="analyze-btn" onclick="analyzeImage()">🤖 Auto-remplir avec IA</button>
               </div>
               <div id="tab-url" class="tab-content" style="display:none">
                 <input type="text" id="form-image-url" placeholder="https://arweave.net/..." oninput="updateUrlPreview()">
@@ -152,21 +164,6 @@
             <small>Séparés par des virgules</small>
           </div>
 
-          <div class="form-group form-group-checkbox">
-            <label class="checkbox-label">
-              <input type="checkbox" id="form-remove-bg">
-              <span>Supprimer le fond</span>
-            </label>
-            <small>Active la suppression automatique de l'arrière-plan</small>
-          </div>
-
-          <div class="form-group form-group-checkbox">
-            <label class="checkbox-label">
-              <input type="checkbox" id="form-support-image-ref">
-              <span>Supporte une image en référence</span>
-            </label>
-            <small>Indique si ce style accepte une image en entrée comme référence</small>
-          </div>
 
           <div class="form-actions">
             <button type="button" class="btn btn-ghost" onclick="closeModal()">Annuler</button>
