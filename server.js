@@ -5,7 +5,9 @@ import multer from 'multer';
 import { readFileSync, writeFileSync, existsSync, mkdirSync, unlinkSync, copyFileSync, readdirSync, statSync } from 'fs';
 import { join, dirname, extname } from 'path';
 import { fileURLToPath } from 'url';
-import { execSync } from 'child_process';
+import { execSync, exec as execCb } from 'child_process';
+import { promisify } from 'util';
+const execAsync = promisify(execCb);
 import Replicate from 'replicate';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
