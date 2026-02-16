@@ -267,6 +267,7 @@ function openModal(editId) {
   resetPreviewSection();
   document.getElementById('form-editing-id').value = '';
   document.getElementById('form-preview-image').value = '';
+  document.getElementById('form-preview-image-removebg').value = '';
   switchImageTab('upload');
   resetGeneratedPrompts();
 
@@ -285,6 +286,7 @@ function openModal(editId) {
     document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-preview-image').value = style.preview_image || '';
+    document.getElementById('form-preview-image-removebg').value = style.preview_image_removebg || '';
     generatedPrompts.standard = style.prompt || '';
     generatedPrompts.removebg = style.prompt_removebg || '';
     generatedBgPrompts.standard = style.background_prompt || '';
@@ -410,7 +412,8 @@ async function handleSubmit(e) {
     const prompt_removebg = generatedPrompts.removebg || '';
     const background_prompt_removebg = generatedBgPrompts.removebg || '';
     const preview_image = document.getElementById('form-preview-image').value.trim();
-    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, tags, variables: variables.length > 0 ? variables : undefined };
+    const preview_image_removebg = document.getElementById('form-preview-image-removebg').value.trim();
+    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -567,6 +570,7 @@ async function generatePreview() {
 
   try {
     const body = { prompt, mode };
+    if (generatedPrompts.removebg) body.prompt_removebg = generatedPrompts.removebg;
     if (referenceImage) body.reference_image = referenceImage;
     if (styleId) body.style_id = styleId;
 
@@ -582,11 +586,17 @@ async function generatePreview() {
     }
 
     const data = await res.json();
-    const img = document.getElementById('preview-image');
-    img.src = data.url;
+    document.getElementById('preview-image').src = data.url;
     document.getElementById('form-preview-image').value = data.url;
+    if (data.url_removebg) {
+      document.getElementById('preview-image-removebg').src = data.url_removebg;
+      document.getElementById('preview-removebg-wrap').style.display = '';
+      document.getElementById('form-preview-image-removebg').value = data.url_removebg;
+    } else {
+      document.getElementById('preview-removebg-wrap').style.display = 'none';
+    }
     container.style.display = '';
-    showToast('Aperçu généré et enregistré', 'success');
+    showToast('Aperçus générés et enregistrés', 'success');
   } catch (err) {
     showToast(err.message, 'error');
   } finally {
@@ -613,6 +623,8 @@ function resetPreviewSection() {
   document.getElementById('preview-container').style.display = 'none';
   document.getElementById('preview-loading').style.display = 'none';
   document.getElementById('preview-image').src = '';
+  document.getElementById('preview-image-removebg').src = '';
+  document.getElementById('preview-removebg-wrap').style.display = 'none';
 }
 
 // --- Delete Modal ---

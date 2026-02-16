@@ -108,7 +108,16 @@
                 <button type="button" class="btn btn-ai btn-ai-sm" id="generate-preview-btn" onclick="generatePreview()">🖼️ Générer un aperçu</button>
               </div>
               <div id="preview-container" class="preview-container" style="display:none">
-                <img id="preview-image" src="" alt="Preview générée">
+                <div style="display:flex;gap:12px;flex-wrap:wrap">
+                  <div style="flex:1;min-width:200px;text-align:center">
+                    <small><strong>Standard</strong></small>
+                    <img id="preview-image" src="" alt="Preview Standard" style="width:100%;border-radius:8px;margin-top:4px">
+                  </div>
+                  <div id="preview-removebg-wrap" style="flex:1;min-width:200px;text-align:center;display:none">
+                    <small><strong>RemoveBg</strong></small>
+                    <img id="preview-image-removebg" src="" alt="Preview RemoveBg" style="width:100%;border-radius:8px;margin-top:4px">
+                  </div>
+                </div>
                 <button type="button" class="btn btn-sm btn-ghost preview-use-btn" id="preview-use-btn" onclick="usePreviewAsImage()">Utiliser comme preview du style</button>
               </div>
               <div id="preview-loading" class="preview-loading" style="display:none">
@@ -154,6 +163,7 @@
                   <img src="" alt="Preview" onerror="this.parentElement.style.display='none'">
                 </div>
                 <input type="hidden" id="form-preview-image" value="">
+                <input type="hidden" id="form-preview-image-removebg" value="">
                 <button type="button" class="btn btn-ai" id="analyze-url-btn" onclick="analyzeImage()" style="display:none;margin-top:8px">🤖 Auto-remplir avec IA</button>
               </div>
             </div>

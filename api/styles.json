@@ -7,6 +7,7 @@
     "description_fr": "Ce style capture le charme des illustrations contemporaines de livres pour enfants en utilisant une approche technique mixte de crayons de couleur, de gouache sèche et de craies de cire. Il présente une perspective naïve et plate avec des textures grattées visibles, des traits organiques et une esthétique chaleureuse faite à la main.",
     "image": "images/g__6vlgwoaamdym.jpg",
     "preview_image": "images/preview-1771244889721.webp",
+    "preview_image_removebg": "",
     "tags": [
       "children's book",
       "mixed media",
@@ -19,19 +20,20 @@
   },
   {
     "id": "doodle-pop",
-    "title": "Doodle Pop",
-    "description": "Un style d'illustration ludique dessiné à la main, caractérisé par des contours noirs audacieux et une palette de couleurs limitée à fort contraste. Il présente des gribouillages environnementaux énergiques, des motifs rayés abstraits et des éléments manuscrits entourant le sujet pour créer une atmosphère dynamique de brainstorming.",
-    "description_en": "A playful, hand-drawn illustration style characterized by bold black ink outlines and a limited, high-contrast color palette. It features energetic environmental doodles, abstract striped patterns, and handwritten elements surrounding the subject to create a dynamic, brainstorming atmosphere.",
-    "description_fr": "Un style d'illustration ludique dessiné à la main, caractérisé par des contours noirs audacieux et une palette de couleurs limitée à fort contraste. Il présente des gribouillages environnementaux énergiques, des motifs rayés abstraits et des éléments manuscrits entourant le sujet pour créer une atmosphère dynamique de brainstorming.",
+    "title": "Playful Doodle",
+    "description": "Un style d'illustration fantaisiste dessiné à la main qui imite les croquis au marqueur noir sur du papier chaud avec une palette de couleurs limitée et vibrante. Il présente des contours audacieux, une coloration plate et est entouré d'éléments décoratifs énergiques comme des gribouillis, des formes géométriques et des symboles représentant les idées et la créativité.",
+    "description_en": "A whimsical, hand-drawn illustration style that mimics black marker sketches on warm paper with a limited, vibrant color palette. It features bold outlines, flat coloring, and is surrounded by energetic decorative elements like squiggles, geometric shapes, and symbols representing ideas and creativity.",
+    "description_fr": "Un style d'illustration fantaisiste dessiné à la main qui imite les croquis au marqueur noir sur du papier chaud avec une palette de couleurs limitée et vibrante. Il présente des contours audacieux, une coloration plate et est entouré d'éléments décoratifs énergiques comme des gribouillis, des formes géométriques et des symboles représentant les idées et la créativité.",
     "image": "images/hatijpwaeaa5f-g.jpg",
     "preview_image": "images/preview-1771244550276.webp",
+    "preview_image_removebg": "",
     "tags": [
       "doodle",
       "illustration",
       "hand-drawn",
-      "vector",
-      "minimalist",
-      "playful"
+      "sketch",
+      "playful",
+      "flat design"
     ],
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
@@ -43,6 +45,7 @@
     "description_fr": "Un style d'illustration vectorielle moderne utilisant des couleurs unies audacieuses et des formes géométriques épurées. Présente un ombrage minimal à bords nets sans contours, typique de l'art d'entreprise et éditorial haut de gamme.",
     "image": "images/g_shmfdxoaa8jyb.jpg",
     "preview_image": "images/preview-1771244973821.webp",
+    "preview_image_removebg": "",
     "tags": [
       "vector",
       "flat",
@@ -61,6 +64,7 @@
     "description_fr": "Un style de rendu 3D minimaliste caractérisé par des textures lisses et mates rappelant le plastique doux ou l'argile raffinée. Il utilise des palettes pastel, un éclairage de studio diffus et une géométrie arrondie pour créer une esthétique propre, tactile et réconfortante.",
     "image": "images/7017182a1534a16175ccb19fbe1ae83c.jpg",
     "preview_image": "images/preview-1771153517919.webp",
+    "preview_image_removebg": "",
     "tags": [
       "3d render",
       "claymorphism",
@@ -79,6 +83,7 @@
     "description_fr": "Ce style se caractérise par une illustration vectorielle minimaliste aux contours noirs façon croquis et aux aplats de couleurs unies sans ombrage. L'esthétique est épurée et professionnelle, utilisant largement l'espace négatif blanc pour une clarté maximale.",
     "image": "images/de2a56790ec9d64647c9656553635390.jpg",
     "preview_image": "images/preview-1771153518022.webp",
+    "preview_image_removebg": "",
     "tags": [
       "vector art",
       "minimalism",
@@ -97,6 +102,7 @@
     "description_fr": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
     "image": "images/ffd2d063ffed34950f43897583e6c0a1.jpg",
     "preview_image": "images/preview-1771153928359.webp",
+    "preview_image_removebg": "",
     "tags": [
       "risograph",
       "flat illustration",
@@ -115,6 +121,7 @@
     "description_fr": "",
     "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
     "preview_image": "images/preview-1771153525569.webp",
+    "preview_image_removebg": "",
     "tags": [
       "isometric",
       "line art",
@@ -133,6 +140,7 @@
     "description_fr": "Ce style imite les techniques traditionnelles d'impression en relief comme la gravure sur bois ou le linoléum, caractérisé par des lignes audacieuses, des textures rugueuses et une palette de couleurs limitée. Il présente une esthétique nostalgique et lo-fi avec un grain d'encre visible et des effets de pointillés, rappelant les illustrations de vieux livres ou les timbres anciens.",
     "image": "images/haec6aowsaag52z.jpg",
     "preview_image": "images/preview-1771153526646.webp",
+    "preview_image_removebg": "",
     "tags": [
       "woodcut",
       "linocut",
@@ -151,6 +159,7 @@
     "description_fr": "Un style de rendu de personnage 3D haut de gamme rappelant les studios d'animation modernes comme Pixar ou Illumination. Il présente des textures mates et douces, un éclairage de studio diffus avec diffusion sous-surface, et une esthétique propre aux dégradés pastel.",
     "image": "images/haxv01ibaaayb77.jpg",
     "preview_image": "images/preview-1771153524575.webp",
+    "preview_image_removebg": "",
     "tags": [
       "3d render",
       "pixar style",
@@ -169,6 +178,7 @@
     "description_fr": "Ce style présente une esthétique minimaliste et plate inspirée des mouvements Bauhaus et Constructiviste, caractérisée par la réduction de sujets complexes en formes géométriques fondamentales comme des cercles, des triangles et des rectangles. Il utilise une palette de couleurs audacieuse et limitée avec des blocs de couleur unis, des bords nets et une absence de dégradés ou d'ombrages, souvent recouverts d'une subtile texture de papier vintage.",
     "image": "images/g_v0edxauaack44.jpg",
     "preview_image": "images/preview-1771153526789.webp",
+    "preview_image_removebg": "",
     "tags": [
       "bauhaus",
       "geometric",
@@ -187,6 +197,7 @@
     "description_fr": "Ce style imite la texture tactile et duveteuse des sculptures en laine cardée (feutrage à l'aiguille) capturées par la macrophotographie. Il présente des palettes de couleurs pastel douces, des formes arrondies adorables et une profondeur de champ extrêmement faible qui met en valeur les détails fibreux du matériau tout en floutant l'arrière-plan dans une douceur onirique.",
     "image": "images/g_o1exrboaa5n_d.jpg",
     "preview_image": "images/preview-1771153531962.webp",
+    "preview_image_removebg": "",
     "tags": [
       "needle felting",
       "wool texture",
@@ -205,6 +216,7 @@
     "description_fr": "Ce style présente une esthétique vectorielle plate et épurée avec une palette pastel douce et sophistiquée ainsi qu'une composition géométrique précise. Il se caractérise par des surfaces mates lisses, des formes sans contours et des ombres angulaires distinctes suggérant une lumière naturelle douce et directionnelle, évoquant une ambiance éditoriale moderne et sereine.",
     "image": "images/g_g17_8xwaewa7b.jpg",
     "preview_image": "images/preview-1771153532936.webp",
+    "preview_image_removebg": "",
     "tags": [
       "flat illustration",
       "vector art",
@@ -223,6 +235,7 @@
     "description_fr": "Un style d'illustration contemporain audacieux qui mélange des formes vectorielles géométriques plates avec des textures de pinceau sec et un grain risographique. Il présente une palette de couleurs limitée et très contrastée avec des formes abstraites et des détails griffonnés sur un fond couleur crème.",
     "image": "images/370bf13127fd26952d309ce97e9cb311.jpg",
     "preview_image": "images/preview-1771153531608.webp",
+    "preview_image_removebg": "",
     "tags": [
       "risograph",
       "editorial illustration",
@@ -241,6 +254,7 @@
     "description_fr": "Ce style capture l'esthétique emblématique et chaleureuse des animations du Studio Ghibli, avec des arrière-plans luxuriants peints à la main et des sujets aux contours nets (cel-shading). Il met l'accent sur l'éclairage naturel, la lumière du soleil tachetée (komorebi) et une palette de couleurs riche et organique qui évoque un sentiment d'émerveillement et de mélancolie paisible.",
     "image": "images/ghibli-vl-media-1140x694.jpg",
     "preview_image": "images/preview-1771243364114.webp",
+    "preview_image_removebg": "",
     "tags": [
       "anime",
       "ghibli",
