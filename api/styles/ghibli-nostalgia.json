@@ -1,0 +1,27 @@
+{
+  "id": "ghibli-nostalgia",
+  "title": "Ghibli Nostalgia",
+  "description": "Ce style capture l'esthétique emblématique et chaleureuse des animations du Studio Ghibli, avec des arrière-plans luxuriants peints à la main et des sujets aux contours nets (cel-shading). Il met l'accent sur l'éclairage naturel, la lumière du soleil tachetée (komorebi) et une palette de couleurs riche et organique qui évoque un sentiment d'émerveillement et de mélancolie paisible.",
+  "description_en": "This style captures the iconic, heartwarming aesthetic of Studio Ghibli animations, featuring lush, hand-painted backgrounds and clean, cel-shaded subjects. It emphasizes natural lighting, dappled sunlight (komorebi), and a rich, organic color palette that evokes a sense of wonder and peaceful melancholy.",
+  "description_fr": "Ce style capture l'esthétique emblématique et chaleureuse des animations du Studio Ghibli, avec des arrière-plans luxuriants peints à la main et des sujets aux contours nets (cel-shading). Il met l'accent sur l'éclairage naturel, la lumière du soleil tachetée (komorebi) et une palette de couleurs riche et organique qui évoque un sentiment d'émerveillement et de mélancolie paisible.",
+  "prompt": "A breathtaking, high-fidelity anime production still in the legendary style of Studio Ghibli and Hayao Miyazaki, featuring {{subject}}. The artistic rendering combines crisp, traditional 2D cel-shading for the {{subject}} with clean outlines and flat colors, set against a stunningly detailed, hand-painted background reminiscent of Kazuo Oga's art. The environment is rendered with the texture of opaque watercolors and poster paint, emphasizing organic imperfections, mossy surfaces, and weathered textures. The color grading is naturalistic yet vibrant, dominated by lush {{primary_color}} tones that establish the atmospheric mood, while the {{subject}} features distinct pops of {{accent_color}} to create visual interest. The lighting is soft, diffuse, and magical, characterized by 'komorebi'—dappled sunlight filtering through dense foliage—casting gentle, shifting shadows and volumetric light rays. The composition creates a sense of scale and immersion. The overall atmosphere is nostalgic, serene, and deeply emotional, capturing the Japanese concept of 'mono no aware'. Reinforcement tags: masterpiece, best quality, 1990s anime aesthetic, hand drawn, highly detailed, 8k resolution, cinematic composition, soft focus background, sharp focus subject, lush vegetation, atmospheric perspective, idyllic, whimsical.",
+  "background_prompt": "A serene, hand-painted anime landscape background without any characters, executed in the style of a high-budget animated feature film. The scene depicts a lush, detailed environment painted with poster colors and watercolors, featuring ancient trees, moss-covered stones, or a quiet country road. The palette is rich in {{primary_color}} hues representing the natural world, with subtle highlights of {{accent_color}} in wildflowers or light reflections. Dappled sunlight filters through the canopy, creating soft patches of light and shadow on the ground. The texture is painterly yet realistic, capturing the nostalgic and peaceful essence of a summer day in the countryside.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color"
+  ],
+  "image": "images/ghibli-vl-media-1140x694.jpg",
+  "preview_image": "images/preview-1771239407006.webp",
+  "tags": [
+    "anime",
+    "ghibli",
+    "painterly",
+    "nostalgic",
+    "scenic",
+    "cel-shaded"
+  ],
+  "removeBackground": false,
+  "supportImageReference": false,
+  "createdAt": "2026-02-16T10:56:51.901Z"
+}

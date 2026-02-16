@@ -243,7 +243,26 @@
       "abstract",
       "pop art"
     ],
-    "removeBackground": false,
+    "removeBackground": true,
     "createdAt": "2026-02-14T21:45:30.360Z"
+  },
+  {
+    "id": "ghibli-nostalgia",
+    "title": "Ghibli Nostalgia",
+    "description": "Ce style capture l'esthétique emblématique et chaleureuse des animations du Studio Ghibli, avec des arrière-plans luxuriants peints à la main et des sujets aux contours nets (cel-shading). Il met l'accent sur l'éclairage naturel, la lumière du soleil tachetée (komorebi) et une palette de couleurs riche et organique qui évoque un sentiment d'émerveillement et de mélancolie paisible.",
+    "description_en": "This style captures the iconic, heartwarming aesthetic of Studio Ghibli animations, featuring lush, hand-painted backgrounds and clean, cel-shaded subjects. It emphasizes natural lighting, dappled sunlight (komorebi), and a rich, organic color palette that evokes a sense of wonder and peaceful melancholy.",
+    "description_fr": "Ce style capture l'esthétique emblématique et chaleureuse des animations du Studio Ghibli, avec des arrière-plans luxuriants peints à la main et des sujets aux contours nets (cel-shading). Il met l'accent sur l'éclairage naturel, la lumière du soleil tachetée (komorebi) et une palette de couleurs riche et organique qui évoque un sentiment d'émerveillement et de mélancolie paisible.",
+    "image": "images/ghibli-vl-media-1140x694.jpg",
+    "preview_image": "images/preview-1771239407006.webp",
+    "tags": [
+      "anime",
+      "ghibli",
+      "painterly",
+      "nostalgic",
+      "scenic",
+      "cel-shaded"
+    ],
+    "removeBackground": false,
+    "createdAt": "2026-02-16T10:56:51.901Z"
   }
 ]

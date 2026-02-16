@@ -21,7 +21,7 @@
     "abstract",
     "pop art"
   ],
-  "removeBackground": false,
+  "removeBackground": true,
   "supportImageReference": false,
   "createdAt": "2026-02-14T21:45:30.360Z"
 }
