@@ -1,27 +1,30 @@
 {
   "id": "soft-vector",
-  "title": "Soft Vector",
-  "description": "Ce style présente une esthétique vectorielle plate et épurée avec une palette pastel douce et sophistiquée ainsi qu'une composition géométrique précise. Il se caractérise par des surfaces mates lisses, des formes sans contours et des ombres angulaires distinctes suggérant une lumière naturelle douce et directionnelle, évoquant une ambiance éditoriale moderne et sereine.",
-  "description_en": "This style features a clean, flat vector aesthetic with a sophisticated muted pastel palette and precise geometric composition. It is characterized by smooth matte surfaces, lineless forms, and distinct angular shadows that suggest soft, directional natural light, evoking a modern and serene editorial mood.",
-  "description_fr": "Ce style présente une esthétique vectorielle plate et épurée avec une palette pastel douce et sophistiquée ainsi qu'une composition géométrique précise. Il se caractérise par des surfaces mates lisses, des formes sans contours et des ombres angulaires distinctes suggérant une lumière naturelle douce et directionnelle, évoquant une ambiance éditoriale moderne et sereine.",
-  "prompt": "A high-quality, flat vector illustration of {{subject}}, rendered in a sophisticated modern editorial style commonly seen in premium tech branding. The artwork features a clean, 2D aesthetic with no black outlines (lineless art). The composition is geometric and balanced, utilizing smooth curves and sharp angles to define forms. The color palette is soft, muted, and low-contrast, dominated by shades of {{primary_color}} with subtle highlights in cream and off-white, and strategic details in {{accent_color}}. The lighting is a defining feature: simulate soft, warm morning sunlight streaming from a side window, casting distinct, sharp-edged diagonal shadows (hard shadows) and shafts of light across the scene, adding depth to the flat layers. Textures are minimal and matte; surfaces look smooth like vector shapes, with subtle patterns used sparingly to suggest material (e.g., knits or wood grain) without visual noise. The characters, if present, are stylized with simplified or faceless features. The overall atmosphere is calm, organized, and serene, focusing on a 'slow living' or 'mindful' aesthetic. No gradients, solid flat colors, precise vector paths.",
-  "background_prompt": "A serene, minimalist architectural environment rendered in a flat vector style. The scene consists of clean geometric planes and smooth matte surfaces dominated by {{primary_color}} and soft neutral creams. Diagonal shafts of light stream across the background, creating sharp, angular semi-transparent shadows that add depth to the 2D composition. Subtle interior elements or abstract geometric shapes in {{accent_color}} provide balance. The texture is perfectly smooth and digital, with no noise or grain, evoking a quiet, sunlit modern space.",
+  "title": "Pastel Minimalism",
+  "description": "Ce style présente une esthétique vectorielle épurée et plate, caractérisée par des tons pastel doux et des formes lisses sans contours. Il utilise des ombres géométriques distinctes et un éclairage directionnel chaleureux pour créer une atmosphère cosy, moderne et minimaliste, souvent observée dans les illustrations d'entreprise haut de gamme.",
+  "description_en": "This style features a clean, flat vector aesthetic characterized by soft pastel tones and smooth, lineless shapes. It utilizes distinct geometric shadows and warm directional lighting to create a cozy, modern, and minimalist atmosphere commonly seen in high-end corporate illustration.",
+  "description_fr": "Ce style présente une esthétique vectorielle épurée et plate, caractérisée par des tons pastel doux et des formes lisses sans contours. Il utilise des ombres géométriques distinctes et un éclairage directionnel chaleureux pour créer une atmosphère cosy, moderne et minimaliste, souvent observée dans les illustrations d'entreprise haut de gamme.",
+  "prompt": "A sophisticated flat vector illustration of {{subject}} rendered in a clean, modern minimalist style. The artwork relies on smooth, lineless shapes with precise edges, mimicking high-end digital vector art or corporate Memphis design. There are no black outlines; forms are defined entirely by color blocking and subtle contrast. The color palette is soft, muted, and matte, dominated by soothing shades of {{primary_color}} with tasteful details and highlights in {{accent_color}}. The lighting is a critical stylistic element: simulate soft, warm directional sunlight (resembling morning window light) that casts distinct, diagonal geometric shadows across the subject and background, adding depth to the 2D plane. The texture is perfectly smooth and matte, similar to a high-quality digital print or vector graphic. The composition is balanced and airy, emphasizing negative space and geometric simplicity. The overall mood is calm, productive, and serene. Reinforcement tags: flat design, vector art, Adobe Illustrator style, Behance, Dribbble, lineless art, pastel tones, soft shadows, geometric lighting, 2D, high resolution, sharp edges, minimalist, lo-fi aesthetic, matte finish, peaceful atmosphere.",
+  "background_prompt": "A minimalist architectural or geometric environment rendered in a clean flat vector style. The scene features smooth walls and surfaces in soft {{primary_color}} tones, accented by simple structural elements or furniture shapes in {{accent_color}}. Diagonal beams of warm light cut across the scene, creating sharp yet soft-edged geometric shadows that provide depth to the flat design. No characters or subjects, just a serene, organized, and modern background setting with a matte finish.",
   "variables": [
     "subject",
     "primary_color",
-    "accent_color"
+    "accent_color",
+    "background_color"
   ],
   "image": "images/g_g17_8xwaewa7b.jpg",
   "preview_image": "images/preview-1771153532936.webp",
   "tags": [
-    "flat illustration",
-    "vector art",
-    "pastel minimalism",
-    "editorial style",
-    "corporate memphis",
-    "soft lighting"
+    "flat design",
+    "vector illustration",
+    "minimalism",
+    "pastel colors",
+    "soft lighting",
+    "modern art"
   ],
   "removeBackground": false,
   "supportImageReference": false,
-  "createdAt": "2026-02-14T21:40:48.938Z"
+  "createdAt": "2026-02-14T21:40:48.938Z",
+  "prompt_removebg": "A sophisticated, high-quality flat vector illustration of {{subject}}, designed in a clean, modern, and minimalist art style similar to high-end corporate lifestyle graphics. The rendering is completely lineless, relying on precise geometric shapes and varying tonal values to define form and volume. The surface texture is smooth, matte, and digital, with absolutely no noise, grain, or brushstrokes. The color palette is soft, muted, and harmonious, dominated by shades of {{primary_color}} with tasteful touches of {{accent_color}} to guide the eye. The lighting is a crucial stylistic element: simulate a bright, natural light source (like morning sun through a window) coming from the side, casting sharp-edged, semi-transparent diagonal shadows across the {{subject}}. These shadows should be slightly darker tones of the base colors, not black. The composition is balanced and calm, evoking a sense of tranquility and order. The image is composited on a clean {{background_color}} surface, ensuring distinct separation between the subject edges and the background for easy removal. The overall aesthetic is cozy, polished, and professional.",
+  "background_prompt_removebg": "A minimalist architectural or interior backdrop rendered in a flat vector style. The scene consists of clean geometric planes and simple structural elements like walls or shelves in shades of {{background_color}}. Soft, diagonal shafts of light cut across the scene, creating sharp, angular shadows in muted {{primary_color}} tones. Subtle decorative elements or organic shapes in {{accent_color}} provide balance without clutter. No central subject, lineless art, smooth matte finish, serene atmosphere."
 }

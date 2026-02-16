@@ -1,8 +1,8 @@
 {
   "id": "spotlight-schematic",
-  "title": "Spotlight Lineart",
-  "description": "",
-  "prompt": "A precise isometric line art illustration of {{subject}}, rendered with fine, consistent ink outlines in {{primary_color}}. The drawing style is technical yet whimsical, set upon a textured, off-white paper surface with visible grain and speckles. A dramatic, semi-transparent conical spotlight beam in {{accent_color}} shines down from above, illuminating a specific circular section of the {{subject}}. Inside this pool of light, the details are filled with solid flat {{accent_color}} tones, creating a focal point, while elements outside the beam remain as clean, unfilled skeletal outlines. The composition is minimalist with ample negative space, composited on a clean {{background_color}} background to ensure sharp edge definition.",
+  "title": "Spotlight Schematic",
+  "description": "Un style d'illustration technique distinctif mettant en vedette des dessins précis à l'encre fine sur du papier beige texturé. L'élément déterminant est un cône de lumière géométrique qui colore sélectivement le point focal, contrastant avec les contours monochromes de l'environnement environnant.",
+  "prompt": "A highly detailed technical line art illustration of {{subject}} presented as a precise architectural sketch or isometric diagram. The artwork is rendered using fine, consistent ink lines in {{primary_color}} on a heavy, textured beige paper background. A dramatic, semi-transparent geometric cone of light in {{accent_color}} shines down from above, creating a 'spotlight effect' that illuminates the central subject. Inside the beam of light, the forms are slightly filled with warm, flat tones of {{accent_color}}, while everything outside the cone remains as hollow, skeletal outlines in {{primary_color}}. The paper texture is prominent, featuring visible grain, fibers, imperfections, and speckles resembling recycled cardstock or vintage vellum. The composition utilizes negative space and clean geometry to create a mood of focused isolation and schematic clarity. The rendering style balances mechanical precision with hand-drawn warmth, utilizing flat perspective and sharp vector-like strokes. Reinforcement tags: isometric view, technical drawing, blueprint aesthetic, grainy paper texture, selective coloring, volumetric lighting, hard edges, minimal shading, schematic, drafting style, clean lines, high contrast, 2D flat illustration.",
   "variables": [
     "subject",
     "primary_color",
@@ -12,17 +12,19 @@
   "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
   "tags": [
     "isometric",
+    "schematic",
     "line art",
     "spotlight",
-    "editorial",
-    "minimalist",
-    "technical drawing"
+    "technical drawing",
+    "minimalist"
   ],
   "removeBackground": true,
   "createdAt": "2026-02-10T16:29:06.811Z",
-  "background_prompt": "A textured vintage paper surface featuring a geometric conical spotlight beam descending from the top center in {{accent_color}}. The beam casts a defined circular pool of flat color on the ground plane, meant to highlight a central element. The surrounding area is composed of negative space with subtle paper grain, faint speckles, and minimal {{primary_color}} texture marks, all set against a {{background_color}} backdrop.",
+  "background_prompt": "A textured beige paper background featuring faint, schematic architectural lines and grid fragments drawn in {{primary_color}} ink. A distinct, semi-transparent beam of {{accent_color}} light cuts through the empty space from top to bottom, creating a highlighted zone against the rough, fibrous paper grain. No main subject, only the atmospheric workspace environment and drafting aesthetics.",
   "supportImageReference": false,
   "preview_image": "images/preview-1771153525569.webp",
-  "description_en": "",
-  "description_fr": ""
+  "description_en": "A distinctive technical illustration style featuring precise fine-line ink drawings on textured beige paper. The defining element is a geometric cone of light that selectively colors the focal point, contrasting with the monochromatic outlines of the surrounding environment.",
+  "description_fr": "Un style d'illustration technique distinctif mettant en vedette des dessins précis à l'encre fine sur du papier beige texturé. L'élément déterminant est un cône de lumière géométrique qui colore sélectivement le point focal, contrastant avec les contours monochromes de l'environnement environnant.",
+  "prompt_removebg": "A sophisticated isometric line art illustration of {{subject}} rendered in a technical drafting style, set against a highly textured {{background_color}} paper background. The artwork uses fine, consistent ink lines in {{primary_color}} to define the shapes with precision and clarity, mimicking the look of a architectural sketch or engineering diagram. The defining visual feature is a dramatic, hard-edged cone of light projecting from above in {{accent_color}}. This beam of light creates a 'spotlight effect': everything within the geometric light cone is washed in a flat, translucent {{accent_color}} fill, highlighting the {{subject}}, while everything outside the beam remains as transparent, negative-space outlines showing the {{background_color}} texture underneath. The composition relies on the interplay between the detailed {{primary_color}} wireframe lines and the bold block of {{accent_color}} light. There is no shading or gradient shading, only the flat interaction of line, paper texture, and the projected light shape. Visible paper grain, speckles, and slight imperfections add a tactile, vintage stationery feel. The aesthetic is clean, organized, yet artistically hand-drawn. Reinforcement tags: isometric perspective, fine liner, technical illustration, blueprint aesthetic, high contrast, clean lines, vector style, paper texture overlay, minimalist, geometric lighting, 2D flat design, crisp details.",
+  "background_prompt_removebg": "A wide shot of a textured {{background_color}} paper surface featuring scattered environmental details and debris sketched in fine {{primary_color}} outlines. Faint architectural grid lines or perspective guides fade into the background. A dramatic, geometric beam of {{accent_color}} light cuts through the empty space, illuminating a patch of the floor or surface, creating a focal point without a main subject. The texture of the paper is prominent with visible grain and fibers."
 }

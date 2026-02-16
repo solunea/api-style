@@ -1,27 +1,30 @@
 {
   "id": "risograph-spotlight",
-  "title": "Grainy Risograph",
-  "description": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
-  "prompt": "A textured, flat-style digital illustration of {{subject}} rendered in the aesthetic of a Risograph print or grainy screen print. The visual style is defined by a distinct, hard-edged spotlight effect: a cone of bright light cuts across the scene, creating a sharp geometric division between the illuminated focal point and the surrounding shadows. The lighting is not soft or diffuse; it creates bold, solid shapes of light and dark. The color palette utilizes {{primary_color}} as the dominant hue within the light, contrasting with deep, muted tones of {{accent_color}} in the shadowed areas. The surface texture is heavily emphasized with a rough paper grain, chalky noise, and stipple shading, avoiding all smooth digital gradients in favor of solid color blocks and speckled dithering. Outlines are simple, slightly imperfect, and hand-drawn, contributing to a cozy, lo-fi, and indie editorial look. The composition is 2D or slight isometric, focusing on shape and texture over realistic perspective. Reinforce the tactile feel of ink on matte construction paper.",
+  "title": "Textured Spotlight",
+  "description": "Un style d'illustration numérique texturé et chaleureux imitant les pastels à la craie et l'impression risographique avec un aspect granuleux fait main. Il se distingue par un cône de lumière net et dramatique qui crée un fort contraste entre le centre lumineux et les zones environnantes plus sombres.",
+  "prompt": "A charming, textured digital editorial illustration of {{subject}}, rendered in the style of hand-drawn chalk pastels mixed with risograph printing aesthetics. The visual texture is heavy and grainy, resembling rough paper or noise, giving the image a tactile, analog feel. The composition is flat and graphic, utilizing a naive perspective with slightly rough, organic edges rather than sharp vector lines. A defining feature is the lighting: a dramatic, hard-edged conical spotlight shines down across the scene, creating a sharp division between the illuminated area (which is bright and slightly washed out) and the surrounding shadowed area (which is richer and darker in tone). The color palette is dominated by muted {{primary_color}} hues in the background and shadows, with pops of {{accent_color}} highlighting the focal points within the light beam. White outlines are used sparingly to define shapes. The overall mood is cozy, indie, and creative, typical of modern editorial illustrations found in lifestyle magazines. No photorealism, heavy stippling effect, matte finish.",
   "variables": [
     "subject",
     "primary_color",
-    "accent_color"
+    "accent_color",
+    "background_color"
   ],
   "image": "images/ffd2d063ffed34950f43897583e6c0a1.jpg",
   "tags": [
     "risograph",
-    "flat illustration",
-    "grainy texture",
-    "spotlight",
-    "lo-fi",
-    "screen print"
+    "chalk pastel",
+    "editorial illustration",
+    "textured",
+    "flat design",
+    "grainy"
   ],
   "removeBackground": false,
   "createdAt": "2026-02-10T16:27:43.841Z",
   "preview_image": "images/preview-1771153928359.webp",
-  "description_en": "This style features a charming flat illustration aesthetic mimicking Risograph or screen printing, characterized by heavy grain textures and stipple shading. It utilizes distinct hard-edged spotlight effects to create dramatic contrast between lit areas and solid-colored shadows, resulting in a cozy, retro indie-zine vibe.",
-  "description_fr": "Ce style présente une esthétique d'illustration plate charmante imitant la Risographie ou la sérigraphie, caractérisée par des textures à grain épais et un ombrage en pointillés. Il utilise des effets de projecteur à bords nets pour créer un contraste spectaculaire entre les zones éclairées et les ombres de couleur unie, donnant une ambiance rétro et indie chaleureuse.",
-  "background_prompt": "A textured background environment featuring abstract geometric shapes, stylized plants, or simple interior elements rendered in a flat Risograph style. A dramatic, hard-edged beam of light creates a diagonal slice across the composition, illuminating a section in bright {{primary_color}} while leaving the rest in a shadowed {{accent_color}}. The texture is heavy with stipple noise and paper grain, with no central subject, serving as a retro, lo-fi backdrop or decorative frame.",
-  "supportImageReference": false
+  "description_en": "A cozy, textured digital illustration style mimicking chalk pastels and risograph printing with a grainy, hand-drawn feel. It features a distinct, hard-edged cone of light that creates a dramatic contrast between the bright, washed-out center and the darker, shadowed surroundings.",
+  "description_fr": "Un style d'illustration numérique texturé et chaleureux imitant les pastels à la craie et l'impression risographique avec un aspect granuleux fait main. Il se distingue par un cône de lumière net et dramatique qui crée un fort contraste entre le centre lumineux et les zones environnantes plus sombres.",
+  "background_prompt": "A textured, flat surface view serving as a background environment, rendered in a grainy chalk-pastel style. The scene is bathed in a deep {{primary_color}} tone, interrupted by a sharp, triangular beam of bright light cutting across the composition. Within the light beam, the surface texture appears washed out and brighter, while outside the beam, the {{primary_color}} is darker and more saturated. Subtle, abstract shapes and {{accent_color}} decorative elements are scattered loosely in the periphery, maintaining a rough, hand-drawn stippled aesthetic without any central subject.",
+  "supportImageReference": false,
+  "prompt_removebg": "A highly detailed, textured editorial illustration of {{subject}}, executed in a flat yet dimensional style reminiscent of modern tech blog art or risograph printing. The rendering mimics the texture of chalk or pastel on rough grain paper, featuring heavy noise, stippled shading, and imperfect, organic edges. The composition is defined by a dramatic, stylized lighting setup: a sharp, geometric cone of light cuts across the scene, illuminating the {{subject}} in bright, warm tones while casting the surrounding areas into deep, textured shadow. The color palette utilizes {{primary_color}} as the dominant tone for the main forms, contrasted with {{accent_color}} for highlights and key details within the lit areas. The shading is not smooth but composed of speckled grain and noise gradients. The artwork is composited on a clean {{background_color}} surface, ensuring distinct separation between the textured illustration and the background canvas. The overall mood is productive, cozy, and tactile, blending digital precision with analog warmth. Reinforcement tags: editorial illustration, risograph style, grainy texture, noise overlay, flat design, hard lighting, sharp shadows, chalk texture, lo-fi aesthetic, vector art with texture, stippling, high contrast, geometric light, cozy atmosphere, detailed textures.",
+  "background_prompt_removebg": "A textured, atmospheric background scene featuring a dramatic lighting effect without a central subject. A sharp, geometric cone of light cuts through the environment, creating a distinct boundary between the illuminated zone and the shadowed surroundings. The surface texture resembles rough paper or felt with heavy grain and noise. The scene is colored in shades of {{primary_color}} with subtle hints of {{accent_color}} in the textured noise, all set against a {{background_color}} base. The composition serves as a grainy, lo-fi stage or frame."
 }

@@ -1,27 +1,30 @@
 {
   "id": "corporate-outline",
   "title": "Corporate Sketch",
-  "description": "Ce style se caractérise par une illustration vectorielle minimaliste aux contours noirs façon croquis et aux aplats de couleurs unies sans ombrage. L'esthétique est épurée et professionnelle, utilisant largement l'espace négatif blanc pour une clarté maximale.",
-  "prompt": "A professional minimalist vector illustration of {{subject}}, designed in a clean corporate art style. The rendering relies on distinct, hand-drawn black ink outlines that are slightly sketchy yet confident, clearly defining forms without rigid geometry. Coloration consists strictly of flat, solid blocks of {{primary_color}} for main elements and {{accent_color}} for highlights, with absolutely no gradients, shadows, or texturing. Large areas of white negative space are integrated into the figures. The composition is isolated against a pure white background, emphasizing simplicity and communication. 2D, flat design, vector graphics, white background, no shading, minimal, corporate art, high contrast, clean lines, editorial illustration.",
+  "description": "Une illustration de style vectoriel moderne présentant des contours à l'encre lâches et dessinés à la main, remplis de blocs de couleurs unies. Cette esthétique minimaliste repose sur l'espace négatif et des palettes limitées, typiques des storyboards architecturaux et de l'image de marque des entreprises SaaS.",
+  "prompt": "A professional digital vector illustration of {{subject}} rendered in a clean, corporate sketch aesthetic. The artwork is defined by fluid, hand-drawn black ink outlines that are confident and slightly organic, mimicking the look of a high-quality marker drawing or architectural concept sketch. The coloring strategy is strictly flat, utilizing solid, unshaded blocks of {{primary_color}} as the dominant tone and {{accent_color}} for strategic highlights, all set against a stark, pure white background. Avoid any gradients, realistic textures, or 3D rendering effects; the style relies entirely on the high contrast between the crisp black linework and the bold color fills. Use negative space intelligently, often leaving skin tones or neutral surfaces as uncolored white space to maintain a minimalist feel. The character proportions should be semi-realistic but simplified for clarity, evoking a sense of modern business efficiency and collaboration. The lighting is flat and implied only through color placement, with no cast shadows or ambient occlusion. Reinforcement tags: vector illustration, hand-drawn lines, flat design, corporate art, minimalist, 2D, architectural storyboard, ink outline, clean lines, business editorial, high contrast, sharp focus, digital marker, isolated on white.",
   "variables": [
     "subject",
     "primary_color",
-    "accent_color"
+    "accent_color",
+    "background_color"
   ],
   "image": "images/de2a56790ec9d64647c9656553635390.jpg",
   "tags": [
-    "vector art",
-    "minimalism",
-    "flat design",
-    "line art",
+    "vector",
+    "minimalist",
     "corporate",
-    "illustration"
+    "sketch",
+    "line art",
+    "flat design"
   ],
   "removeBackground": true,
   "createdAt": "2026-02-10T16:24:16.950Z",
-  "background_prompt": "A minimal, abstract background setting featuring sparse architectural lines and simple geometric forms drawn in a sketchy black outline style. The environment uses flat fills of {{primary_color}} and {{accent_color}} to suggest spatial structure without visual clutter. The design relies heavily on white negative space and complete 2D flatness, creating a clean, professional atmosphere suitable for corporate presentations or editorial layouts.",
-  "description_en": "",
-  "description_fr": "Ce style se caractérise par une illustration vectorielle minimaliste aux contours noirs façon croquis et aux aplats de couleurs unies sans ombrage. L'esthétique est épurée et professionnelle, utilisant largement l'espace négatif blanc pour une clarté maximale.",
+  "background_prompt": "A minimalist environmental backdrop consisting of loose, sketchy architectural lines and abstract geometric forms. The scene suggests a vague office structure or blueprint schematic drawn with thin black ink strokes. Sparse, flat fills of {{primary_color}} and {{accent_color}} highlight specific geometric shapes or structural elements, while the majority of the canvas remains pure white negative space to ensure a clean, uncluttered professional appearance.",
+  "description_en": "A modern vector-style illustration featuring loose, hand-drawn ink outlines filled with flat blocks of solid color. This minimalist aesthetic relies on negative space and limited palettes, typical of architectural storyboards and SaaS business branding.",
+  "description_fr": "Une illustration de style vectoriel moderne présentant des contours à l'encre lâches et dessinés à la main, remplis de blocs de couleurs unies. Cette esthétique minimaliste repose sur l'espace négatif et des palettes limitées, typiques des storyboards architecturaux et de l'image de marque des entreprises SaaS.",
   "preview_image": "images/preview-1771153518022.webp",
-  "supportImageReference": false
+  "supportImageReference": false,
+  "prompt_removebg": "A professional, high-definition flat vector illustration of {{subject}}, executed in a clean, modern corporate line art style. The artwork is defined by crisp, uniform black outlines that resemble high-quality ink drawings digitally vectorized. The coloring technique is strictly flat, utilizing solid blocks of color with absolutely no gradients, no shading, no texture, and no volumetric lighting effects to maintain a purely 2D aesthetic. The palette is controlled and cohesive, using {{primary_color}} as the dominant fill for main elements and clothing, while {{accent_color}} is applied to specific details to create visual interest and hierarchy. Characters or organic forms feature simplified anatomy with stylized facial features (dots for eyes, simple lines for expressions), evoking a friendly and universal appeal typical of tech startup branding or instructional manuals. The composition is uncluttered and direct, set against a {{background_color}} background to ensure high contrast and perfect edge definition for easy extraction. The lines are smooth and continuous, avoiding any sketchiness or roughness. 2D vector, Adobe Illustrator style, sharp edges, high definition, infographic aesthetic, business illustration, clear communication, flat design, minimalist, bold lines, solid fill, vector art, svg style, clean composition, no noise, no blur, high contrast.",
+  "background_prompt_removebg": "A minimalist abstract environment featuring clean geometric shapes, subtle layout grids, and decorative fluid blobs rendered in a flat vector style. The composition uses elements colored in {{primary_color}} and {{accent_color}} arranged in a balanced, corporate pattern without any shading or depth. Thin black lines may connect floating elements. The design is strictly 2D and composited on a {{background_color}} canvas, serving as a professional backdrop or decorative frame."
 }

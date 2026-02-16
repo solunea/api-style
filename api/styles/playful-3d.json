@@ -1,27 +1,30 @@
 {
   "id": "playful-3d",
-  "title": "Playful 3D",
-  "description": "Un style de rendu de personnage 3D haut de gamme rappelant les studios d'animation modernes comme Pixar ou Illumination. Il présente des textures mates et douces, un éclairage de studio diffus avec diffusion sous-surface, et une esthétique propre aux dégradés pastel.",
-  "description_en": "A high-end 3D character rendering style reminiscent of modern feature animation studios like Pixar or Illumination. It features smooth matte textures, soft studio lighting with subsurface scattering, and a clean, pastel gradient aesthetic.",
-  "description_fr": "Un style de rendu de personnage 3D haut de gamme rappelant les studios d'animation modernes comme Pixar ou Illumination. Il présente des textures mates et douces, un éclairage de studio diffus avec diffusion sous-surface, et une esthétique propre aux dégradés pastel.",
-  "prompt": "A stunning, high-fidelity 3D character render of {{subject}} visualized in a premium animation style reminiscent of modern Pixar or Disney feature films. The rendering technique utilizes physically based rendering (PBR) with stylized, exaggerated proportions and soft, rounded edges to create a friendly and appealing aesthetic. The surface materials are exquisite, featuring smooth matte clay, soft high-quality cotton fabrics, or pristine vinyl textures in {{primary_color}}, accented by subtle details in {{accent_color}}. Apply heavy subsurface scattering (SSS) to skin or organic surfaces to create a warm, translucent, living glow, particularly around thin areas like ears or extremities. The lighting setup is a professional softbox studio arrangement: a large, diffuse key light provides even illumination, while a gentle rim light separates the subject from the background. The color palette is vibrant yet pastel, avoiding harsh contrasts. The camera uses a portrait lens (85mm equivalent) with a shallow depth of field, keeping the focus sharp on the eyes and face while blurring the edges. 3D render, cgi, cinema4d, octane render, redshift, unreal engine 5, 8k resolution, raytracing, global illumination, ambient occlusion, cartoon realism, cute, expressive, volumetric light, smooth shading, masterpiece, digital art.",
-  "background_prompt": "A clean, soft-focus studio backdrop featuring a smooth gradient transition. The background blends pastel tones of {{primary_color}} and {{accent_color}} into a creamy, neutral horizon. Minimalist and atmospheric, with a subtle vignette and soft ambient occlusion shadows to suggest a curved infinity wall or seamless paper background. No distinct objects, just pure color and light.",
+  "title": "Playful Render",
+  "description": "Un style d'animation 3D haute qualité rappelant les films Pixar, avec des proportions stylisées, une diffusion subsurface douce sur la peau et des textures de tissu tactiles. L'esthétique mêle éclairage réaliste et design de personnages charmants et arrondis.",
+  "description_en": "A high-quality 3D animation style resembling modern feature films like Pixar, featuring stylized proportions, soft subsurface scattering on skin, and tactile fabric textures. The look combines realistic lighting with charming, rounded character designs.",
+  "description_fr": "Un style d'animation 3D haute qualité rappelant les films Pixar, avec des proportions stylisées, une diffusion subsurface douce sur la peau et des textures de tissu tactiles. L'esthétique mêle éclairage réaliste et design de personnages charmants et arrondis.",
+  "prompt": "A high-end 3D CGI animated character render of {{subject}}, executed in the distinct visual style of a modern feature film by studios like Pixar, Disney, or Illumination. The character design features appealing, stylized proportions with smooth, rounded geometry and expressive features. The rendering technique is physically based (PBR) with a focus on tactile realism: the skin exhibits soft subsurface scattering (SSS) creating a warm, living glow, while clothing and surfaces display intricate micro-textures like fuzzy fleece, woven cotton, or matte plastic in rich shades of {{primary_color}} and {{accent_color}}. The lighting setup is a professional soft studio configuration, using a large diffuse key light to wrap around the form, a subtle rim light to separate the subject from the background, and global illumination to fill shadows with warmth. The atmosphere is cheerful, clean, and vibrant. Reinforcement tags: Octane Render, Cinema 4D, Blender Cycles, 8k resolution, raytracing, ambient occlusion, photorealistic materials, cute, expressive, volumetric lighting, sharp focus, shallow depth of field, bokeh, masterfully modeled.",
+  "background_prompt": "A clean, soft-focus studio gradient background transitioning smoothly between {{primary_color}} and {{accent_color}}. The environment is minimal and abstract, simulating a high-end photography backdrop with a shallow depth of field. It features creamy bokeh blur, gentle light falloff, and a smooth, noise-free texture that provides a neutral yet vibrant setting.",
   "variables": [
     "subject",
     "primary_color",
-    "accent_color"
+    "accent_color",
+    "background_color"
   ],
   "image": "images/haxv01ibaaayb77.jpg",
   "preview_image": "images/preview-1771153524575.webp",
   "tags": [
     "3d render",
     "pixar style",
-    "character design",
-    "cartoon",
     "cgi",
+    "animation",
+    "character design",
     "cute"
   ],
   "removeBackground": false,
   "supportImageReference": false,
-  "createdAt": "2026-02-14T21:36:25.982Z"
+  "createdAt": "2026-02-14T21:36:25.982Z",
+  "prompt_removebg": "A premium, high-fidelity 3D character render of {{subject}} designed in a stylized, modern animation aesthetic similar to Pixar or Illumination studios. The rendering is defined by soft, tactile surfaces; the {{subject}} features a mix of smooth, matte skin textures with strong subsurface scattering (SSS) to create a warm, fleshy translucency, and clothing or outer layers made of high-quality plush fabrics or soft matte polymers. The color palette is dominated by a vibrant yet pleasing {{primary_color}}, with thoughtful details and trim in {{accent_color}}. The lighting setup is a sophisticated softbox studio arrangement: large, diffuse light sources wrap gently around the form, creating smooth gradients and eliminating harsh shadows, while a subtle rim light separates the subject from the surroundings. The image is composited against a clean, seamless {{background_color}} background to ensure perfect edge definition and contrast for isolation. The overall look is round, friendly, and physically plausible, with physically based rendering (PBR) materials that look touchable, soft, and velvety. The camera uses a portrait lens with a very slight depth of field to focus attention on the eyes and face of the {{subject}}.",
+  "background_prompt_removebg": "A soft, abstract 3D environment featuring smooth, curved geometry and gentle gradients. The scene is composed of blurred shapes and bokeh effects in shades of {{primary_color}} and {{accent_color}}, creating a dreamy, out-of-focus studio atmosphere. The lighting is ambient and diffuse, casting no hard shadows, set against a base tone of {{background_color}}."
 }
