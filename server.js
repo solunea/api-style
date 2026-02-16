@@ -648,9 +648,9 @@ app.post('/api/build', (req, res) => {
 });
 
 // POST push to Git (commit + push → disponible en ~5 min sur GitHub raw)
-app.post('/api/push', (req, res) => {
+app.post('/api/push', async (req, res) => {
   try {
-    const opts = { cwd: __dirname, encoding: 'utf-8', timeout: 60000 };
+    const opts = { cwd: __dirname, encoding: 'utf-8', timeout: 60000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } };
 
     // Build API first
     const styles = readStyles();
@@ -679,31 +679,31 @@ app.post('/api/push', (req, res) => {
     }
 
     // Git add
-    execSync('git add -A', opts);
+    await execAsync('git add -A', opts);
 
     // Check if there are changes to commit
     try {
-      execSync('git diff --cached --quiet', opts);
+      await execAsync('git diff --cached --quiet', opts);
       return res.json({ message: 'Rien à publier, tout est déjà à jour.' });
     } catch {
       // There are staged changes, continue
     }
 
     const msg = `Update styles - ${new Date().toLocaleString('fr-FR')}`;
-    execSync(`git commit -m "${msg}"`, opts);
-    
-    // Git push with timeout
+    await execAsync(`git commit -m "${msg}"`, opts);
+
+    // Git push with longer timeout
     try {
-      execSync('git push', { ...opts, timeout: 120000 });
+      await execAsync('git push', { ...opts, timeout: 120000 });
     } catch (pushErr) {
       console.error('Git push error:', pushErr);
-      return res.status(500).json({ error: `Erreur git push : ${pushErr.message}. Vérifiez votre connexion et les credentials.` });
+      return res.status(500).json({ error: `Erreur git push : ${pushErr.stderr || pushErr.message}` });
     }
 
     res.json({ message: `Publié (${styles.length} styles) — disponible sur le CDN dans ~5 min` });
   } catch (err) {
     console.error('Push error:', err);
-    res.status(500).json({ error: `Erreur push : ${err.message}` });
+    res.status(500).json({ error: `Erreur push : ${err.stderr || err.message}` });
   }
 });
 
