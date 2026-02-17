@@ -1,0 +1,29 @@
+{
+  "id": "tech-vector",
+  "title": "Tech Vector",
+  "description": "Un style d'illustration vectorielle moderne caractérisé par des contours noirs nets et des aplats de couleur unie. Il présente des formes simplifiées et des éléments d'interface abstraits flottants, typiques de l'image de marque des entreprises technologiques.",
+  "description_en": "A modern flat vector illustration style characterized by clean black outlines and solid color fills. It features simplified forms and floating abstract UI elements typical of SaaS and corporate tech branding.",
+  "description_fr": "Un style d'illustration vectorielle moderne caractérisé par des contours noirs nets et des aplats de couleur unie. Il présente des formes simplifiées et des éléments d'interface abstraits flottants, typiques de l'image de marque des entreprises technologiques.",
+  "prompt": "A high-quality flat vector illustration of {{subject}} rendered in a modern corporate tech aesthetic. The artwork features crisp, uniform thin black outlines defining every shape, filled with flat, solid colors devoid of gradients or complex textures. The palette uses {{primary_color}} for the main clothing or object masses and {{accent_color}} for strategic highlights, focal points, or interactive elements, balanced by neutral cool greys and stark white. The composition includes stylized, floating decorative elements such as simplified UI panels, wireframe screens, and geometric primitives like small crosses, hollow circles, and squares surrounding the subject. Characters, if present, are depicted with stylized proportions, small heads, and faceless features to emphasize universality. The lighting is implied through simple, hard-edged drop shadows rather than realistic shading. The overall look is clean, organized, and digital, reminiscent of SaaS startup branding, Adobe Illustrator vector art, and trend-conscious Behance portfolios. Tags: 2D vector, svg style, flat design, corporate memphis, clean lines, minimalist, business illustration, tech concept, sharp edges, high contrast.",
+  "prompt_removebg": "A professional flat vector illustration of {{subject}}, executed in a clean, modern line-art style synonymous with contemporary tech branding and SaaS visual identity. The artwork is defined by uniform, crisp black strokes (outlines) that enclose every shape, creating a sharp graphical look similar to Adobe Illustrator exports. The coloring is strictly flat with absolutely no gradients, shadows, textures, or 3D shading; it relies entirely on bold, solid color fills. Use {{primary_color}} as the dominant hue for the main clothing or structural elements, and apply {{accent_color}} for focal points, interactive objects, or energetic highlights. The {{subject}} is stylized with simplified features—such as faceless heads, smooth curves, and exaggerated, fluid limbs—conveying a sense of effortless productivity and motion. Surrounding the subject are decorative floating elements: simplified UI panels, blank browser windows, abstract documents, and small geometric primitives like floating crosses, circles, and dots. The entire composition is set against a solid {{background_color}} background, ensuring high contrast and hard edges for perfect isolation. The mood is optimistic, efficient, and digitally native, capturing the essence of modern workflow.",
+  "background_prompt": "A minimalist white background populated by floating abstract geometric shapes and simplified tech elements. The scene includes hovering wireframe rectangles, blank UI panels, and small decorative icons like plus signs, dots, and circles. These elements are drawn with thin black outlines and feature subtle fills of {{primary_color}} and {{accent_color}}. The arrangement is dynamic yet organized, creating a sense of digital workflow and modern connectivity without any central subject.",
+  "background_prompt_removebg": "A decorative background composition of floating abstract technology elements and geometric shapes. The scene features simplified wireframe user interface panels, blank document rectangles, and small graphical primitives like crosses, circles, and dots drifting in a 2D space. The style uses clean black outlines and flat fills of {{primary_color}} and {{accent_color}}, arranged dynamically on a clean {{background_color}} surface to create a sense of digital flow and organization without any central subject.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/dce201218d489ba1b3aaffcffbc4d740.jpg",
+  "preview_image": "images/preview-1771335628238-bjsw.webp",
+  "preview_image_removebg": "images/preview-1771335628245-mli8.webp",
+  "tags": [
+    "vector",
+    "flat design",
+    "corporate",
+    "minimalist",
+    "tech",
+    "illustration"
+  ],
+  "createdAt": "2026-02-17T13:39:59.566Z"
+}

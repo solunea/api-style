@@ -302,5 +302,24 @@
       "moody"
     ],
     "createdAt": "2026-02-17T13:24:52.409Z"
+  },
+  {
+    "id": "tech-vector",
+    "title": "Tech Vector",
+    "description": "Un style d'illustration vectorielle moderne caractérisé par des contours noirs nets et des aplats de couleur unie. Il présente des formes simplifiées et des éléments d'interface abstraits flottants, typiques de l'image de marque des entreprises technologiques.",
+    "description_en": "A modern flat vector illustration style characterized by clean black outlines and solid color fills. It features simplified forms and floating abstract UI elements typical of SaaS and corporate tech branding.",
+    "description_fr": "Un style d'illustration vectorielle moderne caractérisé par des contours noirs nets et des aplats de couleur unie. Il présente des formes simplifiées et des éléments d'interface abstraits flottants, typiques de l'image de marque des entreprises technologiques.",
+    "image": "images/dce201218d489ba1b3aaffcffbc4d740.jpg",
+    "preview_image": "images/preview-1771335628238-bjsw.webp",
+    "preview_image_removebg": "images/preview-1771335628245-mli8.webp",
+    "tags": [
+      "vector",
+      "flat design",
+      "corporate",
+      "minimalist",
+      "tech",
+      "illustration"
+    ],
+    "createdAt": "2026-02-17T13:39:59.566Z"
   }
 ]
