@@ -340,5 +340,24 @@
       "simple"
     ],
     "createdAt": "2026-02-17T14:46:45.703Z"
+  },
+  {
+    "id": "gestural-contour",
+    "title": "Gestural Contour",
+    "description": "Ce style présente des lignes de contour à l'encre noire, lâches et expressives, qui définissent le sujet avec une esthétique minimaliste et esquissée. Il contraste ces lignes organiques et grattées avec des formes géométriques de couleur plates et audacieuses qui se placent derrière ou en décalage par rapport à la figure, créant un aspect éditorial moderne et abstrait sur un fond blanc épuré.",
+    "description_en": "This style features loose, expressive black ink contour lines that define the subject with a minimalist, sketchy aesthetic. It contrasts these organic, scratchy lines with bold, flat geometric shapes of color that sit behind or offset from the figure, creating a modern, abstract editorial look on a clean white background.",
+    "description_fr": "Ce style présente des lignes de contour à l'encre noire, lâches et expressives, qui définissent le sujet avec une esthétique minimaliste et esquissée. Il contraste ces lignes organiques et grattées avec des formes géométriques de couleur plates et audacieuses qui se placent derrière ou en décalage par rapport à la figure, créant un aspect éditorial moderne et abstrait sur un fond blanc épuré.",
+    "image": "images/b2ceecc02fae1f8eda8c33dbdbf1276c.jpg",
+    "preview_image": "images/preview-1771342275614-qsnx.webp",
+    "preview_image_removebg": "images/preview-1771342275722-lwpz.webp",
+    "tags": [
+      "minimalist",
+      "line art",
+      "gestural",
+      "editorial",
+      "sketch",
+      "abstract"
+    ],
+    "createdAt": "2026-02-17T15:31:22.088Z"
   }
 ]

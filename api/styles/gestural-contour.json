@@ -1,0 +1,29 @@
+{
+  "id": "gestural-contour",
+  "title": "Gestural Contour",
+  "description": "Ce style présente des lignes de contour à l'encre noire, lâches et expressives, qui définissent le sujet avec une esthétique minimaliste et esquissée. Il contraste ces lignes organiques et grattées avec des formes géométriques de couleur plates et audacieuses qui se placent derrière ou en décalage par rapport à la figure, créant un aspect éditorial moderne et abstrait sur un fond blanc épuré.",
+  "description_en": "This style features loose, expressive black ink contour lines that define the subject with a minimalist, sketchy aesthetic. It contrasts these organic, scratchy lines with bold, flat geometric shapes of color that sit behind or offset from the figure, creating a modern, abstract editorial look on a clean white background.",
+  "description_fr": "Ce style présente des lignes de contour à l'encre noire, lâches et expressives, qui définissent le sujet avec une esthétique minimaliste et esquissée. Il contraste ces lignes organiques et grattées avec des formes géométriques de couleur plates et audacieuses qui se placent derrière ou en décalage par rapport à la figure, créant un aspect éditorial moderne et abstrait sur un fond blanc épuré.",
+  "prompt": "A highly stylized, loose gestural sketch of {{subject}} rendered in rough, expressive black ink and charcoal lines on a stark white background. The artistic technique mimics rapid contour drawing or blind contour sketching, characterized by disconnected lines, varying line weights, and a sense of movement and spontaneity. The lines are not perfect; they are scratchy, organic, and textured, resembling a quick study or a sophisticated doodle found in a designer's sketchbook. The figure is not colored in a traditional 'fill-in-the-lines' method. Instead, large, flat, abstract geometric shapes in {{primary_color}} and {{accent_color}} are placed behind, underneath, or intersecting the figure. These color blocks suggest volume, furniture, or environmental context without literal representation, acting as a graphical anchor for the floating line art. The color application looks like flat vector shapes or screen printing, contrasting sharply with the grainy, textured quality of the black line work. The faces and details are simplified to mere suggestions—dots for eyes, a single curve for a nose. The composition relies heavily on negative space, maintaining a clean, minimalist editorial aesthetic often seen in modern corporate branding or high-end magazine illustrations. There is absolutely no shading, gradient, or realistic rendering; the style is purely defined by the interplay between the jagged black skeleton of the drawing and the solid, misplaced blocks of color.",
+  "prompt_removebg": "A stylish, hand-drawn editorial illustration of {{subject}} rendered in a loose, gestural black ink sketch style. The artwork features bold, fluid contour lines with varying thickness, mimicking the texture of a felt-tip marker or brush pen on paper. The visual interest is driven by abstract, flat geometric blocks of {{primary_color}} and {{accent_color}} that are strategically placed behind or slightly overlapping the line art, creating a deliberate 'misregistered print' or offset collage effect. The color application is not realistic but decorative, using simple shapes like rectangles or blobs to suggest form or environment without filling the lines precisely. There is no shading or gradients; the look is completely flat and 2D. The composition is minimalist and airy, focusing on the essential strokes to convey the {{subject}}. The illustration is isolated against a solid {{background_color}} background to maximize contrast and graphic impact. Reinforcement tags: corporate Memphis style, doodle aesthetic, modern vector art, sketch, rough edges, thick outlines, flat design, high contrast, simplistic, abstract shapes, marker texture, unpolished, casual, playful, 2D rendering, whimsical.",
+  "background_prompt": "A minimalist abstract composition featuring large, flat geometric blocks of {{primary_color}} and subtle accents of {{accent_color}} on a pure white background. The shapes are arranged to form a casual, modern backdrop, resembling deconstructed furniture or architectural elements reduced to simple rectangles, circles, and blobs. Interspersed with the colored shapes are sparse, loose black ink scribbles and gestural lines that frame the central space, adding a hand-drawn texture to the otherwise clean vector-like environment.",
+  "background_prompt_removebg": "A minimalist abstract pattern composed of loose black ink scribbles and flat geometric shapes in {{primary_color}} and {{accent_color}}. The design features scattered architectural blocks, offset rectangles, and freehand gestural lines floating on a clean {{background_color}} background. The aesthetic resembles a modern doodle pattern or a playful editorial backdrop with a focus on negative space and simple forms.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/b2ceecc02fae1f8eda8c33dbdbf1276c.jpg",
+  "preview_image": "images/preview-1771342275614-qsnx.webp",
+  "preview_image_removebg": "images/preview-1771342275722-lwpz.webp",
+  "tags": [
+    "minimalist",
+    "line art",
+    "gestural",
+    "editorial",
+    "sketch",
+    "abstract"
+  ],
+  "createdAt": "2026-02-17T15:31:22.088Z"
+}
