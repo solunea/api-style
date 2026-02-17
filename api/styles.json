@@ -264,5 +264,24 @@
       "pastoral"
     ],
     "createdAt": "2026-02-16T10:56:51.901Z"
+  },
+  {
+    "id": "carved-linocut",
+    "title": "Carved Linocut",
+    "description": "Ce style reproduit l'esthétique audacieuse et très contrastée de la linogravure traditionnelle ou de la gravure sur bois, caractérisée par des silhouettes lourdement encrées et des détails en espace négatif. Il présente des bords organiques légèrement rugueux et une palette de couleurs bicolore et plate qui imite l'aspect d'une impression en relief tamponnée ou sculptée à la main.",
+    "description_en": "This style replicates the bold, high-contrast aesthetic of traditional linocut or woodblock printing, characterized by heavy inked silhouettes and negative space details. It features organic, slightly rough edges and a flat, two-tone color scheme that mimics the look of a hand-stamped or carved relief print.",
+    "description_fr": "Ce style reproduit l'esthétique audacieuse et très contrastée de la linogravure traditionnelle ou de la gravure sur bois, caractérisée par des silhouettes lourdement encrées et des détails en espace négatif. Il présente des bords organiques légèrement rugueux et une palette de couleurs bicolore et plate qui imite l'aspect d'une impression en relief tamponnée ou sculptée à la main.",
+    "image": "images/66c0a0de1173639ac25c84466de8ebc6.jpg",
+    "preview_image": "images/preview-1771321544136-6wiu.webp",
+    "preview_image_removebg": "images/preview-1771321544147-3z62.webp",
+    "tags": [
+      "linocut",
+      "woodblock",
+      "tribal",
+      "minimalist",
+      "stamp",
+      "vector"
+    ],
+    "createdAt": "2026-02-17T09:45:59.105Z"
   }
 ]
