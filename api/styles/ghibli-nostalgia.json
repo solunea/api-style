@@ -14,7 +14,7 @@
     "background_color"
   ],
   "image": "images/ghibli-vl-media-1140x694.jpg",
-  "preview_image": "images/preview-1771243364114.webp",
+  "preview_image": "images/preview-1771336882787-l6hg.webp",
   "tags": [
     "studio ghibli",
     "anime landscape",
@@ -27,5 +27,6 @@
   "supportImageReference": false,
   "createdAt": "2026-02-16T10:56:51.901Z",
   "prompt_removebg": "A high-fidelity reproduction of a classic Studio Ghibli animation frame featuring {{subject}}. The artistic rendering technique is traditional hand-drawn 2D animation, combining crisp cel-shaded character art with a rich, painterly background reminiscent of Kazuo Oga's work. The {{subject}} is defined by thin, consistent ink outlines, smooth matte colors, and distinct hard-edged shadows (cel shading) to create volume without excessive gradient. The color palette utilizes natural, slightly desaturated tones dominated by {{primary_color}}, with specific details highlighted in {{accent_color}}. The lighting mimics 'komorebi' (sunlight filtering through trees), casting dappled, soft light and gentle shadows across the form. The texture of the subject is smooth and clean, contrasting with the grainy, textured look of the painted environment. The atmosphere is peaceful, nostalgic, and immersive, typical of a Hayao Miyazaki film. The image is composited on a clean {{background_color}} surface to ensure sharp edge definition and easy separation from the canvas. The overall composition emphasizes a 'slice of life' moment in a fantasy setting, with a shallow depth of field effect blurring the distant elements slightly.",
-  "background_prompt_removebg": "A meticulously hand-painted anime background scene in the style of traditional gouache and poster color art. The setting is a lush, overgrown environment featuring ancient stone textures, dense foliage, and mossy surfaces in shades of {{primary_color}}. Soft, dappled sunlight filters through the canopy, creating patches of brightness and deep shadow. Small {{accent_color}} wildflowers or magical artifacts are scattered subtly in the grass. The painting shows visible brushstrokes and a watercolor paper texture, fading into a soft atmospheric blur in the distance, all set against a neutral {{background_color}} base layer."
+  "background_prompt_removebg": "A meticulously hand-painted anime background scene in the style of traditional gouache and poster color art. The setting is a lush, overgrown environment featuring ancient stone textures, dense foliage, and mossy surfaces in shades of {{primary_color}}. Soft, dappled sunlight filters through the canopy, creating patches of brightness and deep shadow. Small {{accent_color}} wildflowers or magical artifacts are scattered subtly in the grass. The painting shows visible brushstrokes and a watercolor paper texture, fading into a soft atmospheric blur in the distance, all set against a neutral {{background_color}} base layer.",
+  "preview_image_removebg": "images/preview-1771336881855-wonr.webp"
 }

@@ -13,7 +13,7 @@
     "background_color"
   ],
   "image": "images/g_g17_8xwaewa7b.jpg",
-  "preview_image": "images/preview-1771153532936.webp",
+  "preview_image": "images/preview-1771336882174-5l6e.webp",
   "tags": [
     "flat design",
     "vector illustration",
@@ -26,5 +26,6 @@
   "supportImageReference": false,
   "createdAt": "2026-02-14T21:40:48.938Z",
   "prompt_removebg": "A sophisticated, high-quality flat vector illustration of {{subject}}, designed in a clean, modern, and minimalist art style similar to high-end corporate lifestyle graphics. The rendering is completely lineless, relying on precise geometric shapes and varying tonal values to define form and volume. The surface texture is smooth, matte, and digital, with absolutely no noise, grain, or brushstrokes. The color palette is soft, muted, and harmonious, dominated by shades of {{primary_color}} with tasteful touches of {{accent_color}} to guide the eye. The lighting is a crucial stylistic element: simulate a bright, natural light source (like morning sun through a window) coming from the side, casting sharp-edged, semi-transparent diagonal shadows across the {{subject}}. These shadows should be slightly darker tones of the base colors, not black. The composition is balanced and calm, evoking a sense of tranquility and order. The image is composited on a clean {{background_color}} surface, ensuring distinct separation between the subject edges and the background for easy removal. The overall aesthetic is cozy, polished, and professional.",
-  "background_prompt_removebg": "A minimalist architectural or interior backdrop rendered in a flat vector style. The scene consists of clean geometric planes and simple structural elements like walls or shelves in shades of {{background_color}}. Soft, diagonal shafts of light cut across the scene, creating sharp, angular shadows in muted {{primary_color}} tones. Subtle decorative elements or organic shapes in {{accent_color}} provide balance without clutter. No central subject, lineless art, smooth matte finish, serene atmosphere."
+  "background_prompt_removebg": "A minimalist architectural or interior backdrop rendered in a flat vector style. The scene consists of clean geometric planes and simple structural elements like walls or shelves in shades of {{background_color}}. Soft, diagonal shafts of light cut across the scene, creating sharp, angular shadows in muted {{primary_color}} tones. Subtle decorative elements or organic shapes in {{accent_color}} provide balance without clutter. No central subject, lineless art, smooth matte finish, serene atmosphere.",
+  "preview_image_removebg": "images/preview-1771336881299-y1uo.webp"
 }

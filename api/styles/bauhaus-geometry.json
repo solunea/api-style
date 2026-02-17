@@ -13,7 +13,7 @@
     "background_color"
   ],
   "image": "images/g_v0edxauaack44.jpg",
-  "preview_image": "images/preview-1771153526789.webp",
+  "preview_image": "images/preview-1771336879161-baie.webp",
   "tags": [
     "bauhaus",
     "geometric",
@@ -26,5 +26,6 @@
   "supportImageReference": false,
   "createdAt": "2026-02-14T21:38:22.504Z",
   "prompt_removebg": "A striking geometric abstraction of {{subject}}, rendered in a classic Bauhaus and Constructivist graphic design style. The subject is deconstructed into fundamental geometric primitives: sharp triangles, perfect circles, semi-circles, and bold rectangles that assemble to suggest the form without realistic detail. The artwork utilizes a strict flat vector aesthetic with absolutely no gradients, no shading, no drop shadows, and no 3D depth. The color palette is high-contrast, featuring large solid blocks of {{primary_color}} and {{accent_color}} balanced by heavy black structural elements and negative space. The edges are razor-sharp and mathematically precise. The finish mimics a high-quality vintage screen print or lithograph, possessing a subtle matte graininess and slight ink-bleed texture on a porous surface. The composition relies on asymmetry and dynamic balance typical of 1920s avant-garde posters. The entire illustration is isolated against a uniform {{background_color}} background, which serves as the paper or canvas substrate, ensuring distinct separation of the geometric forms. Reinforcement tags: flat design, vector art, geometric minimalism, Paul Rand style, Piet Mondrian influence, abstract, hard-edge painting, 2D, clean lines, poster art, high fidelity, architectural composition.",
-  "background_prompt_removebg": "A minimalist geometric pattern composed of scattered abstract primitives, including floating triangles, circles, and rectangles in flat {{primary_color}} and {{accent_color}}. The arrangement is asymmetrical and balanced, typical of Bauhaus wallpaper designs, set against a clean {{background_color}} background with a subtle matte paper texture and no depth or shading."
+  "background_prompt_removebg": "A minimalist geometric pattern composed of scattered abstract primitives, including floating triangles, circles, and rectangles in flat {{primary_color}} and {{accent_color}}. The arrangement is asymmetrical and balanced, typical of Bauhaus wallpaper designs, set against a clean {{background_color}} background with a subtle matte paper texture and no depth or shading.",
+  "preview_image_removebg": "images/preview-1771336878320-kscw.webp"
 }

@@ -13,7 +13,7 @@
     "background_color"
   ],
   "image": "images/370bf13127fd26952d309ce97e9cb311.jpg",
-  "preview_image": "images/preview-1771246585972-b2ef.webp",
+  "preview_image": "images/preview-1771336883172-tpvu.webp",
   "tags": [
     "risograph",
     "flat illustration",
@@ -27,5 +27,5 @@
   "createdAt": "2026-02-14T21:45:30.360Z",
   "prompt_removebg": "A striking, highly stylized artistic illustration of {{subject}} rendered in a bold, mixed-media aesthetic reminiscent of textured gouache and acrylic markers. The artwork utilizes a distinct 'color blocking' technique where forms are defined by flat, jagged shapes rather than smooth gradients. The palette is dominated by distinct areas of {{primary_color}} and {{accent_color}}, creating a high-contrast visual impact set against a clean {{background_color}} background. The texture is crucial: visible dry-brush strokes, rough edges, and stippled noise patterns (particularly in textured areas like hair or fabric) give the image a tactile, hand-crafted feel. Black ink-like lines are thick, uneven, and expressive, occasionally breaking into wavy, zigzag, or scribbled patterns to define shadows and contours. The composition embraces negative space, allowing the {{background_color}} canvas to interact with the subject, sometimes cutting into the form to create highlights. Lighting is implied through sharp color changes rather than soft shadows, creating a posterized, graphic novel effect. The rendering style avoids photorealism entirely, favoring a flat, dimensional collage look with a grainy, matte finish. High contrast, sharp focus, artistic abstraction, screen print aesthetic, visible bristle marks, editorial illustration style, modern art, expressive strokes.",
   "background_prompt_removebg": "An abstract artistic background composition featuring rough, dry-brush textures and bold geometric fragments in {{primary_color}} and {{accent_color}}. The scene includes expressive scribbles, stippled noise patterns, and jagged blocks of color set against a clean {{background_color}} surface. The aesthetic mimics a torn paper collage or a painted surface with peeling layers, emphasizing tactile grunge, broad strokes, and artistic imperfection without any central subject, creating a decorative frame of raw artistic expression.",
-  "preview_image_removebg": "images/preview-1771246586232-fdfp.webp"
+  "preview_image_removebg": "images/preview-1771336881317-hmen.webp"
 }

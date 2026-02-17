@@ -13,7 +13,7 @@
     "background_color"
   ],
   "image": "images/haxv01ibaaayb77.jpg",
-  "preview_image": "images/preview-1771153524575.webp",
+  "preview_image": "images/preview-1771336878709-wryp.webp",
   "tags": [
     "3d render",
     "pixar style",
@@ -26,5 +26,6 @@
   "supportImageReference": false,
   "createdAt": "2026-02-14T21:36:25.982Z",
   "prompt_removebg": "A premium, high-fidelity 3D character render of {{subject}} designed in a stylized, modern animation aesthetic similar to Pixar or Illumination studios. The rendering is defined by soft, tactile surfaces; the {{subject}} features a mix of smooth, matte skin textures with strong subsurface scattering (SSS) to create a warm, fleshy translucency, and clothing or outer layers made of high-quality plush fabrics or soft matte polymers. The color palette is dominated by a vibrant yet pleasing {{primary_color}}, with thoughtful details and trim in {{accent_color}}. The lighting setup is a sophisticated softbox studio arrangement: large, diffuse light sources wrap gently around the form, creating smooth gradients and eliminating harsh shadows, while a subtle rim light separates the subject from the surroundings. The image is composited against a clean, seamless {{background_color}} background to ensure perfect edge definition and contrast for isolation. The overall look is round, friendly, and physically plausible, with physically based rendering (PBR) materials that look touchable, soft, and velvety. The camera uses a portrait lens with a very slight depth of field to focus attention on the eyes and face of the {{subject}}.",
-  "background_prompt_removebg": "A soft, abstract 3D environment featuring smooth, curved geometry and gentle gradients. The scene is composed of blurred shapes and bokeh effects in shades of {{primary_color}} and {{accent_color}}, creating a dreamy, out-of-focus studio atmosphere. The lighting is ambient and diffuse, casting no hard shadows, set against a base tone of {{background_color}}."
+  "background_prompt_removebg": "A soft, abstract 3D environment featuring smooth, curved geometry and gentle gradients. The scene is composed of blurred shapes and bokeh effects in shades of {{primary_color}} and {{accent_color}}, creating a dreamy, out-of-focus studio atmosphere. The lighting is ambient and diffuse, casting no hard shadows, set against a base tone of {{background_color}}.",
+  "preview_image_removebg": "images/preview-1771336879736-b9qe.webp"
 }

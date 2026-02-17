@@ -13,7 +13,7 @@
     "background_color"
   ],
   "image": "images/g_o1exrboaa5n_d.jpg",
-  "preview_image": "images/preview-1771153531962.webp",
+  "preview_image": "images/preview-1771336881338-kukf.webp",
   "tags": [
     "needle felting",
     "wool",
@@ -26,5 +26,6 @@
   "supportImageReference": false,
   "createdAt": "2026-02-14T21:39:17.824Z",
   "prompt_removebg": "A highly detailed, photorealistic macro photograph of a handcrafted needle-felted wool sculpture representing {{subject}}. The object is constructed entirely from compressed, fuzzy wool roving, showcasing a rich, tactile surface texture with visible stray fibers, interlocking strands, and a soft, matte finish. The {{subject}} is rendered in a cute, rounded, semi-chibi aesthetic with simplified but expressive features, primarily colored in shades of {{primary_color}} with delicate details and accessories in {{accent_color}}. The lighting is soft, diffused, and high-key, mimicking professional studio toy photography or a bright stop-motion animation set, which creates a gentle rim light that accentuates the fuzziness of the silhouette against the backdrop. The camera angle is slightly low, enhancing the sense of scale in this miniature world. The image features an incredibly shallow depth of field (f/1.8), keeping the eyes and front of the {{subject}} in razor-sharp focus while the rest fades into a creamy, dreamy blur. The scene is composited on a clean {{background_color}} surface, providing a smooth, solid backdrop that contrasts with the rough texture of the wool and allows for easy background removal while preserving the delicate fiber edges. The overall mood is cozy, innocent, whimsical, and deeply texture-rich, evoking the warmth of handmade crafts. reinforcement tags: needle felting, wool texture, macro lens, tilt-shift, bokeh, soft lighting, cute, tactile, volumetric lighting, 8k, ultra-detailed, photorealistic materials, stop motion style, fibrous, craft art.",
-  "background_prompt_removebg": "A soft-focus, blurry background scene depicting a miniature landscape made of needle-felted wool. The environment consists of abstract rolling hills and soft, rounded shapes in fuzzy textures of {{primary_color}} and {{accent_color}}. In the distance, out-of-focus wool spheres or pompoms float like balloons or abstract clouds. The entire scene is set against a {{background_color}} sky or backdrop, maintaining a bright, airy, and pastel atmosphere. The depth of field is extremely shallow, rendering the background elements as colorful, textured bokeh blobs that suggest a whimsical, handcrafted world without distracting detail."
+  "background_prompt_removebg": "A soft-focus, blurry background scene depicting a miniature landscape made of needle-felted wool. The environment consists of abstract rolling hills and soft, rounded shapes in fuzzy textures of {{primary_color}} and {{accent_color}}. In the distance, out-of-focus wool spheres or pompoms float like balloons or abstract clouds. The entire scene is set against a {{background_color}} sky or backdrop, maintaining a bright, airy, and pastel atmosphere. The depth of field is extremely shallow, rendering the background elements as colorful, textured bokeh blobs that suggest a whimsical, handcrafted world without distracting detail.",
+  "preview_image_removebg": "images/preview-1771336881781-54ej.webp"
 }
