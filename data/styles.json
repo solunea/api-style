@@ -450,5 +450,34 @@
       "vector"
     ],
     "createdAt": "2026-02-17T09:45:59.105Z"
+  },
+  {
+    "id": "velvet-noir",
+    "title": "Velvet Noir",
+    "description": "Ce style capture l'essence dramatique de la photographie de film noir classique, caractérisée par un éclairage en clair-obscur très contrasté et une atmosphère sombre et mystérieuse. Il présente un fort contre-jour, une brume volumétrique et une texture de grain de film distincte qui crée une profondeur cinématographique douce.",
+    "description_en": "This style captures the dramatic essence of classic film noir photography, characterized by high-contrast chiaroscuro lighting and a moody, mysterious atmosphere. It features strong rim lighting, volumetric haze, and a distinct film grain texture that creates a soft, cinematic depth.",
+    "description_fr": "Ce style capture l'essence dramatique de la photographie de film noir classique, caractérisée par un éclairage en clair-obscur très contrasté et une atmosphère sombre et mystérieuse. Il présente un fort contre-jour, une brume volumétrique et une texture de grain de film distincte qui crée une profondeur cinématographique douce.",
+    "prompt": "A stunning, cinematic film noir style photograph of {{subject}} captured with a vintage 35mm camera. The scene is defined by dramatic, high-contrast chiaroscuro lighting, where deep shadows conceal details and intense rim lighting (backlighting) creates a glowing halo effect around the silhouette of the {{subject}}. The atmosphere is thick with volumetric fog and cigarette smoke haze, diffusing the light sources into soft, large, creamy bokeh orbs in the background. The visual texture mimics analog film stock with visible grain, high ISO noise, and a slight diffusion filter effect (Pro-Mist) that softens skin tones while keeping the eyes in sharp focus. The color grading is moody and atmospheric, washing the scene in deep, desaturated tones of {{primary_color}}, while subtle glimmers of {{accent_color}} catch the highlights and rim light, adding a touch of elegance to the darkness. The composition utilizes a very shallow depth of field (f/1.2), blurring foreground elements and background figures into abstract shapes. The overall mood is mysterious, intimate, and melancholic, reminiscent of 1940s cinema but with modern rendering clarity. no perspective, sharp focus on eyes, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic, masterpiece, ray tracing, anamorphic lens flares, film grain, emotional atmosphere.",
+    "prompt_removebg": "A stunning, cinematic film noir style photograph of {{subject}}, capturing the essence of classic 1940s Hollywood mystery. The visual aesthetic is defined by extreme chiaroscuro lighting, where deep, impenetrable shadows contrast with brilliant, glowing highlights. The subject is illuminated by a dramatic rim light (backlight) that creates a halo effect, tinted in subtle {{accent_color}} hues, while soft, diffused fill light reveals the intricate textures of the subject. The overall color palette is heavily desaturated and moody, dominated by {{primary_color}} tones and monochromatic shades, simulating the look of vintage Kodak Tri-X 400 film stock. The texture is gritty and raw, featuring visible heavy film grain, ISO noise, and halation around bright light sources. A soft, dreamlike diffusion filter effect softens the skin while keeping the eyes sharp. The atmosphere is thick with volumetric haze, swirling smoke, or mist, adding depth and palpable tension to the air. The image is set against a {{background_color}} background, which serves as the dark ambient void or surface from which the subject emerges. The depth of field is extremely shallow (f/1.4 aperture), creating creamy bokeh that blurs out foreground and background elements to completely isolate the {{subject}}. Composition is elegant and emotive, evoking feelings of melancholy and intrigue. cinematic lighting, photorealistic, 35mm film, grainy texture, emotional, mysterious, masterpiece, 8k, highly detailed, sharp focus on eyes, volumetric lighting, ray tracing, shadowy, retro aesthetic.",
+    "background_prompt": "A dark, atmospheric background scene immersed in heavy volumetric fog and shadow. Large, out-of-focus circular bokeh lights glow softly in the distance, tinted in muted shades of {{primary_color}} and {{accent_color}}. Indistinct silhouettes of architectural elements or furniture fade into the deep black void. The texture is grainy and cinematic, with dust particles floating in shafts of backlighting, creating a mysterious and moody environment perfect for a noir setting.",
+    "background_prompt_removebg": "A blurred, atmospheric background scene evoking a dimly lit vintage interior, jazz club, or rainy street at night. The environment is shrouded in deep shadows and volumetric smoke. Out-of-focus bokeh lights in shades of {{primary_color}} and {{accent_color}} float in the darkness, creating a sense of depth and mystery. The setting features vague, indistinct silhouettes of architectural details, glassware, or street lamps hidden in the gloom. The overall tone is moody and cinematic, set against a base canvas of {{background_color}}, with heavy film grain, noise, and a vintage noir texture suitable for framing a foreground subject.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/hbtu6otxuaa_m6h.jpg",
+    "preview_image": "images/preview-1771334589186-h27h.webp",
+    "preview_image_removebg": "images/preview-1771334589143-nlix.webp",
+    "tags": [
+      "noir",
+      "cinematic",
+      "chiaroscuro",
+      "volumetric",
+      "bokeh",
+      "moody"
+    ],
+    "createdAt": "2026-02-17T13:24:52.409Z"
   }
 ]
