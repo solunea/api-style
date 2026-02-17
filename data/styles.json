@@ -1,7 +1,7 @@
 [
   {
     "id": "gouache-crayeuse",
-    "title": "Whimsical Crayon",
+    "title": "Crayon Art",
     "description": "Un style d'illustration charmant de livre pour enfants caractérisé par des textures lourdes ressemblant au crayon de couleur, au pastel gras et à la gouache sèche sur papier rugueux. Il présente des proportions naïves et ludiques, une palette terreuse et chaleureuse, et une finition tactile faite à la main où le grain du papier est visiblement intégré dans l'ombrage.",
     "prompt": "A delightful, highly textured children's book illustration of {{subject}}, rendered in a whimsical mixed-media style combining colored pencils, wax crayons, and dry gouache. The artwork simulates a rough, tactile surface, perhaps heavy watercolor paper or cardstock, where the grain creates natural noise and white speckles within the color blocks. The {{subject}} is depicted with charming, slightly exaggerated proportions—round shapes, expressive features, and a naive, folk-art influence. The color palette is dominated by warm, comforting shades of {{primary_color}}, with scratchy, hand-drawn details and patterns in {{accent_color}}. The lighting is flat and ambient, typical of 2D illustration, relying on texture density rather than realistic shadows to create depth. Lines are imperfect and scratchy, suggesting a quick, creative hand. The composition feels cozy and intimate, evoking a sense of innocent storytelling and indie artistic flair. Reinforcement tags: textured digital painting, analog aesthetic, dry brush, scuff marks, pastel texture, matte finish, cozy atmosphere, playful character design, indie picture book, flat perspective, granular shading, vibrant yet earthy, 4k, high resolution, tactile rendering.",
     "variables": [
@@ -125,7 +125,7 @@
   },
   {
     "id": "corporate-outline",
-    "title": "Corporate Sketch",
+    "title": "Line Sketch",
     "description": "Une illustration de style vectoriel moderne présentant des contours à l'encre lâches et dessinés à la main, remplis de blocs de couleurs unies. Cette esthétique minimaliste repose sur l'espace négatif et des palettes limitées, typiques des storyboards architecturaux et de l'image de marque des entreprises SaaS.",
     "prompt": "A professional digital vector illustration of {{subject}} rendered in a clean, corporate sketch aesthetic. The artwork is defined by fluid, hand-drawn black ink outlines that are confident and slightly organic, mimicking the look of a high-quality marker drawing or architectural concept sketch. The coloring strategy is strictly flat, utilizing solid, unshaded blocks of {{primary_color}} as the dominant tone and {{accent_color}} for strategic highlights, all set against a stark, pure white background. Avoid any gradients, realistic textures, or 3D rendering effects; the style relies entirely on the high contrast between the crisp black linework and the bold color fills. Use negative space intelligently, often leaving skin tones or neutral surfaces as uncolored white space to maintain a minimalist feel. The character proportions should be semi-realistic but simplified for clarity, evoking a sense of modern business efficiency and collaboration. The lighting is flat and implied only through color placement, with no cast shadows or ambient occlusion. Reinforcement tags: vector illustration, hand-drawn lines, flat design, corporate art, minimalist, 2D, architectural storyboard, ink outline, clean lines, business editorial, high contrast, sharp focus, digital marker, isolated on white.",
     "variables": [
@@ -311,7 +311,7 @@
   },
   {
     "id": "felted-whimsy",
-    "title": "Woolen Whimsy",
+    "title": "Woolen Texture",
     "description": "Ce style imite l'art du feutrage à l'aiguille fait main, caractérisé par des textures douces et duveteuses et une esthétique de macrophotographie miniature. Il présente des palettes de couleurs pastel, une faible profondeur de champ et une atmosphère tactile et réconfortante.",
     "description_en": "This style imitates handcrafted needle-felted wool art, characterized by soft, fuzzy textures and a miniature macro photography aesthetic. It features pastel color palettes, shallow depth of field, and a tactile, comforting atmosphere.",
     "description_fr": "Ce style imite l'art du feutrage à l'aiguille fait main, caractérisé par des textures douces et duveteuses et une esthétique de macrophotographie miniature. Il présente des palettes de couleurs pastel, une faible profondeur de champ et une atmosphère tactile et réconfortante.",

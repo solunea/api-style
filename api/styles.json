@@ -1,7 +1,7 @@
 [
   {
     "id": "gouache-crayeuse",
-    "title": "Whimsical Crayon",
+    "title": "Crayon Art",
     "description": "Un style d'illustration charmant de livre pour enfants caractérisé par des textures lourdes ressemblant au crayon de couleur, au pastel gras et à la gouache sèche sur papier rugueux. Il présente des proportions naïves et ludiques, une palette terreuse et chaleureuse, et une finition tactile faite à la main où le grain du papier est visiblement intégré dans l'ombrage.",
     "description_en": "A charming children's book illustration style characterized by heavy textures resembling colored pencil, wax crayon, and dry gouache on rough paper. It features naive, playful proportions, a warm earthy palette, and a tactile, hand-drawn finish where the paper grain is visibly integrated into the shading.",
     "description_fr": "Un style d'illustration charmant de livre pour enfants caractérisé par des textures lourdes ressemblant au crayon de couleur, au pastel gras et à la gouache sèche sur papier rugueux. Il présente des proportions naïves et ludiques, une palette terreuse et chaleureuse, et une finition tactile faite à la main où le grain du papier est visiblement intégré dans l'ombrage.",
@@ -77,7 +77,7 @@
   },
   {
     "id": "corporate-outline",
-    "title": "Corporate Sketch",
+    "title": "Line Sketch",
     "description": "Une illustration de style vectoriel moderne présentant des contours à l'encre lâches et dessinés à la main, remplis de blocs de couleurs unies. Cette esthétique minimaliste repose sur l'espace négatif et des palettes limitées, typiques des storyboards architecturaux et de l'image de marque des entreprises SaaS.",
     "description_en": "A modern vector-style illustration featuring loose, hand-drawn ink outlines filled with flat blocks of solid color. This minimalist aesthetic relies on negative space and limited palettes, typical of architectural storyboards and SaaS business branding.",
     "description_fr": "Une illustration de style vectoriel moderne présentant des contours à l'encre lâches et dessinés à la main, remplis de blocs de couleurs unies. Cette esthétique minimaliste repose sur l'espace négatif et des palettes limitées, typiques des storyboards architecturaux et de l'image de marque des entreprises SaaS.",
@@ -191,7 +191,7 @@
   },
   {
     "id": "felted-whimsy",
-    "title": "Woolen Whimsy",
+    "title": "Woolen Texture",
     "description": "Ce style imite l'art du feutrage à l'aiguille fait main, caractérisé par des textures douces et duveteuses et une esthétique de macrophotographie miniature. Il présente des palettes de couleurs pastel, une faible profondeur de champ et une atmosphère tactile et réconfortante.",
     "description_en": "This style imitates handcrafted needle-felted wool art, characterized by soft, fuzzy textures and a miniature macro photography aesthetic. It features pastel color palettes, shallow depth of field, and a tactile, comforting atmosphere.",
     "description_fr": "Ce style imite l'art du feutrage à l'aiguille fait main, caractérisé par des textures douces et duveteuses et une esthétique de macrophotographie miniature. Il présente des palettes de couleurs pastel, une faible profondeur de champ et une atmosphère tactile et réconfortante.",
