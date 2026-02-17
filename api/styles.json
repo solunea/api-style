@@ -321,5 +321,24 @@
       "illustration"
     ],
     "createdAt": "2026-02-17T13:39:59.566Z"
+  },
+  {
+    "id": "friendly-vector",
+    "title": "Friendly Vector",
+    "description": "Un style de design plat minimaliste caractérisé par des formes géométriques simplifiées, des blocs de couleurs unies et une absence d'ombrage ou de texture. Il imite l'art vectoriel d'entreprise moderne avec une esthétique joyeuse et abstraite et des contours nets et épais.",
+    "description_en": "A minimalist flat design style characterized by simplified geometric shapes, solid color blocks, and a lack of shading or texture. It mimics modern corporate vector art with a cheerful, abstract aesthetic and clean, thick outlines.",
+    "description_fr": "Un style de design plat minimaliste caractérisé par des formes géométriques simplifiées, des blocs de couleurs unies et une absence d'ombrage ou de texture. Il imite l'art vectoriel d'entreprise moderne avec une esthétique joyeuse et abstraite et des contours nets et épais.",
+    "image": "images/2ccc9e5c8830fe7c040c1259b283ee59.jpg",
+    "preview_image": "images/preview-1771339599240-dtul.webp",
+    "preview_image_removebg": "images/preview-1771339599248-jyqj.webp",
+    "tags": [
+      "vector",
+      "flat design",
+      "minimalist",
+      "corporate memphis",
+      "illustration",
+      "simple"
+    ],
+    "createdAt": "2026-02-17T14:46:45.703Z"
   }
 ]

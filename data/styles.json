@@ -520,5 +520,35 @@
       "illustration"
     ],
     "createdAt": "2026-02-17T13:39:59.566Z"
+  },
+  {
+    "id": "friendly-vector",
+    "title": "Friendly Vector",
+    "description": "Un style de design plat minimaliste caractérisé par des formes géométriques simplifiées, des blocs de couleurs unies et une absence d'ombrage ou de texture. Il imite l'art vectoriel d'entreprise moderne avec une esthétique joyeuse et abstraite et des contours nets et épais.",
+    "description_en": "A minimalist flat design style characterized by simplified geometric shapes, solid color blocks, and a lack of shading or texture. It mimics modern corporate vector art with a cheerful, abstract aesthetic and clean, thick outlines.",
+    "description_fr": "Un style de design plat minimaliste caractérisé par des formes géométriques simplifiées, des blocs de couleurs unies et une absence d'ombrage ou de texture. Il imite l'art vectoriel d'entreprise moderne avec une esthétique joyeuse et abstraite et des contours nets et épais.",
+    "prompt": "A high-quality, flat vector illustration of {{subject}} rendered in a minimalist 'Corporate Memphis' or modern tech art style. The subject is abstracted into simplified, amorphous geometric shapes with smooth, rounded edges, resembling a friendly blob or icon. The rendering technique is strictly 2D digital vector art, utilizing solid, matte fills of {{primary_color}} with absolutely no gradients, shadows, highlights, or texture. Essential details and defining features are depicted using thick, mono-weight strokes in a contrasting {{accent_color}}, featuring rounded line caps to enhance the approachable and harmless atmosphere. The visual language is reductive and symbolic, prioritizing clarity and a cheerful {{mood}} over realism or anatomical correctness. The composition is centered and iconic, set against a pure white background to maximize contrast and versatility. The image mimics the clean, scalable look of an SVG or Adobe Illustrator export, common in startup branding and UI design. There is no depth of field, no perspective distortion, and no simulated lighting; the style relies entirely on shape hierarchy and flat color theory. \n\nno shading, flat design, vector graphics, corporate art style, alegria style, adobe illustrator, svg, clean lines, minimalism, geometric abstraction, solid colors, cheerful, icon design, ui element, high contrast, sharp edges, 4k, 2d render",
+    "prompt_removebg": "A ultra-minimalist flat vector illustration of {{subject}} rendered in a modern 'Corporate Memphis' or Big Tech art style. The subject is constructed from simplified, organic, blob-like shapes with soft, rounded edges and abstracted geometry, removing all unnecessary details. The rendering is completely 2D with absolutely zero shading, no gradients, no noise, no texture, and no depth of field—pure solid color fills only. The main form is colored in a uniform, matte {{primary_color}}, while essential details like facial features, gestures, or accessories are depicted using simple, thick, rounded strokes in a contrasting {{accent_color}}. The line work is minimal, often disconnected or floating, adding to the playful and abstract vibe. The composition is centered and isolated against a clean {{background_color}} background to ensure a perfect, sharp silhouette. The aesthetic is friendly, accessible, and cheerful, typical of modern startup branding and UI design. The image looks like a high-quality SVG export. No perspective, sharp focus, flat design, vector art, 2k, clean lines, solid colors, geometric simplicity.",
+    "background_prompt": "A minimalist vector background pattern featuring sparse, floating geometric primitives like circles, squiggles, and soft blobs. The elements are rendered in flat {{primary_color}} and {{accent_color}} on a solid white canvas. The style is strictly 2D with no gradients, shadows, or texture, creating a clean, decorative backdrop suitable for modern UI interfaces or corporate presentation slides.",
+    "background_prompt_removebg": "A minimalist decorative pattern of floating organic shapes and abstract geometry in a flat vector style. Scattered decorative elements like small squiggles, dots, curves, and soft blobs in {{primary_color}} and {{accent_color}}. The design utilizes vast negative space and solid color fills with absolutely no shading, gradients, or drop shadows, set on a uniform {{background_color}} surface to create a clean, modern wallpaper or frame.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "mood",
+      "background_color"
+    ],
+    "image": "images/2ccc9e5c8830fe7c040c1259b283ee59.jpg",
+    "preview_image": "images/preview-1771339599240-dtul.webp",
+    "preview_image_removebg": "images/preview-1771339599248-jyqj.webp",
+    "tags": [
+      "vector",
+      "flat design",
+      "minimalist",
+      "corporate memphis",
+      "illustration",
+      "simple"
+    ],
+    "createdAt": "2026-02-17T14:46:45.703Z"
   }
 ]
