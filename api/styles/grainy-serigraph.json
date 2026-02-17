@@ -1,0 +1,29 @@
+{
+  "id": "grainy-serigraph",
+  "title": "Grainy Serigraph",
+  "description": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
+  "description_en": "A vintage screen-print aesthetic characterized by solid, flat blocks of saturated color without gradients. The style features distinct grainy paper textures and hard-edged, high-contrast shadows, evoking mid-century travel posters.",
+  "description_fr": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
+  "prompt": "A striking graphic illustration in the style of a vintage serigraph or woodblock print featuring {{subject}}. The artwork is defined by flat, solid blocks of vibrant color with absolutely no gradients, blending, or soft transitions. Every shape has a hard, razor-sharp edge. The aesthetic mimics a scanned analog print or risograph, overlaying the entire image with a distinct, coarse paper grain texture and subtle printing noise. The color palette is limited and bold, dominated by {{primary_color}} in the negative space or main elements, with striking highlights in {{accent_color}}. Shadows are rendered not as gradients but as solid, geometric patches of deep black or dark contrasting tones, creating a stark, sun-drenched look typical of retro travel posters or Japanese city pop art. The composition relies on minimalism and distinct layering of foreground and background elements. Lighting is implied to be harsh and direct, resulting in high-contrast visuals. The rendering is strictly 2D, flattening the {{subject}} into a stylish, poster-ready graphic design.",
+  "prompt_removebg": "A striking digital illustration of {{subject}} rendered in the aesthetic of a vintage Risograph print or a retro Japanese serigraph poster. The artwork is characterized by bold, flat fields of solid color with absolutely no gradients, creating a graphic and minimalist look. The palette is dominated by intense shades of {{primary_color}}, providing the main structural form, while vibrant touches of {{accent_color}} highlight specific details and add visual pop. The edges of the shapes are deliberately imperfect, slightly jagged, and organic, mimicking the look of ink bleed, torn paper collages, or rough stencils. The lighting is stylized and flat, with shadows rendered as hard, solid dark shapes rather than soft transitions. A heavy, tactile texture pervades the image, resembling coarse matte paper or film grain, giving the piece an analog, handmade feel. The composition is clean and uncluttered, composited on a clean {{background_color}} surface which acts as the negative space or sky element. The style evokes a sense of summer nostalgia and lo-fi warmth, typical of 1980s city pop album covers or minimalist travel posters. Reinforce the look with: screen print texture, flat design, hard edge painting, high saturation, retro aesthetic, woodblock influence, grainy finish, poster art, 2D vector style, sharp focus, 8k resolution.",
+  "background_prompt": "A minimalist, graphic environment composed of distinct horizontal bands or geometric planes of solid color. The scene depicts a simplified landscape or setting using large, flat areas of {{primary_color}} and {{accent_color}} with no gradients. Hard edges define the horizon and structural elements. The entire background features a heavy, tactile paper grain texture and screen-print aesthetic, serving as a retro, poster-style backdrop.",
+  "background_prompt_removebg": "A stylized, minimalist environment or abstract backdrop featuring broad horizontal bands or geometric shapes of {{primary_color}} and {{accent_color}}. The scene depicts a simplified landscape or decorative pattern with rough, jagged edges and a flat, screen-printed appearance. Heavy paper grain texture is visible throughout. The composition is open and spacious, designed to frame a central element, set against a dominant {{background_color}} background layer.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/730ed23794d57d565c769e2260414f75.jpg",
+  "preview_image": "images/preview-1771369184218-2lof.webp",
+  "preview_image_removebg": "images/preview-1771369184264-t401.webp",
+  "tags": [
+    "serigraph",
+    "woodblock",
+    "flat design",
+    "risograph",
+    "grainy",
+    "minimalist"
+  ],
+  "createdAt": "2026-02-17T22:59:54.739Z"
+}

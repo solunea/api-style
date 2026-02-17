@@ -1,0 +1,29 @@
+{
+  "id": "scribble-analog",
+  "title": "Scribble Analog",
+  "description": "Ce style associe une photographie vintage et granuleuse à des lignes de contour lâches dessinées à la main sur le sujet. Il crée une esthétique brute de technique mixte qui semble nostalgique et artistique, offrant un contraste unique entre textures réalistes et croquis abstraits.",
+  "description_en": "This style combines vintage, grainy photography with loose, hand-drawn contour lines overlaid on the subject. It creates a raw, mixed-media aesthetic that feels nostalgic and artistic, creating a unique contrast between realistic textures and abstract sketching.",
+  "description_fr": "Ce style associe une photographie vintage et granuleuse à des lignes de contour lâches dessinées à la main sur le sujet. Il crée une esthétique brute de technique mixte qui semble nostalgique et artistique, offrant un contraste unique entre textures réalistes et croquis abstraits.",
+  "prompt": "A sophisticated mixed-media art piece featuring {{subject}}, blending the realism of vintage analog photography with the abstract minimalism of loose sketch art. The visual foundation is a high-grain, textured photograph with a matte finish, evoking the feeling of a scanned 35mm film negative or a printed image on rough paper. The color palette is dominated by desaturated, moody tones of {{primary_color}}, creating a nostalgic and atmospheric base. Overlaid on top of the photograph are distinct, fluid, and organic scribble lines in {{accent_color}}. These lines act as a loose contour drawing, tracing the silhouette, hair, clothing folds, and key features of {{subject}} with a casual, imperfect, and artistic hand-drawn quality, resembling a white gel pen or chalk sketch on a photo print. The lines should be sinuous and slightly chaotic, sometimes deviating from the actual edge to create movement and energy. The lighting is soft, diffuse, and natural, casting gentle shadows that are slightly faded to avoid harsh blacks. The background consists of a textured, wrinkled fabric or canvas backdrop, adding to the studio portrait aesthetic. The overall image possesses a tactile quality, characterized by heavy noise, dust, scratches, and a low-contrast vintage grade. Reinforce with: mixed media, doodle art, analog aesthetic, heavy film grain, tactile texture, artistic overlay, sketch lines, raw photography, emotional, indie art style, 8k resolution, highly detailed texture.",
+  "prompt_removebg": "A sophisticated mixed-media art piece featuring {{subject}} portrayed in a vintage fashion editorial style, fusing analog photography with expressive digital illustration. The base image is a high-contrast, grainy photograph with a desaturated {{primary_color}} color grading, evoking the texture of 35mm film stock or rough matte paper. Superimposed over the realistic {{subject}} are loose, fluid, and sketchy {{accent_color}} lines—resembling white grease pencil, chalk, or a digital doodle—that trace the silhouette, hair, and clothing folds. These outlines are intentionally imperfect, wavy, and slightly offset from the subject's actual edges, adding a layer of abstract movement and artistic interpretation. The lighting is soft, diffuse, and natural, casting gentle shadows that emphasize volume without harshness. The texture is tactile, featuring visible film grain, dust specs, and the appearance of a wrinkled canvas or linen surface. The composition is centered and elegant, composited on a clean {{background_color}} surface which serves as the studio backdrop. The overall atmosphere is moody, artistic, and avant-garde, blending realism with minimalism. Reinforcement tags: mixed media, scribble art, line art overlay, fashion photography, grainy texture, cinematic, hand-drawn aesthetic, collage style, vogue, editorial, soft focus, tactile texture, monochrome palette, avant-garde, high fidelity, 8k resolution.",
+  "background_prompt": "A textured, atmospheric background representing a wrinkled studio backdrop made of heavy canvas or muslin cloth. The surface is imperfect, featuring creases, folds, and a tactile, grainy quality consistent with high-ISO film photography. The color grading is washed out and matte, utilizing muted shades of {{primary_color}}. Overlaid on this texture are abstract, loose, and sinuous scribble lines in {{accent_color}}, floating in the space to create a decorative frame or depth layer without defining a specific object. The lighting is soft and ambient, highlighting the texture of the fabric. Heavy film noise, dust particles, and a vintage scan aesthetic.",
+  "background_prompt_removebg": "A textured, wrinkled fabric or canvas backdrop in a muted {{background_color}}, illuminated by soft, diffuse ambient light creates a vintage studio atmosphere. The surface is rich with heavy film grain, analog noise, and subtle dust textures. Abstract, loose {{accent_color}} scribbles and gestural lines float in the foreground and background, forming a decorative, minimalist frame or pattern that suggests a mixed-media collage environment, devoid of any central subject, focusing purely on the interplay of texture and line work.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/577a3c9a727691999ba33e709102b431.jpg",
+  "preview_image": "images/preview-1771369625185-sazw.webp",
+  "preview_image_removebg": "images/preview-1771369625242-r15v.webp",
+  "tags": [
+    "mixed media",
+    "scribble art",
+    "analog film",
+    "outline overlay",
+    "grainy",
+    "vintage"
+  ],
+  "createdAt": "2026-02-17T23:07:09.391Z"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "retro-pixel",
+  "title": "Retro Pixel",
+  "description": "Une esthétique nostalgique de pixel art 16 bits rappelant les portraits de personnages de RPG classiques et les jeux indépendants. Elle présente des bords crénelés nets, une palette de couleurs limitée avec des ombrages en blocs et une structure de grille précise sans anticrénelage.",
+  "description_en": "A nostalgic 16-bit pixel art aesthetic reminiscent of classic RPG character portraits and indie games. It features sharp aliased edges, a limited color palette with blocky shading, and a crisp grid-based structure without anti-aliasing.",
+  "description_fr": "Une esthétique nostalgique de pixel art 16 bits rappelant les portraits de personnages de RPG classiques et les jeux indépendants. Elle présente des bords crénelés nets, une palette de couleurs limitée avec des ombrages en blocs et une structure de grille précise sans anticrénelage.",
+  "prompt": "A high-quality pixel art representation of {{subject}}, rendered in a nostalgic 16-bit retro game aesthetic. The image features sharp, jagged aliased edges with absolutely no anti-aliasing, maintaining a crisp grid-based structure typical of classic RPG character portraits or visual novel sprites. The color palette is strictly limited and vibrant, dominated by {{primary_color}} tones for the main structural elements and {{accent_color}} for highlights and atmospheric details. Shading is achieved through distinct, blocky clusters of solid color rather than smooth gradients, creating a cel-shaded look with hard transitions between light and shadow. The lighting is flat but distinct, using hard-edged highlights to define volume and form. The texture is purely digital, mimicking a low-resolution screen display upscale. The composition isolates the subject like a game sprite, emphasizing silhouette and readable details. The style evokes a cozy, indie gaming mood with a focus on clean lines and pixel-perfect precision. Reinforcement tags: pixel art, 16-bit, sprite art, retro gaming, aliased, hard edges, limited palette, quantization, crisp, sharp focus, digital art, dot matrix, arcade style, blocky, vibrant colors, nostalgic, game asset, 2D game art.",
+  "prompt_removebg": "A high-fidelity pixel art representation of {{subject}}, rendered in a nostalgic 16-bit video game style reminiscent of classic RPG dialogue portraits. The image is constructed with distinct, visible square pixels on a strict grid, avoiding all smooth gradients, blurring, or vector curves. The rendering technique mimics manual sprite work, where every pixel placement is deliberate to define form and expression. The color palette is limited and cohesive, utilizing {{primary_color}} as the dominant hue for the main structural elements and clothing, while {{accent_color}} is used for specular highlights, hair sheen, and key details to add vibrancy. Shading is achieved through 'cel-shaded' blocks of color and dithering rather than soft transitions. The lighting is stylized and flat, typical of sprite sheets, with hard shadows that define volume without realistic diffusion. The edges of the {{subject}} are sharp, jagged, and pixel-perfect, maintaining a crisp silhouette against the backdrop. The overall mood is playful, retro, and digital. The image is set against a flat, solid {{background_color}} background to ensure maximum contrast and clear edge definition for sprite extraction. no anti-aliasing, sharp focus, retro gaming aesthetic, indie game style, sprite art, 2D flat, low resolution simulation, blocky textures, vibrant colors, clean pixel lines.",
+  "background_prompt": "A simple, flat background scene rendered in a low-resolution pixel art style using {{primary_color}} and {{accent_color}}. The design consists of either a solid block of color or a minimal repeating tile pattern, such as faint dithered gradients or simple geometric shapes, typical of a retro game menu or dialogue screen. The texture is grid-based with sharp, aliased edges and no blur.",
+  "background_prompt_removebg": "A retro 16-bit pixel art environment scene featuring repetitive tiling patterns and grid-based textures suitable for a video game backdrop. The design includes blocky elements like clouds, bricks, or foliage rendered in {{primary_color}} and {{accent_color}}, creating a cohesive lo-fi atmosphere. The perspective is flat and 2D, designed as a decorative layer or parallax background, completely devoid of subjects, set against a base tone of {{background_color}}.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
+  "preview_image": "images/preview-1771369338096-vwdh.webp",
+  "preview_image_removebg": "images/preview-1771369338175-15q2.webp",
+  "tags": [
+    "pixel art",
+    "retro",
+    "16-bit",
+    "sprite",
+    "nostalgic",
+    "gaming"
+  ],
+  "createdAt": "2026-02-17T23:02:22.428Z"
+}

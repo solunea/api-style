@@ -842,5 +842,121 @@
       "eclectic"
     ],
     "createdAt": "2026-02-17T20:15:47.674Z"
+  },
+  {
+    "id": "miniature-diorama",
+    "title": "Miniature Diorama",
+    "description": "Ce style reproduit la photographie à bascule et décentrement (tilt-shift) pour créer une illusion d'optique où les sujets réels apparaissent comme des modèles réduits ou des jouets. Il se caractérise par une perspective en plongée, des couleurs saturées et une profondeur de champ extrêmement faible avec un flou important.",
+    "description_en": "This style replicates tilt-shift photography to create an optical illusion where real-world subjects appear as miniature scale models or toys. It features a high-angle perspective, saturated colors, and an extremely shallow depth of field with heavy blurring.",
+    "description_fr": "Ce style reproduit la photographie à bascule et décentrement (tilt-shift) pour créer une illusion d'optique où les sujets réels apparaissent comme des modèles réduits ou des jouets. Il se caractérise par une perspective en plongée, des couleurs saturées et une profondeur de champ extrêmement faible avec un flou important.",
+    "prompt": "A stunning tilt-shift photograph capturing {{subject}} as a hyper-realistic miniature scale model within a detailed diorama setting. The image utilizes a specialized tilt-shift lens technique to create a dramatic shallow depth of field, where the {{subject}} is in razor-sharp focus while the top and bottom of the frame melt into a creamy, exaggerated blur. The perspective is high-angle or isometric, simulating a bird's-eye view of a tiny world, enhancing the illusion of miniaturization. The lighting is soft, warm, and volumetric, bathing the scene in a dreamlike glow with dominant tones of {{primary_color}}, evoking the feeling of a carefully lit museum display or a golden-hour tabletop scene. Small details on the {{subject}} are rendered with macro-level precision, making textures look tactile and slightly toy-like, while accents of {{accent_color}} provide vibrant contrast through miniature streetlights, windows, or decorative elements. The atmosphere is charming, quiet, and contained, blurring the line between a photorealistic cityscape and a hand-crafted architectural model. The rendering style combines the aesthetics of high-end macro photography with the polish of a 3D Octane render, emphasizing scale, depth, and optical trickery. Reinforcement tags: tilt-shift effect, miniature faking, diorama, macro photography, isometric view, shallow depth of field, bokeh, photorealistic, 8k, highly detailed, toy camera aesthetic, selective focus, volumetric lighting, scale model, high contrast.",
+    "prompt_removebg": "A photorealistic tilt-shift masterpiece capturing a miniature scale model representation of {{subject}}, rendered to look like a high-end diorama or architectural model. The visual style is defined by an extremely shallow depth of field (macro photography aesthetic), creating a distinct band of sharp focus on the center of the {{subject}} while the foreground and background dissolve into a creamy, heavy bokeh blur. The materials appear to be a mix of matte hand-painted resin, smooth plastic, and textured modeling materials, giving the {{subject}} a tactile, toy-like quality. The color palette is led by {{primary_color}} applied to the main structures or body of the subject, contrasted with vibrant pops of {{accent_color}} on small details, lights, or indicators to draw the eye. The lighting is soft and warm, mimicking 'golden hour' sunlight or studio softbox lighting, creating gentle shadows and volumetric glow. The perspective is slightly elevated or isometric to enhance the 'tiny world' illusion. The entire scene is composited against a clean {{background_color}} background, which serves as the out-of-focus backdrop or surface, ensuring distinct separation for easy extraction. The rendering is ultra-sharp in the focal plane, capturing microscopic textures. Reinforcement tags: tilt-shift lens, f/1.8 aperture, miniature faking, macro photography, isometric view, diorama aesthetic, scale model, photorealistic, 8k resolution, octane render, tactile texture, soft focus edges, whimsical atmosphere, highly detailed.",
+    "background_prompt": "A heavily blurred, out-of-focus background scene designed to look like a distant environment in a miniature diorama. The imagery consists of indistinct shapes and soft gradients in shades of {{primary_color}}, simulating a city or landscape seen through a macro lens with extreme bokeh. Scattered points of light in {{accent_color}} form soft, glowing orbs, creating a sense of depth and scale without any sharp details or distinct subjects.",
+    "background_prompt_removebg": "A heavily blurred, out-of-focus background scene designed to mimic a macro environment or a distant miniature world. The image consists of abstract bokeh shapes and soft gradients primarily in shades of {{primary_color}} and {{background_color}}, creating a dreamy, indistinct atmosphere. Small, glowing orbs of {{accent_color}} light are scattered throughout the blur, suggesting distant city lights or reflections. The texture is smooth and creamy, lacking sharp lines or distinct objects, functioning purely as a depth-of-field backdrop to frame a foreground subject. The lighting suggests a soft, ambient glow.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/77ada99ef6b3fe4a0976f1e7413a5813.jpg",
+    "preview_image": "images/preview-1771369131322-istp.webp",
+    "preview_image_removebg": "images/preview-1771369131274-9mbo.webp",
+    "tags": [
+      "tilt-shift",
+      "miniature",
+      "diorama",
+      "isometric",
+      "macro",
+      "photorealistic"
+    ],
+    "createdAt": "2026-02-17T22:58:56.223Z"
+  },
+  {
+    "id": "grainy-serigraph",
+    "title": "Grainy Serigraph",
+    "description": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
+    "description_en": "A vintage screen-print aesthetic characterized by solid, flat blocks of saturated color without gradients. The style features distinct grainy paper textures and hard-edged, high-contrast shadows, evoking mid-century travel posters.",
+    "description_fr": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
+    "prompt": "A striking graphic illustration in the style of a vintage serigraph or woodblock print featuring {{subject}}. The artwork is defined by flat, solid blocks of vibrant color with absolutely no gradients, blending, or soft transitions. Every shape has a hard, razor-sharp edge. The aesthetic mimics a scanned analog print or risograph, overlaying the entire image with a distinct, coarse paper grain texture and subtle printing noise. The color palette is limited and bold, dominated by {{primary_color}} in the negative space or main elements, with striking highlights in {{accent_color}}. Shadows are rendered not as gradients but as solid, geometric patches of deep black or dark contrasting tones, creating a stark, sun-drenched look typical of retro travel posters or Japanese city pop art. The composition relies on minimalism and distinct layering of foreground and background elements. Lighting is implied to be harsh and direct, resulting in high-contrast visuals. The rendering is strictly 2D, flattening the {{subject}} into a stylish, poster-ready graphic design.",
+    "prompt_removebg": "A striking digital illustration of {{subject}} rendered in the aesthetic of a vintage Risograph print or a retro Japanese serigraph poster. The artwork is characterized by bold, flat fields of solid color with absolutely no gradients, creating a graphic and minimalist look. The palette is dominated by intense shades of {{primary_color}}, providing the main structural form, while vibrant touches of {{accent_color}} highlight specific details and add visual pop. The edges of the shapes are deliberately imperfect, slightly jagged, and organic, mimicking the look of ink bleed, torn paper collages, or rough stencils. The lighting is stylized and flat, with shadows rendered as hard, solid dark shapes rather than soft transitions. A heavy, tactile texture pervades the image, resembling coarse matte paper or film grain, giving the piece an analog, handmade feel. The composition is clean and uncluttered, composited on a clean {{background_color}} surface which acts as the negative space or sky element. The style evokes a sense of summer nostalgia and lo-fi warmth, typical of 1980s city pop album covers or minimalist travel posters. Reinforce the look with: screen print texture, flat design, hard edge painting, high saturation, retro aesthetic, woodblock influence, grainy finish, poster art, 2D vector style, sharp focus, 8k resolution.",
+    "background_prompt": "A minimalist, graphic environment composed of distinct horizontal bands or geometric planes of solid color. The scene depicts a simplified landscape or setting using large, flat areas of {{primary_color}} and {{accent_color}} with no gradients. Hard edges define the horizon and structural elements. The entire background features a heavy, tactile paper grain texture and screen-print aesthetic, serving as a retro, poster-style backdrop.",
+    "background_prompt_removebg": "A stylized, minimalist environment or abstract backdrop featuring broad horizontal bands or geometric shapes of {{primary_color}} and {{accent_color}}. The scene depicts a simplified landscape or decorative pattern with rough, jagged edges and a flat, screen-printed appearance. Heavy paper grain texture is visible throughout. The composition is open and spacious, designed to frame a central element, set against a dominant {{background_color}} background layer.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/730ed23794d57d565c769e2260414f75.jpg",
+    "preview_image": "images/preview-1771369184218-2lof.webp",
+    "preview_image_removebg": "images/preview-1771369184264-t401.webp",
+    "tags": [
+      "serigraph",
+      "woodblock",
+      "flat design",
+      "risograph",
+      "grainy",
+      "minimalist"
+    ],
+    "createdAt": "2026-02-17T22:59:54.739Z"
+  },
+  {
+    "id": "retro-pixel",
+    "title": "Retro Pixel",
+    "description": "Une esthétique nostalgique de pixel art 16 bits rappelant les portraits de personnages de RPG classiques et les jeux indépendants. Elle présente des bords crénelés nets, une palette de couleurs limitée avec des ombrages en blocs et une structure de grille précise sans anticrénelage.",
+    "description_en": "A nostalgic 16-bit pixel art aesthetic reminiscent of classic RPG character portraits and indie games. It features sharp aliased edges, a limited color palette with blocky shading, and a crisp grid-based structure without anti-aliasing.",
+    "description_fr": "Une esthétique nostalgique de pixel art 16 bits rappelant les portraits de personnages de RPG classiques et les jeux indépendants. Elle présente des bords crénelés nets, une palette de couleurs limitée avec des ombrages en blocs et une structure de grille précise sans anticrénelage.",
+    "prompt": "A high-quality pixel art representation of {{subject}}, rendered in a nostalgic 16-bit retro game aesthetic. The image features sharp, jagged aliased edges with absolutely no anti-aliasing, maintaining a crisp grid-based structure typical of classic RPG character portraits or visual novel sprites. The color palette is strictly limited and vibrant, dominated by {{primary_color}} tones for the main structural elements and {{accent_color}} for highlights and atmospheric details. Shading is achieved through distinct, blocky clusters of solid color rather than smooth gradients, creating a cel-shaded look with hard transitions between light and shadow. The lighting is flat but distinct, using hard-edged highlights to define volume and form. The texture is purely digital, mimicking a low-resolution screen display upscale. The composition isolates the subject like a game sprite, emphasizing silhouette and readable details. The style evokes a cozy, indie gaming mood with a focus on clean lines and pixel-perfect precision. Reinforcement tags: pixel art, 16-bit, sprite art, retro gaming, aliased, hard edges, limited palette, quantization, crisp, sharp focus, digital art, dot matrix, arcade style, blocky, vibrant colors, nostalgic, game asset, 2D game art.",
+    "prompt_removebg": "A high-fidelity pixel art representation of {{subject}}, rendered in a nostalgic 16-bit video game style reminiscent of classic RPG dialogue portraits. The image is constructed with distinct, visible square pixels on a strict grid, avoiding all smooth gradients, blurring, or vector curves. The rendering technique mimics manual sprite work, where every pixel placement is deliberate to define form and expression. The color palette is limited and cohesive, utilizing {{primary_color}} as the dominant hue for the main structural elements and clothing, while {{accent_color}} is used for specular highlights, hair sheen, and key details to add vibrancy. Shading is achieved through 'cel-shaded' blocks of color and dithering rather than soft transitions. The lighting is stylized and flat, typical of sprite sheets, with hard shadows that define volume without realistic diffusion. The edges of the {{subject}} are sharp, jagged, and pixel-perfect, maintaining a crisp silhouette against the backdrop. The overall mood is playful, retro, and digital. The image is set against a flat, solid {{background_color}} background to ensure maximum contrast and clear edge definition for sprite extraction. no anti-aliasing, sharp focus, retro gaming aesthetic, indie game style, sprite art, 2D flat, low resolution simulation, blocky textures, vibrant colors, clean pixel lines.",
+    "background_prompt": "A simple, flat background scene rendered in a low-resolution pixel art style using {{primary_color}} and {{accent_color}}. The design consists of either a solid block of color or a minimal repeating tile pattern, such as faint dithered gradients or simple geometric shapes, typical of a retro game menu or dialogue screen. The texture is grid-based with sharp, aliased edges and no blur.",
+    "background_prompt_removebg": "A retro 16-bit pixel art environment scene featuring repetitive tiling patterns and grid-based textures suitable for a video game backdrop. The design includes blocky elements like clouds, bricks, or foliage rendered in {{primary_color}} and {{accent_color}}, creating a cohesive lo-fi atmosphere. The perspective is flat and 2D, designed as a decorative layer or parallax background, completely devoid of subjects, set against a base tone of {{background_color}}.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
+    "preview_image": "images/preview-1771369338096-vwdh.webp",
+    "preview_image_removebg": "images/preview-1771369338175-15q2.webp",
+    "tags": [
+      "pixel art",
+      "retro",
+      "16-bit",
+      "sprite",
+      "nostalgic",
+      "gaming"
+    ],
+    "createdAt": "2026-02-17T23:02:22.428Z"
+  },
+  {
+    "id": "scribble-analog",
+    "title": "Scribble Analog",
+    "description": "Ce style associe une photographie vintage et granuleuse à des lignes de contour lâches dessinées à la main sur le sujet. Il crée une esthétique brute de technique mixte qui semble nostalgique et artistique, offrant un contraste unique entre textures réalistes et croquis abstraits.",
+    "description_en": "This style combines vintage, grainy photography with loose, hand-drawn contour lines overlaid on the subject. It creates a raw, mixed-media aesthetic that feels nostalgic and artistic, creating a unique contrast between realistic textures and abstract sketching.",
+    "description_fr": "Ce style associe une photographie vintage et granuleuse à des lignes de contour lâches dessinées à la main sur le sujet. Il crée une esthétique brute de technique mixte qui semble nostalgique et artistique, offrant un contraste unique entre textures réalistes et croquis abstraits.",
+    "prompt": "A sophisticated mixed-media art piece featuring {{subject}}, blending the realism of vintage analog photography with the abstract minimalism of loose sketch art. The visual foundation is a high-grain, textured photograph with a matte finish, evoking the feeling of a scanned 35mm film negative or a printed image on rough paper. The color palette is dominated by desaturated, moody tones of {{primary_color}}, creating a nostalgic and atmospheric base. Overlaid on top of the photograph are distinct, fluid, and organic scribble lines in {{accent_color}}. These lines act as a loose contour drawing, tracing the silhouette, hair, clothing folds, and key features of {{subject}} with a casual, imperfect, and artistic hand-drawn quality, resembling a white gel pen or chalk sketch on a photo print. The lines should be sinuous and slightly chaotic, sometimes deviating from the actual edge to create movement and energy. The lighting is soft, diffuse, and natural, casting gentle shadows that are slightly faded to avoid harsh blacks. The background consists of a textured, wrinkled fabric or canvas backdrop, adding to the studio portrait aesthetic. The overall image possesses a tactile quality, characterized by heavy noise, dust, scratches, and a low-contrast vintage grade. Reinforce with: mixed media, doodle art, analog aesthetic, heavy film grain, tactile texture, artistic overlay, sketch lines, raw photography, emotional, indie art style, 8k resolution, highly detailed texture.",
+    "prompt_removebg": "A sophisticated mixed-media art piece featuring {{subject}} portrayed in a vintage fashion editorial style, fusing analog photography with expressive digital illustration. The base image is a high-contrast, grainy photograph with a desaturated {{primary_color}} color grading, evoking the texture of 35mm film stock or rough matte paper. Superimposed over the realistic {{subject}} are loose, fluid, and sketchy {{accent_color}} lines—resembling white grease pencil, chalk, or a digital doodle—that trace the silhouette, hair, and clothing folds. These outlines are intentionally imperfect, wavy, and slightly offset from the subject's actual edges, adding a layer of abstract movement and artistic interpretation. The lighting is soft, diffuse, and natural, casting gentle shadows that emphasize volume without harshness. The texture is tactile, featuring visible film grain, dust specs, and the appearance of a wrinkled canvas or linen surface. The composition is centered and elegant, composited on a clean {{background_color}} surface which serves as the studio backdrop. The overall atmosphere is moody, artistic, and avant-garde, blending realism with minimalism. Reinforcement tags: mixed media, scribble art, line art overlay, fashion photography, grainy texture, cinematic, hand-drawn aesthetic, collage style, vogue, editorial, soft focus, tactile texture, monochrome palette, avant-garde, high fidelity, 8k resolution.",
+    "background_prompt": "A textured, atmospheric background representing a wrinkled studio backdrop made of heavy canvas or muslin cloth. The surface is imperfect, featuring creases, folds, and a tactile, grainy quality consistent with high-ISO film photography. The color grading is washed out and matte, utilizing muted shades of {{primary_color}}. Overlaid on this texture are abstract, loose, and sinuous scribble lines in {{accent_color}}, floating in the space to create a decorative frame or depth layer without defining a specific object. The lighting is soft and ambient, highlighting the texture of the fabric. Heavy film noise, dust particles, and a vintage scan aesthetic.",
+    "background_prompt_removebg": "A textured, wrinkled fabric or canvas backdrop in a muted {{background_color}}, illuminated by soft, diffuse ambient light creates a vintage studio atmosphere. The surface is rich with heavy film grain, analog noise, and subtle dust textures. Abstract, loose {{accent_color}} scribbles and gestural lines float in the foreground and background, forming a decorative, minimalist frame or pattern that suggests a mixed-media collage environment, devoid of any central subject, focusing purely on the interplay of texture and line work.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/577a3c9a727691999ba33e709102b431.jpg",
+    "preview_image": "images/preview-1771369625185-sazw.webp",
+    "preview_image_removebg": "images/preview-1771369625242-r15v.webp",
+    "tags": [
+      "mixed media",
+      "scribble art",
+      "analog film",
+      "outline overlay",
+      "grainy",
+      "vintage"
+    ],
+    "createdAt": "2026-02-17T23:07:09.391Z"
   }
 ]

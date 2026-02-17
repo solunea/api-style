@@ -1,0 +1,29 @@
+{
+  "id": "miniature-diorama",
+  "title": "Miniature Diorama",
+  "description": "Ce style reproduit la photographie à bascule et décentrement (tilt-shift) pour créer une illusion d'optique où les sujets réels apparaissent comme des modèles réduits ou des jouets. Il se caractérise par une perspective en plongée, des couleurs saturées et une profondeur de champ extrêmement faible avec un flou important.",
+  "description_en": "This style replicates tilt-shift photography to create an optical illusion where real-world subjects appear as miniature scale models or toys. It features a high-angle perspective, saturated colors, and an extremely shallow depth of field with heavy blurring.",
+  "description_fr": "Ce style reproduit la photographie à bascule et décentrement (tilt-shift) pour créer une illusion d'optique où les sujets réels apparaissent comme des modèles réduits ou des jouets. Il se caractérise par une perspective en plongée, des couleurs saturées et une profondeur de champ extrêmement faible avec un flou important.",
+  "prompt": "A stunning tilt-shift photograph capturing {{subject}} as a hyper-realistic miniature scale model within a detailed diorama setting. The image utilizes a specialized tilt-shift lens technique to create a dramatic shallow depth of field, where the {{subject}} is in razor-sharp focus while the top and bottom of the frame melt into a creamy, exaggerated blur. The perspective is high-angle or isometric, simulating a bird's-eye view of a tiny world, enhancing the illusion of miniaturization. The lighting is soft, warm, and volumetric, bathing the scene in a dreamlike glow with dominant tones of {{primary_color}}, evoking the feeling of a carefully lit museum display or a golden-hour tabletop scene. Small details on the {{subject}} are rendered with macro-level precision, making textures look tactile and slightly toy-like, while accents of {{accent_color}} provide vibrant contrast through miniature streetlights, windows, or decorative elements. The atmosphere is charming, quiet, and contained, blurring the line between a photorealistic cityscape and a hand-crafted architectural model. The rendering style combines the aesthetics of high-end macro photography with the polish of a 3D Octane render, emphasizing scale, depth, and optical trickery. Reinforcement tags: tilt-shift effect, miniature faking, diorama, macro photography, isometric view, shallow depth of field, bokeh, photorealistic, 8k, highly detailed, toy camera aesthetic, selective focus, volumetric lighting, scale model, high contrast.",
+  "prompt_removebg": "A photorealistic tilt-shift masterpiece capturing a miniature scale model representation of {{subject}}, rendered to look like a high-end diorama or architectural model. The visual style is defined by an extremely shallow depth of field (macro photography aesthetic), creating a distinct band of sharp focus on the center of the {{subject}} while the foreground and background dissolve into a creamy, heavy bokeh blur. The materials appear to be a mix of matte hand-painted resin, smooth plastic, and textured modeling materials, giving the {{subject}} a tactile, toy-like quality. The color palette is led by {{primary_color}} applied to the main structures or body of the subject, contrasted with vibrant pops of {{accent_color}} on small details, lights, or indicators to draw the eye. The lighting is soft and warm, mimicking 'golden hour' sunlight or studio softbox lighting, creating gentle shadows and volumetric glow. The perspective is slightly elevated or isometric to enhance the 'tiny world' illusion. The entire scene is composited against a clean {{background_color}} background, which serves as the out-of-focus backdrop or surface, ensuring distinct separation for easy extraction. The rendering is ultra-sharp in the focal plane, capturing microscopic textures. Reinforcement tags: tilt-shift lens, f/1.8 aperture, miniature faking, macro photography, isometric view, diorama aesthetic, scale model, photorealistic, 8k resolution, octane render, tactile texture, soft focus edges, whimsical atmosphere, highly detailed.",
+  "background_prompt": "A heavily blurred, out-of-focus background scene designed to look like a distant environment in a miniature diorama. The imagery consists of indistinct shapes and soft gradients in shades of {{primary_color}}, simulating a city or landscape seen through a macro lens with extreme bokeh. Scattered points of light in {{accent_color}} form soft, glowing orbs, creating a sense of depth and scale without any sharp details or distinct subjects.",
+  "background_prompt_removebg": "A heavily blurred, out-of-focus background scene designed to mimic a macro environment or a distant miniature world. The image consists of abstract bokeh shapes and soft gradients primarily in shades of {{primary_color}} and {{background_color}}, creating a dreamy, indistinct atmosphere. Small, glowing orbs of {{accent_color}} light are scattered throughout the blur, suggesting distant city lights or reflections. The texture is smooth and creamy, lacking sharp lines or distinct objects, functioning purely as a depth-of-field backdrop to frame a foreground subject. The lighting suggests a soft, ambient glow.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/77ada99ef6b3fe4a0976f1e7413a5813.jpg",
+  "preview_image": "images/preview-1771369131322-istp.webp",
+  "preview_image_removebg": "images/preview-1771369131274-9mbo.webp",
+  "tags": [
+    "tilt-shift",
+    "miniature",
+    "diorama",
+    "isometric",
+    "macro",
+    "photorealistic"
+  ],
+  "createdAt": "2026-02-17T22:58:56.223Z"
+}

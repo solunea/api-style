@@ -530,5 +530,81 @@
       "eclectic"
     ],
     "createdAt": "2026-02-17T20:15:47.674Z"
+  },
+  {
+    "id": "miniature-diorama",
+    "title": "Miniature Diorama",
+    "description": "Ce style reproduit la photographie à bascule et décentrement (tilt-shift) pour créer une illusion d'optique où les sujets réels apparaissent comme des modèles réduits ou des jouets. Il se caractérise par une perspective en plongée, des couleurs saturées et une profondeur de champ extrêmement faible avec un flou important.",
+    "description_en": "This style replicates tilt-shift photography to create an optical illusion where real-world subjects appear as miniature scale models or toys. It features a high-angle perspective, saturated colors, and an extremely shallow depth of field with heavy blurring.",
+    "description_fr": "Ce style reproduit la photographie à bascule et décentrement (tilt-shift) pour créer une illusion d'optique où les sujets réels apparaissent comme des modèles réduits ou des jouets. Il se caractérise par une perspective en plongée, des couleurs saturées et une profondeur de champ extrêmement faible avec un flou important.",
+    "image": "images/77ada99ef6b3fe4a0976f1e7413a5813.jpg",
+    "preview_image": "images/preview-1771369131322-istp.webp",
+    "preview_image_removebg": "images/preview-1771369131274-9mbo.webp",
+    "tags": [
+      "tilt-shift",
+      "miniature",
+      "diorama",
+      "isometric",
+      "macro",
+      "photorealistic"
+    ],
+    "createdAt": "2026-02-17T22:58:56.223Z"
+  },
+  {
+    "id": "grainy-serigraph",
+    "title": "Grainy Serigraph",
+    "description": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
+    "description_en": "A vintage screen-print aesthetic characterized by solid, flat blocks of saturated color without gradients. The style features distinct grainy paper textures and hard-edged, high-contrast shadows, evoking mid-century travel posters.",
+    "description_fr": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
+    "image": "images/730ed23794d57d565c769e2260414f75.jpg",
+    "preview_image": "images/preview-1771369184218-2lof.webp",
+    "preview_image_removebg": "images/preview-1771369184264-t401.webp",
+    "tags": [
+      "serigraph",
+      "woodblock",
+      "flat design",
+      "risograph",
+      "grainy",
+      "minimalist"
+    ],
+    "createdAt": "2026-02-17T22:59:54.739Z"
+  },
+  {
+    "id": "retro-pixel",
+    "title": "Retro Pixel",
+    "description": "Une esthétique nostalgique de pixel art 16 bits rappelant les portraits de personnages de RPG classiques et les jeux indépendants. Elle présente des bords crénelés nets, une palette de couleurs limitée avec des ombrages en blocs et une structure de grille précise sans anticrénelage.",
+    "description_en": "A nostalgic 16-bit pixel art aesthetic reminiscent of classic RPG character portraits and indie games. It features sharp aliased edges, a limited color palette with blocky shading, and a crisp grid-based structure without anti-aliasing.",
+    "description_fr": "Une esthétique nostalgique de pixel art 16 bits rappelant les portraits de personnages de RPG classiques et les jeux indépendants. Elle présente des bords crénelés nets, une palette de couleurs limitée avec des ombrages en blocs et une structure de grille précise sans anticrénelage.",
+    "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
+    "preview_image": "images/preview-1771369338096-vwdh.webp",
+    "preview_image_removebg": "images/preview-1771369338175-15q2.webp",
+    "tags": [
+      "pixel art",
+      "retro",
+      "16-bit",
+      "sprite",
+      "nostalgic",
+      "gaming"
+    ],
+    "createdAt": "2026-02-17T23:02:22.428Z"
+  },
+  {
+    "id": "scribble-analog",
+    "title": "Scribble Analog",
+    "description": "Ce style associe une photographie vintage et granuleuse à des lignes de contour lâches dessinées à la main sur le sujet. Il crée une esthétique brute de technique mixte qui semble nostalgique et artistique, offrant un contraste unique entre textures réalistes et croquis abstraits.",
+    "description_en": "This style combines vintage, grainy photography with loose, hand-drawn contour lines overlaid on the subject. It creates a raw, mixed-media aesthetic that feels nostalgic and artistic, creating a unique contrast between realistic textures and abstract sketching.",
+    "description_fr": "Ce style associe une photographie vintage et granuleuse à des lignes de contour lâches dessinées à la main sur le sujet. Il crée une esthétique brute de technique mixte qui semble nostalgique et artistique, offrant un contraste unique entre textures réalistes et croquis abstraits.",
+    "image": "images/577a3c9a727691999ba33e709102b431.jpg",
+    "preview_image": "images/preview-1771369625185-sazw.webp",
+    "preview_image_removebg": "images/preview-1771369625242-r15v.webp",
+    "tags": [
+      "mixed media",
+      "scribble art",
+      "analog film",
+      "outline overlay",
+      "grainy",
+      "vintage"
+    ],
+    "createdAt": "2026-02-17T23:07:09.391Z"
   }
 ]
