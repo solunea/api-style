@@ -1,0 +1,29 @@
+{
+  "id": "chromatic-scribble",
+  "title": "Chromatic Scribble",
+  "description": "Un style d'illustration expressif d'inspiration fauviste caractérisé par des coups de pinceau lâches et gribouillés ainsi que des couleurs vibrantes et non naturalistes. Il utilise des textures rugueuses imitant les pastels à l'huile ou les marqueurs secs sur un fond crème neutre pour créer des portraits bruts et énergiques.",
+  "description_en": "An expressive, fauvist-inspired illustration style characterized by loose, scribbly brushwork and vibrant, non-naturalistic colors. It uses rough textures mimicking oil pastels or dry markers on a neutral cream background to create raw, energetic portraits.",
+  "description_fr": "Un style d'illustration expressif d'inspiration fauviste caractérisé par des coups de pinceau lâches et gribouillés ainsi que des couleurs vibrantes et non naturalistes. Il utilise des textures rugueuses imitant les pastels à l'huile ou les marqueurs secs sur un fond crème neutre pour créer des portraits bruts et énergiques.",
+  "prompt": "A highly expressive, artistic digital illustration of {{subject}} rendered in a raw, Fauvist sketch style. The artwork features loose, energetic linework and scribbly textures that mimic the look of oil pastels, dry markers, or colored pencils on rough grain paper. Instead of realistic local colors, the form is defined by a bold, non-naturalistic palette where shadows are rendered in deep shades of {{primary_color}} and highlights pop with vibrant strokes of {{accent_color}}. The application of color is patchy and segmented, using cross-hatching and chaotic squiggles to build volume and depth without smoothing. The strokes are visible, directionally varied, and spontaneous, giving the piece a sense of movement and unfinished urgency. The subject is isolated against a flat, solid cream or pale beige background, creating a strong silhouette and focusing all attention on the colorful interplay of the figure. Lighting is flat and illustrative, relying on hue shifts rather than value contrast to define shapes. The overall aesthetic is modern, indie, and emotionally charged.",
+  "prompt_removebg": "A striking, expressive artistic illustration of {{subject}} rendered in a raw, Fauvist-inspired sketch style. The medium mimics the texture of dry pastels, chalk, or rough colored pencils applied to a grainy surface. The visual language is defined by energetic, visible mark-making: chaotic scribbles, dense cross-hatching, and loose directional lines that build up the form without any smooth blending or gradients. The color palette is vibrant and non-naturalistic, utilizing {{primary_color}} as the dominant tone for structural lines, deep shadows, and hair/fur textures, while {{accent_color}} is aggressively applied to the highlights, skin tones, or surface details to create a vibrating optical contrast. The technique emphasizes the hand of the artist with imperfections and varied line weights. The lighting is stylized and flat, relying on the clash of cool and warm hues to suggest depth rather than realistic value rendering. The subject is centrally composed and isolated against a clean, solid {{background_color}} background, ensuring a sharp silhouette and high contrast for easy extraction. The overall look is that of a quick, masterful studio study full of movement and emotion.",
+  "background_prompt": "A flat, minimalist cream or off-white paper background with a subtle rough grain texture. The surface is mostly negative space, framed by faint, energetic scribbles and stray pastel marks in {{primary_color}} and {{accent_color}} along the edges, suggesting an artist's sketchbook environment. No central subject, just the texture and peripheral artistic noise.",
+  "background_prompt_removebg": "An abstract artistic field of energetic cross-hatching, loose scribbles, and dry pastel textures. The scene is devoid of subjects, focusing entirely on the raw expression of line and color. Rough, grainy strokes in {{primary_color}} overlap with frantic accents of {{accent_color}}, creating a textured mesh of artistic noise. The background base is a solid {{background_color}}, providing a canvas for the expressive mark-making. Ideally suited as a rough paper texture overlay or a chaotic artistic backdrop.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/3714720ef83f98343a5be176352986bf.jpg",
+  "preview_image": "images/preview-1771358562772-2wij.webp",
+  "preview_image_removebg": "images/preview-1771358562901-ykxz.webp",
+  "tags": [
+    "fauvist",
+    "sketch",
+    "pastel",
+    "expressive",
+    "colorful",
+    "rough"
+  ],
+  "createdAt": "2026-02-17T20:02:50.593Z"
+}

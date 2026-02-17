@@ -1,0 +1,29 @@
+{
+  "id": "contour-flow",
+  "title": "Contour Flow",
+  "description": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
+  "description_en": "A distinctive optical art style where forms are defined entirely by continuous, rhythmic contour lines similar to topographic maps or fingerprints. The illusion of 3D volume is created through the curvature and varying thickness of parallel lines without traditional shading.",
+  "description_fr": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
+  "prompt": "A striking optical illusion vector art piece featuring {{subject}} rendered entirely through continuous {{primary_color}} topographic contour lines against a flat {{accent_color}} background. The image utilizes a 'fingerprint' or 'elevation map' aesthetic where the subject is not outlined, but rather emerges from the rhythmic distortion of concentric and wavy parallel lines. The lines vary in thickness: becoming bold and heavy to indicate shadow and depth, and thinning to hair-lines to suggest highlights and curvature. The rendering style mimics a clean digital linocut or high-contrast woodblock print. The lines flow seamlessly from the surrounding negative space into the figure, creating a hypnotic ripple effect that defines the geometry of the {{subject}}. There is no cross-hatching or gradient shading; the image relies solely on the modulation of line weight and direction to convey mass. The composition feels kinetic and fluid, with a stark, minimalist graphic quality suitable for screen printing or logo design. Lighting is implied purely through line density.",
+  "prompt_removebg": "A mesmerizing optical art illustration featuring {{subject}} formed entirely by continuous, undulating contour lines. The visual style mimics topographic maps, wood grain, or intricate fingerprint patterns, where the subject's volume and three-dimensional form are defined solely by the curvature, density, and varying thickness of the rhythmic lines. There is absolutely no traditional shading, cross-hatching, gradients, or raster textures; the image relies purely on the flow of bold vector strokes. The dominant lines are rendered in a deep, saturated {{primary_color}}, creating a stark, high-contrast graphic effect, while subtle interruptions or secondary thinner lines introduce {{accent_color}} to guide the eye and define internal details. The entire composition is set against a flat, uniform {{background_color}} background, ensuring a crisp silhouette and maximum readability. The lines radiate outward from the subject, creating a hypnotic ripple effect that merges the central figure with the surrounding negative space. The aesthetic is clean, minimalist, and digital, evoking a sense of kinetic movement and geometric precision. The rendering is sharp and precise, typical of high-end vector illustration software. no noise, sharp focus, op art, kinetic art, linear abstraction, geometric flow, clean edges, 8k resolution, graphical design style, hypnotic pattern.",
+  "background_prompt": "A hypnotic pattern of concentric, rippling {{primary_color}} lines expanding outward across a {{accent_color}} background. The lines mimic the topography of a map or ripples in water, flowing in organic, parallel waves. The line weights modulate rhythmically, creating a vibrating optical effect and a sense of depth through abstract geometry.",
+  "background_prompt_removebg": "An abstract, hypnotic background pattern composed of flowing topographic lines and concentric ripples without any central subject. The design features continuous, wavy strokes in {{primary_color}} that undulate across a flat {{background_color}} surface, mimicking the texture of flowing water, wood grain, or sound waves. Occasional streaks of {{accent_color}} add visual interest to the monochromatic rhythm. Flat vector style, high contrast, clean geometry, optical illusion effect, seamless texture.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/54518697bda4b35cc61108a00e403c80.jpg",
+  "preview_image": "images/preview-1771358622092-uhxc.webp",
+  "preview_image_removebg": "images/preview-1771358621912-fohh.webp",
+  "tags": [
+    "topographic",
+    "op art",
+    "linocut",
+    "contour lines",
+    "vector illustration",
+    "monochrome"
+  ],
+  "createdAt": "2026-02-17T20:03:45.497Z"
+}

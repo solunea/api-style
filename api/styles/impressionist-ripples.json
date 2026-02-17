@@ -1,0 +1,29 @@
+{
+  "id": "impressionist-ripples",
+  "title": "Impressionist Ripples",
+  "description": "Ce style imite la peinture à l'huile impressionniste classique, caractérisée par des textures d'impasto épaisses et des coups de couteau visibles. Il privilégie le jeu de lumière, les reflets et le mouvement à travers une application de couleur libre et expressive.",
+  "description_en": "This style emulates classic Impressionist oil painting, featuring thick impasto textures and visible palette knife strokes. It prioritizes the interplay of light, reflection, and movement through loose, expressive color application.",
+  "description_fr": "Ce style imite la peinture à l'huile impressionniste classique, caractérisée par des textures d'impasto épaisses et des coups de couteau visibles. Il privilégie le jeu de lumière, les reflets et le mouvement à travers une application de couleur libre et expressive.",
+  "prompt": "A breathtaking masterpiece of Impressionist oil painting depicting {{subject}}, rendered with thick, expressive impasto brushstrokes and heavy palette knife application. The visual style mimics the technique of masters like Claude Monet, where forms are constructed through patches of vibrant color rather than rigid outlines. The scene is immersed in a shimmering atmosphere dominated by {{primary_color}}, capturing the fleeting essence of light and movement. The texture is rich and tactile, explicitly showcasing the physical depth of the oil paint ridges on a rough linen canvas grain. The lighting is natural, dappled, and soft, creating a complex play of diffused shadows and vibrant, shimmering highlights in {{accent_color}}. Reflections play across the surface, blurring the boundary between the subject and the surroundings, suggesting a setting near water or within a lush, light-filled garden. The color grading is harmonious and painterly, utilizing optical mixing where distinct strokes of unblended color merge in the viewer's eye. The composition feels organic and fluid, evoking a sense of tranquility and timeless beauty. Reinforcement tags: oil on canvas, impasto texture, palette knife, Claude Monet style, traditional media, painterly, visible brushstrokes, dappled sunlight, atmospheric perspective, museum quality, heavy texture, artistic, 8k resolution, volumetric lighting, soft focus, vivid saturation.",
+  "prompt_removebg": "A masterpiece impressionist oil painting of {{subject}}, rendered with heavy impasto texture and expressive, rhythmic brushstrokes. The artistic technique mimics the plein air style of Claude Monet, utilizing loose, distinct touches of paint to construct form through light and color vibration rather than sharp outlines. The surface texture is rich and tactile, appearing as thick oil paint applied generously to a coarse canvas, with visible ridges and palette knife marks. The color palette is lush and harmonious, dominated by varying shades of {{primary_color}} that blend wet-on-wet, interlaced with vibrant, shimmering highlights of {{accent_color}} that catch the simulated light. The lighting is soft, diffused, and natural, suggesting dappled sunlight filtering through foliage, creating a shimmering, atmospheric glow around the subject. The composition is set against a {{background_color}} background, where the painted edges of the {{subject}} are not rigid but feather out loosely into the {{background_color}} space with artistic paint splatters and rough strokes, ensuring a natural, painterly transition for compositing. The overall mood is serene, timeless, and deeply artistic, focusing on the essence of the subject rather than hyper-realistic detail. Reinforcement tags: oil on canvas, traditional art, thick paint, painterly, textured, 8k resolution, fine art, vivid colors, atmospheric, museum quality, visible grain, soft focus, artistic interpretation.",
+  "background_prompt": "A serene, abstract impressionist background resembling a rippling water surface or a blurred garden landscape. Painted with heavy impasto oil techniques, the scene is a wash of {{primary_color}} tones representing reflections and atmospheric depth. Dappled light creates shimmering patches of {{accent_color}}, while thick palette knife textures add physical relief to the canvas. The environment is organic and fluid, with no central focus, emphasizing the interplay of liquid textures and soft, blended color harmonies.",
+  "background_prompt_removebg": "A textured impressionist background depicting a shimmering, abstract surface reminiscent of a reflecting pond or a blurred garden atmosphere. Thick, chaotic brushstrokes in shades of {{primary_color}} and {{background_color}} create a sense of depth, fluidity, and reflection without a defined horizon line. Flecks of {{accent_color}} are scattered throughout to suggest floating petals or dappled light hitting the textured surface. The style is pure oil painting impasto with a rough canvas grain, designed to act as a painterly backdrop or a decorative foreground frame.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/1c4b9625a1017fa51f9a1c74d52aa4dd.jpg",
+  "preview_image": "images/preview-1771358918429-0bmk.webp",
+  "preview_image_removebg": "images/preview-1771358918265-7dbo.webp",
+  "tags": [
+    "impressionism",
+    "oil painting",
+    "impasto",
+    "monet style",
+    "painterly",
+    "textured"
+  ],
+  "createdAt": "2026-02-17T20:08:41.130Z"
+}

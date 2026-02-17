@@ -1,0 +1,29 @@
+{
+  "id": "eclectic-collage",
+  "title": "Eclectic Collage",
+  "description": "Un style de collage multimédia vibrant mêlant peinture à l'huile réaliste, contours à l'encre gestuelle et typographie vintage. Il associe le chaos du pop art à des textures de papier vieilli et des éléments graphiques pour un rendu avant-gardiste.",
+  "description_en": "A vibrant mixed-media style blending realistic oil painting with bold, gestural ink outlines and vintage typography. It combines pop art chaos with distressed paper textures and graphic design elements for an avant-garde look.",
+  "description_fr": "Un style de collage multimédia vibrant mêlant peinture à l'huile réaliste, contours à l'encre gestuelle et typographie vintage. Il associe le chaos du pop art à des textures de papier vieilli et des éléments graphiques pour un rendu avant-gardiste.",
+  "prompt": "A chaotic, avant-garde mixed-media collage illustration of {{subject}}, combining realistic portraiture with raw graphic design elements. The {{subject}} is rendered with a realistic, painterly touch using expressive brushstrokes and multi-colored shading on the skin, contrasting sharply with thick, loose, gestural black ink strokes that roughly define the outer silhouette and hair. The composition is heavily layered with vintage typography, fragmented magazine cutouts, circular logos, and bold geometric shapes in {{primary_color}} and {{accent_color}}. The background mimics a textured, yellowed vintage poster paper with visible grain, creases, and wear. Overlays of halftone patterns, scribbles, and printed text snippets create a busy, dadaist atmosphere. The lighting on the subject is dramatic and colorful, while the surrounding graphic elements are flat and bold. The overall aesthetic is expressive, eclectic, and retro-modern, blending fine art with street poster design. Reinforcement tags: mixed media, collage art, typography design, pop art, vintage aesthetics, bold strokes, high contrast, artistic composition, distressed texture, magazine style, analog feel, experimental graphic design, 8k resolution, highly detailed.",
+  "prompt_removebg": "A striking mixed-media collage art piece featuring {{subject}}. The center of the subject is rendered in a realistic, painterly oil style with high-fidelity detail, visible brush texture, and soft shading, overlaid with artistic, translucent washes of {{primary_color}} that disrupt the realism. The outer contours, hair, or edges of the subject are defined by thick, loose, gestural black ink strokes that are abstract and calligraphic, looking like hurried sketches or marker lines. The clothing or body is composed of contrasting graphic patterns, specifically pop-art halftone dots and bold geometric stripes in {{accent_color}} and white. The surrounding composition is a chaotic but balanced assemblage of vintage ephemera: snippets of retro typography, magazine cutouts, circular geometric shapes, and torn paper scraps. The texture is rough and tactile, resembling heavy canvas or weathered cardstock. The entire composition is set against a {{background_color}} background to ensure clean separation. Lighting is flat and illustrative, emphasizing the graphic design elements over volumetric depth. High contrast, artistic chaos, fashion illustration vibe, avant-garde.",
+  "background_prompt": "A textured, yellowed vintage paper surface covered in a chaotic arrangement of scattered graphic design elements. Includes overlapping vintage typography snippets, bold circular logos, abstract geometric shapes, and halftone dot patterns in {{primary_color}} and {{accent_color}}. The scene features distressed ink textures, paper creases, and random splashes of paint, creating a busy, retro-industrial poster background without any central subject.",
+  "background_prompt_removebg": "An artistic background composition of mixed-media collage elements featuring torn paper edges, vintage typography snippets, and retro advertisement text. The scene includes abstract geometric shapes, circular pop-art motifs, and patches of halftone dot patterns in {{primary_color}} and {{accent_color}}. The surface has a rough, textured paper grain or canvas finish, with loose gestural black ink scribbles and paint splatters framing the empty center, all composited on a clean {{background_color}} surface.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/c65b2fb24615151b9356ded5987581e6.jpg",
+  "preview_image": "images/preview-1771359342516-2gua.webp",
+  "preview_image_removebg": "images/preview-1771359342311-avd1.webp",
+  "tags": [
+    "collage",
+    "mixed media",
+    "typography",
+    "pop art",
+    "vintage",
+    "eclectic"
+  ],
+  "createdAt": "2026-02-17T20:15:47.674Z"
+}

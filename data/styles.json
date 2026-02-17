@@ -579,5 +579,268 @@
       "abstract"
     ],
     "createdAt": "2026-02-17T15:31:22.088Z"
+  },
+  {
+    "id": "chromatic-scribble",
+    "title": "Chromatic Scribble",
+    "description": "Un style d'illustration expressif d'inspiration fauviste caractérisé par des coups de pinceau lâches et gribouillés ainsi que des couleurs vibrantes et non naturalistes. Il utilise des textures rugueuses imitant les pastels à l'huile ou les marqueurs secs sur un fond crème neutre pour créer des portraits bruts et énergiques.",
+    "description_en": "An expressive, fauvist-inspired illustration style characterized by loose, scribbly brushwork and vibrant, non-naturalistic colors. It uses rough textures mimicking oil pastels or dry markers on a neutral cream background to create raw, energetic portraits.",
+    "description_fr": "Un style d'illustration expressif d'inspiration fauviste caractérisé par des coups de pinceau lâches et gribouillés ainsi que des couleurs vibrantes et non naturalistes. Il utilise des textures rugueuses imitant les pastels à l'huile ou les marqueurs secs sur un fond crème neutre pour créer des portraits bruts et énergiques.",
+    "prompt": "A highly expressive, artistic digital illustration of {{subject}} rendered in a raw, Fauvist sketch style. The artwork features loose, energetic linework and scribbly textures that mimic the look of oil pastels, dry markers, or colored pencils on rough grain paper. Instead of realistic local colors, the form is defined by a bold, non-naturalistic palette where shadows are rendered in deep shades of {{primary_color}} and highlights pop with vibrant strokes of {{accent_color}}. The application of color is patchy and segmented, using cross-hatching and chaotic squiggles to build volume and depth without smoothing. The strokes are visible, directionally varied, and spontaneous, giving the piece a sense of movement and unfinished urgency. The subject is isolated against a flat, solid cream or pale beige background, creating a strong silhouette and focusing all attention on the colorful interplay of the figure. Lighting is flat and illustrative, relying on hue shifts rather than value contrast to define shapes. The overall aesthetic is modern, indie, and emotionally charged.",
+    "prompt_removebg": "A striking, expressive artistic illustration of {{subject}} rendered in a raw, Fauvist-inspired sketch style. The medium mimics the texture of dry pastels, chalk, or rough colored pencils applied to a grainy surface. The visual language is defined by energetic, visible mark-making: chaotic scribbles, dense cross-hatching, and loose directional lines that build up the form without any smooth blending or gradients. The color palette is vibrant and non-naturalistic, utilizing {{primary_color}} as the dominant tone for structural lines, deep shadows, and hair/fur textures, while {{accent_color}} is aggressively applied to the highlights, skin tones, or surface details to create a vibrating optical contrast. The technique emphasizes the hand of the artist with imperfections and varied line weights. The lighting is stylized and flat, relying on the clash of cool and warm hues to suggest depth rather than realistic value rendering. The subject is centrally composed and isolated against a clean, solid {{background_color}} background, ensuring a sharp silhouette and high contrast for easy extraction. The overall look is that of a quick, masterful studio study full of movement and emotion.",
+    "background_prompt": "A flat, minimalist cream or off-white paper background with a subtle rough grain texture. The surface is mostly negative space, framed by faint, energetic scribbles and stray pastel marks in {{primary_color}} and {{accent_color}} along the edges, suggesting an artist's sketchbook environment. No central subject, just the texture and peripheral artistic noise.",
+    "background_prompt_removebg": "An abstract artistic field of energetic cross-hatching, loose scribbles, and dry pastel textures. The scene is devoid of subjects, focusing entirely on the raw expression of line and color. Rough, grainy strokes in {{primary_color}} overlap with frantic accents of {{accent_color}}, creating a textured mesh of artistic noise. The background base is a solid {{background_color}}, providing a canvas for the expressive mark-making. Ideally suited as a rough paper texture overlay or a chaotic artistic backdrop.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/3714720ef83f98343a5be176352986bf.jpg",
+    "preview_image": "images/preview-1771358562772-2wij.webp",
+    "preview_image_removebg": "images/preview-1771358562901-ykxz.webp",
+    "tags": [
+      "fauvist",
+      "sketch",
+      "pastel",
+      "expressive",
+      "colorful",
+      "rough"
+    ],
+    "createdAt": "2026-02-17T20:02:50.593Z"
+  },
+  {
+    "id": "contour-flow",
+    "title": "Contour Flow",
+    "description": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
+    "description_en": "A distinctive optical art style where forms are defined entirely by continuous, rhythmic contour lines similar to topographic maps or fingerprints. The illusion of 3D volume is created through the curvature and varying thickness of parallel lines without traditional shading.",
+    "description_fr": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
+    "prompt": "A striking optical illusion vector art piece featuring {{subject}} rendered entirely through continuous {{primary_color}} topographic contour lines against a flat {{accent_color}} background. The image utilizes a 'fingerprint' or 'elevation map' aesthetic where the subject is not outlined, but rather emerges from the rhythmic distortion of concentric and wavy parallel lines. The lines vary in thickness: becoming bold and heavy to indicate shadow and depth, and thinning to hair-lines to suggest highlights and curvature. The rendering style mimics a clean digital linocut or high-contrast woodblock print. The lines flow seamlessly from the surrounding negative space into the figure, creating a hypnotic ripple effect that defines the geometry of the {{subject}}. There is no cross-hatching or gradient shading; the image relies solely on the modulation of line weight and direction to convey mass. The composition feels kinetic and fluid, with a stark, minimalist graphic quality suitable for screen printing or logo design. Lighting is implied purely through line density.",
+    "prompt_removebg": "A mesmerizing optical art illustration featuring {{subject}} formed entirely by continuous, undulating contour lines. The visual style mimics topographic maps, wood grain, or intricate fingerprint patterns, where the subject's volume and three-dimensional form are defined solely by the curvature, density, and varying thickness of the rhythmic lines. There is absolutely no traditional shading, cross-hatching, gradients, or raster textures; the image relies purely on the flow of bold vector strokes. The dominant lines are rendered in a deep, saturated {{primary_color}}, creating a stark, high-contrast graphic effect, while subtle interruptions or secondary thinner lines introduce {{accent_color}} to guide the eye and define internal details. The entire composition is set against a flat, uniform {{background_color}} background, ensuring a crisp silhouette and maximum readability. The lines radiate outward from the subject, creating a hypnotic ripple effect that merges the central figure with the surrounding negative space. The aesthetic is clean, minimalist, and digital, evoking a sense of kinetic movement and geometric precision. The rendering is sharp and precise, typical of high-end vector illustration software. no noise, sharp focus, op art, kinetic art, linear abstraction, geometric flow, clean edges, 8k resolution, graphical design style, hypnotic pattern.",
+    "background_prompt": "A hypnotic pattern of concentric, rippling {{primary_color}} lines expanding outward across a {{accent_color}} background. The lines mimic the topography of a map or ripples in water, flowing in organic, parallel waves. The line weights modulate rhythmically, creating a vibrating optical effect and a sense of depth through abstract geometry.",
+    "background_prompt_removebg": "An abstract, hypnotic background pattern composed of flowing topographic lines and concentric ripples without any central subject. The design features continuous, wavy strokes in {{primary_color}} that undulate across a flat {{background_color}} surface, mimicking the texture of flowing water, wood grain, or sound waves. Occasional streaks of {{accent_color}} add visual interest to the monochromatic rhythm. Flat vector style, high contrast, clean geometry, optical illusion effect, seamless texture.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/54518697bda4b35cc61108a00e403c80.jpg",
+    "preview_image": "images/preview-1771358622092-uhxc.webp",
+    "preview_image_removebg": "images/preview-1771358621912-fohh.webp",
+    "tags": [
+      "topographic",
+      "op art",
+      "linocut",
+      "contour lines",
+      "vector illustration",
+      "monochrome"
+    ],
+    "createdAt": "2026-02-17T20:03:45.497Z"
+  },
+  {
+    "id": "organic-cutout",
+    "title": "Organic Cutout",
+    "description": "Un style graphique minimaliste inspiré des papiers découpés de Matisse, présentant des silhouettes audacieuses et pleines aux proportions organiques exagérées. L'esthétique repose sur un contraste fort entre une figure plate monochrome et un fond uni vibrant, éliminant toute texture et ombrage internes.",
+    "description_en": "A minimalist graphic style inspired by Matisse's paper cutouts, featuring bold, solid silhouettes with exaggerated, organic proportions. The aesthetic relies on high contrast between a flat, single-color figure and a vibrant, solid background, eliminating all internal texture and shading.",
+    "description_fr": "Un style graphique minimaliste inspiré des papiers découpés de Matisse, présentant des silhouettes audacieuses et pleines aux proportions organiques exagérées. L'esthétique repose sur un contraste fort entre une figure plate monochrome et un fond uni vibrant, éliminant toute texture et ombrage internes.",
+    "prompt": "A bold, high-contrast graphic illustration of {{subject}} executed in the style of a primitive paper cutout or a raw ink silhouette. The visual language draws heavy inspiration from Henri Matisse’s later 'cut-outs' and abstract minimalist art, presenting the {{subject}} as a solid, flat shape filled entirely with {{accent_color}}. The figure is set against a uniform, untextured background of {{primary_color}}, creating a stark and vibrating color relationship. The rendering is strictly two-dimensional, rejecting all forms of shading, gradients, depth of field, or internal texture. The {{subject}}'s form is abstracted and stylized with exaggerated proportions—amplified features, elongated limbs, and simplified, blob-like geometry that conveys movement and emotion through pure shape. The edges of the silhouette possess a specific 'scissor-cut' quality: smooth and continuous but with organic irregularities that suggest a handmade process rather than computer-generated perfection. The composition utilizes negative space aggressively, allowing the background color to carve into the subject's form to define posture and gesture. The lighting is non-existent; this is a purely graphic representation where light and shadow are replaced by positive and negative space. The overall mood is playful yet primal, focusing on the essence of the form rather than realistic detail, utilizing a {{mood}} atmosphere through shape language. flat vector graphics, screen print aesthetic, pop art, minimalism, solid color blocking, sharp edges, no outline, high contrast, abstract figuration, primitive modernism, 2D render, artistic abstraction, visual impact, clean lines, bold graphic design, unshaded, matte finish, hard edge painting.",
+    "prompt_removebg": "An artistic, high-contrast abstract representation of {{subject}}, executed in the style of a Henri Matisse paper cut-out or primitive modern vector art. The {{subject}} is rendered as a single, cohesive, solid silhouette composed of fluid, exaggerated organic curves and bold geometric simplifications. The proportions should be stylized and expressive—think enlarged hands, fluid limbs, or simplified heads—creating a playful and naive aesthetic similar to Keith Haring or Paul Rand. The figure is filled entirely with a solid, saturated {{primary_color}}, devoid of any internal texture, gradients, shadows, or strokes. This bold shape is set directly against a clean, flat {{background_color}} background, creating a stark and vibrant figure-ground relationship. If distinct elements are needed, use {{accent_color}} for floating abstract shapes or negative space cutouts within the main form. The rendering is strictly 2D flat design, resembling a precise digital vector illustration or a sharp scissor-cut collage. The lighting is non-existent as this is a flat graphical style. The composition focuses entirely on the interplay of the bold positive space of the {{subject}} and the surrounding negative space. No noise, no brushstrokes, no realism. Clean, sharp, and iconic.",
+    "background_prompt": "A flat, uniform expanse of {{primary_color}}, completely void of texture, gradients, or shadows. Surrounding the edges are abstract, organic shapes and blob-like forms in {{accent_color}}, resembling paper scraps, torn edges, or Matisse-style seaweed cutouts. These shapes frame a central void, creating a playful interaction between positive and negative space. The aesthetic is strictly 2D, mimicking a clean screen print or vector illustration with hard, crisp edges and high-contrast color blocking, suitable for use as a graphic overlay or a minimalist backdrop.",
+    "background_prompt_removebg": "A minimalist abstract environment featuring bold, fluid organic shapes and floating blobs reminiscent of mid-century modern textile design. The scene is set on a flat {{background_color}} surface, decorated with large, smooth, cutout-style forms in {{primary_color}} and {{accent_color}}. The composition is rhythmic and balanced, with no central focal point, mimicking a Matisse-inspired wallpaper or a clean vector art pattern. High contrast, zero texture, completely flat lighting.",
+    "variables": [
+      "subject",
+      "accent_color",
+      "primary_color",
+      "mood",
+      "background_color"
+    ],
+    "image": "images/c616126059310407a1bf8d51ee936c4d.jpg",
+    "preview_image": "images/preview-1771358670221-cnbv.webp",
+    "preview_image_removebg": "images/preview-1771358670153-zupb.webp",
+    "tags": [
+      "minimalist",
+      "silhouette",
+      "cutout",
+      "flat design",
+      "abstract",
+      "vector"
+    ],
+    "createdAt": "2026-02-17T20:04:35.656Z"
+  },
+  {
+    "id": "crayon-sketch",
+    "title": "Crayon Sketch",
+    "description": "Ce style imite une illustration faite main aux pastels à la cire ou aux crayons sur du papier à grain rugueux, avec des hachures lâches et directionnelles et des couleurs vives. Il utilise l'espace blanc négatif et des traits texturés pour créer une esthétique nostalgique, naïve et impressionniste.",
+    "description_en": "This style mimics a hand-drawn illustration using colored wax pastels or crayons on rough-grain paper, featuring loose, directional hatching and vibrant colors. It utilizes negative white space and textured strokes to create a nostalgic, naive, and impressionistic aesthetic.",
+    "description_fr": "Ce style imite une illustration faite main aux pastels à la cire ou aux crayons sur du papier à grain rugueux, avec des hachures lâches et directionnelles et des couleurs vives. Il utilise l'espace blanc négatif et des traits texturés pour créer une esthétique nostalgique, naïve et impressionniste.",
+    "prompt": "A charming, hand-drawn illustration of {{subject}} executed in the style of textured wax pastels and colored pencils on heavyweight, rough-grain white paper. The artwork is characterized by loose, expressive cross-hatching and energetic scribbled strokes that deliberately reveal the texture of the paper underneath. The color palette is dominated by {{primary_color}}, applied with varying pressure to create depth without smooth gradients, while {{accent_color}} provides striking highlights and definition through bold, directional lines. The rendering technique embraces a naive, impressionistic approach, prioritizing movement and organic forms over photorealistic precision, reminiscent of classic children's book illustrations or a plein air sketchbook. Lighting is flat and illustrative, defined by the contrast between dense, waxy pigment application and the bright, uncolored negative space of the paper. Shadows are depicted through intensified hatching rather than black shading. The mood is {{mood}}, evoked through the softness of the dry media and the spontaneous nature of the composition. The overall effect is tactile and nostalgic, capturing the essence of traditional analog drawing. Reinforce with: visible paper grain, dry media texture, artistic sketch, whimsical, soft edges, traditional art emulation, tactile finish, colored crayon style, messy strokes, airy composition, illustration, matte finish, high contrast texture.",
+    "prompt_removebg": "A charming, hand-drawn illustration of {{subject}} rendered in the expressive style of soft wax crayons and colored pencils on heavy, coarse-grain paper. The artwork is characterized by its raw, tactile texture, where the 'tooth' of the paper captures the pigment unevenly, leaving tiny speckles of the underlying surface visible to create a vibrating, organic effect. The rendering technique relies on loose, directional hatching, scribbling, and scumbling rather than smooth digital gradients. The forms are defined by clusters of energetic strokes in {{primary_color}}, providing the dominant tonal mass, while {{accent_color}} is used for vibrant highlights, clothing details, or focal points, creating a lively color contrast. There are no harsh black outlines; instead, edges are soft and defined by the density of the crayon application. The lighting is illustrative and flat, evoking a sunny, nostalgic atmosphere typical of classic mid-century children's book illustrations. The composition is centered and distinct, set against a solid {{background_color}} background that represents the paper surface, ensuring a clean separation of the subject for easy background removal. The overall mood is wholesome, artisanal, and warm. Reinforcement tags: textured paper, oil pastel, dry media, cross-hatching, naive art style, visible strokes, high fidelity texture, matte finish, artistic sketch, tactile, non-photorealistic rendering, whimsical, storybook aesthetic.",
+    "background_prompt": "A textured, artistic background scene depicting an abstract environment rendered in loose wax pastel strokes. The composition features organic shapes and patterns created by energetic hatching in shades of {{primary_color}} and {{accent_color}}. The surface mimics rough watercolor paper with visible grain and white negative space showing through the dry media marks. Elements are suggested rather than detailed, creating a soft, impressionistic setting that frames the center, perfect for layering behind or in front of a subject.",
+    "background_prompt_removebg": "An impressionistic environment sketch created with loose, scribbled crayon strokes in shades of {{primary_color}} and {{accent_color}}. The scene suggests a natural or abstract setting with rough vertical strokes mimicking tall grass or trees, and horizontal hatching implying ground or sky. The texture involves heavy paper grain visibility and energetic, unblended lines. The composition frames the center but leaves it open, set against a {{background_color}} paper surface.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "mood",
+      "background_color"
+    ],
+    "image": "images/d626ed14378a24571266d95c8fc57104.jpg",
+    "preview_image": "images/preview-1771358829387-cncv.webp",
+    "preview_image_removebg": "images/preview-1771358829463-pl5w.webp",
+    "tags": [
+      "colored pencil",
+      "wax pastel",
+      "textured paper",
+      "naive art",
+      "sketchbook",
+      "illustration"
+    ],
+    "createdAt": "2026-02-17T20:07:17.859Z"
+  },
+  {
+    "id": "impressionist-ripples",
+    "title": "Impressionist Ripples",
+    "description": "Ce style imite la peinture à l'huile impressionniste classique, caractérisée par des textures d'impasto épaisses et des coups de couteau visibles. Il privilégie le jeu de lumière, les reflets et le mouvement à travers une application de couleur libre et expressive.",
+    "description_en": "This style emulates classic Impressionist oil painting, featuring thick impasto textures and visible palette knife strokes. It prioritizes the interplay of light, reflection, and movement through loose, expressive color application.",
+    "description_fr": "Ce style imite la peinture à l'huile impressionniste classique, caractérisée par des textures d'impasto épaisses et des coups de couteau visibles. Il privilégie le jeu de lumière, les reflets et le mouvement à travers une application de couleur libre et expressive.",
+    "prompt": "A breathtaking masterpiece of Impressionist oil painting depicting {{subject}}, rendered with thick, expressive impasto brushstrokes and heavy palette knife application. The visual style mimics the technique of masters like Claude Monet, where forms are constructed through patches of vibrant color rather than rigid outlines. The scene is immersed in a shimmering atmosphere dominated by {{primary_color}}, capturing the fleeting essence of light and movement. The texture is rich and tactile, explicitly showcasing the physical depth of the oil paint ridges on a rough linen canvas grain. The lighting is natural, dappled, and soft, creating a complex play of diffused shadows and vibrant, shimmering highlights in {{accent_color}}. Reflections play across the surface, blurring the boundary between the subject and the surroundings, suggesting a setting near water or within a lush, light-filled garden. The color grading is harmonious and painterly, utilizing optical mixing where distinct strokes of unblended color merge in the viewer's eye. The composition feels organic and fluid, evoking a sense of tranquility and timeless beauty. Reinforcement tags: oil on canvas, impasto texture, palette knife, Claude Monet style, traditional media, painterly, visible brushstrokes, dappled sunlight, atmospheric perspective, museum quality, heavy texture, artistic, 8k resolution, volumetric lighting, soft focus, vivid saturation.",
+    "prompt_removebg": "A masterpiece impressionist oil painting of {{subject}}, rendered with heavy impasto texture and expressive, rhythmic brushstrokes. The artistic technique mimics the plein air style of Claude Monet, utilizing loose, distinct touches of paint to construct form through light and color vibration rather than sharp outlines. The surface texture is rich and tactile, appearing as thick oil paint applied generously to a coarse canvas, with visible ridges and palette knife marks. The color palette is lush and harmonious, dominated by varying shades of {{primary_color}} that blend wet-on-wet, interlaced with vibrant, shimmering highlights of {{accent_color}} that catch the simulated light. The lighting is soft, diffused, and natural, suggesting dappled sunlight filtering through foliage, creating a shimmering, atmospheric glow around the subject. The composition is set against a {{background_color}} background, where the painted edges of the {{subject}} are not rigid but feather out loosely into the {{background_color}} space with artistic paint splatters and rough strokes, ensuring a natural, painterly transition for compositing. The overall mood is serene, timeless, and deeply artistic, focusing on the essence of the subject rather than hyper-realistic detail. Reinforcement tags: oil on canvas, traditional art, thick paint, painterly, textured, 8k resolution, fine art, vivid colors, atmospheric, museum quality, visible grain, soft focus, artistic interpretation.",
+    "background_prompt": "A serene, abstract impressionist background resembling a rippling water surface or a blurred garden landscape. Painted with heavy impasto oil techniques, the scene is a wash of {{primary_color}} tones representing reflections and atmospheric depth. Dappled light creates shimmering patches of {{accent_color}}, while thick palette knife textures add physical relief to the canvas. The environment is organic and fluid, with no central focus, emphasizing the interplay of liquid textures and soft, blended color harmonies.",
+    "background_prompt_removebg": "A textured impressionist background depicting a shimmering, abstract surface reminiscent of a reflecting pond or a blurred garden atmosphere. Thick, chaotic brushstrokes in shades of {{primary_color}} and {{background_color}} create a sense of depth, fluidity, and reflection without a defined horizon line. Flecks of {{accent_color}} are scattered throughout to suggest floating petals or dappled light hitting the textured surface. The style is pure oil painting impasto with a rough canvas grain, designed to act as a painterly backdrop or a decorative foreground frame.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/1c4b9625a1017fa51f9a1c74d52aa4dd.jpg",
+    "preview_image": "images/preview-1771358918429-0bmk.webp",
+    "preview_image_removebg": "images/preview-1771358918265-7dbo.webp",
+    "tags": [
+      "impressionism",
+      "oil painting",
+      "impasto",
+      "monet style",
+      "painterly",
+      "textured"
+    ],
+    "createdAt": "2026-02-17T20:08:41.130Z"
+  },
+  {
+    "id": "luminous-noise",
+    "title": "Luminous Noise",
+    "description": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+    "description_en": "This style combines smooth, volumetric gradients with a heavy, lo-fi film grain texture against a stark black background. It creates a moody, ethereal atmosphere where the subject appears to glow from within using bioluminescent colors, blending 3D-like forms with retro-digital noise.",
+    "description_fr": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+    "prompt": "A highly atmospheric, minimalist digital artwork featuring {{subject}} rendered in a style that bridges the gap between smooth 3D volumetric modeling and gritty lo-fi photography. The composition is dominated by a stark, pitch-black void background that emphasizes the luminosity of the subject. The {{subject}} is illuminated not by external light sources, but by an internal, ethereal glow that manifests as a smooth color gradient, transitioning seamlessly from a vibrant {{primary_color}} at the base or core to a deep, moody {{accent_color}} at the edges or top. \n\nThe rendering technique focuses on 'subsurface scattering' aesthetics, where the form is defined by the density of the light rather than sharp shadows. The edges of the {{subject}} are soft, slightly blurred, and diffuse, blending gently into the surrounding darkness. \n\nThe defining characteristic of this style is the overlay of a heavy, uniform, monochromatic noise texture or high-ISO film grain. This grain is pervasive, covering both the illuminated areas and the black shadows, unifying the image with a tactile, retro-digital static effect. The mood is solitary, contemplative, and slightly melancholic, evoking a sense of digital isolation or a futuristic dreamstate. The visual language is reductive, removing all unnecessary details to focus purely on the silhouette, the gradient light, and the texture. \n\nreinforcement tags: heavy film grain, noise texture, high ISO, dithering, gradient mesh, bioluminescence, synthwave aesthetic, minimalist, chiaroscuro, soft focus, volumetric lighting, matte finish, digital surrealism, atmospheric, moody, 8k resolution, cinematic composition, visual vibration.",
+    "prompt_removebg": "A highly atmospheric, emotionally resonant digital artwork featuring {{subject}}, rendered in a distinctive lo-fi style characterized by heavy, uniform texture. The image utilizes a prominent noise filter, resembling high-ISO film grain, sand-texture stippling, or a vintage risograph print, giving the surface a tactile, matte quality. The lighting is moody and dramatic, employing a soft, volumetric gradient that washes over the subject, transitioning smoothly from a vibrant {{primary_color}} to a subtle {{accent_color}}. The subject is presented largely in silhouette or semi-shadow, with the light catching the contours and edges to define the form through rim lighting and subsurface scattering effects. There are no harsh lines; forms are defined by the interplay of light and shadow. The composition is minimalist, emphasizing negative space and solitude. The image is set against a flat, solid {{background_color}} background, which provides a stark contrast to the glowing, textured subject. The overall mood is ethereal, introspective, and cinematic, evoking a sense of mystery and quiet melancholy. The rendering creates a seamless blend between 2D illustration and 3D lighting physics, filtered through a retro-futurist lens. \n\nno perspective, heavy grain, noise texture, gradient mapping, soft focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic lighting, minimalist composition, airbrush style, stipple shading, moody atmosphere, high contrast.",
+    "background_prompt": "An infinite, pitch-black void texture characterized by a heavy, uniform layer of monochromatic static noise and film grain. In the deep darkness, faint and nebulous washes of {{primary_color}} and {{accent_color}} drift like distant underwater bioluminescence or soft auroras, providing a subtle atmospheric depth without defining any solid shapes. The scene is purely abstract, focusing on the contrast between absolute shadow and the gritty texture of digital noise.",
+    "background_prompt_removebg": "An abstract, atmospheric background texture featuring heavy film grain and a dense noise pattern. A soft, diffused gradient light source emanates from the darkness, blending shades of {{primary_color}} and {{accent_color}} into a deep shadow. The scene represents a minimalist void or an empty studio space with a palpable, grainy texture, set against a solid {{background_color}} backdrop to create a mood of infinite depth and mystery.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/61cc415b0dad6bc94e9b885226cd70de.jpg",
+    "preview_image": "images/preview-1771358983499-fm10.webp",
+    "preview_image_removebg": "images/preview-1771358983616-6f82.webp",
+    "tags": [
+      "minimalist",
+      "grainy",
+      "gradient",
+      "lo-fi",
+      "noir",
+      "atmospheric"
+    ],
+    "createdAt": "2026-02-17T20:09:47.146Z"
+  },
+  {
+    "id": "charcoal-gesture",
+    "title": "Charcoal Gesture",
+    "description": "Un style brut et expressif imitant les croquis rapides au fusain ou au graphite sur papier texturé. Il présente des traits verticaux audacieux et des lignes lâches qui privilégient le mouvement et l'essence plutôt que les détails précis.",
+    "description_en": "A raw, expressive style mimicking quick charcoal or graphite sketches on textured paper. It features bold, vertical strokes and loose lines that prioritize motion and essence over precise detail.",
+    "description_fr": "Un style brut et expressif imitant les croquis rapides au fusain ou au graphite sur papier texturé. Il présente des traits verticaux audacieux et des lignes lâches qui privilégient le mouvement et l'essence plutôt que les détails précis.",
+    "prompt": "A raw, highly expressive charcoal sketch of {{subject}}, rendered with rapid, gestural energy typical of a quick life drawing study. The artwork utilizes bold, sweeping vertical strokes to define the form, abandoning precise outlines for a sense of motion and abstraction. The medium mimics soft compressed charcoal or heavy graphite applied to rough-tooth archival paper, resulting in a gritty, textured finish where the paper grain remains visible through the strokes. The dominant tones are deep, opaque deposits of {{primary_color}} that contrast sharply against the negative space, varying in pressure from solid blacks to dry, scratchy grays. Subtle, almost accidental smudges and faint underlying guidelines in {{accent_color}} add depth and a sense of process to the piece. The composition is minimalist, floating the subject in the center of a warm, off-white or cream paper background that shows age and fiber texture. The lighting is flat and uniform, simulating a high-resolution scan of a physical sketchbook page, preserving the matte quality of the carbon and the roughness of the surface. The style captures the raw essence of the subject through loose, heavy-handed mark-making rather than photorealism. reinforcement tags: traditional media, rough sketch, charcoal dust, high contrast, loose lines, fashion illustration style, visible grain, artistic abstraction, raw energy, hand-drawn, graphite texture, smudge effects, minimalist composition, gestural drawing, dry media.",
+    "prompt_removebg": "A highly expressive, raw charcoal and soft graphite sketch of {{subject}}, executed in a minimalist fashion illustration style. The artwork relies heavily on rapid, vertical striated strokes to build form, favoring suggestion over precise detailing. The texture is palpable, resembling soft charcoal dragged across coarse-grain drawing paper. The dominant tones are deep and saturated in {{primary_color}}, creating a high-contrast silhouette against the negative space, while sparse, energetic scribbles in {{accent_color}} provide a modern artistic touch. The drawing technique features varying line weights—from thick, aggressive blocks of shadow to delicate, faint scratches—capturing the movement and energy of the {{subject}}. The edges are rough and unrefined, mimicking a quick study or concept sketch. The image is set against a {{background_color}} background, which represents the textured paper surface, ensuring a natural transition between the grain of the paper and the sketched lines. Shadows are not rendered realistically but are implied through the density of the scribbles. The aesthetic is raw, avant-garde, and elegant, traditional media, analog art style, rough texture, pencil grain, loose lines, monochromatic with accents, high contrast, artistic interpretation.",
+    "background_prompt": "A macro texture of rough, heavy-weight drawing paper in warm off-white or cream tones. The surface is characterized by visible paper fibers, slight discoloration, and scattered particles of charcoal dust. Faint, abstract vertical scratch marks in {{primary_color}} and subtle, cloudy smudges of {{accent_color}} frame the edges, creating a gritty, artistic atmosphere that suggests a studio floor or a messy sketchbook page without any central figures.",
+    "background_prompt_removebg": "A close-up texture of rough, high-quality drawing paper or cold-press watercolor paper in {{background_color}}. The surface exhibits visible pulp grain and slight irregularities typical of analog art supplies. Faint, abstract smudge marks, charcoal dust, and stray vertical graphite scratches in {{primary_color}} and {{accent_color}} frame the empty space, creating a studio workshop atmosphere. No central subject, just the raw material texture and artistic residue.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/b64627fdd2cc53b73345c34d5586b3e2.jpg",
+    "preview_image": "images/preview-1771359128927-r1xw.webp",
+    "preview_image_removebg": "images/preview-1771359128904-3o19.webp",
+    "tags": [
+      "charcoal",
+      "sketch",
+      "gestural",
+      "minimalist",
+      "abstract",
+      "monochrome"
+    ],
+    "createdAt": "2026-02-17T20:12:26.361Z"
+  },
+  {
+    "id": "vandalized-realism",
+    "title": "Vandalized Realism",
+    "description": "Ce style juxtapose une peinture à l'huile classique sérieuse et hyperréaliste avec un gribouillage grossier, lumineux et vectoriel. Le contraste saisissant entre le rendu traditionnel haute fidélité et les contours épais et naïfs au marqueur crée une esthétique mixte contemporaine et subversive.",
+    "description_en": "This style juxtaposes a serious, hyper-realistic classical oil painting with a crude, bright, vector-like doodle overlay. The stark contrast between the high-fidelity traditional rendering and the naive, thick marker outlines creates a subversive, contemporary mixed-media aesthetic.",
+    "description_fr": "Ce style juxtapose une peinture à l'huile classique sérieuse et hyperréaliste avec un gribouillage grossier, lumineux et vectoriel. Le contraste saisissant entre le rendu traditionnel haute fidélité et les contours épais et naïfs au marqueur crée une esthétique mixte contemporaine et subversive.",
+    "prompt": "A provocative mixed-media masterpiece featuring a formal, hyper-realistic oil painting of {{subject}}, deliberately overlaid with a thick, crude, vibrant {{primary_color}} line drawing. The underlying base layer is rendered in the style of a high-end classical portrait or official headshot, featuring exquisite attention to detail: realistic skin pores, fine hair textures, sombre clothing, and dramatic chiaroscuro lighting that gives the subject weight and dignity. The color palette of the painting is muted and naturalistic, utilizing deep shadows and rich earth tones. \n\nSuperimposed directly onto this serious artwork is a flat, saturated, graffiti-style doodle in {{primary_color}}. This overlay acts as a 'defacement' or distinct graphical intervention, tracing the {{subject}}'s key features—such as the eyes, jawline, and accessories—in a simplified, iconographic manner, resembling a thick felt-tip marker or vector stroke. The doodle does not respect the shading of the painting; it is 100% flat and opaque. Subtle hints of {{accent_color}} may appear within the realistic painting's attire or as a secondary, smaller doodle element to add depth. The composition is centered, creating a direct confrontation between the traditional fine art technique and the modern, rebellious street-art aesthetic. The background is a dark, textured studio backdrop that forces the bright {{primary_color}} lines to pop with electric intensity. \n\nno perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic, impasto brushwork, vector graphics, pop art, satirical, contemporary art, bold contrast, avant-garde, defaced art, marker texture.",
+    "prompt_removebg": "A striking mixed-media conceptual artwork featuring {{subject}} rendered in two distinct, contrasting styles. The base layer is a masterpiece of hyper-realistic classical oil painting or high-end studio photography, characterized by incredible texture detail, lifelike skin pores, intricate fabric weaves, and soft, sophisticated, cinematic lighting that sculpts the form with gentle shadows. Superimposed aggressively over this serious, muted reality is a thick, flat, unmodulated {{primary_color}} line drawing. This overlay looks like a crude vector stroke, a thick paint marker, or digital graffiti. It traces the silhouette and key internal features of the {{subject}} (such as eyes, nose, mouth, or accessories) with deliberate simplicity and a lack of perspective, effectively turning the realistic face into a primitive icon or caricature. The {{primary_color}} lines are opaque and vibrant, creating a jarring, surreal visual conflict with the underlying realism. Small accents or secondary scribbles may appear in {{accent_color}}. The entire composition is isolated against a clean {{background_color}} background to ensure maximum focus on the subject. The aesthetic is subversive, modern, and ironic, blending fine art with street vandalism. 8k resolution, sharp focus, highly detailed, contemporary art style, bold graphic overlay, visual juxtaposition.",
+    "background_prompt": "A dark, moody, fine-art canvas texture background, featuring deep vignette shading in charcoal and midnight blue. The surface appears to be painted canvas with visible grain. In the foreground, abstract, thick doodle lines in {{primary_color}} and {{accent_color}} form a loose, graffiti-like frame or floating geometric patterns, maintaining the flat, bright marker aesthetic against the sombre, classical backdrop.",
+    "background_prompt_removebg": "A textured abstract surface representing a defaced canvas or a mixed-media backdrop. The base texture resembles smooth, dark oil paint or a studio photography backdrop with subtle lighting gradients. Overlaid on this surface are abstract, thick, crude geometric shapes and wandering lines in bold {{primary_color}} and {{accent_color}}, mimicking the style of a thick marker or digital brush. These graphic elements frame the center without filling it. The overall atmosphere is modern and edgy, set against a dominant {{background_color}} field that provides high contrast for the foreground elements. No central subject, only the artistic environment and stylistic textures.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/ab06d12154549ae68000460ce226a6de.jpg",
+    "preview_image": "images/preview-1771359262780-rqzj.webp",
+    "preview_image_removebg": "images/preview-1771359262823-q90i.webp",
+    "tags": [
+      "mixed media",
+      "defacement",
+      "pop art",
+      "oil painting",
+      "graffiti overlay",
+      "contemporary"
+    ],
+    "createdAt": "2026-02-17T20:14:30.120Z"
+  },
+  {
+    "id": "eclectic-collage",
+    "title": "Eclectic Collage",
+    "description": "Un style de collage multimédia vibrant mêlant peinture à l'huile réaliste, contours à l'encre gestuelle et typographie vintage. Il associe le chaos du pop art à des textures de papier vieilli et des éléments graphiques pour un rendu avant-gardiste.",
+    "description_en": "A vibrant mixed-media style blending realistic oil painting with bold, gestural ink outlines and vintage typography. It combines pop art chaos with distressed paper textures and graphic design elements for an avant-garde look.",
+    "description_fr": "Un style de collage multimédia vibrant mêlant peinture à l'huile réaliste, contours à l'encre gestuelle et typographie vintage. Il associe le chaos du pop art à des textures de papier vieilli et des éléments graphiques pour un rendu avant-gardiste.",
+    "prompt": "A chaotic, avant-garde mixed-media collage illustration of {{subject}}, combining realistic portraiture with raw graphic design elements. The {{subject}} is rendered with a realistic, painterly touch using expressive brushstrokes and multi-colored shading on the skin, contrasting sharply with thick, loose, gestural black ink strokes that roughly define the outer silhouette and hair. The composition is heavily layered with vintage typography, fragmented magazine cutouts, circular logos, and bold geometric shapes in {{primary_color}} and {{accent_color}}. The background mimics a textured, yellowed vintage poster paper with visible grain, creases, and wear. Overlays of halftone patterns, scribbles, and printed text snippets create a busy, dadaist atmosphere. The lighting on the subject is dramatic and colorful, while the surrounding graphic elements are flat and bold. The overall aesthetic is expressive, eclectic, and retro-modern, blending fine art with street poster design. Reinforcement tags: mixed media, collage art, typography design, pop art, vintage aesthetics, bold strokes, high contrast, artistic composition, distressed texture, magazine style, analog feel, experimental graphic design, 8k resolution, highly detailed.",
+    "prompt_removebg": "A striking mixed-media collage art piece featuring {{subject}}. The center of the subject is rendered in a realistic, painterly oil style with high-fidelity detail, visible brush texture, and soft shading, overlaid with artistic, translucent washes of {{primary_color}} that disrupt the realism. The outer contours, hair, or edges of the subject are defined by thick, loose, gestural black ink strokes that are abstract and calligraphic, looking like hurried sketches or marker lines. The clothing or body is composed of contrasting graphic patterns, specifically pop-art halftone dots and bold geometric stripes in {{accent_color}} and white. The surrounding composition is a chaotic but balanced assemblage of vintage ephemera: snippets of retro typography, magazine cutouts, circular geometric shapes, and torn paper scraps. The texture is rough and tactile, resembling heavy canvas or weathered cardstock. The entire composition is set against a {{background_color}} background to ensure clean separation. Lighting is flat and illustrative, emphasizing the graphic design elements over volumetric depth. High contrast, artistic chaos, fashion illustration vibe, avant-garde.",
+    "background_prompt": "A textured, yellowed vintage paper surface covered in a chaotic arrangement of scattered graphic design elements. Includes overlapping vintage typography snippets, bold circular logos, abstract geometric shapes, and halftone dot patterns in {{primary_color}} and {{accent_color}}. The scene features distressed ink textures, paper creases, and random splashes of paint, creating a busy, retro-industrial poster background without any central subject.",
+    "background_prompt_removebg": "An artistic background composition of mixed-media collage elements featuring torn paper edges, vintage typography snippets, and retro advertisement text. The scene includes abstract geometric shapes, circular pop-art motifs, and patches of halftone dot patterns in {{primary_color}} and {{accent_color}}. The surface has a rough, textured paper grain or canvas finish, with loose gestural black ink scribbles and paint splatters framing the empty center, all composited on a clean {{background_color}} surface.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/c65b2fb24615151b9356ded5987581e6.jpg",
+    "preview_image": "images/preview-1771359342516-2gua.webp",
+    "preview_image_removebg": "images/preview-1771359342311-avd1.webp",
+    "tags": [
+      "collage",
+      "mixed media",
+      "typography",
+      "pop art",
+      "vintage",
+      "eclectic"
+    ],
+    "createdAt": "2026-02-17T20:15:47.674Z"
   }
 ]

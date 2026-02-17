@@ -359,5 +359,176 @@
       "abstract"
     ],
     "createdAt": "2026-02-17T15:31:22.088Z"
+  },
+  {
+    "id": "chromatic-scribble",
+    "title": "Chromatic Scribble",
+    "description": "Un style d'illustration expressif d'inspiration fauviste caractérisé par des coups de pinceau lâches et gribouillés ainsi que des couleurs vibrantes et non naturalistes. Il utilise des textures rugueuses imitant les pastels à l'huile ou les marqueurs secs sur un fond crème neutre pour créer des portraits bruts et énergiques.",
+    "description_en": "An expressive, fauvist-inspired illustration style characterized by loose, scribbly brushwork and vibrant, non-naturalistic colors. It uses rough textures mimicking oil pastels or dry markers on a neutral cream background to create raw, energetic portraits.",
+    "description_fr": "Un style d'illustration expressif d'inspiration fauviste caractérisé par des coups de pinceau lâches et gribouillés ainsi que des couleurs vibrantes et non naturalistes. Il utilise des textures rugueuses imitant les pastels à l'huile ou les marqueurs secs sur un fond crème neutre pour créer des portraits bruts et énergiques.",
+    "image": "images/3714720ef83f98343a5be176352986bf.jpg",
+    "preview_image": "images/preview-1771358562772-2wij.webp",
+    "preview_image_removebg": "images/preview-1771358562901-ykxz.webp",
+    "tags": [
+      "fauvist",
+      "sketch",
+      "pastel",
+      "expressive",
+      "colorful",
+      "rough"
+    ],
+    "createdAt": "2026-02-17T20:02:50.593Z"
+  },
+  {
+    "id": "contour-flow",
+    "title": "Contour Flow",
+    "description": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
+    "description_en": "A distinctive optical art style where forms are defined entirely by continuous, rhythmic contour lines similar to topographic maps or fingerprints. The illusion of 3D volume is created through the curvature and varying thickness of parallel lines without traditional shading.",
+    "description_fr": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
+    "image": "images/54518697bda4b35cc61108a00e403c80.jpg",
+    "preview_image": "images/preview-1771358622092-uhxc.webp",
+    "preview_image_removebg": "images/preview-1771358621912-fohh.webp",
+    "tags": [
+      "topographic",
+      "op art",
+      "linocut",
+      "contour lines",
+      "vector illustration",
+      "monochrome"
+    ],
+    "createdAt": "2026-02-17T20:03:45.497Z"
+  },
+  {
+    "id": "organic-cutout",
+    "title": "Organic Cutout",
+    "description": "Un style graphique minimaliste inspiré des papiers découpés de Matisse, présentant des silhouettes audacieuses et pleines aux proportions organiques exagérées. L'esthétique repose sur un contraste fort entre une figure plate monochrome et un fond uni vibrant, éliminant toute texture et ombrage internes.",
+    "description_en": "A minimalist graphic style inspired by Matisse's paper cutouts, featuring bold, solid silhouettes with exaggerated, organic proportions. The aesthetic relies on high contrast between a flat, single-color figure and a vibrant, solid background, eliminating all internal texture and shading.",
+    "description_fr": "Un style graphique minimaliste inspiré des papiers découpés de Matisse, présentant des silhouettes audacieuses et pleines aux proportions organiques exagérées. L'esthétique repose sur un contraste fort entre une figure plate monochrome et un fond uni vibrant, éliminant toute texture et ombrage internes.",
+    "image": "images/c616126059310407a1bf8d51ee936c4d.jpg",
+    "preview_image": "images/preview-1771358670221-cnbv.webp",
+    "preview_image_removebg": "images/preview-1771358670153-zupb.webp",
+    "tags": [
+      "minimalist",
+      "silhouette",
+      "cutout",
+      "flat design",
+      "abstract",
+      "vector"
+    ],
+    "createdAt": "2026-02-17T20:04:35.656Z"
+  },
+  {
+    "id": "crayon-sketch",
+    "title": "Crayon Sketch",
+    "description": "Ce style imite une illustration faite main aux pastels à la cire ou aux crayons sur du papier à grain rugueux, avec des hachures lâches et directionnelles et des couleurs vives. Il utilise l'espace blanc négatif et des traits texturés pour créer une esthétique nostalgique, naïve et impressionniste.",
+    "description_en": "This style mimics a hand-drawn illustration using colored wax pastels or crayons on rough-grain paper, featuring loose, directional hatching and vibrant colors. It utilizes negative white space and textured strokes to create a nostalgic, naive, and impressionistic aesthetic.",
+    "description_fr": "Ce style imite une illustration faite main aux pastels à la cire ou aux crayons sur du papier à grain rugueux, avec des hachures lâches et directionnelles et des couleurs vives. Il utilise l'espace blanc négatif et des traits texturés pour créer une esthétique nostalgique, naïve et impressionniste.",
+    "image": "images/d626ed14378a24571266d95c8fc57104.jpg",
+    "preview_image": "images/preview-1771358829387-cncv.webp",
+    "preview_image_removebg": "images/preview-1771358829463-pl5w.webp",
+    "tags": [
+      "colored pencil",
+      "wax pastel",
+      "textured paper",
+      "naive art",
+      "sketchbook",
+      "illustration"
+    ],
+    "createdAt": "2026-02-17T20:07:17.859Z"
+  },
+  {
+    "id": "impressionist-ripples",
+    "title": "Impressionist Ripples",
+    "description": "Ce style imite la peinture à l'huile impressionniste classique, caractérisée par des textures d'impasto épaisses et des coups de couteau visibles. Il privilégie le jeu de lumière, les reflets et le mouvement à travers une application de couleur libre et expressive.",
+    "description_en": "This style emulates classic Impressionist oil painting, featuring thick impasto textures and visible palette knife strokes. It prioritizes the interplay of light, reflection, and movement through loose, expressive color application.",
+    "description_fr": "Ce style imite la peinture à l'huile impressionniste classique, caractérisée par des textures d'impasto épaisses et des coups de couteau visibles. Il privilégie le jeu de lumière, les reflets et le mouvement à travers une application de couleur libre et expressive.",
+    "image": "images/1c4b9625a1017fa51f9a1c74d52aa4dd.jpg",
+    "preview_image": "images/preview-1771358918429-0bmk.webp",
+    "preview_image_removebg": "images/preview-1771358918265-7dbo.webp",
+    "tags": [
+      "impressionism",
+      "oil painting",
+      "impasto",
+      "monet style",
+      "painterly",
+      "textured"
+    ],
+    "createdAt": "2026-02-17T20:08:41.130Z"
+  },
+  {
+    "id": "luminous-noise",
+    "title": "Luminous Noise",
+    "description": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+    "description_en": "This style combines smooth, volumetric gradients with a heavy, lo-fi film grain texture against a stark black background. It creates a moody, ethereal atmosphere where the subject appears to glow from within using bioluminescent colors, blending 3D-like forms with retro-digital noise.",
+    "description_fr": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+    "image": "images/61cc415b0dad6bc94e9b885226cd70de.jpg",
+    "preview_image": "images/preview-1771358983499-fm10.webp",
+    "preview_image_removebg": "images/preview-1771358983616-6f82.webp",
+    "tags": [
+      "minimalist",
+      "grainy",
+      "gradient",
+      "lo-fi",
+      "noir",
+      "atmospheric"
+    ],
+    "createdAt": "2026-02-17T20:09:47.146Z"
+  },
+  {
+    "id": "charcoal-gesture",
+    "title": "Charcoal Gesture",
+    "description": "Un style brut et expressif imitant les croquis rapides au fusain ou au graphite sur papier texturé. Il présente des traits verticaux audacieux et des lignes lâches qui privilégient le mouvement et l'essence plutôt que les détails précis.",
+    "description_en": "A raw, expressive style mimicking quick charcoal or graphite sketches on textured paper. It features bold, vertical strokes and loose lines that prioritize motion and essence over precise detail.",
+    "description_fr": "Un style brut et expressif imitant les croquis rapides au fusain ou au graphite sur papier texturé. Il présente des traits verticaux audacieux et des lignes lâches qui privilégient le mouvement et l'essence plutôt que les détails précis.",
+    "image": "images/b64627fdd2cc53b73345c34d5586b3e2.jpg",
+    "preview_image": "images/preview-1771359128927-r1xw.webp",
+    "preview_image_removebg": "images/preview-1771359128904-3o19.webp",
+    "tags": [
+      "charcoal",
+      "sketch",
+      "gestural",
+      "minimalist",
+      "abstract",
+      "monochrome"
+    ],
+    "createdAt": "2026-02-17T20:12:26.361Z"
+  },
+  {
+    "id": "vandalized-realism",
+    "title": "Vandalized Realism",
+    "description": "Ce style juxtapose une peinture à l'huile classique sérieuse et hyperréaliste avec un gribouillage grossier, lumineux et vectoriel. Le contraste saisissant entre le rendu traditionnel haute fidélité et les contours épais et naïfs au marqueur crée une esthétique mixte contemporaine et subversive.",
+    "description_en": "This style juxtaposes a serious, hyper-realistic classical oil painting with a crude, bright, vector-like doodle overlay. The stark contrast between the high-fidelity traditional rendering and the naive, thick marker outlines creates a subversive, contemporary mixed-media aesthetic.",
+    "description_fr": "Ce style juxtapose une peinture à l'huile classique sérieuse et hyperréaliste avec un gribouillage grossier, lumineux et vectoriel. Le contraste saisissant entre le rendu traditionnel haute fidélité et les contours épais et naïfs au marqueur crée une esthétique mixte contemporaine et subversive.",
+    "image": "images/ab06d12154549ae68000460ce226a6de.jpg",
+    "preview_image": "images/preview-1771359262780-rqzj.webp",
+    "preview_image_removebg": "images/preview-1771359262823-q90i.webp",
+    "tags": [
+      "mixed media",
+      "defacement",
+      "pop art",
+      "oil painting",
+      "graffiti overlay",
+      "contemporary"
+    ],
+    "createdAt": "2026-02-17T20:14:30.120Z"
+  },
+  {
+    "id": "eclectic-collage",
+    "title": "Eclectic Collage",
+    "description": "Un style de collage multimédia vibrant mêlant peinture à l'huile réaliste, contours à l'encre gestuelle et typographie vintage. Il associe le chaos du pop art à des textures de papier vieilli et des éléments graphiques pour un rendu avant-gardiste.",
+    "description_en": "A vibrant mixed-media style blending realistic oil painting with bold, gestural ink outlines and vintage typography. It combines pop art chaos with distressed paper textures and graphic design elements for an avant-garde look.",
+    "description_fr": "Un style de collage multimédia vibrant mêlant peinture à l'huile réaliste, contours à l'encre gestuelle et typographie vintage. Il associe le chaos du pop art à des textures de papier vieilli et des éléments graphiques pour un rendu avant-gardiste.",
+    "image": "images/c65b2fb24615151b9356ded5987581e6.jpg",
+    "preview_image": "images/preview-1771359342516-2gua.webp",
+    "preview_image_removebg": "images/preview-1771359342311-avd1.webp",
+    "tags": [
+      "collage",
+      "mixed media",
+      "typography",
+      "pop art",
+      "vintage",
+      "eclectic"
+    ],
+    "createdAt": "2026-02-17T20:15:47.674Z"
   }
 ]

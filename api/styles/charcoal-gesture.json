@@ -1,0 +1,29 @@
+{
+  "id": "charcoal-gesture",
+  "title": "Charcoal Gesture",
+  "description": "Un style brut et expressif imitant les croquis rapides au fusain ou au graphite sur papier texturé. Il présente des traits verticaux audacieux et des lignes lâches qui privilégient le mouvement et l'essence plutôt que les détails précis.",
+  "description_en": "A raw, expressive style mimicking quick charcoal or graphite sketches on textured paper. It features bold, vertical strokes and loose lines that prioritize motion and essence over precise detail.",
+  "description_fr": "Un style brut et expressif imitant les croquis rapides au fusain ou au graphite sur papier texturé. Il présente des traits verticaux audacieux et des lignes lâches qui privilégient le mouvement et l'essence plutôt que les détails précis.",
+  "prompt": "A raw, highly expressive charcoal sketch of {{subject}}, rendered with rapid, gestural energy typical of a quick life drawing study. The artwork utilizes bold, sweeping vertical strokes to define the form, abandoning precise outlines for a sense of motion and abstraction. The medium mimics soft compressed charcoal or heavy graphite applied to rough-tooth archival paper, resulting in a gritty, textured finish where the paper grain remains visible through the strokes. The dominant tones are deep, opaque deposits of {{primary_color}} that contrast sharply against the negative space, varying in pressure from solid blacks to dry, scratchy grays. Subtle, almost accidental smudges and faint underlying guidelines in {{accent_color}} add depth and a sense of process to the piece. The composition is minimalist, floating the subject in the center of a warm, off-white or cream paper background that shows age and fiber texture. The lighting is flat and uniform, simulating a high-resolution scan of a physical sketchbook page, preserving the matte quality of the carbon and the roughness of the surface. The style captures the raw essence of the subject through loose, heavy-handed mark-making rather than photorealism. reinforcement tags: traditional media, rough sketch, charcoal dust, high contrast, loose lines, fashion illustration style, visible grain, artistic abstraction, raw energy, hand-drawn, graphite texture, smudge effects, minimalist composition, gestural drawing, dry media.",
+  "prompt_removebg": "A highly expressive, raw charcoal and soft graphite sketch of {{subject}}, executed in a minimalist fashion illustration style. The artwork relies heavily on rapid, vertical striated strokes to build form, favoring suggestion over precise detailing. The texture is palpable, resembling soft charcoal dragged across coarse-grain drawing paper. The dominant tones are deep and saturated in {{primary_color}}, creating a high-contrast silhouette against the negative space, while sparse, energetic scribbles in {{accent_color}} provide a modern artistic touch. The drawing technique features varying line weights—from thick, aggressive blocks of shadow to delicate, faint scratches—capturing the movement and energy of the {{subject}}. The edges are rough and unrefined, mimicking a quick study or concept sketch. The image is set against a {{background_color}} background, which represents the textured paper surface, ensuring a natural transition between the grain of the paper and the sketched lines. Shadows are not rendered realistically but are implied through the density of the scribbles. The aesthetic is raw, avant-garde, and elegant, traditional media, analog art style, rough texture, pencil grain, loose lines, monochromatic with accents, high contrast, artistic interpretation.",
+  "background_prompt": "A macro texture of rough, heavy-weight drawing paper in warm off-white or cream tones. The surface is characterized by visible paper fibers, slight discoloration, and scattered particles of charcoal dust. Faint, abstract vertical scratch marks in {{primary_color}} and subtle, cloudy smudges of {{accent_color}} frame the edges, creating a gritty, artistic atmosphere that suggests a studio floor or a messy sketchbook page without any central figures.",
+  "background_prompt_removebg": "A close-up texture of rough, high-quality drawing paper or cold-press watercolor paper in {{background_color}}. The surface exhibits visible pulp grain and slight irregularities typical of analog art supplies. Faint, abstract smudge marks, charcoal dust, and stray vertical graphite scratches in {{primary_color}} and {{accent_color}} frame the empty space, creating a studio workshop atmosphere. No central subject, just the raw material texture and artistic residue.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/b64627fdd2cc53b73345c34d5586b3e2.jpg",
+  "preview_image": "images/preview-1771359128927-r1xw.webp",
+  "preview_image_removebg": "images/preview-1771359128904-3o19.webp",
+  "tags": [
+    "charcoal",
+    "sketch",
+    "gestural",
+    "minimalist",
+    "abstract",
+    "monochrome"
+  ],
+  "createdAt": "2026-02-17T20:12:26.361Z"
+}

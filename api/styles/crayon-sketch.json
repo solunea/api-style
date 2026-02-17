@@ -1,0 +1,30 @@
+{
+  "id": "crayon-sketch",
+  "title": "Crayon Sketch",
+  "description": "Ce style imite une illustration faite main aux pastels à la cire ou aux crayons sur du papier à grain rugueux, avec des hachures lâches et directionnelles et des couleurs vives. Il utilise l'espace blanc négatif et des traits texturés pour créer une esthétique nostalgique, naïve et impressionniste.",
+  "description_en": "This style mimics a hand-drawn illustration using colored wax pastels or crayons on rough-grain paper, featuring loose, directional hatching and vibrant colors. It utilizes negative white space and textured strokes to create a nostalgic, naive, and impressionistic aesthetic.",
+  "description_fr": "Ce style imite une illustration faite main aux pastels à la cire ou aux crayons sur du papier à grain rugueux, avec des hachures lâches et directionnelles et des couleurs vives. Il utilise l'espace blanc négatif et des traits texturés pour créer une esthétique nostalgique, naïve et impressionniste.",
+  "prompt": "A charming, hand-drawn illustration of {{subject}} executed in the style of textured wax pastels and colored pencils on heavyweight, rough-grain white paper. The artwork is characterized by loose, expressive cross-hatching and energetic scribbled strokes that deliberately reveal the texture of the paper underneath. The color palette is dominated by {{primary_color}}, applied with varying pressure to create depth without smooth gradients, while {{accent_color}} provides striking highlights and definition through bold, directional lines. The rendering technique embraces a naive, impressionistic approach, prioritizing movement and organic forms over photorealistic precision, reminiscent of classic children's book illustrations or a plein air sketchbook. Lighting is flat and illustrative, defined by the contrast between dense, waxy pigment application and the bright, uncolored negative space of the paper. Shadows are depicted through intensified hatching rather than black shading. The mood is {{mood}}, evoked through the softness of the dry media and the spontaneous nature of the composition. The overall effect is tactile and nostalgic, capturing the essence of traditional analog drawing. Reinforce with: visible paper grain, dry media texture, artistic sketch, whimsical, soft edges, traditional art emulation, tactile finish, colored crayon style, messy strokes, airy composition, illustration, matte finish, high contrast texture.",
+  "prompt_removebg": "A charming, hand-drawn illustration of {{subject}} rendered in the expressive style of soft wax crayons and colored pencils on heavy, coarse-grain paper. The artwork is characterized by its raw, tactile texture, where the 'tooth' of the paper captures the pigment unevenly, leaving tiny speckles of the underlying surface visible to create a vibrating, organic effect. The rendering technique relies on loose, directional hatching, scribbling, and scumbling rather than smooth digital gradients. The forms are defined by clusters of energetic strokes in {{primary_color}}, providing the dominant tonal mass, while {{accent_color}} is used for vibrant highlights, clothing details, or focal points, creating a lively color contrast. There are no harsh black outlines; instead, edges are soft and defined by the density of the crayon application. The lighting is illustrative and flat, evoking a sunny, nostalgic atmosphere typical of classic mid-century children's book illustrations. The composition is centered and distinct, set against a solid {{background_color}} background that represents the paper surface, ensuring a clean separation of the subject for easy background removal. The overall mood is wholesome, artisanal, and warm. Reinforcement tags: textured paper, oil pastel, dry media, cross-hatching, naive art style, visible strokes, high fidelity texture, matte finish, artistic sketch, tactile, non-photorealistic rendering, whimsical, storybook aesthetic.",
+  "background_prompt": "A textured, artistic background scene depicting an abstract environment rendered in loose wax pastel strokes. The composition features organic shapes and patterns created by energetic hatching in shades of {{primary_color}} and {{accent_color}}. The surface mimics rough watercolor paper with visible grain and white negative space showing through the dry media marks. Elements are suggested rather than detailed, creating a soft, impressionistic setting that frames the center, perfect for layering behind or in front of a subject.",
+  "background_prompt_removebg": "An impressionistic environment sketch created with loose, scribbled crayon strokes in shades of {{primary_color}} and {{accent_color}}. The scene suggests a natural or abstract setting with rough vertical strokes mimicking tall grass or trees, and horizontal hatching implying ground or sky. The texture involves heavy paper grain visibility and energetic, unblended lines. The composition frames the center but leaves it open, set against a {{background_color}} paper surface.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "mood",
+    "background_color"
+  ],
+  "image": "images/d626ed14378a24571266d95c8fc57104.jpg",
+  "preview_image": "images/preview-1771358829387-cncv.webp",
+  "preview_image_removebg": "images/preview-1771358829463-pl5w.webp",
+  "tags": [
+    "colored pencil",
+    "wax pastel",
+    "textured paper",
+    "naive art",
+    "sketchbook",
+    "illustration"
+  ],
+  "createdAt": "2026-02-17T20:07:17.859Z"
+}

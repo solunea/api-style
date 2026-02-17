@@ -1,0 +1,29 @@
+{
+  "id": "luminous-noise",
+  "title": "Luminous Noise",
+  "description": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+  "description_en": "This style combines smooth, volumetric gradients with a heavy, lo-fi film grain texture against a stark black background. It creates a moody, ethereal atmosphere where the subject appears to glow from within using bioluminescent colors, blending 3D-like forms with retro-digital noise.",
+  "description_fr": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+  "prompt": "A highly atmospheric, minimalist digital artwork featuring {{subject}} rendered in a style that bridges the gap between smooth 3D volumetric modeling and gritty lo-fi photography. The composition is dominated by a stark, pitch-black void background that emphasizes the luminosity of the subject. The {{subject}} is illuminated not by external light sources, but by an internal, ethereal glow that manifests as a smooth color gradient, transitioning seamlessly from a vibrant {{primary_color}} at the base or core to a deep, moody {{accent_color}} at the edges or top. \n\nThe rendering technique focuses on 'subsurface scattering' aesthetics, where the form is defined by the density of the light rather than sharp shadows. The edges of the {{subject}} are soft, slightly blurred, and diffuse, blending gently into the surrounding darkness. \n\nThe defining characteristic of this style is the overlay of a heavy, uniform, monochromatic noise texture or high-ISO film grain. This grain is pervasive, covering both the illuminated areas and the black shadows, unifying the image with a tactile, retro-digital static effect. The mood is solitary, contemplative, and slightly melancholic, evoking a sense of digital isolation or a futuristic dreamstate. The visual language is reductive, removing all unnecessary details to focus purely on the silhouette, the gradient light, and the texture. \n\nreinforcement tags: heavy film grain, noise texture, high ISO, dithering, gradient mesh, bioluminescence, synthwave aesthetic, minimalist, chiaroscuro, soft focus, volumetric lighting, matte finish, digital surrealism, atmospheric, moody, 8k resolution, cinematic composition, visual vibration.",
+  "prompt_removebg": "A highly atmospheric, emotionally resonant digital artwork featuring {{subject}}, rendered in a distinctive lo-fi style characterized by heavy, uniform texture. The image utilizes a prominent noise filter, resembling high-ISO film grain, sand-texture stippling, or a vintage risograph print, giving the surface a tactile, matte quality. The lighting is moody and dramatic, employing a soft, volumetric gradient that washes over the subject, transitioning smoothly from a vibrant {{primary_color}} to a subtle {{accent_color}}. The subject is presented largely in silhouette or semi-shadow, with the light catching the contours and edges to define the form through rim lighting and subsurface scattering effects. There are no harsh lines; forms are defined by the interplay of light and shadow. The composition is minimalist, emphasizing negative space and solitude. The image is set against a flat, solid {{background_color}} background, which provides a stark contrast to the glowing, textured subject. The overall mood is ethereal, introspective, and cinematic, evoking a sense of mystery and quiet melancholy. The rendering creates a seamless blend between 2D illustration and 3D lighting physics, filtered through a retro-futurist lens. \n\nno perspective, heavy grain, noise texture, gradient mapping, soft focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic lighting, minimalist composition, airbrush style, stipple shading, moody atmosphere, high contrast.",
+  "background_prompt": "An infinite, pitch-black void texture characterized by a heavy, uniform layer of monochromatic static noise and film grain. In the deep darkness, faint and nebulous washes of {{primary_color}} and {{accent_color}} drift like distant underwater bioluminescence or soft auroras, providing a subtle atmospheric depth without defining any solid shapes. The scene is purely abstract, focusing on the contrast between absolute shadow and the gritty texture of digital noise.",
+  "background_prompt_removebg": "An abstract, atmospheric background texture featuring heavy film grain and a dense noise pattern. A soft, diffused gradient light source emanates from the darkness, blending shades of {{primary_color}} and {{accent_color}} into a deep shadow. The scene represents a minimalist void or an empty studio space with a palpable, grainy texture, set against a solid {{background_color}} backdrop to create a mood of infinite depth and mystery.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/61cc415b0dad6bc94e9b885226cd70de.jpg",
+  "preview_image": "images/preview-1771358983499-fm10.webp",
+  "preview_image_removebg": "images/preview-1771358983616-6f82.webp",
+  "tags": [
+    "minimalist",
+    "grainy",
+    "gradient",
+    "lo-fi",
+    "noir",
+    "atmospheric"
+  ],
+  "createdAt": "2026-02-17T20:09:47.146Z"
+}

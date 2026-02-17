@@ -1,0 +1,29 @@
+{
+  "id": "vandalized-realism",
+  "title": "Vandalized Realism",
+  "description": "Ce style juxtapose une peinture à l'huile classique sérieuse et hyperréaliste avec un gribouillage grossier, lumineux et vectoriel. Le contraste saisissant entre le rendu traditionnel haute fidélité et les contours épais et naïfs au marqueur crée une esthétique mixte contemporaine et subversive.",
+  "description_en": "This style juxtaposes a serious, hyper-realistic classical oil painting with a crude, bright, vector-like doodle overlay. The stark contrast between the high-fidelity traditional rendering and the naive, thick marker outlines creates a subversive, contemporary mixed-media aesthetic.",
+  "description_fr": "Ce style juxtapose une peinture à l'huile classique sérieuse et hyperréaliste avec un gribouillage grossier, lumineux et vectoriel. Le contraste saisissant entre le rendu traditionnel haute fidélité et les contours épais et naïfs au marqueur crée une esthétique mixte contemporaine et subversive.",
+  "prompt": "A provocative mixed-media masterpiece featuring a formal, hyper-realistic oil painting of {{subject}}, deliberately overlaid with a thick, crude, vibrant {{primary_color}} line drawing. The underlying base layer is rendered in the style of a high-end classical portrait or official headshot, featuring exquisite attention to detail: realistic skin pores, fine hair textures, sombre clothing, and dramatic chiaroscuro lighting that gives the subject weight and dignity. The color palette of the painting is muted and naturalistic, utilizing deep shadows and rich earth tones. \n\nSuperimposed directly onto this serious artwork is a flat, saturated, graffiti-style doodle in {{primary_color}}. This overlay acts as a 'defacement' or distinct graphical intervention, tracing the {{subject}}'s key features—such as the eyes, jawline, and accessories—in a simplified, iconographic manner, resembling a thick felt-tip marker or vector stroke. The doodle does not respect the shading of the painting; it is 100% flat and opaque. Subtle hints of {{accent_color}} may appear within the realistic painting's attire or as a secondary, smaller doodle element to add depth. The composition is centered, creating a direct confrontation between the traditional fine art technique and the modern, rebellious street-art aesthetic. The background is a dark, textured studio backdrop that forces the bright {{primary_color}} lines to pop with electric intensity. \n\nno perspective, sharp focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic, impasto brushwork, vector graphics, pop art, satirical, contemporary art, bold contrast, avant-garde, defaced art, marker texture.",
+  "prompt_removebg": "A striking mixed-media conceptual artwork featuring {{subject}} rendered in two distinct, contrasting styles. The base layer is a masterpiece of hyper-realistic classical oil painting or high-end studio photography, characterized by incredible texture detail, lifelike skin pores, intricate fabric weaves, and soft, sophisticated, cinematic lighting that sculpts the form with gentle shadows. Superimposed aggressively over this serious, muted reality is a thick, flat, unmodulated {{primary_color}} line drawing. This overlay looks like a crude vector stroke, a thick paint marker, or digital graffiti. It traces the silhouette and key internal features of the {{subject}} (such as eyes, nose, mouth, or accessories) with deliberate simplicity and a lack of perspective, effectively turning the realistic face into a primitive icon or caricature. The {{primary_color}} lines are opaque and vibrant, creating a jarring, surreal visual conflict with the underlying realism. Small accents or secondary scribbles may appear in {{accent_color}}. The entire composition is isolated against a clean {{background_color}} background to ensure maximum focus on the subject. The aesthetic is subversive, modern, and ironic, blending fine art with street vandalism. 8k resolution, sharp focus, highly detailed, contemporary art style, bold graphic overlay, visual juxtaposition.",
+  "background_prompt": "A dark, moody, fine-art canvas texture background, featuring deep vignette shading in charcoal and midnight blue. The surface appears to be painted canvas with visible grain. In the foreground, abstract, thick doodle lines in {{primary_color}} and {{accent_color}} form a loose, graffiti-like frame or floating geometric patterns, maintaining the flat, bright marker aesthetic against the sombre, classical backdrop.",
+  "background_prompt_removebg": "A textured abstract surface representing a defaced canvas or a mixed-media backdrop. The base texture resembles smooth, dark oil paint or a studio photography backdrop with subtle lighting gradients. Overlaid on this surface are abstract, thick, crude geometric shapes and wandering lines in bold {{primary_color}} and {{accent_color}}, mimicking the style of a thick marker or digital brush. These graphic elements frame the center without filling it. The overall atmosphere is modern and edgy, set against a dominant {{background_color}} field that provides high contrast for the foreground elements. No central subject, only the artistic environment and stylistic textures.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/ab06d12154549ae68000460ce226a6de.jpg",
+  "preview_image": "images/preview-1771359262780-rqzj.webp",
+  "preview_image_removebg": "images/preview-1771359262823-q90i.webp",
+  "tags": [
+    "mixed media",
+    "defacement",
+    "pop art",
+    "oil painting",
+    "graffiti overlay",
+    "contemporary"
+  ],
+  "createdAt": "2026-02-17T20:14:30.120Z"
+}
