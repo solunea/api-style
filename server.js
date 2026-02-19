@@ -679,7 +679,12 @@ app.post('/api/push', async (req, res) => {
     execSync('git add -A', syncOpts);
 
     // Check if there are changes to commit
-    const statusOut = execSync('git status --porcelain', syncOpts).toString();
+    let statusOut = '';
+    try {
+      statusOut = execSync('git status --porcelain', syncOpts).toString();
+    } catch (e) {
+      statusOut = (e.stdout || '').toString();
+    }
     if (!statusOut.trim()) {
       return res.json({ message: 'Rien à publier, tout est déjà à jour.' });
     }
