@@ -610,5 +610,26 @@
       "vintage etching"
     ],
     "createdAt": "2026-02-19T11:33:13.526Z"
+  },
+  {
+    "id": "naive-gouache",
+    "title": "Naive Gouache",
+    "description": "Un style d'illustration contemporain vibrant imitant la gouache opaque et l'acrylique au pinceau sec sur papier texturé. Il présente des perspectives aplaties, des blocs de couleurs audacieux sans contours noirs, et une finition peinte à la main charmante et imparfaite avec des marques de poils visibles et des textures crayeuses.",
+    "description_en": "A vibrant contemporary illustration style mimicking opaque gouache paint and dry-brush acrylics on textured paper. It features flattened perspectives, bold color blocking without black outlines, and a charmingly imperfect, hand-painted finish with visible bristle marks and chalky textures.",
+    "description_fr": "Un style d'illustration contemporain vibrant imitant la gouache opaque et l'acrylique au pinceau sec sur papier texturé. Il présente des perspectives aplaties, des blocs de couleurs audacieux sans contours noirs, et une finition peinte à la main charmante et imparfaite avec des marques de poils visibles et des textures crayeuses.",
+    "image": "images/haujjksxwaadkh7.jpg",
+    "preview_image": "images/preview-1771505339912-vr3i.webp",
+    "preview_image_removebg": "images/preview-1771505339808-6d43.webp",
+    "tags": [
+      "gouache",
+      "editorial illustration",
+      "dry brush",
+      "naive art",
+      "flat design",
+      "whimsical",
+      "textured",
+      "color blocking"
+    ],
+    "createdAt": "2026-02-19T12:49:07.012Z"
   }
 ]

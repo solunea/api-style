@@ -1,0 +1,33 @@
+{
+  "id": "naive-gouache",
+  "title": "Naive Gouache",
+  "description": "Un style d'illustration contemporain vibrant imitant la gouache opaque et l'acrylique au pinceau sec sur papier texturé. Il présente des perspectives aplaties, des blocs de couleurs audacieux sans contours noirs, et une finition peinte à la main charmante et imparfaite avec des marques de poils visibles et des textures crayeuses.",
+  "description_en": "A vibrant contemporary illustration style mimicking opaque gouache paint and dry-brush acrylics on textured paper. It features flattened perspectives, bold color blocking without black outlines, and a charmingly imperfect, hand-painted finish with visible bristle marks and chalky textures.",
+  "description_fr": "Un style d'illustration contemporain vibrant imitant la gouache opaque et l'acrylique au pinceau sec sur papier texturé. Il présente des perspectives aplaties, des blocs de couleurs audacieux sans contours noirs, et une finition peinte à la main charmante et imparfaite avec des marques de poils visibles et des textures crayeuses.",
+  "prompt": "A charming, contemporary editorial illustration rendered in the specific medium of opaque gouache and dry-brush acrylic markers on heavy cold-press paper. The visual style is characterized by a naive, flattened perspective where {{subject}} is depicted with simplified geometry, playful proportions, and a lack of strict anatomical realism. The rendering technique focuses on bold color blocking; forms are defined not by black outlines but by the juxtaposition of high-contrast hues and rough, organic edges. The brushwork is distinctively 'dry', showing visible bristle streaks, scumbled textures, and areas where the paint thins to reveal the tooth of the paper beneath, creating a tactile, chalky matte finish. The lighting is non-realistic and uniform, eliminating cast shadows and specular highlights in favor of a 2D graphical clarity. The color palette is exuberant and saturated, utilizing {{primary_color}} as the dominant field and {{accent_color}} for popping details, with deep ultramarine or cobalt blue used exclusively for darker tonal values instead of black. The composition feels spontaneous and handcrafted, with slightly trembling lines and 'wobbly' straight edges that emphasize the human touch. The atmosphere is {{mood}}, evoking a sense of cozy, wholesome simplicity found in modern lifestyle magazines and high-end children's literature. Finish with a granular paper texture overlay to enhance the traditional media aesthetic. {{lighting}}.",
+  "prompt_removebg": "A vibrant, hand-painted illustration of {{subject}} rendered in the style of dry-brush gouache and acrylic Posca markers on cold-press watercolor paper. The artwork is characterized by a naive, contemporary editorial aesthetic with flattened perspective and bold, opaque color blocking. Use a high-saturation palette dominated by {{primary_color}} for main forms, punctuated by energetic strokes of {{accent_color}} for details and patterns. There are no black outlines; instead, forms are defined by the contrast between adjacent color fields and sketchy, loose colored pencil details overlaid on the paint. The texture is highly tactile, displaying visible dry-brush streaks, chalky matte finishes, and the granular tooth of the paper showing through thinner washes. Lighting is flat and graphic, lacking realistic gradients or cast shadows, relying instead on distinct value changes to suggest depth. The subject is composited against a clean, solid {{background_color}} backdrop to facilitate extraction, with the edges of the subject exhibiting a natural, painterly roughness—distinct and sharp enough for separation but retaining the organic irregularity of a dry brush stroke. The atmosphere is {{mood}}, captured through the playful, imperfect rhythm of the hand-drawn lines.",
+  "background_prompt": "A flat, 2D illustrative background depicting a simplified environment rendered in opaque gouache. The scene consists of large, solid fields of matte color in {{primary_color}} and {{accent_color}} applied with a dry brush technique. Architectural details or organic elements are reduced to basic geometric shapes with rough, scumbled edges and visible brushstrokes. There is no depth of field; elements are arranged on a single plane like a stage set. The texture is chalky and granular, with no realistic lighting or shadows, focusing entirely on pattern, shape interaction, and a whimsical, hand-painted aesthetic.",
+  "background_prompt_removebg": "A decorative, textural background scene rendered in a dry-brush gouache style, devoid of the main subject. The composition features loose, sketchy environmental elements such as abstract organic shapes, stylized potted plants, or architectural outlines drawn in {{accent_color}} and {{primary_color}}. The surface texture mimics rough watercolor paper with visible grain and chalky paint strokes. The elements are arranged peripherally to frame a central negative space, all set against a flat, solid {{background_color}} canvas to maintain the graphic, poster-like quality of the style.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "mood",
+    "lighting",
+    "background_color"
+  ],
+  "image": "images/haujjksxwaadkh7.jpg",
+  "preview_image": "images/preview-1771505339912-vr3i.webp",
+  "preview_image_removebg": "images/preview-1771505339808-6d43.webp",
+  "tags": [
+    "gouache",
+    "editorial illustration",
+    "dry brush",
+    "naive art",
+    "flat design",
+    "whimsical",
+    "textured",
+    "color blocking"
+  ],
+  "createdAt": "2026-02-19T12:49:07.012Z"
+}
