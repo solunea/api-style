@@ -647,7 +647,7 @@ app.post('/api/build', (req, res) => {
 // POST push to Git (commit + push → disponible en ~5 min sur GitHub raw)
 app.post('/api/push', async (req, res) => {
   try {
-    const opts = { cwd: __dirname, encoding: 'utf-8', timeout: 60000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } };
+    const syncOpts = { cwd: __dirname, encoding: 'utf8', env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } };
 
     // Build API first
     const styles = readStyles();
@@ -676,21 +676,21 @@ app.post('/api/push', async (req, res) => {
     }
 
     // Git add
-    await execAsync('git add -A', opts);
+    execSync('git add -A', syncOpts);
 
     // Check if there are changes to commit
-    const { stdout: statusOut } = await execAsync('git status --porcelain', opts);
+    const statusOut = execSync('git status --porcelain', syncOpts).toString();
     if (!statusOut.trim()) {
       return res.json({ message: 'Rien à publier, tout est déjà à jour.' });
     }
 
     const ts = new Date().toISOString().replace('T', ' ').slice(0, 19);
     const msg = `Update styles - ${ts}`;
-    await execAsync(`git commit -m "${msg}"`, opts);
+    execSync(`git commit -m "${msg}"`, syncOpts);
 
-    // Git push with longer timeout
+    // Git push with longer timeout (async to avoid blocking)
     try {
-      await execAsync('git push', { ...opts, timeout: 120000 });
+      await execAsync('git push', { cwd: __dirname, encoding: 'utf8', timeout: 120000, env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } });
     } catch (pushErr) {
       console.error('Git push error:', pushErr);
       return res.status(500).json({ error: `Erreur git push : ${pushErr.stderr || pushErr.message}` });
