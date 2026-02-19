@@ -676,11 +676,9 @@ app.post('/api/push', async (req, res) => {
     await execAsync('git add -A', opts);
 
     // Check if there are changes to commit
-    try {
-      await execAsync('git diff --cached --quiet', opts);
+    const { stdout: statusOut } = await execAsync('git status --porcelain', opts);
+    if (!statusOut.trim()) {
       return res.json({ message: 'Rien à publier, tout est déjà à jour.' });
-    } catch {
-      // There are staged changes, continue
     }
 
     const msg = `Update styles - ${new Date().toLocaleString('fr-FR')}`;
