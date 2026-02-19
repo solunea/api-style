@@ -499,7 +499,8 @@ async function analyzeImage() {
 
     const data = await res.json();
 
-    if (data.title) document.getElementById('form-title').value = data.title;
+    const titleField = document.getElementById('form-title');
+    if (data.title && !titleField.value.trim()) titleField.value = data.title;
     document.getElementById('form-description-en').value = data.description_en || '';
     document.getElementById('form-description-fr').value = data.description_fr || '';
     if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');
