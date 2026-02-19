@@ -647,7 +647,7 @@ app.post('/api/build', (req, res) => {
 // POST push to Git (commit + push → disponible en ~5 min sur GitHub raw)
 app.post('/api/push', async (req, res) => {
   try {
-    const syncOpts = { cwd: __dirname, encoding: 'utf8', env: { ...process.env, GIT_TERMINAL_PROMPT: '0' } };
+    const syncOpts = { cwd: __dirname, encoding: 'utf8', env: { ...process.env, GIT_TERMINAL_PROMPT: '0', GIT_EDITOR: 'true' } };
 
     // Build API first
     const styles = readStyles();
