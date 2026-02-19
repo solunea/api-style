@@ -312,8 +312,8 @@
     "description_en": "A minimalist flat design style characterized by simplified geometric shapes, solid color blocks, and a lack of shading or texture. It mimics modern corporate vector art with a cheerful, abstract aesthetic and clean, thick outlines.",
     "description_fr": "Un style de design plat minimaliste caractérisé par des formes géométriques simplifiées, des blocs de couleurs unies et une absence d'ombrage ou de texture. Il imite l'art vectoriel d'entreprise moderne avec une esthétique joyeuse et abstraite et des contours nets et épais.",
     "image": "images/2ccc9e5c8830fe7c040c1259b283ee59.jpg",
-    "preview_image": "images/preview-1771339599240-dtul.webp",
-    "preview_image_removebg": "images/preview-1771339599248-jyqj.webp",
+    "preview_image": "images/preview-1771507684249-4ck9.webp",
+    "preview_image_removebg": "images/preview-1771507684369-fakk.webp",
     "tags": [
       "vector",
       "flat design",
@@ -361,25 +361,6 @@
       "rough"
     ],
     "createdAt": "2026-02-17T20:02:50.593Z"
-  },
-  {
-    "id": "contour-flow",
-    "title": "Contour Flow",
-    "description": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
-    "description_en": "A distinctive optical art style where forms are defined entirely by continuous, rhythmic contour lines similar to topographic maps or fingerprints. The illusion of 3D volume is created through the curvature and varying thickness of parallel lines without traditional shading.",
-    "description_fr": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
-    "image": "images/54518697bda4b35cc61108a00e403c80.jpg",
-    "preview_image": "images/preview-1771506909038-7qc3.webp",
-    "preview_image_removebg": "images/preview-1771506908914-x9d0.webp",
-    "tags": [
-      "topographic",
-      "op art",
-      "linocut",
-      "contour lines",
-      "vector illustration",
-      "monochrome"
-    ],
-    "createdAt": "2026-02-17T20:03:45.497Z"
   },
   {
     "id": "organic-cutout",
