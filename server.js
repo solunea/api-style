@@ -684,7 +684,8 @@ app.post('/api/push', async (req, res) => {
       return res.json({ message: 'Rien à publier, tout est déjà à jour.' });
     }
 
-    const msg = `Update styles - ${new Date().toLocaleString('fr-FR')}`;
+    const ts = new Date().toISOString().replace('T', ' ').slice(0, 19);
+    const msg = `Update styles - ${ts}`;
     await execAsync(`git commit -m "${msg}"`, opts);
 
     // Git push with longer timeout
