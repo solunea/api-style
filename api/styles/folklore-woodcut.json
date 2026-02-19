@@ -13,7 +13,7 @@
     "background_color"
   ],
   "image": "images/haec6aowsaag52z.jpg",
-  "preview_image": "images/preview-1771336880227-axst.webp",
+  "preview_image": "images/preview-1771506068577-5oxs.webp",
   "tags": [
     "linocut",
     "stamp",
@@ -27,5 +27,5 @@
   "createdAt": "2026-02-14T21:33:46.992Z",
   "prompt_removebg": "A highly detailed vintage illustration of {{subject}} executed in the style of a classic woodblock print, copperplate engraving, or Toile de Jouy pattern. The artwork utilizes a strict duotone color scheme, with the {{subject}} rendered primarily in deep {{primary_color}} ink, while supporting environmental details, ground textures, or secondary elements are depicted in {{accent_color}}. The artistic technique relies heavily on stippling, dot work, and fine cross-hatching to define volume and texture, completely avoiding smooth gradients or modern digital shading. The lines are slightly rough, organic, and grainy, mimicking the imperfections of traditional analog ink printing on coarse paper. The visual atmosphere is nostalgic, rustic, and elegant, reminiscent of 19th-century storybook illustrations or antique lithographs. The image is composited centrally on a flat, clean {{background_color}} background to maximize contrast and ensure easy separation. The edges of the ink work show slight bleed and distressed texture. Key visual characteristics include etched lines, rough paper grain, and a screen-print aesthetic. Reinforcement tags: copperplate engraving, retro print, stipple art, high contrast, monochromatic variation, ink texture, historical illustration, vector-ready, clean composition, artistic sketching, rough paper grain, detailed line work, no blur, sharp ink edges.",
   "background_prompt_removebg": "A decorative vintage landscape or pattern featuring pastoral elements, stylized etched foliage, and rough terrain textures rendered in {{primary_color}} and {{accent_color}}. The design mimics the hatched and stippled look of antique engravings or Toile de Jouy fabrics. The scene is set against a {{background_color}} surface, providing a textured, nostalgic atmosphere with visible paper grain and ink imperfections, devoid of any central character.",
-  "preview_image_removebg": "images/preview-1771336879148-7j0p.webp"
+  "preview_image_removebg": "images/preview-1771506068735-pa9r.webp"
 }

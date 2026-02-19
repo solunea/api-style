@@ -212,7 +212,7 @@ app.post('/api/upload', upload.single('image'), (req, res) => {
 });
 
 // Default analyze prompts
-const ANALYZE_PROMPT_DEFAULT = `You are a world-class art director, visual style analyst, and prompt engineer with deep expertise in art history movements (Art Nouveau, Bauhaus, Pop Art, Ukiyo-e, Impressionism, Baroque, Surrealism, Constructivism, etc.), contemporary digital art pipelines, and AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
+const ANALYZE_PROMPT = `You are a world-class art director, visual style analyst, and prompt engineer with deep expertise in art history movements (Art Nouveau, Bauhaus, Pop Art, Ukiyo-e, Impressionism, Baroque, Surrealism, Constructivism, etc.), contemporary digital art pipelines, and AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux).
 
 STEP 1 — DEEP VISUAL DISSECTION
 Perform an exhaustive forensic analysis of this image. Identify and describe with extreme precision:
@@ -225,43 +225,21 @@ Perform an exhaustive forensic analysis of this image. Identify and describe wit
 - **Composition & spatial dynamics**: Describe the compositional structure (centered symmetry, dynamic diagonal, rule-of-thirds, golden spiral), use of negative space, foreground-midground-background layering, depth cues, and whether the composition feels static/stable or kinetic/dynamic.
 - **Movement & rhythm**: Analyze the sense of motion — are there flowing curves suggesting fluidity, sharp diagonals implying speed, repeating patterns creating visual rhythm, or frozen stillness? Describe the visual tempo (frenetic, languid, pulsating, serene).
 - **Atmosphere & emotional register**: Not just "moody" — is it melancholic twilight, euphoric explosion, meditative calm, eerie tension, nostalgic warmth? What specific visual devices create that feeling?
+- **Edge treatment**: How do subject edges behave in this style? Clean vector-cut silhouette, soft feathered transitions, painterly ragged edges, glowing rim outlines, hard ink contour? This determines compositing behavior.
 
-STEP 2 — GENERATE REUSABLE STYLE PROMPT
-Using your analysis, write a prompt that captures this EXACT visual style so it can be applied to ANY subject. Use {{subject}} as the main subject placeholder, {{primary_color}} for the dominant color, and {{accent_color}} for the accent color. You may also use {{mood}} and {{lighting}} if relevant.
+STEP 2 — GENERATE ALL PROMPT VARIANTS IN ONE PASS
+Using your analysis, generate all fields below. The "prompt" and "prompt_removebg" fields MUST share the exact same stylistic DNA, wording, structure, and reinforcement tags — the ONLY difference is that "prompt_removebg" adds {{background_color}} integration for compositing on a solid surface after background removal. Do NOT write two independent prompts — write "prompt" first, then derive "prompt_removebg" from it by inserting the background_color compositing instructions.
 
-Return ONLY a valid JSON object with these fields:
-- "title": an original creative name for this style in exactly 2 words (in English, evocative and specific to the style — e.g. "Gilded Decay", "Vapor Chrome", "Ember Woodcut")
-- "description_en": describe what makes this style instantly recognizable and unique, referencing specific artistic techniques and visual hallmarks (2-3 sentences, in English)
-- "description_fr": the same description translated in French (2-3 sentences, in French)
-- "prompt": a long, extremely precise English prompt (at least 250 words) that reproduces this exact visual style. CRITICAL RULES: (1) NEVER use vague filler words like "beautiful", "stunning", "amazing", "high quality" — every word must carry specific visual information. (2) Start with the rendering technique and medium, then describe the subject integration, then layer in lighting, color behavior, texture, and atmosphere. (3) Describe the EXACT brush/stroke/render behavior, not just the category — e.g. instead of "watercolor style", say "wet-on-wet watercolor with pigment blooming at edges, granulation visible in ultramarine washes, paper white preserved as highlights, soft cauliflower backruns in shadow areas". (4) For lighting, specify direction, quality, color temperature, falloff, and interaction with materials. (5) For color, describe how hues shift across light-to-shadow transitions, edge color behavior, and atmospheric color perspective. (6) Include {{subject}}, {{primary_color}}, {{accent_color}}, and optionally {{mood}}, {{lighting}}. (7) End with a long comma-separated list of 20+ reinforcement tags that are SPECIFIC to this style (not generic quality tags — instead of "8k, detailed", prefer style-specific tags like "visible brushstrokes, impasto texture, limited palette, graphic novel shading, linework weight variation, muted earth tones").
-- "background_prompt": a detailed English prompt (at least 60 words) describing ONLY a background environment and/or decorative frame matching this visual style. Describe specific environmental elements (architectural details, organic patterns, atmospheric particles, light shafts, texture overlays), their spatial arrangement, and how they interact with the style's color and lighting logic. This must work both as a background layer behind a subject AND as a foreground decorative overlay for depth. Use {{primary_color}} and {{accent_color}} variables. Do NOT include any subject.
-- "tags": an array of 4 to 8 relevant style tags (English, lowercase, specific — e.g. "cel-shading" not just "illustration", "cross-hatching" not just "drawing")
-
-Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
-
-const ANALYZE_PROMPT_REMOVEBG = `You are a world-class art director, visual style analyst, and prompt engineer with deep expertise in art history movements (Art Nouveau, Bauhaus, Pop Art, Ukiyo-e, Impressionism, Baroque, Surrealism, Constructivism, etc.), contemporary digital art pipelines, and AI image generation (Midjourney, Stable Diffusion, DALL-E, Flux). You specialize in creating styles optimized for BACKGROUND REMOVAL — the final image will be composited onto a solid-color surface.
-
-STEP 1 — DEEP VISUAL DISSECTION
-Perform an exhaustive forensic analysis of this image. Identify and describe with extreme precision:
-- **Artistic lineage**: Which art movement(s), historical period(s), or contemporary digital trend(s) does this style reference? Name specific influences (e.g. "reminiscent of Alphonse Mucha's lithographic line work", "echoes the chiaroscuro of Caravaggio", "borrows from Y2K futurism and vaporwave aesthetics"). Do NOT be generic — trace the exact visual DNA.
-- **Rendering technique & medium**: Is this digital painting, cel-shading, vector flat design, impasto oil, watercolor wash, screen printing, linocut, pencil crosshatching, airbrush gradient, 3D subsurface scattering, photobashing, collage, risograph, etc.? Describe the exact stroke behavior: visible brushstrokes or seamless blending? Hard geometric edges or organic flowing contours? Stippled, hatched, or smooth gradients?
-- **Line work & contouring**: Describe outline weight (thin hairline, bold variable-width, no outline), line quality (confident single-stroke, sketchy multi-pass, trembling hand-drawn), and whether contours are uniform or express pressure sensitivity.
-- **Color science**: Go beyond "warm palette." Specify: hue temperature shifts (warm shadows with cool highlights, or inverse?), chroma intensity (muted/desaturated or hyper-vivid?), value range (high-key, low-key, full tonal range), color harmony scheme (complementary, analogous, triadic, split-complementary), and any color grading (teal-orange, cross-processing, bleach bypass, duotone).
-- **Lighting anatomy**: Identify the exact lighting setup: key light direction and quality (hard specular or soft diffuse), fill ratio (high-fill flat look or dramatic 1:8 ratio), presence of rim/edge/kicker lights, light source type (natural golden hour, overcast diffuse, neon ambient, studio softbox, campfire warm glow, bioluminescent). Describe how light interacts with surfaces: subsurface scattering on skin, specular highlights on metal, caustics, god rays, volumetric haze.
-- **Texture & materiality**: Describe the tactile quality. Is the surface gritty like risograph grain, smooth like polished resin, chalky like pastel on tooth paper, glossy like lacquered enamel? Is there noise, film grain, halftone dots, canvas weave, paper fiber visible?
-- **Edge treatment for compositing**: How do the subject's edges behave? Clean vector-cut edges, soft feathered transitions, painterly ragged edges, glowing rim outlines? This is critical for background removal quality.
-- **Movement & rhythm**: Analyze the sense of motion — flowing curves suggesting fluidity, sharp diagonals implying speed, repeating patterns creating visual rhythm, or frozen stillness? Describe the visual tempo.
-- **Atmosphere & emotional register**: Not just "moody" — is it melancholic twilight, euphoric explosion, meditative calm, eerie tension, nostalgic warmth? What specific visual devices create that feeling?
-
-STEP 2 — GENERATE REUSABLE STYLE PROMPT (REMOVE-BG OPTIMIZED)
-Using your analysis, write a prompt that captures this EXACT visual style for a subject that will be extracted from its background. Use {{subject}} as the main subject placeholder, {{primary_color}} for the dominant color, {{accent_color}} for the accent color, and {{background_color}} for the solid color surface the final image will be placed on after background removal. You may also use {{mood}} and {{lighting}} if relevant.
+Variables available: {{subject}} (main subject), {{primary_color}} (dominant color), {{accent_color}} (accent color), {{background_color}} (solid surface color for remove-bg compositing only), {{mood}}, {{lighting}} (optional).
 
 Return ONLY a valid JSON object with these fields:
-- "title": an original creative name for this style in exactly 2 words (in English, evocative and specific to the style — e.g. "Gilded Decay", "Vapor Chrome", "Ember Woodcut")
+- "title": an original creative name for this style in exactly 2 words (in English, evocative and specific — e.g. "Gilded Decay", "Vapor Chrome", "Ember Woodcut")
 - "description_en": describe what makes this style instantly recognizable and unique, referencing specific artistic techniques and visual hallmarks (2-3 sentences, in English)
 - "description_fr": the same description translated in French (2-3 sentences, in French)
-- "prompt": a long, extremely precise English prompt (at least 200 words) that reproduces this exact visual style, optimized for background removal compositing. CRITICAL RULES: (1) NEVER use vague filler words like "beautiful", "stunning", "amazing", "high quality" — every word must carry specific visual information. (2) Start with the rendering technique and medium, then describe the subject integration, then layer in lighting, color behavior, texture, and atmosphere. (3) Describe the EXACT brush/stroke/render behavior, not just the category — e.g. instead of "watercolor style", say "wet-on-wet watercolor with pigment blooming at edges, granulation visible in ultramarine washes, paper white preserved as highlights, soft cauliflower backruns in shadow areas". (4) For lighting, specify direction, quality, color temperature, falloff, and interaction with materials. (5) For color, describe how hues shift across light-to-shadow transitions, edge color behavior, and atmospheric color perspective. (6) BACKGROUND_COLOR INTEGRATION — {{background_color}} is the surface on which the final image will be composited after background removal. You MUST reference it explicitly in the prompt (e.g. "rendered against a clean {{background_color}} backdrop", "composited on a flat {{background_color}} surface with edge lighting calibrated for {{background_color}} contrast"). NEVER hardcode a specific background color like "white background". (7) Describe edge rendering behavior: how the subject's silhouette interacts with {{background_color}} — clean cutout, soft anti-aliased edge, painterly bleed, glowing rim separation, etc. (8) Include {{subject}}, {{primary_color}}, {{accent_color}}, {{background_color}}, and optionally {{mood}}, {{lighting}}. (9) End with a long comma-separated list of 20+ reinforcement tags SPECIFIC to this style (not generic quality tags — prefer style-specific tags like "clean edge separation, isolated subject, visible brushstrokes, limited palette, graphic novel shading").
-- "background_prompt": a detailed English prompt (at least 60 words) describing ONLY a background environment and/or decorative frame matching this visual style. Describe specific environmental elements (architectural details, organic patterns, atmospheric particles, light shafts, texture overlays), their spatial arrangement, and how they interact with the style's color and lighting logic. This must work both as a background layer behind a subject AND as a foreground decorative overlay for depth. Use {{primary_color}}, {{accent_color}}, and {{background_color}} variables. Do NOT include any subject.
+- "prompt": a long, extremely precise English prompt (at least 250 words) that reproduces this exact visual style for any subject with a background. CRITICAL RULES: (1) NEVER use vague filler words like "beautiful", "stunning", "amazing", "high quality" — every word must carry specific visual information. (2) Start with the rendering technique and medium, then describe the subject integration, then layer in lighting, color behavior, texture, and atmosphere. (3) Describe the EXACT stroke/render behavior — e.g. instead of "watercolor style", say "wet-on-wet watercolor with pigment blooming at edges, granulation visible in ultramarine washes, paper white preserved as highlights, soft cauliflower backruns in shadow areas". (4) For lighting, specify direction, quality, color temperature, falloff, and surface interaction. (5) For color, describe hue shifts across light-to-shadow transitions, edge color behavior, atmospheric color perspective. (6) Include {{subject}}, {{primary_color}}, {{accent_color}}, and optionally {{mood}}, {{lighting}}. (7) End with a comma-separated list of 20+ reinforcement tags SPECIFIC to this style (not generic — e.g. "visible brushstrokes, impasto texture, limited palette, graphic novel shading, linework weight variation, muted earth tones" rather than "8k, detailed").
+- "prompt_removebg": take the "prompt" field above as the base and produce a version adapted for background removal compositing. The wording, structure, style descriptors, and reinforcement tags must be IDENTICAL to "prompt" — only ADD the following: (1) replace or supplement the background description with "composited on a clean {{background_color}} surface" or "rendered against a flat {{background_color}} backdrop", (2) describe how the subject's edges interact with {{background_color}} (e.g. "clean anti-aliased silhouette against {{background_color}}", "soft painterly edge bleed calibrated for {{background_color}} contrast", "glowing rim separation visible on {{background_color}}"), (3) add {{background_color}} to the variables used. NEVER hardcode a specific color like "white background". The result must read as the same prompt with compositing awareness layered in, not a rewrite.
+- "background_prompt": a detailed English prompt (at least 60 words) describing ONLY a pure background scene or environment matching this visual style. This is strictly a backdrop — NO frame, NO overlay, NO foreground element. Describe environmental elements (landscape, architecture, atmospheric depth, light conditions, texture of the scene), their spatial arrangement, and how they reflect the style's color and lighting logic. Use {{primary_color}} and {{accent_color}} variables. Do NOT include any subject, frame, border, or decorative overlay.
+- "background_prompt_removebg": take the "background_prompt" field above as the base and produce a version adapted for compositing behind a removed-background subject. Keep the same background scene wording, then ADD: (1) a decorative foreground frame or overlay element that matches the visual style (e.g. ornamental border, ink splatter vignette, light leak overlay, geometric pattern frame) placed in front of the subject to create depth, (2) how the scene and frame transition into or interact with the {{background_color}} surface (e.g. atmospheric fade into {{background_color}}, vignette dissolving into {{background_color}}, pattern edges feathering against {{background_color}}). Use {{primary_color}}, {{accent_color}}, and {{background_color}} variables.
 - "tags": an array of 4 to 8 relevant style tags (English, lowercase, specific — e.g. "cel-shading" not just "illustration", "cross-hatching" not just "drawing")
 
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
@@ -308,7 +286,7 @@ async function callGemini(analyzePrompt, dataUri) {
 }
 
 // POST analyze image with Gemini 3 Pro via Replicate
-// Calls the model TWICE (standard + removebg) and returns both prompt versions
+// Single model call returns all 4 prompt variants in one unified JSON response
 app.post('/api/analyze', upload.single('image'), async (req, res) => {
   try {
     let dataUri;
@@ -334,21 +312,18 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
       return res.status(400).json({ error: 'Aucune image fournie' });
     }
 
-    // Call model twice in parallel: standard + removebg
-    const [parsedStd, parsedBg] = await Promise.all([
-      callGemini(ANALYZE_PROMPT_DEFAULT, dataUri),
-      callGemini(ANALYZE_PROMPT_REMOVEBG, dataUri),
-    ]);
+    // Single model call — all 4 prompt variants generated in one pass
+    const parsed = await callGemini(ANALYZE_PROMPT, dataUri);
 
     res.json({
-      title: parsedStd.title || '',
-      description_en: parsedStd.description_en || parsedStd.description || '',
-      description_fr: parsedStd.description_fr || '',
-      prompt: parsedStd.prompt || '',
-      prompt_removebg: parsedBg.prompt || '',
-      background_prompt: parsedStd.background_prompt || '',
-      background_prompt_removebg: parsedBg.background_prompt || '',
-      tags: parsedStd.tags || [],
+      title: parsed.title || '',
+      description_en: parsed.description_en || parsed.description || '',
+      description_fr: parsed.description_fr || '',
+      prompt: parsed.prompt || '',
+      prompt_removebg: parsed.prompt_removebg || '',
+      background_prompt: parsed.background_prompt || '',
+      background_prompt_removebg: parsed.background_prompt_removebg || '',
+      tags: parsed.tags || [],
     });
   } catch (err) {
     console.error('Analyze error:', err);
@@ -388,20 +363,17 @@ app.post('/api/analyze-all', async (req, res) => {
       console.log(`[analyze-all] Batch ${Math.floor(i / BATCH_SIZE) + 1}/${Math.ceil(processable.length / BATCH_SIZE)} (${batch.map(b => b.style.id).join(', ')})`);
 
       const batchResults = await Promise.allSettled(batch.map(async ({ style, dataUri }) => {
-        const [parsedStd, parsedBg] = await Promise.all([
-          callGemini(ANALYZE_PROMPT_DEFAULT, dataUri),
-          callGemini(ANALYZE_PROMPT_REMOVEBG, dataUri),
-        ]);
+        const parsed = await callGemini(ANALYZE_PROMPT, dataUri);
 
-        style.title = parsedStd.title || style.title;
-        style.description_en = parsedStd.description_en || parsedStd.description || style.description_en;
-        style.description_fr = parsedStd.description_fr || style.description_fr;
+        style.title = parsed.title || style.title;
+        style.description_en = parsed.description_en || parsed.description || style.description_en;
+        style.description_fr = parsed.description_fr || style.description_fr;
         style.description = style.description_fr;
-        style.prompt = parsedStd.prompt || style.prompt;
-        style.prompt_removebg = parsedBg.prompt || style.prompt_removebg || '';
-        style.background_prompt = parsedStd.background_prompt || style.background_prompt;
-        style.background_prompt_removebg = parsedBg.background_prompt || style.background_prompt_removebg || '';
-        style.tags = parsedStd.tags || style.tags;
+        style.prompt = parsed.prompt || style.prompt;
+        style.prompt_removebg = parsed.prompt_removebg || style.prompt_removebg || '';
+        style.background_prompt = parsed.background_prompt || style.background_prompt;
+        style.background_prompt_removebg = parsed.background_prompt_removebg || style.background_prompt_removebg || '';
+        style.tags = parsed.tags || style.tags;
 
         const allText = [style.prompt, style.prompt_removebg, style.background_prompt, style.background_prompt_removebg].join(' ');
         const varMatches = [...allText.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);

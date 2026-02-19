@@ -20,20 +20,22 @@
   },
   {
     "id": "doodle-pop",
-    "title": "Doodle Pop",
-    "description": "Un style d'illustration ludique et dessiné à la main, caractérisé par des contours noirs audacieux et imparfaits ainsi qu'une palette de couleurs limitée. Il entoure le sujet d'éléments graphiques énergiques tels que des gribouillis, des formes géométriques et des lignes de mouvement sur un fond blanc cassé chaleureux.",
-    "description_en": "A playful, hand-drawn illustration style characterized by bold, imperfect black outlines and a limited color palette. It surrounds the subject with energetic graphic elements like squiggles, geometric shapes, and motion lines on a warm, off-white background.",
-    "description_fr": "Un style d'illustration ludique et dessiné à la main, caractérisé par des contours noirs audacieux et imparfaits ainsi qu'une palette de couleurs limitée. Il entoure le sujet d'éléments graphiques énergiques tels que des gribouillis, des formes géométriques et des lignes de mouvement sur un fond blanc cassé chaleureux.",
+    "title": "Doodle Editorial",
+    "description": "Un style d'illustration ludique et dessiné à la main qui imite les croquis au marqueur numérique avec des contours à l'encre gras et d'épaisseur variable et des aplats de couleurs. Caractérisé par une anatomie simplifiée, des symboles émotifs flottants (points d'exclamation, bulles de dialogue) et des motifs abstraits décoratifs comme des rayures et des fleurs, typiques de l'image de marque des blogs technologiques modernes.",
+    "description_en": "A playful, hand-drawn illustration style that mimics digital marker sketches with bold, variable-width ink contours and flat color fills. Characterized by a mix of simplified anatomy, floating emotive symbols (exclamation marks, speech bubbles), and decorative abstract patterns like stripes and florals, typical of modern tech-blog branding.",
+    "description_fr": "Un style d'illustration ludique et dessiné à la main qui imite les croquis au marqueur numérique avec des contours à l'encre gras et d'épaisseur variable et des aplats de couleurs. Caractérisé par une anatomie simplifiée, des symboles émotifs flottants (points d'exclamation, bulles de dialogue) et des motifs abstraits décoratifs comme des rayures et des fleurs, typiques de l'image de marque des blogs technologiques modernes.",
     "image": "images/hatijpwaeaa5f-g.jpg",
-    "preview_image": "images/preview-1771336875746-adlx.webp",
-    "preview_image_removebg": "images/preview-1771336876986-os8d.webp",
+    "preview_image": "images/preview-1771507323431-3wjw.webp",
+    "preview_image_removebg": "images/preview-1771507323132-ifcx.webp",
     "tags": [
-      "doodle",
-      "hand-drawn",
-      "illustration",
-      "vector",
-      "minimalist",
-      "playful"
+      "editorial illustration",
+      "hand-drawn vector",
+      "doodle art",
+      "corporate memphis",
+      "marker sketch",
+      "flat design",
+      "bold lineart",
+      "spot illustration"
     ],
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
@@ -139,8 +141,8 @@
     "description_en": "This style replicates the aesthetic of mid-century rubber stamps, linocuts, or matchbox art, characterized by a limited duotone palette and uneven, textured ink application. It features bold graphic shapes, negative space detailing, and a coarse, grainy finish on warm, aged paper.",
     "description_fr": "Ce style reproduit l'esthétique des tampons en caoutchouc, des linogravures ou des illustrations de boîtes d'allumettes du milieu du siècle, caractérisée par une palette duotone limitée et une application d'encre inégale et texturée. Il présente des formes graphiques audacieuses, des détails en espace négatif et une finition granuleuse sur un papier chaud et vieilli.",
     "image": "images/haec6aowsaag52z.jpg",
-    "preview_image": "images/preview-1771336880227-axst.webp",
-    "preview_image_removebg": "images/preview-1771336879148-7j0p.webp",
+    "preview_image": "images/preview-1771506068577-5oxs.webp",
+    "preview_image_removebg": "images/preview-1771506068735-pa9r.webp",
     "tags": [
       "linocut",
       "stamp",
@@ -367,8 +369,8 @@
     "description_en": "A distinctive optical art style where forms are defined entirely by continuous, rhythmic contour lines similar to topographic maps or fingerprints. The illusion of 3D volume is created through the curvature and varying thickness of parallel lines without traditional shading.",
     "description_fr": "Un style d'art optique distinctif où les formes sont entièrement définies par des lignes de contour continues et rythmiques, semblables à des cartes topographiques ou des empreintes digitales. L'illusion de volume 3D est créée par la courbure et l'épaisseur variable des lignes parallèles, sans ombrage traditionnel.",
     "image": "images/54518697bda4b35cc61108a00e403c80.jpg",
-    "preview_image": "images/preview-1771358622092-uhxc.webp",
-    "preview_image_removebg": "images/preview-1771358621912-fohh.webp",
+    "preview_image": "images/preview-1771506909038-7qc3.webp",
+    "preview_image_removebg": "images/preview-1771506908914-x9d0.webp",
     "tags": [
       "topographic",
       "op art",
@@ -540,8 +542,8 @@
     "description_en": "A vintage screen-print aesthetic characterized by solid, flat blocks of saturated color without gradients. The style features distinct grainy paper textures and hard-edged, high-contrast shadows, evoking mid-century travel posters.",
     "description_fr": "Une esthétique de sérigraphie vintage caractérisée par des blocs solides et plats de couleurs saturées sans dégradés. Le style présente des textures de papier granuleux distinctes et des ombres à bords nets et à fort contraste, évoquant les affiches de voyage du milieu du siècle.",
     "image": "images/730ed23794d57d565c769e2260414f75.jpg",
-    "preview_image": "images/preview-1771369184218-2lof.webp",
-    "preview_image_removebg": "images/preview-1771369184264-t401.webp",
+    "preview_image": "images/preview-1771506667447-ez5v.webp",
+    "preview_image_removebg": "images/preview-1771506667479-nm42.webp",
     "tags": [
       "serigraph",
       "woodblock",
@@ -631,5 +633,26 @@
       "color blocking"
     ],
     "createdAt": "2026-02-19T12:49:07.012Z"
+  },
+  {
+    "id": "risograph-pop",
+    "title": "Risograph Pop",
+    "description": "Une esthétique d'illustration vibrante et plate imitant l'impression Risograph et le mouvement japonais 'Heta-uma'. Elle se caractérise par des contours tremblants dessinés à la main, des blocs solides de couleurs hyper-saturées sans ombrage, et une texture de bruit uniforme rappelant le papier mat rugueux.",
+    "description_en": "A vibrant, flat-style illustration aesthetic mimicking Risograph printing and the Japanese 'Heta-uma' (bad-good) movement. It features shaky, hand-drawn contour lines, solid blocks of hyper-saturated color with zero shading, and a heavy, uniform noise texture resembling rough matte paper.",
+    "description_fr": "Une esthétique d'illustration vibrante et plate imitant l'impression Risograph et le mouvement japonais 'Heta-uma'. Elle se caractérise par des contours tremblants dessinés à la main, des blocs solides de couleurs hyper-saturées sans ombrage, et une texture de bruit uniforme rappelant le papier mat rugueux.",
+    "image": "images/hbwsyehw4aaab5k.jpg",
+    "preview_image": "images/preview-1771505591462-wx2j.webp",
+    "preview_image_removebg": "images/preview-1771505591201-3951.webp",
+    "tags": [
+      "risograph",
+      "flat illustration",
+      "heta-uma",
+      "noise texture",
+      "pop art",
+      "line art",
+      "indie zine",
+      "screen print"
+    ],
+    "createdAt": "2026-02-19T12:53:50.521Z"
   }
 ]

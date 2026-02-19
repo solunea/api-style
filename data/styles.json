@@ -32,34 +32,37 @@
   },
   {
     "id": "doodle-pop",
-    "title": "Doodle Pop",
-    "description": "Un style d'illustration ludique et dessiné à la main, caractérisé par des contours noirs audacieux et imparfaits ainsi qu'une palette de couleurs limitée. Il entoure le sujet d'éléments graphiques énergiques tels que des gribouillis, des formes géométriques et des lignes de mouvement sur un fond blanc cassé chaleureux.",
-    "prompt": "A charming, hand-drawn vector illustration of {{subject}}, rendered in a whimsical 'doodle art' aesthetic. The artwork features bold, expressive black ink outlines that are slightly rough and organic, imitating the look of a thick felt-tip marker on paper. The composition is energetic, with the main subject surrounded by a dynamic explosion of abstract graphic elements including floating squiggles, dots, exclamation marks, stylized flowers, striped geometric shapes, and motion lines to indicate action or thought. The color palette is minimalist and high-contrast, utilizing {{primary_color}} as the dominant fill color and {{accent_color}} as a vibrant highlight, set against a solid, warm off-white or cream background that mimics smooth sketchbook paper. Shading is minimal or non-existent, relying instead on heavy linework, diagonal hatching, and bold patterns to create visual interest. The style is flat, 2D, and cheerful, capturing the essence of a creative brainstorming session or a modern UI spot illustration. Reinforce with: thick lines, clean vector style, flat design, unshaded, playful atmosphere, creative sketch, editorial illustration, high contrast, crisp details, graphic design elements.",
+    "title": "Doodle Editorial",
+    "description": "Un style d'illustration ludique et dessiné à la main qui imite les croquis au marqueur numérique avec des contours à l'encre gras et d'épaisseur variable et des aplats de couleurs. Caractérisé par une anatomie simplifiée, des symboles émotifs flottants (points d'exclamation, bulles de dialogue) et des motifs abstraits décoratifs comme des rayures et des fleurs, typiques de l'image de marque des blogs technologiques modernes.",
+    "prompt": "A high-contrast digital ink illustration rendered in a sketchy editorial doodle style, featuring {{subject}}. The medium mimics a felt-tip marker on smooth paper, defined by confident, variable-width black outlines that exhibit slight organic jitter and tapered endpoints, rejecting perfect geometric vector precision for a hand-drawn aesthetic. The rendering is strictly 2D flat design with zero shading, gradients, or depth mapping. The color palette is extremely limited, utilizing jet black for all contours and primary details, paper-white for negative space, and {{accent_color}} as a singular pop-color for focal points and decorative fills. The composition is dynamic and exploded, surrounding the {{subject}} with a chaotic but balanced array of floating graphic elements: handwritten text snippets, emotive symbols like exclamation points and motion lines, and oversized decorative motifs including striped leaves, polka-dot geometric blocks, and abstract squiggles. Textures are flat, with visual interest created through bold hatching patterns (thick diagonal stripes) inside specific shapes rather than tonal variation. The lighting is non-existent; the image relies entirely on line weight and {{primary_color}} contrast to define form. The atmosphere is {{mood}}, conveying a sense of productivity and creative energy through the 'sketchbook' visual language. Edges are hard and crisp, simulating a high-resolution scan of an ink drawing.",
     "variables": [
       "subject",
-      "primary_color",
       "accent_color",
+      "primary_color",
+      "mood",
       "background_color"
     ],
     "image": "images/hatijpwaeaa5f-g.jpg",
     "tags": [
-      "doodle",
-      "hand-drawn",
-      "illustration",
-      "vector",
-      "minimalist",
-      "playful"
+      "editorial illustration",
+      "hand-drawn vector",
+      "doodle art",
+      "corporate memphis",
+      "marker sketch",
+      "flat design",
+      "bold lineart",
+      "spot illustration"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T15:49:04.146Z",
-    "background_prompt": "A creative, abstract background pattern featuring a chaotic but pleasing arrangement of hand-drawn doodle elements on a warm cream paper texture. The scene includes scattered squiggles, bold black ink outlines, stylized geometric shapes with diagonal stripes, floating dots, and simple organic forms. Use {{primary_color}} and {{accent_color}} to fill specific graphic elements. The composition acts as a dynamic frame or wallpaper, completely void of characters, focusing entirely on the whimsical marker-style textures and energetic graphic design motifs.",
-    "description_en": "A playful, hand-drawn illustration style characterized by bold, imperfect black outlines and a limited color palette. It surrounds the subject with energetic graphic elements like squiggles, geometric shapes, and motion lines on a warm, off-white background.",
-    "description_fr": "Un style d'illustration ludique et dessiné à la main, caractérisé par des contours noirs audacieux et imparfaits ainsi qu'une palette de couleurs limitée. Il entoure le sujet d'éléments graphiques énergiques tels que des gribouillis, des formes géométriques et des lignes de mouvement sur un fond blanc cassé chaleureux.",
+    "background_prompt": "A playful, flat-design background pattern composed of scattered editorial doodle elements. The scene features a rhythmic arrangement of abstract shapes drawn in bold black ink lines: oversized floral motifs with striped petals, floating geometric blocks filled with diagonal hatching, loose squiggles, and handwritten symbols like exclamation marks and speech bubbles. There is no central subject. The palette is restricted to black ink outlines, white fills, and touches of {{accent_color}} on a neutral surface. The style is strictly 2D and unshaded, mimicking a casual sketchbook page filled with creative brainstorming doodles. The layout creates a sense of scattered energy and 'white space' breathing room.",
+    "description_en": "A playful, hand-drawn illustration style that mimics digital marker sketches with bold, variable-width ink contours and flat color fills. Characterized by a mix of simplified anatomy, floating emotive symbols (exclamation marks, speech bubbles), and decorative abstract patterns like stripes and florals, typical of modern tech-blog branding.",
+    "description_fr": "Un style d'illustration ludique et dessiné à la main qui imite les croquis au marqueur numérique avec des contours à l'encre gras et d'épaisseur variable et des aplats de couleurs. Caractérisé par une anatomie simplifiée, des symboles émotifs flottants (points d'exclamation, bulles de dialogue) et des motifs abstraits décoratifs comme des rayures et des fleurs, typiques de l'image de marque des blogs technologiques modernes.",
     "supportImageReference": false,
-    "preview_image": "images/preview-1771336875746-adlx.webp",
-    "prompt_removebg": "A high-quality, hand-drawn vector illustration of {{subject}} rendered in a whimsical and energetic doodle art style. The artwork is defined by bold, confident black ink outlines with varying line weights that mimic the texture of a felt-tip marker or brush pen. The coloring is strictly flat and 2D, completely avoiding gradients or photorealism in favor of solid, vibrant blocks of {{primary_color}} as the dominant fill and distinct pops of {{accent_color}} for highlights and details. The {{subject}} serves as the central focal point, playfully surrounded by a dynamic explosion of creative ephemera and 'doodle bombs': floating abstract shapes, heavy black-and-white striped geometric blocks, stylized leafy plants, squiggly motion lines, stippled dots, asterisks, and playful handwritten typography elements like empty speech bubbles or exclamation marks. Shadows are minimal, represented by solid black hatching or heavy drop shadows to create a sticker-like depth. The composition feels spontaneous, organic, and brainstorming-oriented. The entire scene is composited on a clean, flat {{background_color}} background, ensuring crisp edges and high contrast for the illustration. The aesthetic is modern, cheerful, and evocative of tech-startup illustrations or creative journaling. Reinforcement tags: 2D flat design, thick line art, marker aesthetic, creative sketching, corporate memphis influence, kinetic energy, clean vector lines, high contrast, whimsical, sharp focus, 4k resolution, trending on Behance.",
-    "background_prompt_removebg": "A dynamic and decorative background pattern consisting of scattered hand-drawn doodles and abstract shapes set against a solid {{background_color}} surface. The design features a chaotic but aesthetic arrangement of bold black ink elements including striped triangles, stylized organic leaves, squiggly lines, dots, asterisks, and empty speech bubbles. Flat fills of {{primary_color}} and {{accent_color}} are interspersed among the black outlines to add vibrancy. The style mimics a sketchbook page or a creative brainstorming board, with no central subject, serving as a playful and energetic texture.",
-    "preview_image_removebg": "images/preview-1771336876986-os8d.webp"
+    "preview_image": "images/preview-1771507323431-3wjw.webp",
+    "prompt_removebg": "A high-contrast digital ink illustration rendered in a sketchy editorial doodle style, featuring {{subject}}. The medium mimics a felt-tip marker on smooth paper, defined by confident, variable-width black outlines that exhibit slight organic jitter and tapered endpoints, rejecting perfect geometric vector precision for a hand-drawn aesthetic. The rendering is strictly 2D flat design with zero shading, gradients, or depth mapping. The color palette is extremely limited, utilizing jet black for all contours and primary details, paper-white for negative space, and {{accent_color}} as a singular pop-color for focal points and decorative fills. The composition is dynamic and exploded, surrounding the {{subject}} with a chaotic but balanced array of floating graphic elements: handwritten text snippets, emotive symbols like exclamation points and motion lines, and oversized decorative motifs including striped leaves, polka-dot geometric blocks, and abstract squiggles. Textures are flat, with visual interest created through bold hatching patterns (thick diagonal stripes) inside specific shapes rather than tonal variation. The lighting is non-existent; the image relies entirely on line weight and {{primary_color}} contrast to define form. The atmosphere is {{mood}}, conveying a sense of productivity and creative energy through the 'sketchbook' visual language. Edges are hard and crisp, simulating a high-resolution scan of an ink drawing. The entire composition is rendered against a flat {{background_color}} backdrop, ensuring the bold black outer contours of the {{subject}} and floating doodle elements form a clean, anti-aliased silhouette distinct from the {{background_color}} surface for easy extraction.",
+    "background_prompt_removebg": "A playful, flat-design background pattern composed of scattered editorial doodle elements. The scene features a rhythmic arrangement of abstract shapes drawn in bold black ink lines: oversized floral motifs with striped petals, floating geometric blocks filled with diagonal hatching, loose squiggles, and handwritten symbols like exclamation marks and speech bubbles. There is no central subject. The palette is restricted to black ink outlines, white fills, and touches of {{accent_color}} on a neutral surface. The style is strictly 2D and unshaded, mimicking a casual sketchbook page filled with creative brainstorming doodles. The layout creates a sense of scattered energy and 'white space' breathing room. A decorative foreground frame of thick ink squiggles and striped geometric shapes forms a vignette around the empty center, with the pattern elements fading cleanly into a solid {{background_color}} surface to allow for subject compositing.",
+    "preview_image_removebg": "images/preview-1771507323132-ifcx.webp"
   },
   {
     "id": "vibrant-vector",
@@ -231,7 +234,7 @@
       "background_color"
     ],
     "image": "images/haec6aowsaag52z.jpg",
-    "preview_image": "images/preview-1771336880227-axst.webp",
+    "preview_image": "images/preview-1771506068577-5oxs.webp",
     "tags": [
       "linocut",
       "stamp",
@@ -245,7 +248,7 @@
     "createdAt": "2026-02-14T21:33:46.992Z",
     "prompt_removebg": "A highly detailed vintage illustration of {{subject}} executed in the style of a classic woodblock print, copperplate engraving, or Toile de Jouy pattern. The artwork utilizes a strict duotone color scheme, with the {{subject}} rendered primarily in deep {{primary_color}} ink, while supporting environmental details, ground textures, or secondary elements are depicted in {{accent_color}}. The artistic technique relies heavily on stippling, dot work, and fine cross-hatching to define volume and texture, completely avoiding smooth gradients or modern digital shading. The lines are slightly rough, organic, and grainy, mimicking the imperfections of traditional analog ink printing on coarse paper. The visual atmosphere is nostalgic, rustic, and elegant, reminiscent of 19th-century storybook illustrations or antique lithographs. The image is composited centrally on a flat, clean {{background_color}} background to maximize contrast and ensure easy separation. The edges of the ink work show slight bleed and distressed texture. Key visual characteristics include etched lines, rough paper grain, and a screen-print aesthetic. Reinforcement tags: copperplate engraving, retro print, stipple art, high contrast, monochromatic variation, ink texture, historical illustration, vector-ready, clean composition, artistic sketching, rough paper grain, detailed line work, no blur, sharp ink edges.",
     "background_prompt_removebg": "A decorative vintage landscape or pattern featuring pastoral elements, stylized etched foliage, and rough terrain textures rendered in {{primary_color}} and {{accent_color}}. The design mimics the hatched and stippled look of antique engravings or Toile de Jouy fabrics. The scene is set against a {{background_color}} surface, providing a textured, nostalgic atmosphere with visible paper grain and ink imperfections, devoid of any central character.",
-    "preview_image_removebg": "images/preview-1771336879148-7j0p.webp"
+    "preview_image_removebg": "images/preview-1771506068735-pa9r.webp"
   },
   {
     "id": "playful-3d",
@@ -594,8 +597,8 @@
       "background_color"
     ],
     "image": "images/54518697bda4b35cc61108a00e403c80.jpg",
-    "preview_image": "images/preview-1771358622092-uhxc.webp",
-    "preview_image_removebg": "images/preview-1771358621912-fohh.webp",
+    "preview_image": "images/preview-1771506909038-7qc3.webp",
+    "preview_image_removebg": "images/preview-1771506908914-x9d0.webp",
     "tags": [
       "topographic",
       "op art",
@@ -860,8 +863,8 @@
       "background_color"
     ],
     "image": "images/730ed23794d57d565c769e2260414f75.jpg",
-    "preview_image": "images/preview-1771369184218-2lof.webp",
-    "preview_image_removebg": "images/preview-1771369184264-t401.webp",
+    "preview_image": "images/preview-1771506667447-ez5v.webp",
+    "preview_image_removebg": "images/preview-1771506667479-nm42.webp",
     "tags": [
       "serigraph",
       "woodblock",
@@ -995,5 +998,37 @@
       "color blocking"
     ],
     "createdAt": "2026-02-19T12:49:07.012Z"
+  },
+  {
+    "id": "risograph-pop",
+    "title": "Risograph Pop",
+    "description": "Une esthétique d'illustration vibrante et plate imitant l'impression Risograph et le mouvement japonais 'Heta-uma'. Elle se caractérise par des contours tremblants dessinés à la main, des blocs solides de couleurs hyper-saturées sans ombrage, et une texture de bruit uniforme rappelant le papier mat rugueux.",
+    "description_en": "A vibrant, flat-style illustration aesthetic mimicking Risograph printing and the Japanese 'Heta-uma' (bad-good) movement. It features shaky, hand-drawn contour lines, solid blocks of hyper-saturated color with zero shading, and a heavy, uniform noise texture resembling rough matte paper.",
+    "description_fr": "Une esthétique d'illustration vibrante et plate imitant l'impression Risograph et le mouvement japonais 'Heta-uma'. Elle se caractérise par des contours tremblants dessinés à la main, des blocs solides de couleurs hyper-saturées sans ombrage, et une texture de bruit uniforme rappelant le papier mat rugueux.",
+    "prompt": "Digital illustration mimicking lo-fi Risograph printing and indie zine aesthetics, featuring {{subject}} rendered with strictly flat, unshaded color blocks and thin, shaky hand-drawn black outlines. The rendering technique creates a 'cut-out' graphic look where forms are defined by distinct color separation rather than light and shadow. The line work is a consistent, thin monoline ink stroke that exhibits intentional wobbly imperfections and lack of line weight variation, suggesting a rotring pen on toothy paper. There is absolutely no shading, no gradients, no volumetric lighting, and no ambient occlusion; the style is purely 2D and planar. The color palette is high-contrast and poster-like, utilizing {{primary_color}} as a dominant field color and {{accent_color}} for key details, creating a triadic or complementary vibration. Apply a heavy, uniform monochromatic noise overlay or 'salt-and-pepper' grain across the entire image to simulate rough matte paper stock, screen print mesh, or high-ISO film grain. The atmosphere is {{mood}}, conveyed through the quirky, imperfect lines and the raw immediacy of the print texture. The composition utilizes negative space to emphasize the graphic silhouette of the subject.",
+    "prompt_removebg": "Digital illustration mimicking a 3-color risograph print of {{subject}}, rendered in a raw indie zine aesthetic. The medium is digital ink imitating a 0.5mm felt-tip pen with a slight hand-drawn tremble, creating a continuous, confident, yet imperfect 'ligne claire' contour. The subject is colored with flat, unmodulated fields of {{primary_color}} and {{accent_color}}, simulating semi-transparent soy-based inks layered over white paper. There is absolutely no shading, gradient, or volumetric rendering; form is defined strictly by the black ink outline and color blocking. The texture is critical: apply a heavy, uniform high-frequency noise and stipple grain across the entire image to mimic cheap matte recycled paper and ink bleed. Lighting is non-existent; the image relies on graphic clarity and high-contrast separation. The composition is centered and isolated against a solid, flat {{background_color}} backdrop to ensure optimal edge detection. The subject's edges are defined by a crisp, continuous black outline that creates a sharp cut-out silhouette against the {{background_color}} canvas, avoiding any feathered or blurred transparency. Slight color misregistration (trapping errors) is visible where the {{primary_color}} fill meets the ink lines, adding analog authenticity. The overall mood is {{mood}}, captured through the quirky, static posture of the subject.",
+    "background_prompt": "A solid, flat field of {{primary_color}} completely devoid of gradients or shadows, heavily textured with uniform monochromatic grain and paper noise. Optionally includes sparse, floating decorative doodles (simple shapes, squiggles, or blobs) in {{accent_color}} drawn with the same thin, shaky black outline style, maintaining a strictly 2D poster-like appearance.",
+    "background_prompt_removebg": "A textured background surface in a flat {{background_color}} hue, heavily treated with risograph grain and paper noise. Scattered floating decorative elements in {{primary_color}} and {{accent_color}}—such as small geometric blobs, stars, or doodle-like squiggles—surround the empty center space. The elements have thin, shaky black outlines and flat color fills with slight print misalignment. The texture suggests a scanned page from a DIY fanzine, with no depth or shadows, purely graphic and ornamental.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "mood",
+      "background_color"
+    ],
+    "image": "images/hbwsyehw4aaab5k.jpg",
+    "preview_image": "images/preview-1771505591462-wx2j.webp",
+    "preview_image_removebg": "images/preview-1771505591201-3951.webp",
+    "tags": [
+      "risograph",
+      "flat illustration",
+      "heta-uma",
+      "noise texture",
+      "pop art",
+      "line art",
+      "indie zine",
+      "screen print"
+    ],
+    "createdAt": "2026-02-19T12:53:50.521Z"
   }
 ]
