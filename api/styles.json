@@ -247,25 +247,6 @@
     "createdAt": "2026-02-14T21:45:30.360Z"
   },
   {
-    "id": "ghibli-nostalgia",
-    "title": "Ghibli Pastoral",
-    "description": "Ce style imite l'esthétique légendaire de l'animation traditionnelle 2D à gros budget, en particulier les arrière-plans luxuriants peints à la main et les personnages aux ombrages nets typiques des films du Studio Ghibli. Il présente une atmosphère nostalgique et sereine avec une lumière tachetée, des textures naturelles riches et un mélange harmonieux de décors style gouache avec un trait de crayon propre.",
-    "description_en": "This style emulates the legendary aesthetic of high-budget traditional 2D animation, specifically the lush, hand-painted backgrounds and crisp cel-shaded characters typical of Studio Ghibli films. It features a nostalgic, serene atmosphere with dappled sunlight, rich natural textures, and a harmonious blend of gouache-style scenery with clean line art.",
-    "description_fr": "Ce style imite l'esthétique légendaire de l'animation traditionnelle 2D à gros budget, en particulier les arrière-plans luxuriants peints à la main et les personnages aux ombrages nets typiques des films du Studio Ghibli. Il présente une atmosphère nostalgique et sereine avec une lumière tachetée, des textures naturelles riches et un mélange harmonieux de décors style gouache avec un trait de crayon propre.",
-    "image": "images/ghibli-vl-media-1140x694.jpg",
-    "preview_image": "images/preview-1771336882787-l6hg.webp",
-    "preview_image_removebg": "images/preview-1771336881855-wonr.webp",
-    "tags": [
-      "studio ghibli",
-      "anime landscape",
-      "cel shaded",
-      "hand painted",
-      "hayao miyazaki",
-      "pastoral"
-    ],
-    "createdAt": "2026-02-16T10:56:51.901Z"
-  },
-  {
     "id": "carved-linocut",
     "title": "Carved Linocut",
     "description": "Ce style reproduit l'esthétique audacieuse et très contrastée de la linogravure traditionnelle ou de la gravure sur bois, caractérisée par des silhouettes lourdement encrées et des détails en espace négatif. Il présente des bords organiques légèrement rugueux et une palette de couleurs bicolore et plate qui imite l'aspect d'une impression en relief tamponnée ou sculptée à la main.",
@@ -457,20 +438,22 @@
   },
   {
     "id": "luminous-noise",
-    "title": "Luminous Noise",
-    "description": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
-    "description_en": "This style combines smooth, volumetric gradients with a heavy, lo-fi film grain texture against a stark black background. It creates a moody, ethereal atmosphere where the subject appears to glow from within using bioluminescent colors, blending 3D-like forms with retro-digital noise.",
-    "description_fr": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
+    "title": "Luminous Grain",
+    "description": "Une esthétique numérique minimaliste définie par un clair-obscur discret, où les sujets émergent de vides noirs absolus illuminés par des dégradés doux à l'aérographe aux teintes néon. Le style repose fortement sur une superposition uniforme de grain de film à haute sensibilité ou de bruit numérique pour créer une texture tactile et atmosphérique rappelant la synthwave mélancolique ou les impressions risographiques lo-fi.",
+    "description_en": "A minimalist digital aesthetic defined by stark low-key chiaroscuro, where subjects emerge from pitch-black voids illuminated by soft, neon-hued airbrush gradients. The style relies heavily on a uniform, high-ISO film grain or digital noise overlay to create a tactile, atmospheric texture reminiscent of moody synthwave or lo-fi risograph prints.",
+    "description_fr": "Une esthétique numérique minimaliste définie par un clair-obscur discret, où les sujets émergent de vides noirs absolus illuminés par des dégradés doux à l'aérographe aux teintes néon. Le style repose fortement sur une superposition uniforme de grain de film à haute sensibilité ou de bruit numérique pour créer une texture tactile et atmosphérique rappelant la synthwave mélancolique ou les impressions risographiques lo-fi.",
     "image": "images/61cc415b0dad6bc94e9b885226cd70de.jpg",
-    "preview_image": "images/preview-1771358983499-fm10.webp",
-    "preview_image_removebg": "images/preview-1771358983616-6f82.webp",
+    "preview_image": "images/preview-1771504815524-ng00.webp",
+    "preview_image_removebg": "images/preview-1771504815498-k03d.webp",
     "tags": [
+      "digital airbrush",
+      "film grain",
+      "low-key",
+      "chiaroscuro",
+      "synthwave",
       "minimalist",
-      "grainy",
-      "gradient",
-      "lo-fi",
-      "noir",
-      "atmospheric"
+      "noise texture",
+      "bioluminescent"
     ],
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
@@ -606,5 +589,26 @@
       "vintage"
     ],
     "createdAt": "2026-02-17T23:07:09.391Z"
+  },
+  {
+    "id": "sunlit-anime",
+    "title": "Indigo Intaglio",
+    "description": "Un style visuel sophistiqué imitant la gravure sur acier du XIXe siècle et les techniques d'illustration de billets de banque. Il se caractérise par un travail au trait précis et très contrasté, où le volume et la texture sont rendus exclusivement par des hachures parallèles et croisées dans une palette strictement bichrome.",
+    "description_en": "A sophisticated visual style mimicking 19th-century steel engraving and banknote illustration techniques. It features precise, high-contrast line work where volume and texture are rendered exclusively through parallel hatching and cross-hatching in a strict duotone palette.",
+    "description_fr": "Un style visuel sophistiqué imitant la gravure sur acier du XIXe siècle et les techniques d'illustration de billets de banque. Il se caractérise par un travail au trait précis et très contrasté, où le volume et la texture sont rendus exclusivement par des hachures parallèles et croisées dans une palette strictement bichrome.",
+    "image": "images/g--oq7mbkaacabb.jpg",
+    "preview_image": "images/preview-1771504389327-iue4.webp",
+    "preview_image_removebg": "images/preview-1771504389691-vob8.webp",
+    "tags": [
+      "steel engraving",
+      "intaglio",
+      "cross-hatching",
+      "banknote style",
+      "scientific illustration",
+      "vector lineart",
+      "duotone",
+      "vintage etching"
+    ],
+    "createdAt": "2026-02-19T11:33:13.526Z"
   }
 ]

@@ -403,38 +403,6 @@
     "preview_image_removebg": "images/preview-1771336881317-hmen.webp"
   },
   {
-    "id": "ghibli-nostalgia",
-    "title": "Ghibli Pastoral",
-    "description": "Ce style imite l'esthétique légendaire de l'animation traditionnelle 2D à gros budget, en particulier les arrière-plans luxuriants peints à la main et les personnages aux ombrages nets typiques des films du Studio Ghibli. Il présente une atmosphère nostalgique et sereine avec une lumière tachetée, des textures naturelles riches et un mélange harmonieux de décors style gouache avec un trait de crayon propre.",
-    "description_en": "This style emulates the legendary aesthetic of high-budget traditional 2D animation, specifically the lush, hand-painted backgrounds and crisp cel-shaded characters typical of Studio Ghibli films. It features a nostalgic, serene atmosphere with dappled sunlight, rich natural textures, and a harmonious blend of gouache-style scenery with clean line art.",
-    "description_fr": "Ce style imite l'esthétique légendaire de l'animation traditionnelle 2D à gros budget, en particulier les arrière-plans luxuriants peints à la main et les personnages aux ombrages nets typiques des films du Studio Ghibli. Il présente une atmosphère nostalgique et sereine avec une lumière tachetée, des textures naturelles riches et un mélange harmonieux de décors style gouache avec un trait de crayon propre.",
-    "prompt": "A breathtaking, high-fidelity frame from a traditional 2D animated feature film, capturing the masterfully crafted aesthetic of Hayao Miyazaki and Studio Ghibli. The central focus is {{subject}}, rendered with crisp, delicate dark outlines and smooth, flat cel-shading (anime style coloring) that contrasts beautifully with the environment. The color palette is dominated by natural, earthy tones with {{primary_color}} as the main thematic hue and {{accent_color}} providing vibrant highlights on the subject's details. \n\nThe background is a work of art in itself, mimicking the texture of hand-painted poster colors and opaque watercolors (gouache) on textured paper. It features incredible density and detail in foliage or architecture, with soft, impressionistic brushstrokes that suggest moss, leaves, and weathered stone. The lighting is evocative and atmospheric, specifically capturing 'komorebi'—dappled sunlight filtering through trees or windows—casting soft, dappled shadows across the scene. The mood is {{mood}}, evoking a sense of nostalgic wonder, summer memories, and serene stillness. The composition uses a slight wide-angle lens effect to place the subject within a grand, immersive environment, maintaining a sharp focus on the character while the background retains a painterly softness.\n\nreinforcement tags: Studio Ghibli style, Spirited Away aesthetic, 1990s anime, hand-drawn animation, masterpiece, 8k resolution, lush vegetation, scenic, pastoral, serene, atmospheric lighting, Tyndall effect, high quality, precise line art, matte painting background, visual storytelling.",
-    "background_prompt": "A lush, hand-painted background scene in the style of a Studio Ghibli movie, featuring no characters. The scene depicts a dense, atmospheric environment (such as a forest tunnel, an old shrine, or a rural path) painted with opaque watercolors and gouache. The texture is rich and organic, showing mossy surfaces, ancient stones, and dense foliage in shades of {{primary_color}} and deep greens. Dappled sunlight filters through the canopy, creating patches of bright light and cool shadow. Hints of {{accent_color}} appear in small flowers or architectural details. The perspective is immersive, drawing the viewer into a serene, nostalgic world.",
-    "variables": [
-      "subject",
-      "primary_color",
-      "accent_color",
-      "mood",
-      "background_color"
-    ],
-    "image": "images/ghibli-vl-media-1140x694.jpg",
-    "preview_image": "images/preview-1771336882787-l6hg.webp",
-    "tags": [
-      "studio ghibli",
-      "anime landscape",
-      "cel shaded",
-      "hand painted",
-      "hayao miyazaki",
-      "pastoral"
-    ],
-    "removeBackground": false,
-    "supportImageReference": false,
-    "createdAt": "2026-02-16T10:56:51.901Z",
-    "prompt_removebg": "A high-fidelity reproduction of a classic Studio Ghibli animation frame featuring {{subject}}. The artistic rendering technique is traditional hand-drawn 2D animation, combining crisp cel-shaded character art with a rich, painterly background reminiscent of Kazuo Oga's work. The {{subject}} is defined by thin, consistent ink outlines, smooth matte colors, and distinct hard-edged shadows (cel shading) to create volume without excessive gradient. The color palette utilizes natural, slightly desaturated tones dominated by {{primary_color}}, with specific details highlighted in {{accent_color}}. The lighting mimics 'komorebi' (sunlight filtering through trees), casting dappled, soft light and gentle shadows across the form. The texture of the subject is smooth and clean, contrasting with the grainy, textured look of the painted environment. The atmosphere is peaceful, nostalgic, and immersive, typical of a Hayao Miyazaki film. The image is composited on a clean {{background_color}} surface to ensure sharp edge definition and easy separation from the canvas. The overall composition emphasizes a 'slice of life' moment in a fantasy setting, with a shallow depth of field effect blurring the distant elements slightly.",
-    "background_prompt_removebg": "A meticulously hand-painted anime background scene in the style of traditional gouache and poster color art. The setting is a lush, overgrown environment featuring ancient stone textures, dense foliage, and mossy surfaces in shades of {{primary_color}}. Soft, dappled sunlight filters through the canopy, creating patches of brightness and deep shadow. Small {{accent_color}} wildflowers or magical artifacts are scattered subtly in the grass. The painting shows visible brushstrokes and a watercolor paper texture, fading into a soft atmospheric blur in the distance, all set against a neutral {{background_color}} base layer.",
-    "preview_image_removebg": "images/preview-1771336881855-wonr.webp"
-  },
-  {
     "id": "carved-linocut",
     "title": "Carved Linocut",
     "description": "Ce style reproduit l'esthétique audacieuse et très contrastée de la linogravure traditionnelle ou de la gravure sur bois, caractérisée par des silhouettes lourdement encrées et des détails en espace négatif. Il présente des bords organiques légèrement rugueux et une palette de couleurs bicolore et plate qui imite l'aspect d'une impression en relief tamponnée ou sculptée à la main.",
@@ -729,30 +697,33 @@
   },
   {
     "id": "luminous-noise",
-    "title": "Luminous Noise",
-    "description": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
-    "description_en": "This style combines smooth, volumetric gradients with a heavy, lo-fi film grain texture against a stark black background. It creates a moody, ethereal atmosphere where the subject appears to glow from within using bioluminescent colors, blending 3D-like forms with retro-digital noise.",
-    "description_fr": "Ce style associe des dégradés volumétriques lisses à une texture de grain de film lo-fi prononcée sur un fond noir absolu. Il crée une atmosphère lunatique et éthérée où le sujet semble briller de l'intérieur avec des couleurs bioluminescentes, mêlant des formes de type 3D à du bruit numérique rétro.",
-    "prompt": "A highly atmospheric, minimalist digital artwork featuring {{subject}} rendered in a style that bridges the gap between smooth 3D volumetric modeling and gritty lo-fi photography. The composition is dominated by a stark, pitch-black void background that emphasizes the luminosity of the subject. The {{subject}} is illuminated not by external light sources, but by an internal, ethereal glow that manifests as a smooth color gradient, transitioning seamlessly from a vibrant {{primary_color}} at the base or core to a deep, moody {{accent_color}} at the edges or top. \n\nThe rendering technique focuses on 'subsurface scattering' aesthetics, where the form is defined by the density of the light rather than sharp shadows. The edges of the {{subject}} are soft, slightly blurred, and diffuse, blending gently into the surrounding darkness. \n\nThe defining characteristic of this style is the overlay of a heavy, uniform, monochromatic noise texture or high-ISO film grain. This grain is pervasive, covering both the illuminated areas and the black shadows, unifying the image with a tactile, retro-digital static effect. The mood is solitary, contemplative, and slightly melancholic, evoking a sense of digital isolation or a futuristic dreamstate. The visual language is reductive, removing all unnecessary details to focus purely on the silhouette, the gradient light, and the texture. \n\nreinforcement tags: heavy film grain, noise texture, high ISO, dithering, gradient mesh, bioluminescence, synthwave aesthetic, minimalist, chiaroscuro, soft focus, volumetric lighting, matte finish, digital surrealism, atmospheric, moody, 8k resolution, cinematic composition, visual vibration.",
-    "prompt_removebg": "A highly atmospheric, emotionally resonant digital artwork featuring {{subject}}, rendered in a distinctive lo-fi style characterized by heavy, uniform texture. The image utilizes a prominent noise filter, resembling high-ISO film grain, sand-texture stippling, or a vintage risograph print, giving the surface a tactile, matte quality. The lighting is moody and dramatic, employing a soft, volumetric gradient that washes over the subject, transitioning smoothly from a vibrant {{primary_color}} to a subtle {{accent_color}}. The subject is presented largely in silhouette or semi-shadow, with the light catching the contours and edges to define the form through rim lighting and subsurface scattering effects. There are no harsh lines; forms are defined by the interplay of light and shadow. The composition is minimalist, emphasizing negative space and solitude. The image is set against a flat, solid {{background_color}} background, which provides a stark contrast to the glowing, textured subject. The overall mood is ethereal, introspective, and cinematic, evoking a sense of mystery and quiet melancholy. The rendering creates a seamless blend between 2D illustration and 3D lighting physics, filtered through a retro-futurist lens. \n\nno perspective, heavy grain, noise texture, gradient mapping, soft focus, cinematic lighting, 8k, ultra detailed, volumetric light, soft shadows, photorealistic lighting, minimalist composition, airbrush style, stipple shading, moody atmosphere, high contrast.",
-    "background_prompt": "An infinite, pitch-black void texture characterized by a heavy, uniform layer of monochromatic static noise and film grain. In the deep darkness, faint and nebulous washes of {{primary_color}} and {{accent_color}} drift like distant underwater bioluminescence or soft auroras, providing a subtle atmospheric depth without defining any solid shapes. The scene is purely abstract, focusing on the contrast between absolute shadow and the gritty texture of digital noise.",
-    "background_prompt_removebg": "An abstract, atmospheric background texture featuring heavy film grain and a dense noise pattern. A soft, diffused gradient light source emanates from the darkness, blending shades of {{primary_color}} and {{accent_color}} into a deep shadow. The scene represents a minimalist void or an empty studio space with a palpable, grainy texture, set against a solid {{background_color}} backdrop to create a mood of infinite depth and mystery.",
+    "title": "Luminous Grain",
+    "description": "Une esthétique numérique minimaliste définie par un clair-obscur discret, où les sujets émergent de vides noirs absolus illuminés par des dégradés doux à l'aérographe aux teintes néon. Le style repose fortement sur une superposition uniforme de grain de film à haute sensibilité ou de bruit numérique pour créer une texture tactile et atmosphérique rappelant la synthwave mélancolique ou les impressions risographiques lo-fi.",
+    "description_en": "A minimalist digital aesthetic defined by stark low-key chiaroscuro, where subjects emerge from pitch-black voids illuminated by soft, neon-hued airbrush gradients. The style relies heavily on a uniform, high-ISO film grain or digital noise overlay to create a tactile, atmospheric texture reminiscent of moody synthwave or lo-fi risograph prints.",
+    "description_fr": "Une esthétique numérique minimaliste définie par un clair-obscur discret, où les sujets émergent de vides noirs absolus illuminés par des dégradés doux à l'aérographe aux teintes néon. Le style repose fortement sur une superposition uniforme de grain de film à haute sensibilité ou de bruit numérique pour créer une texture tactile et atmosphérique rappelant la synthwave mélancolique ou les impressions risographiques lo-fi.",
+    "prompt": "Contemporary digital airbrush illustration rendered with a heavy, uniform monochromatic noise texture. The composition is strictly low-key and minimalist, featuring {{subject}} emerging from an infinite, crushing pitch-black void. There are absolutely no outlines or line work; the form of {{subject}} is sculpted entirely through soft, volumetric light and shadow. A single, directional light source—reminiscent of a cinematic spotlight or a projector beam—casts a luminous, ethereal glow across the subject, creating ultra-smooth gradients that transition seamlessly from intense {{primary_color}} in the highlights to a cooler {{accent_color}} in the mid-tones, finally dissolving into the deep black background. The lighting creates a subsurface scattering effect, making the surface of {{subject}} appear semi-translucent, like frosted glass, bioluminescent skin, or matte resin. The render style mimics the soft blending of vector mesh tools combined with the grit of ISO 3200 film grain or risograph dithering. The atmosphere is {{mood}}, silent, and introspective, evoking a sense of digital solitude and liminal space. The color palette is strictly limited to the neon gradients against the black negative space, with no ambient fill light, ensuring maximum contrast and drama. The silhouette is crisp against the void, but the internal details are softened by the diffuse lighting and granular texture.",
+    "prompt_removebg": "Digital airbrush illustration with heavy stippled noise texture and volumetric gradient shading, featuring {{subject}} rendered as a luminous, semi-translucent form. The rendering technique mimics a blend of 1980s airbrush art and modern lo-fi digital aesthetics, utilizing a heavy, uniform monochromatic film grain (ISO 3200) to create tactile surface grit over smooth color transitions. The lighting is internal and volumetric, creating a subsurface scattering effect where the {{subject}} glows from within, with no external key light source, resulting in a self-illuminated silhouette. The color palette employs a vertical gradient map, transitioning seamlessly from a vibrant {{primary_color}} at the base to a deep {{accent_color}} at the top, fading into shadow near the edges to define volume. The form is defined by soft falloff rather than hard outlines, yet the outer perimeter remains distinct and sharp for compositing. The image is rendered against a clean, flat {{background_color}} backdrop, ensuring high contrast between the glowing subject and the background for effortless extraction. The edges of the {{subject}} are treated with a tight anti-aliasing pass, avoiding excessive bloom or lens flare spill that would contaminate the {{background_color}} area. Atmosphere is melancholic, introspective, and futuristic. Reinforcement tags: grainy texture, dithering, gradient map, synthwave influence, bioluminescence, glowing silhouette, minimalist composition, risograph noise, soft edges, volumetric fog, atmospheric lighting, moody, noir aesthetic, digital noise, high contrast, clean cutout, isolated subject, smooth gradient, tactile finish, lo-fi.",
+    "background_prompt": "An infinite, featureless pitch-black void designed as pure negative space to maximize contrast with foreground luminosity. The darkness is not a flat hex code but possesses a rich, tactile quality due to a heavy overlay of uniform digital noise and film grain. Very faint, almost imperceptible atmospheric gradients of deep {{primary_color}} may linger at the extreme edges to suggest vast, cavernous depth, but the central area remains an abyss of absolute shadow, providing a stark canvas for neon light interaction.",
+    "background_prompt_removebg": "A minimalist, textured abstract environment featuring a deep, atmospheric void of {{background_color}}. The background is treated with a heavy, uniform monochromatic grain overlay to match the subject's materiality. Subtle, almost imperceptible vertical gradients of {{primary_color}} and {{accent_color}} drift through the darkness like faint smoke or distant nebula gas, strictly kept in the low-value range to maintain a dark, moody atmosphere without overpowering the foreground. No distinct shapes or objects, only texture and deep color atmosphere.",
     "variables": [
       "subject",
       "primary_color",
       "accent_color",
+      "mood",
       "background_color"
     ],
     "image": "images/61cc415b0dad6bc94e9b885226cd70de.jpg",
-    "preview_image": "images/preview-1771358983499-fm10.webp",
-    "preview_image_removebg": "images/preview-1771358983616-6f82.webp",
+    "preview_image": "images/preview-1771504815524-ng00.webp",
+    "preview_image_removebg": "images/preview-1771504815498-k03d.webp",
     "tags": [
+      "digital airbrush",
+      "film grain",
+      "low-key",
+      "chiaroscuro",
+      "synthwave",
       "minimalist",
-      "grainy",
-      "gradient",
-      "lo-fi",
-      "noir",
-      "atmospheric"
+      "noise texture",
+      "bioluminescent"
     ],
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
@@ -958,5 +929,38 @@
       "vintage"
     ],
     "createdAt": "2026-02-17T23:07:09.391Z"
+  },
+  {
+    "id": "sunlit-anime",
+    "title": "Indigo Intaglio",
+    "description": "Un style visuel sophistiqué imitant la gravure sur acier du XIXe siècle et les techniques d'illustration de billets de banque. Il se caractérise par un travail au trait précis et très contrasté, où le volume et la texture sont rendus exclusivement par des hachures parallèles et croisées dans une palette strictement bichrome.",
+    "description_en": "A sophisticated visual style mimicking 19th-century steel engraving and banknote illustration techniques. It features precise, high-contrast line work where volume and texture are rendered exclusively through parallel hatching and cross-hatching in a strict duotone palette.",
+    "description_fr": "Un style visuel sophistiqué imitant la gravure sur acier du XIXe siècle et les techniques d'illustration de billets de banque. Il se caractérise par un travail au trait précis et très contrasté, où le volume et la texture sont rendus exclusivement par des hachures parallèles et croisées dans une palette strictement bichrome.",
+    "prompt": "A masterful steel engraving illustration of {{subject}}, executed in the style of 19th-century scientific botanical and zoological plates. The rendering medium is a strict simulation of copperplate etching or intaglio printing, characterized by incredibly precise, sharp, vector-quality line work without any grey wash or gradients. Volume, form, and shading are constructed entirely through disciplined parallel hatching, contour hatching that wraps around the 3D geometry of the {{subject}}, and dense cross-hatching for the deepest shadows. The line weight varies intelligently—thicker, confident ink strokes define the outer silhouette and major structural elements, while microscopic, tapered hair-lines describe the surface texture (such as fur, feathers, or petals). \n\nThe color palette is strictly duotone: deep, saturated {{primary_color}} ink stamped onto a clean, matte {{accent_color}} paper background. There is no chromatic blending; colors are binary, relying on optical mixing through line density to create perceived tonal values. Lighting is conceptual and studio-like {{lighting}}, indicated solely by the absence of ink (paper white) for highlights and heavy line convergence for occlusion shadows. The aesthetic is academic, timeless, and reminiscent of high-security banknote art or vintage encyclopedia illustrations. The composition is centered and elegant, surrounded by ample negative space to emphasize the specimen-like isolation of the {{subject}}. {{mood}} atmosphere conveyed through the rigidity and perfection of the engraving technique.",
+    "prompt_removebg": "A masterfully executed copperplate engraving and intaglio print of {{subject}}, rendered with the forensic precision of a 19th-century zoological illustration reminiscent of Thomas Bewick or Albrecht Dürer. The image is constructed entirely from distinct, high-contrast lines of {{primary_color}} ink, utilizing expert cross-hatching, stippling, and curved contour hatching to generate volumetric form and texture. There are absolutely no smooth gradients, washes, or gray values; shading is achieved strictly through optical mixing via line density and spacing. The {{subject}} features microscopic attention to surface details—individual feathers, fur strands, or architectural elements are depicted with directional ink strokes that follow the organic curvature of the form. The lighting is conceptual and uniform, typical of academic study plates, revealing maximum structural detail. The artwork is isolated against a clean, flat {{background_color}} backdrop, specifically optimized for background removal. The edges of the {{subject}} are defined by the sharp, deliberate termination of ink lines rather than a continuous thick outline, creating a crisp, high-contrast silhouette against the {{background_color}} negative space. {{accent_color}} is applied sparingly to focal points or distinct markings, maintaining a predominantly duotone aesthetic. The line quality mimics the pressure sensitivity of a burin tool, with tapered starts and stops. The overall composition is static, dignified, and encyclopedic.",
+    "background_prompt": "A vintage parchment background texture in {{accent_color}} tones, subtly overlaid with faint, decorative engraved patterns in {{primary_color}}. Elements include delicate botanical filigree, ruled geometric lines reminiscent of financial guilloche patterns, and faint, etched atmospheric dust. The background serves as a flat, paper-like canvas that enhances the foreground engraving without competing for focus, maintaining the strict duotone etching aesthetic.",
+    "background_prompt_removebg": "A vintage academic background texture featuring faint, low-opacity schematic diagrams and botanical sketches in muted {{primary_color}}. The composition includes fragmented serif typography, Latin scientific labels, and fine measurement grid lines typical of an aged naturalist's field journal or encyclopedia plate. The elements are arranged peripherally to frame the center, rendered on a flat {{background_color}} surface with a paper-grain texture implied only by the roughness of the ink lines, avoiding heavy noise that would interfere with foreground layering.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "lighting",
+      "mood",
+      "background_color"
+    ],
+    "image": "images/g--oq7mbkaacabb.jpg",
+    "preview_image": "images/preview-1771504389327-iue4.webp",
+    "preview_image_removebg": "images/preview-1771504389691-vob8.webp",
+    "tags": [
+      "steel engraving",
+      "intaglio",
+      "cross-hatching",
+      "banknote style",
+      "scientific illustration",
+      "vector lineart",
+      "duotone",
+      "vintage etching"
+    ],
+    "createdAt": "2026-02-19T11:33:13.526Z"
   }
 ]

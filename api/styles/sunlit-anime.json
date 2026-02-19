@@ -1,0 +1,33 @@
+{
+  "id": "sunlit-anime",
+  "title": "Indigo Intaglio",
+  "description": "Un style visuel sophistiqué imitant la gravure sur acier du XIXe siècle et les techniques d'illustration de billets de banque. Il se caractérise par un travail au trait précis et très contrasté, où le volume et la texture sont rendus exclusivement par des hachures parallèles et croisées dans une palette strictement bichrome.",
+  "description_en": "A sophisticated visual style mimicking 19th-century steel engraving and banknote illustration techniques. It features precise, high-contrast line work where volume and texture are rendered exclusively through parallel hatching and cross-hatching in a strict duotone palette.",
+  "description_fr": "Un style visuel sophistiqué imitant la gravure sur acier du XIXe siècle et les techniques d'illustration de billets de banque. Il se caractérise par un travail au trait précis et très contrasté, où le volume et la texture sont rendus exclusivement par des hachures parallèles et croisées dans une palette strictement bichrome.",
+  "prompt": "A masterful steel engraving illustration of {{subject}}, executed in the style of 19th-century scientific botanical and zoological plates. The rendering medium is a strict simulation of copperplate etching or intaglio printing, characterized by incredibly precise, sharp, vector-quality line work without any grey wash or gradients. Volume, form, and shading are constructed entirely through disciplined parallel hatching, contour hatching that wraps around the 3D geometry of the {{subject}}, and dense cross-hatching for the deepest shadows. The line weight varies intelligently—thicker, confident ink strokes define the outer silhouette and major structural elements, while microscopic, tapered hair-lines describe the surface texture (such as fur, feathers, or petals). \n\nThe color palette is strictly duotone: deep, saturated {{primary_color}} ink stamped onto a clean, matte {{accent_color}} paper background. There is no chromatic blending; colors are binary, relying on optical mixing through line density to create perceived tonal values. Lighting is conceptual and studio-like {{lighting}}, indicated solely by the absence of ink (paper white) for highlights and heavy line convergence for occlusion shadows. The aesthetic is academic, timeless, and reminiscent of high-security banknote art or vintage encyclopedia illustrations. The composition is centered and elegant, surrounded by ample negative space to emphasize the specimen-like isolation of the {{subject}}. {{mood}} atmosphere conveyed through the rigidity and perfection of the engraving technique.",
+  "prompt_removebg": "A masterfully executed copperplate engraving and intaglio print of {{subject}}, rendered with the forensic precision of a 19th-century zoological illustration reminiscent of Thomas Bewick or Albrecht Dürer. The image is constructed entirely from distinct, high-contrast lines of {{primary_color}} ink, utilizing expert cross-hatching, stippling, and curved contour hatching to generate volumetric form and texture. There are absolutely no smooth gradients, washes, or gray values; shading is achieved strictly through optical mixing via line density and spacing. The {{subject}} features microscopic attention to surface details—individual feathers, fur strands, or architectural elements are depicted with directional ink strokes that follow the organic curvature of the form. The lighting is conceptual and uniform, typical of academic study plates, revealing maximum structural detail. The artwork is isolated against a clean, flat {{background_color}} backdrop, specifically optimized for background removal. The edges of the {{subject}} are defined by the sharp, deliberate termination of ink lines rather than a continuous thick outline, creating a crisp, high-contrast silhouette against the {{background_color}} negative space. {{accent_color}} is applied sparingly to focal points or distinct markings, maintaining a predominantly duotone aesthetic. The line quality mimics the pressure sensitivity of a burin tool, with tapered starts and stops. The overall composition is static, dignified, and encyclopedic.",
+  "background_prompt": "A vintage parchment background texture in {{accent_color}} tones, subtly overlaid with faint, decorative engraved patterns in {{primary_color}}. Elements include delicate botanical filigree, ruled geometric lines reminiscent of financial guilloche patterns, and faint, etched atmospheric dust. The background serves as a flat, paper-like canvas that enhances the foreground engraving without competing for focus, maintaining the strict duotone etching aesthetic.",
+  "background_prompt_removebg": "A vintage academic background texture featuring faint, low-opacity schematic diagrams and botanical sketches in muted {{primary_color}}. The composition includes fragmented serif typography, Latin scientific labels, and fine measurement grid lines typical of an aged naturalist's field journal or encyclopedia plate. The elements are arranged peripherally to frame the center, rendered on a flat {{background_color}} surface with a paper-grain texture implied only by the roughness of the ink lines, avoiding heavy noise that would interfere with foreground layering.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "lighting",
+    "mood",
+    "background_color"
+  ],
+  "image": "images/g--oq7mbkaacabb.jpg",
+  "preview_image": "images/preview-1771504389327-iue4.webp",
+  "preview_image_removebg": "images/preview-1771504389691-vob8.webp",
+  "tags": [
+    "steel engraving",
+    "intaglio",
+    "cross-hatching",
+    "banknote style",
+    "scientific illustration",
+    "vector lineart",
+    "duotone",
+    "vintage etching"
+  ],
+  "createdAt": "2026-02-19T11:33:13.526Z"
+}
