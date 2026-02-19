@@ -154,28 +154,6 @@
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
   {
-    "id": "playful-3d",
-    "title": "Soft Cinema",
-    "description": "Un style d'animation 3D haute fidélité caractérisé par la fusion d'une géométrie stylisée et simplifiée avec un rendu physique hyper-réaliste (PBR). Les caractéristiques visuelles clés incluent une dispersion souterraine distincte sur la peau, des shaders de matériaux tactiles et duveteux comme le feutre ou le velours, et un éclairage global doux qui imite la photographie de studio haut de gamme.",
-    "description_en": "A high-fidelity 3D animation style characterized by the fusion of stylized, simplified geometry with hyper-realistic physically based rendering (PBR). Key visual hallmarks include distinct subsurface scattering on skin, tactile 'fuzzy' material shaders like felt or velvet, and soft, global illumination that mimics high-end studio photography.",
-    "description_fr": "Un style d'animation 3D haute fidélité caractérisé par la fusion d'une géométrie stylisée et simplifiée avec un rendu physique hyper-réaliste (PBR). Les caractéristiques visuelles clés incluent une dispersion souterraine distincte sur la peau, des shaders de matériaux tactiles et duveteux comme le feutre ou le velours, et un éclairage global doux qui imite la photographie de studio haut de gamme.",
-    "image": "images/haxv01ibaaayb77.jpg",
-    "preview_image": "images/preview-1771537916230-78gl.webp",
-    "preview_image_removebg": "images/preview-1771537916659-pwmy.webp",
-    "tags": [
-      "3d render",
-      "subsurface scattering",
-      "cinema4d",
-      "stylized character",
-      "octane render",
-      "pbr textures",
-      "disney style",
-      "softbox lighting"
-    ],
-    "backgroundType": 0,
-    "createdAt": "2026-02-14T21:36:25.982Z"
-  },
-  {
     "id": "bauhaus-geometry",
     "title": "Bauhaus Construct",
     "description": "Une abstraction géométrique rigoureuse enracinée dans les mouvements Bauhaus et De Stijl, réduisant les formes complexes à des primitives fondamentales comme des cercles, des triangles et des rectangles. Le style utilise une palette néoplasticiste stricte de couleurs primaires sur un fond blanc cassé plat, privilégiant l'équilibre structurel et la précision vectorielle sur la représentation réaliste.",
@@ -328,28 +306,6 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-17T13:39:59.566Z"
-  },
-  {
-    "id": "friendly-vector",
-    "title": "Friendly Vector",
-    "description": "Une esthétique de design plat minimaliste caractérisée par des formes organiques simplifiées et des remplissages de couleurs unies sans contours externes. Le style utilise des traits épais et monolignes dans une couleur sombre contrastée uniquement pour les détails internes et les traits du visage, s'inspirant fortement de l'iconographie moderne des interfaces utilisateur et des tendances 'Corporate Memphis'.",
-    "description_en": "A minimalist flat design aesthetic characterized by simplified, organic shapes and solid color fills with no external outlines. The style utilizes thick, monoline strokes in a contrasting dark color strictly for internal details and facial features, drawing heavily from modern UI iconography and 'Corporate Memphis' trends.",
-    "description_fr": "Une esthétique de design plat minimaliste caractérisée par des formes organiques simplifiées et des remplissages de couleurs unies sans contours externes. Le style utilise des traits épais et monolignes dans une couleur sombre contrastée uniquement pour les détails internes et les traits du visage, s'inspirant fortement de l'iconographie moderne des interfaces utilisateur et des tendances 'Corporate Memphis'.",
-    "image": "images/2ccc9e5c8830fe7c040c1259b283ee59.jpg",
-    "preview_image": "images/preview-1771537920848-5wq8.webp",
-    "preview_image_removebg": "images/preview-1771537920207-a3um.webp",
-    "tags": [
-      "flat design",
-      "vector art",
-      "corporate memphis",
-      "minimalist",
-      "ui illustration",
-      "spot illustration",
-      "solid color",
-      "icon design"
-    ],
-    "backgroundType": 2,
-    "createdAt": "2026-02-17T14:46:45.703Z"
   },
   {
     "id": "gestural-contour",
@@ -702,5 +658,27 @@
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-19T12:53:50.521Z"
+  },
+  {
+    "id": "solar-gouache",
+    "title": "Solar Gouache",
+    "description": "Un style d'illustration vibrant et très contrasté, canalisant l'esthétique City Pop japonaise des années 80 et la précision d'Eizin Suzuki. Il se caractérise par un rendu plat et opaque à la gouache, des ombres portées nettes et tranchantes, des couleurs méditerranéennes hyper-saturées et une composition graphique où la lumière et l'ombre forment des formes géométriques distinctes.",
+    "description_en": "A vibrant, high-contrast illustration style channeling 80s Japanese City Pop aesthetics and the precision of Eizin Suzuki. It features flat, opaque gouache rendering with razor-sharp hard shadows, hyper-saturated Mediterranean colors, and a graphic composition where light and shadow form distinct geometric shapes.",
+    "description_fr": "Un style d'illustration vibrant et très contrasté, canalisant l'esthétique City Pop japonaise des années 80 et la précision d'Eizin Suzuki. Il se caractérise par un rendu plat et opaque à la gouache, des ombres portées nettes et tranchantes, des couleurs méditerranéennes hyper-saturées et une composition graphique où la lumière et l'ombre forment des formes géométriques distinctes.",
+    "image": "images/9a6c144ff1a84a923a1fb403ccaad77e.jpg",
+    "preview_image": "images/preview-1771539801595-i8c4.webp",
+    "preview_image_removebg": "images/preview-1771539801539-iv6n.webp",
+    "tags": [
+      "city pop",
+      "eizin suzuki",
+      "hiroshi nagai",
+      "flat gouache",
+      "hard shadows",
+      "mediterranean",
+      "vector illustration",
+      "vibrant"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-19T22:23:26.336Z"
   }
 ]
