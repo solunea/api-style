@@ -29,7 +29,7 @@
     "prompt_removebg": "A delightful, highly textured children's book illustration of {{subject}}, executed in a mixed-media style resembling dry gouache, wax crayons, and colored pencils applied to rough grain paper. The artistic rendering is whimsical and naive, featuring playful proportions, expressive features, and simplified geometric forms typical of mid-century storybook art. The surface texture is the defining characteristic: visible dry brushstrokes, scuffed wax resist effects, grainy noise, and scratchy pencil lines that create a tactile, handmade feel. The color palette is vibrant but slightly desaturated, utilizing {{primary_color}} as the dominant hue for the main subject, with energetic details and patterns in {{accent_color}}. Lighting is flat and illustrative, avoiding realistic volumetric rendering in favor of texture density and cross-hatching to suggest depth. The subject is isolated and composited against a clean {{background_color}} background, ensuring the rough, organic edges of the drawing are clearly defined against the {{background_color}} surface. The mood is cozy, creative, and nostalgic, evoking the feeling of a beloved classic picture book. No photorealism, heavy paper grain, matte finish.",
     "background_prompt_removebg": "A cozy, cluttered creative environment serving as a background, featuring a wall adorned with loose sketches, color swatches, and art prints in a hand-drawn style. Potted plants with textured leaves frame the scene, introducing organic shapes. The rendering style mimics dry gouache and crayon with scratchy textures, utilizing a palette of {{primary_color}} and {{accent_color}} accents. The scene is set against a flat {{background_color}} wall surface, maintaining a 2D illustrative depth without a central subject.",
     "preview_image_removebg": "images/preview-1771336876801-60l7.webp",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "doodle-pop",
@@ -188,7 +188,7 @@
     "prompt_removebg": "A highly detailed, textured editorial illustration of {{subject}}, executed in a flat yet dimensional style reminiscent of modern tech blog art or risograph printing. The rendering mimics the texture of chalk or pastel on rough grain paper, featuring heavy noise, stippled shading, and imperfect, organic edges. The composition is defined by a dramatic, stylized lighting setup: a sharp, geometric cone of light cuts across the scene, illuminating the {{subject}} in bright, warm tones while casting the surrounding areas into deep, textured shadow. The color palette utilizes {{primary_color}} as the dominant tone for the main forms, contrasted with {{accent_color}} for highlights and key details within the lit areas. The shading is not smooth but composed of speckled grain and noise gradients. The artwork is composited on a clean {{background_color}} surface, ensuring distinct separation between the textured illustration and the background canvas. The overall mood is productive, cozy, and tactile, blending digital precision with analog warmth. Reinforcement tags: editorial illustration, risograph style, grainy texture, noise overlay, flat design, hard lighting, sharp shadows, chalk texture, lo-fi aesthetic, vector art with texture, stippling, high contrast, geometric light, cozy atmosphere, detailed textures.",
     "background_prompt_removebg": "A textured, atmospheric background scene featuring a dramatic lighting effect without a central subject. A sharp, geometric cone of light cuts through the environment, creating a distinct boundary between the illuminated zone and the shadowed surroundings. The surface texture resembles rough paper or felt with heavy grain and noise. The scene is colored in shades of {{primary_color}} with subtle hints of {{accent_color}} in the textured noise, all set against a {{background_color}} base. The composition serves as a grainy, lo-fi stage or frame.",
     "preview_image_removebg": "images/preview-1771336880316-vv8r.webp",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "spotlight-schematic",
@@ -283,7 +283,7 @@
     "prompt_removebg": "A premium, high-fidelity 3D character render of {{subject}} designed in a stylized, modern animation aesthetic similar to Pixar or Illumination studios. The rendering is defined by soft, tactile surfaces; the {{subject}} features a mix of smooth, matte skin textures with strong subsurface scattering (SSS) to create a warm, fleshy translucency, and clothing or outer layers made of high-quality plush fabrics or soft matte polymers. The color palette is dominated by a vibrant yet pleasing {{primary_color}}, with thoughtful details and trim in {{accent_color}}. The lighting setup is a sophisticated softbox studio arrangement: large, diffuse light sources wrap gently around the form, creating smooth gradients and eliminating harsh shadows, while a subtle rim light separates the subject from the surroundings. The image is composited against a clean, seamless {{background_color}} background to ensure perfect edge definition and contrast for isolation. The overall look is round, friendly, and physically plausible, with physically based rendering (PBR) materials that look touchable, soft, and velvety. The camera uses a portrait lens with a very slight depth of field to focus attention on the eyes and face of the {{subject}}.",
     "background_prompt_removebg": "A soft, abstract 3D environment featuring smooth, curved geometry and gentle gradients. The scene is composed of blurred shapes and bokeh effects in shades of {{primary_color}} and {{accent_color}}, creating a dreamy, out-of-focus studio atmosphere. The lighting is ambient and diffuse, casting no hard shadows, set against a base tone of {{background_color}}.",
     "preview_image_removebg": "images/preview-1771336879736-b9qe.webp",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "bauhaus-geometry",
@@ -346,7 +346,7 @@
     "prompt_removebg": "A highly detailed, photorealistic macro photograph of a handcrafted needle-felted wool sculpture representing {{subject}}. The object is constructed entirely from compressed, fuzzy wool roving, showcasing a rich, tactile surface texture with visible stray fibers, interlocking strands, and a soft, matte finish. The {{subject}} is rendered in a cute, rounded, semi-chibi aesthetic with simplified but expressive features, primarily colored in shades of {{primary_color}} with delicate details and accessories in {{accent_color}}. The lighting is soft, diffused, and high-key, mimicking professional studio toy photography or a bright stop-motion animation set, which creates a gentle rim light that accentuates the fuzziness of the silhouette against the backdrop. The camera angle is slightly low, enhancing the sense of scale in this miniature world. The image features an incredibly shallow depth of field (f/1.8), keeping the eyes and front of the {{subject}} in razor-sharp focus while the rest fades into a creamy, dreamy blur. The scene is composited on a clean {{background_color}} surface, providing a smooth, solid backdrop that contrasts with the rough texture of the wool and allows for easy background removal while preserving the delicate fiber edges. The overall mood is cozy, innocent, whimsical, and deeply texture-rich, evoking the warmth of handmade crafts. reinforcement tags: needle felting, wool texture, macro lens, tilt-shift, bokeh, soft lighting, cute, tactile, volumetric lighting, 8k, ultra-detailed, photorealistic materials, stop motion style, fibrous, craft art.",
     "background_prompt_removebg": "A soft-focus, blurry background scene depicting a miniature landscape made of needle-felted wool. The environment consists of abstract rolling hills and soft, rounded shapes in fuzzy textures of {{primary_color}} and {{accent_color}}. In the distance, out-of-focus wool spheres or pompoms float like balloons or abstract clouds. The entire scene is set against a {{background_color}} sky or backdrop, maintaining a bright, airy, and pastel atmosphere. The depth of field is extremely shallow, rendering the background elements as colorful, textured bokeh blobs that suggest a whimsical, handcrafted world without distracting detail.",
     "preview_image_removebg": "images/preview-1771336881781-54ej.webp",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "soft-vector",
@@ -381,7 +381,7 @@
     "prompt_removebg": "A pristine digital vector illustration rendered in a sophisticated Flat Design 2.0 aesthetic, characterized by razor-sharp geometric precision, mathematical Bézier curves, and a complete absence of raster noise or texture. The rendering technique mimics the clean path-based tools of Adobe Illustrator, where {{subject}} is constructed entirely from solid shapes and color blocking without any black outlines or stroke weight. The visual language borrows from modern tech illustration and 'Corporate Memphis' styles, prioritizing simplified anatomy, smooth contours, and a sense of universal accessibility. The composition is lit by stylized, architectural lighting: distinct diagonal shafts of light (god rays) composed of white geometric shapes at 15-20% opacity cut across the scene, simulating a soft, diffused window source. These light beams interact with the underlying flat colors to create lighter tints, while shadows are rendered as hard-edged, semi-transparent polygons in a multiply blending mode, anchoring objects with precise, angular footprints. The color palette is strictly controlled, desaturated, and high-key, dominated by {{primary_color}} and {{accent_color}}, utilizing analogous harmonies to maintain a calm, 'hygge' atmosphere. There is no texture, grit, or brushwork; every surface appears smooth, matte, and synthetic, similar to high-quality vinyl or vector graphics. The subject is composited on a clean {{background_color}} surface, featuring a razor-sharp, anti-aliased silhouette that separates cleanly from the {{background_color}} backdrop without any fringing or feathering. The spatial dynamics are stable and planar, with depth implied through the layering of shapes. Full bleed, no border, no frame, no canvas, vector art, flat illustration, lineless art, geometric minimalism, pastel tones, soft lighting, adobe illustrator style, clean UI graphics, architectural geometry, serene atmosphere, matte finish, hard-edge shadows, lifestyle illustration, modern aesthetic, crisp silhouette, untextured surfaces, digital smoothness, behance style, dribbble aesthetic, soft gradients, shape-based rendering, {{background_color}} background.",
     "background_prompt_removebg": "A serene, minimalist architectural interior or landscape setting rendered in a clean flat vector style, devoid of any human presence or main subject. The scene focuses on geometric structures—such as sleek cabinetry, shelving units, simple furniture forms, or distant rolling hills—composed of solid shapes in {{primary_color}} and {{accent_color}}. Diagonal shafts of semi-transparent light cut across the frame, casting sharp, angular shadows that define the spatial depth and layering. To create depth behind the removed subject, a decorative foreground element—such as a stylized vector plant branch, a geometric window frame overlay, or a floating UI graphic in {{accent_color}}—is placed in the immediate foreground. The environment is orderly and pristine, with smooth, matte surfaces. The scene transitions cleanly into the {{background_color}} surface at the outer edges, or uses the {{background_color}} as the foundational canvas color upon which the vector environment is built. Full bleed, no border.",
     "preview_image_removebg": "images/preview-1771518080427-6854.webp",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "textured-riso",
@@ -442,7 +442,7 @@
       "vector"
     ],
     "createdAt": "2026-02-17T09:45:59.105Z",
-    "backgroundType": 0
+    "backgroundType": 2
   },
   {
     "id": "velvet-noir",
@@ -472,7 +472,7 @@
       "moody"
     ],
     "createdAt": "2026-02-17T13:24:52.409Z",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "tech-vector",
@@ -651,7 +651,7 @@
       "illustration"
     ],
     "createdAt": "2026-02-17T20:07:17.859Z",
-    "backgroundType": 0
+    "backgroundType": 2
   },
   {
     "id": "impressionist-ripples",
@@ -681,7 +681,7 @@
       "textured"
     ],
     "createdAt": "2026-02-17T20:08:41.130Z",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "luminous-noise",
@@ -714,7 +714,7 @@
       "bioluminescent"
     ],
     "createdAt": "2026-02-17T20:09:47.146Z",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "charcoal-gesture",
@@ -773,7 +773,7 @@
       "contemporary"
     ],
     "createdAt": "2026-02-17T20:14:30.120Z",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "eclectic-collage",
@@ -832,7 +832,7 @@
       "photorealistic"
     ],
     "createdAt": "2026-02-17T22:58:56.223Z",
-    "backgroundType": 1
+    "backgroundType": 0
   },
   {
     "id": "grainy-serigraph",
@@ -988,7 +988,7 @@
       "color blocking"
     ],
     "createdAt": "2026-02-19T12:49:07.012Z",
-    "backgroundType": 0
+    "backgroundType": 1
   },
   {
     "id": "risograph-pop",
@@ -1020,6 +1020,7 @@
       "indie zine",
       "screen print"
     ],
-    "createdAt": "2026-02-19T12:53:50.521Z"
+    "createdAt": "2026-02-19T12:53:50.521Z",
+    "backgroundType": 1
   }
 ]

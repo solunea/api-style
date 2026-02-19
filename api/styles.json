@@ -16,7 +16,7 @@
       "naive art",
       "crayon"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
@@ -118,7 +118,7 @@
       "flat design",
       "grainy"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
@@ -178,7 +178,7 @@
       "character design",
       "cute"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-14T21:36:25.982Z"
   },
   {
@@ -218,7 +218,7 @@
       "soft",
       "cute"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-14T21:39:17.824Z"
   },
   {
@@ -240,7 +240,7 @@
       "digital art",
       "geometric"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-14T21:40:48.938Z"
   },
   {
@@ -280,7 +280,7 @@
       "stamp",
       "vector"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-17T09:45:59.105Z"
   },
   {
@@ -300,7 +300,7 @@
       "bokeh",
       "moody"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T13:24:52.409Z"
   },
   {
@@ -420,7 +420,7 @@
       "sketchbook",
       "illustration"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-17T20:07:17.859Z"
   },
   {
@@ -440,7 +440,7 @@
       "painterly",
       "textured"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T20:08:41.130Z"
   },
   {
@@ -462,7 +462,7 @@
       "noise texture",
       "bioluminescent"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
   {
@@ -502,7 +502,7 @@
       "graffiti overlay",
       "contemporary"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T20:14:30.120Z"
   },
   {
@@ -542,7 +542,7 @@
       "macro",
       "photorealistic"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T22:58:56.223Z"
   },
   {
@@ -646,7 +646,7 @@
       "textured",
       "color blocking"
     ],
-    "backgroundType": 0,
+    "backgroundType": 1,
     "createdAt": "2026-02-19T12:49:07.012Z"
   },
   {
@@ -668,7 +668,7 @@
       "indie zine",
       "screen print"
     ],
-    "backgroundType": 2,
+    "backgroundType": 1,
     "createdAt": "2026-02-19T12:53:50.521Z"
   }
 ]

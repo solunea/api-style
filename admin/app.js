@@ -248,8 +248,8 @@ function renderStyles(styles) {
         <div class="card-bg-type">
           <span class="bg-type-label">Fond :</span>
           <div class="bg-type-selector">
-            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 0 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 0, this)" title="Sans fond">Sans fond</button>
-            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 1 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 1, this)" title="Avec fond">Avec fond</button>
+            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 0 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 0, this)" title="Avec fond">Avec fond</button>
+            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 1 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 1, this)" title="Sans fond">Sans fond</button>
             <button class="bg-type-btn ${(s.backgroundType ?? 2) === 2 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 2, this)" title="Auto">Auto</button>
           </div>
         </div>
