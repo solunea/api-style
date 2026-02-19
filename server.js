@@ -53,6 +53,7 @@ function buildApi(styles) {
     preview_image: s.preview_image || '',
     preview_image_removebg: s.preview_image_removebg || '',
     tags: s.tags,
+    backgroundType: s.backgroundType ?? 2,
     createdAt: s.createdAt
   }));
   writeFileSync(join(API_DIR, 'styles.json'), JSON.stringify(index, null, 2));
@@ -80,7 +81,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -105,6 +106,7 @@ app.post('/api/styles', (req, res) => {
     preview_image: preview_image || '',
     preview_image_removebg: preview_image_removebg || '',
     tags: tags || [],
+    backgroundType: backgroundType ?? 2,
     createdAt: new Date().toISOString()
   };
 
@@ -121,7 +123,7 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType } = req.body;
 
   // Delete old preview file if a new one is being set
   const oldPreview = styles[index].preview_image;
@@ -147,6 +149,7 @@ app.put('/api/styles/:id', (req, res) => {
     ...(preview_image !== undefined && { preview_image }),
     ...(preview_image_removebg !== undefined && { preview_image_removebg }),
     ...(tags !== undefined && { tags }),
+    ...(backgroundType !== undefined && { backgroundType }),
   };
 
   writeStyles(styles);

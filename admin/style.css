@@ -433,6 +433,48 @@ main {
   font-weight: 500;
 }
 
+/* Background type selector on cards */
+.card-bg-type {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
+}
+
+.bg-type-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.bg-type-selector {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.bg-type-btn {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.bg-type-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.bg-type-btn.active {
+  background: var(--primary-bg);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
 /* Variables on cards */
 .var-highlight {
   color: var(--primary);

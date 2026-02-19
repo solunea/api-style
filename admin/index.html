@@ -6,7 +6,7 @@
   <title>Style Manager</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
   <div id="app">
@@ -164,6 +164,7 @@
                 </div>
                 <input type="hidden" id="form-preview-image" value="">
                 <input type="hidden" id="form-preview-image-removebg" value="">
+                <input type="hidden" id="form-background-type" value="2">
                 <button type="button" class="btn btn-ai" id="analyze-url-btn" onclick="analyzeImage()" style="display:none;margin-top:8px">🤖 Auto-remplir avec IA</button>
               </div>
             </div>
@@ -203,6 +204,6 @@
     <div id="toast" class="toast"></div>
   </div>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
 </body>
 </html>

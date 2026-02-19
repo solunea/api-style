@@ -16,6 +16,7 @@
       "naive art",
       "crayon"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
@@ -37,6 +38,7 @@
       "bold lineart",
       "spot illustration"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
@@ -56,6 +58,7 @@
       "geometric",
       "vibrant"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
   {
@@ -75,6 +78,7 @@
       "matte",
       "cute"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-10T16:23:17.069Z"
   },
   {
@@ -94,6 +98,7 @@
       "line art",
       "flat design"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-10T16:24:16.950Z"
   },
   {
@@ -113,6 +118,7 @@
       "flat design",
       "grainy"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
@@ -132,6 +138,7 @@
       "technical drawing",
       "minimalist"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-10T16:29:06.811Z"
   },
   {
@@ -151,6 +158,7 @@
       "folk",
       "textured"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
   {
@@ -170,6 +178,7 @@
       "character design",
       "cute"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-14T21:36:25.982Z"
   },
   {
@@ -189,6 +198,7 @@
       "flat design",
       "vector"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-14T21:38:22.504Z"
   },
   {
@@ -208,6 +218,7 @@
       "soft",
       "cute"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-14T21:39:17.824Z"
   },
   {
@@ -229,6 +240,7 @@
       "digital art",
       "geometric"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-14T21:40:48.938Z"
   },
   {
@@ -248,6 +260,7 @@
       "screen print",
       "textured vector"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-14T21:45:30.360Z"
   },
   {
@@ -267,6 +280,7 @@
       "stamp",
       "vector"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T09:45:59.105Z"
   },
   {
@@ -286,6 +300,7 @@
       "bokeh",
       "moody"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-17T13:24:52.409Z"
   },
   {
@@ -305,6 +320,7 @@
       "tech",
       "illustration"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T13:39:59.566Z"
   },
   {
@@ -324,6 +340,7 @@
       "illustration",
       "simple"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T14:46:45.703Z"
   },
   {
@@ -343,6 +360,7 @@
       "sketch",
       "abstract"
     ],
+    "backgroundType": 0,
     "createdAt": "2026-02-17T15:31:22.088Z"
   },
   {
@@ -362,6 +380,7 @@
       "colorful",
       "rough"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T20:02:50.593Z"
   },
   {
@@ -381,6 +400,7 @@
       "abstract",
       "vector"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T20:04:35.656Z"
   },
   {
@@ -400,6 +420,7 @@
       "sketchbook",
       "illustration"
     ],
+    "backgroundType": 0,
     "createdAt": "2026-02-17T20:07:17.859Z"
   },
   {
@@ -419,6 +440,7 @@
       "painterly",
       "textured"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-17T20:08:41.130Z"
   },
   {
@@ -440,6 +462,7 @@
       "noise texture",
       "bioluminescent"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
   {
@@ -459,6 +482,7 @@
       "abstract",
       "monochrome"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T20:12:26.361Z"
   },
   {
@@ -478,6 +502,7 @@
       "graffiti overlay",
       "contemporary"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-17T20:14:30.120Z"
   },
   {
@@ -497,6 +522,7 @@
       "vintage",
       "eclectic"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T20:15:47.674Z"
   },
   {
@@ -516,6 +542,7 @@
       "macro",
       "photorealistic"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-17T22:58:56.223Z"
   },
   {
@@ -535,6 +562,7 @@
       "grainy",
       "minimalist"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T22:59:54.739Z"
   },
   {
@@ -554,6 +582,7 @@
       "nostalgic",
       "gaming"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-17T23:02:22.428Z"
   },
   {
@@ -573,6 +602,7 @@
       "grainy",
       "vintage"
     ],
+    "backgroundType": 1,
     "createdAt": "2026-02-17T23:07:09.391Z"
   },
   {
@@ -594,6 +624,7 @@
       "duotone",
       "vintage etching"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-19T11:33:13.526Z"
   },
   {
@@ -615,6 +646,7 @@
       "textured",
       "color blocking"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-19T12:49:07.012Z"
   },
   {
@@ -636,6 +668,7 @@
       "indie zine",
       "screen print"
     ],
+    "backgroundType": 2,
     "createdAt": "2026-02-19T12:53:50.521Z"
   }
 ]

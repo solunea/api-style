@@ -103,6 +103,22 @@ async function buildApi() {
   }
 }
 
+async function setBackgroundType(id, value, btn) {
+  const card = btn.closest('.style-card');
+  card.querySelectorAll('.bg-type-btn').forEach((b) => b.classList.remove('active'));
+  btn.classList.add('active');
+
+  const style = allStyles.find((s) => s.id === id);
+  if (!style) return;
+  style.backgroundType = value;
+
+  try {
+    await updateStyle(id, { backgroundType: value });
+  } catch (err) {
+    showToast(err.message, 'error');
+  }
+}
+
 async function pushToCDN() {
   const btn = document.getElementById('push-btn');
   btn.disabled = true;
@@ -229,6 +245,14 @@ function renderStyles(styles) {
         <div class="card-tags">
           ${(s.tags || []).map((t) => `<span class="tag">${esc(t)}</span>`).join('')}
         </div>
+        <div class="card-bg-type">
+          <span class="bg-type-label">Fond :</span>
+          <div class="bg-type-selector">
+            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 0 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 0, this)" title="Sans fond">Sans fond</button>
+            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 1 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 1, this)" title="Avec fond">Avec fond</button>
+            <button class="bg-type-btn ${(s.backgroundType ?? 2) === 2 ? 'active' : ''}" onclick="setBackgroundType('${s.id}', 2, this)" title="Auto">Auto</button>
+          </div>
+        </div>
       </div>
     </div>
   `;}).join('');
@@ -287,6 +311,7 @@ function openModal(editId) {
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-preview-image').value = style.preview_image || '';
     document.getElementById('form-preview-image-removebg').value = style.preview_image_removebg || '';
+    document.getElementById('form-background-type').value = style.backgroundType ?? 2;
     generatedPrompts.standard = style.prompt || '';
     generatedPrompts.removebg = style.prompt_removebg || '';
     generatedBgPrompts.standard = style.background_prompt || '';
@@ -413,7 +438,8 @@ async function handleSubmit(e) {
     const background_prompt_removebg = generatedBgPrompts.removebg || '';
     const preview_image = document.getElementById('form-preview-image').value.trim();
     const preview_image_removebg = document.getElementById('form-preview-image-removebg').value.trim();
-    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined };
+    const backgroundType = parseInt(document.getElementById('form-background-type').value, 10);
+    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined, backgroundType };
 
     if (editingId) {
       await updateStyle(editingId, data);

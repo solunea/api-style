@@ -28,5 +28,6 @@
     "noise texture",
     "bioluminescent"
   ],
-  "createdAt": "2026-02-17T20:09:47.146Z"
+  "createdAt": "2026-02-17T20:09:47.146Z",
+  "backgroundType": 1
 }
