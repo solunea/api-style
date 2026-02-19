@@ -17,8 +17,8 @@
     "background_color"
   ],
   "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
-  "preview_image": "images/preview-1771537924145-p4a4.webp",
-  "preview_image_removebg": "images/preview-1771537925183-me2o.webp",
+  "preview_image": "images/preview-1771538792428-ligj.webp",
+  "preview_image_removebg": "images/preview-1771538792407-xjd1.webp",
   "tags": [
     "pixel art",
     "16-bit",
@@ -29,5 +29,6 @@
     "aliased",
     "indexed color"
   ],
-  "createdAt": "2026-02-17T23:02:22.428Z"
+  "createdAt": "2026-02-17T23:02:22.428Z",
+  "backgroundType": 2
 }

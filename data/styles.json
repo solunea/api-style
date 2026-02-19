@@ -208,72 +208,39 @@
     "backgroundType": 0
   },
   {
-    "id": "spotlight-schematic",
-    "title": "Spotlit Ligne",
-    "description": "Une illustration technique isométrique précise rappelant le dessin architectural, caractérisée par des contours uniformes et fins sur du papier recyclé texturé. La narration visuelle est guidée par un cône de lumière unique aux bords nets qui introduit un lavis de couleur localisé, laissant le reste de la composition en contour monochrome.",
-    "prompt": "Isometric technical illustration rendered as fine-point ink liner drawing on coarse, speckled recycled paper, featuring {{subject}} as the central focal point in a high-angle orthographic projection. The rendering technique mimics architectural drafting with a consistent, non-tapering hairline stroke weight in {{primary_color}} ink, devoid of cross-hatching or shading gradients. The composition is defined by a stark, dramatic lighting mechanic: a single overhead source casts a sharp, geometric cone of {{accent_color}} illumination directly onto the {{subject}}. Inside this cone of light, the surfaces are filled with a translucent, flat wash of {{accent_color}} that multiplies against the paper grain, highlighting the details of the {{subject}}. Outside the cone, the scene remains strictly monochromatic {{primary_color}} linework on the beige paper background, creating a high-contrast 'lit vs unlit' duality. The atmosphere is {{mood}}, emphasized by the isolation of the subject in the vast negative space of the paper. The texture is tactile and gritty, with visible paper fibers and random speckling interfering slightly with the ink lines. The perspective is strictly isometric, preserving parallel lines without vanishing points. The {{subject}} is depicted with obsessive, diagrammatic detail, capturing every button, screw, and edge with clinical precision. No border, full bleed, edge-to-edge paper texture, editorial illustration style, ligne claire influence, minimalist color palette, technical schematic aesthetic, vector-like clarity with analog texture, visual storytelling through selective lighting.",
-    "variables": [
-      "subject",
-      "primary_color",
-      "accent_color",
-      "mood",
-      "background_color"
-    ],
-    "image": "images/703edb95c9388e0ad120a56519dac271.jpg",
-    "tags": [
-      "isometric",
-      "technical illustration",
-      "ligne claire",
-      "architectural sketch",
-      "spot illustration",
-      "vector line art",
-      "minimalist",
-      "diagrammatic"
-    ],
-    "removeBackground": true,
-    "createdAt": "2026-02-10T16:29:06.811Z",
-    "background_prompt": "An empty isometric floor plan or desktop surface sketched in fine {{primary_color}} technical lines on textured beige recycled paper. The scene depicts a sparse environment with subtle architectural details like floorboards or desk edges, but completely devoid of any central subject. A single hanging lamp fixture is visible at the very top, casting a distinct, hard-edged geometric cone of {{accent_color}} light onto the empty surface below. The area inside the light cone is a flat, translucent wash of {{accent_color}}, while the rest of the environment is unlit line art. The texture of the paper is prominent, with visible grain and speckles. The perspective is high-angle orthographic.",
-    "supportImageReference": false,
-    "preview_image": "images/preview-1771537916450-l3nq.webp",
-    "description_en": "A precise isometric technical illustration style reminiscent of architectural drafting, characterized by uniform fine-line contours on textured recycled paper. The visual narrative is driven by a single, hard-edged cone of light that introduces a localized wash of color, leaving the rest of the composition in monochromatic outline.",
-    "description_fr": "Une illustration technique isométrique précise rappelant le dessin architectural, caractérisée par des contours uniformes et fins sur du papier recyclé texturé. La narration visuelle est guidée par un cône de lumière unique aux bords nets qui introduit un lavis de couleur localisé, laissant le reste de la composition en contour monochrome.",
-    "prompt_removebg": "Isometric technical illustration rendered as fine-point ink liner drawing composited on a clean {{background_color}} surface, featuring {{subject}} as the central focal point in a high-angle orthographic projection. The rendering technique mimics architectural drafting with a consistent, non-tapering hairline stroke weight in {{primary_color}} ink, devoid of cross-hatching or shading gradients. The composition is defined by a stark, dramatic lighting mechanic: a single overhead source casts a sharp, geometric cone of {{accent_color}} illumination directly onto the {{subject}}. Inside this cone of light, the surfaces are filled with a translucent, flat wash of {{accent_color}} that interacts with the {{subject}}'s geometry. Outside the cone, the scene remains strictly monochromatic {{primary_color}} linework, creating a clean anti-aliased silhouette against the {{background_color}}. The atmosphere is {{mood}}, emphasized by the isolation of the subject. The edges of the {{subject}} are crisp and vector-sharp, ensuring perfect separation from the {{background_color}}. The perspective is strictly isometric, preserving parallel lines without vanishing points. The {{subject}} is depicted with obsessive, diagrammatic detail, capturing every button, screw, and edge with clinical precision. No border, full bleed, editorial illustration style, ligne claire influence, minimalist color palette, technical schematic aesthetic, vector-like clarity, visual storytelling through selective lighting.",
-    "background_prompt_removebg": "An empty isometric floor plan or desktop surface sketched in fine {{primary_color}} technical lines, rendered against a flat {{background_color}} backdrop. The scene depicts a sparse environment with subtle architectural details like floorboards or desk edges, devoid of any central subject. A single hanging lamp fixture is visible at the very top, casting a distinct, hard-edged geometric cone of {{accent_color}} light onto the empty surface below. The area inside the light cone is a flat, translucent wash of {{accent_color}}. In the foreground, a decorative technical drafting frame with measurement hash marks in {{primary_color}} acts as an overlay, creating depth. The environment's lines fade cleanly into the {{background_color}} at the periphery, maintaining a sharp vector aesthetic suitable for compositing.",
-    "preview_image_removebg": "images/preview-1771537915779-q8bb.webp"
-  },
-  {
     "id": "folklore-woodcut",
     "title": "Matchbox Riso",
-    "description": "Une esthétique nostalgique imitant les étiquettes d'allumettes du milieu du siècle et l'impression Risograph grossière. Caractérisée par une palette duotone strictement limitée, des textures bruyantes et pointillées, et des formes définies par un espace négatif soustractif sur un fond de papier fibreux.",
-    "description_en": "A nostalgic aesthetic mimicking mid-century matchbox labels and coarse Risograph printing. Characterized by a strictly limited duotone palette, heavy stippled noise textures, and forms defined by subtractive negative space carving against a fibrous paper background.",
-    "description_fr": "Une esthétique nostalgique imitant les étiquettes d'allumettes du milieu du siècle et l'impression Risograph grossière. Caractérisée par une palette duotone strictement limitée, des textures bruyantes et pointillées, et des formes définies par un espace négatif soustractif sur un fond de papier fibreux.",
-    "prompt": "Vintage matchbox label illustration style, mid-century commercial woodblock print aesthetic, Risograph duotone technique, the {{subject}} is rendered as a bold graphic form filling the frame, heavy ink saturation with visible paper grain texture showing through, rendering is flat and iconographic with no gradients or smooth shading, depth is achieved purely through coarse stippling and density of ink dots, the {{subject}} is depicted primarily in blocks of {{primary_color}} ink where internal details like facial features and clothing folds are carved out in negative space revealing the underlying paper tone, secondary elements and environmental details are printed in {{accent_color}} ink creating a vibrating visual contrast, the composition is dense and full-bleed with the textural grit extending to all four corners, lighting is non-directional and purely graphic with highlights represented by total absence of ink, shadows are solid blocks of {{primary_color}}, texture is tactile and rough resembling uncoated cardstock or pulp paper, edges are slightly irregular and organic mimicking ink bleed and stamp pressure variations, the visual language borrows from 1950s folk ephemera and cheap offset lithography, atmospheric perspective is flattened into two distinct color layers, strict color separation with no blending between {{primary_color}} and {{accent_color}}, high-contrast graphic impact, {{mood}}, distinct retro print artifacts like salt-and-pepper noise and slight registration misalignment, tactile matte finish.",
-    "background_prompt": "A textured vintage paper background featuring a coarse woodblock landscape pattern, purely graphic environment with no central subject, rendered in a limited palette of {{primary_color}} and {{accent_color}} ink on textured stock, abstract foliage and terrain suggested by rough stippled hatching and solid ink blocks, flat perspective typical of 1950s matchbox art, high noise and paper grain visible throughout, ink starvation textures in solid areas, negative space carving defines the forms against the paper tone, full bleed texture.",
+    "description": "Une fusion distinctive de la gravure sur bois vintage et de l'esthétique Risograph lo-fi, caractérisée par une palette duotone stricte et un grain de texture prononcé. Le style imite l'aspect de l'encre 'affamée' sur du papier grossier, où des lignes gougées rugueuses et un bruit pointillé remplacent les dégradés lisses pour créer une atmosphère rustique et folklorique.",
+    "description_en": "A distinctive fusion of vintage woodblock printing and lo-fi Risograph aesthetics, characterized by a strict duotone palette and heavy textural grain. The style mimics the look of 'starved ink' on coarse paper, where rough gouged lines and stippled noise replace smooth shading to create a rustic, folkloric atmosphere.",
+    "description_fr": "Une fusion distinctive de la gravure sur bois vintage et de l'esthétique Risograph lo-fi, caractérisée par une palette duotone stricte et un grain de texture prononcé. Le style imite l'aspect de l'encre 'affamée' sur du papier grossier, où des lignes gougées rugueuses et un bruit pointillé remplacent les dégradés lisses pour créer une atmosphère rustique et folklorique.",
+    "prompt": "A vintage relief print illustration in the style of a weathered woodcut or linocut, rendered with the specific aesthetic of a two-color Risograph print. The medium mimics analog ink transfer on coarse, fibrous paper, featuring significant texture, ink starvation, and 'salt-and-pepper' noise where the ink fails to fully saturate the paper tooth. The image is a strict duotone composition occupying the full bleed of the frame with no margins. The {{subject}} is rendered primarily in a deep, desaturated {{primary_color}} ink, defining the main volume and shadow masses with heavy, gouged-looking strokes and rough hatching. There are no smooth gradients; shading is achieved entirely through stippling, cross-hatching, and the varying density of the ink texture. The secondary elements are rendered in a faded {{accent_color}} ink, used for the ground, environmental accents, or props, providing a vintage contrast to the primary figure. The lighting is non-directional and graphic, defined entirely by the binary contrast between the inked areas and the negative space. The edges of the forms are organic, jagged, and slightly distressed, mimicking the physical resistance of a carving tool against wood and the imperfection of a stamp. The composition is iconic and graphic, reminiscent of classic fantasy paperback spot illustrations or tarot symbology. The atmosphere is {{mood}}, nostalgic, and rustic. The background acts as the negative space, appearing as a textured, uncolored cream or off-white paper surface which serves as the high-key value. {{lighting}} influences the scene only by determining where the heavy ink shadows fall, creating a high-contrast, flat look without volumetric rendering. Reinforcement tags: vintage woodblock, risograph grain, duotone printing, linocut texture, rough ink bleed, stippled shading, gouge marks, folklore aesthetic, analog print, heavy paper texture, ink starvation, rustic illustration, graphic masses, no gradients, full bleed, no border, no frame, no canvas, high contrast, tactile grunge.",
+    "background_prompt": "A minimalist, textured landscape scene rendered in a vintage woodcut and Risograph style, devoid of any central figures. The environment is depicted using rough, gouged lines and stippled noise patterns. The ground and geological features are inked in a faded {{accent_color}}, while deeper shadows and vegetation are hinted at with desaturated {{primary_color}} strokes. The texture mimics 'starved ink' on coarse paper, with significant grain and salt-and-pepper noise. The composition is open and atmospheric, providing a rustic setting with high contrast and no smooth gradients, evoking a sense of ancient folklore and analog printmaking.",
     "variables": [
       "subject",
       "primary_color",
       "accent_color",
       "mood",
+      "lighting",
       "background_color"
     ],
     "image": "images/haec6aowsaag52z.jpg",
-    "preview_image": "images/preview-1771537916573-5us5.webp",
+    "preview_image": "images/preview-1771538916176-upfx.webp",
     "tags": [
-      "matchbox art",
+      "woodcut",
       "risograph",
-      "woodblock print",
+      "linocut",
       "duotone",
-      "mid-century illustration",
-      "stipple texture",
-      "vintage ephemera",
-      "lo-fi print"
+      "vintage illustration",
+      "stippled texture",
+      "folklore",
+      "relief print"
     ],
     "removeBackground": true,
     "supportImageReference": false,
     "createdAt": "2026-02-14T21:33:46.992Z",
-    "prompt_removebg": "Vintage matchbox label illustration style, mid-century commercial woodblock print aesthetic, Risograph duotone technique, the {{subject}} is rendered as a bold graphic form, heavy ink saturation with visible grain texture showing through, rendering is flat and iconographic with no gradients or smooth shading, depth is achieved purely through coarse stippling and density of ink dots, the {{subject}} is depicted primarily in blocks of {{primary_color}} ink where internal details like facial features and clothing folds are carved out in negative space revealing the underlying {{background_color}} tone, secondary elements are printed in {{accent_color}} ink creating a vibrating visual contrast, composited on a clean {{background_color}} surface, the subject's silhouette is defined by rough stamp-like edges that interact naturally with the {{background_color}} backdrop, lighting is non-directional and purely graphic with highlights represented by total absence of ink (showing {{background_color}}), shadows are solid blocks of {{primary_color}}, texture is tactile and rough, edges are slightly irregular and organic mimicking ink bleed and stamp pressure variations calibrated for {{background_color}} contrast, the visual language borrows from 1950s folk ephemera and cheap offset lithography, atmospheric perspective is flattened into two distinct color layers, strict color separation with no blending between {{primary_color}} and {{accent_color}}, high-contrast graphic impact, {{mood}}, distinct retro print artifacts like salt-and-pepper noise and slight registration misalignment, tactile matte finish.",
-    "background_prompt_removebg": "A textured vintage paper background featuring a coarse woodblock landscape pattern, purely graphic environment with no central subject, rendered in a limited palette of {{primary_color}} and {{accent_color}} ink, abstract foliage and terrain suggested by rough stippled hatching and solid ink blocks, flat perspective typical of 1950s matchbox art, high noise and paper grain visible throughout, ink starvation textures in solid areas, negative space carving defines the forms against the {{background_color}} tone, a decorative ornamental frame of {{accent_color}} geometric patterns borders the scene creating a vintage label effect, the entire texture fades atmospherically into the {{background_color}} surface at the outer edges.",
-    "preview_image_removebg": "images/preview-1771537915966-xd8o.webp",
+    "prompt_removebg": "A vintage relief print illustration in the style of a weathered woodcut or linocut, rendered with the specific aesthetic of a two-color Risograph print. The medium mimics analog ink transfer on coarse, fibrous paper, featuring significant texture, ink starvation, and 'salt-and-pepper' noise where the ink fails to fully saturate the paper tooth. The image is a strict duotone composition occupying the full bleed of the frame with no margins. The {{subject}} is rendered primarily in a deep, desaturated {{primary_color}} ink, defining the main volume and shadow masses with heavy, gouged-looking strokes and rough hatching. There are no smooth gradients; shading is achieved entirely through stippling, cross-hatching, and the varying density of the ink texture. The secondary elements are rendered in a faded {{accent_color}} ink, used for the ground, environmental accents, or props, providing a vintage contrast to the primary figure. The lighting is non-directional and graphic, defined entirely by the binary contrast between the inked areas and the negative space. The edges of the forms are organic, jagged, and slightly distressed, mimicking the physical resistance of a carving tool against wood and the imperfection of a stamp. The composition is iconic and graphic, reminiscent of classic fantasy paperback spot illustrations or tarot symbology. The atmosphere is {{mood}}, nostalgic, and rustic. The subject is rendered against a flat {{background_color}} backdrop, ensuring the rough, stamped edges of the ink texture are preserved and clearly separated from the {{background_color}} for easy chroma keying or masking. {{lighting}} influences the scene only by determining where the heavy ink shadows fall, creating a high-contrast, flat look without volumetric rendering. Reinforcement tags: vintage woodblock, risograph grain, duotone printing, linocut texture, rough ink bleed, stippled shading, gouge marks, folklore aesthetic, analog print, heavy paper texture, ink starvation, rustic illustration, graphic masses, no gradients, full bleed, no border, no frame, no canvas, high contrast, tactile grunge, {{background_color}} background.",
+    "background_prompt_removebg": "A minimalist, textured landscape scene rendered in a vintage woodcut and Risograph style, devoid of any central figures. The environment is depicted using rough, gouged lines and stippled noise patterns. The ground and geological features are inked in a faded {{accent_color}}, while deeper shadows and vegetation are hinted at with desaturated {{primary_color}} strokes. The texture mimics 'starved ink' on coarse paper, with significant grain and salt-and-pepper noise. In the immediate foreground, a rustic, ornamental border frame made of rough ink splatters and wood-carved motifs frames the view, adding depth. The entire scene, including the textured landscape and the foreground frame, is composited against a flat {{background_color}} surface, with the ink edges feathering naturally into the {{background_color}} to simulate a print on colored paper.",
+    "preview_image_removebg": "images/preview-1771538916272-vbd5.webp",
     "backgroundType": 0
   },
   {
@@ -598,8 +565,8 @@
       "background_color"
     ],
     "image": "images/b2ceecc02fae1f8eda8c33dbdbf1276c.jpg",
-    "preview_image": "images/preview-1771537919550-mkqg.webp",
-    "preview_image_removebg": "images/preview-1771537919495-6cjn.webp",
+    "preview_image": "images/preview-1771538727788-trzo.webp",
+    "preview_image_removebg": "images/preview-1771538727593-atkw.webp",
     "tags": [
       "gestural",
       "dry ink",
@@ -926,8 +893,8 @@
       "background_color"
     ],
     "image": "images/730ed23794d57d565c769e2260414f75.jpg",
-    "preview_image": "images/preview-1771537924840-9l5j.webp",
-    "preview_image_removebg": "images/preview-1771537924249-ag0c.webp",
+    "preview_image": "images/preview-1771538749483-n7bl.webp",
+    "preview_image_removebg": "images/preview-1771538749223-a9zn.webp",
     "tags": [
       "torn paper",
       "flat color",
@@ -938,7 +905,8 @@
       "ryo takemasa style",
       "poster art"
     ],
-    "createdAt": "2026-02-17T22:59:54.739Z"
+    "createdAt": "2026-02-17T22:59:54.739Z",
+    "backgroundType": 2
   },
   {
     "id": "retro-pixel",
@@ -959,8 +927,8 @@
       "background_color"
     ],
     "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
-    "preview_image": "images/preview-1771537924145-p4a4.webp",
-    "preview_image_removebg": "images/preview-1771537925183-me2o.webp",
+    "preview_image": "images/preview-1771538792428-ligj.webp",
+    "preview_image_removebg": "images/preview-1771538792407-xjd1.webp",
     "tags": [
       "pixel art",
       "16-bit",
@@ -971,7 +939,8 @@
       "aliased",
       "indexed color"
     ],
-    "createdAt": "2026-02-17T23:02:22.428Z"
+    "createdAt": "2026-02-17T23:02:22.428Z",
+    "backgroundType": 2
   },
   {
     "id": "scribble-analog",
