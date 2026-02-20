@@ -1,0 +1,32 @@
+{
+  "id": "solar-ligne-claire",
+  "title": "Solar Ligne-Claire",
+  "description": "Une esthétique sophistiquée de 'Ligne Claire' rappelant les romans graphiques de science-fiction européens classiques des années 1970 et 80. Ce style associe des contours à l'encre noire précis et uniformes à une palette vibrante et surréaliste de couleurs gouachées plates – contrastant souvent des sols chauds saumon ou terre cuite avec des ciels azur frais – et utilise des ombres aux bords nets et aux tons froids pour définir le volume sans dégradés.",
+  "description_en": "A sophisticated 'Ligne Claire' (clear line) aesthetic reminiscent of classic European sci-fi graphic novels from the 1970s and 80s. This style combines precise, uniform black ink contours with a vibrant, surreal palette of flat gouache colors—often contrasting warm salmon or terracotta grounds with cool azure skies—and uses hard-edged, cool-toned shadows to define volume without gradients.",
+  "description_fr": "Une esthétique sophistiquée de 'Ligne Claire' rappelant les romans graphiques de science-fiction européens classiques des années 1970 et 80. Ce style associe des contours à l'encre noire précis et uniformes à une palette vibrante et surréaliste de couleurs gouachées plates – contrastant souvent des sols chauds saumon ou terre cuite avec des ciels azur frais – et utilise des ombres aux bords nets et aux tons froids pour définir le volume sans dégradés.",
+  "prompt": "Masterpiece graphic novel illustration in the style of European sci-fi 'Ligne Claire' (Clear Line), showcasing {{subject}}. The artwork is executed with surgical precision using thin, uniform black ink outlines that define every structural edge with constant weight, devoid of hatching or cross-hatching for shading. The rendering mimics flat gouache or cel-shaded digital coloring, avoiding soft airbrushing in favor of distinct, hard-edged blocks of color. The lighting creates sharp, geometric shadow shapes that are colored in cool purples, deep blues, or teals rather than pure black, contrasting against a high-key environment. The color palette is surreal and pastel-rich, dominated by {{primary_color}} tones in the foreground elements and striking {{accent_color}} highlights, set against a backdrop of vast, atmospheric depth. Textures are smooth and matte, with occasional stippling used only to suggest grit on weathered surfaces. The composition emphasizes immense scale and clarity, with a deep depth of field where even distant elements retain their crisp outlines. The image must be FULL BLEED, occupying the absolute ENTIRE dedicated space, stretching edge-to-edge with NO borders, NO white margins, NO frames, and NO canvas edges visible. The atmosphere is contemplative, silent, and vast, evoking a 'used future' aesthetic where technology meets organic landscapes. High-resolution, crisp vector-like finish, 8k definition.",
+  "prompt_removebg": "Masterpiece graphic novel illustration in the style of European sci-fi 'Ligne Claire' (Clear Line), showcasing {{subject}}. The artwork is executed with surgical precision using thin, uniform black ink outlines that define every structural edge with constant weight, devoid of hatching or cross-hatching for shading. The rendering mimics flat gouache or cel-shaded digital coloring, avoiding soft airbrushing in favor of distinct, hard-edged blocks of color. The lighting creates sharp, geometric shadow shapes that are colored in cool purples, deep blues, or teals rather than pure black. The color palette is surreal and pastel-rich, dominated by {{primary_color}} tones with striking {{accent_color}} highlights. Textures are smooth and matte, with occasional stippling used only to suggest grit on weathered surfaces. The {{subject}} is composited on a clean {{background_color}} surface, with the crisp ink outlines creating a sharp, definitive silhouette against the {{background_color}} backdrop. There are no background elements, just the isolated subject rendered in high-fidelity 'Ligne Claire' style. High-resolution, crisp vector-like finish, 8k definition.",
+  "background_prompt": "A vast, silent sci-fi landscape rendered in a precise 'Ligne Claire' graphic novel style. The scene depicts an expansive terrain of rolling dunes, rocky plateaus, or ancient technological ruins, colored in shades of {{primary_color}} and weathered earth tones. The sky is a smooth, flat gradient, perhaps featuring a massive, pale celestial body, transitioning from pale haze to deep zenith. Hard-edged, cool-toned shadows stretch across the ground, cast by a bright, directional light source. The environment is detailed with fine, uniform ink lines and flat matte colors, evoking a sense of infinite scale and quiet desolation. No figures or main subjects, just the immersive, atmospheric world.",
+  "background_prompt_removebg": "A vast, silent sci-fi landscape rendered in a precise 'Ligne Claire' graphic novel style. The scene depicts an expansive terrain of rolling dunes, rocky plateaus, or ancient technological ruins, colored in shades of {{primary_color}} and weathered earth tones. The sky is a smooth, flat gradient, perhaps featuring a massive, pale celestial body. Hard-edged, cool-toned shadows stretch across the ground. In the immediate foreground, an intricate, mechanical or ornamental frame overlay mimics the style of technical schematics or spaceship windows, creating a window through which the landscape is viewed. This entire scene, including the frame, floats against a flat {{background_color}} backdrop, with the outer edges of the frame clearly defined by sharp black ink lines against the {{background_color}}.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/hbifehkwiaaiiwg.jpg",
+  "preview_image": "images/preview-1771627104470-rbsk.webp",
+  "preview_image_removebg": "images/preview-1771627104457-7i3g.webp",
+  "tags": [
+    "ligne claire",
+    "moebius style",
+    "sci-fi comic",
+    "flat shading",
+    "ink outlines",
+    "pastel colors",
+    "bande dessinée",
+    "cel shaded"
+  ],
+  "backgroundType": 2,
+  "createdAt": "2026-02-20T22:38:29.417Z"
+}

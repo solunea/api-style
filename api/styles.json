@@ -680,5 +680,71 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-19T22:23:26.336Z"
+  },
+  {
+    "id": "phosphor-topology",
+    "title": "Phosphor Topology",
+    "description": "Un style d'illustration Néo-Pop audacieux défini par des contours à l'encre noire épais et uniformes et des blocs de couleurs plates et très saturées, rappelant l'art vectoriel moderne et les bandes dessinées classiques. Le langage visuel utilise des 'lignes d'action' rayonnantes et un ombrage 'cel-shading' aux bords nets pour créer une esthétique dynamique proche de l'autocollant, avec une texture subtile de sérigraphie.",
+    "description_en": "A bold Neo-Pop illustration style defined by thick, uniform ink outlines and flat, highly saturated color blocking reminiscent of modern vector art and classic comic strips. The visual language uses radiating 'action lines' and hard-edged cel-shading to create a dynamic, sticker-like aesthetic with a subtle screenprint texture.",
+    "description_fr": "Un style d'illustration Néo-Pop audacieux défini par des contours à l'encre noire épais et uniformes et des blocs de couleurs plates et très saturées, rappelant l'art vectoriel moderne et les bandes dessinées classiques. Le langage visuel utilise des 'lignes d'action' rayonnantes et un ombrage 'cel-shading' aux bords nets pour créer une esthétique dynamique proche de l'autocollant, avec une texture subtile de sérigraphie.",
+    "image": "images/ha44ztra8aek2nn.jpg",
+    "preview_image": "images/preview-1771626857557-zqqq.webp",
+    "preview_image_removebg": "images/preview-1771626857717-cas9.webp",
+    "tags": [
+      "neo-pop",
+      "vector art",
+      "thick outlines",
+      "flat color",
+      "cel-shading",
+      "comic style",
+      "pop art",
+      "screen print"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-20T22:34:21.421Z"
+  },
+  {
+    "id": "vivid-pulp",
+    "title": "Vivid Pulp",
+    "description": "Un style graphique percutant qui juxtapose un rendu de personnage hyper-réaliste et dimensionnel contre des arrière-plans monochromatiques austères et plats. Il évoque l'énergie des couvertures de magazines pulp vintage, des affiches de films d'horreur et des écrans de chargement style GTA grâce à un éclairage clair-obscur dramatique, des textures de surface scintillantes et une isolation audacieuse de la silhouette.",
+    "description_en": "A high-impact graphic style that juxtaposes hyper-realistic, dimensional character rendering against stark, flat, monochromatic backgrounds. It evokes the energy of vintage pulp magazine covers, horror movie posters, and GTA-style loading screens through dramatic chiaroscuro lighting, glistening surface textures, and bold silhouette isolation.",
+    "description_fr": "Un style graphique percutant qui juxtapose un rendu de personnage hyper-réaliste et dimensionnel contre des arrière-plans monochromatiques austères et plats. Il évoque l'énergie des couvertures de magazines pulp vintage, des affiches de films d'horreur et des écrans de chargement style GTA grâce à un éclairage clair-obscur dramatique, des textures de surface scintillantes et une isolation audacieuse de la silhouette.",
+    "image": "images/hay3_sbxwaettp3.jpg",
+    "preview_image": "images/preview-1771626927867-y2kq.webp",
+    "preview_image_removebg": "images/preview-1771626927643-k7d6.webp",
+    "tags": [
+      "pulp art",
+      "vintage horror",
+      "gta style",
+      "high contrast",
+      "chiaroscuro",
+      "digital airbrush",
+      "poster art",
+      "saturated realism"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-20T22:35:34.527Z"
+  },
+  {
+    "id": "solar-ligne-claire",
+    "title": "Solar Ligne-Claire",
+    "description": "Une esthétique sophistiquée de 'Ligne Claire' rappelant les romans graphiques de science-fiction européens classiques des années 1970 et 80. Ce style associe des contours à l'encre noire précis et uniformes à une palette vibrante et surréaliste de couleurs gouachées plates – contrastant souvent des sols chauds saumon ou terre cuite avec des ciels azur frais – et utilise des ombres aux bords nets et aux tons froids pour définir le volume sans dégradés.",
+    "description_en": "A sophisticated 'Ligne Claire' (clear line) aesthetic reminiscent of classic European sci-fi graphic novels from the 1970s and 80s. This style combines precise, uniform black ink contours with a vibrant, surreal palette of flat gouache colors—often contrasting warm salmon or terracotta grounds with cool azure skies—and uses hard-edged, cool-toned shadows to define volume without gradients.",
+    "description_fr": "Une esthétique sophistiquée de 'Ligne Claire' rappelant les romans graphiques de science-fiction européens classiques des années 1970 et 80. Ce style associe des contours à l'encre noire précis et uniformes à une palette vibrante et surréaliste de couleurs gouachées plates – contrastant souvent des sols chauds saumon ou terre cuite avec des ciels azur frais – et utilise des ombres aux bords nets et aux tons froids pour définir le volume sans dégradés.",
+    "image": "images/hbifehkwiaaiiwg.jpg",
+    "preview_image": "images/preview-1771627104470-rbsk.webp",
+    "preview_image_removebg": "images/preview-1771627104457-7i3g.webp",
+    "tags": [
+      "ligne claire",
+      "moebius style",
+      "sci-fi comic",
+      "flat shading",
+      "ink outlines",
+      "pastel colors",
+      "bande dessinée",
+      "cel shaded"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-20T22:38:29.417Z"
   }
 ]

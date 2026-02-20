@@ -690,16 +690,24 @@ async function confirmDelete() {
 // --- Prompt Mode Toggle ---
 
 function switchPromptMode(mode) {
+  // Save current textarea content to the respective state before switching
+  if (currentPromptMode === 'standard') {
+    generatedPrompts.standard = document.getElementById('form-prompt').value;
+    generatedBgPrompts.standard = document.getElementById('form-background-prompt').value;
+  } else if (currentPromptMode === 'removebg') {
+    generatedPrompts.removebg = document.getElementById('form-prompt').value;
+    generatedBgPrompts.removebg = document.getElementById('form-background-prompt').value;
+  }
+
   currentPromptMode = mode;
   document.getElementById('prompt-tab-standard').classList.toggle('active', mode === 'standard');
   document.getElementById('prompt-tab-removebg').classList.toggle('active', mode === 'removebg');
   document.getElementById('bg-prompt-tab-standard').classList.toggle('active', mode === 'standard');
   document.getElementById('bg-prompt-tab-removebg').classList.toggle('active', mode === 'removebg');
 
-  if (generatedPrompts.standard || generatedPrompts.removebg) {
-    document.getElementById('form-prompt').value = mode === 'removebg' ? generatedPrompts.removebg : generatedPrompts.standard;
-    document.getElementById('form-background-prompt').value = mode === 'removebg' ? generatedBgPrompts.removebg : generatedBgPrompts.standard;
-  }
+  // Load the target state into textareas
+  document.getElementById('form-prompt').value = mode === 'removebg' ? (generatedPrompts.removebg || '') : (generatedPrompts.standard || '');
+  document.getElementById('form-background-prompt').value = mode === 'removebg' ? (generatedBgPrompts.removebg || '') : (generatedBgPrompts.standard || '');
 }
 
 function resetGeneratedPrompts() {

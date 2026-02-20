@@ -94,8 +94,8 @@
             <div style="display:flex;align-items:center;justify-content:space-between">
               <label for="form-prompt">Prompt</label>
               <div class="tab-switch" style="margin:0">
-                <button type="button" class="tab active" id="prompt-tab-standard" onclick="switchPromptMode('standard')">Standard</button>
-                <button type="button" class="tab" id="prompt-tab-removebg" onclick="switchPromptMode('removebg')">RemoveBg</button>
+                <button type="button" class="tab active" id="prompt-tab-standard" onclick="switchPromptMode('standard')">Avec fond</button>
+                <button type="button" class="tab" id="prompt-tab-removebg" onclick="switchPromptMode('removebg')">Sans fond</button>
               </div>
             </div>
             <textarea id="form-prompt" rows="3" placeholder="Le prompt utilisé pour générer ce style..."></textarea>
@@ -110,11 +110,11 @@
               <div id="preview-container" class="preview-container" style="display:none">
                 <div style="display:flex;gap:12px;flex-wrap:wrap">
                   <div style="flex:1;min-width:200px;text-align:center">
-                    <small><strong>Standard</strong></small>
+                    <small><strong>Avec fond</strong></small>
                     <img id="preview-image" src="" alt="Preview Standard" style="width:100%;border-radius:8px;margin-top:4px">
                   </div>
                   <div id="preview-removebg-wrap" style="flex:1;min-width:200px;text-align:center;display:none">
-                    <small><strong>RemoveBg</strong></small>
+                    <small><strong>Sans fond</strong></small>
                     <img id="preview-image-removebg" src="" alt="Preview RemoveBg" style="width:100%;border-radius:8px;margin-top:4px">
                   </div>
                 </div>
@@ -131,8 +131,8 @@
             <div style="display:flex;align-items:center;justify-content:space-between">
               <label for="form-background-prompt">Background Prompt</label>
               <div class="tab-switch" style="margin:0">
-                <button type="button" class="tab active" id="bg-prompt-tab-standard" onclick="switchPromptMode('standard')">Standard</button>
-                <button type="button" class="tab" id="bg-prompt-tab-removebg" onclick="switchPromptMode('removebg')">RemoveBg</button>
+                <button type="button" class="tab active" id="bg-prompt-tab-standard" onclick="switchPromptMode('standard')">Avec fond</button>
+                <button type="button" class="tab" id="bg-prompt-tab-removebg" onclick="switchPromptMode('removebg')">Sans fond</button>
               </div>
             </div>
             <textarea id="form-background-prompt" rows="3" placeholder="Prompt pour générer le fond (arrière-plan + premier plan)..."></textarea>
