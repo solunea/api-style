@@ -112,6 +112,15 @@ async function setBackgroundType(id, value, btn) {
   if (!style) return;
   style.backgroundType = value;
 
+  // Swap the card image immediately
+  const img = card.querySelector('.card-image');
+  if (img) {
+    const src = value === 1
+      ? (img.dataset.previewRemovebg || img.dataset.preview)
+      : (img.dataset.preview || img.dataset.previewRemovebg);
+    if (src) img.src = src;
+  }
+
   try {
     await updateStyle(id, { backgroundType: value });
   } catch (err) {
@@ -227,11 +236,17 @@ function renderStyles(styles) {
   empty.style.display = 'none';
 
   grid.innerHTML = styles.map((s) => {
-    const displayImage = s.preview_image || s.image;
+    const bgType = s.backgroundType ?? 2;
+    const displayImage = bgType === 1
+      ? (s.preview_image_removebg || s.preview_image || s.image)
+      : (s.preview_image || s.image);
     return `
     <div class="style-card" data-id="${s.id}">
-      ${displayImage
-        ? `<img class="card-image" src="${displayImage}" alt="${s.title}" onerror="this.outerHTML='<div class=\'card-image-placeholder\'>🎨</div>'">`
+      ${(displayImage || s.preview_image_removebg)
+        ? `<img class="card-image" src="${displayImage || ''}" alt="${s.title}"
+            data-preview="${s.preview_image || s.image || ''}"
+            data-preview-removebg="${s.preview_image_removebg || s.preview_image || s.image || ''}"
+            onerror="this.outerHTML='<div class=\'card-image-placeholder\'>🎨</div>'">`
         : '<div class="card-image-placeholder">🎨</div>'}
       <div class="card-body">
         <div class="card-header">
@@ -690,24 +705,16 @@ async function confirmDelete() {
 // --- Prompt Mode Toggle ---
 
 function switchPromptMode(mode) {
-  // Save current textarea content to the respective state before switching
-  if (currentPromptMode === 'standard') {
-    generatedPrompts.standard = document.getElementById('form-prompt').value;
-    generatedBgPrompts.standard = document.getElementById('form-background-prompt').value;
-  } else if (currentPromptMode === 'removebg') {
-    generatedPrompts.removebg = document.getElementById('form-prompt').value;
-    generatedBgPrompts.removebg = document.getElementById('form-background-prompt').value;
-  }
-
   currentPromptMode = mode;
   document.getElementById('prompt-tab-standard').classList.toggle('active', mode === 'standard');
   document.getElementById('prompt-tab-removebg').classList.toggle('active', mode === 'removebg');
   document.getElementById('bg-prompt-tab-standard').classList.toggle('active', mode === 'standard');
   document.getElementById('bg-prompt-tab-removebg').classList.toggle('active', mode === 'removebg');
 
-  // Load the target state into textareas
-  document.getElementById('form-prompt').value = mode === 'removebg' ? (generatedPrompts.removebg || '') : (generatedPrompts.standard || '');
-  document.getElementById('form-background-prompt').value = mode === 'removebg' ? (generatedBgPrompts.removebg || '') : (generatedBgPrompts.standard || '');
+  if (generatedPrompts.standard || generatedPrompts.removebg) {
+    document.getElementById('form-prompt').value = mode === 'removebg' ? (generatedPrompts.removebg || '') : (generatedPrompts.standard || '');
+    document.getElementById('form-background-prompt').value = mode === 'removebg' ? (generatedBgPrompts.removebg || '') : (generatedBgPrompts.standard || '');
+  }
 }
 
 function resetGeneratedPrompts() {

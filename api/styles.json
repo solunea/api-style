@@ -134,21 +134,21 @@
   {
     "id": "folklore-woodcut",
     "title": "Matchbox Riso",
-    "description": "Une fusion distinctive de la gravure sur bois vintage et de l'esthétique Risograph lo-fi, caractérisée par une palette duotone stricte et un grain de texture prononcé. Le style imite l'aspect de l'encre 'affamée' sur du papier grossier, où des lignes gougées rugueuses et un bruit pointillé remplacent les dégradés lisses pour créer une atmosphère rustique et folklorique.",
-    "description_en": "A distinctive fusion of vintage woodblock printing and lo-fi Risograph aesthetics, characterized by a strict duotone palette and heavy textural grain. The style mimics the look of 'starved ink' on coarse paper, where rough gouged lines and stippled noise replace smooth shading to create a rustic, folkloric atmosphere.",
-    "description_fr": "Une fusion distinctive de la gravure sur bois vintage et de l'esthétique Risograph lo-fi, caractérisée par une palette duotone stricte et un grain de texture prononcé. Le style imite l'aspect de l'encre 'affamée' sur du papier grossier, où des lignes gougées rugueuses et un bruit pointillé remplacent les dégradés lisses pour créer une atmosphère rustique et folklorique.",
+    "description": "Une esthétique d'impression risographie ou de gravure sur bois bicolore vintage, caractérisée par un grain grossier, une application d'encre à fort contraste et une absence totale de dégradés. Le style imite les illustrations ponctuelles de livres de fantasy du milieu du siècle avec des bords rugueux et texturés, des ombrages en pointillés et une palette de couleurs strictement limitée simulant le saignement de l'encre analogique sur du papier mat.",
+    "description_en": "A vintage two-tone risograph or woodblock print aesthetic characterized by coarse grain, high-contrast ink application, and a distinct lack of gradients. The style mimics mid-century fantasy book spot illustrations with rough, textured edges, stippled shading, and a strictly limited color palette simulating analog ink bleed on matte paper.",
+    "description_fr": "Une esthétique d'impression risographie ou de gravure sur bois bicolore vintage, caractérisée par un grain grossier, une application d'encre à fort contraste et une absence totale de dégradés. Le style imite les illustrations ponctuelles de livres de fantasy du milieu du siècle avec des bords rugueux et texturés, des ombrages en pointillés et une palette de couleurs strictement limitée simulant le saignement de l'encre analogique sur du papier mat.",
     "image": "images/haec6aowsaag52z.jpg",
-    "preview_image": "images/preview-1771538916176-upfx.webp",
-    "preview_image_removebg": "images/preview-1771538916272-vbd5.webp",
+    "preview_image": "images/preview-1771627497982-75g8.webp",
+    "preview_image_removebg": "images/preview-1771627497892-zg1a.webp",
     "tags": [
-      "woodcut",
       "risograph",
+      "woodcut",
       "linocut",
-      "duotone",
-      "vintage illustration",
-      "stippled texture",
-      "folklore",
-      "relief print"
+      "two-color",
+      "stippling",
+      "vintage print",
+      "coarse grain",
+      "analog texture"
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-14T21:33:46.992Z"
@@ -160,8 +160,8 @@
     "description_en": "A rigorous geometric abstraction rooted in the Bauhaus and De Stijl movements, reducing complex forms to fundamental primitives like circles, triangles, and rectangles. The style utilizes a strict Neoplasticist palette of primary colors against a flat, off-white background, emphasizing structural balance and vector precision over realistic representation.",
     "description_fr": "Une abstraction géométrique rigoureuse enracinée dans les mouvements Bauhaus et De Stijl, réduisant les formes complexes à des primitives fondamentales comme des cercles, des triangles et des rectangles. Le style utilise une palette néoplasticiste stricte de couleurs primaires sur un fond blanc cassé plat, privilégiant l'équilibre structurel et la précision vectorielle sur la représentation réaliste.",
     "image": "images/g_v0edxauaack44.jpg",
-    "preview_image": "images/preview-1771537915792-0j2k.webp",
-    "preview_image_removebg": "images/preview-1771537915915-4mqp.webp",
+    "preview_image": "images/preview-1771627540350-npby.webp",
+    "preview_image_removebg": "images/preview-1771627540032-4yal.webp",
     "tags": [
       "bauhaus",
       "de stijl",
@@ -194,7 +194,7 @@
       "kawaii",
       "stop-motion aesthetic"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-14T21:39:17.824Z"
   },
   {
@@ -436,7 +436,7 @@
       "digital noise",
       "chiaroscuro"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
   {
@@ -568,7 +568,7 @@
       "aliased",
       "indexed color"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T23:02:22.428Z"
   },
   {
@@ -722,7 +722,7 @@
       "poster art",
       "saturated realism"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-20T22:35:34.527Z"
   },
   {
