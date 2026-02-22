@@ -411,11 +411,16 @@ app.post('/api/analyze-all', async (req, res) => {
 
 // Prompt used by VLM mode to describe the subject of the reference image
 const IMAGE_DESCRIPTION_PROMPT =
-  "Describe the main subject of this image in 5 to 15 words for use as a {{subject}} placeholder. " +
-  "Focus only on WHAT is depicted: the main object, person, animal, or scene. " +
-  "Be specific but concise. Examples: 'a golden retriever puppy sitting on grass', 'a red sports car on a mountain road', 'a smiling woman in a blue dress'. " +
-  "Do NOT describe style, lighting, mood, colors, or background details. " +
-  "Write in English. Start directly with the subject description.";
+  `Describe ONLY the subject matter of this image for use as a {{subject}} placeholder in a style prompt template. " +
+        "Focus exclusively on WHAT is depicted: " +
+        "the main subject and its pose, action, or expression (if a person: specify skin tone, ethnicity, hair color and style, facial features, body type, clothing details, accessories, shoes, jewelry, tattoos, distinctive markings...), " +
+        "secondary subjects or objects present, their spatial arrangement (foreground, middle ground, background), including furniture, vehicles, buildings, plants, animals, tools, equipment, decorative items, or environmental elements, and describe any actions or interactions they are engaged in, " +
+        "camera angle and framing (close-up, medium shot, wide shot, overhead, low angle, dutch angle, eye-level...), " +
+        "any visible text, symbols, notable details, or brand logos/trademarks, " +
+        "and any recognizable brands, company names, or product markings. " +
+        "Do NOT describe: artistic style, rendering technique, color palette, lighting, textures, materials, mood, or atmosphere — these are handled separately by the style template. " +
+        "Write a single factual paragraph of 50 to 100 words in English. " +
+        "Do NOT start with 'this image shows' or 'a photo of'. Describe the subject directly.`;
 
 // Helper: resolve a reference_image field to a data URI
 function resolveImageToDataUri(reference_image) {

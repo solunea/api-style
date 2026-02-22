@@ -314,8 +314,8 @@
     "description_en": "A bold visual style channeling the 'papiers découpés' (paper cut-outs) of Henri Matisse merged with the expressive iconography of Keith Haring. It features solid, high-contrast silhouettes with exaggerated extremities and fluid, biomorphic curves set against flat, vibrant color fields.",
     "description_fr": "Un style visuel audacieux canalisant les 'papiers découpés' d'Henri Matisse fusionnés avec l'iconographie expressive de Keith Haring. Il présente des silhouettes solides et très contrastées aux extrémités exagérées et aux courbes biomorphiques fluides, posées sur des champs de couleurs plats et vibrants.",
     "image": "images/c616126059310407a1bf8d51ee936c4d.jpg",
-    "preview_image": "images/preview-1771537920030-2b8f.webp",
-    "preview_image_removebg": "images/preview-1771537920816-cyyc.webp",
+    "preview_image": "images/preview-1771780050770-85ot.webp",
+    "preview_image_removebg": "images/preview-1771780050423-21pt.webp",
     "tags": [
       "paper cut-out",
       "matisse style",
@@ -556,8 +556,8 @@
     "description_en": "A sophisticated digital recreation of 19th-century steel engraving and intaglio printing, utilizing precise hatching and cross-hatching to define volume without gradients. The aesthetic mimics vintage scientific illustrations or banknote art, characterized by deep monochromatic ink work against a clean, contrasting substrate.",
     "description_fr": "Une recréation numérique sophistiquée de la gravure sur acier et de l'impression en taille-douce du XIXe siècle, utilisant des hachures précises pour définir le volume sans dégradés. L'esthétique imite les illustrations scientifiques d'époque ou l'art des billets de banque, caractérisée par un travail à l'encre monochrome profond sur un substrat contrasté.",
     "image": "images/g--oq7mbkaacabb.jpg",
-    "preview_image": "images/preview-1771537926009-wn5g.webp",
-    "preview_image_removebg": "images/preview-1771537926238-7jgx.webp",
+    "preview_image": "images/preview-1771780665637-u42w.webp",
+    "preview_image_removebg": "images/preview-1771780665863-erh0.webp",
     "tags": [
       "steel engraving",
       "intaglio",
@@ -656,29 +656,29 @@
       "flat color",
       "sketchy"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-20T22:34:21.421Z"
   },
   {
     "id": "vivid-pulp",
     "title": "Vivid Pulp",
-    "description": "Un style graphique percutant qui juxtapose un rendu de personnage hyper-réaliste et dimensionnel contre des arrière-plans monochromatiques austères et plats. Il évoque l'énergie des couvertures de magazines pulp vintage, des affiches de films d'horreur et des écrans de chargement style GTA grâce à un éclairage clair-obscur dramatique, des textures de surface scintillantes et une isolation audacieuse de la silhouette.",
-    "description_en": "A high-impact graphic style that juxtaposes hyper-realistic, dimensional character rendering against stark, flat, monochromatic backgrounds. It evokes the energy of vintage pulp magazine covers, horror movie posters, and GTA-style loading screens through dramatic chiaroscuro lighting, glistening surface textures, and bold silhouette isolation.",
-    "description_fr": "Un style graphique percutant qui juxtapose un rendu de personnage hyper-réaliste et dimensionnel contre des arrière-plans monochromatiques austères et plats. Il évoque l'énergie des couvertures de magazines pulp vintage, des affiches de films d'horreur et des écrans de chargement style GTA grâce à un éclairage clair-obscur dramatique, des textures de surface scintillantes et une isolation audacieuse de la silhouette.",
+    "description": "Un style visuel percutant caractérisé par un fond de couleur unie plat et hyper-saturé (généralement rouge vif) contrastant nettement avec un sujet au premier plan au rendu hyper-réaliste. L'esthétique mêle art conceptuel numérique moderne et dynamique d'affiche de propagande, utilisant des perspectives spectaculaires en contre-plongée, un éclairage directionnel dur et des détails de texture intenses comme la sueur et le grain pour transmettre agression et urgence.",
+    "description_en": "A high-impact visual style characterized by a flat, hyper-saturated solid color background (typically vivid red) contrasting sharply with a hyper-realistically rendered foreground subject. The aesthetic blends modern digital concept art with propaganda poster dynamics, utilizing dramatic low-angle perspectives, harsh directional lighting, and intense textural details like sweat, pores, and grit to convey aggression and urgency.",
+    "description_fr": "Un style visuel percutant caractérisé par un fond de couleur unie plat et hyper-saturé (généralement rouge vif) contrastant nettement avec un sujet au premier plan au rendu hyper-réaliste. L'esthétique mêle art conceptuel numérique moderne et dynamique d'affiche de propagande, utilisant des perspectives spectaculaires en contre-plongée, un éclairage directionnel dur et des détails de texture intenses comme la sueur et le grain pour transmettre agression et urgence.",
     "image": "images/hay3_sbxwaettp3.jpg",
-    "preview_image": "images/preview-1771626927867-y2kq.webp",
-    "preview_image_removebg": "images/preview-1771626927643-k7d6.webp",
+    "preview_image": "images/preview-1771780755220-k220.webp",
+    "preview_image_removebg": "images/preview-1771780754870-47jq.webp",
     "tags": [
-      "pulp art",
-      "vintage horror",
-      "gta style",
+      "propaganda art",
+      "hyper-realism",
+      "low angle",
       "high contrast",
-      "chiaroscuro",
-      "digital airbrush",
-      "poster art",
-      "saturated realism"
+      "saturated color",
+      "digital painting",
+      "poster design",
+      "chiaroscuro"
     ],
-    "backgroundType": 0,
+    "backgroundType": 1,
     "createdAt": "2026-02-20T22:35:34.527Z"
   },
   {
