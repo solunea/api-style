@@ -308,28 +308,6 @@
     "createdAt": "2026-02-17T15:31:22.088Z"
   },
   {
-    "id": "chromatic-scribble",
-    "title": "Prismatic Hatching",
-    "description": "Un style d'illustration numérique vibrant imitant les techniques sèches comme le crayon de couleur et le pastel, caractérisé par des hachures croisées énergiques et des choix de couleurs non naturalistes. La technique utilise une approche 'fauviste' où la forme et l'ombre sont définies par des changements de teinte—comme des bleus canard et des roses pour les tons chair—plutôt que par des valeurs traditionnelles, créant une surface texturée et vivante.",
-    "description_en": "A vibrant digital illustration style mimicking dry media like colored pencil and chalk pastel, characterized by loose, energetic cross-hatching and non-naturalistic color choices. The technique uses a 'Fauvist' approach where form and shadow are defined by hue shifts—such as teals and pinks for skin tones—rather than traditional value grading, creating a lively, textured surface.",
-    "description_fr": "Un style d'illustration numérique vibrant imitant les techniques sèches comme le crayon de couleur et le pastel, caractérisé par des hachures croisées énergiques et des choix de couleurs non naturalistes. La technique utilise une approche 'fauviste' où la forme et l'ombre sont définies par des changements de teinte—comme des bleus canard et des roses pour les tons chair—plutôt que par des valeurs traditionnelles, créant une surface texturée et vivante.",
-    "image": "images/3714720ef83f98343a5be176352986bf.jpg",
-    "preview_image": "images/preview-1771537919674-zoz7.webp",
-    "preview_image_removebg": "images/preview-1771537920043-pnn8.webp",
-    "tags": [
-      "digital pastel",
-      "fauvism",
-      "cross-hatching",
-      "dry media",
-      "sketchy portrait",
-      "vibrant coloring",
-      "loose strokes",
-      "expressive arts"
-    ],
-    "backgroundType": 2,
-    "createdAt": "2026-02-17T20:02:50.593Z"
-  },
-  {
     "id": "organic-cutout",
     "title": "Kinetic Cutout",
     "description": "Un style visuel audacieux canalisant les 'papiers découpés' d'Henri Matisse fusionnés avec l'iconographie expressive de Keith Haring. Il présente des silhouettes solides et très contrastées aux extrémités exagérées et aux courbes biomorphiques fluides, posées sur des champs de couleurs plats et vibrants.",
@@ -370,7 +348,7 @@
       "mid-century illustration",
       "dry media"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T20:07:17.859Z"
   },
   {
