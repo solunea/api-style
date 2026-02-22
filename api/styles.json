@@ -88,28 +88,6 @@
     "createdAt": "2026-02-10T16:23:17.069Z"
   },
   {
-    "id": "corporate-outline",
-    "title": "Draftsman Vector",
-    "description": "Un style d'illustration d'entreprise minimaliste caractérisé par des contours à l'encre noire, lâches et organiques, et des aplats de couleur sans ombrage. Il présente des traits de visage simplifiés (yeux en points), l'utilisation du blanc pur pour les tons de peau et l'espace négatif, ainsi qu'une palette restreinte typique du design éditorial technologique moderne.",
-    "description_en": "A minimalist corporate illustration style characterized by loose, organic black ink outlines and flat, unshaded color blocks. It features simplified facial features (dot eyes), the use of pure white for skin tones and negative space, and a restricted palette typical of modern tech editorial design.",
-    "description_fr": "Un style d'illustration d'entreprise minimaliste caractérisé par des contours à l'encre noire, lâches et organiques, et des aplats de couleur sans ombrage. Il présente des traits de visage simplifiés (yeux en points), l'utilisation du blanc pur pour les tons de peau et l'espace négatif, ainsi qu'une palette restreinte typique du design éditorial technologique moderne.",
-    "image": "images/de2a56790ec9d64647c9656553635390.jpg",
-    "preview_image": "images/preview-1771537914851-evjb.webp",
-    "preview_image_removebg": "images/preview-1771537914945-brnv.webp",
-    "tags": [
-      "vector illustration",
-      "flat design",
-      "corporate art",
-      "line art",
-      "minimalist",
-      "editorial",
-      "hand-drawn vector",
-      "sketch style"
-    ],
-    "backgroundType": 2,
-    "createdAt": "2026-02-10T16:24:16.950Z"
-  },
-  {
     "id": "risograph-spotlight",
     "title": "Stippled Risograph",
     "description": "Un style éditorial numérique distinctif imitant l'impression risographique et l'art vectoriel texturé, caractérisé par des formes plates recouvertes d'un grain de bruit uniforme et prononcé. Le langage visuel repose sur un éclairage en projecteur à bords nets pour créer un contraste géométrique marqué entre les zones illuminées et les ombres atténuées.",
