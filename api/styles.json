@@ -133,22 +133,22 @@
   },
   {
     "id": "folklore-woodcut",
-    "title": "Matchbox Riso",
-    "description": "Une esthétique d'impression risographie ou de gravure sur bois bicolore vintage, caractérisée par un grain grossier, une application d'encre à fort contraste et une absence totale de dégradés. Le style imite les illustrations ponctuelles de livres de fantasy du milieu du siècle avec des bords rugueux et texturés, des ombrages en pointillés et une palette de couleurs strictement limitée simulant le saignement de l'encre analogique sur du papier mat.",
-    "description_en": "A vintage two-tone risograph or woodblock print aesthetic characterized by coarse grain, high-contrast ink application, and a distinct lack of gradients. The style mimics mid-century fantasy book spot illustrations with rough, textured edges, stippled shading, and a strictly limited color palette simulating analog ink bleed on matte paper.",
-    "description_fr": "Une esthétique d'impression risographie ou de gravure sur bois bicolore vintage, caractérisée par un grain grossier, une application d'encre à fort contraste et une absence totale de dégradés. Le style imite les illustrations ponctuelles de livres de fantasy du milieu du siècle avec des bords rugueux et texturés, des ombrages en pointillés et une palette de couleurs strictement limitée simulant le saignement de l'encre analogique sur du papier mat.",
-    "image": "images/haec6aowsaag52z.jpg",
-    "preview_image": "images/preview-1771627497982-75g8.webp",
-    "preview_image_removebg": "images/preview-1771627497892-zg1a.webp",
+    "title": "Nocturnal Folk",
+    "description": "Un style d'illustration distinctif mêlant le design graphique du milieu du siècle à l'art populaire d'Europe de l'Est et à l'esthétique de la linogravure. Caractérisé par une palette restreinte à fort contraste (généralement des bleus profonds et des rouges vifs), des formes géométriques plates décorées de motifs internes et une texture de grain tactile rappelant la risographie ou la sérigraphie.",
+    "description_en": "A distinctive illustration style blending mid-century modern graphic design with Eastern European folk art and linocut aesthetics. Characterized by a high-contrast, restricted palette (typically deep blues and vibrant reds), flat geometric shapes decorated with internal patterns, and a heavy, tactile grain texture resembling risograph or screen printing.",
+    "description_fr": "Un style d'illustration distinctif mêlant le design graphique du milieu du siècle à l'art populaire d'Europe de l'Est et à l'esthétique de la linogravure. Caractérisé par une palette restreinte à fort contraste (généralement des bleus profonds et des rouges vifs), des formes géométriques plates décorées de motifs internes et une texture de grain tactile rappelant la risographie ou la sérigraphie.",
+    "image": "images/hbvho5ibgaucdkr.jpg",
+    "preview_image": "images/preview-1771778755580-i25s.webp",
+    "preview_image_removebg": "images/preview-1771778755259-5pne.webp",
     "tags": [
+      "folk art",
       "risograph",
-      "woodcut",
       "linocut",
-      "two-color",
-      "stippling",
-      "vintage print",
-      "coarse grain",
-      "analog texture"
+      "mid-century modern",
+      "flat design",
+      "scandinavian",
+      "textured vector",
+      "screen print"
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-14T21:33:46.992Z"
@@ -216,7 +216,7 @@
       "geometric shapes",
       "clean ui style"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-14T21:40:48.938Z"
   },
   {
@@ -746,5 +746,27 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-20T22:38:29.417Z"
+  },
+  {
+    "id": "planetary-ligne",
+    "title": "Planetary Ligne",
+    "description": "Une esthétique de roman graphique distincte inspirée par l'école de la 'Ligne Claire' et les mondes de science-fiction surréalistes de Moebius. Elle se caractérise par des contours à l'encre d'épaisseur uniforme, des couleurs pastel mates et plates sans dégradés, et des détails texturaux complexes rendus par un pointillisme et des hachures précis plutôt que par des ombrages.",
+    "description_en": "A distinct graphic novel aesthetic inspired by the 'Ligne Claire' (Clear Line) school and the surreal sci-fi worlds of Moebius. It features uniform-weight ink outlines, flat matte pastel coloring with no gradients, and intricate textural detailing rendered through precise stippling and hatching rather than shading.",
+    "description_fr": "Une esthétique de roman graphique distincte inspirée par l'école de la 'Ligne Claire' et les mondes de science-fiction surréalistes de Moebius. Elle se caractérise par des contours à l'encre d'épaisseur uniforme, des couleurs pastel mates et plates sans dégradés, et des détails texturaux complexes rendus par un pointillisme et des hachures précis plutôt que par des ombrages.",
+    "image": "images/ab5ac96353a641a498f1b29ab39edb23.jpg",
+    "preview_image": "",
+    "preview_image_removebg": "",
+    "tags": [
+      "ligne claire",
+      "moebius style",
+      "flat color",
+      "ink illustration",
+      "pastel sci-fi",
+      "graphic novel",
+      "cel shaded",
+      "hard edge"
+    ],
+    "backgroundType": 0,
+    "createdAt": "2026-02-22T16:49:32.740Z"
   }
 ]

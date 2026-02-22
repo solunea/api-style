@@ -1,0 +1,33 @@
+{
+  "id": "planetary-ligne",
+  "title": "Planetary Ligne",
+  "description": "Une esthétique de roman graphique distincte inspirée par l'école de la 'Ligne Claire' et les mondes de science-fiction surréalistes de Moebius. Elle se caractérise par des contours à l'encre d'épaisseur uniforme, des couleurs pastel mates et plates sans dégradés, et des détails texturaux complexes rendus par un pointillisme et des hachures précis plutôt que par des ombrages.",
+  "description_en": "A distinct graphic novel aesthetic inspired by the 'Ligne Claire' (Clear Line) school and the surreal sci-fi worlds of Moebius. It features uniform-weight ink outlines, flat matte pastel coloring with no gradients, and intricate textural detailing rendered through precise stippling and hatching rather than shading.",
+  "description_fr": "Une esthétique de roman graphique distincte inspirée par l'école de la 'Ligne Claire' et les mondes de science-fiction surréalistes de Moebius. Elle se caractérise par des contours à l'encre d'épaisseur uniforme, des couleurs pastel mates et plates sans dégradés, et des détails texturaux complexes rendus par un pointillisme et des hachures précis plutôt que par des ombrages.",
+  "prompt": "Visual style of a high-fidelity European graphic novel panel, specifically channeling the Ligne Claire (Clear Line) aesthetic of high-concept sci-fi illustration. The image depicts {{subject}} rendered with razor-sharp, uniform-weight black ink outlines that define every contour with clinical precision—there is absolutely no line variation or sketching; every stroke is deliberate and final. The rendering relies entirely on flat, matte blocks of color with zero gradient blending or airbrushing. The color palette is dominated by washed-out, chalky pastels, specifically utilizing {{primary_color}} for the main masses and {{accent_color}} for intricate technical or organic details, creating a sun-bleached, desaturated look typical of retro-futuristic comics. Shadows are not rendered with soft transitions but are depicted as hard-edged, solid geometric shapes (often in cool slate-blue or violet tones) that contrast sharply against the warm, sun-drenched surfaces. Textures—such as crumbling stone, rusted metal, or fabric weave—are conveyed through microscopic ink stippling, small dashes, and precise hatching rather than painterly brushwork. The lighting is high-key and uniform, suggesting a bright, cloudless day with {{lighting}}. The {{subject}} is composited on a clean {{background_color}} surface, with the crisp black outer contours creating a perfect, vector-like separation from the flat {{background_color}} backdrop, ensuring no stray pixels or atmospheric haze interfere with the silhouette.",
+  "prompt_removebg": "Visual style of a high-fidelity European graphic novel panel, specifically channeling the Ligne Claire (Clear Line) aesthetic of high-concept sci-fi illustration. The image depicts {{subject}} rendered with razor-sharp, uniform-weight black ink outlines that define every contour with clinical precision—there is absolutely no line variation or sketching; every stroke is deliberate and final. The rendering relies entirely on flat, matte blocks of color with zero gradient blending or airbrushing. The color palette is dominated by washed-out, chalky pastels, specifically utilizing {{primary_color}} for the main masses and {{accent_color}} for intricate technical or organic details, creating a sun-bleached, desaturated look typical of retro-futuristic comics. Shadows are not rendered with soft transitions but are depicted as hard-edged, solid geometric shapes (often in cool slate-blue or violet tones) that contrast sharply against the warm, sun-drenched surfaces. Textures—such as crumbling stone, rusted metal, or fabric weave—are conveyed through microscopic ink stippling, small dashes, and precise hatching rather than painterly brushwork. The lighting is high-key and uniform, suggesting a bright, cloudless day with {{lighting}}. The {{subject}} is composited on a clean {{background_color}} surface, with the crisp black outer contours creating a perfect, vector-like separation from the flat {{background_color}} backdrop, ensuring no stray pixels or atmospheric haze interfere with the silhouette.",
+  "background_prompt": "A vast, sprawling landscape or architectural environment rendered in the Ligne Claire graphic novel style, completely empty of main subjects. The scene features intricate environmental details like crumbling masonry, scattered pebbles, distant geometric horizons, and organic sci-fi structures drawn with precise, uniform thin black ink lines. The coloring uses flat, matte pastel fills, dominated by {{primary_color}} for the terrain and sky, with {{accent_color}} highlighting structural elements. Shadows are cast as hard, solid shapes of cool blue or violet against the sunlit ground. In the immediate foreground, a decorative framing element composed of stylized debris, rock formations, or technical machinery creates a vignette effect, framing the empty center. The entire scene fades softly at the outer edges into a solid {{background_color}} surface, integrating the illustration with the backdrop.",
+  "background_prompt_removebg": "A vast, sprawling landscape or architectural environment rendered in the Ligne Claire graphic novel style, completely empty of main subjects. The scene features intricate environmental details like crumbling masonry, scattered pebbles, distant geometric horizons, and organic sci-fi structures drawn with precise, uniform thin black ink lines. The coloring uses flat, matte pastel fills, dominated by {{primary_color}} for the terrain and sky, with {{accent_color}} highlighting structural elements. Shadows are cast as hard, solid shapes of cool blue or violet against the sunlit ground. In the immediate foreground, a decorative framing element composed of stylized debris, rock formations, or technical machinery creates a vignette effect, framing the empty center. The entire scene fades softly at the outer edges into a solid {{background_color}} surface, integrating the illustration with the backdrop.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "lighting",
+    "background_color"
+  ],
+  "image": "images/ab5ac96353a641a498f1b29ab39edb23.jpg",
+  "preview_image": "",
+  "preview_image_removebg": "",
+  "tags": [
+    "ligne claire",
+    "moebius style",
+    "flat color",
+    "ink illustration",
+    "pastel sci-fi",
+    "graphic novel",
+    "cel shaded",
+    "hard edge"
+  ],
+  "backgroundType": 0,
+  "createdAt": "2026-02-22T16:49:32.740Z"
+}
