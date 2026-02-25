@@ -6,8 +6,8 @@
     "description_en": "A charming mid-century modern children's book illustration style defined by dry-brush gouache application and wax crayon textures on heavy-tooth paper. The aesthetic features flat, naive perspective with 'scuffed' coloring that allows the paper grain to show through, combining bold geometric shapes with scratchy, hand-drawn pencil details.",
     "description_fr": "Un style d'illustration de livre pour enfants charmant et moderne du milieu du siècle, défini par l'application de gouache au pinceau sec et des textures de craie de cire sur un papier à grain épais. L'esthétique présente une perspective plane et naïve avec une coloration 'éraflée' qui laisse apparaître le grain du papier, combinant des formes géométriques audacieuses avec des détails crayonnés à la main.",
     "image": "images/g__6vlgwoaamdym.jpg",
-    "preview_image": "images/preview-1771537914549-kejq.webp",
-    "preview_image_removebg": "images/preview-1771537914371-i06y.webp",
+    "preview_image": "images/preview-1771780942667-q3tp.webp",
+    "preview_image_removebg": "images/preview-1771780942532-b3to.webp",
     "tags": [
       "dry brush",
       "gouache",
@@ -724,5 +724,49 @@
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-22T16:49:32.740Z"
+  },
+  {
+    "id": "luminous-gouache",
+    "title": "Luminous Gouache",
+    "description": "Un style d'illustration contemporain qui mélange des aplats de couleurs audacieux avec un trait délicat et esquissé ainsi que des textures sèches et crayeuses. L'esthétique imite l'art éditorial numérique moderne avec une sensation artisanale faussement analogique, utilisant une géométrie simplifiée, des bords rugueux et une palette vibrante mais mate rappelant l'impression risographique.",
+    "description_en": "A contemporary illustration style that blends flat, bold color blocking with delicate, sketchy linework and dry, chalky textures. The aesthetic mimics modern digital editorial art with a faux-analog, hand-crafted feel, utilizing simplified geometry, rough edges, and a vibrant yet matte palette reminiscent of risograph printing.",
+    "description_fr": "Un style d'illustration contemporain qui mélange des aplats de couleurs audacieux avec un trait délicat et esquissé ainsi que des textures sèches et crayeuses. L'esthétique imite l'art éditorial numérique moderne avec une sensation artisanale faussement analogique, utilisant une géométrie simplifiée, des bords rugueux et une palette vibrante mais mate rappelant l'impression risographique.",
+    "image": "images/160646254981245c5645ec9c4a8a2ae0.jpg",
+    "preview_image": "images/preview-1772004588647-qgae.webp",
+    "preview_image_removebg": "images/preview-1772004588879-t2z0.webp",
+    "tags": [
+      "editorial illustration",
+      "naive art",
+      "textured flat design",
+      "risograph style",
+      "crayon texture",
+      "jittery linework",
+      "dry brush",
+      "minimalist"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-25T07:29:54.740Z"
+  },
+  {
+    "id": "cozy-isometric",
+    "title": "Cozy Isometric",
+    "description": "Une esthétique nostalgique de pixel art 16 bits rappelant les RPG classiques de l'ère SNES ou GBA, définie par des pixels carrés distincts et une palette de couleurs vibrante et limitée. Le style présente un rendu sans contours où les formes sont sculptées par des changements de valeurs nets et un ombrage en grappes, créant une atmosphère lo-fi chaleureuse avec un éclairage contrasté et tacheté.",
+    "description_en": "A nostalgic 16-bit pixel art aesthetic reminiscent of classic SNES or GBA era RPGs, defined by distinct, chunky square pixels and a vibrant, limited color palette. The style features lineless rendering where forms are sculpted by sharp value changes and cluster shading, creating a cozy, lo-fi atmosphere with dappled, high-contrast lighting.",
+    "description_fr": "Une esthétique nostalgique de pixel art 16 bits rappelant les RPG classiques de l'ère SNES ou GBA, définie par des pixels carrés distincts et une palette de couleurs vibrante et limitée. Le style présente un rendu sans contours où les formes sont sculptées par des changements de valeurs nets et un ombrage en grappes, créant une atmosphère lo-fi chaleureuse avec un éclairage contrasté et tacheté.",
+    "image": "images/6f998b2dc60256e874512bcdcb944b7b.jpg",
+    "preview_image": "images/preview-1772004749262-20jo.webp",
+    "preview_image_removebg": "images/preview-1772004749883-02j5.webp",
+    "tags": [
+      "pixel art",
+      "16-bit",
+      "retro game",
+      "dot art",
+      "low-res",
+      "snes style",
+      "isometric",
+      "lo-fi"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-25T07:32:38.075Z"
   }
 ]
