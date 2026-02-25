@@ -1175,5 +1175,38 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:32:38.075Z"
+  },
+  {
+    "id": "constructive-draft",
+    "title": "Constructive Draft",
+    "description": "Un style d'esquisse de design industriel dynamique imitant les marqueurs à alcool et les feutres fins sur papier layout. Caractérisé par des lignes gestuelles assurées, des traits de construction dépassants, des blocs de couleur géométriques audacieux et des reflets blancs marqués.",
+    "description_en": "A dynamic industrial design sketching style mimicking alcohol-based markers and fine liners on layout paper. Features confident gestural lines, construction 'overshoots', bold geometric color blocking, and stark white highlights to communicate form and material.",
+    "description_fr": "Un style d'esquisse de design industriel dynamique imitant les marqueurs à alcool et les feutres fins sur papier layout. Caractérisé par des lignes gestuelles assurées, des traits de construction dépassants, des blocs de couleur géométriques audacieux et des reflets blancs marqués.",
+    "prompt": "A professional industrial design concept sketch of {{subject}}, executed in a mixed media style combining alcohol-based markers (Copic/Prismacolor), fine liner ink pens, and white gouache. The image must be full bleed, edge-to-edge, occupying the entire canvas with no borders or frames. The rendering technique focuses on 'rapid visualization': the line work is energetic and confident, characterized by varying line weights—heavy outer contours to define the silhouette, and thinner internal lines for details. Crucially, include characteristic 'overshoot' lines where strokes extend slightly past intersection points, emphasizing the structural geometry. The {{subject}} is rendered with visible, streaky marker strokes that follow the form, utilizing {{primary_color}} for the main body and neutral cool greys for shading. Lighting is high-contrast studio style, with stark, opaque white gel pen highlights applied to glossy edges and turning points to simulate material reflectivity. Behind the {{subject}}, a bold, graphic rectangle or abstract shape of {{accent_color}}—rendered with vertical marker fill—serves as a backdrop to pop the silhouette forward. The composition includes faint perspective grid lines, construction guides, and handwritten design annotations or callouts scattered artistically around the form. A loose cast shadow, depicted with diagonal hatching or a pool of grey marker, grounds the object on the imaginary plane. The texture mimics the grain and slight absorbency of high-quality marker layout paper. The overall aesthetic is raw, creative, and highly skilled, capturing the essence of a design workshop {{mood}}.",
+    "prompt_removebg": "A professional industrial design concept sketch of {{subject}}, executed in a mixed media style combining alcohol-based markers (Copic/Prismacolor), fine liner ink pens, and white gouache. The image must be full bleed, edge-to-edge, occupying the entire canvas with no borders or frames. The rendering technique focuses on 'rapid visualization': the line work is energetic and confident, characterized by varying line weights—heavy outer contours to define the silhouette, and thinner internal lines for details. Crucially, include characteristic 'overshoot' lines where strokes extend slightly past intersection points, emphasizing the structural geometry. The {{subject}} is rendered with visible, streaky marker strokes that follow the form, utilizing {{primary_color}} for the main body and neutral cool greys for shading. Lighting is high-contrast studio style, with stark, opaque white gel pen highlights applied to glossy edges and turning points to simulate material reflectivity. The entire sketch is composited on a clean {{background_color}} surface. Behind the {{subject}}, a bold, graphic rectangle or abstract shape of {{accent_color}}—rendered with vertical marker fill—serves as a backdrop to pop the silhouette forward, but this background element is isolated cleanly against the {{background_color}} field. A loose cast shadow, depicted with diagonal hatching or a pool of grey marker, grounds the object, blending naturally into the {{background_color}}. The texture mimics the grain and slight absorbency of high-quality marker layout paper applied only to the inked areas. The overall aesthetic is raw, creative, and highly skilled, capturing the essence of a design workshop {{mood}}.",
+    "background_prompt": "A textured industrial design sketch background featuring a large, bold graphic block of {{accent_color}} rendered in vertical alcohol marker strokes. The composition is set on a texture resembling white layout paper. Faint pencil construction lines, perspective grids, and vanishing point guides traverse the empty space, suggesting a 3D workspace. Diagonal hatching and loose ink scribbles provide texture without defining a central subject. The lighting is bright and uniform, highlighting the paper grain and the streaky quality of the marker fill. No central object, no borders, full bleed edge-to-edge texture.",
+    "background_prompt_removebg": "A textured industrial design sketch background featuring a large, bold graphic block of {{accent_color}} rendered in vertical alcohol marker strokes. The composition is set against a flat {{background_color}} backdrop. Faint pencil construction lines, perspective grids, and vanishing point guides traverse the empty space, suggesting a 3D workspace. In the foreground, a decorative frame of sketchy ink lines and {{primary_color}} measurement ticks creates a viewport effect. The graphic marker elements and grid lines fade softly into the {{background_color}} at the periphery. Diagonal hatching and loose ink scribbles provide texture without defining a central subject. No central object, full bleed edge-to-edge.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "mood",
+      "background_color"
+    ],
+    "image": "images/95ef5030db5e5feda8a91a09e54856e5.jpg",
+    "preview_image": "images/preview-1772004920103-59gb.webp",
+    "preview_image_removebg": "images/preview-1772004920027-r5mh.webp",
+    "tags": [
+      "industrial design",
+      "marker sketch",
+      "rapid visualization",
+      "copic style",
+      "concept art",
+      "product design",
+      "gestural line",
+      "sketching"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-25T07:35:23.395Z"
   }
 ]

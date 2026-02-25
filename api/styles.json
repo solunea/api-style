@@ -768,5 +768,27 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:32:38.075Z"
+  },
+  {
+    "id": "constructive-draft",
+    "title": "Constructive Draft",
+    "description": "Un style d'esquisse de design industriel dynamique imitant les marqueurs à alcool et les feutres fins sur papier layout. Caractérisé par des lignes gestuelles assurées, des traits de construction dépassants, des blocs de couleur géométriques audacieux et des reflets blancs marqués.",
+    "description_en": "A dynamic industrial design sketching style mimicking alcohol-based markers and fine liners on layout paper. Features confident gestural lines, construction 'overshoots', bold geometric color blocking, and stark white highlights to communicate form and material.",
+    "description_fr": "Un style d'esquisse de design industriel dynamique imitant les marqueurs à alcool et les feutres fins sur papier layout. Caractérisé par des lignes gestuelles assurées, des traits de construction dépassants, des blocs de couleur géométriques audacieux et des reflets blancs marqués.",
+    "image": "images/95ef5030db5e5feda8a91a09e54856e5.jpg",
+    "preview_image": "images/preview-1772004920103-59gb.webp",
+    "preview_image_removebg": "images/preview-1772004920027-r5mh.webp",
+    "tags": [
+      "industrial design",
+      "marker sketch",
+      "rapid visualization",
+      "copic style",
+      "concept art",
+      "product design",
+      "gestural line",
+      "sketching"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-25T07:35:23.395Z"
   }
 ]
