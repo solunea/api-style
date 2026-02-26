@@ -318,7 +318,11 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
     }
 
     // Single model call — all 4 prompt variants generated in one pass
-    const parsed = await callGemini(ANALYZE_PROMPT, dataUri);
+    const existingTitles = readStyles().map((s) => s.title).filter(Boolean);
+    const titlesNote = existingTitles.length
+      ? `\n\nIMPORTANT: The following titles are already taken — you MUST choose a title that is NOT in this list: ${existingTitles.map((t) => `"${t}"`).join(', ')}.`
+      : '';
+    const parsed = await callGemini(ANALYZE_PROMPT + titlesNote, dataUri);
 
     res.json({
       title: parsed.title || '',
