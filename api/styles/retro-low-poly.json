@@ -1,0 +1,32 @@
+{
+  "id": "retro-low-poly",
+  "title": "Retro Low-Poly",
+  "description": "Un style vibrant et expressif imitant la gouache et l'aquarelle appliquées sur papier sec, caractérisé par une palette limitée à fort contraste (généralement des oranges chauds contre des bleus froids) et des coups de pinceau gestuels et assurés. L'esthétique repose fortement sur l'espace négatif, des aplats de couleur sans contours noirs et une perspective naïve et aérée rappelant Raoul Dufy ou l'illustration éditoriale du milieu du siècle.",
+  "description_en": "A vibrant, loose expressive style mimicking wet-on-dry gouache and watercolor, characterized by a limited high-contrast palette (typically warm oranges against cool blues) and confident, gestural brushwork. The aesthetic relies heavily on negative space, flat color blocking without black outlines, and a naive, breezy perspective reminiscent of Raoul Dufy or mid-century editorial illustration.",
+  "description_fr": "Un style vibrant et expressif imitant la gouache et l'aquarelle appliquées sur papier sec, caractérisé par une palette limitée à fort contraste (généralement des oranges chauds contre des bleus froids) et des coups de pinceau gestuels et assurés. L'esthétique repose fortement sur l'espace négatif, des aplats de couleur sans contours noirs et une perspective naïve et aérée rappelant Raoul Dufy ou l'illustration éditoriale du milieu du siècle.",
+  "prompt": "A vivid, expressive gouache and watercolor illustration of {{subject}}, executed with a loose, gestural hand. The image must occupy the entire canvas, full bleed to all four corners with absolutely no white margins, borders, or framing. The rendering style mimics the spontaneity of Raoul Dufy combined with the bold color blocking of contemporary risograph printing. The {{subject}} is constructed not through outlines, but through confident, distinct blobs of saturated color and silhouetted shapes. Use a strictly limited color palette dominated by {{primary_color}} for the main forms and {{accent_color}} for shadows and vegetation, creating a striking duotone or tritone effect. The brushwork should be visible, showing the texture of a round bristle brush with slightly ragged, organic edges. The paint application appears wet-on-dry, creating hard edges where the pigment pools, with some translucent overlapping areas where colors mix subtractively (e.g., a 'multiply' layer effect). The composition should feel airy and sun-drenched, utilizing the bright white of the underlying paper as a crucial compositional element to define the highlights and separation between objects. Shadows are painted as solid, flat shapes rather than gradients. The perspective is slightly flattened and naive, prioritizing rhythm and pattern over realistic depth. The atmosphere is breezy, nostalgic, and cheerful. Lighting is high-key and uniform, suggesting a bright midday sun that casts sharp, colorful shadows. Texture cues include a subtle cold-press watercolor paper grain visible beneath the wash.",
+  "prompt_removebg": "A vivid, expressive gouache and watercolor illustration of {{subject}}, executed with a loose, gestural hand. The rendering style mimics the spontaneity of Raoul Dufy combined with the bold color blocking of contemporary risograph printing. The {{subject}} is constructed not through outlines, but through confident, distinct blobs of saturated color and silhouetted shapes. Use a strictly limited color palette dominated by {{primary_color}} for the main forms and {{accent_color}} for shadows and details, creating a striking duotone or tritone effect. The brushwork should be visible, showing the texture of a round bristle brush with slightly ragged, organic edges. The paint application appears wet-on-dry, creating hard edges where the pigment pools. The image is composited on a clean {{background_color}} surface. The edges of the {{subject}} interact naturally with the {{background_color}}, maintaining the rough, toothy texture of dry brush on paper rather than a digital vector cut. Shadows are painted as solid, flat shapes rooted to the {{background_color}}. The perspective is slightly flattened and naive. Lighting is high-key and uniform. Texture cues include a subtle cold-press watercolor paper grain visible within the painted areas.",
+  "background_prompt": "A loose, abstract environmental scene rendered in a breezy gouache and watercolor style. The composition features broad, gestural brushstrokes suggesting foliage, architectural elements, or landscape forms without any specific focal point. Use a high-contrast palette of {{primary_color}} and {{accent_color}} against a stark white negative space. The brushwork is spontaneous, with visible bristle marks and hard-edged water stains. The perspective is flattened and naive, creating a rhythmic pattern of colored shapes and voids. Full bleed, edge-to-edge coverage, capturing a sunny, atmospheric mood through simple color blocking and texture.",
+  "background_prompt_removebg": "A loose, abstract environmental scene rendered in a breezy gouache and watercolor style. The composition features broad, gestural brushstrokes suggesting foliage, architectural elements, or landscape forms without any specific focal point. Use a high-contrast palette of {{primary_color}} and {{accent_color}}. In the foreground, framing the empty center, add loose, ornamental brushstrokes or abstract organic shapes that mimic the look of painted foliage or dappled light, creating a natural vignette. The entire scene transitions organically onto a flat {{background_color}} backdrop, with the rough, painted edges of the environment clearly visible against the {{background_color}} surface.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/47d40d1489f3396cbe73a911809bb85c.jpg",
+  "preview_image": "images/preview-1772100633717-sx3w.webp",
+  "preview_image_removebg": "images/preview-1772100634187-phf5.webp",
+  "tags": [
+    "gouache",
+    "watercolor",
+    "fauvism",
+    "loose brushwork",
+    "naive art",
+    "duotone",
+    "editorial illustration",
+    "risograph style"
+  ],
+  "backgroundType": 2,
+  "createdAt": "2026-02-26T10:10:37.844Z"
+}

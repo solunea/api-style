@@ -790,5 +790,71 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:35:23.395Z"
+  },
+  {
+    "id": "retro-low-poly",
+    "title": "Retro Low-Poly",
+    "description": "Un style vibrant et expressif imitant la gouache et l'aquarelle appliquées sur papier sec, caractérisé par une palette limitée à fort contraste (généralement des oranges chauds contre des bleus froids) et des coups de pinceau gestuels et assurés. L'esthétique repose fortement sur l'espace négatif, des aplats de couleur sans contours noirs et une perspective naïve et aérée rappelant Raoul Dufy ou l'illustration éditoriale du milieu du siècle.",
+    "description_en": "A vibrant, loose expressive style mimicking wet-on-dry gouache and watercolor, characterized by a limited high-contrast palette (typically warm oranges against cool blues) and confident, gestural brushwork. The aesthetic relies heavily on negative space, flat color blocking without black outlines, and a naive, breezy perspective reminiscent of Raoul Dufy or mid-century editorial illustration.",
+    "description_fr": "Un style vibrant et expressif imitant la gouache et l'aquarelle appliquées sur papier sec, caractérisé par une palette limitée à fort contraste (généralement des oranges chauds contre des bleus froids) et des coups de pinceau gestuels et assurés. L'esthétique repose fortement sur l'espace négatif, des aplats de couleur sans contours noirs et une perspective naïve et aérée rappelant Raoul Dufy ou l'illustration éditoriale du milieu du siècle.",
+    "image": "images/47d40d1489f3396cbe73a911809bb85c.jpg",
+    "preview_image": "images/preview-1772100633717-sx3w.webp",
+    "preview_image_removebg": "images/preview-1772100634187-phf5.webp",
+    "tags": [
+      "gouache",
+      "watercolor",
+      "fauvism",
+      "loose brushwork",
+      "naive art",
+      "duotone",
+      "editorial illustration",
+      "risograph style"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-26T10:10:37.844Z"
+  },
+  {
+    "id": "technical-isometry",
+    "title": "Technical Isometry",
+    "description": "Un style d'illustration vectorielle isométrique précis imitant les manuels techniques de haute qualité et les vues éclatées. Il présente des contours noirs nets et uniformes sur fond blanc, avec une coloration ponctuelle fonctionnelle dans des teintes saturées pour mettre en évidence les composants clés, utilisant des lignes pointillées et des flèches pour indiquer le processus et le flux.",
+    "description_en": "A precise, isometric vector illustration style mimicking high-quality technical manuals and exploded-view diagrams. It features clean, uniform black outlines on white, with functional spot-coloring in saturated hues to highlight key components, utilizing dashed lines and arrows to indicate process and flow.",
+    "description_fr": "Un style d'illustration vectorielle isométrique précis imitant les manuels techniques de haute qualité et les vues éclatées. Il présente des contours noirs nets et uniformes sur fond blanc, avec une coloration ponctuelle fonctionnelle dans des teintes saturées pour mettre en évidence les composants clés, utilisant des lignes pointillées et des flèches pour indiquer le processus et le flux.",
+    "image": "images/95ba2e35caad23e7ad091ddfdbe3d843.jpg",
+    "preview_image": "images/preview-1772100772451-piuz.webp",
+    "preview_image_removebg": "images/preview-1772100772550-r2sk.webp",
+    "tags": [
+      "isometric",
+      "technical illustration",
+      "schematic",
+      "vector",
+      "exploded view",
+      "diagram",
+      "line art",
+      "instructional"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-26T10:12:57.335Z"
+  },
+  {
+    "id": "riso-interface",
+    "title": "Riso Interface",
+    "description": "Un style d'illustration vectorielle surréaliste imitant le reflet d'un miroir brisé, caractérisé par des éclats géométriques angulaires, des couleurs pop-art plates et des bordures blanches distinctes séparant les morceaux fragmentés. L'esthétique combine le design plat moderne avec une texture de grain de film rétro et une approche cubiste disloquée de la composition.",
+    "description_en": "A surreal vector illustration style mimicking a shattered mirror reflection, characterized by angular geometric shards, flat pop-art coloring, and distinct white borders separating the fragmented pieces. The aesthetic combines modern flat design with a retro film grain texture and a disjointed, cubist approach to composition.",
+    "description_fr": "Un style d'illustration vectorielle surréaliste imitant le reflet d'un miroir brisé, caractérisé par des éclats géométriques angulaires, des couleurs pop-art plates et des bordures blanches distinctes séparant les morceaux fragmentés. L'esthétique combine le design plat moderne avec une texture de grain de film rétro et une approche cubiste disloquée de la composition.",
+    "image": "images/c6fbe486e8b396c70a0bb2256ee40a0d.jpg",
+    "preview_image": "images/preview-1772101042465-45yt.webp",
+    "preview_image_removebg": "images/preview-1772101042508-wpfp.webp",
+    "tags": [
+      "broken mirror",
+      "flat vector",
+      "pop art",
+      "cubism",
+      "shattered glass",
+      "risograph texture",
+      "geometric collage",
+      "editorial illustration"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-26T10:17:29.230Z"
   }
 ]
