@@ -235,16 +235,16 @@ Perform an exhaustive forensic analysis of the artistic execution of this image,
 STEP 2 — GENERATE ALL PROMPT VARIANTS IN ONE PASS
 Using your analysis, generate all fields below. The "prompt" and "prompt_removebg" fields MUST share the exact same stylistic DNA, wording, structure, and reinforcement tags — the ONLY difference is that "prompt_removebg" adds {{background_color}} integration for compositing on a solid surface after background removal. Do NOT write two independent prompts — write "prompt" first, then derive "prompt_removebg" from it.
 
-Variables available: {{subject}} (main subject - USE THIS INSTEAD OF THE ACTUAL IMAGE CONTENT), {{primary_color}} (dominant color), {{accent_color}} (accent color), {{background_color}} (solid surface color for remove-bg compositing only), {{mood}}, {{lighting}} (optional).
+Variables available (use ONLY these, no others): {{subject}} (main subject — USE THIS INSTEAD OF THE ACTUAL IMAGE CONTENT), {{primary_color}} (dominant color), {{accent_color}} (accent color), {{secondary_color}} (secondary/supporting color), {{background_color}} (solid surface color for remove-bg compositing only). Do NOT use {{mood}}, {{lighting}}, or any other variable not listed here.
 
 Return ONLY a valid JSON object with these fields:
 - "title": an original creative name for this style in exactly 2 words (in English, evocative and specific — e.g. "Gilded Decay", "Vapor Chrome", "Ember Woodcut")
 - "description_en": describe what makes this style instantly recognizable and unique, referencing specific artistic techniques and visual hallmarks (2-3 sentences, in English)
 - "description_fr": the same description translated in French (2-3 sentences, in French)
-- "prompt": a long, extremely precise English prompt (at least 250 words) that reproduces this exact visual style for ANY subject. CRITICAL RULES: (1) NEVER mention the actual object from the reference image (no trees, houses, people etc). Use "{{subject}}" instead. (2) The image MUST occupy the absolute ENTIRE dedicated space. Explicitly enforce this in the prompt text: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners, the environment must stretch entirely across the canvas. (3) NEVER use vague filler words like "beautiful", "stunning". (4) Start with the rendering technique and medium, then describe the {{subject}} integration, then layer in lighting, color behavior, texture, and atmosphere. (5) Describe the EXACT stroke/render behavior. (6) End with a comma-separated list of 20+ reinforcement tags SPECIFIC to this style. Always include "full bleed, edge-to-edge, no border, no frame, no canvas, occupying entire space" in the tags.
-- "prompt_removebg": take the "prompt" field above as the base. The wording, structure, style descriptors, and reinforcement tags must be IDENTICAL to "prompt" — only ADD/CHANGE the following: (1) replace or supplement the background description with "composited on a clean {{background_color}} surface" or "rendered against a flat {{background_color}} backdrop", (2) describe how the {{subject}}'s edges interact with {{background_color}}, (3) add {{background_color}} to the variables used. NEVER hardcode a specific color like "white background". IMPORTANT: REMOVE the tags "full bleed", "edge-to-edge", "no border", "no frame", "no canvas", "occupying entire space" from the reinforcement tag list — they do NOT apply when compositing on a solid background.
-- "background_prompt": a detailed English prompt (at least 60 words) describing ONLY a pure background scene or environment matching this visual style. This is strictly a backdrop — NO frame, NO overlay, NO foreground element. Describe environmental elements (landscape, abstract shapes, atmospheric depth, light conditions, texture of the scene), their spatial arrangement, and how they reflect the style's color and lighting logic. Use {{primary_color}} and {{accent_color}} variables. Do NOT include any specific subjects, frame, border, or decorative overlay.
-- "background_prompt_removebg": take the "background_prompt" field above as the base. Keep the same background scene wording, then ADD: (1) a decorative foreground frame or overlay element that matches the visual style (e.g. ornamental border, ink splatter vignette, geometric pattern frame) placed in front of the invisible subject to create depth, (2) how the scene and frame transition into or interact with the {{background_color}} surface. Use {{primary_color}}, {{accent_color}}, and {{background_color}} variables.
+- "prompt": a long, extremely precise English prompt (at least 250 words) that reproduces this exact visual style for ANY subject. CRITICAL RULES: (1) NEVER mention the actual object from the reference image (no trees, houses, people etc). Use "{{subject}}" instead. (2) The image MUST occupy the absolute ENTIRE dedicated space. Explicitly enforce this in the prompt text: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners, the environment must stretch entirely across the canvas. (3) NEVER use vague filler words like "beautiful", "stunning". (4) Start with the rendering technique and medium, then describe the {{subject}} integration, then layer in lighting, color behavior, texture, and atmosphere. (5) Describe the EXACT stroke/render behavior. (6) Use {{primary_color}}, {{accent_color}}, and {{secondary_color}} for color references — NO other variables except {{subject}}. (7) End with a comma-separated list of 20+ reinforcement tags SPECIFIC to this style. Always include "full bleed, edge-to-edge, no border, no frame, no canvas, occupying entire space" in the tags.
+- "prompt_removebg": take the "prompt" field above as the base. The wording, structure, style descriptors, and reinforcement tags must be IDENTICAL to "prompt" — only ADD/CHANGE the following: (1) replace or supplement the background description with "composited on a clean {{background_color}} surface" or "rendered against a flat {{background_color}} backdrop", (2) describe how the {{subject}}'s edges interact with {{background_color}}, (3) use {{background_color}} alongside {{primary_color}}, {{accent_color}}, {{secondary_color}} — NO other variables. NEVER hardcode a specific color like "white background". IMPORTANT: REMOVE the tags "full bleed", "edge-to-edge", "no border", "no frame", "no canvas", "occupying entire space" from the reinforcement tag list — they do NOT apply when compositing on a solid background.
+- "background_prompt": a detailed English prompt (at least 60 words) describing ONLY a pure background scene or environment matching this visual style. This is strictly a backdrop — NO frame, NO overlay, NO foreground element. Describe environmental elements (landscape, abstract shapes, atmospheric depth, light conditions, texture of the scene), their spatial arrangement, and how they reflect the style's color and lighting logic. Use {{primary_color}}, {{accent_color}}, and {{secondary_color}} — NO other variables. Do NOT include any specific subjects, frame, border, or decorative overlay.
+- "background_prompt_removebg": take the "background_prompt" field above as the base. Keep the same background scene wording, then ADD: (1) a decorative foreground frame or overlay element that matches the visual style (e.g. ornamental border, ink splatter vignette, geometric pattern frame) placed in front of the invisible subject to create depth, (2) how the scene and frame transition into or interact with the {{background_color}} surface. Use {{primary_color}}, {{accent_color}}, {{secondary_color}}, and {{background_color}} — NO other variables.
 - "tags": an array of 4 to 8 relevant style tags (English, lowercase, specific — e.g. "cel-shading", "cross-hatching")
 
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
@@ -497,9 +497,8 @@ app.post('/api/generate-preview', async (req, res) => {
       subject: 'a luxury perfume bottle',
       primary_color: 'deep navy blue',
       accent_color: 'gold',
+      secondary_color: 'ivory',
       background_color: 'white',
-      mood: 'elegant and sophisticated',
-      lighting: 'soft studio lighting',
     };
 
     // VLM mode: describe the reference image first
@@ -575,9 +574,8 @@ app.post('/api/generate-all-previews', async (req, res) => {
           subject: vlmSubject || 'a luxury perfume bottle',
           primary_color: 'deep navy blue',
           accent_color: 'gold',
+          secondary_color: 'ivory',
           background_color: 'white',
-          mood: 'elegant and sophisticated',
-          lighting: 'soft studio lighting',
         };
 
         // Generate standard + removebg previews in parallel

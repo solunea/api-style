@@ -178,21 +178,21 @@
   {
     "id": "soft-vector",
     "title": "Serene Vector",
-    "description": "Une esthétique de design plat sophistiquée caractérisée par une géométrie vectorielle sans contours, des palettes pastel douces et un éclairage diagonal à bords nets distinctif. Ce style évoque le calme moderne grâce à des formes simplifiées, une précision architecturale et une finition mate sans texture, typique des illustrations éditoriales technologiques haut de gamme.",
-    "description_en": "A sophisticated flat design aesthetic characterized by lineless vector geometry, soft pastel palettes, and distinct hard-edged diagonal lighting. This style evokes modern calm through simplified forms, architectural precision, and a matte, texture-free finish typical of high-end tech editorial illustrations.",
-    "description_fr": "Une esthétique de design plat sophistiquée caractérisée par une géométrie vectorielle sans contours, des palettes pastel douces et un éclairage diagonal à bords nets distinctif. Ce style évoque le calme moderne grâce à des formes simplifiées, une précision architecturale et une finition mate sans texture, typique des illustrations éditoriales technologiques haut de gamme.",
+    "description": "Un style d'illustration numérique raffiné mêlant l'esthétique vectorielle plate moderne au minimalisme scandinave et à la précision architecturale. Caractérisé par des formes géométriques sans contours, une palette pastel sourde, des ombres diagonales nettes et une texture à grain fin omniprésente qui ajoute chaleur et tactilité à la composition épurée.",
+    "description_en": "A refined digital illustration style blending modern flat vector aesthetics with Scandinavian minimalism and architectural precision. Characterized by lineless geometric forms, a muted pastel palette, sharp diagonal shadow casting, and a pervasive fine-grain texture that adds warmth and tactility to the clean composition.",
+    "description_fr": "Un style d'illustration numérique raffiné mêlant l'esthétique vectorielle plate moderne au minimalisme scandinave et à la précision architecturale. Caractérisé par des formes géométriques sans contours, une palette pastel sourde, des ombres diagonales nettes et une texture à grain fin omniprésente qui ajoute chaleur et tactilité à la composition épurée.",
     "image": "images/g_g17_8xwaewa7b.jpg",
-    "preview_image": "images/preview-1771537917517-518g.webp",
-    "preview_image_removebg": "images/preview-1771537917704-49wt.webp",
+    "preview_image": "images/preview-1772186883094-x44v.webp",
+    "preview_image_removebg": "images/preview-1772186883143-rim2.webp",
     "tags": [
-      "flat design",
-      "vector illustration",
+      "flat vector",
+      "scandinavian design",
+      "editorial illustration",
+      "muted palette",
+      "film grain",
       "lineless art",
-      "architectural minimalism",
-      "pastel aesthetic",
-      "lifestyle illustration",
-      "geometric shapes",
-      "clean ui style"
+      "geometric minimalism",
+      "soft lighting"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-14T21:40:48.938Z"
@@ -398,21 +398,21 @@
   {
     "id": "charcoal-gesture",
     "title": "Charcoal Croquis",
-    "description": "Un style d'illustration de mode brut et gestuel imitant les esquisses rapides au fusain ou au graphite tendre sur papier texturé. Caractérisé par des hachures verticales agressives, des lignes lâches et confiantes, et un contraste élevé privilégiant la silhouette et l'attitude plutôt que la précision anatomique.",
-    "description_en": "A raw, gestural fashion illustration style mimicking rapid charcoal or soft graphite sketches on textured paper. Characterized by aggressive vertical hatching, confident loose lines, and a high-contrast focus on silhouette and attitude over anatomical precision.",
-    "description_fr": "Un style d'illustration de mode brut et gestuel imitant les esquisses rapides au fusain ou au graphite tendre sur papier texturé. Caractérisé par des hachures verticales agressives, des lignes lâches et confiantes, et un contraste élevé privilégiant la silhouette et l'attitude plutôt que la précision anatomique.",
+    "description": "Un style d'esquisse brut et expressif qui imite le fusain rapide ou le graphite tendre sur du papier à gros grain. Il se caractérise par des hachures verticales énergiques, des lignes tourbillonnantes lâches et une absence de contours continus, définissant la forme par la densité des traits et le contraste marqué entre le médium sec et le substrat texturé.",
+    "description_en": "A raw, expressive sketching style that mimics rapid charcoal or soft graphite on coarse-grain paper. It is characterized by energetic vertical hatching, loose swirling lines, and a lack of continuous contours, defining form through stroke density and the stark contrast between the dry medium and the textured substrate.",
+    "description_fr": "Un style d'esquisse brut et expressif qui imite le fusain rapide ou le graphite tendre sur du papier à gros grain. Il se caractérise par des hachures verticales énergiques, des lignes tourbillonnantes lâches et une absence de contours continus, définissant la forme par la densité des traits et le contraste marqué entre le médium sec et le substrat texturé.",
     "image": "images/b64627fdd2cc53b73345c34d5586b3e2.jpg",
-    "preview_image": "images/preview-1771537922477-0crb.webp",
-    "preview_image_removebg": "images/preview-1771537922318-6avo.webp",
+    "preview_image": "images/preview-1772187199294-sapf.webp",
+    "preview_image_removebg": "images/preview-1772187199272-y6sf.webp",
     "tags": [
       "charcoal sketch",
-      "fashion illustration",
-      "croquis",
       "gestural drawing",
-      "graphite texture",
-      "rough hatching",
-      "minimalist",
-      "dry media"
+      "dry media",
+      "rough croquis",
+      "vertical hatching",
+      "textured paper",
+      "expressive lines",
+      "monochromatic"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-17T20:12:26.361Z"
@@ -464,23 +464,23 @@
   {
     "id": "miniature-diorama",
     "title": "Tilt-Shift Diorama",
-    "description": "Un style visuel distinctif qui simule l'effet de maquette grâce à des techniques de photographie à bascule et décentrement (tilt-shift) et une esthétique macro. Il transforme des sujets grandeur nature en modèles réduits ressemblant à des jouets en utilisant une très faible profondeur de champ, une saturation des couleurs élevée et une perspective isométrique en plongée.",
-    "description_en": "A distinctive visual style that simulates miniature faking through the use of tilt-shift photography techniques and macro lens aesthetics. It transforms life-sized subjects into toy-like scale models using extreme shallow depth of field, high color saturation, and a specific high-angle isometric perspective.",
-    "description_fr": "Un style visuel distinctif qui simule l'effet de maquette grâce à des techniques de photographie à bascule et décentrement (tilt-shift) et une esthétique macro. Il transforme des sujets grandeur nature en modèles réduits ressemblant à des jouets en utilisant une très faible profondeur de champ, une saturation des couleurs élevée et une perspective isométrique en plongée.",
+    "description": "Ce style simule l'illusion optique de la photographie à bascule (tilt-shift), transformant des sujets grandeur nature en charmants modèles réduits rappelant des jouets. Il repose sur une profondeur de champ extrêmement faible avec un flou prononcé en haut et en bas, une saturation vibrante et des perspectives isométriques en plongée pour imiter l'apparence d'un diorama physique ou d'une maquette architecturale.",
+    "description_en": "This style simulates the optical illusion of tilt-shift photography, transforming full-scale subjects into charming, toy-like miniature models. It relies on an extreme shallow depth of field with heavy top-and-bottom bokeh, vibrant saturation, and high-angle isometric perspectives to mimic the look of a physical diorama or architectural scale model.",
+    "description_fr": "Ce style simule l'illusion optique de la photographie à bascule (tilt-shift), transformant des sujets grandeur nature en charmants modèles réduits rappelant des jouets. Il repose sur une profondeur de champ extrêmement faible avec un flou prononcé en haut et en bas, une saturation vibrante et des perspectives isométriques en plongée pour imiter l'apparence d'un diorama physique ou d'une maquette architecturale.",
     "image": "images/77ada99ef6b3fe4a0976f1e7413a5813.jpg",
-    "preview_image": "images/preview-1771537924693-4h93.webp",
-    "preview_image_removebg": "images/preview-1771537923763-3y1r.webp",
+    "preview_image": "images/preview-1772186621660-6r4f.webp",
+    "preview_image_removebg": "images/preview-1772186621851-py70.webp",
     "tags": [
       "tilt-shift",
-      "miniature faking",
+      "miniature",
       "diorama",
-      "macro photography",
-      "isometric",
+      "macro",
       "bokeh",
-      "scale model",
-      "photorealistic"
+      "photorealistic",
+      "isometric",
+      "scale model"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-17T22:58:56.223Z"
   },
   {
@@ -772,21 +772,21 @@
   {
     "id": "constructive-draft",
     "title": "Constructive Draft",
-    "description": "Un style d'esquisse de design industriel dynamique imitant les marqueurs à alcool et les feutres fins sur papier layout. Caractérisé par des lignes gestuelles assurées, des traits de construction dépassants, des blocs de couleur géométriques audacieux et des reflets blancs marqués.",
-    "description_en": "A dynamic industrial design sketching style mimicking alcohol-based markers and fine liners on layout paper. Features confident gestural lines, construction 'overshoots', bold geometric color blocking, and stark white highlights to communicate form and material.",
-    "description_fr": "Un style d'esquisse de design industriel dynamique imitant les marqueurs à alcool et les feutres fins sur papier layout. Caractérisé par des lignes gestuelles assurées, des traits de construction dépassants, des blocs de couleur géométriques audacieux et des reflets blancs marqués.",
+    "description": "Un style dynamique de visualisation de design industriel qui imite l'esthétique énergique des croquis rapides aux marqueurs à alcool sur papier layout. Il présente des contours à l'encre assurés avec des lignes de construction visibles, des remplissages aux marqueurs striés indiquant la brillance des matériaux, et des blocs de couleurs géométriques abstraits qui ancrent la forme 3D.",
+    "description_en": "A dynamic industrial design visualization style that mimics the energetic aesthetic of rapid alcohol marker sketching on layout paper. It features confident ink contours with visible construction overshoots, streaky marker fills indicating material gloss, and bold abstract geometric color blocks that anchor the 3D form.",
+    "description_fr": "Un style dynamique de visualisation de design industriel qui imite l'esthétique énergique des croquis rapides aux marqueurs à alcool sur papier layout. Il présente des contours à l'encre assurés avec des lignes de construction visibles, des remplissages aux marqueurs striés indiquant la brillance des matériaux, et des blocs de couleurs géométriques abstraits qui ancrent la forme 3D.",
     "image": "images/95ef5030db5e5feda8a91a09e54856e5.jpg",
-    "preview_image": "images/preview-1772004920103-59gb.webp",
-    "preview_image_removebg": "images/preview-1772004920027-r5mh.webp",
+    "preview_image": "images/preview-1772187038103-d77a.webp",
+    "preview_image_removebg": "images/preview-1772187038127-o0qw.webp",
     "tags": [
       "industrial design",
       "marker sketch",
       "rapid visualization",
+      "product rendering",
+      "gestural ink",
       "copic style",
-      "concept art",
-      "product design",
-      "gestural line",
-      "sketching"
+      "construction lines",
+      "concept art"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:35:23.395Z"
@@ -816,21 +816,21 @@
   {
     "id": "technical-isometry",
     "title": "Technical Isometry",
-    "description": "Un style d'illustration vectorielle isométrique précis imitant les manuels techniques de haute qualité et les vues éclatées. Il présente des contours noirs nets et uniformes sur fond blanc, avec une coloration ponctuelle fonctionnelle dans des teintes saturées pour mettre en évidence les composants clés, utilisant des lignes pointillées et des flèches pour indiquer le processus et le flux.",
-    "description_en": "A precise, isometric vector illustration style mimicking high-quality technical manuals and exploded-view diagrams. It features clean, uniform black outlines on white, with functional spot-coloring in saturated hues to highlight key components, utilizing dashed lines and arrows to indicate process and flow.",
-    "description_fr": "Un style d'illustration vectorielle isométrique précis imitant les manuels techniques de haute qualité et les vues éclatées. Il présente des contours noirs nets et uniformes sur fond blanc, avec une coloration ponctuelle fonctionnelle dans des teintes saturées pour mettre en évidence les composants clés, utilisant des lignes pointillées et des flèches pour indiquer le processus et le flux.",
+    "description": "Un style d'illustration technique précis imitant les manuels de montage, caractérisé par une projection isométrique et des vues 'éclatées' déconstruites. Il présente des contours vectoriels noirs uniformes, des remplissages de couleurs fonctionnels plats et des lignes directionnelles en pointillés pour indiquer les relations mécaniques et le flux d'assemblage.",
+    "description_en": "A precise technical illustration style mimicking instructional assembly manuals, characterized by isometric projection and deconstructed 'exploded' views. It features uniform black vector outlines, flat functional color fills, and dashed directional lines to indicate mechanical relationships and assembly flow.",
+    "description_fr": "Un style d'illustration technique précis imitant les manuels de montage, caractérisé par une projection isométrique et des vues 'éclatées' déconstruites. Il présente des contours vectoriels noirs uniformes, des remplissages de couleurs fonctionnels plats et des lignes directionnelles en pointillés pour indiquer les relations mécaniques et le flux d'assemblage.",
     "image": "images/95ba2e35caad23e7ad091ddfdbe3d843.jpg",
-    "preview_image": "images/preview-1772100772451-piuz.webp",
-    "preview_image_removebg": "images/preview-1772100772550-r2sk.webp",
+    "preview_image": "images/preview-1772186461334-xuwy.webp",
+    "preview_image_removebg": "images/preview-1772186461006-h59v.webp",
     "tags": [
       "isometric",
       "technical illustration",
+      "exploded view",
       "schematic",
       "vector",
-      "exploded view",
-      "diagram",
-      "line art",
-      "instructional"
+      "instructional",
+      "diagrammatic",
+      "line art"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-26T10:12:57.335Z"
@@ -856,5 +856,27 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-26T10:17:29.230Z"
+  },
+  {
+    "id": "graphite-chiaroscuro",
+    "title": "Graphite Chiaroscuro",
+    "description": "Un style de croquis académique traditionnel imitant le graphite tendre ou le fusain sur du papier texturé. Il se définit par des hachures diagonales énergiques pour créer la densité des ombres, un éclairage très contrasté où le papier brut sert de rehaut, et un tracé gestuel assuré sans estompage lisse.",
+    "description_en": "A traditional academic sketching style mimicking soft graphite or charcoal on textured paper. It is defined by energetic diagonal hatching to build shadow density, high-contrast lighting where the raw paper serves as the highlight, and confident, gestural line work without smooth blending.",
+    "description_fr": "Un style de croquis académique traditionnel imitant le graphite tendre ou le fusain sur du papier texturé. Il se définit par des hachures diagonales énergiques pour créer la densité des ombres, un éclairage très contrasté où le papier brut sert de rehaut, et un tracé gestuel assuré sans estompage lisse.",
+    "image": "images/output_781232.jpeg",
+    "preview_image": "images/preview-1772186395665-5a0b.webp",
+    "preview_image_removebg": "images/preview-1772186395503-2epe.webp",
+    "tags": [
+      "graphite sketch",
+      "pencil drawing",
+      "cross-hatching",
+      "academic study",
+      "charcoal",
+      "monochromatic",
+      "traditional media",
+      "rough sketch"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-27T10:00:01.229Z"
   }
 ]
