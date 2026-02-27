@@ -878,5 +878,49 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-27T10:00:01.229Z"
+  },
+  {
+    "id": "matte-plasticine",
+    "title": "Matte Plasticine",
+    "description": "Un style d'illustration 3D tactile imitant l'aspect de l'argile douce sculptée à la main ou de la pâte à modeler mate. L'esthétique présente une géométrie lisse et arrondie avec des volumes gonflés, rendue avec une illumination globale de haute qualité pour créer une finition confortable et non brillante qui semble physiquement palpable.",
+    "description_en": "A tactile 3D illustration style mimicking the look of soft, hand-sculpted clay or matte plasticine. The aesthetic features smooth, rounded geometry with inflated volumes, rendered with high-quality global illumination to create a cozy, non-glossy finish that feels physically touchable.",
+    "description_fr": "Un style d'illustration 3D tactile imitant l'aspect de l'argile douce sculptée à la main ou de la pâte à modeler mate. L'esthétique présente une géométrie lisse et arrondie avec des volumes gonflés, rendue avec une illumination globale de haute qualité pour créer une finition confortable et non brillante qui semble physiquement palpable.",
+    "image": "images/3c25fb2e4f0fbb82adb128de0482d3a2.jpg",
+    "preview_image": "images/preview-1772187377510-9biv.webp",
+    "preview_image_removebg": "images/preview-1772187377498-g6me.webp",
+    "tags": [
+      "claymorphism",
+      "3d illustration",
+      "matte rendering",
+      "soft lighting",
+      "plasticine style",
+      "minimal 3d",
+      "blender render",
+      "tactile texture"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-27T10:16:25.913Z"
+  },
+  {
+    "id": "hybrid-daydream",
+    "title": "Hybrid Daydream",
+    "description": "Une esthétique surréaliste mêlant médias mixtes qui superpose harmonieusement des illustrations vectorielles plates et ombrées (cel-shading) dans des environnements photographiques hyperréalistes. Le style se définit par le contraste saisissant entre l'art 2D aux contours nets et le monde texturé haute fidélité qu'il habite, ancré physiquement par des interactions réalistes telles que les reflets dans l'eau et les ombres portées directionnelles.",
+    "description_en": "A surreal mixed-media aesthetic that seamlessly superimposes flat, cel-shaded vector illustrations into hyper-realistic photographic environments. The style is defined by the striking contrast between the clean, outlined 2D character art and the textured, high-fidelity world they inhabit, grounded physically by realistic interactions such as water reflections and directional cast shadows.",
+    "description_fr": "Une esthétique surréaliste mêlant médias mixtes qui superpose harmonieusement des illustrations vectorielles plates et ombrées (cel-shading) dans des environnements photographiques hyperréalistes. Le style se définit par le contraste saisissant entre l'art 2D aux contours nets et le monde texturé haute fidélité qu'il habite, ancré physiquement par des interactions réalistes telles que les reflets dans l'eau et les ombres portées directionnelles.",
+    "image": "images/4df0bf049b4da5180c60caf484eb352b.jpg",
+    "preview_image": "images/preview-1772187436380-xr6t.webp",
+    "preview_image_removebg": "images/preview-1772187436341-d4vi.webp",
+    "tags": [
+      "mixed media",
+      "augmented reality",
+      "cel-shaded",
+      "photorealism",
+      "vector art",
+      "2d in 3d",
+      "anime style",
+      "surreal composition"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-02-27T10:18:24.123Z"
   }
 ]
