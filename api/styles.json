@@ -194,7 +194,7 @@
       "geometric minimalism",
       "soft lighting"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-14T21:40:48.938Z"
   },
   {
@@ -392,7 +392,7 @@
       "digital noise",
       "chiaroscuro"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
   {
@@ -480,7 +480,7 @@
       "isometric",
       "scale model"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-17T22:58:56.223Z"
   },
   {
@@ -678,7 +678,7 @@
       "poster design",
       "chiaroscuro"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-02-20T22:35:34.527Z"
   },
   {
@@ -722,7 +722,7 @@
       "cel shaded",
       "hard edge"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-22T16:49:32.740Z"
   },
   {
@@ -744,7 +744,7 @@
       "dry brush",
       "minimalist"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-25T07:29:54.740Z"
   },
   {
@@ -832,30 +832,8 @@
       "diagrammatic",
       "line art"
     ],
-    "backgroundType": 2,
+    "backgroundType": 1,
     "createdAt": "2026-02-26T10:12:57.335Z"
-  },
-  {
-    "id": "riso-interface",
-    "title": "Riso Interface",
-    "description": "Un style d'illustration vectorielle surréaliste imitant le reflet d'un miroir brisé, caractérisé par des éclats géométriques angulaires, des couleurs pop-art plates et des bordures blanches distinctes séparant les morceaux fragmentés. L'esthétique combine le design plat moderne avec une texture de grain de film rétro et une approche cubiste disloquée de la composition.",
-    "description_en": "A surreal vector illustration style mimicking a shattered mirror reflection, characterized by angular geometric shards, flat pop-art coloring, and distinct white borders separating the fragmented pieces. The aesthetic combines modern flat design with a retro film grain texture and a disjointed, cubist approach to composition.",
-    "description_fr": "Un style d'illustration vectorielle surréaliste imitant le reflet d'un miroir brisé, caractérisé par des éclats géométriques angulaires, des couleurs pop-art plates et des bordures blanches distinctes séparant les morceaux fragmentés. L'esthétique combine le design plat moderne avec une texture de grain de film rétro et une approche cubiste disloquée de la composition.",
-    "image": "images/c6fbe486e8b396c70a0bb2256ee40a0d.jpg",
-    "preview_image": "images/preview-1772101042465-45yt.webp",
-    "preview_image_removebg": "images/preview-1772101042508-wpfp.webp",
-    "tags": [
-      "broken mirror",
-      "flat vector",
-      "pop art",
-      "cubism",
-      "shattered glass",
-      "risograph texture",
-      "geometric collage",
-      "editorial illustration"
-    ],
-    "backgroundType": 2,
-    "createdAt": "2026-02-26T10:17:29.230Z"
   },
   {
     "id": "graphite-chiaroscuro",
@@ -898,7 +876,7 @@
       "blender render",
       "tactile texture"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-27T10:16:25.913Z"
   },
   {
@@ -920,7 +898,7 @@
       "anime style",
       "surreal composition"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-27T10:18:24.123Z"
   }
 ]
