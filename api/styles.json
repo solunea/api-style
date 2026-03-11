@@ -18,7 +18,7 @@
       "wax crayon",
       "flat design"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
   {
@@ -40,7 +40,7 @@
       "line art",
       "visual note-taking"
     ],
-    "backgroundType": 2,
+    "backgroundType": 1,
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
   {
@@ -62,7 +62,7 @@
       "modern graphic design",
       "vibrant color blocking"
     ],
-    "backgroundType": 2,
+    "backgroundType": 1,
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
   {
@@ -106,7 +106,7 @@
       "stippling",
       "lo-fi aesthetic"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
   {
@@ -128,7 +128,7 @@
       "textured vector",
       "screen print"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
   {
@@ -304,7 +304,7 @@
       "flat color",
       "line art"
     ],
-    "backgroundType": 0,
+    "backgroundType": 1,
     "createdAt": "2026-02-17T15:31:22.088Z"
   },
   {
@@ -348,7 +348,7 @@
       "mid-century illustration",
       "dry media"
     ],
-    "backgroundType": 0,
+    "backgroundType": 1,
     "createdAt": "2026-02-17T20:07:17.859Z"
   },
   {
@@ -414,7 +414,7 @@
       "expressive lines",
       "monochromatic"
     ],
-    "backgroundType": 2,
+    "backgroundType": 1,
     "createdAt": "2026-02-17T20:12:26.361Z"
   },
   {
@@ -524,7 +524,7 @@
       "aliased",
       "indexed color"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-17T23:02:22.428Z"
   },
   {
@@ -744,7 +744,7 @@
       "dry brush",
       "minimalist"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-25T07:29:54.740Z"
   },
   {
@@ -898,7 +898,29 @@
       "anime style",
       "surreal composition"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-02-27T10:18:24.123Z"
+  },
+  {
+    "id": "tactile-diorama",
+    "title": "Tactile Diorama",
+    "description": "Ce style incarne l'illustration d'entreprise 3D contemporaine, caractérisée par des surfaces douces et mates ainsi que des textures veloutées. Les formes sont construites à partir d'une géométrie lisse et arrondie avec une subtile diffusion sous-surfacique, illuminées par un doux éclairage de studio qui crée des dégradés fluides et une profonde occlusion ambiante. L'esthétique rappelle les jouets en vinyle haut de gamme ou les modèles tactiles en feutre, projetant une atmosphère numérique chaleureuse, accessible et immaculée.",
+    "description_en": "This style embodies contemporary 3D corporate illustration, characterized by soft, matte surfaces and velvety textures. Forms are constructed from smooth, rounded geometry with subtle subsurface scattering, illuminated by gentle studio lighting that creates soft gradients and deep ambient occlusion. The aesthetic resembles premium vinyl toys or tactile felted models, projecting a warm, approachable, and pristine digital atmosphere.",
+    "description_fr": "Ce style incarne l'illustration d'entreprise 3D contemporaine, caractérisée par des surfaces douces et mates ainsi que des textures veloutées. Les formes sont construites à partir d'une géométrie lisse et arrondie avec une subtile diffusion sous-surfacique, illuminées par un doux éclairage de studio qui crée des dégradés fluides et une profonde occlusion ambiante. L'esthétique rappelle les jouets en vinyle haut de gamme ou les modèles tactiles en feutre, projetant une atmosphère numérique chaleureuse, accessible et immaculée.",
+    "image": "images/a443d0a1e4d8a20582e630276e0afdc0.jpg",
+    "preview_image": "images/preview-1773229729739-pglg.webp",
+    "preview_image_removebg": "images/preview-1773229734863-bx73.webp",
+    "tags": [
+      "3d-render",
+      "matte-finish",
+      "corporate-illustration",
+      "vinyl-toy",
+      "ambient-occlusion",
+      "rounded-geometry",
+      "subsurface-scattering",
+      "tactile-texture"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-03-11T11:49:06.137Z"
   }
 ]

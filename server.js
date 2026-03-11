@@ -276,7 +276,7 @@ function parseModelJson(raw) {
 
 // Helper: call Gemini with a prompt and image
 async function callGemini(analyzePrompt, dataUri) {
-  const output = await replicate.run('google/gemini-3-pro', {
+  const output = await replicate.run('google/gemini-3.1-pro', {
     input: {
       prompt: analyzePrompt,
       images: [dataUri],
