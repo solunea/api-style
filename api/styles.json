@@ -964,5 +964,26 @@
     ],
     "backgroundType": 1,
     "createdAt": "2026-03-17T13:50:20.772Z"
+  },
+  {
+    "id": "burin-intaglio",
+    "title": "Burin Intaglio",
+    "description": "Ce style imite le rendu d'animation 3D haut de gamme avec une texture « floquée » ou feutrée tactile distinctive appliquée à toutes les surfaces, rappelant les jouets de créateurs ou l'art des jeux mobiles modernes. Il utilise un effet d'objectif macroscopique avec une profondeur de champ extrêmement faible, rendant les sujets avec des couleurs hyper-vibrantes, un éclairage global de studio doux et des systèmes de particules de fourrure denses qui adoucissent chaque silhouette.",
+    "description_en": "This style emulates high-end 3D animation rendering with a distinctive, tactile 'flocked' or felt-like texture applied to all surfaces, reminiscent of designer toys or modern mobile game art. It utilizes a macroscopic lens effect with an extremely shallow depth of field, rendering subjects with hyper-vibrant colors, soft studio global illumination, and dense, velvety fur particle systems that soften every silhouette.",
+    "description_fr": "Ce style imite le rendu d'animation 3D haut de gamme avec une texture « floquée » ou feutrée tactile distinctive appliquée à toutes les surfaces, rappelant les jouets de créateurs ou l'art des jeux mobiles modernes. Il utilise un effet d'objectif macroscopique avec une profondeur de champ extrêmement faible, rendant les sujets avec des couleurs hyper-vibrantes, un éclairage global de studio doux et des systèmes de particules de fourrure denses qui adoucissent chaque silhouette.",
+    "image": "images/g42e6s7xsaaprpk.jpg",
+    "preview_image": "images/preview-1773755602423-4awp.webp",
+    "preview_image_removebg": "images/preview-1773755602456-5rlg.webp",
+    "tags": [
+      "3d render",
+      "flocked texture",
+      "macro photography",
+      "tilt-shift",
+      "designer toy",
+      "procedural fur",
+      "subsurface scattering"
+    ],
+    "backgroundType": 1,
+    "createdAt": "2026-03-17T13:53:25.407Z"
   }
 ]
