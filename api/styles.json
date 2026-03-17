@@ -896,7 +896,7 @@
       "anime style",
       "surreal composition"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-02-27T10:18:24.123Z"
   },
   {
@@ -940,7 +940,7 @@
       "soft focus",
       "editorial vintage"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-03-17T13:44:23.380Z"
   },
   {
@@ -962,7 +962,7 @@
       "gel lighting",
       "chromatic aberration"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-03-17T13:50:20.772Z"
   },
   {
@@ -983,7 +983,7 @@
       "procedural fur",
       "subsurface scattering"
     ],
-    "backgroundType": 1,
+    "backgroundType": 0,
     "createdAt": "2026-03-17T13:53:25.407Z"
   }
 ]
