@@ -920,5 +920,49 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-03-11T11:49:06.137Z"
+  },
+  {
+    "id": "nostalgic-opulence",
+    "title": "Nostalgic Opulence",
+    "description": "Ce style imite la photographie argentique 35 mm vintage avec un éclairage cinématographique tamisé et mélancolique, contrastant des ombres chaudes et profondes avec des matériaux très tactiles aux teintes pastel. Il présente une esthétique maximaliste et surchargée, définie par un halo de flou artistique autour des sources lumineuses, un grain de film organique prononcé et une atmosphère à la fois somptueuse et nostalgique.",
+    "description_en": "This style emulates vintage 35mm film photography with a moody, low-key cinematic lighting setup that contrasts deep, warm shadows against highly tactile, pastel-hued materials. It features a maximalist, cluttered aesthetic defined by soft-focus halation around practical light sources, heavy organic film grain, and a melancholic yet lavish atmosphere.",
+    "description_fr": "Ce style imite la photographie argentique 35 mm vintage avec un éclairage cinématographique tamisé et mélancolique, contrastant des ombres chaudes et profondes avec des matériaux très tactiles aux teintes pastel. Il présente une esthétique maximaliste et surchargée, définie par un halo de flou artistique autour des sources lumineuses, un grain de film organique prononcé et une atmosphère à la fois somptueuse et nostalgique.",
+    "image": "images/hdtjyqzxcaqedkh.jpg",
+    "preview_image": "images/preview-1773755056701-y14r.webp",
+    "preview_image_removebg": "images/preview-1773755056676-1m4k.webp",
+    "tags": [
+      "35mm photography",
+      "cinematic lighting",
+      "halation",
+      "film grain",
+      "maximalist kitsch",
+      "chiaroscuro",
+      "soft focus",
+      "editorial vintage"
+    ],
+    "backgroundType": 1,
+    "createdAt": "2026-03-17T13:44:23.380Z"
+  },
+  {
+    "id": "granular-airbrush",
+    "title": "Granular Airbrush",
+    "description": "Ce style reproduit l'esthétique onirique et nostalgique de la photographie argentique 35 mm capturée avec des objectifs vintage. Il se caractérise par une très faible profondeur de champ, un grain de film ISO prononcé et d'immenses fuites de lumière optiques vibrantes qui obscurcissent physiquement des parties de l'image. L'étalonnage des couleurs s'appuie sur des éclairages gélatinés cinématographiques, créant une atmosphère douce, mélancolique mais intensément colorée avec un halo prononcé autour des hautes lumières.",
+    "description_en": "This style replicates the dreamy, nostalgic aesthetic of 35mm analog film photography shot through vintage lenses. It is characterized by extreme shallow depth of field, heavy ISO film grain, and massive, vibrant optical light leaks that physically obscure parts of the frame. The color grading relies on cinematic gel lighting, creating a soft, melancholic yet intensely colorful atmosphere with pronounced halation around highlights.",
+    "description_fr": "Ce style reproduit l'esthétique onirique et nostalgique de la photographie argentique 35 mm capturée avec des objectifs vintage. Il se caractérise par une très faible profondeur de champ, un grain de film ISO prononcé et d'immenses fuites de lumière optiques vibrantes qui obscurcissent physiquement des parties de l'image. L'étalonnage des couleurs s'appuie sur des éclairages gélatinés cinématographiques, créant une atmosphère douce, mélancolique mais intensément colorée avec un halo prononcé autour des hautes lumières.",
+    "image": "images/hcqmgs6x0aas8dx.jpg",
+    "preview_image": "images/preview-1773755412554-8e2k.webp",
+    "preview_image_removebg": "images/preview-1773755412947-tknh.webp",
+    "tags": [
+      "35mm film",
+      "light leak",
+      "heavy grain",
+      "cinematic bokeh",
+      "halation",
+      "vintage lens",
+      "gel lighting",
+      "chromatic aberration"
+    ],
+    "backgroundType": 1,
+    "createdAt": "2026-03-17T13:50:20.772Z"
   }
 ]
