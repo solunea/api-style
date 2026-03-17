@@ -24,21 +24,19 @@
   {
     "id": "doodle-pop",
     "title": "Doodle Pop",
-    "description": "Un style d'illustration vibrant fait main imitant les gribouillages spontanés à l'encre et la prise de notes visuelle. Il se caractérise par des traits de marqueur noir audacieux et expressifs, une palette de couleurs limitée avec des accents percutants, et un nuage environnant de symboles énergiques comme des gribouillis, des points d'exclamation et des formes géométriques stylisées.",
-    "description_en": "A vibrant, hand-drawn illustration style mimicking spontaneous ink doodles and visual note-taking. It features bold, expressive black marker lines, a limited color palette with punchy accents, and a surrounding cloud of energetic symbols like squiggles, exclamation marks, and stylized geometric shapes.",
-    "description_fr": "Un style d'illustration vibrant fait main imitant les gribouillages spontanés à l'encre et la prise de notes visuelle. Il se caractérise par des traits de marqueur noir audacieux et expressifs, une palette de couleurs limitée avec des accents percutants, et un nuage environnant de symboles énergiques comme des gribouillis, des points d'exclamation et des formes géométriques stylisées.",
+    "description": "Un style d'illustration éditoriale ludique et énergique, caractérisé par des contours audacieux à l'encre noire d'épaisseur variable et des aplats de couleurs à palette limitée. La composition déborde d'énergie cinétique, utilisant des gribouillis abstraits flottants, des lignes d'action et des éléments typographiques qui entourent le point focal central aux côtés de motifs géométriques audacieux et de rayures diagonales très contrastées.",
+    "description_en": "A playful and energetic editorial illustration style characterized by bold, variable-width black ink contours and flat, limited-palette color blocks. The composition bursts with kinetic energy, utilizing floating abstract squiggles, action lines, and typographic elements that surround the central focus alongside bold geometric patterns and high-contrast diagonal stripes.",
+    "description_fr": "Un style d'illustration éditoriale ludique et énergique, caractérisé par des contours audacieux à l'encre noire d'épaisseur variable et des aplats de couleurs à palette limitée. La composition déborde d'énergie cinétique, utilisant des gribouillis abstraits flottants, des lignes d'action et des éléments typographiques qui entourent le point focal central aux côtés de motifs géométriques audacieux et de rayures diagonales très contrastées.",
     "image": "images/hatijpwaeaa5f-g.jpg",
     "preview_image": "images/preview-1772103711874-gbr5.webp",
     "preview_image_removebg": "images/preview-1772103712098-9ru7.webp",
     "tags": [
+      "editorial illustration",
       "doodle art",
-      "hand-drawn",
-      "ink illustration",
-      "marker sketch",
-      "flat design",
-      "playful",
-      "line art",
-      "visual note-taking"
+      "flat line art",
+      "kinetic squiggles",
+      "variable-width ink",
+      "geometric patterns"
     ],
     "backgroundType": 1,
     "createdAt": "2026-02-10T15:49:04.146Z"
