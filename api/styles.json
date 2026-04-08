@@ -1054,5 +1054,26 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:19:14.351Z"
+  },
+  {
+    "id": "stippled-mirage",
+    "title": "Stippled Mirage",
+    "description": "Ce style se caractérise par ses dégradés oniriques et lumineux, fortement texturés par un bruit numérique dense qui crée une esthétique moderne à l'aérographe. Les formes sont entièrement définies par des variations de couleurs vibrantes et prismatiques ainsi que des transitions douces plutôt que par des contours, produisant une atmosphère éthérée et rayonnante.",
+    "description_en": "This style is characterized by its dreamy, luminous gradients heavily textured with dense digital noise, creating a soft, modernized airbrush aesthetic. Forms are defined entirely by vibrant, prismatic color shifts and feathered transitions rather than linework, resulting in an ethereal, glowing atmosphere.",
+    "description_fr": "Ce style se caractérise par ses dégradés oniriques et lumineux, fortement texturés par un bruit numérique dense qui crée une esthétique moderne à l'aérographe. Les formes sont entièrement définies par des variations de couleurs vibrantes et prismatiques ainsi que des transitions douces plutôt que par des contours, produisant une atmosphère éthérée et rayonnante.",
+    "image": "images/e297ae8bb0a579ae97bd2f9a4ad08989.jpg",
+    "preview_image": "images/preview-1775643879121-xtk1.webp",
+    "preview_image_removebg": "images/preview-1775643879098-bq1x.webp",
+    "tags": [
+      "grainy gradient",
+      "digital noise",
+      "airbrush aesthetic",
+      "lineless",
+      "prismatic glow",
+      "stippled shading",
+      "editorial illustration"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-04-08T10:24:47.005Z"
   }
 ]
