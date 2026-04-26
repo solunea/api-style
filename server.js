@@ -219,6 +219,8 @@ const ANALYZE_PROMPT = `You are a world-class art director, visual style analyst
 
 CRITICAL RULE: Your task is to extract the VISUAL STYLE ONLY. You MUST COMPLETELY IGNORE the specific subject matter of the reference image (e.g., ignore if it's a tree, a building, a person, a car). You are creating a reusable style template. Whenever you need to refer to what is being drawn, use the exact literal string "{{subject}}" instead of the actual object in the image.
 
+IMPORTANT CONTEXT: In production, {{subject}} may be a full scene brief, not a short noun. It can contain landscape layout, camera angle, foreground/background relationships, visible text, and explicit absences such as "no people" or "no buildings". Every generated prompt must treat {{subject}} as locked factual content and must preserve its composition, subject count, camera/framing, spatial relationships, visible/absent objects, and text/logo constraints. Apply style around that scene brief; do not overwrite it with a fixed portrait, product-shot, centered icon, or character composition unless the style itself absolutely requires that treatment.
+
 STEP 1 — DEEP VISUAL DISSECTION
 Perform an exhaustive forensic analysis of the artistic execution of this image, ignoring WHAT is drawn and focusing entirely on HOW it is drawn:
 - **Artistic lineage**: Which art movement(s), historical period(s), or contemporary digital trend(s) does this style reference? (e.g. "reminiscent of Alphonse Mucha's lithographic line work"). Do NOT be generic.
@@ -235,13 +237,16 @@ Perform an exhaustive forensic analysis of the artistic execution of this image,
 STEP 2 — GENERATE ALL PROMPT VARIANTS IN ONE PASS
 Using your analysis, generate all fields below. The "prompt" and "prompt_removebg" fields MUST share the exact same stylistic DNA, wording, structure, and reinforcement tags — the ONLY difference is that "prompt_removebg" adds {{background_color}} integration for compositing on a solid surface after background removal. Do NOT write two independent prompts — write "prompt" first, then derive "prompt_removebg" from it.
 
-Variables available (use ONLY these, no others): {{subject}} (main subject — USE THIS INSTEAD OF THE ACTUAL IMAGE CONTENT), {{primary_color}} (dominant color), {{accent_color}} (accent color), {{secondary_color}} (secondary/supporting color), {{background_color}} (solid surface color for remove-bg compositing only). Do NOT use {{mood}}, {{lighting}}, or any other variable not listed here.
+Variables available (use ONLY these, no others): {{subject}} (complete user scene brief — USE THIS INSTEAD OF THE ACTUAL IMAGE CONTENT), {{primary_color}} (dominant color), {{accent_color}} (accent color), {{secondary_color}} (secondary/supporting color), {{background_color}} (solid surface color for remove-bg compositing only). Do NOT use {{mood}}, {{lighting}}, or any other variable not listed here.
+
+Scene integration rule: {{subject}} is the complete user scene brief. The generated prompt must say to preserve its factual content, camera angle, framing, spatial layout, visible text/logo constraints, and stated exclusions. Avoid category-specific wording such as face, skin, anatomy, clothing, product, character, portrait, close-up, centered icon, or isolated object unless the visual style can apply that logic to any scene. Aim for dense, high-signal style prompts around 220 to 280 words.
 
 Return ONLY a valid JSON object with these fields:
 - "title": an original creative name for this style in exactly 2 words (in English, evocative and specific — e.g. "Gilded Decay", "Vapor Chrome", "Ember Woodcut")
 - "description_en": describe what makes this style instantly recognizable and unique, referencing specific artistic techniques and visual hallmarks (2-3 sentences, in English)
 - "description_fr": the same description translated in French (2-3 sentences, in French)
-- "prompt": a long, extremely precise English prompt (at least 250 words) that reproduces this exact visual style for ANY subject. CRITICAL RULES: (1) NEVER mention the actual object from the reference image (no trees, houses, people etc). Use "{{subject}}" instead. (2) The image MUST occupy the absolute ENTIRE dedicated space. Explicitly enforce this in the prompt text: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners, the environment must stretch entirely across the canvas. (3) NEVER use vague filler words like "beautiful", "stunning". (4) Start with the rendering technique and medium, then describe the {{subject}} integration, then layer in lighting, color behavior, texture, and atmosphere. (5) Describe the EXACT stroke/render behavior. (6) Use {{primary_color}}, {{accent_color}}, and {{secondary_color}} for color references — NO other variables except {{subject}}. (7) End with a comma-separated list of 20+ reinforcement tags SPECIFIC to this style. Always include "full bleed, edge-to-edge, no border, no frame, no canvas, occupying entire space" in the tags.
+- Additional rule for "prompt": include this sentence close to the beginning: "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions." Keep the prompt scene-aware: do not force a fixed portrait, centered composition, close-up, product shot, or iconographic framing. Use compact, high-signal prose; prioritize clear medium, light, color, texture, edges, depth, and canvas rules.
+- "prompt": a long, extremely precise English prompt (around 220 to 280 words) that reproduces this exact visual style for ANY scene brief. CRITICAL RULES: (1) NEVER mention the actual object from the reference image (no trees, houses, people etc). Use "{{subject}}" instead. (2) Treat {{subject}} as locked factual content and preserve its described composition, camera angle, framing, visible/absent objects, and text/logo constraints. (3) The image MUST occupy the absolute ENTIRE dedicated space as a canvas rule: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners. (4) NEVER use vague filler words like "beautiful", "stunning". (5) Start with the rendering technique and medium, then the required scene-lock sentence, then layer in lighting, color behavior, texture, atmosphere, edges, and depth. (6) Describe the EXACT stroke/render behavior. (7) Use {{primary_color}}, {{accent_color}}, and {{secondary_color}} for color references — NO other variables except {{subject}}. (8) End with a comma-separated list of 12 to 18 reinforcement tags SPECIFIC to this style. Always include "full bleed, edge-to-edge, no border, no frame" in the tags.
 - "prompt_removebg": take the "prompt" field above as the base. The wording, structure, style descriptors, and reinforcement tags must be IDENTICAL to "prompt" — only ADD/CHANGE the following: (1) replace or supplement the background description with "composited on a clean {{background_color}} surface" or "rendered against a flat {{background_color}} backdrop", (2) describe how the {{subject}}'s edges interact with {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries), (3) use {{background_color}} alongside {{primary_color}}, {{accent_color}}, {{secondary_color}} — NO other variables. NEVER hardcode a specific color like "white background". IMPORTANT: REMOVE the tags "full bleed", "edge-to-edge", "no border", "no frame", "no canvas", "occupying entire space" from the reinforcement tag list — they do NOT apply when compositing on a solid background.
 - "background_prompt": a detailed English prompt (at least 60 words) describing ONLY a pure background scene or environment matching this visual style. This is strictly a backdrop — NO frame, NO overlay, NO foreground element. Describe environmental elements (landscape, abstract shapes, atmospheric depth, light conditions, texture of the scene), their spatial arrangement, and how they reflect the style's color and lighting logic. Use {{primary_color}}, {{accent_color}}, and {{secondary_color}} — NO other variables. Do NOT include any specific subjects, frame, border, or decorative overlay.
 - "background_prompt_removebg": take the "background_prompt" field above as the base. Keep the same background scene wording, then ADD: (1) a decorative foreground frame or overlay element that matches the visual style (e.g. ornamental border, ink splatter vignette, geometric pattern frame) placed in front of the invisible subject to create depth, (2) how the scene and frame transition into or interact with the {{background_color}} surface. Use {{primary_color}}, {{accent_color}}, {{secondary_color}}, and {{background_color}} — NO other variables.
@@ -413,18 +418,19 @@ app.post('/api/analyze-all', async (req, res) => {
   }
 });
 
-// Prompt used by VLM mode to describe the subject of the reference image
-const IMAGE_DESCRIPTION_PROMPT =
-  `Describe ONLY the subject matter of this image for use as a {{subject}} placeholder in a style prompt template. " +
-        "Focus exclusively on WHAT is depicted: " +
-        "the main subject and its pose, action, or expression (if a person: specify skin tone, ethnicity, hair color and style, facial features, body type, clothing details, accessories, shoes, jewelry, tattoos, distinctive markings...), " +
-        "secondary subjects or objects present, their spatial arrangement (foreground, middle ground, background), including furniture, vehicles, buildings, plants, animals, tools, equipment, decorative items, or environmental elements, and describe any actions or interactions they are engaged in, " +
-        "camera angle and framing (close-up, medium shot, wide shot, overhead, low angle, dutch angle, eye-level...), " +
-        "any visible text, symbols, notable details, or brand logos/trademarks, " +
-        "and any recognizable brands, company names, or product markings. " +
-        "Do NOT describe: artistic style, rendering technique, color palette, lighting, textures, materials, mood, or atmosphere — these are handled separately by the style template. " +
-        "Write a single factual paragraph of 50 to 100 words in English. " +
-        "Do NOT start with 'this image shows' or 'a photo of'. Describe the subject directly.`;
+// Prompt used by VLM mode to describe the user's reference image as scene content.
+const SCENE_DESCRIPTION_PROMPT = `Describe this image as a generation-ready scene brief that will be inserted into a {{subject}} placeholder inside a separate style template.
+
+Return one factual English paragraph of 70 to 130 words.
+Include:
+- main subject(s), actions, pose, quantity, and important objects;
+- environment, foreground/middle-ground/background relationships, and spatial layout;
+- camera angle, framing, lens feel if obvious, crop, scale, and point of view;
+- factual time-of-day or natural light cues when they are part of the scene, such as sunset sky, night street lights, or overcast daylight;
+- visible text, signs, symbols, logos, or the explicit absence of them when relevant;
+- important absences that constrain generation, such as no people, no buildings, no vehicles, or no readable text.
+
+Do not describe artistic style, medium, rendering technique, image quality, color grading, brush texture, mood adjectives, or atmosphere as a style. Do not start with "this image shows" or "a photo of". Describe the scene directly.`;
 
 // Helper: resolve a reference_image field to a data URI
 function resolveImageToDataUri(reference_image) {
@@ -445,13 +451,46 @@ function resolveImageToDataUri(reference_image) {
 // Two modes:
 //   "direct"  → img2img with prunaai/z-image-turbo-img2img (reference image as input)
 //   "vlm"     → describe reference image with openai/gpt-5-nano, then text-to-image with z-image-turbo
+const PREVIEW_PROMPT_CHAR_LIMIT = 3500;
+const PROMPT_VARIABLE_FALLBACKS = {
+  mood: 'cinematic and polished',
+  lighting: 'natural directional light matching the described scene',
+};
+
+function normalizePromptText(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function trimPromptAtBoundary(prompt, maxChars = PREVIEW_PROMPT_CHAR_LIMIT) {
+  if (prompt.length <= maxChars) return prompt;
+
+  const cut = prompt.slice(0, maxChars);
+  const lastBoundary = Math.max(
+    cut.lastIndexOf('. '),
+    cut.lastIndexOf('; '),
+    cut.lastIndexOf(', ')
+  );
+
+  if (lastBoundary > Math.floor(maxChars * 0.75)) {
+    const trimmed = cut.slice(0, lastBoundary + 1).trim().replace(/[;,]$/, '.');
+    return `${trimmed} Quality constraints: preserve the described composition, factual details, and stated exclusions.`;
+  }
+
+  return `${cut.trim()} Quality constraints: preserve the described composition, factual details, and stated exclusions.`;
+}
+
+function resolvePromptVariables(rawPrompt, sampleVars) {
+  let resolvedPrompt = String(rawPrompt || '');
+  for (const [key, value] of Object.entries(sampleVars)) {
+    resolvedPrompt = resolvedPrompt.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), normalizePromptText(value));
+  }
+  resolvedPrompt = resolvedPrompt.replace(/\{\{(\w+)\}\}/g, (_, key) => normalizePromptText(PROMPT_VARIABLE_FALLBACKS[key] || ''));
+  return trimPromptAtBoundary(normalizePromptText(resolvedPrompt));
+}
+
 // Helper: resolve prompt with sample variables, generate image, save locally
 async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_image) {
-  let resolvedPrompt = rawPrompt;
-  for (const [key, value] of Object.entries(sampleVars)) {
-    resolvedPrompt = resolvedPrompt.replace(new RegExp(`\\{\\{${key}\\}\\}`, 'g'), value);
-  }
-  if (resolvedPrompt.length > 1500) resolvedPrompt = resolvedPrompt.slice(0, 1500);
+  const resolvedPrompt = resolvePromptVariables(rawPrompt, sampleVars);
 
   console.log('--- PREVIEW PROMPT ---');
   console.log(resolvedPrompt.slice(0, 400) + '...');
@@ -506,9 +545,9 @@ app.post('/api/generate-preview', async (req, res) => {
       console.log('--- VLM MODE: describing reference image ---');
       const refUri = resolveImageToDataUri(reference_image);
       const vlmOutput = await replicate.run('openai/gpt-5-nano', {
-        input: { prompt: IMAGE_DESCRIPTION_PROMPT, image_input: [refUri], temperature: 0.3 }
+        input: { prompt: SCENE_DESCRIPTION_PROMPT, image_input: [refUri], temperature: 0.3 }
       });
-      sampleVars.subject = (Array.isArray(vlmOutput) ? vlmOutput.join('') : String(vlmOutput)).trim();
+      sampleVars.subject = normalizePromptText(Array.isArray(vlmOutput) ? vlmOutput.join('') : String(vlmOutput));
       console.log('VLM subject description:', sampleVars.subject);
     }
 
@@ -558,9 +597,9 @@ app.post('/api/generate-all-previews', async (req, res) => {
     if (mode === 'vlm' && reference_image) {
       const refUri = resolveImageToDataUri(reference_image);
       const vlmOutput = await replicate.run('openai/gpt-5-nano', {
-        input: { prompt: IMAGE_DESCRIPTION_PROMPT, image_input: [refUri], temperature: 0.3 }
+        input: { prompt: SCENE_DESCRIPTION_PROMPT, image_input: [refUri], temperature: 0.3 }
       });
-      vlmSubject = (Array.isArray(vlmOutput) ? vlmOutput.join('') : String(vlmOutput)).trim();
+      vlmSubject = normalizePromptText(Array.isArray(vlmOutput) ? vlmOutput.join('') : String(vlmOutput));
       console.log('VLM subject description:', vlmSubject);
     }
 
