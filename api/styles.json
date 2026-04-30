@@ -1012,5 +1012,25 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:24:47.005Z"
+  },
+  {
+    "id": "block-silhouette",
+    "title": "Block Silhouette",
+    "description": "Un style graphique minimaliste utilisant un rendu vectoriel plat où les sujets sont représentés comme de pures silhouettes noires sur des fonds géométriques aux couleurs unies. La composition est structurée par une épaisse grille noire, créant une esthétique 2D stricte et très contrastée, sans aucun dégradé ni texture.",
+    "description_en": "A minimalist graphic style utilizing flat vector rendering where subjects are depicted as pure black silhouettes against solid, color-blocked geometric backgrounds. The composition is structured by a thick black grid, creating a high-contrast, strictly 2D orthographic aesthetic with zero gradients or texture.",
+    "description_fr": "Un style graphique minimaliste utilisant un rendu vectoriel plat où les sujets sont représentés comme de pures silhouettes noires sur des fonds géométriques aux couleurs unies. La composition est structurée par une épaisse grille noire, créant une esthétique 2D stricte et très contrastée, sans aucun dégradé ni texture.",
+    "image": "images/87e873755ef2f93cfddc29718655c52a.jpg",
+    "preview_image": "images/preview-1777571455701-kq5u.webp",
+    "preview_image_removebg": "images/preview-1777571455767-oxti.webp",
+    "tags": [
+      "vector silhouette",
+      "color blocking",
+      "black grid",
+      "flat design",
+      "minimalist graphic",
+      "orthographic"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-04-30T17:51:07.243Z"
   }
 ]

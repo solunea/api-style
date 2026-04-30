@@ -1571,5 +1571,36 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:24:47.005Z"
+  },
+  {
+    "id": "block-silhouette",
+    "title": "Block Silhouette",
+    "description": "Un style graphique minimaliste utilisant un rendu vectoriel plat où les sujets sont représentés comme de pures silhouettes noires sur des fonds géométriques aux couleurs unies. La composition est structurée par une épaisse grille noire, créant une esthétique 2D stricte et très contrastée, sans aucun dégradé ni texture.",
+    "description_en": "A minimalist graphic style utilizing flat vector rendering where subjects are depicted as pure black silhouettes against solid, color-blocked geometric backgrounds. The composition is structured by a thick black grid, creating a high-contrast, strictly 2D orthographic aesthetic with zero gradients or texture.",
+    "description_fr": "Un style graphique minimaliste utilisant un rendu vectoriel plat où les sujets sont représentés comme de pures silhouettes noires sur des fonds géométriques aux couleurs unies. La composition est structurée par une épaisse grille noire, créant une esthétique 2D stricte et très contrastée, sans aucun dégradé ni texture.",
+    "prompt": "Flat vector graphic illustration, minimalist silhouette art, purely 2D orthographic projection. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The image MUST occupy the absolute ENTIRE dedicated space as a canvas rule: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners. Render all foreground elements and subjects as pure, untextured black silhouettes with razor-sharp, crisp vector edges. The composition is structurally segmented by a thick, rigid black grid framework that divides the scene into asymmetrical rectangular panels. Behind the black foreground silhouettes, fill the background panels with solid, flat blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. Zero gradients, zero shading, zero 3D depth, and an absolute absence of texture or noise. The lighting logic is purely backlit graphic contrast, where the colored background shapes act as flat illuminated surfaces defining the negative space around the black subjects. The structural black grid and the black silhouettes merge seamlessly into a single flat foreground plane. Ensure perfect geometric precision and hard edge transitions between the solid black fills and the flat color blocks. Focus on the interplay of positive and negative space, where stark black shapes define the narrative while colored voids provide structural context. The vector curves must be flawlessly smooth, and straight lines perfectly rigid. The overall aesthetic is akin to architectural cutaways reduced to pure graphic minimalism. Every element is distilled to its most basic recognizable contour. flat vector, pure silhouette, black grid framework, color blocking, high contrast, 2D orthographic, minimalist graphic design, razor-sharp edges, untextured, full bleed, edge-to-edge, no border, no frame",
+    "prompt_removebg": "Flat vector graphic illustration, minimalist silhouette art, purely 2D orthographic projection. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render all foreground elements and subjects as pure, untextured black silhouettes with razor-sharp, crisp vector edges. The composition is structurally segmented by a thick, rigid black grid framework that divides the scene into asymmetrical rectangular panels. Behind the black foreground silhouettes, fill the background panels with solid, flat blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}, all composited on a clean {{background_color}} surface. The structural black grid and silhouettes can extend beyond the visible frame, intentionally overflowing and cropping at the image boundaries against the {{background_color}} backdrop. Zero gradients, zero shading, zero 3D depth, and an absolute absence of texture or noise. The lighting logic is purely backlit graphic contrast, where the colored background shapes act as flat illuminated surfaces defining the negative space around the black subjects. The structural black grid and the black silhouettes merge seamlessly into a single flat foreground plane. Ensure perfect geometric precision and hard edge transitions between the solid black fills and the flat color blocks. Focus on the interplay of positive and negative space, where stark black shapes define the narrative while colored voids provide structural context. The vector curves must be flawlessly smooth, and straight lines perfectly rigid. The overall aesthetic is akin to architectural cutaways reduced to pure graphic minimalism. Every element is distilled to its most basic recognizable contour. flat vector, pure silhouette, black grid framework, color blocking, high contrast, 2D orthographic, minimalist graphic design, razor-sharp edges, untextured",
+    "background_prompt": "A purely 2D flat vector background structured by a thick, asymmetrical black grid framework. The rectangular panels within the black grid are filled with solid, flat blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. Zero gradients, zero shading, and absolutely no texture. The aesthetic relies entirely on high-contrast color blocking and rigid geometric divisions, creating a stark, minimalist graphic environment of illuminated flat panels against the black structural framework.",
+    "background_prompt_removebg": "A purely 2D flat vector background structured by a thick, asymmetrical black grid framework. The rectangular panels within the black grid are filled with solid, flat blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. Zero gradients, zero shading, and absolutely no texture. The aesthetic relies entirely on high-contrast color blocking and rigid geometric divisions, creating a stark, minimalist graphic environment of illuminated flat panels against the black structural framework. The entire grid structure is rendered against a flat {{background_color}} backdrop. A decorative foreground element, consisting of a thick black graphic stencil overlay matching the stark vector style, is placed in front of the invisible subject, creating a flat layered depth that interacts cleanly with the {{background_color}} surface.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "secondary_color",
+      "background_color"
+    ],
+    "image": "images/87e873755ef2f93cfddc29718655c52a.jpg",
+    "preview_image": "images/preview-1777571455701-kq5u.webp",
+    "preview_image_removebg": "images/preview-1777571455767-oxti.webp",
+    "tags": [
+      "vector silhouette",
+      "color blocking",
+      "black grid",
+      "flat design",
+      "minimalist graphic",
+      "orthographic"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-04-30T17:51:07.243Z"
   }
 ]
