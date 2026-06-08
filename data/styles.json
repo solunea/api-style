@@ -1602,5 +1602,38 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-30T17:51:07.243Z"
+  },
+  {
+    "id": "aliased-lowpoly",
+    "title": "Aliased Lowpoly",
+    "description": "Ce style capture l'essence nostalgique du rendu 3D en temps réel de la fin des années 90 et du début des années 2000, caractérisé par des modèles géométriques à faible nombre de polygones et des bords fortement crénelés. Il se distingue par des textures photographiques basse résolution appliquées sur des maillages rigides, un éclairage plat basique avec des ombres précalculées, et une atmosphère numérique rétro typique des premiers moteurs de jeux vidéo 3D.",
+    "description_en": "This style captures the nostalgic essence of late 90s and early 2000s real-time 3D rendering, characterized by low-polygon geometric models and sharply aliased edges. It features low-resolution photographic textures mapped onto rigid meshes, basic flat lighting with baked shadows, and an unmistakable retro digital atmosphere reminiscent of early 3D video game engines.",
+    "description_fr": "Ce style capture l'essence nostalgique du rendu 3D en temps réel de la fin des années 90 et du début des années 2000, caractérisé par des modèles géométriques à faible nombre de polygones et des bords fortement crénelés. Il se distingue par des textures photographiques basse résolution appliquées sur des maillages rigides, un éclairage plat basique avec des ombres précalculées, et une atmosphère numérique rétro typique des premiers moteurs de jeux vidéo 3D.",
+    "prompt": "Late 1990s and early 2000s retro real-time 3D video game rendering, low-polygon CGI graphic style. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The image must occupy the absolute entire dedicated space, full bleed to all four corners with no borders, no frames, and no canvas edges. Construct the scene using rigid, low-poly geometric meshes characterized by sharp, jagged, un-anti-aliased polygonal silhouettes. Apply low-resolution photographic texture mapping with visible pixelation, stretched UVs, and nearest-neighbor filtering artifacts. Lighting should consist of basic Gouraud shading and flat global illumination, lacking modern ambient occlusion or dynamic cast shadows. Instead, shadows, grime, and highlights must appear baked directly into the blurry, compressed textures. Utilize {{primary_color}} as the overarching atmospheric tone, integrating {{accent_color}} for distinct interactive or focal elements, and {{secondary_color}} for the surrounding environmental geometry. The color palette must reflect a slightly desaturated, limited 32-bit color depth, creating a nostalgic, slightly muddy, early digital realism. Materials should lack physical accuracy, featuring flat lambertian diffusion and broad, chunky specular highlights on reflective surfaces. Maintain a strict z-buffer depth feel with stiff spatial dynamics, avoiding any soft organic curves or seamless blending. The final output must perfectly emulate the raw, unpolished, aliased aesthetic of vintage 3D console graphics.",
+    "prompt_removebg": "Late 1990s and early 2000s retro real-time 3D video game rendering, low-polygon CGI graphic style. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The scene is rendered against a flat {{background_color}} backdrop, composited on a clean {{background_color}} surface. Construct the scene using rigid, low-poly geometric meshes characterized by sharp, jagged, un-anti-aliased polygonal silhouettes. The edges of the {{subject}} must interact sharply with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). Apply low-resolution photographic texture mapping with visible pixelation, stretched UVs, and nearest-neighbor filtering artifacts. Lighting should consist of basic Gouraud shading and flat global illumination, lacking modern ambient occlusion or dynamic cast shadows. Instead, shadows, grime, and highlights must appear baked directly into the blurry, compressed textures. Utilize {{primary_color}} as the overarching atmospheric tone, integrating {{accent_color}} for distinct interactive or focal elements, and {{secondary_color}} for the surrounding environmental geometry. The color palette must reflect a slightly desaturated, limited 32-bit color depth, creating a nostalgic, slightly muddy, early digital realism. Materials should lack physical accuracy, featuring flat lambertian diffusion and broad, chunky specular highlights on reflective surfaces. Maintain a strict z-buffer depth feel with stiff spatial dynamics, avoiding any soft organic curves or seamless blending. The final output must perfectly emulate the raw, unpolished, aliased aesthetic of vintage 3D console graphics.",
+    "background_prompt": "A pure environmental backdrop styled as a late 1990s low-polygon 3D video game environment. The scenery features blocky, simplistic geometric architecture and stiff terrain with visibly aliased, jagged edges. Surfaces are covered in low-resolution, stretched photographic textures with visible pixelation and nearest-neighbor filtering artifacts. The ambient lighting is flat and baked, casting no dynamic shadows. {{primary_color}} dominates the low-res skybox and distant distance fog, while {{secondary_color}} fills the blocky ground planes and structural facades. Subtle {{accent_color}} highlights appear as chunky specular reflections or baked-in glowing signage in the distance, creating a nostalgic, empty, and liminal retro digital atmosphere.",
+    "background_prompt_removebg": "A pure environmental backdrop styled as a late 1990s low-polygon 3D video game environment, transitioning into a flat {{background_color}} surface. The scenery features blocky, simplistic geometric architecture and stiff terrain with visibly aliased, jagged edges. Surfaces are covered in low-resolution, stretched photographic textures with visible pixelation and nearest-neighbor filtering artifacts. The ambient lighting is flat and baked, casting no dynamic shadows. {{primary_color}} dominates the low-res skybox and distant distance fog, while {{secondary_color}} fills the blocky ground planes and structural facades. Subtle {{accent_color}} highlights appear as chunky specular reflections or baked-in glowing signage in the distance. In the foreground, floating low-poly UI elements and jagged, pixelated graphical borders act as an overlay, framing the invisible subject and casting harsh, chunky drop shadows onto the {{background_color}} backdrop to establish a distinct z-buffer depth.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "secondary_color",
+      "background_color"
+    ],
+    "image": "images/dreamcast-shenmue.jpg",
+    "preview_image": "images/preview-1780905903178-syif.webp",
+    "preview_image_removebg": "images/preview-1780905903345-q45e.webp",
+    "tags": [
+      "low-poly",
+      "retro 3d",
+      "aliased edges",
+      "baked lighting",
+      "y2k aesthetic",
+      "ps1 graphics",
+      "low-res textures",
+      "nearest-neighbor"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-06-08T08:05:08.409Z"
   }
 ]

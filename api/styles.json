@@ -1032,5 +1032,27 @@
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-30T17:51:07.243Z"
+  },
+  {
+    "id": "aliased-lowpoly",
+    "title": "Aliased Lowpoly",
+    "description": "Ce style capture l'essence nostalgique du rendu 3D en temps réel de la fin des années 90 et du début des années 2000, caractérisé par des modèles géométriques à faible nombre de polygones et des bords fortement crénelés. Il se distingue par des textures photographiques basse résolution appliquées sur des maillages rigides, un éclairage plat basique avec des ombres précalculées, et une atmosphère numérique rétro typique des premiers moteurs de jeux vidéo 3D.",
+    "description_en": "This style captures the nostalgic essence of late 90s and early 2000s real-time 3D rendering, characterized by low-polygon geometric models and sharply aliased edges. It features low-resolution photographic textures mapped onto rigid meshes, basic flat lighting with baked shadows, and an unmistakable retro digital atmosphere reminiscent of early 3D video game engines.",
+    "description_fr": "Ce style capture l'essence nostalgique du rendu 3D en temps réel de la fin des années 90 et du début des années 2000, caractérisé par des modèles géométriques à faible nombre de polygones et des bords fortement crénelés. Il se distingue par des textures photographiques basse résolution appliquées sur des maillages rigides, un éclairage plat basique avec des ombres précalculées, et une atmosphère numérique rétro typique des premiers moteurs de jeux vidéo 3D.",
+    "image": "images/dreamcast-shenmue.jpg",
+    "preview_image": "images/preview-1780905903178-syif.webp",
+    "preview_image_removebg": "images/preview-1780905903345-q45e.webp",
+    "tags": [
+      "low-poly",
+      "retro 3d",
+      "aliased edges",
+      "baked lighting",
+      "y2k aesthetic",
+      "ps1 graphics",
+      "low-res textures",
+      "nearest-neighbor"
+    ],
+    "backgroundType": 2,
+    "createdAt": "2026-06-08T08:05:08.409Z"
   }
 ]
