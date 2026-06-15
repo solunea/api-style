@@ -53,6 +53,7 @@ function buildApi(styles) {
     preview_image: s.preview_image || '',
     preview_image_removebg: s.preview_image_removebg || '',
     tags: s.tags,
+    video: s.video || null,
     backgroundType: s.backgroundType ?? 2,
     createdAt: s.createdAt
   }));
@@ -81,7 +82,7 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType, video } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
 
@@ -106,6 +107,7 @@ app.post('/api/styles', (req, res) => {
     preview_image: preview_image || '',
     preview_image_removebg: preview_image_removebg || '',
     tags: tags || [],
+    video: video || null,
     backgroundType: backgroundType ?? 2,
     createdAt: new Date().toISOString()
   };
@@ -123,7 +125,7 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType, video } = req.body;
 
   // Delete old preview file if a new one is being set
   const oldPreview = styles[index].preview_image;
@@ -149,6 +151,7 @@ app.put('/api/styles/:id', (req, res) => {
     ...(preview_image !== undefined && { preview_image }),
     ...(preview_image_removebg !== undefined && { preview_image_removebg }),
     ...(tags !== undefined && { tags }),
+    ...(video !== undefined && { video }),
     ...(backgroundType !== undefined && { backgroundType }),
   };
 
@@ -252,6 +255,8 @@ Return ONLY a valid JSON object with these fields:
 - "background_prompt_removebg": take the "background_prompt" field above as the base. Keep the same background scene wording, then ADD: (1) a decorative foreground frame or overlay element that matches the visual style (e.g. ornamental border, ink splatter vignette, geometric pattern frame) placed in front of the invisible subject to create depth, (2) how the scene and frame transition into or interact with the {{background_color}} surface. Use {{primary_color}}, {{accent_color}}, {{secondary_color}}, and {{background_color}} — NO other variables.
 - "tags": an array of 4 to 8 relevant style tags (English, lowercase, specific — e.g. "cel-shading", "cross-hatching")
 
+Also include a "video" object with reusable video guidance for this visual style. It must apply to ANY {{subject}} and must never mention the reference image content. Include exactly these string fields: "motion" (1-2 sentences describing how subjects and scene elements should animate in this style), "camera" (1 sentence describing the preferred camera grammar), "temporal_texture" (1 sentence describing how grain, strokes, edges, lighting, shadows, and materials must remain stable or animate over time), and "avoid" (1 sentence listing video artifacts or motion choices that would break the style).
+
 Return ONLY the raw JSON. No markdown, no code fences, no extra text.`;
 
 // Helper: parse raw model output into JSON
@@ -337,6 +342,7 @@ app.post('/api/analyze', upload.single('image'), async (req, res) => {
       prompt_removebg: parsed.prompt_removebg || '',
       background_prompt: parsed.background_prompt || '',
       background_prompt_removebg: parsed.background_prompt_removebg || '',
+      video: parsed.video || null,
       tags: parsed.tags || [],
     });
   } catch (err) {
@@ -387,6 +393,7 @@ app.post('/api/analyze-all', async (req, res) => {
         style.prompt_removebg = parsed.prompt_removebg || style.prompt_removebg || '';
         style.background_prompt = parsed.background_prompt || style.background_prompt;
         style.background_prompt_removebg = parsed.background_prompt_removebg || style.background_prompt_removebg || '';
+        style.video = parsed.video || style.video || null;
         style.tags = parsed.tags || style.tags;
 
         const allText = [style.prompt, style.prompt_removebg, style.background_prompt, style.background_prompt_removebg].join(' ');

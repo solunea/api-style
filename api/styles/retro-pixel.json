@@ -27,5 +27,11 @@
     "retro gaming"
   ],
   "createdAt": "2026-02-17T23:02:22.428Z",
-  "backgroundType": 2
+  "backgroundType": 2,
+  "video": {
+    "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+    "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+    "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+    "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+  }
 }

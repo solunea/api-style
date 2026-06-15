@@ -28,5 +28,11 @@
     "pop art"
   ],
   "createdAt": "2026-02-19T12:53:50.521Z",
-  "backgroundType": 0
+  "backgroundType": 0,
+  "video": {
+    "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+    "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+    "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+    "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+  }
 }

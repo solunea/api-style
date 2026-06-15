@@ -31,7 +31,13 @@
     "prompt_removebg": "Render a contemporary children's book illustration using digital techniques that perfectly mimic traditional gouache, wax pastel, and colored pencil. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The entire composition is composited on a clean {{background_color}} surface. The visual approach relies on flat, diffuse lighting with absolutely no directional shadows or chiaroscuro, building depth purely through overlapping flat shapes parallel to the picture plane. Forms are constructed from solid blocks of opaque color dominated by {{primary_color}}, complemented by {{secondary_color}} midtones, and punctuated by playful {{accent_color}} details. Do not use strict outlines or crisp vector contours; instead, define silhouettes using ragged, dry-brushed edges and chalky transitions that interact naturally with the {{background_color}} backdrop, explicitly allowing intentional overflow where parts of the scene can extend beyond the visible frame. Layer the surfaces with highly tactile, scratchy colored pencil textures, crayon scribbles, and heavy watercolor paper grain. Internal details should be rendered with loose, naive, hand-drawn line work that feels organic and slightly imperfect. The overall atmosphere must be cozy, nostalgic, and handcrafted, evoking a mid-century folk-art aesthetic with charmingly clumsy proportions and a warm, earthy resonance. Ensure the granular texture of dry media is visible across all color fields, unifying the composition with a distinctly handmade, tactile quality. gouache illustration, colored pencil texture, dry brush, naive art, flat composition, heavy paper grain, children's book style, folk art inspired, highly tactile, whimsical, warm palette, hand-drawn feel",
     "background_prompt_removebg": "A flat, 2D textured background environment inspired by contemporary children's book illustrations, mimicking traditional gouache and wax pastel on heavy paper. The scene features overlapping, flat planes of opaque {{primary_color}} and {{secondary_color}}, detailed with scratchy {{accent_color}} colored pencil scribbles and dry-brushed edges. The atmosphere is warm, cozy, and naive, with no directional shadows, relying entirely on chalky textures, visible paper grain, and organic, handcrafted imperfections to create a tactile, inviting backdrop. In the foreground, a decorative border of dry-brushed shapes and crayon patterns frames the invisible subject, transitioning softly and organically into a flat {{background_color}} surface with ragged, textured edges.",
     "preview_image_removebg": "images/preview-1771780942532-b3to.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    }
   },
   {
     "id": "doodle-pop",
@@ -64,7 +70,13 @@
     "prompt_removebg": "Digital 2D flat vector illustration, contemporary doodle art style, hand-drawn ink aesthetic with clean digital execution. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The linework features bold, expressive, solid black contour lines with varying, pressure-sensitive weight, achieving a loose but precise inking style. Employ a highly restricted minimalist color palette using stark black, crisp white, {{primary_color}} flat fills, and {{accent_color}} accents, composited on a clean {{background_color}} surface. Utilize absolute flat coloring with zero gradients, zero shading, zero ambient occlusion, and zero highlights. Incorporate playful floating graphic elements around the main focal points, such as radiating action lines, exclamation points, whimsical squiggles, floating dots, and loose hand-written style text scribbles to generate an energetic rhythm. Include bold geometric patterns, particularly thick black-and-white diagonal stripes, within secondary shapes to create high-contrast visual interest and structural mass. The texture is a perfectly smooth, matte digital finish with no grain, canvas weave, or brushstrokes. Lighting is completely flat; form and depth are established entirely through overlapping solid shapes, hard crisp vector edges, and thick black outlines rather than illumination or shadow. Ensure the subject's edges interact cleanly with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries), rendered against a flat {{background_color}} backdrop. digital illustration, contemporary doodle art, flat vector graphics, expressive black ink outlines, limited color palette, stark contrast, geometric stripes, floating action lines, playful sketchbook aesthetic, hard vector edges, flat coloring, zero shading, 2d spatial dynamics",
     "background_prompt_removebg": "A vibrant, abstract environment in a contemporary digital doodle art style, featuring flat 2D vector layouts. The scene is composed of overlapping organic and geometric shapes with bold, solid black outlines and varying line weights. Thick black-and-white diagonal striped masses contrast with flat {{primary_color}} and {{accent_color}} forms. The space is energized by floating graphic elements like squiggles, dots, and radiating action lines. Completely flat lighting, zero gradients, smooth matte finish, no central subject. In the foreground, a decorative frame of playful ink scribbles and geometric patterned borders creates depth, with all elements transitioning cleanly into a flat {{background_color}} surface.",
     "preview_image_removebg": "images/preview-1772103712098-9ru7.webp",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "vibrant-vector",
@@ -98,7 +110,13 @@
     "prompt_removebg": "Render a crisp 2D digital vector illustration composited on a clean {{background_color}} surface. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Execute with a flat design aesthetic characterized by geometric abstraction and sharp, clean silhouettes. Elements of the {{subject}} can intentionally overflow and extend beyond the visible frame, cropped cleanly by the image boundaries against the flat {{background_color}} backdrop. Utilize a bold palette driven by {{primary_color}} dominant masses, energized by vibrant {{accent_color}} focal points, and grounded by {{secondary_color}} structural planes. The rendering is strictly lineless; edges are defined entirely by stark color contrast against the {{background_color}}. Lighting is exceptionally flat and uniform, employing minimalist cel-shaded drop shadows with razor-sharp edges to establish shallow planar depth between overlapping elements. Shapes are stylized into blocky, exaggerated proportions, stripping away organic nuance in favor of graphic clarity. The surface materiality is a smooth, matte finish featuring an extremely subtle, uniform digital grain that prevents visual sterility without compromising the flat vector aesthetic. Color blocks remain solid and ungradated. Spatial dynamics rely entirely on 2D layering, avoiding traditional perspective in favor of a stacked, editorial layout. Ensure all boundaries are precision-cut, delivering a pristine, modern graphic design sensibility. Tags: vector illustration, flat design, lineless art, geometric abstraction, cel-shading, solid color blocks, matte finish, crisp silhouettes, editorial graphic, modern pop art.",
     "background_prompt_removebg": "A minimalist, flat 2D vector graphic environment composed of large, overlapping geometric planes in solid {{primary_color}}, rendered against a flat {{background_color}} backdrop. The space relies on stark, hard-edged abstract shapes and crisp, lineless boundaries. Subtle {{secondary_color}} architectural blocks create shallow depth through precise cel-shaded drop shadows. Flat, uniform lighting illuminates the matte surfaces, while sparse {{accent_color}} geometric accents provide visual rhythm. In the foreground, a decorative frame of sharp, vector-cut geometric blocks borders the composition, casting hard shadows onto the {{background_color}} surface to establish clear planar depth.",
     "preview_image_removebg": "images/preview-1771537914876-4afc.webp",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "pastel-clay",
@@ -132,7 +150,13 @@
     "prompt_removebg": "3D rendered minimalist illustration utilizing diffuse matte materials and a soft-body geometric aesthetic. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The visual execution relies on exceptionally smooth, heavily beveled geometry where all sharp corners are rounded off, creating a friendly, tactile appearance. Lighting is achieved through high-key global illumination and large area softbox lights, producing extremely soft, diffused drop shadows and gentle ambient occlusion that grounds the elements without introducing harsh contrast. Specular highlights are entirely suppressed to maintain a velvety, non-reflective finish across all solid surfaces, while any translucent elements exhibit a frosted, subsurface scattering effect. The color grading employs a low-contrast, pastel-leaning palette, utilizing {{primary_color}} for the dominant matte surfaces, {{accent_color}} for soft focal details, and {{secondary_color}} for supporting ambient elements, all unified by a warm, inviting undertone. Textural depth is introduced exclusively through a uniform, fine digital film grain applied globally over the entire composition, mimicking a subtle print or tactile noise overlay that breaks up the perfect gradients. Silhouettes are clean and crisp, defined entirely by soft volumetric shading rather than any linework or outlines. The entire composition is composited on a clean {{background_color}} surface, with the soft, diffused drop shadows cast directly onto this flat {{background_color}} backdrop. Edges of the geometry interact smoothly with the background, allowing intentional overflow where parts of the scene can extend beyond the visible frame and be cleanly cropped by the image boundaries., 3d render, minimalist, matte finish, softbox lighting, beveled edges, pastel palette, film grain, ambient occlusion, subsurface scattering, solid background, clean cutout",
     "background_prompt_removebg": "A minimalist 3D rendered environment composed of smooth, heavily beveled geometric shapes and sweeping curved surfaces. The scene features a velvety, matte finish under soft, high-key global illumination with no harsh shadows. A low-contrast palette uses {{primary_color}} for the primary structural forms, accented by {{accent_color}} gradients and {{secondary_color}} ambient reflections. A uniform, fine digital film grain covers the entire atmospheric space, creating a warm, tactile backdrop. In the foreground, a decorative border of rounded, floating geometric primitives frames the invisible subject, casting soft, diffused ambient occlusion shadows directly onto the flat {{background_color}} surface that grounds the entire composition.",
     "preview_image_removebg": "images/preview-1771538581053-c0gj.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    }
   },
   {
     "id": "risograph-spotlight",
@@ -166,7 +190,13 @@
     "prompt_removebg": "Digital editorial illustration mimicking risograph printing and chalk pastel drawing. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render the scene against a flat {{background_color}} backdrop, allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). Render the scene using flat color blocking dominated by {{primary_color}}, offset by {{accent_color}} details and {{secondary_color}} supporting tones. Apply a heavy, uniform noise and stipple grain texture universally across all surfaces, giving the artwork a highly tactile, printed materiality. Lighting is explicitly stylized and graphic: use visible, geometric light cones layered as semi-transparent color blocks, casting hard-edged, solid drop shadows with zero blur or gradient onto the {{background_color}} surface. Form is defined primarily by color contrast rather than heavy line art, though selective, thin white contour lines are used to highlight delicate elements, wires, or overlapping forms. Edges of shapes should exhibit a subtle, hand-drawn wobble, avoiding perfectly sterile vector lines to maintain an organic, indie-editorial feel. Perspective is intentionally flattened, leaning toward a faux-isometric or orthographic tilt that arranges elements in a neat, slightly overlapping composition. The overall atmosphere is cozy, structured, and contemporary. digital editorial illustration, risograph aesthetic, heavy noise texture, flat color blocking, faux-isometric perspective, hard-edged drop shadows, graphic light cones, chalk pastel texture, hand-drawn edges, white contour accents, contemporary indie art, tactile printmaking feel",
     "background_prompt_removebg": "A completely empty background environment mimicking contemporary editorial risograph illustrations. The scene features a flattened, faux-isometric perspective composed of overlapping flat color planes in {{primary_color}}, {{secondary_color}}, and {{accent_color}}. The entire surface is coated in a heavy, uniform noise and stipple grain texture, giving a tactile, chalky printmaking feel. Stylized, hard-edged graphic light cones intersect with sharp, unblurred solid drop shadows. Subtle hand-drawn wobbles on the color boundaries replace sterile straight lines. This environment transitions into a clean {{background_color}} surface, featuring a decorative foreground overlay of thin, stylized white contour lines and organic geometric frames that sit in front of the invisible subject, interacting playfully with the {{background_color}} backdrop.",
     "preview_image_removebg": "images/preview-1771537916675-4nc6.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    }
   },
   {
     "id": "folklore-woodcut",
@@ -200,7 +230,13 @@
     "prompt_removebg": "Flat digital illustration with a mid-century screen-print aesthetic and Eastern European folk art influences. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork is rendered using strict, solid color blocking with absolutely no gradients, no 3D shading, and no black outlines. Shapes are defined entirely by stark, high-contrast intersections of a highly restricted palette. The entire scene is composited on a clean {{background_color}} surface. Fill primary focal areas with bold {{primary_color}}, support the composition with large structural blocks of {{secondary_color}}, and punch out intricate internal details using stark {{accent_color}}. The internal surfaces of the shapes are heavily decorated with rhythmic folk-art patterns, including stylized botanical motifs, tiny leaves, geometric dashes, and uniform dots. Lighting is completely flat and two-dimensional, relying on overlapping silhouettes to establish depth rather than shadow or highlight. Edge treatment features crisp, sharp vector-like cutouts that are occasionally softened by a subtle, tactile risograph print texture and fine stippling, giving the piece a traditional storybook materiality. Allow intentional overflow where parts of the {{subject}} can extend beyond the visible frame, cropped by the image boundaries, interacting cleanly with the flat {{background_color}} backdrop. The composition should feel deeply graphic and meticulously arranged, heavily featuring stylized flora, patterned silhouettes, and a cohesive atmosphere. flat digital illustration, screenprint texture, folk art motifs, limited palette, solid color blocking, risograph grain, botanical patterns, high contrast, two-dimensional",
     "background_prompt_removebg": "A purely environmental backdrop in a flat digital illustration style with a mid-century screen-print aesthetic. A deep, near-black night sky dominates, layered with rolling, stylized hills and folk-art flora. The landscape features solid color blocking using {{secondary_color}} for structural ground elements and {{primary_color}} for bold, rhythmic botanical motifs like stylized leaves, blooming flowers, and geometric stems. Stark {{accent_color}} dots and dashes provide intricate internal patterning across the shapes. Subtle risograph grain and stippling add tactile print texture. A decorative foreground frame made of stylized, symmetrical floral vines and geometric folk-art patterns frames the invisible subject, transitioning smoothly and cleanly into a flat {{background_color}} surface. Flat lighting, zero gradients, strictly two-dimensional.",
     "preview_image_removebg": "images/preview-1771778755259-5pne.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    }
   },
   {
     "id": "bauhaus-geometry",
@@ -233,7 +269,13 @@
     "prompt_removebg": "Flat vector illustration, Bauhaus and De Stijl geometric abstraction, rigid modernist graphic design. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Deconstruct the elements of the scene into their most fundamental geometric components, translating organic forms into rigid, architectural structures built from perfect geometric primitives like circles, triangles, rectangles, and strict orthogonal grids. The visual rhythm is static, balanced, and highly intellectual, reminiscent of mid-century avant-garde art movements. Lighting is non-existent; this is an unlit 2D space with zero gradients, absolute flat shading, no drop shadows, and no highlights. The color science relies on pure {{primary_color}}, striking {{accent_color}}, and {{secondary_color}}, utilizing stark black and stark white for structural contrast and weight. Edge treatment features razor-sharp vector cuts with minimal, uniform black line work used strictly for structural separation. An extremely subtle matte paper texture permeates the composition to provide a vintage poster warmth, yet the internal shapes remain solid, unblended blocks of pure pigment, all composited on a clean {{background_color}} surface. Depth is entirely flattened into a pure 2D orthographic projection with overlapping flat planar shapes and absolutely no perspective. The strict geometric edges of the {{subject}} must interact cleanly and sharply with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). flat vector, bauhaus style, de stijl, constructivism, geometric abstraction, strict primitives, unblended colors, no gradients, hard edges, modernist poster, minimalist graphic design, 2d orthographic, solid fill",
     "background_prompt_removebg": "A purely abstract environmental backdrop inspired by Bauhaus and De Stijl geometric abstraction, transitioning seamlessly into a clean {{background_color}} surface. The composition features a flat, unlit 2D space constructed entirely from overlapping perfect geometric primitives like large rectangles, intersecting orthogonal grids, and sweeping semi-circles. Utilizing a palette of pure {{primary_color}}, striking {{accent_color}}, and balanced {{secondary_color}}, alongside stark black and white structural blocks. In the foreground, a rigid, asymmetrical geometric border acts as a decorative overlay, framing the invisible subject to create a subtle sense of planar depth. There are zero gradients, no shadows, and no perspective, just razor-sharp vector edges over a very subtle matte paper texture interacting sharply with the {{background_color}} backdrop.",
     "preview_image_removebg": "images/preview-1771627540032-4yal.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "felted-whimsy",
@@ -268,7 +310,13 @@
     "prompt_removebg": "Photorealistic 3D render of a handcrafted needle-felted wool diorama. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The visual execution must simulate dense, matted wool fibers with a highly tactile, fuzzy surface. Every element is constructed from dry-felted wool, featuring rounded, soft geometric forms with no sharp edges or hard drawn lines. Colors blend organically as if tufts of dyed roving were poked together with a felting needle. Individual stray microscopic wool hairs and fuzz fringe the silhouettes, catching gentle rim light. The lighting is soft, diffused high-key studio illumination that creates gentle core shadows and subtle subsurface scattering through the porous wool material, mimicking a miniature set. The finish is entirely matte, devoid of any glossy or specular highlights, emphasizing a cozy, warm, and innocent atmosphere. The color palette is bright, cheerful, and pastel-leaning, utilizing {{primary_color}} as the dominant hue, accented by {{accent_color}} details and {{secondary_color}} supporting tones. Employ a distinct macro photography aesthetic with an extremely shallow depth of field; foreground elements and the distant background must dissolve into soft, creamy bokeh, enforcing a miniature stop-motion animation scale. The entire scene is composited on a clean {{background_color}} surface. The fuzzy, stray wool fibers of the {{subject}}'s silhouette must gently overlap and interact with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries)., needle felting, matted wool texture, handcrafted miniature diorama, macro photography, shallow depth of field, soft pastel lighting, fuzzy edges, stop-motion aesthetic",
     "background_prompt_removebg": "A pure background scene of a handcrafted needle-felted wool landscape. Soft, rolling, rounded mounds and abstract organic shapes constructed entirely from dense, matted fuzzy wool. The environment features a bright, cheerful pastel palette dominated by {{primary_color}}, with {{accent_color}} accents on the peaks and {{secondary_color}} in the gentle, shallow crevices. Soft, diffused high-key studio lighting highlights individual stray microscopic wool fibers catching the rim light. Executed with a macro photography aesthetic, featuring an extremely shallow depth of field where the extreme foreground and distant background dissolve into heavy, creamy bokeh. Completely matte finish with no specular highlights. Placed in front of this invisible subject area is a decorative foreground overlay: a soft, fuzzy ring of floating felted wool tufts acting as a gentle framing vignette. The entire scene and the fuzzy foreground frame transition seamlessly into a flat {{background_color}} surface, with stray wool hairs delicately overlapping the {{background_color}}. No specific central subjects.",
     "preview_image_removebg": "images/preview-1771537917520-j9nh.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    }
   },
   {
     "id": "soft-vector",
@@ -302,7 +350,13 @@
     "prompt_removebg": "Clean digital vector illustration, lineless art, modern editorial aesthetic. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The rendering relies entirely on crisp geometric shapes and flat color blocking, devoid of any outlines or ink work. Use a muted, warm, low-saturation palette driven by {{primary_color}}, complemented by {{secondary_color}} and punctuated by {{accent_color}}. The entire scene is composited on a clean {{background_color}} surface. Lighting is characterized by a strong, singular directional sunlight casting sharp, transparent, diagonal drop shadows across the surfaces and onto the {{background_color}} backdrop. Shadows act as distinct geometric layers set to a multiply blend mode, darkening the underlying hues without losing their base hue. Volume is achieved through very subtle, smooth gradient shading on rounded forms, contrasting with the rigid, straight-edged architecture of the environment. The texture is pristine, matte, and perfectly smooth, resembling high-end SVG graphic design. Edges are razor-sharp vector cuts, defining overlapping elements through pure color contrast rather than lines. Intentional overflow is permitted, where parts of the {{subject}} can extend beyond the visible frame, seamlessly intersecting with the flat {{background_color}}. The atmosphere is tranquil, cozy, and hygienic, with a serene stillness. Characters, if present, should be stylized and faceless, adhering to minimalist modern illustration trends. Depth is created through overlapping flat planes and precise shadow casting., digital vector illustration, lineless art, flat design, pastel palette, sharp cast shadows, minimalist editorial, geometric shapes, smooth gradients, stylized flat shading, solid background compositing",
     "background_prompt_removebg": "A tranquil, minimalist interior or architectural space rendered in a clean, lineless vector illustration style. The environment features pristine, flat planes of {{primary_color}} and {{secondary_color}}, accented by subtle {{accent_color}} details. Strong, directional sunlight casts sharp, diagonal geometric shadows across the smooth, matte surfaces. The depth is constructed through overlapping orthogonal shapes and very soft gradient shading on any curved architectural elements, creating a serene, modern, and perfectly pristine atmosphere without any specific subjects or foreground distractions. In the extreme foreground, a clean, geometric vector frame or architectural border in {{primary_color}} creates a window-like overlay, casting its own crisp shadow. The entire architectural scene and the foreground framing elements transition smoothly onto a flat {{background_color}} surface, creating a layered, paper-cut aesthetic against the solid backdrop.",
     "preview_image_removebg": "images/preview-1772186883143-rim2.webp",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "textured-riso",
@@ -336,7 +390,13 @@
     "prompt_removebg": "Contemporary digital illustration utilizing expressive dry-brush, pastel, and chalk-like textures to create a bold, abstract aesthetic, composited on a clean {{background_color}} surface. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork relies entirely on flat, geometric color blocking rather than traditional volumetric 3D shading, establishing a highly graphic, posterized 2D spatial dynamic with shallow depth. Lighting and form are suggested purely through stark, high-contrast shape intersections utilizing vivid blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. Omit smooth rendering in favor of abrupt, hard-angled color shifts and jagged intersections. Incorporate spontaneous, thick black linework acting as energetic graphic accents—specifically utilizing zig-zags, loose squiggles, and floating abstract marks—rather than acting as continuous, restrictive boundary outlines. The rendering strictly mimics traditional dry media on rough paper, featuring ragged, grainy, and frayed edges where solid color blocks terminate. Introduce stippled, spray-paint-like speckling and dashed, rhythmic chalk marks to create localized textural fades, injecting dynamic movement into the composition. Negative space must be actively utilized, allowing unpainted geometric gaps to interact with the {{background_color}} backdrop. The overall atmosphere is vibrant, rebellious, and highly stylized. The edges of the elements must interact organically with the {{background_color}}, explicitly allowing intentional overflow where parts of the scene can extend beyond the visible frame, cropped by the image boundaries., contemporary illustration, fauvism, dry-brush texture, chalk marks, flat color blocking, posterized, high-contrast, graphic linework, stippled gradients, zig-zag accents, expressive strokes, abstract pop-art",
     "background_prompt_removebg": "A purely abstract, graphic landscape or environment utilizing flat color blocking and expressive dry-brush textures. Geometric shapes in {{primary_color}} and {{secondary_color}} form stark, shallow 2D spatial planes, intersected by jagged, hard-angled color shifts. The environment features stippled, spray-paint-like speckling and spontaneous, thick black squiggles or zig-zag lines acting as textural accents. Vibrant, posterized lighting is suggested through contrasting blocks of {{accent_color}}, maintaining a raw, chalk-like materiality across the entire scene. In the foreground, an expressive, asymmetrical border of thick, grainy brushstrokes and floating zig-zag marks frames the invisible subject, creating dynamic depth. The energetic textures and flat environment planes transition organically into the flat {{background_color}} surface, with ragged chalk-like edges dissolving into the backdrop.",
     "preview_image_removebg": "images/preview-1771537917947-4vmp.webp",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with restrained graphic movement, slight parallax, and slow environmental changes that preserve the printed composition.",
+      "camera": "Use locked framing, gentle pan, or slow push-in; keep the camera motion simple enough for the print texture to remain legible.",
+      "temporal_texture": "Riso grain, stipple, halftone dots, misregistration, and ink coverage must stay anchored to surfaces without random crawling.",
+      "avoid": "Avoid noisy grain boiling, high-speed motion, smooth plastic CGI, excessive blur, and morphing that erases the printed texture."
+    }
   },
   {
     "id": "carved-linocut",
@@ -368,7 +428,13 @@
       "monoprint"
     ],
     "createdAt": "2026-02-17T09:45:59.105Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "velvet-noir",
@@ -400,7 +466,13 @@
       "circular-bokeh"
     ],
     "createdAt": "2026-02-17T13:24:52.409Z",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+      "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+      "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+      "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+    }
   },
   {
     "id": "tech-vector",
@@ -431,7 +503,13 @@
       "minimalist"
     ],
     "createdAt": "2026-02-17T13:39:59.566Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "gestural-contour",
@@ -462,7 +540,13 @@
       "off-register print"
     ],
     "createdAt": "2026-02-17T15:31:22.088Z",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "organic-cutout",
@@ -494,7 +578,13 @@
       "matisse-style"
     ],
     "createdAt": "2026-02-17T20:04:35.656Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "crayon-sketch",
@@ -527,7 +617,13 @@
       "vibrant-chroma"
     ],
     "createdAt": "2026-02-17T20:07:17.859Z",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    }
   },
   {
     "id": "impressionist-ripples",
@@ -558,7 +654,13 @@
       "optical-mixing"
     ],
     "createdAt": "2026-02-17T20:08:41.130Z",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate softly with slow atmospheric drift, gentle subject movement, and subtle watercolor wash breathing rather than hard mechanical motion.",
+      "camera": "Use a slow push-in or locked shot that preserves the delicate paper composition.",
+      "temporal_texture": "Pigment blooms, paper fibers, soft edges, translucent washes, and ink boundaries should remain calm and stable with only slight organic diffusion.",
+      "avoid": "Avoid fast camera moves, hard CGI deformation, heavy edge jitter, over-sharpening, and wash flicker that looks like compression noise."
+    }
   },
   {
     "id": "luminous-noise",
@@ -589,7 +691,13 @@
       "lost edges"
     ],
     "createdAt": "2026-02-17T20:09:47.146Z",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    }
   },
   {
     "id": "charcoal-gesture",
@@ -621,7 +729,13 @@
       "minimalist line work"
     ],
     "createdAt": "2026-02-17T20:12:26.361Z",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "vandalized-realism",
@@ -652,7 +766,13 @@
       "thick-outlines"
     ],
     "createdAt": "2026-02-17T20:14:30.120Z",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "eclectic-collage",
@@ -684,7 +804,13 @@
       "graphic-typography"
     ],
     "createdAt": "2026-02-17T20:15:47.674Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate the scene with subtle, style-preserving movement that follows the subject while keeping the original composition readable.",
+      "camera": "Use a restrained camera move such as locked framing, a slow push-in, or a gentle pan chosen to match the visual style.",
+      "temporal_texture": "Keep the style-defining texture, edges, lighting, color treatment, and material behavior temporally stable across frames.",
+      "avoid": "Avoid abrupt camera jumps, excessive motion blur, texture flicker, uncontrolled morphing, unstable identity, and any movement that contradicts the visual style."
+    }
   },
   {
     "id": "miniature-diorama",
@@ -716,7 +842,13 @@
       "scale-model"
     ],
     "createdAt": "2026-02-17T22:58:56.223Z",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    }
   },
   {
     "id": "grainy-serigraph",
@@ -748,7 +880,13 @@
       "stencil-edges"
     ],
     "createdAt": "2026-02-17T22:59:54.739Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "retro-pixel",
@@ -779,7 +917,13 @@
       "retro gaming"
     ],
     "createdAt": "2026-02-17T23:02:22.428Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+      "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+      "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+      "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+    }
   },
   {
     "id": "scribble-analog",
@@ -812,7 +956,13 @@
       "minimalist-lineart"
     ],
     "createdAt": "2026-02-17T23:07:09.391Z",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "sunlit-anime",
@@ -843,7 +993,13 @@
       "monochromatic etching"
     ],
     "createdAt": "2026-02-19T11:33:13.526Z",
-    "backgroundType": 2
+    "backgroundType": 2,
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "naive-gouache",
@@ -874,7 +1030,13 @@
       "flat-perspective"
     ],
     "createdAt": "2026-02-19T12:49:07.012Z",
-    "backgroundType": 1
+    "backgroundType": 1,
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    }
   },
   {
     "id": "risograph-pop",
@@ -906,7 +1068,13 @@
       "pop art"
     ],
     "createdAt": "2026-02-19T12:53:50.521Z",
-    "backgroundType": 0
+    "backgroundType": 0,
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "solar-gouache",
@@ -938,7 +1106,13 @@
       "high contrast"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-19T22:23:26.336Z"
+    "createdAt": "2026-02-19T22:23:26.336Z",
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    }
   },
   {
     "id": "phosphor-topology",
@@ -969,7 +1143,13 @@
       "chunky-linework"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-02-20T22:34:21.421Z"
+    "createdAt": "2026-02-20T22:34:21.421Z",
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    }
   },
   {
     "id": "vivid-pulp",
@@ -1000,7 +1180,13 @@
       "flat-background"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-02-20T22:35:34.527Z"
+    "createdAt": "2026-02-20T22:35:34.527Z",
+    "video": {
+      "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+      "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+      "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+      "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+    }
   },
   {
     "id": "solar-ligne-claire",
@@ -1031,7 +1217,13 @@
       "retro-futuristic"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-20T22:38:29.417Z"
+    "createdAt": "2026-02-20T22:38:29.417Z",
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "planetary-ligne",
@@ -1063,7 +1255,13 @@
       "pastel-palette"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-22T16:49:32.740Z"
+    "createdAt": "2026-02-22T16:49:32.740Z",
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "luminous-gouache",
@@ -1095,7 +1293,13 @@
       "offset-print-effect"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-25T07:29:54.740Z"
+    "createdAt": "2026-02-25T07:29:54.740Z",
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    }
   },
   {
     "id": "cozy-isometric",
@@ -1127,7 +1331,13 @@
       "pixel-clusters"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-25T07:32:38.075Z"
+    "createdAt": "2026-02-25T07:32:38.075Z",
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    }
   },
   {
     "id": "constructive-draft",
@@ -1158,7 +1368,13 @@
       "construction lines"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-25T07:35:23.395Z"
+    "createdAt": "2026-02-25T07:35:23.395Z",
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    }
   },
   {
     "id": "retro-low-poly",
@@ -1190,7 +1406,13 @@
       "graphic-shadows"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-26T10:10:37.844Z"
+    "createdAt": "2026-02-26T10:10:37.844Z",
+    "video": {
+      "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+      "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+      "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+      "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+    }
   },
   {
     "id": "technical-isometry",
@@ -1222,7 +1444,13 @@
       "instructional manual"
     ],
     "backgroundType": 1,
-    "createdAt": "2026-02-26T10:12:57.335Z"
+    "createdAt": "2026-02-26T10:12:57.335Z",
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    }
   },
   {
     "id": "graphite-chiaroscuro",
@@ -1254,7 +1482,13 @@
       "dry medium"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-02-27T10:00:01.229Z"
+    "createdAt": "2026-02-27T10:00:01.229Z",
+    "video": {
+      "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+      "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+      "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+      "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+    }
   },
   {
     "id": "matte-plasticine",
@@ -1286,7 +1520,13 @@
       "soft-lighting"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-02-27T10:16:25.913Z"
+    "createdAt": "2026-02-27T10:16:25.913Z",
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    }
   },
   {
     "id": "hybrid-daydream",
@@ -1317,7 +1557,13 @@
       "forced perspective"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-02-27T10:18:24.123Z"
+    "createdAt": "2026-02-27T10:18:24.123Z",
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    }
   },
   {
     "id": "tactile-diorama",
@@ -1349,7 +1595,13 @@
       "clean-topology"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-03-11T11:49:06.137Z"
+    "createdAt": "2026-03-11T11:49:06.137Z",
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    }
   },
   {
     "id": "nostalgic-opulence",
@@ -1381,7 +1633,13 @@
       "specular highlights"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-03-17T13:44:23.380Z"
+    "createdAt": "2026-03-17T13:44:23.380Z",
+    "video": {
+      "motion": "Animate as a living painting with slow subject movement, gentle parallax, and restrained changes in brush-defined light and atmosphere.",
+      "camera": "Use a locked shot or slow museum-like push-in that lets brushwork and canvas texture remain readable.",
+      "temporal_texture": "Brushstrokes, impasto ridges, canvas grain, edge softness, and painterly lighting should stay anchored and avoid frame-to-frame crawling.",
+      "avoid": "Avoid watery morphing, rapid camera motion, unstable strokes, sharp digital edges, and texture flicker."
+    }
   },
   {
     "id": "granular-airbrush",
@@ -1413,7 +1671,13 @@
       "analog aesthetic"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-03-17T13:50:20.772Z"
+    "createdAt": "2026-03-17T13:50:20.772Z",
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    }
   },
   {
     "id": "burin-intaglio",
@@ -1445,7 +1709,13 @@
       "shallow depth of field"
     ],
     "backgroundType": 0,
-    "createdAt": "2026-03-17T13:53:25.407Z"
+    "createdAt": "2026-03-17T13:53:25.407Z",
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    }
   },
   {
     "id": "graphic-monoline",
@@ -1476,7 +1746,13 @@
       "uniform-line-weight"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-04-08T10:14:37.596Z"
+    "createdAt": "2026-04-08T10:14:37.596Z",
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    }
   },
   {
     "id": "chromatic-flatland",
@@ -1507,7 +1783,13 @@
       "unshaded"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-04-08T10:17:10.093Z"
+    "createdAt": "2026-04-08T10:17:10.093Z",
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "radiant-scumble",
@@ -1539,7 +1821,13 @@
       "glowing lights"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-04-08T10:19:14.351Z"
+    "createdAt": "2026-04-08T10:19:14.351Z",
+    "video": {
+      "motion": "Animate as a living painting with slow subject movement, gentle parallax, and restrained changes in brush-defined light and atmosphere.",
+      "camera": "Use a locked shot or slow museum-like push-in that lets brushwork and canvas texture remain readable.",
+      "temporal_texture": "Brushstrokes, impasto ridges, canvas grain, edge softness, and painterly lighting should stay anchored and avoid frame-to-frame crawling.",
+      "avoid": "Avoid watery morphing, rapid camera motion, unstable strokes, sharp digital edges, and texture flicker."
+    }
   },
   {
     "id": "stippled-mirage",
@@ -1570,7 +1858,13 @@
       "no outlines"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-04-08T10:24:47.005Z"
+    "createdAt": "2026-04-08T10:24:47.005Z",
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    }
   },
   {
     "id": "block-silhouette",
@@ -1601,7 +1895,13 @@
       "orthographic"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-04-30T17:51:07.243Z"
+    "createdAt": "2026-04-30T17:51:07.243Z",
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    }
   },
   {
     "id": "aliased-lowpoly",
@@ -1634,6 +1934,12 @@
       "nearest-neighbor"
     ],
     "backgroundType": 2,
-    "createdAt": "2026-06-08T08:05:08.409Z"
+    "createdAt": "2026-06-08T08:05:08.409Z",
+    "video": {
+      "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+      "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+      "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+      "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+    }
   }
 ]

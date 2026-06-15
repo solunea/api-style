@@ -27,5 +27,11 @@
     "minimalist"
   ],
   "createdAt": "2026-02-17T13:39:59.566Z",
-  "backgroundType": 2
+  "backgroundType": 2,
+  "video": {
+    "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+    "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+    "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+    "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+  }
 }

@@ -27,5 +27,11 @@
     "optical-mixing"
   ],
   "createdAt": "2026-02-17T20:08:41.130Z",
-  "backgroundType": 0
+  "backgroundType": 0,
+  "video": {
+    "motion": "Animate softly with slow atmospheric drift, gentle subject movement, and subtle watercolor wash breathing rather than hard mechanical motion.",
+    "camera": "Use a slow push-in or locked shot that preserves the delicate paper composition.",
+    "temporal_texture": "Pigment blooms, paper fibers, soft edges, translucent washes, and ink boundaries should remain calm and stable with only slight organic diffusion.",
+    "avoid": "Avoid fast camera moves, hard CGI deformation, heavy edge jitter, over-sharpening, and wash flicker that looks like compression noise."
+  }
 }

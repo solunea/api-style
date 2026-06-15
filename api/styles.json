@@ -17,6 +17,12 @@
       "flat-composition",
       "textured-paper"
     ],
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-10T15:44:41.253Z"
   },
@@ -37,6 +43,12 @@
       "comic style",
       "geometric patterns"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-10T15:49:04.146Z"
   },
@@ -58,6 +70,12 @@
       "editorial illustration",
       "matte finish"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-10T15:52:37.052Z"
   },
@@ -79,6 +97,12 @@
       "minimalist",
       "subsurface scattering"
     ],
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-10T16:23:17.069Z"
   },
@@ -100,6 +124,12 @@
       "graphic-lighting",
       "pastel-texture"
     ],
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-10T16:27:43.841Z"
   },
@@ -121,6 +151,12 @@
       "botanical patterns",
       "high contrast"
     ],
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-14T21:33:46.992Z"
   },
@@ -141,6 +177,12 @@
       "minimalist",
       "constructivism"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-14T21:38:22.504Z"
   },
@@ -163,6 +205,12 @@
       "stop-motion-aesthetic",
       "pastel-colors"
     ],
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-14T21:39:17.824Z"
   },
@@ -184,6 +232,12 @@
       "pastel palette",
       "smooth gradients"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-14T21:40:48.938Z"
   },
@@ -205,6 +259,12 @@
       "posterized",
       "stippling"
     ],
+    "video": {
+      "motion": "Animate with restrained graphic movement, slight parallax, and slow environmental changes that preserve the printed composition.",
+      "camera": "Use locked framing, gentle pan, or slow push-in; keep the camera motion simple enough for the print texture to remain legible.",
+      "temporal_texture": "Riso grain, stipple, halftone dots, misregistration, and ink coverage must stay anchored to surfaces without random crawling.",
+      "avoid": "Avoid noisy grain boiling, high-speed motion, smooth plastic CGI, excessive blur, and morphing that erases the printed texture."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-14T21:45:30.360Z"
   },
@@ -226,6 +286,12 @@
       "chunky lines",
       "monoprint"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-17T09:45:59.105Z"
   },
@@ -247,6 +313,12 @@
       "monochrome-photography",
       "circular-bokeh"
     ],
+    "video": {
+      "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+      "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+      "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+      "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-17T13:24:52.409Z"
   },
@@ -267,6 +339,12 @@
       "spot-color",
       "minimalist"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-17T13:39:59.566Z"
   },
@@ -287,6 +365,12 @@
       "minimalist flat design",
       "off-register print"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-17T15:31:22.088Z"
   },
@@ -308,6 +392,12 @@
       "organic-contours",
       "matisse-style"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-17T20:04:35.656Z"
   },
@@ -330,6 +420,12 @@
       "unblended-strokes",
       "vibrant-chroma"
     ],
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-17T20:07:17.859Z"
   },
@@ -350,6 +446,12 @@
       "thick-texture",
       "optical-mixing"
     ],
+    "video": {
+      "motion": "Animate softly with slow atmospheric drift, gentle subject movement, and subtle watercolor wash breathing rather than hard mechanical motion.",
+      "camera": "Use a slow push-in or locked shot that preserves the delicate paper composition.",
+      "temporal_texture": "Pigment blooms, paper fibers, soft edges, translucent washes, and ink boundaries should remain calm and stable with only slight organic diffusion.",
+      "avoid": "Avoid fast camera moves, hard CGI deformation, heavy edge jitter, over-sharpening, and wash flicker that looks like compression noise."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-17T20:08:41.130Z"
   },
@@ -370,6 +472,12 @@
       "sharp silhouette",
       "lost edges"
     ],
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-17T20:09:47.146Z"
   },
@@ -391,6 +499,12 @@
       "graphite",
       "minimalist line work"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-17T20:12:26.361Z"
   },
@@ -411,6 +525,12 @@
       "defacement-art",
       "thick-outlines"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-17T20:14:30.120Z"
   },
@@ -432,6 +552,12 @@
       "halftone-patterns",
       "graphic-typography"
     ],
+    "video": {
+      "motion": "Animate the scene with subtle, style-preserving movement that follows the subject while keeping the original composition readable.",
+      "camera": "Use a restrained camera move such as locked framing, a slow push-in, or a gentle pan chosen to match the visual style.",
+      "temporal_texture": "Keep the style-defining texture, edges, lighting, color treatment, and material behavior temporally stable across frames.",
+      "avoid": "Avoid abrupt camera jumps, excessive motion blur, texture flicker, uncontrolled morphing, unstable identity, and any movement that contradicts the visual style."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-17T20:15:47.674Z"
   },
@@ -453,6 +579,12 @@
       "bokeh",
       "scale-model"
     ],
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-17T22:58:56.223Z"
   },
@@ -474,6 +606,12 @@
       "vintage-print",
       "stencil-edges"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-17T22:59:54.739Z"
   },
@@ -494,6 +632,12 @@
       "aliased edges",
       "retro gaming"
     ],
+    "video": {
+      "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+      "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+      "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+      "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-17T23:02:22.428Z"
   },
@@ -516,6 +660,12 @@
       "film-grain",
       "minimalist-lineart"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-17T23:07:09.391Z"
   },
@@ -536,6 +686,12 @@
       "fine-line ink",
       "monochromatic etching"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-19T11:33:13.526Z"
   },
@@ -556,6 +712,12 @@
       "dry-brush",
       "flat-perspective"
     ],
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-19T12:49:07.012Z"
   },
@@ -577,6 +739,12 @@
       "monoline",
       "pop art"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-19T12:53:50.521Z"
   },
@@ -598,6 +766,12 @@
       "vector art",
       "high contrast"
     ],
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-19T22:23:26.336Z"
   },
@@ -618,6 +792,12 @@
       "lo-fi-illustration",
       "chunky-linework"
     ],
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-20T22:34:21.421Z"
   },
@@ -638,6 +818,12 @@
       "hyper-rendered",
       "flat-background"
     ],
+    "video": {
+      "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+      "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+      "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+      "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-20T22:35:34.527Z"
   },
@@ -658,6 +844,12 @@
       "ink outlines",
       "retro-futuristic"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-20T22:38:29.417Z"
   },
@@ -679,6 +871,12 @@
       "stippling",
       "pastel-palette"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-22T16:49:32.740Z"
   },
@@ -700,6 +898,12 @@
       "charcoal-contours",
       "offset-print-effect"
     ],
+    "video": {
+      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:29:54.740Z"
   },
@@ -721,6 +925,12 @@
       "retro-gaming",
       "pixel-clusters"
     ],
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:32:38.075Z"
   },
@@ -741,6 +951,12 @@
       "architectural drawing",
       "construction lines"
     ],
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:35:23.395Z"
   },
@@ -762,6 +978,12 @@
       "expressive-brushstrokes",
       "graphic-shadows"
     ],
+    "video": {
+      "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+      "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+      "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+      "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-26T10:10:37.844Z"
   },
@@ -783,6 +1005,12 @@
       "schematic diagram",
       "instructional manual"
     ],
+    "video": {
+      "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+      "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+      "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+      "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+    },
     "backgroundType": 1,
     "createdAt": "2026-02-26T10:12:57.335Z"
   },
@@ -804,6 +1032,12 @@
       "rough paper texture",
       "dry medium"
     ],
+    "video": {
+      "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+      "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+      "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+      "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+    },
     "backgroundType": 2,
     "createdAt": "2026-02-27T10:00:01.229Z"
   },
@@ -825,6 +1059,12 @@
       "rounded-geometry",
       "soft-lighting"
     ],
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-27T10:16:25.913Z"
   },
@@ -845,6 +1085,12 @@
       "toon shading",
       "forced perspective"
     ],
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    },
     "backgroundType": 0,
     "createdAt": "2026-02-27T10:18:24.123Z"
   },
@@ -866,6 +1112,12 @@
       "matte-texture",
       "clean-topology"
     ],
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    },
     "backgroundType": 2,
     "createdAt": "2026-03-11T11:49:06.137Z"
   },
@@ -887,6 +1139,12 @@
       "crushed shadows",
       "specular highlights"
     ],
+    "video": {
+      "motion": "Animate as a living painting with slow subject movement, gentle parallax, and restrained changes in brush-defined light and atmosphere.",
+      "camera": "Use a locked shot or slow museum-like push-in that lets brushwork and canvas texture remain readable.",
+      "temporal_texture": "Brushstrokes, impasto ridges, canvas grain, edge softness, and painterly lighting should stay anchored and avoid frame-to-frame crawling.",
+      "avoid": "Avoid watery morphing, rapid camera motion, unstable strokes, sharp digital edges, and texture flicker."
+    },
     "backgroundType": 0,
     "createdAt": "2026-03-17T13:44:23.380Z"
   },
@@ -908,6 +1166,12 @@
       "shallow depth of field",
       "analog aesthetic"
     ],
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    },
     "backgroundType": 0,
     "createdAt": "2026-03-17T13:50:20.772Z"
   },
@@ -929,6 +1193,12 @@
       "casual game art",
       "shallow depth of field"
     ],
+    "video": {
+      "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+      "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+      "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+      "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+    },
     "backgroundType": 0,
     "createdAt": "2026-03-17T13:53:25.407Z"
   },
@@ -949,6 +1219,12 @@
       "iconography",
       "uniform-line-weight"
     ],
+    "video": {
+      "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
+      "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
+      "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
+      "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
+    },
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:14:37.596Z"
   },
@@ -969,6 +1245,12 @@
       "solid color blocks",
       "unshaded"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:17:10.093Z"
   },
@@ -990,6 +1272,12 @@
       "impasto",
       "glowing lights"
     ],
+    "video": {
+      "motion": "Animate as a living painting with slow subject movement, gentle parallax, and restrained changes in brush-defined light and atmosphere.",
+      "camera": "Use a locked shot or slow museum-like push-in that lets brushwork and canvas texture remain readable.",
+      "temporal_texture": "Brushstrokes, impasto ridges, canvas grain, edge softness, and painterly lighting should stay anchored and avoid frame-to-frame crawling.",
+      "avoid": "Avoid watery morphing, rapid camera motion, unstable strokes, sharp digital edges, and texture flicker."
+    },
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:19:14.351Z"
   },
@@ -1010,6 +1298,12 @@
       "stippled texture",
       "no outlines"
     ],
+    "video": {
+      "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+      "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+      "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+      "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+    },
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:24:47.005Z"
   },
@@ -1030,6 +1324,12 @@
       "minimalist graphic",
       "orthographic"
     ],
+    "video": {
+      "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
+      "camera": "Use stable composition with a subtle push-in, pan, or tracking move only when it supports the main subject.",
+      "temporal_texture": "Flat fills, crisp silhouettes, clean gradients or cel shadows, and geometric edges must remain sharp and temporally consistent.",
+      "avoid": "Avoid painterly flicker, uncontrolled shape melting, excessive depth-of-field, noisy textures, and motion that makes flat shapes lose their clarity."
+    },
     "backgroundType": 2,
     "createdAt": "2026-04-30T17:51:07.243Z"
   },
@@ -1052,6 +1352,12 @@
       "low-res textures",
       "nearest-neighbor"
     ],
+    "video": {
+      "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+      "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+      "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+      "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+    },
     "backgroundType": 2,
     "createdAt": "2026-06-08T08:05:08.409Z"
   }

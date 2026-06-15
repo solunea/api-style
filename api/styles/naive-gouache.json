@@ -27,5 +27,11 @@
     "flat-perspective"
   ],
   "createdAt": "2026-02-19T12:49:07.012Z",
-  "backgroundType": 1
+  "backgroundType": 1,
+  "video": {
+    "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
+    "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
+    "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
+    "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+  }
 }

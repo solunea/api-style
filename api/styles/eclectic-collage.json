@@ -28,5 +28,11 @@
     "graphic-typography"
   ],
   "createdAt": "2026-02-17T20:15:47.674Z",
-  "backgroundType": 2
+  "backgroundType": 2,
+  "video": {
+    "motion": "Animate the scene with subtle, style-preserving movement that follows the subject while keeping the original composition readable.",
+    "camera": "Use a restrained camera move such as locked framing, a slow push-in, or a gentle pan chosen to match the visual style.",
+    "temporal_texture": "Keep the style-defining texture, edges, lighting, color treatment, and material behavior temporally stable across frames.",
+    "avoid": "Avoid abrupt camera jumps, excessive motion blur, texture flicker, uncontrolled morphing, unstable identity, and any movement that contradicts the visual style."
+  }
 }

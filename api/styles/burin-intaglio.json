@@ -28,5 +28,11 @@
     "shallow depth of field"
   ],
   "backgroundType": 0,
-  "createdAt": "2026-03-17T13:53:25.407Z"
+  "createdAt": "2026-03-17T13:53:25.407Z",
+  "video": {
+    "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
+    "camera": "Use a polished product-style slow orbit, push-in, or stable tracking move that shows depth without destabilizing the subject.",
+    "temporal_texture": "Matte surfaces, bevels, soft shadows, ambient occlusion, translucency, and global illumination should remain physically consistent.",
+    "avoid": "Avoid rubbery deformation, flickering shadows, sudden perspective jumps, unstable geometry, and excessive motion blur."
+  }
 }

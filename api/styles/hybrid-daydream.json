@@ -27,5 +27,11 @@
     "forced perspective"
   ],
   "backgroundType": 0,
-  "createdAt": "2026-02-27T10:18:24.123Z"
+  "createdAt": "2026-02-27T10:18:24.123Z",
+  "video": {
+    "motion": "Animate with slow flowing light, gentle gradient drift, soft atmospheric breathing, and minimal subject motion that feels dreamlike.",
+    "camera": "Use a smooth slow push-in, floating pan, or locked shot with delicate light movement.",
+    "temporal_texture": "Soft gradients, stipple grain, glow, bloom, light leaks, and feathered edges should move fluidly but stay coherent between frames.",
+    "avoid": "Avoid hard cuts, sharp jitter, harsh outlines, aggressive camera movement, and random grain flicker that breaks the calm luminous style."
+  }
 }

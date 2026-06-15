@@ -28,5 +28,11 @@
     "glowing lights"
   ],
   "backgroundType": 2,
-  "createdAt": "2026-04-08T10:19:14.351Z"
+  "createdAt": "2026-04-08T10:19:14.351Z",
+  "video": {
+    "motion": "Animate as a living painting with slow subject movement, gentle parallax, and restrained changes in brush-defined light and atmosphere.",
+    "camera": "Use a locked shot or slow museum-like push-in that lets brushwork and canvas texture remain readable.",
+    "temporal_texture": "Brushstrokes, impasto ridges, canvas grain, edge softness, and painterly lighting should stay anchored and avoid frame-to-frame crawling.",
+    "avoid": "Avoid watery morphing, rapid camera motion, unstable strokes, sharp digital edges, and texture flicker."
+  }
 }

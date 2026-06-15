@@ -28,5 +28,11 @@
     "pixel-clusters"
   ],
   "backgroundType": 2,
-  "createdAt": "2026-02-25T07:32:38.075Z"
+  "createdAt": "2026-02-25T07:32:38.075Z",
+  "video": {
+    "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
+    "camera": "Use an orthographic or pseudo-isometric camera with slow pans, small dolly moves, or locked framing; avoid deep cinematic perspective shifts.",
+    "temporal_texture": "Line weight, flat fills, registration marks, arrows, grids, and schematic textures must remain perfectly stable from frame to frame.",
+    "avoid": "Avoid organic morphing, handheld camera shake, depth-of-field blur, elastic motion, noisy texture boiling, and perspective changes that break the diagrammatic style."
+  }
 }

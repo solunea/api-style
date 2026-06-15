@@ -28,5 +28,11 @@
     "circular-bokeh"
   ],
   "createdAt": "2026-02-17T13:24:52.409Z",
-  "backgroundType": 0
+  "backgroundType": 0,
+  "video": {
+    "motion": "Animate with slow, suspenseful movement: drifting smoke, shifting rim light, subtle subject motion, and restrained atmospheric changes.",
+    "camera": "Use classic cinematic grammar such as a slow push-in, locked tripod shot, or very gentle lateral dolly through haze.",
+    "temporal_texture": "Analog grain, halation, deep shadows, bokeh, and volumetric haze should shimmer subtly while preserving stable silhouettes and contrast.",
+    "avoid": "Avoid bright flat lighting, fast cuts, wobbling exposure, unstable identity, heavy warping, and camera moves that destroy the noir mood."
+  }
 }

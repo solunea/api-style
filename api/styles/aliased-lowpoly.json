@@ -29,5 +29,11 @@
     "nearest-neighbor"
   ],
   "backgroundType": 2,
-  "createdAt": "2026-06-08T08:05:08.409Z"
+  "createdAt": "2026-06-08T08:05:08.409Z",
+  "video": {
+    "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",
+    "camera": "Use a restrained retro game camera: slow orbit, fixed-angle tracking, or simple dolly with visible low-poly spatial depth.",
+    "temporal_texture": "Aliased edges, pixelated texture maps, flat lighting, baked shadows, and low-resolution UV artifacts must remain stable and intentionally crisp.",
+    "avoid": "Avoid smooth modern CGI deformation, motion blur, realistic fluid simulation, high-frequency camera shake, and texture filtering that removes the retro artifacts."
+  }
 }

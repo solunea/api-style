@@ -324,6 +324,10 @@ function openModal(editId) {
     document.getElementById('form-prompt').value = style.prompt || '';
     document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
+    document.getElementById('form-video-motion').value = (style.video && style.video.motion) || '';
+    document.getElementById('form-video-camera').value = (style.video && style.video.camera) || '';
+    document.getElementById('form-video-temporal-texture').value = (style.video && style.video.temporal_texture) || '';
+    document.getElementById('form-video-avoid').value = (style.video && style.video.avoid) || '';
     document.getElementById('form-preview-image').value = style.preview_image || '';
     document.getElementById('form-preview-image-removebg').value = style.preview_image_removebg || '';
     document.getElementById('form-background-type').value = style.backgroundType ?? 2;
@@ -423,6 +427,12 @@ async function handleSubmit(e) {
   const background_prompt = document.getElementById('form-background-prompt').value.trim();
   const tagsRaw = document.getElementById('form-tags').value;
   const tags = tagsRaw.split(',').map((t) => t.trim()).filter(Boolean);
+  const video = {
+    motion: document.getElementById('form-video-motion').value.trim(),
+    camera: document.getElementById('form-video-camera').value.trim(),
+    temporal_texture: document.getElementById('form-video-temporal-texture').value.trim(),
+    avoid: document.getElementById('form-video-avoid').value.trim()
+  };
 
   let image = document.getElementById('form-image-url').value.trim();
 
@@ -454,7 +464,7 @@ async function handleSubmit(e) {
     const preview_image = document.getElementById('form-preview-image').value.trim();
     const preview_image_removebg = document.getElementById('form-preview-image-removebg').value.trim();
     const backgroundType = parseInt(document.getElementById('form-background-type').value, 10);
-    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined, backgroundType };
+    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined, backgroundType, video };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -519,6 +529,10 @@ async function analyzeImage() {
     document.getElementById('form-description-en').value = data.description_en || '';
     document.getElementById('form-description-fr').value = data.description_fr || '';
     if (data.tags && data.tags.length) document.getElementById('form-tags').value = data.tags.join(', ');
+    document.getElementById('form-video-motion').value = (data.video && data.video.motion) || '';
+    document.getElementById('form-video-camera').value = (data.video && data.video.camera) || '';
+    document.getElementById('form-video-temporal-texture').value = (data.video && data.video.temporal_texture) || '';
+    document.getElementById('form-video-avoid').value = (data.video && data.video.avoid) || '';
 
     // Store both prompt versions
     generatedPrompts.standard = data.prompt || '';
@@ -756,4 +770,3 @@ function renderVarBadges(variables) {
   ).join('');
   return `<div class="card-vars">${badges}</div>`;
 }
-
