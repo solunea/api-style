@@ -2,26 +2,25 @@
   {
     "id": "gouache-crayeuse",
     "title": "Textured Storybook",
-    "description": "Ce style imite l'illustration contemporaine de livres pour enfants d'inspiration mid-century en utilisant des techniques numériques qui reproduisent la gouache traditionnelle, le pastel gras et le crayon de couleur. Il présente des compositions planes et superposées sans éclairage directionnel, s'appuyant plutôt sur des palettes chaudes et terreuses et des bords très tactiles brossés à sec. Les formes sont définies par des blocs de couleur plutôt que par des contours stricts, détaillées avec des textures de crayon ludiques et grattées pour évoquer une atmosphère chaleureuse et artisanale.",
-    "description_en": "This style emulates contemporary, mid-century-inspired children's book illustration using digital techniques that mimic traditional gouache, wax pastel, and colored pencil. It features flat, overlapping compositions with no directional lighting, relying instead on warm, earthy palettes and highly tactile, dry-brushed edges. Forms are defined by blocks of color rather than strict outlines, detailed with playful, scratchy pencil textures to evoke a cozy, handcrafted atmosphere.",
-    "description_fr": "Ce style imite l'illustration contemporaine de livres pour enfants d'inspiration mid-century en utilisant des techniques numériques qui reproduisent la gouache traditionnelle, le pastel gras et le crayon de couleur. Il présente des compositions planes et superposées sans éclairage directionnel, s'appuyant plutôt sur des palettes chaudes et terreuses et des bords très tactiles brossés à sec. Les formes sont définies par des blocs de couleur plutôt que par des contours stricts, détaillées avec des textures de crayon ludiques et grattées pour évoquer une atmosphère chaleureuse et artisanale.",
+    "description": "Une esthétique charmante dessinée à la main imitant des médiums secs comme le crayon de couleur, la craie grasse et la gouache sèche sur papier texturé. Présente une perspective orthographique plane, des hachures directionnelles irrégulières, des contours crayonnés et des blocs de couleurs vibrants avec des superpositions visibles.",
+    "description_en": "A charming, hand-drawn aesthetic mimicking dry media like colored pencil, wax crayon, and dry gouache on heavily textured paper. Features flat orthographic perspective, scratchy directional shading, irregular sketchy contours, and vibrant blocks of color with visible scumbling where underlying layers peek through.",
+    "description_fr": "Une esthétique charmante dessinée à la main imitant des médiums secs comme le crayon de couleur, la craie grasse et la gouache sèche sur papier texturé. Présente une perspective orthographique plane, des hachures directionnelles irrégulières, des contours crayonnés et des blocs de couleurs vibrants avec des superpositions visibles.",
     "image": "images/g__6vlgwoaamdym.jpg",
     "preview_image": "images/preview-1781610335270-5yeh.webp",
     "preview_image_removebg": "images/preview-1781610333923-6nrd.webp",
     "tags": [
-      "gouache",
-      "colored-pencil",
-      "naive-art",
-      "dry-brush",
-      "childrens-book",
-      "flat-composition",
-      "textured-paper"
+      "dry media",
+      "colored pencil",
+      "scumbling",
+      "flat illustration",
+      "textured paper",
+      "storybook aesthetic"
     ],
     "video": {
-      "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
-      "camera": "Prefer locked framing or a slow push-in that preserves the flat layered composition.",
-      "temporal_texture": "Gouache edges, wax pastel marks, pencil scratches, paper grain, and dry-brush texture must stay tactile and stable without flicker.",
-      "avoid": "Avoid realistic 3D depth, liquid morphing, aggressive camera motion, excessive texture boiling, and any movement that breaks the handmade paper feel."
+      "motion": "Subjects animate with a slight stop-motion or line-boiling effect, where the sketchy outlines and scumbled textures jitter slightly frame-to-frame, simulating hand-drawn frame-by-frame animation.",
+      "camera": "Camera movements are strictly 2D pans and zooms, maintaining a flat orthographic perspective without any 3D parallax.",
+      "temporal_texture": "The heavy paper grain remains static, while the scratchy directional shading and colored pencil strokes constantly redraw and boil to maintain a lively, handmade energy.",
+      "avoid": "Avoid smooth tweening, motion blur, 3D camera rotations, realistic physics, and any stabilization of the hand-drawn line work."
     },
     "backgroundType": 2,
     "createdAt": "2026-02-10T15:44:41.253Z"
