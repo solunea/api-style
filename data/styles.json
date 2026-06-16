@@ -27,10 +27,10 @@
     "description_en": "This style emulates contemporary, mid-century-inspired children's book illustration using digital techniques that mimic traditional gouache, wax pastel, and colored pencil. It features flat, overlapping compositions with no directional lighting, relying instead on warm, earthy palettes and highly tactile, dry-brushed edges. Forms are defined by blocks of color rather than strict outlines, detailed with playful, scratchy pencil textures to evoke a cozy, handcrafted atmosphere.",
     "description_fr": "Ce style imite l'illustration contemporaine de livres pour enfants d'inspiration mid-century en utilisant des techniques numériques qui reproduisent la gouache traditionnelle, le pastel gras et le crayon de couleur. Il présente des compositions planes et superposées sans éclairage directionnel, s'appuyant plutôt sur des palettes chaudes et terreuses et des bords très tactiles brossés à sec. Les formes sont définies par des blocs de couleur plutôt que par des contours stricts, détaillées avec des textures de crayon ludiques et grattées pour évoquer une atmosphère chaleureuse et artisanale.",
     "supportImageReference": false,
-    "preview_image": "images/preview-1771780942667-q3tp.webp",
+    "preview_image": "images/preview-1781610335270-5yeh.webp",
     "prompt_removebg": "Render a contemporary children's book illustration using digital techniques that perfectly mimic traditional gouache, wax pastel, and colored pencil. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The entire composition is composited on a clean {{background_color}} surface. The visual approach relies on flat, diffuse lighting with absolutely no directional shadows or chiaroscuro, building depth purely through overlapping flat shapes parallel to the picture plane. Forms are constructed from solid blocks of opaque color dominated by {{primary_color}}, complemented by {{secondary_color}} midtones, and punctuated by playful {{accent_color}} details. Do not use strict outlines or crisp vector contours; instead, define silhouettes using ragged, dry-brushed edges and chalky transitions that interact naturally with the {{background_color}} backdrop, explicitly allowing intentional overflow where parts of the scene can extend beyond the visible frame. Layer the surfaces with highly tactile, scratchy colored pencil textures, crayon scribbles, and heavy watercolor paper grain. Internal details should be rendered with loose, naive, hand-drawn line work that feels organic and slightly imperfect. The overall atmosphere must be cozy, nostalgic, and handcrafted, evoking a mid-century folk-art aesthetic with charmingly clumsy proportions and a warm, earthy resonance. Ensure the granular texture of dry media is visible across all color fields, unifying the composition with a distinctly handmade, tactile quality. gouache illustration, colored pencil texture, dry brush, naive art, flat composition, heavy paper grain, children's book style, folk art inspired, highly tactile, whimsical, warm palette, hand-drawn feel",
     "background_prompt_removebg": "A flat, 2D textured background environment inspired by contemporary children's book illustrations, mimicking traditional gouache and wax pastel on heavy paper. The scene features overlapping, flat planes of opaque {{primary_color}} and {{secondary_color}}, detailed with scratchy {{accent_color}} colored pencil scribbles and dry-brushed edges. The atmosphere is warm, cozy, and naive, with no directional shadows, relying entirely on chalky textures, visible paper grain, and organic, handcrafted imperfections to create a tactile, inviting backdrop. In the foreground, a decorative border of dry-brushed shapes and crayon patterns frames the invisible subject, transitioning softly and organically into a flat {{background_color}} surface with ragged, textured edges.",
-    "preview_image_removebg": "images/preview-1771780942532-b3to.webp",
+    "preview_image_removebg": "images/preview-1781610333923-6nrd.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
@@ -66,10 +66,10 @@
     "description_en": "This style features a contemporary, playful doodle aesthetic characterized by bold, expressive black ink outlines and flat, unshaded vector fills. It utilizes a highly restricted color palette, relying on stark contrasts between crisp white areas, heavy black geometric patterns, and vibrant accent colors. The composition is energized by floating graphic elements, radiating action lines, and whimsical typography that create a dynamic, sketchbook-like atmosphere.",
     "description_fr": "Ce style présente une esthétique de gribouillage contemporaine et ludique, caractérisée par des contours expressifs à l'encre noire et des remplissages vectoriels plats et sans ombres. Il utilise une palette de couleurs très restreinte, s'appuyant sur des contrastes saisissants entre des zones blanches nettes, des motifs géométriques noirs denses et des couleurs d'accentuation vibrantes. La composition est dynamisée par des éléments graphiques flottants, des lignes d'action rayonnantes et une typographie fantaisiste qui créent une atmosphère dynamique de carnet de croquis.",
     "supportImageReference": false,
-    "preview_image": "images/preview-1772103711874-gbr5.webp",
+    "preview_image": "images/preview-1781610333762-6l2y.webp",
     "prompt_removebg": "Digital 2D flat vector illustration, contemporary doodle art style, hand-drawn ink aesthetic with clean digital execution. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The linework features bold, expressive, solid black contour lines with varying, pressure-sensitive weight, achieving a loose but precise inking style. Employ a highly restricted minimalist color palette using stark black, crisp white, {{primary_color}} flat fills, and {{accent_color}} accents, composited on a clean {{background_color}} surface. Utilize absolute flat coloring with zero gradients, zero shading, zero ambient occlusion, and zero highlights. Incorporate playful floating graphic elements around the main focal points, such as radiating action lines, exclamation points, whimsical squiggles, floating dots, and loose hand-written style text scribbles to generate an energetic rhythm. Include bold geometric patterns, particularly thick black-and-white diagonal stripes, within secondary shapes to create high-contrast visual interest and structural mass. The texture is a perfectly smooth, matte digital finish with no grain, canvas weave, or brushstrokes. Lighting is completely flat; form and depth are established entirely through overlapping solid shapes, hard crisp vector edges, and thick black outlines rather than illumination or shadow. Ensure the subject's edges interact cleanly with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries), rendered against a flat {{background_color}} backdrop. digital illustration, contemporary doodle art, flat vector graphics, expressive black ink outlines, limited color palette, stark contrast, geometric stripes, floating action lines, playful sketchbook aesthetic, hard vector edges, flat coloring, zero shading, 2d spatial dynamics",
     "background_prompt_removebg": "A vibrant, abstract environment in a contemporary digital doodle art style, featuring flat 2D vector layouts. The scene is composed of overlapping organic and geometric shapes with bold, solid black outlines and varying line weights. Thick black-and-white diagonal striped masses contrast with flat {{primary_color}} and {{accent_color}} forms. The space is energized by floating graphic elements like squiggles, dots, and radiating action lines. Completely flat lighting, zero gradients, smooth matte finish, no central subject. In the foreground, a decorative frame of playful ink scribbles and geometric patterned borders creates depth, with all elements transitioning cleanly into a flat {{background_color}} surface.",
-    "preview_image_removebg": "images/preview-1772103712098-9ru7.webp",
+    "preview_image_removebg": "images/preview-1781610332247-y0k8.webp",
     "backgroundType": 1,
     "video": {
       "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
@@ -105,11 +105,11 @@
     "description_en": "A crisp, contemporary digital illustration style characterized by flat, vibrant vector shapes and geometric silhouettes. It features a lineless aesthetic with stark color contrasts, minimal cel-shaded depth, and a clean, matte finish.",
     "description_fr": "Un style d'illustration numérique contemporain aux formes vectorielles plates et vibrantes, avec des silhouettes géométriques. Il se distingue par une esthétique sans contours, des contrastes marqués, des ombres cel-shadées minimalistes et un rendu mat épuré.",
     "background_prompt": "A minimalist, flat 2D vector graphic environment composed of large, overlapping geometric planes in solid {{primary_color}}. The space is devoid of organic forms, relying on stark, hard-edged abstract shapes and crisp, lineless boundaries. Subtle {{secondary_color}} architectural or structural blocks create shallow depth through precise cel-shaded drop shadows. Flat, uniform lighting illuminates the matte surfaces, while sparse {{accent_color}} geometric accents provide visual rhythm across the clean, solid-fill backdrop.",
-    "preview_image": "images/preview-1771537914645-habg.webp",
+    "preview_image": "images/preview-1781610330955-rlkw.webp",
     "supportImageReference": false,
     "prompt_removebg": "Render a crisp 2D digital vector illustration composited on a clean {{background_color}} surface. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Execute with a flat design aesthetic characterized by geometric abstraction and sharp, clean silhouettes. Elements of the {{subject}} can intentionally overflow and extend beyond the visible frame, cropped cleanly by the image boundaries against the flat {{background_color}} backdrop. Utilize a bold palette driven by {{primary_color}} dominant masses, energized by vibrant {{accent_color}} focal points, and grounded by {{secondary_color}} structural planes. The rendering is strictly lineless; edges are defined entirely by stark color contrast against the {{background_color}}. Lighting is exceptionally flat and uniform, employing minimalist cel-shaded drop shadows with razor-sharp edges to establish shallow planar depth between overlapping elements. Shapes are stylized into blocky, exaggerated proportions, stripping away organic nuance in favor of graphic clarity. The surface materiality is a smooth, matte finish featuring an extremely subtle, uniform digital grain that prevents visual sterility without compromising the flat vector aesthetic. Color blocks remain solid and ungradated. Spatial dynamics rely entirely on 2D layering, avoiding traditional perspective in favor of a stacked, editorial layout. Ensure all boundaries are precision-cut, delivering a pristine, modern graphic design sensibility. Tags: vector illustration, flat design, lineless art, geometric abstraction, cel-shading, solid color blocks, matte finish, crisp silhouettes, editorial graphic, modern pop art.",
     "background_prompt_removebg": "A minimalist, flat 2D vector graphic environment composed of large, overlapping geometric planes in solid {{primary_color}}, rendered against a flat {{background_color}} backdrop. The space relies on stark, hard-edged abstract shapes and crisp, lineless boundaries. Subtle {{secondary_color}} architectural blocks create shallow depth through precise cel-shaded drop shadows. Flat, uniform lighting illuminates the matte surfaces, while sparse {{accent_color}} geometric accents provide visual rhythm. In the foreground, a decorative frame of sharp, vector-cut geometric blocks borders the composition, casting hard shadows onto the {{background_color}} surface to establish clear planar depth.",
-    "preview_image_removebg": "images/preview-1771537914876-4afc.webp",
+    "preview_image_removebg": "images/preview-1781610334234-uxwg.webp",
     "backgroundType": 1,
     "video": {
       "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
@@ -146,10 +146,10 @@
     "supportImageReference": false,
     "description_en": "This style features a 3D-rendered minimalist aesthetic characterized by exceptionally smooth, heavily beveled geometry with no sharp edges. Surfaces possess a velvety, matte finish under soft global illumination, accented by frosted translucency and a uniform, fine digital grain that adds a tactile warmth to the pastel-leaning color palette.",
     "description_fr": "Ce style se caractérise par une esthétique minimaliste en rendu 3D, définie par une géométrie exceptionnellement lisse et biseautée sans arêtes vives. Les surfaces possèdent une finition mate et veloutée sous une illumination globale douce, rehaussée par une translucidité givrée et un grain numérique fin et uniforme qui ajoute une chaleur tactile à la palette de couleurs pastel.",
-    "preview_image": "images/preview-1771538580919-bepn.webp",
+    "preview_image": "images/preview-1781610333213-k392.webp",
     "prompt_removebg": "3D rendered minimalist illustration utilizing diffuse matte materials and a soft-body geometric aesthetic. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The visual execution relies on exceptionally smooth, heavily beveled geometry where all sharp corners are rounded off, creating a friendly, tactile appearance. Lighting is achieved through high-key global illumination and large area softbox lights, producing extremely soft, diffused drop shadows and gentle ambient occlusion that grounds the elements without introducing harsh contrast. Specular highlights are entirely suppressed to maintain a velvety, non-reflective finish across all solid surfaces, while any translucent elements exhibit a frosted, subsurface scattering effect. The color grading employs a low-contrast, pastel-leaning palette, utilizing {{primary_color}} for the dominant matte surfaces, {{accent_color}} for soft focal details, and {{secondary_color}} for supporting ambient elements, all unified by a warm, inviting undertone. Textural depth is introduced exclusively through a uniform, fine digital film grain applied globally over the entire composition, mimicking a subtle print or tactile noise overlay that breaks up the perfect gradients. Silhouettes are clean and crisp, defined entirely by soft volumetric shading rather than any linework or outlines. The entire composition is composited on a clean {{background_color}} surface, with the soft, diffused drop shadows cast directly onto this flat {{background_color}} backdrop. Edges of the geometry interact smoothly with the background, allowing intentional overflow where parts of the scene can extend beyond the visible frame and be cleanly cropped by the image boundaries., 3d render, minimalist, matte finish, softbox lighting, beveled edges, pastel palette, film grain, ambient occlusion, subsurface scattering, solid background, clean cutout",
     "background_prompt_removebg": "A minimalist 3D rendered environment composed of smooth, heavily beveled geometric shapes and sweeping curved surfaces. The scene features a velvety, matte finish under soft, high-key global illumination with no harsh shadows. A low-contrast palette uses {{primary_color}} for the primary structural forms, accented by {{accent_color}} gradients and {{secondary_color}} ambient reflections. A uniform, fine digital film grain covers the entire atmospheric space, creating a warm, tactile backdrop. In the foreground, a decorative border of rounded, floating geometric primitives frames the invisible subject, casting soft, diffused ambient occlusion shadows directly onto the flat {{background_color}} surface that grounds the entire composition.",
-    "preview_image_removebg": "images/preview-1771538581053-c0gj.webp",
+    "preview_image_removebg": "images/preview-1781610331134-9num.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
@@ -182,14 +182,14 @@
     ],
     "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z",
-    "preview_image": "images/preview-1771537916275-8pbi.webp",
+    "preview_image": "images/preview-1781610334565-p6sk.webp",
     "description_en": "This style mimics contemporary editorial illustration with a distinct risograph print aesthetic. It features flattened, faux-isometric perspectives, flat color blocking with a heavy uniform noise texture, and stylized graphic lighting with hard-edged drop shadows. Subtle hand-drawn edge wobbles and white contour accents give it a cozy, tactile digital-traditional crossover feel.",
     "description_fr": "Ce style imite l'illustration éditoriale contemporaine avec une esthétique distincte d'impression risographe. Il présente des perspectives aplaties en fausse isométrie, des aplats de couleurs avec une forte texture de grain uniforme, et un éclairage graphique stylisé avec des ombres portées à bords nets. De subtiles irrégularités tracées à la main et des accents de contours blancs lui confèrent un aspect chaleureux et tactile, à la croisée du numérique et du traditionnel.",
     "background_prompt": "A completely empty background environment mimicking contemporary editorial risograph illustrations. The scene features a flattened, faux-isometric perspective composed of overlapping flat color planes in {{primary_color}}, {{secondary_color}}, and {{accent_color}}. The entire surface is coated in a heavy, uniform noise and stipple grain texture, giving a tactile, chalky printmaking feel. Stylized, hard-edged graphic light cones intersect with sharp, unblurred solid drop shadows. Subtle hand-drawn wobbles on the color boundaries replace sterile straight lines.",
     "supportImageReference": false,
     "prompt_removebg": "Digital editorial illustration mimicking risograph printing and chalk pastel drawing. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render the scene against a flat {{background_color}} backdrop, allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). Render the scene using flat color blocking dominated by {{primary_color}}, offset by {{accent_color}} details and {{secondary_color}} supporting tones. Apply a heavy, uniform noise and stipple grain texture universally across all surfaces, giving the artwork a highly tactile, printed materiality. Lighting is explicitly stylized and graphic: use visible, geometric light cones layered as semi-transparent color blocks, casting hard-edged, solid drop shadows with zero blur or gradient onto the {{background_color}} surface. Form is defined primarily by color contrast rather than heavy line art, though selective, thin white contour lines are used to highlight delicate elements, wires, or overlapping forms. Edges of shapes should exhibit a subtle, hand-drawn wobble, avoiding perfectly sterile vector lines to maintain an organic, indie-editorial feel. Perspective is intentionally flattened, leaning toward a faux-isometric or orthographic tilt that arranges elements in a neat, slightly overlapping composition. The overall atmosphere is cozy, structured, and contemporary. digital editorial illustration, risograph aesthetic, heavy noise texture, flat color blocking, faux-isometric perspective, hard-edged drop shadows, graphic light cones, chalk pastel texture, hand-drawn edges, white contour accents, contemporary indie art, tactile printmaking feel",
     "background_prompt_removebg": "A completely empty background environment mimicking contemporary editorial risograph illustrations. The scene features a flattened, faux-isometric perspective composed of overlapping flat color planes in {{primary_color}}, {{secondary_color}}, and {{accent_color}}. The entire surface is coated in a heavy, uniform noise and stipple grain texture, giving a tactile, chalky printmaking feel. Stylized, hard-edged graphic light cones intersect with sharp, unblurred solid drop shadows. Subtle hand-drawn wobbles on the color boundaries replace sterile straight lines. This environment transitions into a clean {{background_color}} surface, featuring a decorative foreground overlay of thin, stylized white contour lines and organic geometric frames that sit in front of the invisible subject, interacting playfully with the {{background_color}} backdrop.",
-    "preview_image_removebg": "images/preview-1771537916675-4nc6.webp",
+    "preview_image_removebg": "images/preview-1781610333301-kr6a.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate elements as precise mechanical or instructional movement: clean stepwise reveals, measured sliding parts, subtle assembly motion, and readable directional flow.",
@@ -214,7 +214,7 @@
       "background_color"
     ],
     "image": "images/hbvho5ibgaucdkr.jpg",
-    "preview_image": "images/preview-1771778755580-i25s.webp",
+    "preview_image": "images/preview-1781610339290-gqjy.webp",
     "tags": [
       "flat illustration",
       "screenprint aesthetic",
@@ -229,7 +229,7 @@
     "createdAt": "2026-02-14T21:33:46.992Z",
     "prompt_removebg": "Flat digital illustration with a mid-century screen-print aesthetic and Eastern European folk art influences. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork is rendered using strict, solid color blocking with absolutely no gradients, no 3D shading, and no black outlines. Shapes are defined entirely by stark, high-contrast intersections of a highly restricted palette. The entire scene is composited on a clean {{background_color}} surface. Fill primary focal areas with bold {{primary_color}}, support the composition with large structural blocks of {{secondary_color}}, and punch out intricate internal details using stark {{accent_color}}. The internal surfaces of the shapes are heavily decorated with rhythmic folk-art patterns, including stylized botanical motifs, tiny leaves, geometric dashes, and uniform dots. Lighting is completely flat and two-dimensional, relying on overlapping silhouettes to establish depth rather than shadow or highlight. Edge treatment features crisp, sharp vector-like cutouts that are occasionally softened by a subtle, tactile risograph print texture and fine stippling, giving the piece a traditional storybook materiality. Allow intentional overflow where parts of the {{subject}} can extend beyond the visible frame, cropped by the image boundaries, interacting cleanly with the flat {{background_color}} backdrop. The composition should feel deeply graphic and meticulously arranged, heavily featuring stylized flora, patterned silhouettes, and a cohesive atmosphere. flat digital illustration, screenprint texture, folk art motifs, limited palette, solid color blocking, risograph grain, botanical patterns, high contrast, two-dimensional",
     "background_prompt_removebg": "A purely environmental backdrop in a flat digital illustration style with a mid-century screen-print aesthetic. A deep, near-black night sky dominates, layered with rolling, stylized hills and folk-art flora. The landscape features solid color blocking using {{secondary_color}} for structural ground elements and {{primary_color}} for bold, rhythmic botanical motifs like stylized leaves, blooming flowers, and geometric stems. Stark {{accent_color}} dots and dashes provide intricate internal patterning across the shapes. Subtle risograph grain and stippling add tactile print texture. A decorative foreground frame made of stylized, symmetrical floral vines and geometric folk-art patterns frames the invisible subject, transitioning smoothly and cleanly into a flat {{background_color}} surface. Flat lighting, zero gradients, strictly two-dimensional.",
-    "preview_image_removebg": "images/preview-1771778755259-5pne.webp",
+    "preview_image_removebg": "images/preview-1781610336204-spgv.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",
@@ -254,7 +254,7 @@
       "background_color"
     ],
     "image": "images/g_v0edxauaack44.jpg",
-    "preview_image": "images/preview-1771627540350-npby.webp",
+    "preview_image": "images/preview-1781610336218-26er.webp",
     "tags": [
       "bauhaus",
       "de-stijl",
@@ -268,7 +268,7 @@
     "createdAt": "2026-02-14T21:38:22.504Z",
     "prompt_removebg": "Flat vector illustration, Bauhaus and De Stijl geometric abstraction, rigid modernist graphic design. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Deconstruct the elements of the scene into their most fundamental geometric components, translating organic forms into rigid, architectural structures built from perfect geometric primitives like circles, triangles, rectangles, and strict orthogonal grids. The visual rhythm is static, balanced, and highly intellectual, reminiscent of mid-century avant-garde art movements. Lighting is non-existent; this is an unlit 2D space with zero gradients, absolute flat shading, no drop shadows, and no highlights. The color science relies on pure {{primary_color}}, striking {{accent_color}}, and {{secondary_color}}, utilizing stark black and stark white for structural contrast and weight. Edge treatment features razor-sharp vector cuts with minimal, uniform black line work used strictly for structural separation. An extremely subtle matte paper texture permeates the composition to provide a vintage poster warmth, yet the internal shapes remain solid, unblended blocks of pure pigment, all composited on a clean {{background_color}} surface. Depth is entirely flattened into a pure 2D orthographic projection with overlapping flat planar shapes and absolutely no perspective. The strict geometric edges of the {{subject}} must interact cleanly and sharply with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). flat vector, bauhaus style, de stijl, constructivism, geometric abstraction, strict primitives, unblended colors, no gradients, hard edges, modernist poster, minimalist graphic design, 2d orthographic, solid fill",
     "background_prompt_removebg": "A purely abstract environmental backdrop inspired by Bauhaus and De Stijl geometric abstraction, transitioning seamlessly into a clean {{background_color}} surface. The composition features a flat, unlit 2D space constructed entirely from overlapping perfect geometric primitives like large rectangles, intersecting orthogonal grids, and sweeping semi-circles. Utilizing a palette of pure {{primary_color}}, striking {{accent_color}}, and balanced {{secondary_color}}, alongside stark black and white structural blocks. In the foreground, a rigid, asymmetrical geometric border acts as a decorative overlay, framing the invisible subject to create a subtle sense of planar depth. There are zero gradients, no shadows, and no perspective, just razor-sharp vector edges over a very subtle matte paper texture interacting sharply with the {{background_color}} backdrop.",
-    "preview_image_removebg": "images/preview-1771627540032-4yal.webp",
+    "preview_image_removebg": "images/preview-1781610338156-w59e.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
@@ -293,7 +293,7 @@
       "background_color"
     ],
     "image": "images/g_o1exrboaa5n_d.jpg",
-    "preview_image": "images/preview-1771537917610-g0ig.webp",
+    "preview_image": "images/preview-1781610337287-0luq.webp",
     "tags": [
       "needle-felting",
       "matted-wool",
@@ -309,7 +309,7 @@
     "createdAt": "2026-02-14T21:39:17.824Z",
     "prompt_removebg": "Photorealistic 3D render of a handcrafted needle-felted wool diorama. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The visual execution must simulate dense, matted wool fibers with a highly tactile, fuzzy surface. Every element is constructed from dry-felted wool, featuring rounded, soft geometric forms with no sharp edges or hard drawn lines. Colors blend organically as if tufts of dyed roving were poked together with a felting needle. Individual stray microscopic wool hairs and fuzz fringe the silhouettes, catching gentle rim light. The lighting is soft, diffused high-key studio illumination that creates gentle core shadows and subtle subsurface scattering through the porous wool material, mimicking a miniature set. The finish is entirely matte, devoid of any glossy or specular highlights, emphasizing a cozy, warm, and innocent atmosphere. The color palette is bright, cheerful, and pastel-leaning, utilizing {{primary_color}} as the dominant hue, accented by {{accent_color}} details and {{secondary_color}} supporting tones. Employ a distinct macro photography aesthetic with an extremely shallow depth of field; foreground elements and the distant background must dissolve into soft, creamy bokeh, enforcing a miniature stop-motion animation scale. The entire scene is composited on a clean {{background_color}} surface. The fuzzy, stray wool fibers of the {{subject}}'s silhouette must gently overlap and interact with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries)., needle felting, matted wool texture, handcrafted miniature diorama, macro photography, shallow depth of field, soft pastel lighting, fuzzy edges, stop-motion aesthetic",
     "background_prompt_removebg": "A pure background scene of a handcrafted needle-felted wool landscape. Soft, rolling, rounded mounds and abstract organic shapes constructed entirely from dense, matted fuzzy wool. The environment features a bright, cheerful pastel palette dominated by {{primary_color}}, with {{accent_color}} accents on the peaks and {{secondary_color}} in the gentle, shallow crevices. Soft, diffused high-key studio lighting highlights individual stray microscopic wool fibers catching the rim light. Executed with a macro photography aesthetic, featuring an extremely shallow depth of field where the extreme foreground and distant background dissolve into heavy, creamy bokeh. Completely matte finish with no specular highlights. Placed in front of this invisible subject area is a decorative foreground overlay: a soft, fuzzy ring of floating felted wool tufts acting as a gentle framing vignette. The entire scene and the fuzzy foreground frame transition seamlessly into a flat {{background_color}} surface, with stray wool hairs delicately overlapping the {{background_color}}. No specific central subjects.",
-    "preview_image_removebg": "images/preview-1771537917520-j9nh.webp",
+    "preview_image_removebg": "images/preview-1781610339203-qskf.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate with smooth physical movement, small object rotations, gentle character gestures, and subtle material-light interaction.",
@@ -334,7 +334,7 @@
       "background_color"
     ],
     "image": "images/g_g17_8xwaewa7b.jpg",
-    "preview_image": "images/preview-1772186883094-x44v.webp",
+    "preview_image": "images/preview-1781610336755-98rn.webp",
     "tags": [
       "vector illustration",
       "lineless art",
@@ -349,7 +349,7 @@
     "createdAt": "2026-02-14T21:40:48.938Z",
     "prompt_removebg": "Clean digital vector illustration, lineless art, modern editorial aesthetic. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The rendering relies entirely on crisp geometric shapes and flat color blocking, devoid of any outlines or ink work. Use a muted, warm, low-saturation palette driven by {{primary_color}}, complemented by {{secondary_color}} and punctuated by {{accent_color}}. The entire scene is composited on a clean {{background_color}} surface. Lighting is characterized by a strong, singular directional sunlight casting sharp, transparent, diagonal drop shadows across the surfaces and onto the {{background_color}} backdrop. Shadows act as distinct geometric layers set to a multiply blend mode, darkening the underlying hues without losing their base hue. Volume is achieved through very subtle, smooth gradient shading on rounded forms, contrasting with the rigid, straight-edged architecture of the environment. The texture is pristine, matte, and perfectly smooth, resembling high-end SVG graphic design. Edges are razor-sharp vector cuts, defining overlapping elements through pure color contrast rather than lines. Intentional overflow is permitted, where parts of the {{subject}} can extend beyond the visible frame, seamlessly intersecting with the flat {{background_color}}. The atmosphere is tranquil, cozy, and hygienic, with a serene stillness. Characters, if present, should be stylized and faceless, adhering to minimalist modern illustration trends. Depth is created through overlapping flat planes and precise shadow casting., digital vector illustration, lineless art, flat design, pastel palette, sharp cast shadows, minimalist editorial, geometric shapes, smooth gradients, stylized flat shading, solid background compositing",
     "background_prompt_removebg": "A tranquil, minimalist interior or architectural space rendered in a clean, lineless vector illustration style. The environment features pristine, flat planes of {{primary_color}} and {{secondary_color}}, accented by subtle {{accent_color}} details. Strong, directional sunlight casts sharp, diagonal geometric shadows across the smooth, matte surfaces. The depth is constructed through overlapping orthogonal shapes and very soft gradient shading on any curved architectural elements, creating a serene, modern, and perfectly pristine atmosphere without any specific subjects or foreground distractions. In the extreme foreground, a clean, geometric vector frame or architectural border in {{primary_color}} creates a window-like overlay, casting its own crisp shadow. The entire architectural scene and the foreground framing elements transition smoothly onto a flat {{background_color}} surface, creating a layered, paper-cut aesthetic against the solid backdrop.",
-    "preview_image_removebg": "images/preview-1772186883143-rim2.webp",
+    "preview_image_removebg": "images/preview-1781610337742-uy0p.webp",
     "backgroundType": 0,
     "video": {
       "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
@@ -374,7 +374,7 @@
       "background_color"
     ],
     "image": "images/370bf13127fd26952d309ce97e9cb311.jpg",
-    "preview_image": "images/preview-1771537917545-ukzn.webp",
+    "preview_image": "images/preview-1781610339686-h7q5.webp",
     "tags": [
       "fauvism",
       "dry-brush",
@@ -389,7 +389,7 @@
     "createdAt": "2026-02-14T21:45:30.360Z",
     "prompt_removebg": "Contemporary digital illustration utilizing expressive dry-brush, pastel, and chalk-like textures to create a bold, abstract aesthetic, composited on a clean {{background_color}} surface. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork relies entirely on flat, geometric color blocking rather than traditional volumetric 3D shading, establishing a highly graphic, posterized 2D spatial dynamic with shallow depth. Lighting and form are suggested purely through stark, high-contrast shape intersections utilizing vivid blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. Omit smooth rendering in favor of abrupt, hard-angled color shifts and jagged intersections. Incorporate spontaneous, thick black linework acting as energetic graphic accents—specifically utilizing zig-zags, loose squiggles, and floating abstract marks—rather than acting as continuous, restrictive boundary outlines. The rendering strictly mimics traditional dry media on rough paper, featuring ragged, grainy, and frayed edges where solid color blocks terminate. Introduce stippled, spray-paint-like speckling and dashed, rhythmic chalk marks to create localized textural fades, injecting dynamic movement into the composition. Negative space must be actively utilized, allowing unpainted geometric gaps to interact with the {{background_color}} backdrop. The overall atmosphere is vibrant, rebellious, and highly stylized. The edges of the elements must interact organically with the {{background_color}}, explicitly allowing intentional overflow where parts of the scene can extend beyond the visible frame, cropped by the image boundaries., contemporary illustration, fauvism, dry-brush texture, chalk marks, flat color blocking, posterized, high-contrast, graphic linework, stippled gradients, zig-zag accents, expressive strokes, abstract pop-art",
     "background_prompt_removebg": "A purely abstract, graphic landscape or environment utilizing flat color blocking and expressive dry-brush textures. Geometric shapes in {{primary_color}} and {{secondary_color}} form stark, shallow 2D spatial planes, intersected by jagged, hard-angled color shifts. The environment features stippled, spray-paint-like speckling and spontaneous, thick black squiggles or zig-zag lines acting as textural accents. Vibrant, posterized lighting is suggested through contrasting blocks of {{accent_color}}, maintaining a raw, chalk-like materiality across the entire scene. In the foreground, an expressive, asymmetrical border of thick, grainy brushstrokes and floating zig-zag marks frames the invisible subject, creating dynamic depth. The energetic textures and flat environment planes transition organically into the flat {{background_color}} surface, with ragged chalk-like edges dissolving into the backdrop.",
-    "preview_image_removebg": "images/preview-1771537917947-4vmp.webp",
+    "preview_image_removebg": "images/preview-1781610337324-6pw8.webp",
     "backgroundType": 2,
     "video": {
       "motion": "Animate with restrained graphic movement, slight parallax, and slow environmental changes that preserve the printed composition.",
@@ -416,8 +416,8 @@
       "background_color"
     ],
     "image": "images/66c0a0de1173639ac25c84466de8ebc6.jpg",
-    "preview_image": "images/preview-1771537917909-1hht.webp",
-    "preview_image_removebg": "images/preview-1771537917968-wgz7.webp",
+    "preview_image": "images/preview-1781610343117-tkna.webp",
+    "preview_image_removebg": "images/preview-1781610340768-nd00.webp",
     "tags": [
       "linocut",
       "vector graphic",
@@ -454,8 +454,8 @@
       "background_color"
     ],
     "image": "images/hbtu6otxuaa_m6h.jpg",
-    "preview_image": "images/preview-1771537917988-irpi.webp",
-    "preview_image_removebg": "images/preview-1771537917593-kepr.webp",
+    "preview_image": "images/preview-1781610341071-203a.webp",
+    "preview_image_removebg": "images/preview-1781610341371-bfk6.webp",
     "tags": [
       "film-noir",
       "chiaroscuro",
@@ -492,8 +492,8 @@
       "background_color"
     ],
     "image": "images/dce201218d489ba1b3aaffcffbc4d740.jpg",
-    "preview_image": "images/preview-1777226627837-dxzu.webp",
-    "preview_image_removebg": "images/preview-1777226628374-ac2x.webp",
+    "preview_image": "images/preview-1781610341658-ymn0.webp",
+    "preview_image_removebg": "images/preview-1781610343626-0gkt.webp",
     "tags": [
       "vector-illustration",
       "flat-design",
@@ -529,8 +529,8 @@
       "background_color"
     ],
     "image": "images/b2ceecc02fae1f8eda8c33dbdbf1276c.jpg",
-    "preview_image": "images/preview-1771538727788-trzo.webp",
-    "preview_image_removebg": "images/preview-1771538727593-atkw.webp",
+    "preview_image": "images/preview-1781610342094-e4jy.webp",
+    "preview_image_removebg": "images/preview-1781610344469-7kko.webp",
     "tags": [
       "offset color blocking",
       "gestural ink sketch",
@@ -566,8 +566,8 @@
       "background_color"
     ],
     "image": "images/c616126059310407a1bf8d51ee936c4d.jpg",
-    "preview_image": "images/preview-1771780050770-85ot.webp",
-    "preview_image_removebg": "images/preview-1771780050423-21pt.webp",
+    "preview_image": "images/preview-1781610343175-zic7.webp",
+    "preview_image_removebg": "images/preview-1781610344693-p9qe.webp",
     "tags": [
       "minimalist",
       "silhouette",
@@ -604,8 +604,8 @@
       "background_color"
     ],
     "image": "images/d626ed14378a24571266d95c8fc57104.jpg",
-    "preview_image": "images/preview-1771537922069-6sy5.webp",
-    "preview_image_removebg": "images/preview-1771537921810-35qt.webp",
+    "preview_image": "images/preview-1781610345792-eqre.webp",
+    "preview_image_removebg": "images/preview-1781610349155-9oc8.webp",
     "tags": [
       "colored-pencil",
       "wax-pastel",
@@ -643,8 +643,8 @@
       "background_color"
     ],
     "image": "images/1c4b9625a1017fa51f9a1c74d52aa4dd.jpg",
-    "preview_image": "images/preview-1771537921781-57za.webp",
-    "preview_image_removebg": "images/preview-1771537922753-quqk.webp",
+    "preview_image": "images/preview-1781610345699-nmur.webp",
+    "preview_image_removebg": "images/preview-1781610348235-yl5y.webp",
     "tags": [
       "impasto",
       "oil-painting",
@@ -680,8 +680,8 @@
       "background_color"
     ],
     "image": "images/61cc415b0dad6bc94e9b885226cd70de.jpg",
-    "preview_image": "images/preview-1771537922177-afvs.webp",
-    "preview_image_removebg": "images/preview-1771537922007-yif9.webp",
+    "preview_image": "images/preview-1781610346057-z1vp.webp",
+    "preview_image_removebg": "images/preview-1781610348038-e2rq.webp",
     "tags": [
       "minimalist illustration",
       "gradient lighting",
@@ -717,8 +717,8 @@
       "background_color"
     ],
     "image": "images/b64627fdd2cc53b73345c34d5586b3e2.jpg",
-    "preview_image": "images/preview-1772187199294-sapf.webp",
-    "preview_image_removebg": "images/preview-1772187199272-y6sf.webp",
+    "preview_image": "images/preview-1781610347695-9jj2.webp",
+    "preview_image_removebg": "images/preview-1781610347166-hnrj.webp",
     "tags": [
       "gestural sketch",
       "charcoal drawing",
@@ -755,8 +755,8 @@
       "background_color"
     ],
     "image": "images/ab06d12154549ae68000460ce226a6de.jpg",
-    "preview_image": "images/preview-1771537921814-uq9z.webp",
-    "preview_image_removebg": "images/preview-1771537922665-xemh.webp",
+    "preview_image": "images/preview-1781610347093-c1y9.webp",
+    "preview_image_removebg": "images/preview-1781610348714-4w94.webp",
     "tags": [
       "mixed-media",
       "hyper-realism",
@@ -792,8 +792,8 @@
       "background_color"
     ],
     "image": "images/c65b2fb24615151b9356ded5987581e6.jpg",
-    "preview_image": "images/preview-1771779621260-nonv.webp",
-    "preview_image_removebg": "images/preview-1771779621365-ajn9.webp",
+    "preview_image": "images/preview-1781610362375-n09w.webp",
+    "preview_image_removebg": "images/preview-1781610350065-9jrv.webp",
     "tags": [
       "mixed-media",
       "digital-collage",
@@ -830,8 +830,8 @@
       "background_color"
     ],
     "image": "images/77ada99ef6b3fe4a0976f1e7413a5813.jpg",
-    "preview_image": "images/preview-1772186621660-6r4f.webp",
-    "preview_image_removebg": "images/preview-1772186621851-py70.webp",
+    "preview_image": "images/preview-1781610352263-5ala.webp",
+    "preview_image_removebg": "images/preview-1781610350237-ivy5.webp",
     "tags": [
       "tilt-shift",
       "diorama",
@@ -868,8 +868,8 @@
       "background_color"
     ],
     "image": "images/730ed23794d57d565c769e2260414f75.jpg",
-    "preview_image": "images/preview-1771538749483-n7bl.webp",
-    "preview_image_removebg": "images/preview-1771538749223-a9zn.webp",
+    "preview_image": "images/preview-1781610352694-czjd.webp",
+    "preview_image_removebg": "images/preview-1781610356321-i3ar.webp",
     "tags": [
       "serigraphy",
       "flat-colors",
@@ -906,8 +906,8 @@
       "background_color"
     ],
     "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
-    "preview_image": "images/preview-1771538792428-ligj.webp",
-    "preview_image_removebg": "images/preview-1771538792407-xjd1.webp",
+    "preview_image": "images/preview-1781610355347-v7y9.webp",
+    "preview_image_removebg": "images/preview-1781610355630-g3zy.webp",
     "tags": [
       "pixel art",
       "16-bit",
@@ -943,8 +943,8 @@
       "background_color"
     ],
     "image": "images/577a3c9a727691999ba33e709102b431.jpg",
-    "preview_image": "images/preview-1771537924384-jvcp.webp",
-    "preview_image_removebg": "images/preview-1771537924702-90fz.webp",
+    "preview_image": "images/preview-1781610356930-tpts.webp",
+    "preview_image_removebg": "images/preview-1781610351724-tmnl.webp",
     "tags": [
       "mixed-media",
       "analog-photography",
@@ -982,8 +982,8 @@
       "background_color"
     ],
     "image": "images/g--oq7mbkaacabb.jpg",
-    "preview_image": "images/preview-1777226521017-x4y1.webp",
-    "preview_image_removebg": "images/preview-1777226523000-land.webp",
+    "preview_image": "images/preview-1781610372276-epco.webp",
+    "preview_image_removebg": "images/preview-1781610373151-ezhe.webp",
     "tags": [
       "steel engraving",
       "cross-hatching",
@@ -1019,8 +1019,8 @@
       "background_color"
     ],
     "image": "images/haujjksxwaadkh7.jpg",
-    "preview_image": "images/preview-1771537926015-o9pp.webp",
-    "preview_image_removebg": "images/preview-1771537926073-yw5z.webp",
+    "preview_image": "images/preview-1781610373369-4lca.webp",
+    "preview_image_removebg": "images/preview-1781610370330-32f5.webp",
     "tags": [
       "gouache",
       "editorial-illustration",
@@ -1056,8 +1056,8 @@
       "background_color"
     ],
     "image": "images/hbwsyehw4aaab5k.jpg",
-    "preview_image": "images/preview-1771537926477-zrbl.webp",
-    "preview_image_removebg": "images/preview-1771537926259-aknc.webp",
+    "preview_image": "images/preview-1781610372716-zahg.webp",
+    "preview_image_removebg": "images/preview-1781610370876-tv7b.webp",
     "tags": [
       "ligne claire",
       "risograph grain",
@@ -1094,8 +1094,8 @@
       "background_color"
     ],
     "image": "images/9a6c144ff1a84a923a1fb403ccaad77e.jpg",
-    "preview_image": "images/preview-1772104054250-1sfu.webp",
-    "preview_image_removebg": "images/preview-1772104054454-otp4.webp",
+    "preview_image": "images/preview-1781610373633-a8ed.webp",
+    "preview_image_removebg": "images/preview-1781610371171-wd92.webp",
     "tags": [
       "flat illustration",
       "opaque gouache",
@@ -1132,8 +1132,8 @@
       "background_color"
     ],
     "image": "images/76c57040c1bc94e61322f2747826678c.jpg",
-    "preview_image": "images/preview-1771779882997-pxwe.webp",
-    "preview_image_removebg": "images/preview-1771779882925-3xpm.webp",
+    "preview_image": "images/preview-1781610365694-18jd.webp",
+    "preview_image_removebg": "images/preview-1781610365256-a8b2.webp",
     "tags": [
       "cel-shading",
       "thick-outlines",
@@ -1169,8 +1169,8 @@
       "background_color"
     ],
     "image": "images/hay3_sbxwaettp3.jpg",
-    "preview_image": "images/preview-1771780755220-k220.webp",
-    "preview_image_removebg": "images/preview-1771780754870-47jq.webp",
+    "preview_image": "images/preview-1781610376549-14q1.webp",
+    "preview_image_removebg": "images/preview-1781610375186-uy00.webp",
     "tags": [
       "pulp-art",
       "chiaroscuro",
@@ -1206,8 +1206,8 @@
       "background_color"
     ],
     "image": "images/hbifehkwiaaiiwg.jpg",
-    "preview_image": "images/preview-1771627104470-rbsk.webp",
-    "preview_image_removebg": "images/preview-1771627104457-7i3g.webp",
+    "preview_image": "images/preview-1781610375611-m8cw.webp",
+    "preview_image_removebg": "images/preview-1781610379736-5hzf.webp",
     "tags": [
       "bande dessinée",
       "ligne claire",
@@ -1243,8 +1243,8 @@
       "background_color"
     ],
     "image": "images/ab5ac96353a641a498f1b29ab39edb23.jpg",
-    "preview_image": "images/preview-1771779593392-35ay.webp",
-    "preview_image_removebg": "images/preview-1771779593085-0ekf.webp",
+    "preview_image": "images/preview-1781610377617-f0z3.webp",
+    "preview_image_removebg": "images/preview-1781610374908-wfh2.webp",
     "tags": [
       "ligne-claire",
       "bande-dessinee",
@@ -1281,8 +1281,8 @@
       "background_color"
     ],
     "image": "images/160646254981245c5645ec9c4a8a2ae0.jpg",
-    "preview_image": "images/preview-1772004588647-qgae.webp",
-    "preview_image_removebg": "images/preview-1772004588879-t2z0.webp",
+    "preview_image": "images/preview-1781610384629-3duz.webp",
+    "preview_image_removebg": "images/preview-1781610377145-ab4v.webp",
     "tags": [
       "editorial-illustration",
       "flat-colors",
@@ -1319,8 +1319,8 @@
       "background_color"
     ],
     "image": "images/6f998b2dc60256e874512bcdcb944b7b.jpg",
-    "preview_image": "images/preview-1777226749261-x28d.webp",
-    "preview_image_removebg": "images/preview-1777226761024-ttow.webp",
+    "preview_image": "images/preview-1781610379183-oso3.webp",
+    "preview_image_removebg": "images/preview-1781610376087-v2ul.webp",
     "tags": [
       "pixel-art",
       "16-bit",
@@ -1357,8 +1357,8 @@
       "background_color"
     ],
     "image": "images/95ef5030db5e5feda8a91a09e54856e5.jpg",
-    "preview_image": "images/preview-1772187038103-d77a.webp",
-    "preview_image_removebg": "images/preview-1772187038127-o0qw.webp",
+    "preview_image": "images/preview-1781610402660-zkgg.webp",
+    "preview_image_removebg": "images/preview-1781610407661-g309.webp",
     "tags": [
       "industrial sketch",
       "marker rendering",
@@ -1394,8 +1394,8 @@
       "background_color"
     ],
     "image": "images/47d40d1489f3396cbe73a911809bb85c.jpg",
-    "preview_image": "images/preview-1772103917232-lxgq.webp",
-    "preview_image_removebg": "images/preview-1772103916924-ca0m.webp",
+    "preview_image": "images/preview-1781610391387-np85.webp",
+    "preview_image_removebg": "images/preview-1781610402501-93md.webp",
     "tags": [
       "watercolor-wash",
       "gouache",
@@ -1432,8 +1432,8 @@
       "background_color"
     ],
     "image": "images/95ba2e35caad23e7ad091ddfdbe3d843.jpg",
-    "preview_image": "images/preview-1772186461334-xuwy.webp",
-    "preview_image_removebg": "images/preview-1772186461006-h59v.webp",
+    "preview_image": "images/preview-1781610412266-7rm1.webp",
+    "preview_image_removebg": "images/preview-1781610412683-0kmm.webp",
     "tags": [
       "technical illustration",
       "exploded view",
@@ -1470,8 +1470,8 @@
       "background_color"
     ],
     "image": "images/output_781232.jpeg",
-    "preview_image": "images/preview-1772186395665-5a0b.webp",
-    "preview_image_removebg": "images/preview-1772186395503-2epe.webp",
+    "preview_image": "images/preview-1781610391657-19li.webp",
+    "preview_image_removebg": "images/preview-1781610407847-fd98.webp",
     "tags": [
       "traditional sketch",
       "graphite drawing",
@@ -1508,8 +1508,8 @@
       "background_color"
     ],
     "image": "images/3c25fb2e4f0fbb82adb128de0482d3a2.jpg",
-    "preview_image": "images/preview-1772187377510-9biv.webp",
-    "preview_image_removebg": "images/preview-1772187377498-g6me.webp",
+    "preview_image": "images/preview-1781610397506-tqfb.webp",
+    "preview_image_removebg": "images/preview-1781610397663-3ywf.webp",
     "tags": [
       "3d-render",
       "matte-finish",
@@ -1546,8 +1546,8 @@
       "background_color"
     ],
     "image": "images/4df0bf049b4da5180c60caf484eb352b.jpg",
-    "preview_image": "images/preview-1772187436380-xr6t.webp",
-    "preview_image_removebg": "images/preview-1772187436341-d4vi.webp",
+    "preview_image": "images/preview-1781610438270-y1ws.webp",
+    "preview_image_removebg": "images/preview-1781610425301-p9an.webp",
     "tags": [
       "mixed media",
       "2d vector",
@@ -1583,8 +1583,8 @@
       "background_color"
     ],
     "image": "images/a443d0a1e4d8a20582e630276e0afdc0.jpg",
-    "preview_image": "images/preview-1773229729739-pglg.webp",
-    "preview_image_removebg": "images/preview-1773229734863-bx73.webp",
+    "preview_image": "images/preview-1781610432487-ydap.webp",
+    "preview_image_removebg": "images/preview-1781610443255-4clp.webp",
     "tags": [
       "3d-illustration",
       "vinyl-toy",
@@ -1621,8 +1621,8 @@
       "background_color"
     ],
     "image": "images/hdtjyqzxcaqedkh.jpg",
-    "preview_image": "images/preview-1773755056701-y14r.webp",
-    "preview_image_removebg": "images/preview-1773755056676-1m4k.webp",
+    "preview_image": "images/preview-1781610418293-kr9y.webp",
+    "preview_image_removebg": "images/preview-1781610418672-mqpk.webp",
     "tags": [
       "35mm film",
       "editorial flash",
@@ -1659,8 +1659,8 @@
       "background_color"
     ],
     "image": "images/hcqmgs6x0aas8dx.jpg",
-    "preview_image": "images/preview-1777226838971-mzfz.webp",
-    "preview_image_removebg": "images/preview-1777226838940-onf8.webp",
+    "preview_image": "images/preview-1781610438960-fz1e.webp",
+    "preview_image_removebg": "images/preview-1781610443668-91ya.webp",
     "tags": [
       "35mm film",
       "light leak",
@@ -1697,8 +1697,8 @@
       "background_color"
     ],
     "image": "images/g42e6s7xsaaprpk.jpg",
-    "preview_image": "images/preview-1773755602423-4awp.webp",
-    "preview_image_removebg": "images/preview-1773755602456-5rlg.webp",
+    "preview_image": "images/preview-1781610432741-g16f.webp",
+    "preview_image_removebg": "images/preview-1781610425724-32eg.webp",
     "tags": [
       "3d render",
       "felted texture",
@@ -1735,8 +1735,8 @@
       "background_color"
     ],
     "image": "images/49bcea666fac6c6918c2cbc418c46960.jpg",
-    "preview_image": "images/preview-1775643266074-tlbh.webp",
-    "preview_image_removebg": "images/preview-1775643266095-8n1a.webp",
+    "preview_image": "images/preview-1781610466684-a4lq.webp",
+    "preview_image_removebg": "images/preview-1781610460199-08am.webp",
     "tags": [
       "monoline",
       "vector-art",
@@ -1772,8 +1772,8 @@
       "background_color"
     ],
     "image": "images/bb8edc5ba6a7abc23d40bdec3ff41eb1.jpg",
-    "preview_image": "images/preview-1777226867129-u0g7.webp",
-    "preview_image_removebg": "images/preview-1777226867524-z1co.webp",
+    "preview_image": "images/preview-1781610456076-kbk6.webp",
+    "preview_image_removebg": "images/preview-1781610451310-to8i.webp",
     "tags": [
       "flat vector",
       "minimalist geometry",
@@ -1809,8 +1809,8 @@
       "background_color"
     ],
     "image": "images/d2f5eca9e5e84b2874b46dda459b56b2.jpg",
-    "preview_image": "images/preview-1775643547816-m7fe.webp",
-    "preview_image_removebg": "images/preview-1775643547938-ff8x.webp",
+    "preview_image": "images/preview-1781610449523-htw3.webp",
+    "preview_image_removebg": "images/preview-1781610460742-94zx.webp",
     "tags": [
       "digital painting",
       "animation concept art",
@@ -1847,8 +1847,8 @@
       "background_color"
     ],
     "image": "images/e297ae8bb0a579ae97bd2f9a4ad08989.jpg",
-    "preview_image": "images/preview-1775643879121-xtk1.webp",
-    "preview_image_removebg": "images/preview-1775643879098-bq1x.webp",
+    "preview_image": "images/preview-1781610466426-d8pq.webp",
+    "preview_image_removebg": "images/preview-1781610455372-jy2f.webp",
     "tags": [
       "digital airbrush",
       "risograph grain",
@@ -1884,8 +1884,8 @@
       "background_color"
     ],
     "image": "images/87e873755ef2f93cfddc29718655c52a.jpg",
-    "preview_image": "images/preview-1777571455701-kq5u.webp",
-    "preview_image_removebg": "images/preview-1777571455767-oxti.webp",
+    "preview_image": "images/preview-1781610464741-j3qf.webp",
+    "preview_image_removebg": "images/preview-1781610464482-ijsj.webp",
     "tags": [
       "vector silhouette",
       "color blocking",
@@ -1921,8 +1921,8 @@
       "background_color"
     ],
     "image": "images/dreamcast-shenmue.jpg",
-    "preview_image": "images/preview-1780905903178-syif.webp",
-    "preview_image_removebg": "images/preview-1780905903345-q45e.webp",
+    "preview_image": "images/preview-1781610467832-9x0u.webp",
+    "preview_image_removebg": "images/preview-1781610467856-gnup.webp",
     "tags": [
       "low-poly",
       "retro 3d",
@@ -1933,7 +1933,7 @@
       "low-res textures",
       "nearest-neighbor"
     ],
-    "backgroundType": 2,
+    "backgroundType": 0,
     "createdAt": "2026-06-08T08:05:08.409Z",
     "video": {
       "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",

@@ -1,4 +1,12 @@
 const API = '';
+const PREVIEW_SETTINGS_KEY = 'preview-generation-settings';
+const DEFAULT_PREVIEW_SETTINGS = {
+  primary_color: '#0b1f46',
+  accent_color: '#d4af37',
+  secondary_color: '#fffff0',
+  background_color: '#ffffff',
+  strength: 0.75,
+};
 
 let allStyles = [];
 let deleteTargetId = null;
@@ -11,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
   loadStyles();
   loadRefImage();
   loadPreviewMode();
+  loadPreviewSettings();
 
   // Click thumbnail to upload
   document.getElementById('preview-ref-thumb').addEventListener('click', () => {
@@ -33,6 +42,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+function getPreviewSettings() {
+  const settings = { ...DEFAULT_PREVIEW_SETTINGS };
+  const strength = parseFloat(document.getElementById('preview-setting-strength').value);
+
+  settings.primary_color = document.getElementById('preview-setting-primary-color').value || DEFAULT_PREVIEW_SETTINGS.primary_color;
+  settings.accent_color = document.getElementById('preview-setting-accent-color').value || DEFAULT_PREVIEW_SETTINGS.accent_color;
+  settings.secondary_color = document.getElementById('preview-setting-secondary-color').value || DEFAULT_PREVIEW_SETTINGS.secondary_color;
+  settings.background_color = document.getElementById('preview-setting-background-color').value || DEFAULT_PREVIEW_SETTINGS.background_color;
+  settings.strength = Number.isFinite(strength) ? strength : DEFAULT_PREVIEW_SETTINGS.strength;
+  return settings;
+}
+
+function savePreviewSettings() {
+  localStorage.setItem(PREVIEW_SETTINGS_KEY, JSON.stringify(getPreviewSettings()));
+}
+
+function loadPreviewSettings() {
+  let saved = {};
+  try {
+    saved = JSON.parse(localStorage.getItem(PREVIEW_SETTINGS_KEY) || '{}');
+  } catch {
+    saved = {};
+  }
+
+  const settings = { ...DEFAULT_PREVIEW_SETTINGS, ...saved };
+  document.getElementById('preview-setting-primary-color').value = settings.primary_color;
+  document.getElementById('preview-setting-accent-color').value = settings.accent_color;
+  document.getElementById('preview-setting-secondary-color').value = settings.secondary_color;
+  document.getElementById('preview-setting-background-color').value = settings.background_color;
+  document.getElementById('preview-setting-strength').value = settings.strength;
+
+  document.querySelectorAll('.global-preview-settings input').forEach((input) => {
+    input.addEventListener('input', savePreviewSettings);
+    input.addEventListener('change', savePreviewSettings);
+  });
+}
 
 // --- API Calls ---
 
@@ -195,7 +241,7 @@ async function generateAllPreviews() {
   showToast('Génération de tous les previews en cours... Cela peut prendre plusieurs minutes.', 'success');
 
   try {
-    const body = { mode };
+    const body = { mode, preview_settings: getPreviewSettings() };
     if (referenceImage) body.reference_image = referenceImage;
 
     const res = await fetch(`${API}/api/generate-all-previews`, {
@@ -625,7 +671,7 @@ async function generatePreview() {
   const mode = localStorage.getItem('preview-mode') || 'direct';
 
   try {
-    const body = { prompt, mode };
+    const body = { prompt, mode, preview_settings: getPreviewSettings() };
     if (generatedPrompts.removebg) body.prompt_removebg = generatedPrompts.removebg;
     if (referenceImage) body.reference_image = referenceImage;
     if (styleId) body.style_id = styleId;

@@ -459,6 +459,16 @@ function resolveImageToDataUri(reference_image) {
 //   "direct"  → img2img with prunaai/z-image-turbo-img2img (reference image as input)
 //   "vlm"     → describe reference image with openai/gpt-5-nano, then text-to-image with z-image-turbo
 const PREVIEW_PROMPT_CHAR_LIMIT = 3500;
+const DEFAULT_PREVIEW_SETTINGS = {
+  subject: 'a luxury perfume bottle',
+  primary_color: 'deep navy blue',
+  accent_color: 'gold',
+  secondary_color: 'ivory',
+  background_color: 'white',
+  strength: 0.75,
+  width: 512,
+  height: 512,
+};
 const PROMPT_VARIABLE_FALLBACKS = {
   mood: 'cinematic and polished',
   lighting: 'natural directional light matching the described scene',
@@ -495,8 +505,27 @@ function resolvePromptVariables(rawPrompt, sampleVars) {
   return trimPromptAtBoundary(normalizePromptText(resolvedPrompt));
 }
 
+function clampNumber(value, fallback, min, max) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return fallback;
+  return Math.min(max, Math.max(min, number));
+}
+
+function getPreviewSettings(input = {}) {
+  const settings = { ...DEFAULT_PREVIEW_SETTINGS };
+  for (const key of ['primary_color', 'accent_color', 'secondary_color', 'background_color']) {
+    if (typeof input[key] === 'string' && input[key].trim()) {
+      settings[key] = input[key].trim();
+    }
+  }
+  settings.strength = clampNumber(input.strength, DEFAULT_PREVIEW_SETTINGS.strength, 0, 1);
+  settings.width = clampNumber(input.width, DEFAULT_PREVIEW_SETTINGS.width, 256, 1024);
+  settings.height = clampNumber(input.height, DEFAULT_PREVIEW_SETTINGS.height, 256, 1024);
+  return settings;
+}
+
 // Helper: resolve prompt with sample variables, generate image, save locally
-async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_image) {
+async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_image, previewSettings) {
   const resolvedPrompt = resolvePromptVariables(rawPrompt, sampleVars);
 
   console.log('--- PREVIEW PROMPT ---');
@@ -507,11 +536,11 @@ async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_imag
   if (mode === 'direct' && reference_image) {
     const refUri = resolveImageToDataUri(reference_image);
     output = await replicate.run('prunaai/z-image-turbo-img2img', {
-      input: { prompt: resolvedPrompt, image: refUri, strength: 0.75, width: 512, height: 512 }
+      input: { prompt: resolvedPrompt, image: refUri, strength: previewSettings.strength, width: previewSettings.width, height: previewSettings.height }
     });
   } else {
     output = await replicate.run('prunaai/z-image-turbo', {
-      input: { prompt: resolvedPrompt, width: 512, height: 512 }
+      input: { prompt: resolvedPrompt, width: previewSettings.width, height: previewSettings.height }
     });
   }
 
@@ -539,12 +568,13 @@ app.post('/api/generate-preview', async (req, res) => {
     const { prompt, prompt_removebg, reference_image, mode } = req.body;
     if (!prompt) return res.status(400).json({ error: 'Aucun prompt fourni' });
 
+    const previewSettings = getPreviewSettings(req.body.preview_settings);
     const sampleVars = {
-      subject: 'a luxury perfume bottle',
-      primary_color: 'deep navy blue',
-      accent_color: 'gold',
-      secondary_color: 'ivory',
-      background_color: 'white',
+      subject: previewSettings.subject,
+      primary_color: previewSettings.primary_color,
+      accent_color: previewSettings.accent_color,
+      secondary_color: previewSettings.secondary_color,
+      background_color: previewSettings.background_color,
     };
 
     // VLM mode: describe the reference image first
@@ -559,9 +589,9 @@ app.post('/api/generate-preview', async (req, res) => {
     }
 
     // Generate both previews in parallel
-    const tasks = [generateSinglePreview(prompt, sampleVars, mode, reference_image)];
+    const tasks = [generateSinglePreview(prompt, sampleVars, mode, reference_image, previewSettings)];
     if (prompt_removebg) {
-      tasks.push(generateSinglePreview(prompt_removebg, sampleVars, mode, reference_image));
+      tasks.push(generateSinglePreview(prompt_removebg, sampleVars, mode, reference_image, previewSettings));
     }
     const [previewUrl, previewRemovebgUrl] = await Promise.all(tasks);
 
@@ -594,6 +624,7 @@ app.post('/api/generate-preview', async (req, res) => {
 app.post('/api/generate-all-previews', async (req, res) => {
   try {
     const { reference_image, mode } = req.body;
+    const previewSettings = getPreviewSettings(req.body.preview_settings);
     const styles = readStyles();
     const results = [];
     const errors = [];
@@ -617,17 +648,17 @@ app.post('/api/generate-all-previews', async (req, res) => {
 
       try {
         const sampleVars = {
-          subject: vlmSubject || 'a luxury perfume bottle',
-          primary_color: 'deep navy blue',
-          accent_color: 'gold',
-          secondary_color: 'ivory',
-          background_color: 'white',
+          subject: vlmSubject || previewSettings.subject,
+          primary_color: previewSettings.primary_color,
+          accent_color: previewSettings.accent_color,
+          secondary_color: previewSettings.secondary_color,
+          background_color: previewSettings.background_color,
         };
 
         // Generate standard + removebg previews in parallel
-        const tasks = [generateSinglePreview(style.prompt, sampleVars, mode, reference_image)];
+        const tasks = [generateSinglePreview(style.prompt, sampleVars, mode, reference_image, previewSettings)];
         if (style.prompt_removebg) {
-          tasks.push(generateSinglePreview(style.prompt_removebg, sampleVars, mode, reference_image));
+          tasks.push(generateSinglePreview(style.prompt_removebg, sampleVars, mode, reference_image, previewSettings));
         }
         const [previewUrl, previewRemovebgUrl] = await Promise.all(tasks);
 

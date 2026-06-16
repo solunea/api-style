@@ -16,8 +16,8 @@
     "background_color"
   ],
   "image": "images/dreamcast-shenmue.jpg",
-  "preview_image": "images/preview-1780905903178-syif.webp",
-  "preview_image_removebg": "images/preview-1780905903345-q45e.webp",
+  "preview_image": "images/preview-1781610467832-9x0u.webp",
+  "preview_image_removebg": "images/preview-1781610467856-gnup.webp",
   "tags": [
     "low-poly",
     "retro 3d",
@@ -28,7 +28,7 @@
     "low-res textures",
     "nearest-neighbor"
   ],
-  "backgroundType": 2,
+  "backgroundType": 0,
   "createdAt": "2026-06-08T08:05:08.409Z",
   "video": {
     "motion": "Animate subjects with rigid, game-engine-like movement, simple rotations, stepped pose changes, and clear low-polygon transformations.",

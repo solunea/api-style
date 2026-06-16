@@ -14,7 +14,7 @@
     "background_color"
   ],
   "image": "images/hbvho5ibgaucdkr.jpg",
-  "preview_image": "images/preview-1771778755580-i25s.webp",
+  "preview_image": "images/preview-1781610339290-gqjy.webp",
   "tags": [
     "flat illustration",
     "screenprint aesthetic",
@@ -29,7 +29,7 @@
   "createdAt": "2026-02-14T21:33:46.992Z",
   "prompt_removebg": "Flat digital illustration with a mid-century screen-print aesthetic and Eastern European folk art influences. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork is rendered using strict, solid color blocking with absolutely no gradients, no 3D shading, and no black outlines. Shapes are defined entirely by stark, high-contrast intersections of a highly restricted palette. The entire scene is composited on a clean {{background_color}} surface. Fill primary focal areas with bold {{primary_color}}, support the composition with large structural blocks of {{secondary_color}}, and punch out intricate internal details using stark {{accent_color}}. The internal surfaces of the shapes are heavily decorated with rhythmic folk-art patterns, including stylized botanical motifs, tiny leaves, geometric dashes, and uniform dots. Lighting is completely flat and two-dimensional, relying on overlapping silhouettes to establish depth rather than shadow or highlight. Edge treatment features crisp, sharp vector-like cutouts that are occasionally softened by a subtle, tactile risograph print texture and fine stippling, giving the piece a traditional storybook materiality. Allow intentional overflow where parts of the {{subject}} can extend beyond the visible frame, cropped by the image boundaries, interacting cleanly with the flat {{background_color}} backdrop. The composition should feel deeply graphic and meticulously arranged, heavily featuring stylized flora, patterned silhouettes, and a cohesive atmosphere. flat digital illustration, screenprint texture, folk art motifs, limited palette, solid color blocking, risograph grain, botanical patterns, high contrast, two-dimensional",
   "background_prompt_removebg": "A purely environmental backdrop in a flat digital illustration style with a mid-century screen-print aesthetic. A deep, near-black night sky dominates, layered with rolling, stylized hills and folk-art flora. The landscape features solid color blocking using {{secondary_color}} for structural ground elements and {{primary_color}} for bold, rhythmic botanical motifs like stylized leaves, blooming flowers, and geometric stems. Stark {{accent_color}} dots and dashes provide intricate internal patterning across the shapes. Subtle risograph grain and stippling add tactile print texture. A decorative foreground frame made of stylized, symmetrical floral vines and geometric folk-art patterns frames the invisible subject, transitioning smoothly and cleanly into a flat {{background_color}} surface. Flat lighting, zero gradients, strictly two-dimensional.",
-  "preview_image_removebg": "images/preview-1771778755259-5pne.webp",
+  "preview_image_removebg": "images/preview-1781610336204-spgv.webp",
   "backgroundType": 2,
   "video": {
     "motion": "Animate like a gentle illustrated storybook: small character gestures, soft parallax between paper layers, and calm environmental movement.",

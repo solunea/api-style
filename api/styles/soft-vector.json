@@ -14,7 +14,7 @@
     "background_color"
   ],
   "image": "images/g_g17_8xwaewa7b.jpg",
-  "preview_image": "images/preview-1772186883094-x44v.webp",
+  "preview_image": "images/preview-1781610336755-98rn.webp",
   "tags": [
     "vector illustration",
     "lineless art",
@@ -29,7 +29,7 @@
   "createdAt": "2026-02-14T21:40:48.938Z",
   "prompt_removebg": "Clean digital vector illustration, lineless art, modern editorial aesthetic. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The rendering relies entirely on crisp geometric shapes and flat color blocking, devoid of any outlines or ink work. Use a muted, warm, low-saturation palette driven by {{primary_color}}, complemented by {{secondary_color}} and punctuated by {{accent_color}}. The entire scene is composited on a clean {{background_color}} surface. Lighting is characterized by a strong, singular directional sunlight casting sharp, transparent, diagonal drop shadows across the surfaces and onto the {{background_color}} backdrop. Shadows act as distinct geometric layers set to a multiply blend mode, darkening the underlying hues without losing their base hue. Volume is achieved through very subtle, smooth gradient shading on rounded forms, contrasting with the rigid, straight-edged architecture of the environment. The texture is pristine, matte, and perfectly smooth, resembling high-end SVG graphic design. Edges are razor-sharp vector cuts, defining overlapping elements through pure color contrast rather than lines. Intentional overflow is permitted, where parts of the {{subject}} can extend beyond the visible frame, seamlessly intersecting with the flat {{background_color}}. The atmosphere is tranquil, cozy, and hygienic, with a serene stillness. Characters, if present, should be stylized and faceless, adhering to minimalist modern illustration trends. Depth is created through overlapping flat planes and precise shadow casting., digital vector illustration, lineless art, flat design, pastel palette, sharp cast shadows, minimalist editorial, geometric shapes, smooth gradients, stylized flat shading, solid background compositing",
   "background_prompt_removebg": "A tranquil, minimalist interior or architectural space rendered in a clean, lineless vector illustration style. The environment features pristine, flat planes of {{primary_color}} and {{secondary_color}}, accented by subtle {{accent_color}} details. Strong, directional sunlight casts sharp, diagonal geometric shadows across the smooth, matte surfaces. The depth is constructed through overlapping orthogonal shapes and very soft gradient shading on any curved architectural elements, creating a serene, modern, and perfectly pristine atmosphere without any specific subjects or foreground distractions. In the extreme foreground, a clean, geometric vector frame or architectural border in {{primary_color}} creates a window-like overlay, casting its own crisp shadow. The entire architectural scene and the foreground framing elements transition smoothly onto a flat {{background_color}} surface, creating a layered, paper-cut aesthetic against the solid backdrop.",
-  "preview_image_removebg": "images/preview-1772186883143-rim2.webp",
+  "preview_image_removebg": "images/preview-1781610337742-uy0p.webp",
   "backgroundType": 0,
   "video": {
     "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",

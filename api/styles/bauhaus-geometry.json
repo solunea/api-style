@@ -14,7 +14,7 @@
     "background_color"
   ],
   "image": "images/g_v0edxauaack44.jpg",
-  "preview_image": "images/preview-1771627540350-npby.webp",
+  "preview_image": "images/preview-1781610336218-26er.webp",
   "tags": [
     "bauhaus",
     "de-stijl",
@@ -28,7 +28,7 @@
   "createdAt": "2026-02-14T21:38:22.504Z",
   "prompt_removebg": "Flat vector illustration, Bauhaus and De Stijl geometric abstraction, rigid modernist graphic design. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Deconstruct the elements of the scene into their most fundamental geometric components, translating organic forms into rigid, architectural structures built from perfect geometric primitives like circles, triangles, rectangles, and strict orthogonal grids. The visual rhythm is static, balanced, and highly intellectual, reminiscent of mid-century avant-garde art movements. Lighting is non-existent; this is an unlit 2D space with zero gradients, absolute flat shading, no drop shadows, and no highlights. The color science relies on pure {{primary_color}}, striking {{accent_color}}, and {{secondary_color}}, utilizing stark black and stark white for structural contrast and weight. Edge treatment features razor-sharp vector cuts with minimal, uniform black line work used strictly for structural separation. An extremely subtle matte paper texture permeates the composition to provide a vintage poster warmth, yet the internal shapes remain solid, unblended blocks of pure pigment, all composited on a clean {{background_color}} surface. Depth is entirely flattened into a pure 2D orthographic projection with overlapping flat planar shapes and absolutely no perspective. The strict geometric edges of the {{subject}} must interact cleanly and sharply with the {{background_color}}, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). flat vector, bauhaus style, de stijl, constructivism, geometric abstraction, strict primitives, unblended colors, no gradients, hard edges, modernist poster, minimalist graphic design, 2d orthographic, solid fill",
   "background_prompt_removebg": "A purely abstract environmental backdrop inspired by Bauhaus and De Stijl geometric abstraction, transitioning seamlessly into a clean {{background_color}} surface. The composition features a flat, unlit 2D space constructed entirely from overlapping perfect geometric primitives like large rectangles, intersecting orthogonal grids, and sweeping semi-circles. Utilizing a palette of pure {{primary_color}}, striking {{accent_color}}, and balanced {{secondary_color}}, alongside stark black and white structural blocks. In the foreground, a rigid, asymmetrical geometric border acts as a decorative overlay, framing the invisible subject to create a subtle sense of planar depth. There are zero gradients, no shadows, and no perspective, just razor-sharp vector edges over a very subtle matte paper texture interacting sharply with the {{background_color}} backdrop.",
-  "preview_image_removebg": "images/preview-1771627540032-4yal.webp",
+  "preview_image_removebg": "images/preview-1781610338156-w59e.webp",
   "backgroundType": 2,
   "video": {
     "motion": "Animate with clean, readable vector motion: simple translations, rotations, scale changes, and minimal cel-shaded depth changes.",
