@@ -511,11 +511,23 @@ function clampNumber(value, fallback, min, max) {
   return Math.min(max, Math.max(min, number));
 }
 
+function describeColor(value) {
+  const color = String(value || '').trim();
+  const match = color.match(/^#([0-9a-f]{6})$/i);
+  if (!match) return color;
+
+  const hex = match[1];
+  const r = parseInt(hex.slice(0, 2), 16);
+  const g = parseInt(hex.slice(2, 4), 16);
+  const b = parseInt(hex.slice(4, 6), 16);
+  return `${color} (rgb ${r}, ${g}, ${b})`;
+}
+
 function getPreviewSettings(input = {}) {
   const settings = { ...DEFAULT_PREVIEW_SETTINGS };
   for (const key of ['primary_color', 'accent_color', 'secondary_color', 'background_color']) {
     if (typeof input[key] === 'string' && input[key].trim()) {
-      settings[key] = input[key].trim();
+      settings[key] = describeColor(input[key]);
     }
   }
   settings.strength = clampNumber(input.strength, DEFAULT_PREVIEW_SETTINGS.strength, 0, 1);
