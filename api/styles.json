@@ -1349,5 +1349,32 @@
     },
     "backgroundType": 0,
     "createdAt": "2026-06-08T08:05:08.409Z"
+  },
+  {
+    "id": "muted-cel",
+    "title": "Muted Cel",
+    "description": "Un style d'illustration 2D chaleureux et lo-fi, caractérisé par des contours fins, organiques et légèrement tremblants, ainsi qu'une géométrie imparfaite dessinée à la main. Il utilise une palette pastel douce avec des couleurs en aplat et un ombrage ambiant minimal.",
+    "description_en": "A cozy, lo-fi 2D illustration style characterized by thin, slightly wobbly organic outlines and imperfect hand-drawn geometry. It utilizes a high-key, muted pastel palette with completely flat colors and minimal, soft ambient shading.",
+    "description_fr": "Un style d'illustration 2D chaleureux et lo-fi, caractérisé par des contours fins, organiques et légèrement tremblants, ainsi qu'une géométrie imparfaite dessinée à la main. Il utilise une palette pastel douce avec des couleurs en aplat et un ombrage ambiant minimal.",
+    "image": "images/ht4enqva4aan2pt.jpg",
+    "preview_image": "images/preview-1791295535355-8o4d.webp",
+    "preview_image_removebg": "images/preview-1791295535341-bh93.webp",
+    "tags": [
+      "webcomic",
+      "indie animation",
+      "pastel",
+      "lo-fi",
+      "thin lines",
+      "flat color",
+      "sketchy"
+    ],
+    "video": {
+      "motion": "Subtle line boiling effect simulating hand-drawn animation at a low frame rate (12fps). Movements are gentle, flat, and charmingly imperfect.",
+      "camera": "Static camera or slow, flat 2D panning with absolutely zero parallax depth.",
+      "temporal_texture": "The thin outlines must constantly boil slightly, maintaining a continuous hand-drawn, sketchy consistency over time.",
+      "avoid": "Smooth 60fps interpolation, 3D camera movements, motion blur, complex lighting shifts, and realistic physics."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-10-06T13:58:17.480Z"
   }
 ]

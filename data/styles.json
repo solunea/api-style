@@ -1929,5 +1929,43 @@
       "temporal_texture": "Textures must suffer from slight affine texture mapping warping (texture swimming) during camera movement, while the aliased jagged edges crawl and shimmer consistently.",
       "avoid": "Avoid smooth motion blur, fluid dynamics, soft dynamic shadows, modern anti-aliasing, and high-framerate interpolations that break the retro 30fps illusion."
     }
+  },
+  {
+    "id": "muted-cel",
+    "title": "Muted Cel",
+    "description": "Un style d'illustration 2D chaleureux et lo-fi, caractérisé par des contours fins, organiques et légèrement tremblants, ainsi qu'une géométrie imparfaite dessinée à la main. Il utilise une palette pastel douce avec des couleurs en aplat et un ombrage ambiant minimal.",
+    "description_en": "A cozy, lo-fi 2D illustration style characterized by thin, slightly wobbly organic outlines and imperfect hand-drawn geometry. It utilizes a high-key, muted pastel palette with completely flat colors and minimal, soft ambient shading.",
+    "description_fr": "Un style d'illustration 2D chaleureux et lo-fi, caractérisé par des contours fins, organiques et légèrement tremblants, ainsi qu'une géométrie imparfaite dessinée à la main. Il utilise une palette pastel douce avec des couleurs en aplat et un ombrage ambiant minimal.",
+    "prompt": "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render as a 2D digital indie animation still or lo-fi webcomic illustration, utilizing a muted, high-key pastel color palette. The foundational rendering technique relies on thin, slightly wobbly, organic dark-grey or sepia outlines that define every object with a charming, hand-drawn irregularity. Fill these contoured shapes with completely flat, untextured blocks of {{primary_color}} and {{secondary_color}}. Lighting is predominantly ambient and diffuse, creating a flat aesthetic with very minimal, soft cel-shaded shadows applied only in the deepest crevices using slightly darker, desaturated hues of the base colors. Introduce {{accent_color}} sparingly for small focal details. Avoid pure blacks, stark whites, and high-contrast gradients entirely. The spatial dynamics should feel slightly flattened, employing a casual, 2D perspective where geometry and structural lines are charmingly imperfect and skewed. Text or intricate details should appear hand-lettered and sketchy. The overall atmosphere is cozy, quiet, and nostalgic, reminiscent of slice-of-life indie cartoons. Edges are crisp but organic, dictated by the continuous, uniform-weight linework. The image must occupy the absolute entire dedicated space as a canvas rule: no borders, no frames, no white margins, no canvas edges, full bleed to all four corners. tags: 2d animation, indie webcomic, pastel color palette, thin organic linework, flat shading, lo-fi aesthetic, hand-drawn geometry, cozy atmosphere, muted tones, slice-of-life, full bleed, edge-to-edge, no border, no frame",
+    "prompt_removebg": "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render as a 2D digital indie animation still or lo-fi webcomic illustration, utilizing a muted, high-key pastel color palette, composited on a clean {{background_color}} surface. The foundational rendering technique relies on thin, slightly wobbly, organic dark-grey or sepia outlines that define every object with a charming, hand-drawn irregularity. Fill these contoured shapes with completely flat, untextured blocks of {{primary_color}} and {{secondary_color}}. Lighting is predominantly ambient and diffuse, creating a flat aesthetic with very minimal, soft cel-shaded shadows applied only in the deepest crevices using slightly darker, desaturated hues of the base colors. Introduce {{accent_color}} sparingly for small focal details. Avoid pure blacks, stark whites, and high-contrast gradients entirely. The spatial dynamics should feel slightly flattened, employing a casual, 2D perspective where geometry and structural lines are charmingly imperfect and skewed. Text or intricate details should appear hand-lettered and sketchy. The overall atmosphere is cozy, quiet, and nostalgic, reminiscent of slice-of-life indie cartoons. Edges are crisp but organic, dictated by the continuous, uniform-weight linework, interacting cleanly with the {{background_color}} backdrop, allowing intentional overflow where parts of the scene can extend beyond the visible frame. tags: 2d animation, indie webcomic, pastel color palette, thin organic linework, flat shading, lo-fi aesthetic, hand-drawn geometry, cozy atmosphere, muted tones, slice-of-life, solid backdrop, isolated subject",
+    "background_prompt": "A cozy, flattened 2D environment rendered in an indie webcomic style. Thin, slightly wobbly, organic dark-grey outlines define charmingly imperfect geometry and architecture. The scene is filled with flat, untextured blocks of muted, high-key {{primary_color}} and {{secondary_color}}, accented by soft touches of {{accent_color}}. Lighting is ambient and diffuse with minimal soft shading. The atmosphere is nostalgic and calm, featuring hand-drawn, sketchy details and a lo-fi aesthetic.",
+    "background_prompt_removebg": "A cozy, flattened 2D environment rendered in an indie webcomic style. Thin, slightly wobbly, organic dark-grey outlines define charmingly imperfect geometry and architecture. The scene is filled with flat, untextured blocks of muted, high-key {{primary_color}} and {{secondary_color}}, accented by soft touches of {{accent_color}}. Lighting is ambient and diffuse with minimal soft shading. The atmosphere is nostalgic and calm, featuring hand-drawn, sketchy details and a lo-fi aesthetic. A decorative, sketchy foreground border frame frames the invisible subject, transitioning smoothly into the flat {{background_color}} surface.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "secondary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/ht4enqva4aan2pt.jpg",
+    "preview_image": "images/preview-1791295535355-8o4d.webp",
+    "preview_image_removebg": "images/preview-1791295535341-bh93.webp",
+    "tags": [
+      "webcomic",
+      "indie animation",
+      "pastel",
+      "lo-fi",
+      "thin lines",
+      "flat color",
+      "sketchy"
+    ],
+    "video": {
+      "motion": "Subtle line boiling effect simulating hand-drawn animation at a low frame rate (12fps). Movements are gentle, flat, and charmingly imperfect.",
+      "camera": "Static camera or slow, flat 2D panning with absolutely zero parallax depth.",
+      "temporal_texture": "The thin outlines must constantly boil slightly, maintaining a continuous hand-drawn, sketchy consistency over time.",
+      "avoid": "Smooth 60fps interpolation, 3D camera movements, motion blur, complex lighting shifts, and realistic physics."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-10-06T13:58:17.480Z"
   }
 ]
