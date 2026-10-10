@@ -48,6 +48,7 @@ api-style/
 | `prompt` | Prompt principal pour générer une image dans ce style. Utilise des `{{variables}}` remplaçables. |
 | `background_prompt` | Prompt dédié au décor/environnement. Fonctionne en arrière-plan ET en premier plan (profondeur). |
 | `variables` | Liste des variables détectées dans le prompt (`subject`, `primary_color`, `accent_color`, etc.). |
+| `tags` | Tags précis et mots-clés généraux de recherche en anglais, dans un même tableau (ex. `cross-hatching`, `pencil`, `drawing`, `serious`). |
 | `removeBackground` | Si `true`, le fond de l'image générée doit être supprimé (sujet détouré). |
 | `supportImageReference` | Si `true`, ce style est optimisé pour le mode **img2img / style transfer** (pas de `{{subject}}`, le prompt décrit uniquement le style visuel à appliquer sur une image fournie par l'utilisateur). |
 
@@ -69,6 +70,13 @@ Ouvre http://localhost:3003 — permet de :
 ### Auto-remplissage IA
 
 L'IA analyse l'image uploadée et génère automatiquement : titre, description, prompt, background prompt et tags.
+
+Les tags combinent 4 à 8 termes précis avec 3 à 6 mots-clés généraux en anglais, selon le style :
+- Ambiance : `childlike`, `playful`, `serious`, `professional`, `soft`, `colorful`, `dark`, `dreamy`.
+- Technique et médium : `technical`, `pencil`, `drawing`, `sketch`, `painting`, `watercolor`, `gouache`, `ink`, `charcoal`, `engraving`, `collage`, `photography`, `3d`, `vector`, `handcrafted`.
+- Esthétique : `minimalist`, `geometric`, `retro`, `comic`, `pixel-art`.
+
+Ces mots-clés sont conservés dans le champ `tags`, disponible dans la liste et le détail des styles. Les styles existants ont également été enrichis à partir de leurs descriptions, en conservant leurs tags précédents. La recherche de l'admin utilise déjà ce champ. La nouvelle consigne IA réserve les instructions de cadrage aux prompts.
 
 Le prompt généré s'adapte selon le mode :
 - **Text-to-image** (par défaut) — Prompt avec `{{subject}}`, description complète du style + sujet
@@ -102,6 +110,9 @@ const IMG_BASE = 'https://raw.githubusercontent.com/solunea/api-style/main';
 
 // Tous les styles
 const styles = await fetch(`${BASE}/styles.json`).then(r => r.json());
+
+// Recherche par mot-clé général
+const pencilStyles = styles.filter(s => (s.tags || []).includes('pencil'));
 
 // Un style spécifique
 const style = await fetch(`${BASE}/styles/${styles[0].id}.json`).then(r => r.json());

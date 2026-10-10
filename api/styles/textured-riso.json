@@ -22,7 +22,11 @@
     "flat-shading",
     "stippling",
     "expressive-lines",
-    "gouache"
+    "gouache",
+    "painting",
+    "ink",
+    "colorful",
+    "geometric"
   ],
   "removeBackground": true,
   "supportImageReference": false,

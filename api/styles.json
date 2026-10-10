@@ -15,7 +15,13 @@
       "children's book",
       "chalky texture",
       "flat illustration",
-      "scumbling"
+      "scumbling",
+      "childlike",
+      "playful",
+      "pencil",
+      "painting",
+      "gouache",
+      "retro"
     ],
     "video": {
       "motion": "Subjects and elements animate with a low-framerate, stop-motion or 2D rigged puppet feel, moving in distinct, slightly jerky increments. Overlapping shapes slide past each other on flat 2D planes.",
@@ -41,7 +47,13 @@
       "line art",
       "minimalist palette",
       "comic style",
-      "geometric patterns"
+      "geometric patterns",
+      "playful",
+      "drawing",
+      "ink",
+      "vector",
+      "comic",
+      "geometric"
     ],
     "video": {
       "motion": "Animate with playful graphic timing: snappy poses, small squash-and-stretch accents, moving action lines, and simple cut-out style motion.",
@@ -67,7 +79,11 @@
       "cel-shading",
       "geometric shapes",
       "color blocking",
-      "editorial graphic"
+      "editorial graphic",
+      "vector",
+      "geometric",
+      "colorful",
+      "comic"
     ],
     "video": {
       "motion": "Elements slide, scale, and snap into place using rigid, easing-based 2D motion graphics techniques. Secondary animations feature snappy, looping geometric transformations without organic fluidity.",
@@ -94,7 +110,10 @@
       "soft lighting",
       "pastel",
       "rounded geometry",
-      "minimalist"
+      "minimalist",
+      "3d",
+      "soft",
+      "geometric"
     ],
     "video": {
       "motion": "Elements should hover, rotate, or slide with smooth, easing, low-velocity physics.",
@@ -120,7 +139,11 @@
       "chalk texture",
       "forced perspective",
       "stipple grain",
-      "wobbly linework"
+      "wobbly linework",
+      "drawing",
+      "geometric",
+      "retro",
+      "handcrafted"
     ],
     "video": {
       "motion": "Elements slide and scale in flat 2D space like cutout animation. Wobbly linework boils subtly with a low frame rate hand-drawn jitter.",
@@ -148,7 +171,11 @@
       "stippling",
       "limited-palette",
       "high-contrast",
-      "geometric-motifs"
+      "geometric-motifs",
+      "handcrafted",
+      "retro",
+      "geometric",
+      "drawing"
     ],
     "video": {
       "motion": "Elements animate with a slightly lowered framerate, mimicking stop-motion or traditional cel animation. Internal decorative patterns drift or cycle subtly within their bounding shapes.",
@@ -174,7 +201,10 @@
       "flat-vector",
       "de-stijl",
       "minimalist",
-      "constructivism"
+      "constructivism",
+      "vector",
+      "geometric",
+      "retro"
     ],
     "video": {
       "motion": "Geometric shapes translate, scale, and rotate along strict linear paths with rigid, mechanical easing.",
@@ -200,7 +230,11 @@
       "macro-photography",
       "miniature-diorama",
       "tilt-shift",
-      "pastel-palette"
+      "pastel-palette",
+      "handcrafted",
+      "soft",
+      "playful",
+      "dreamy"
     ],
     "video": {
       "motion": "Elements should exhibit a slight, stuttering stop-motion animation style (around 12 frames per second), with physical compression and squash-and-stretch mimicking soft wool being manually manipulated.",
@@ -226,7 +260,10 @@
       "muted pastels",
       "faceless minimalism",
       "editorial art",
-      "soft gradients"
+      "soft gradients",
+      "vector",
+      "soft",
+      "minimalist"
     ],
     "video": {
       "motion": "Subjects move with smooth, eased keyframe animation typical of motion graphics, avoiding realistic physics in favor of stylized, deliberate planar shifts.",
@@ -253,7 +290,11 @@
       "flat-shading",
       "stippling",
       "expressive-lines",
-      "gouache"
+      "gouache",
+      "painting",
+      "ink",
+      "colorful",
+      "geometric"
     ],
     "video": {
       "motion": "Color blocks shift and snap into place like stop-motion cutouts, while the disconnected ink squiggles writhe and redraw themselves at a low frame rate (e.g., 12fps).",
@@ -279,7 +320,11 @@
       "vector-graphic",
       "duotone",
       "negative-space",
-      "chunky-lines"
+      "chunky-lines",
+      "engraving",
+      "vector",
+      "geometric",
+      "handcrafted"
     ],
     "video": {
       "motion": "Subjects and scene elements shift with a stepped, low-framerate stop-motion feel, mimicking the swapping of physical carved blocks. Shapes morph through abrupt, chunky vector interpolations rather than smooth fluid motion.",
@@ -305,7 +350,11 @@
       "monochrome photography",
       "rim lighting",
       "bokeh",
-      "cinematic haze"
+      "cinematic haze",
+      "photography",
+      "dark",
+      "serious",
+      "retro"
     ],
     "video": {
       "motion": "Heavy smoke rolls slowly through the midground, catching light rays, while depth of field shifts subtly between focal planes.",
@@ -331,7 +380,11 @@
       "corporate memphis",
       "ui illustration",
       "minimalist",
-      "line art"
+      "line art",
+      "vector",
+      "drawing",
+      "professional",
+      "geometric"
     ],
     "video": {
       "motion": "Elements float with subtle, continuous sine-wave hovering. Lines draw on smoothly while flat color fills pop in instantly.",
@@ -358,7 +411,12 @@
       "flat-color-blocks",
       "marker-shading",
       "mid-century-editorial",
-      "loose-sketch"
+      "loose-sketch",
+      "drawing",
+      "sketch",
+      "ink",
+      "retro",
+      "geometric"
     ],
     "video": {
       "motion": "Subjects animate with a boiling line effect, where the black ink contours jitter rapidly while the underlying flat color blocks remain mostly static or snap between discrete positions.",
@@ -384,7 +442,11 @@
       "minimalist",
       "paper-cutout",
       "flat-color",
-      "high-contrast"
+      "high-contrast",
+      "collage",
+      "handcrafted",
+      "vector",
+      "retro"
     ],
     "video": {
       "motion": "Elements morph and slide with fluid, organic elasticity, maintaining strict 2D flatness while positive and negative spaces dynamically shift and rescale.",
@@ -410,7 +472,13 @@
       "directional hatching",
       "naive art",
       "post-impressionism",
-      "heavy paper tooth"
+      "heavy paper tooth",
+      "pencil",
+      "drawing",
+      "sketch",
+      "colorful",
+      "handcrafted",
+      "playful"
     ],
     "video": {
       "motion": "Strokes redraw continuously in a boiling effect, mimicking stop-motion pastel animation. Subjects move with a slight jitter, maintaining the naive, hand-drawn aesthetic.",
@@ -437,7 +505,10 @@
       "palette-knife",
       "thick-brushstrokes",
       "painterly",
-      "tactile-surface"
+      "tactile-surface",
+      "painting",
+      "colorful",
+      "handcrafted"
     ],
     "video": {
       "motion": "Elements sway gently with a fluid, rhythmic cadence, mimicking the optical blending of impressionist strokes. Highlights shimmer as if light is moving across wet, heavily textured paint.",
@@ -463,7 +534,11 @@
       "sharp-silhouette",
       "chiaroscuro",
       "risograph-texture",
-      "luminous-duotone"
+      "luminous-duotone",
+      "drawing",
+      "minimalist",
+      "dark",
+      "colorful"
     ],
     "video": {
       "motion": "Internal gradients should shift and pulse slowly, simulating moving light sources rolling across stationary geometric volumes. Silhouettes remain rigidly fixed while the light smoothly transitions across their surfaces.",
@@ -489,7 +564,10 @@
       "minimalist",
       "sketch",
       "rough-lines",
-      "negative-space"
+      "negative-space",
+      "drawing",
+      "serious",
+      "handcrafted"
     ],
     "video": {
       "motion": "Strokes animate dynamically as if being rapidly drawn in real-time, with vertical lines cascading downward and chaotic loops scribbling into existence.",
@@ -516,7 +594,11 @@
       "thick-lines",
       "pop-art",
       "juxtaposition",
-      "monoline"
+      "monoline",
+      "painting",
+      "drawing",
+      "vector",
+      "ink"
     ],
     "video": {
       "motion": "The realistic underpainting remains relatively still with subtle ambient movement, while the thick graphic overlay lines dynamically draw themselves on or slightly shift in a boiled-line animation style.",
@@ -543,7 +625,11 @@
       "halftone",
       "impasto",
       "typography",
-      "gestural-lines"
+      "gestural-lines",
+      "painting",
+      "vector",
+      "colorful",
+      "playful"
     ],
     "video": {
       "motion": "Layered 2D planes, typography, and halftone patterns slide and scale at different parallax rates, while impasto brushstrokes dynamically paint themselves onto the canvas. Elements snap into place with a stop-motion, cut-out paper rhythm.",
@@ -569,7 +655,10 @@
       "macro-photography",
       "miniature",
       "shallow-depth-of-field",
-      "bokeh"
+      "bokeh",
+      "photography",
+      "playful",
+      "soft"
     ],
     "video": {
       "motion": "Subjects and vehicles move with a slightly stiff, mechanical cadence, resembling motorized toys or stop-motion models traversing a static diorama.",
@@ -595,7 +684,10 @@
       "flat-colors",
       "paper-texture",
       "minimalist",
-      "unshaded"
+      "unshaded",
+      "drawing",
+      "retro",
+      "handcrafted"
     ],
     "video": {
       "motion": "Elements move with a slight staggered frame rate mimicking traditional cel animation or stop-motion, keeping color blocks strictly flat.",
@@ -621,7 +713,11 @@
       "aliased",
       "dithering",
       "retro gaming",
-      "limited palette"
+      "limited palette",
+      "pixel-art",
+      "retro",
+      "playful",
+      "geometric"
     ],
     "video": {
       "motion": "Animation relies on rigid, low-framerate sprite updates (e.g., 8 to 12 fps) rather than smooth interpolation. Elements move in distinct integer pixel increments, maintaining the strict grid alignment at all times.",
@@ -648,7 +744,12 @@
       "continuous-line",
       "film-grain",
       "offset-contour",
-      "sepia-tone"
+      "sepia-tone",
+      "photography",
+      "drawing",
+      "vector",
+      "retro",
+      "dreamy"
     ],
     "video": {
       "motion": "The underlying photographic elements remain relatively still with subtle, natural drifting, while the overlaid vector lines undulate smoothly, shifting their offset alignment to create a dynamic ghosting effect.",
@@ -675,7 +776,12 @@
       "linework",
       "monochromatic",
       "etching",
-      "vintage"
+      "vintage",
+      "drawing",
+      "ink",
+      "retro",
+      "serious",
+      "handcrafted"
     ],
     "video": {
       "motion": "Motion should be subtle and deliberate, resembling the slow reveal of a print being pulled from a press or gentle parallax layers of etched elements sliding past one another.",
@@ -701,7 +807,11 @@
       "flat-colors",
       "dry-brush",
       "fauvism",
-      "editorial-illustration"
+      "editorial-illustration",
+      "painting",
+      "colorful",
+      "playful",
+      "handcrafted"
     ],
     "video": {
       "motion": "Elements shift with a low-framerate, boiling line effect, mimicking stop-motion paint cycles.",
@@ -727,7 +837,12 @@
       "flat-colors",
       "monoweight-lines",
       "pop-art",
-      "unshaded"
+      "unshaded",
+      "comic",
+      "drawing",
+      "ink",
+      "colorful",
+      "retro"
     ],
     "video": {
       "motion": "Subjects animate with low-framerate, stepped motion mimicking traditional cel animation, while solid color fills remain perfectly flat.",
@@ -754,7 +869,11 @@
       "hard shadows",
       "gouache aesthetic",
       "no outlines",
-      "high contrast"
+      "high contrast",
+      "vector",
+      "geometric",
+      "colorful",
+      "retro"
     ],
     "video": {
       "motion": "Motion should be extremely subtle and looping, such as slowly drifting, hard-edged cast shadows or gently swaying flat-colored elements.",
@@ -780,7 +899,11 @@
       "orthographic",
       "indie-game-art",
       "cel-shaded",
-      "wholesome"
+      "wholesome",
+      "drawing",
+      "comic",
+      "playful",
+      "geometric"
     ],
     "video": {
       "motion": "Elements bounce and squash slightly with keyframed, step-animated motion typical of 2D indie games.",
@@ -806,7 +929,12 @@
       "high contrast",
       "graphic illustration",
       "deep shadows",
-      "airbrushed"
+      "airbrushed",
+      "comic",
+      "drawing",
+      "dark",
+      "colorful",
+      "retro"
     ],
     "video": {
       "motion": "Subjects move with deliberate, cinematic weight, striking dynamic, poster-like poses that lock into place. Shadow shapes morph aggressively across surfaces as objects rotate through the harsh directional lighting.",
@@ -832,7 +960,12 @@
       "comic illustration",
       "ink hatching",
       "flat colors",
-      "retro-futuristic"
+      "retro-futuristic",
+      "comic",
+      "drawing",
+      "ink",
+      "colorful",
+      "retro"
     ],
     "video": {
       "motion": "Subjects move with smooth, cel-animated fluidity, while mechanical or environmental elements shift with deliberate, rigid precision.",
@@ -859,7 +992,12 @@
       "flat shading",
       "stippling",
       "pastel palette",
-      "sharp drop shadows"
+      "sharp drop shadows",
+      "comic",
+      "drawing",
+      "ink",
+      "soft",
+      "retro"
     ],
     "video": {
       "motion": "Elements move with smooth, traditional 2D animation pacing. Shadows and highlights remain locked to the geometry as solid shapes without gradient shifting.",
@@ -885,7 +1023,12 @@
       "crayon linework",
       "naive graphic",
       "misregistered outlines",
-      "unshaded vector"
+      "unshaded vector",
+      "pencil",
+      "charcoal",
+      "drawing",
+      "vector",
+      "playful"
     ],
     "video": {
       "motion": "Color blocks shift with a slight boil effect, while the charcoal outlines jitter and redraw continuously at a low frame rate (e.g., 12fps) to simulate hand-drawn animation.",
@@ -911,7 +1054,11 @@
       "aliased edges",
       "retro graphics",
       "blocky shadows",
-      "grid rendering"
+      "grid rendering",
+      "pixel-art",
+      "retro",
+      "playful",
+      "geometric"
     ],
     "video": {
       "motion": "Elements animate with rigid, low-framerate sprite updates, moving in strict pixel increments rather than smooth sub-pixel interpolation. Lighting changes occur in distinct stepped color bands.",
@@ -942,7 +1089,13 @@
       "full bleed",
       "edge-to-edge",
       "no border",
-      "no frame"
+      "no frame",
+      "technical",
+      "professional",
+      "drawing",
+      "sketch",
+      "ink",
+      "serious"
     ],
     "video": {
       "motion": "Marker strokes appear rapidly as if drawn in real-time, with ink construction lines shooting across the screen and handwritten annotations scribbling into existence dynamically.",
@@ -968,7 +1121,13 @@
       "gouache wash",
       "negative space",
       "duotone",
-      "painterly edges"
+      "painterly edges",
+      "painting",
+      "gouache",
+      "drawing",
+      "sketch",
+      "colorful",
+      "handcrafted"
     ],
     "video": {
       "motion": "Brushstrokes pop and shift slightly frame-by-frame, mimicking a hand-painted boiling effect, while elements slide smoothly in a flat, multiplane parallax.",
@@ -994,7 +1153,13 @@
       "vector line art",
       "instruction manual",
       "isometric diagram",
-      "flat colors"
+      "flat colors",
+      "technical",
+      "professional",
+      "drawing",
+      "vector",
+      "geometric",
+      "serious"
     ],
     "video": {
       "motion": "Elements translate linearly along rigid axes (X, Y, Z) mimicking an assembly or disassembly process, guided by the dashed structural lines.",
@@ -1020,7 +1185,12 @@
       "hatching",
       "traditional media",
       "monochrome",
-      "line art"
+      "line art",
+      "pencil",
+      "drawing",
+      "sketch",
+      "serious",
+      "handcrafted"
     ],
     "video": {
       "motion": "Subjects animate with a stop-motion, hand-drawn cadence, updating at a slightly lower framerate to mimic flipping sketchbook pages.",
@@ -1046,7 +1216,11 @@
       "vinyl-toy",
       "ambient-occlusion",
       "minimalist-diorama",
-      "diffuse-lighting"
+      "diffuse-lighting",
+      "3d",
+      "soft",
+      "minimalist",
+      "playful"
     ],
     "video": {
       "motion": "Movements are smooth, deliberate, and slightly weighted, mimicking the physics of dense foam or soft plastic objects sliding or gently dropping into place.",
@@ -1072,7 +1246,11 @@
       "vector-illustration",
       "photographic-background",
       "augmented-reality",
-      "flat-colors"
+      "flat-colors",
+      "photography",
+      "vector",
+      "comic",
+      "colorful"
     ],
     "video": {
       "motion": "The flat 2D illustrated elements animate with crisp, keyframed, slightly stepped motion (on twos), contrasting with smooth, realistic 3D motion in the photographic background elements like flowing water or swaying trees.",
@@ -1098,7 +1276,11 @@
       "matte-materials",
       "soft-lighting",
       "subsurface-scattering",
-      "clean-edges"
+      "clean-edges",
+      "3d",
+      "professional",
+      "soft",
+      "geometric"
     ],
     "video": {
       "motion": "Elements move with smooth, eased keyframes typical of high-end motion graphics. Physics are slightly floaty and idealized, avoiding abrupt or hyper-realistic jerks.",
@@ -1124,7 +1306,11 @@
       "kitsch",
       "film-grain",
       "vintage-editorial",
-      "halation"
+      "halation",
+      "photography",
+      "retro",
+      "soft",
+      "dark"
     ],
     "video": {
       "motion": "Subjects exhibit slow, deliberate movements while specular highlights and reflections subtly glint and shift across glossy surfaces.",
@@ -1150,7 +1336,11 @@
       "film-grain",
       "lomography",
       "shallow-dof",
-      "cinematic-lighting"
+      "cinematic-lighting",
+      "photography",
+      "retro",
+      "soft",
+      "dreamy"
     ],
     "video": {
       "motion": "Light leaks and color flares gently pulse and shift across the lens, while organic film grain dances rapidly across the frame. Background bokeh elements drift slowly to emphasize shallow depth of field.",
@@ -1178,7 +1368,12 @@
       "designer-toy",
       "vibrant-colors",
       "macro-photography",
-      "full bleed, edge-to-edge, no border, no frame"
+      "full bleed, edge-to-edge, no border, no frame",
+      "3d",
+      "childlike",
+      "playful",
+      "soft",
+      "colorful"
     ],
     "video": {
       "motion": "Movements should exhibit smooth, bouncy, soft-body physics with exaggerated, playful easing.",
@@ -1204,7 +1399,10 @@
       "geometric",
       "minimalist",
       "line-art",
-      "flat-design"
+      "flat-design",
+      "vector",
+      "drawing",
+      "professional"
     ],
     "video": {
       "motion": "Lines draw themselves in smoothly using uniform path-trim animations. Subjects subtly undulate or shift their internal geometric patterns in a continuous, looping rhythm without breaking the flat 2D plane.",
@@ -1230,7 +1428,11 @@
       "mid-century modern",
       "color blocking",
       "unshaded",
-      "hard-edged"
+      "hard-edged",
+      "vector",
+      "geometric",
+      "minimalist",
+      "retro"
     ],
     "video": {
       "motion": "Elements slide along horizontal or diagonal axes in a rigid, mechanical fashion without organic deformation. Transformations occur through sudden scale pops or precise positional shifts, maintaining the flat 2D illusion.",
@@ -1257,7 +1459,11 @@
       "luminous lighting",
       "color blocking",
       "storybook illustration",
-      "visual development"
+      "visual development",
+      "painting",
+      "colorful",
+      "dreamy",
+      "playful"
     ],
     "video": {
       "motion": "Gentle, subtle undulation of light sources creating a pulsating, magical glow. Soft, flowing movement of atmospheric elements like mist or floating particles.",
@@ -1283,7 +1489,11 @@
       "risograph-texture",
       "dreamlike",
       "soft-edges",
-      "iridescent"
+      "iridescent",
+      "drawing",
+      "soft",
+      "dreamy",
+      "colorful"
     ],
     "video": {
       "motion": "Elements should drift slowly and fluidly, with color gradients shifting and pulsating gently across surfaces. Avoid fast or jerky movements; maintain a calm, ethereal pacing.",
@@ -1309,7 +1519,9 @@
       "flat design",
       "grid composition",
       "minimalist",
-      "high contrast"
+      "high contrast",
+      "vector",
+      "geometric"
     ],
     "video": {
       "motion": "Subjects animate as rigid 2D cutouts with smooth, linear translations. Motions are stylized and mechanical, avoiding organic fluidity.",
@@ -1339,7 +1551,10 @@
       "full bleed",
       "edge-to-edge",
       "no border",
-      "no frame"
+      "no frame",
+      "3d",
+      "retro",
+      "geometric"
     ],
     "video": {
       "motion": "Animations must be rigid and vertex-weighted, mimicking early motion capture with slightly stiff, linear interpolations between keyframes. Objects should rotate or translate with a mechanical, unpolished clunkiness typical of vintage game engines.",
@@ -1366,7 +1581,12 @@
       "lo-fi",
       "thin lines",
       "flat color",
-      "sketchy"
+      "sketchy",
+      "drawing",
+      "comic",
+      "soft",
+      "sketch",
+      "playful"
     ],
     "video": {
       "motion": "Subtle line boiling effect simulating hand-drawn animation at a low frame rate (12fps). Movements are gentle, flat, and charmingly imperfect.",

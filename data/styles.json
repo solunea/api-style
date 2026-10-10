@@ -19,7 +19,13 @@
       "children's book",
       "chalky texture",
       "flat illustration",
-      "scumbling"
+      "scumbling",
+      "childlike",
+      "playful",
+      "pencil",
+      "painting",
+      "gouache",
+      "retro"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T15:44:41.253Z",
@@ -58,7 +64,13 @@
       "line art",
       "minimalist palette",
       "comic style",
-      "geometric patterns"
+      "geometric patterns",
+      "playful",
+      "drawing",
+      "ink",
+      "vector",
+      "comic",
+      "geometric"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T15:49:04.146Z",
@@ -97,7 +109,11 @@
       "cel-shading",
       "geometric shapes",
       "color blocking",
-      "editorial graphic"
+      "editorial graphic",
+      "vector",
+      "geometric",
+      "colorful",
+      "comic"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T15:52:37.052Z",
@@ -137,7 +153,10 @@
       "soft lighting",
       "pastel",
       "rounded geometry",
-      "minimalist"
+      "minimalist",
+      "3d",
+      "soft",
+      "geometric"
     ],
     "removeBackground": true,
     "createdAt": "2026-02-10T16:23:17.069Z",
@@ -176,7 +195,11 @@
       "chalk texture",
       "forced perspective",
       "stipple grain",
-      "wobbly linework"
+      "wobbly linework",
+      "drawing",
+      "geometric",
+      "retro",
+      "handcrafted"
     ],
     "removeBackground": false,
     "createdAt": "2026-02-10T16:27:43.841Z",
@@ -221,7 +244,11 @@
       "stippling",
       "limited-palette",
       "high-contrast",
-      "geometric-motifs"
+      "geometric-motifs",
+      "handcrafted",
+      "retro",
+      "geometric",
+      "drawing"
     ],
     "removeBackground": true,
     "supportImageReference": false,
@@ -260,7 +287,10 @@
       "flat-vector",
       "de-stijl",
       "minimalist",
-      "constructivism"
+      "constructivism",
+      "vector",
+      "geometric",
+      "retro"
     ],
     "removeBackground": true,
     "supportImageReference": false,
@@ -299,7 +329,11 @@
       "macro-photography",
       "miniature-diorama",
       "tilt-shift",
-      "pastel-palette"
+      "pastel-palette",
+      "handcrafted",
+      "soft",
+      "playful",
+      "dreamy"
     ],
     "removeBackground": false,
     "supportImageReference": false,
@@ -338,7 +372,10 @@
       "muted pastels",
       "faceless minimalism",
       "editorial art",
-      "soft gradients"
+      "soft gradients",
+      "vector",
+      "soft",
+      "minimalist"
     ],
     "removeBackground": false,
     "supportImageReference": false,
@@ -378,7 +415,11 @@
       "flat-shading",
       "stippling",
       "expressive-lines",
-      "gouache"
+      "gouache",
+      "painting",
+      "ink",
+      "colorful",
+      "geometric"
     ],
     "removeBackground": true,
     "supportImageReference": false,
@@ -420,7 +461,11 @@
       "vector-graphic",
       "duotone",
       "negative-space",
-      "chunky-lines"
+      "chunky-lines",
+      "engraving",
+      "vector",
+      "geometric",
+      "handcrafted"
     ],
     "createdAt": "2026-02-17T09:45:59.105Z",
     "backgroundType": 2,
@@ -457,7 +502,11 @@
       "monochrome photography",
       "rim lighting",
       "bokeh",
-      "cinematic haze"
+      "cinematic haze",
+      "photography",
+      "dark",
+      "serious",
+      "retro"
     ],
     "createdAt": "2026-02-17T13:24:52.409Z",
     "backgroundType": 0,
@@ -494,7 +543,11 @@
       "corporate memphis",
       "ui illustration",
       "minimalist",
-      "line art"
+      "line art",
+      "vector",
+      "drawing",
+      "professional",
+      "geometric"
     ],
     "createdAt": "2026-02-17T13:39:59.566Z",
     "backgroundType": 2,
@@ -532,7 +585,12 @@
       "flat-color-blocks",
       "marker-shading",
       "mid-century-editorial",
-      "loose-sketch"
+      "loose-sketch",
+      "drawing",
+      "sketch",
+      "ink",
+      "retro",
+      "geometric"
     ],
     "createdAt": "2026-02-17T15:31:22.088Z",
     "backgroundType": 1,
@@ -569,7 +627,11 @@
       "minimalist",
       "paper-cutout",
       "flat-color",
-      "high-contrast"
+      "high-contrast",
+      "collage",
+      "handcrafted",
+      "vector",
+      "retro"
     ],
     "createdAt": "2026-02-17T20:04:35.656Z",
     "backgroundType": 2,
@@ -606,7 +668,13 @@
       "directional hatching",
       "naive art",
       "post-impressionism",
-      "heavy paper tooth"
+      "heavy paper tooth",
+      "pencil",
+      "drawing",
+      "sketch",
+      "colorful",
+      "handcrafted",
+      "playful"
     ],
     "createdAt": "2026-02-17T20:07:17.859Z",
     "backgroundType": 1,
@@ -644,7 +712,10 @@
       "palette-knife",
       "thick-brushstrokes",
       "painterly",
-      "tactile-surface"
+      "tactile-surface",
+      "painting",
+      "colorful",
+      "handcrafted"
     ],
     "createdAt": "2026-02-17T20:08:41.130Z",
     "backgroundType": 0,
@@ -681,7 +752,11 @@
       "sharp-silhouette",
       "chiaroscuro",
       "risograph-texture",
-      "luminous-duotone"
+      "luminous-duotone",
+      "drawing",
+      "minimalist",
+      "dark",
+      "colorful"
     ],
     "createdAt": "2026-02-17T20:09:47.146Z",
     "backgroundType": 0,
@@ -718,7 +793,10 @@
       "minimalist",
       "sketch",
       "rough-lines",
-      "negative-space"
+      "negative-space",
+      "drawing",
+      "serious",
+      "handcrafted"
     ],
     "createdAt": "2026-02-17T20:12:26.361Z",
     "backgroundType": 1,
@@ -756,7 +834,11 @@
       "thick-lines",
       "pop-art",
       "juxtaposition",
-      "monoline"
+      "monoline",
+      "painting",
+      "drawing",
+      "vector",
+      "ink"
     ],
     "createdAt": "2026-02-17T20:14:30.120Z",
     "backgroundType": 0,
@@ -794,7 +876,11 @@
       "halftone",
       "impasto",
       "typography",
-      "gestural-lines"
+      "gestural-lines",
+      "painting",
+      "vector",
+      "colorful",
+      "playful"
     ],
     "createdAt": "2026-02-17T20:15:47.674Z",
     "backgroundType": 2,
@@ -831,7 +917,10 @@
       "macro-photography",
       "miniature",
       "shallow-depth-of-field",
-      "bokeh"
+      "bokeh",
+      "photography",
+      "playful",
+      "soft"
     ],
     "createdAt": "2026-02-17T22:58:56.223Z",
     "backgroundType": 0,
@@ -868,7 +957,10 @@
       "flat-colors",
       "paper-texture",
       "minimalist",
-      "unshaded"
+      "unshaded",
+      "drawing",
+      "retro",
+      "handcrafted"
     ],
     "createdAt": "2026-02-17T22:59:54.739Z",
     "backgroundType": 2,
@@ -905,7 +997,11 @@
       "aliased",
       "dithering",
       "retro gaming",
-      "limited palette"
+      "limited palette",
+      "pixel-art",
+      "retro",
+      "playful",
+      "geometric"
     ],
     "createdAt": "2026-02-17T23:02:22.428Z",
     "backgroundType": 2,
@@ -943,7 +1039,12 @@
       "continuous-line",
       "film-grain",
       "offset-contour",
-      "sepia-tone"
+      "sepia-tone",
+      "photography",
+      "drawing",
+      "vector",
+      "retro",
+      "dreamy"
     ],
     "createdAt": "2026-02-17T23:07:09.391Z",
     "backgroundType": 1,
@@ -980,7 +1081,12 @@
       "linework",
       "monochromatic",
       "etching",
-      "vintage"
+      "vintage",
+      "drawing",
+      "ink",
+      "retro",
+      "serious",
+      "handcrafted"
     ],
     "createdAt": "2026-02-19T11:33:13.526Z",
     "backgroundType": 2,
@@ -1017,7 +1123,11 @@
       "flat-colors",
       "dry-brush",
       "fauvism",
-      "editorial-illustration"
+      "editorial-illustration",
+      "painting",
+      "colorful",
+      "playful",
+      "handcrafted"
     ],
     "createdAt": "2026-02-19T12:49:07.012Z",
     "backgroundType": 1,
@@ -1054,7 +1164,12 @@
       "flat-colors",
       "monoweight-lines",
       "pop-art",
-      "unshaded"
+      "unshaded",
+      "comic",
+      "drawing",
+      "ink",
+      "colorful",
+      "retro"
     ],
     "createdAt": "2026-02-19T12:53:50.521Z",
     "backgroundType": 0,
@@ -1092,7 +1207,11 @@
       "hard shadows",
       "gouache aesthetic",
       "no outlines",
-      "high contrast"
+      "high contrast",
+      "vector",
+      "geometric",
+      "colorful",
+      "retro"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-19T22:23:26.336Z",
@@ -1129,7 +1248,11 @@
       "orthographic",
       "indie-game-art",
       "cel-shaded",
-      "wholesome"
+      "wholesome",
+      "drawing",
+      "comic",
+      "playful",
+      "geometric"
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-20T22:34:21.421Z",
@@ -1166,7 +1289,12 @@
       "high contrast",
       "graphic illustration",
       "deep shadows",
-      "airbrushed"
+      "airbrushed",
+      "comic",
+      "drawing",
+      "dark",
+      "colorful",
+      "retro"
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-20T22:35:34.527Z",
@@ -1203,7 +1331,12 @@
       "comic illustration",
       "ink hatching",
       "flat colors",
-      "retro-futuristic"
+      "retro-futuristic",
+      "comic",
+      "drawing",
+      "ink",
+      "colorful",
+      "retro"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-20T22:38:29.417Z",
@@ -1241,7 +1374,12 @@
       "flat shading",
       "stippling",
       "pastel palette",
-      "sharp drop shadows"
+      "sharp drop shadows",
+      "comic",
+      "drawing",
+      "ink",
+      "soft",
+      "retro"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-22T16:49:32.740Z",
@@ -1278,7 +1416,12 @@
       "crayon linework",
       "naive graphic",
       "misregistered outlines",
-      "unshaded vector"
+      "unshaded vector",
+      "pencil",
+      "charcoal",
+      "drawing",
+      "vector",
+      "playful"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:29:54.740Z",
@@ -1315,7 +1458,11 @@
       "aliased edges",
       "retro graphics",
       "blocky shadows",
-      "grid rendering"
+      "grid rendering",
+      "pixel-art",
+      "retro",
+      "playful",
+      "geometric"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:32:38.075Z",
@@ -1357,7 +1504,13 @@
       "full bleed",
       "edge-to-edge",
       "no border",
-      "no frame"
+      "no frame",
+      "technical",
+      "professional",
+      "drawing",
+      "sketch",
+      "ink",
+      "serious"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-25T07:35:23.395Z",
@@ -1394,7 +1547,13 @@
       "gouache wash",
       "negative space",
       "duotone",
-      "painterly edges"
+      "painterly edges",
+      "painting",
+      "gouache",
+      "drawing",
+      "sketch",
+      "colorful",
+      "handcrafted"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-26T10:10:37.844Z",
@@ -1431,7 +1590,13 @@
       "vector line art",
       "instruction manual",
       "isometric diagram",
-      "flat colors"
+      "flat colors",
+      "technical",
+      "professional",
+      "drawing",
+      "vector",
+      "geometric",
+      "serious"
     ],
     "backgroundType": 1,
     "createdAt": "2026-02-26T10:12:57.335Z",
@@ -1468,7 +1633,12 @@
       "hatching",
       "traditional media",
       "monochrome",
-      "line art"
+      "line art",
+      "pencil",
+      "drawing",
+      "sketch",
+      "serious",
+      "handcrafted"
     ],
     "backgroundType": 2,
     "createdAt": "2026-02-27T10:00:01.229Z",
@@ -1505,7 +1675,11 @@
       "vinyl-toy",
       "ambient-occlusion",
       "minimalist-diorama",
-      "diffuse-lighting"
+      "diffuse-lighting",
+      "3d",
+      "soft",
+      "minimalist",
+      "playful"
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-27T10:16:25.913Z",
@@ -1542,7 +1716,11 @@
       "vector-illustration",
       "photographic-background",
       "augmented-reality",
-      "flat-colors"
+      "flat-colors",
+      "photography",
+      "vector",
+      "comic",
+      "colorful"
     ],
     "backgroundType": 0,
     "createdAt": "2026-02-27T10:18:24.123Z",
@@ -1579,7 +1757,11 @@
       "matte-materials",
       "soft-lighting",
       "subsurface-scattering",
-      "clean-edges"
+      "clean-edges",
+      "3d",
+      "professional",
+      "soft",
+      "geometric"
     ],
     "backgroundType": 2,
     "createdAt": "2026-03-11T11:49:06.137Z",
@@ -1616,7 +1798,11 @@
       "kitsch",
       "film-grain",
       "vintage-editorial",
-      "halation"
+      "halation",
+      "photography",
+      "retro",
+      "soft",
+      "dark"
     ],
     "backgroundType": 0,
     "createdAt": "2026-03-17T13:44:23.380Z",
@@ -1653,7 +1839,11 @@
       "film-grain",
       "lomography",
       "shallow-dof",
-      "cinematic-lighting"
+      "cinematic-lighting",
+      "photography",
+      "retro",
+      "soft",
+      "dreamy"
     ],
     "backgroundType": 0,
     "createdAt": "2026-03-17T13:50:20.772Z",
@@ -1692,7 +1882,12 @@
       "designer-toy",
       "vibrant-colors",
       "macro-photography",
-      "full bleed, edge-to-edge, no border, no frame"
+      "full bleed, edge-to-edge, no border, no frame",
+      "3d",
+      "childlike",
+      "playful",
+      "soft",
+      "colorful"
     ],
     "backgroundType": 0,
     "createdAt": "2026-03-17T13:53:25.407Z",
@@ -1729,7 +1924,10 @@
       "geometric",
       "minimalist",
       "line-art",
-      "flat-design"
+      "flat-design",
+      "vector",
+      "drawing",
+      "professional"
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:14:37.596Z",
@@ -1766,7 +1964,11 @@
       "mid-century modern",
       "color blocking",
       "unshaded",
-      "hard-edged"
+      "hard-edged",
+      "vector",
+      "geometric",
+      "minimalist",
+      "retro"
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:17:10.093Z",
@@ -1804,7 +2006,11 @@
       "luminous lighting",
       "color blocking",
       "storybook illustration",
-      "visual development"
+      "visual development",
+      "painting",
+      "colorful",
+      "dreamy",
+      "playful"
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:19:14.351Z",
@@ -1841,7 +2047,11 @@
       "risograph-texture",
       "dreamlike",
       "soft-edges",
-      "iridescent"
+      "iridescent",
+      "drawing",
+      "soft",
+      "dreamy",
+      "colorful"
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-08T10:24:47.005Z",
@@ -1878,7 +2088,9 @@
       "flat design",
       "grid composition",
       "minimalist",
-      "high contrast"
+      "high contrast",
+      "vector",
+      "geometric"
     ],
     "backgroundType": 2,
     "createdAt": "2026-04-30T17:51:07.243Z",
@@ -1919,7 +2131,10 @@
       "full bleed",
       "edge-to-edge",
       "no border",
-      "no frame"
+      "no frame",
+      "3d",
+      "retro",
+      "geometric"
     ],
     "backgroundType": 0,
     "createdAt": "2026-06-08T08:05:08.409Z",
@@ -1957,7 +2172,12 @@
       "lo-fi",
       "thin lines",
       "flat color",
-      "sketchy"
+      "sketchy",
+      "drawing",
+      "comic",
+      "soft",
+      "sketch",
+      "playful"
     ],
     "video": {
       "motion": "Subtle line boiling effect simulating hand-drawn animation at a low frame rate (12fps). Movements are gentle, flat, and charmingly imperfect.",

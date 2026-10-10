@@ -17,7 +17,11 @@
     "chalk texture",
     "forced perspective",
     "stipple grain",
-    "wobbly linework"
+    "wobbly linework",
+    "drawing",
+    "geometric",
+    "retro",
+    "handcrafted"
   ],
   "removeBackground": false,
   "createdAt": "2026-02-10T16:27:43.841Z",

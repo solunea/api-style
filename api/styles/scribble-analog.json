@@ -25,7 +25,12 @@
     "continuous-line",
     "film-grain",
     "offset-contour",
-    "sepia-tone"
+    "sepia-tone",
+    "photography",
+    "drawing",
+    "vector",
+    "retro",
+    "dreamy"
   ],
   "createdAt": "2026-02-17T23:07:09.391Z",
   "backgroundType": 1,

@@ -24,7 +24,11 @@
     "vinyl-toy",
     "ambient-occlusion",
     "minimalist-diorama",
-    "diffuse-lighting"
+    "diffuse-lighting",
+    "3d",
+    "soft",
+    "minimalist",
+    "playful"
   ],
   "backgroundType": 0,
   "createdAt": "2026-02-27T10:16:25.913Z",

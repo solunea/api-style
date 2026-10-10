@@ -24,7 +24,11 @@
     "matte-materials",
     "soft-lighting",
     "subsurface-scattering",
-    "clean-edges"
+    "clean-edges",
+    "3d",
+    "professional",
+    "soft",
+    "geometric"
   ],
   "backgroundType": 2,
   "createdAt": "2026-03-11T11:49:06.137Z",

@@ -23,7 +23,11 @@
     "stippling",
     "limited-palette",
     "high-contrast",
-    "geometric-motifs"
+    "geometric-motifs",
+    "handcrafted",
+    "retro",
+    "geometric",
+    "drawing"
   ],
   "removeBackground": true,
   "supportImageReference": false,

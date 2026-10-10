@@ -28,7 +28,10 @@
     "full bleed",
     "edge-to-edge",
     "no border",
-    "no frame"
+    "no frame",
+    "3d",
+    "retro",
+    "geometric"
   ],
   "backgroundType": 0,
   "createdAt": "2026-06-08T08:05:08.409Z",
