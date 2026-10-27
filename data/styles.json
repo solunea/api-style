@@ -2282,5 +2282,46 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-10-27T12:44:35.881Z"
+  },
+  {
+    "id": "halftone-blockprint",
+    "model": "prunaai/p-image-ideogram",
+    "title": "Halftone Blockprint",
+    "description": "Un style 3D numérique vibrant caractérisé par des dégradés intenses et lumineux et une texture de bruit uniforme et prononcée qui imite le pointillisme ou le grain de film épais. Les formes sont rendues doucement avec une diffusion sous-surfacique, créant une atmosphère onirique et lumineuse sans ombres dures ni contours distincts.",
+    "description_en": "A vibrant digital 3D style characterized by intense, glowing gradients and a heavy, uniform noise texture that mimics pointillism or coarse film grain. Forms are rendered softly with subsurface scattering, creating a dreamlike, luminous atmosphere without harsh shadows or distinct linework.",
+    "description_fr": "Un style 3D numérique vibrant caractérisé par des dégradés intenses et lumineux et une texture de bruit uniforme et prononcée qui imite le pointillisme ou le grain de film épais. Les formes sont rendues doucement avec une diffusion sous-surfacique, créant une atmosphère onirique et lumineuse sans ombres dures ni contours distincts.",
+    "prompt": "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render the scene as a stylized 3D digital illustration heavily textured with a dense, uniform noise overlay, resembling coarse film grain or digital pointillism. The rendering technique relies entirely on soft, luminous subsurface scattering and radiant color gradients, completely devoid of hard outlines, sharp edges, or cel-shading. Illuminate the scene with intense, vibrant, and highly saturated {{primary_color}} and {{accent_color}} light sources that wash over the forms, creating seamless, glowing transitions between hues. Shadows are virtually non-existent, replaced by deep, saturated pools of {{secondary_color}} ambient light. The edges of all forms should appear slightly soft and diffused, blending subtly into the surrounding space due to the heavy granular texture. The material of all objects appears matte yet internally illuminated, emitting a soft, neon-like glow. The overall atmosphere is dreamlike, ethereal, and hyper-chromatic. The image MUST occupy the absolute ENTIRE dedicated space as a canvas rule: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners. 3d render, soft subsurface scattering, heavy uniform noise, digital pointillism, vibrant neon gradients, luminous matte surfaces, soft diffused edges, no outlines, hyper-chromatic, ethereal atmosphere, full bleed, edge-to-edge, no border, no frame.",
+    "prompt_removebg": "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render the scene as a stylized 3D digital illustration heavily textured with a dense, uniform noise overlay, resembling coarse film grain or digital pointillism, composited on a clean {{background_color}} surface. The rendering technique relies entirely on soft, luminous subsurface scattering and radiant color gradients, completely devoid of hard outlines, sharp edges, or cel-shading. Illuminate the scene with intense, vibrant, and highly saturated {{primary_color}} and {{accent_color}} light sources that wash over the forms, creating seamless, glowing transitions between hues. Shadows are virtually non-existent, replaced by deep, saturated pools of {{secondary_color}} ambient light. The edges of all forms should appear slightly soft and diffused, blending subtly into the surrounding space due to the heavy granular texture, allowing for intentional overflow where the {{subject}}'s glowing, noisy edges transition smoothly against the flat {{background_color}} backdrop. The material of all objects appears matte yet internally illuminated, emitting a soft, neon-like glow. The overall atmosphere is dreamlike, ethereal, and hyper-chromatic. 3d render, soft subsurface scattering, heavy uniform noise, digital pointillism, vibrant neon gradients, luminous matte surfaces, soft diffused edges, no outlines, hyper-chromatic, ethereal atmosphere.",
+    "background_prompt": "A pure background scene featuring a seamless, luminous gradient transitioning smoothly between intense {{primary_color}}, vibrant {{accent_color}}, and deep {{secondary_color}}. The entire visual space is heavily textured with a dense, uniform noise overlay, resembling digital pointillism or coarse film grain. The atmosphere is ethereal and radiant, with soft, glowing ambient light that creates a dreamlike, hyper-chromatic environment devoid of hard edges or distinct forms.",
+    "background_prompt_removebg": "A pure background scene featuring a seamless, luminous gradient transitioning smoothly between intense {{primary_color}}, vibrant {{accent_color}}, and deep {{secondary_color}}. The entire visual space is heavily textured with a dense, uniform noise overlay, resembling digital pointillism or coarse film grain. The atmosphere is ethereal and radiant, with soft, glowing ambient light that creates a dreamlike, hyper-chromatic environment devoid of hard edges or distinct forms. In the foreground, a decorative, softly glowing geometric frame heavily textured with the same pointillist noise acts as an overlay, its vibrant edges dissolving smoothly into the solid {{background_color}} surface.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "secondary_color",
+      "background_color"
+    ],
+    "image": "images/24103308e7adacd2f5c7ca67290a3851.jpg",
+    "preview_image": "images/preview-1793105377699-ut3k.webp",
+    "preview_image_removebg": "images/preview-1793105377708-mf9u.webp",
+    "tags": [
+      "3d",
+      "subsurface-scattering",
+      "noise-texture",
+      "pointillism",
+      "neon-gradients",
+      "colorful",
+      "dreamy",
+      "soft",
+      "glow"
+    ],
+    "video": {
+      "motion": "Motions should be incredibly smooth and fluid, almost dreamlike, with forms drifting or rotating gently. Avoid rapid or jerky movements to maintain the ethereal atmosphere.",
+      "camera": "Camera movements should consist of slow, continuous pans or subtle dolly pushes, maintaining a steady, hypnotic rhythm.",
+      "temporal_texture": "The dense noise texture must remain locked to the screen space, boiling subtly over time, while the glowing gradients and subsurface scattering dynamically shift across the 3D forms.",
+      "avoid": "Avoid sharp focus pulls, fast cuts, hard shadows, or any reduction in the heavy noise texture, which would break the pointillist illusion."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-10-27T12:49:44.610Z"
   }
 ]

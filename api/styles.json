@@ -1680,5 +1680,35 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-10-27T12:44:35.881Z"
+  },
+  {
+    "id": "halftone-blockprint",
+    "model": "prunaai/p-image-ideogram",
+    "title": "Halftone Blockprint",
+    "description": "Un style 3D numérique vibrant caractérisé par des dégradés intenses et lumineux et une texture de bruit uniforme et prononcée qui imite le pointillisme ou le grain de film épais. Les formes sont rendues doucement avec une diffusion sous-surfacique, créant une atmosphère onirique et lumineuse sans ombres dures ni contours distincts.",
+    "description_en": "A vibrant digital 3D style characterized by intense, glowing gradients and a heavy, uniform noise texture that mimics pointillism or coarse film grain. Forms are rendered softly with subsurface scattering, creating a dreamlike, luminous atmosphere without harsh shadows or distinct linework.",
+    "description_fr": "Un style 3D numérique vibrant caractérisé par des dégradés intenses et lumineux et une texture de bruit uniforme et prononcée qui imite le pointillisme ou le grain de film épais. Les formes sont rendues doucement avec une diffusion sous-surfacique, créant une atmosphère onirique et lumineuse sans ombres dures ni contours distincts.",
+    "image": "images/24103308e7adacd2f5c7ca67290a3851.jpg",
+    "preview_image": "images/preview-1793105377699-ut3k.webp",
+    "preview_image_removebg": "images/preview-1793105377708-mf9u.webp",
+    "tags": [
+      "3d",
+      "subsurface-scattering",
+      "noise-texture",
+      "pointillism",
+      "neon-gradients",
+      "colorful",
+      "dreamy",
+      "soft",
+      "glow"
+    ],
+    "video": {
+      "motion": "Motions should be incredibly smooth and fluid, almost dreamlike, with forms drifting or rotating gently. Avoid rapid or jerky movements to maintain the ethereal atmosphere.",
+      "camera": "Camera movements should consist of slow, continuous pans or subtle dolly pushes, maintaining a steady, hypnotic rhythm.",
+      "temporal_texture": "The dense noise texture must remain locked to the screen space, boiling subtly over time, while the glowing gradients and subsurface scattering dynamically shift across the 3D forms.",
+      "avoid": "Avoid sharp focus pulls, fast cuts, hard shadows, or any reduction in the heavy noise texture, which would break the pointillist illusion."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-10-27T12:49:44.610Z"
   }
 ]
