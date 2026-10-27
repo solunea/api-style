@@ -104,6 +104,8 @@ test('batch previews use each style model and share the VLM description', async 
   assert.equal(result.body.generated.length, 2);
   assert.deepEqual(api.calls.map(call => call.model).sort(), ['openai/gpt-5-nano', pImage, pImage, 'prunaai/z-image-turbo-img2img'].sort());
   assert.equal(api.calls.find(call => call.model.endsWith('img2img')).input.image, 'https://example.test/reference.png');
+  assert.equal(api.calls.find(call => call.model.endsWith('img2img')).input.width, 2048);
+  assert.equal(api.calls.find(call => call.model === pImage).input.image_size, '2K');
   assert.match(api.calls.find(call => call.model === pImage).input.prompt, /A forest beside a lake/);
 });
 
@@ -115,4 +117,22 @@ test('previews without references keep the selected text-to-image model; invalid
   }
   assert.equal((await api.request('post', '/api/generate-preview', {model: 'bad', prompt: 'A cat'})).status, 400);
   assert.equal(api.calls.length, 2);
+});
+
+test('preview requests retain explicit resolutions and select the matching P-Image size', async () => {
+  const api = server();
+  for (const [width, height, expectedWidth, expectedHeight, imageSize] of [
+    [512, 512, 512, 512, '1K'],
+    [1024, 1024, 1024, 1024, '1K'],
+    [1920, 1080, 1920, 1088, '2K'],
+    [2048, 2048, 2048, 2048, '2K']
+  ]) {
+    const result = await api.request('post', '/api/generate-preview', {
+      model: pImage, prompt: 'A landscape', preview_settings: {width, height}
+    });
+    assert.equal(result.status, 200, JSON.stringify(result.body));
+    const {input} = api.calls.at(-1);
+    assert.equal(input.aspect_ratio, 'custom');
+    assert.deepEqual([input.width, input.height, input.image_size], [expectedWidth, expectedHeight, imageSize]);
+  }
 });

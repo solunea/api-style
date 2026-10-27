@@ -14,14 +14,16 @@ export function previewMode(model, mode, referenceImage) {
 
 export function buildPreviewRequest(model, prompt, settings, referenceImage) {
   if (model === 'prunaai/p-image-ideogram') {
+    const width = Math.round(settings.width / 16) * 16;
+    const height = Math.round(settings.height / 16) * 16;
     return {
       model,
       input: {
         prompt, thinking: 'low', prompt_upsampling: true,
         aspect_ratio: 'custom',
-        image_size: Math.max(settings.width, settings.height) > 1024 ? '2K' : '1K',
-        width: Math.round(settings.width / 16) * 16,
-        height: Math.round(settings.height / 16) * 16,
+        image_size: Math.max(width, height) > 1024 ? '2K' : '1K',
+        width,
+        height,
         output_format: 'webp', output_quality: 100
       }
     };
