@@ -83,7 +83,9 @@ test('single preview uses an unsaved model selection and describes a reference o
   for (const {input} of api.calls.slice(1)) {
     assert.match(input.prompt, /A forest beside a lake/);
     assert.equal(input.aspect_ratio, 'custom');
-    assert.equal(input.width, 512);
+    assert.equal(input.width, 2048);
+    assert.equal(input.height, 2048);
+    assert.equal(input.image_size, '2K');
     assert.equal('image' in input, false);
     assert.equal('strength' in input, false);
   }

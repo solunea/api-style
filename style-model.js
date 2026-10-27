@@ -19,6 +19,7 @@ export function buildPreviewRequest(model, prompt, settings, referenceImage) {
       input: {
         prompt, thinking: 'low', prompt_upsampling: true,
         aspect_ratio: 'custom',
+        image_size: Math.max(settings.width, settings.height) > 1024 ? '2K' : '1K',
         width: Math.round(settings.width / 16) * 16,
         height: Math.round(settings.height / 16) * 16,
         output_format: 'webp', output_quality: 100
