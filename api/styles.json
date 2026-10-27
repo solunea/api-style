@@ -1648,5 +1648,37 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-10-06T13:58:17.480Z"
+  },
+  {
+    "id": "breezy-ligne-claire",
+    "model": "prunaai/p-image-ideogram",
+    "title": "Breezy Ligne-Claire",
+    "description": "Un style d'illustration ludique aux aplats de couleurs, caractérisé par des contours noirs organiques légèrement tremblants et des couleurs vives sans ombrage. Il s'inspire de la ligne claire classique de la bande dessinée tout en y ajoutant une souplesse décontractée dessinée à la main et un charme naïf.",
+    "description_en": "A playful, flat-color illustration style characterized by slightly wobbly, organic black outlines and vibrant, unshaded fill colors. It draws inspiration from classic ligne claire comics but adds a relaxed, hand-drawn looseness and naive charm.",
+    "description_fr": "Un style d'illustration ludique aux aplats de couleurs, caractérisé par des contours noirs organiques légèrement tremblants et des couleurs vives sans ombrage. Il s'inspire de la ligne claire classique de la bande dessinée tout en y ajoutant une souplesse décontractée dessinée à la main et un charme naïf.",
+    "image": "images/f112e98855c6d2810550f1d9a7b9793c.jpg",
+    "preview_image": "images/preview-1793105066794-mju2.webp",
+    "preview_image_removebg": "images/preview-1793105066452-dyo2.webp",
+    "tags": [
+      "ligne-claire",
+      "flat-color",
+      "naive-art",
+      "wobbly-lines",
+      "unshaded",
+      "childlike",
+      "playful",
+      "drawing",
+      "colorful",
+      "minimalist",
+      "comic"
+    ],
+    "video": {
+      "motion": "Characters and objects should animate with a slight boil or subtle jitter in their outlines, mimicking traditional hand-drawn animation. Movement should be snappy and playful, keeping elements strictly 2D.",
+      "camera": "Keep the camera locked or use simple, flat 2D panning without parallax depth.",
+      "temporal_texture": "The wobbly black outlines should maintain a consistent line weight but boil slightly frame-to-frame, while the solid color fills remain perfectly flat and flicker-free.",
+      "avoid": "Avoid any 3D rotation, smooth motion blur, gradients, shading, or realistic physics that break the flat, naive aesthetic."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-10-27T12:44:35.881Z"
   }
 ]

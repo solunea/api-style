@@ -1,0 +1,43 @@
+{
+  "id": "breezy-ligne-claire",
+  "model": "prunaai/p-image-ideogram",
+  "title": "Breezy Ligne-Claire",
+  "description": "Un style d'illustration ludique aux aplats de couleurs, caractérisé par des contours noirs organiques légèrement tremblants et des couleurs vives sans ombrage. Il s'inspire de la ligne claire classique de la bande dessinée tout en y ajoutant une souplesse décontractée dessinée à la main et un charme naïf.",
+  "description_en": "A playful, flat-color illustration style characterized by slightly wobbly, organic black outlines and vibrant, unshaded fill colors. It draws inspiration from classic ligne claire comics but adds a relaxed, hand-drawn looseness and naive charm.",
+  "description_fr": "Un style d'illustration ludique aux aplats de couleurs, caractérisé par des contours noirs organiques légèrement tremblants et des couleurs vives sans ombrage. Il s'inspire de la ligne claire classique de la bande dessinée tout en y ajoutant une souplesse décontractée dessinée à la main et un charme naïf.",
+  "prompt": "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render the scene as a playful, digital 2D flat-color illustration using a loose, organic ligne claire technique. All elements must be defined by distinct, slightly wobbly, hand-drawn black ink outlines of uniform weight. Fill these enclosed shapes with flat, solid blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. There must be absolutely no gradients, shading, highlights, or 3D volume; lighting is entirely flat and ambient, implied only by the choice of bright, high-contrast flat hues. Textures should remain smooth and digital, but the linework itself should exhibit a subtle, jittery imperfection, giving the impression of a relaxed, casual sketch. Details should be simplified into expressive, naive forms with clean, flat color fills. The composition should feel breezy and cheerful, relying on the interplay of bold color fields and crisp, organic black contours. The image MUST occupy the absolute ENTIRE dedicated space as a canvas rule: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners. flat colors, ligne claire, organic black outlines, naive art, no shading, playful illustration, solid color fills, hand-drawn feel, 2d vector style, high contrast, full bleed, edge-to-edge, no border, no frame",
+  "prompt_removebg": "Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. Render the scene as a playful, digital 2D flat-color illustration using a loose, organic ligne claire technique. All elements must be defined by distinct, slightly wobbly, hand-drawn black ink outlines of uniform weight. Fill these enclosed shapes with flat, solid blocks of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. There must be absolutely no gradients, shading, highlights, or 3D volume; lighting is entirely flat and ambient, implied only by the choice of bright, high-contrast flat hues. Textures should remain smooth and digital, but the linework itself should exhibit a subtle, jittery imperfection, giving the impression of a relaxed, casual sketch. Details should be simplified into expressive, naive forms with clean, flat color fills. The composition should feel breezy and cheerful, relying on the interplay of bold color fields and crisp, organic black contours. The scene must be composited on a clean {{background_color}} surface, with the wobbly black outlines forming crisp silhouettes against the backdrop, allowing intentional overflow where parts of the scene can extend beyond the visible frame. flat colors, ligne claire, organic black outlines, naive art, no shading, playful illustration, solid color fills, hand-drawn feel, 2d vector style, high contrast",
+  "background_prompt": "A simplified, flat-color environment featuring broad expanses of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. The landscape or abstract space is defined by loose, slightly wobbly black ink outlines of uniform weight, separating solid blocks of unshaded color. There are no gradients or shadows, creating a bright, high-contrast, breezy atmosphere with a naive, hand-drawn feel.",
+  "background_prompt_removebg": "A simplified, flat-color environment featuring broad expanses of {{primary_color}}, {{accent_color}}, and {{secondary_color}}. The landscape or abstract space is defined by loose, slightly wobbly black ink outlines of uniform weight, separating solid blocks of unshaded color. There are no gradients or shadows, creating a bright, high-contrast, breezy atmosphere with a naive, hand-drawn feel. A loose, organic black-line border frames the foreground, transitioning sharply into the flat {{background_color}} surface.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "secondary_color",
+    "background_color"
+  ],
+  "image": "images/f112e98855c6d2810550f1d9a7b9793c.jpg",
+  "preview_image": "images/preview-1793105066794-mju2.webp",
+  "preview_image_removebg": "images/preview-1793105066452-dyo2.webp",
+  "tags": [
+    "ligne-claire",
+    "flat-color",
+    "naive-art",
+    "wobbly-lines",
+    "unshaded",
+    "childlike",
+    "playful",
+    "drawing",
+    "colorful",
+    "minimalist",
+    "comic"
+  ],
+  "video": {
+    "motion": "Characters and objects should animate with a slight boil or subtle jitter in their outlines, mimicking traditional hand-drawn animation. Movement should be snappy and playful, keeping elements strictly 2D.",
+    "camera": "Keep the camera locked or use simple, flat 2D panning without parallax depth.",
+    "temporal_texture": "The wobbly black outlines should maintain a consistent line weight but boil slightly frame-to-frame, while the solid color fills remain perfectly flat and flicker-free.",
+    "avoid": "Avoid any 3D rotation, smooth motion blur, gradients, shading, or realistic physics that break the flat, naive aesthetic."
+  },
+  "backgroundType": 2,
+  "createdAt": "2026-10-27T12:44:35.881Z"
+}
