@@ -39,5 +39,6 @@
     "camera": "Camera movements should be restricted to slow, subtle macro dolly pushes or pans, rigorously maintaining the extreme shallow depth of field.",
     "temporal_texture": "The fuzzy wool fibers must exhibit a subtle 'boil' or jitter frame-to-frame, simulating the tactile nature of stop-motion replacement animation, while soft lighting remains stable.",
     "avoid": "Avoid high-framerate fluid motion, digital motion blur, sharp hyper-digital edges, and deep focus."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

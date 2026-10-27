@@ -9,6 +9,7 @@ import { execSync, exec as execCb } from 'child_process';
 import { promisify } from 'util';
 const execAsync = promisify(execCb);
 import Replicate from 'replicate';
+import { normalizeStyleModel, previewMode, buildPreviewRequest } from './style-model.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_FILE = join(__dirname, 'data', 'styles.json');
@@ -32,7 +33,7 @@ app.use('/images', express.static(IMAGES_DIR));
 // --- Helpers ---
 
 function readStyles() {
-  return JSON.parse(readFileSync(DATA_FILE, 'utf-8'));
+  return JSON.parse(readFileSync(DATA_FILE, 'utf-8')).map(style => ({ ...style, model: normalizeStyleModel(style.model) }));
 }
 
 function writeStyles(styles) {
@@ -45,6 +46,7 @@ function buildApi(styles) {
 
   const index = styles.map((s) => ({
     id: s.id,
+    model: normalizeStyleModel(s.model),
     title: s.title,
     description: s.description,
     description_en: s.description_en,
@@ -82,9 +84,10 @@ app.get('/api/styles/:id', (req, res) => {
 // POST create style
 app.post('/api/styles', (req, res) => {
   const styles = readStyles();
-  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType, video } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType, video, model } = req.body;
 
   if (!title) return res.status(400).json({ error: 'Le titre est requis' });
+  const generationModel = normalizeStyleModel(model);
 
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
 
@@ -94,6 +97,7 @@ app.post('/api/styles', (req, res) => {
 
   const style = {
     id,
+    model: generationModel,
     title,
     description: description_fr || description || '',
     description_en: description_en || '',
@@ -125,7 +129,9 @@ app.put('/api/styles/:id', (req, res) => {
   const index = styles.findIndex((s) => s.id === req.params.id);
   if (index === -1) return res.status(404).json({ error: 'Style non trouvé' });
 
-  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType, video } = req.body;
+  const { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables, backgroundType, video, model } = req.body;
+
+  const generationModel = normalizeStyleModel(model === undefined ? styles[index].model : model);
 
   // Delete old preview file if a new one is being set
   const oldPreview = styles[index].preview_image;
@@ -138,6 +144,7 @@ app.put('/api/styles/:id', (req, res) => {
 
   styles[index] = {
     ...styles[index],
+    model: generationModel,
     ...(title !== undefined && { title }),
     ...(description !== undefined && { description }),
     ...(description_en !== undefined && { description_en }),
@@ -454,10 +461,10 @@ function resolveImageToDataUri(reference_image) {
   return `data:${mimeType};base64,${refBase64}`;
 }
 
-// POST generate preview image from prompt via z-image-turbo on Replicate
+// POST generate preview image with the style model on Replicate
 // Two modes:
 //   "direct"  → img2img with prunaai/z-image-turbo-img2img (reference image as input)
-//   "vlm"     → describe reference image with openai/gpt-5-nano, then text-to-image with z-image-turbo
+//   "vlm"     → describe reference image with openai/gpt-5-nano, then use the style's text-to-image model
 const PREVIEW_PROMPT_CHAR_LIMIT = 3500;
 const DEFAULT_PREVIEW_SETTINGS = {
   subject: 'a luxury perfume bottle',
@@ -537,24 +544,16 @@ function getPreviewSettings(input = {}) {
 }
 
 // Helper: resolve prompt with sample variables, generate image, save locally
-async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_image, previewSettings) {
+async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_image, previewSettings, model) {
   const resolvedPrompt = resolvePromptVariables(rawPrompt, sampleVars);
 
   console.log('--- PREVIEW PROMPT ---');
   console.log(resolvedPrompt.slice(0, 400) + '...');
   console.log('--- END PREVIEW PROMPT ---');
 
-  let output;
-  if (mode === 'direct' && reference_image) {
-    const refUri = resolveImageToDataUri(reference_image);
-    output = await replicate.run('prunaai/z-image-turbo-img2img', {
-      input: { prompt: resolvedPrompt, image: refUri, strength: previewSettings.strength, width: previewSettings.width, height: previewSettings.height }
-    });
-  } else {
-    output = await replicate.run('prunaai/z-image-turbo', {
-      input: { prompt: resolvedPrompt, width: previewSettings.width, height: previewSettings.height }
-    });
-  }
+  const reference = mode === 'direct' && reference_image ? resolveImageToDataUri(reference_image) : null;
+  const request = buildPreviewRequest(model, resolvedPrompt, previewSettings, reference);
+  const output = await replicate.run(request.model, { input: request.input });
 
   const imageUrl = Array.isArray(output) ? String(output[0]) : String(output);
   const response = await fetch(imageUrl);
@@ -577,7 +576,10 @@ function deleteOldPreview(previewPath) {
 
 app.post('/api/generate-preview', async (req, res) => {
   try {
-    const { prompt, prompt_removebg, reference_image, mode } = req.body;
+    const { prompt, prompt_removebg, reference_image } = req.body;
+    const savedStyle = req.body.style_id ? readStyles().find(style => style.id === req.body.style_id) : null;
+    const model = normalizeStyleModel(req.body.model === undefined ? savedStyle?.model : req.body.model);
+    const mode = previewMode(model, req.body.mode, reference_image);
     if (!prompt) return res.status(400).json({ error: 'Aucun prompt fourni' });
 
     const previewSettings = getPreviewSettings(req.body.preview_settings);
@@ -601,9 +603,9 @@ app.post('/api/generate-preview', async (req, res) => {
     }
 
     // Generate both previews in parallel
-    const tasks = [generateSinglePreview(prompt, sampleVars, mode, reference_image, previewSettings)];
+    const tasks = [generateSinglePreview(prompt, sampleVars, mode, reference_image, previewSettings, model)];
     if (prompt_removebg) {
-      tasks.push(generateSinglePreview(prompt_removebg, sampleVars, mode, reference_image, previewSettings));
+      tasks.push(generateSinglePreview(prompt_removebg, sampleVars, mode, reference_image, previewSettings, model));
     }
     const [previewUrl, previewRemovebgUrl] = await Promise.all(tasks);
 
@@ -628,7 +630,7 @@ app.post('/api/generate-preview', async (req, res) => {
     res.json(result);
   } catch (err) {
     console.error('Generate preview error:', err);
-    res.status(500).json({ error: `Erreur de génération : ${err.message}` });
+    res.status(err.status || 500).json({ error: `Erreur de génération : ${err.message}` });
   }
 });
 
@@ -644,7 +646,7 @@ app.post('/api/generate-all-previews', async (req, res) => {
 
     // Resolve VLM subject once if needed
     let vlmSubject = null;
-    if (mode === 'vlm' && reference_image) {
+    if (reference_image && styles.some(style => previewMode(style.model, mode, reference_image) === 'vlm')) {
       const refUri = resolveImageToDataUri(reference_image);
       const vlmOutput = await replicate.run('openai/gpt-5-nano', {
         input: { prompt: SCENE_DESCRIPTION_PROMPT, image_input: [refUri], temperature: 0.3 }
@@ -659,8 +661,10 @@ app.post('/api/generate-all-previews', async (req, res) => {
       }
 
       try {
+        const model = normalizeStyleModel(style.model);
+        const styleMode = previewMode(model, mode, reference_image);
         const sampleVars = {
-          subject: vlmSubject || previewSettings.subject,
+          subject: styleMode === 'vlm' && vlmSubject ? vlmSubject : previewSettings.subject,
           primary_color: previewSettings.primary_color,
           accent_color: previewSettings.accent_color,
           secondary_color: previewSettings.secondary_color,
@@ -668,9 +672,9 @@ app.post('/api/generate-all-previews', async (req, res) => {
         };
 
         // Generate standard + removebg previews in parallel
-        const tasks = [generateSinglePreview(style.prompt, sampleVars, mode, reference_image, previewSettings)];
+        const tasks = [generateSinglePreview(style.prompt, sampleVars, styleMode, reference_image, previewSettings, model)];
         if (style.prompt_removebg) {
-          tasks.push(generateSinglePreview(style.prompt_removebg, sampleVars, mode, reference_image, previewSettings));
+          tasks.push(generateSinglePreview(style.prompt_removebg, sampleVars, styleMode, reference_image, previewSettings, model));
         }
         const [previewUrl, previewRemovebgUrl] = await Promise.all(tasks);
 
@@ -804,6 +808,10 @@ app.post('/api/push', async (req, res) => {
     console.error('Push error:', err);
     res.status(500).json({ error: `Erreur push : ${err.stderr || err.message}` });
   }
+});
+
+app.use((err, req, res, next) => {
+  res.status(err.status || 500).json({ error: err.message });
 });
 
 const PORT = process.env.PORT || 3003;

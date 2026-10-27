@@ -43,7 +43,8 @@
       "camera": "The camera remains mostly static or performs slow, flat 2D pans without any 3D perspective shifts.",
       "temporal_texture": "The heavy paper grain, chalky scumbling, and scratchy pencil details must boil slightly, refreshing their texture patterns every few frames to mimic traditional animation.",
       "avoid": "Avoid smooth 60fps interpolation, 3D camera rotations, dynamic changing shadows, motion blur, and clean vector-like scaling."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "doodle-pop",
@@ -88,7 +89,8 @@
       "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
       "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
       "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "vibrant-vector",
@@ -131,7 +133,8 @@
       "camera": "A locked-off orthographic camera that employs hard cuts or swift, linear 2D panning without parallax.",
       "temporal_texture": "Vector edges remain flawlessly sharp, and flat color fills stay perfectly solid without any flickering, noise, or lighting shifts.",
       "avoid": "Avoid motion blur, 3D camera rotation, organic flowing movements, lighting changes, or any introduction of gradients and textures."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "pastel-clay",
@@ -174,7 +177,8 @@
       "camera": "Slow, linear dolly or gentle isometric panning with a locked focal length.",
       "temporal_texture": "The subtle render grain must remain consistent and uniform, while matte reflections and soft shadows shift smoothly without flickering.",
       "avoid": "Fast cuts, motion blur, harsh directional lighting, specular glares, or jagged polygon edges."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "risograph-spotlight",
@@ -217,7 +221,8 @@
       "camera": "Fixed, static camera with zero parallax, maintaining the flattened, forced perspective.",
       "temporal_texture": "The heavy chalk grain and stipple noise must boil continuously, while geometric light cones remain locked in place.",
       "avoid": "Avoid 3D camera rotations, motion blur, smooth 60fps tweening, and realistic dynamic lighting changes."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "folklore-woodcut",
@@ -262,7 +267,8 @@
       "camera": "Completely static 2D camera with zero parallax; panning occurs strictly along the flat X and Y axes.",
       "temporal_texture": "The stippled risograph noise overlay boils rapidly, while the flat color fills and sharp graphic edges remain perfectly stable over time.",
       "avoid": "Avoid 3D camera rotations, motion blur, smooth tweening, gradient shifts, or dynamic lighting changes."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "bauhaus-geometry",
@@ -304,7 +310,8 @@
       "camera": "Static orthographic camera with zero parallax; framing remains permanently locked.",
       "temporal_texture": "Vector edges remain infinitely sharp and color fills completely solid, with zero noise or temporal flickering.",
       "avoid": "Avoid 3D rotations, motion blur, gradients, overlapping transparency, or organic physics."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "felted-whimsy",
@@ -347,7 +354,8 @@
       "camera": "Camera movements should be restricted to slow, subtle macro dolly pushes or pans, rigorously maintaining the extreme shallow depth of field.",
       "temporal_texture": "The fuzzy wool fibers must exhibit a subtle 'boil' or jitter frame-to-frame, simulating the tactile nature of stop-motion replacement animation, while soft lighting remains stable.",
       "avoid": "Avoid high-framerate fluid motion, digital motion blur, sharp hyper-digital edges, and deep focus."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "soft-vector",
@@ -389,7 +397,8 @@
       "camera": "Static locked-off camera or slow, linear 2D panning across the vector layers.",
       "temporal_texture": "Vector edges remain razor-sharp and gradients stay perfectly smooth without any flickering, noise, or boiling lines.",
       "avoid": "Avoid motion blur, 3D camera rotations, organic fluid simulations, or jittery frame-by-frame traditional animation."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "textured-riso",
@@ -433,7 +442,8 @@
       "camera": "Static 2D camera with zero parallax or perspective shifts, maintaining a completely flat graphic plane.",
       "temporal_texture": "The drybrush textures, stippling, and canvas noise boil constantly, creating a flickering, hand-painted tactile energy.",
       "avoid": "Avoid smooth 3D interpolation, volumetric shadows, gradient morphing, or realistic motion blur."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "carved-linocut",
@@ -474,7 +484,8 @@
       "camera": "The camera remains entirely static, treating the composition as a fixed 2D graphic poster without any parallax or perspective shifts.",
       "temporal_texture": "The solid ink colors and sharp carved edges remain completely uniform and flicker-free, avoiding any organic grain or lighting changes.",
       "avoid": "Avoid smooth 60fps interpolation, 3D camera sweeps, motion blur, gradient transitions, or any dynamic lighting effects."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "velvet-noir",
@@ -515,7 +526,8 @@
       "camera": "Slow, deliberate dolly pushes with rack focus to emphasize the shallow depth of field and bokeh.",
       "temporal_texture": "Film grain and halation around highlights remain constant, with shadows pooling consistently without digital flickering.",
       "avoid": "Avoid erratic camera movements, sudden exposure changes, or sharp digital clarity that breaks the vintage film aesthetic."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "tech-vector",
@@ -556,7 +568,8 @@
       "camera": "Locked off, orthographic or static perspective with zero lens distortion.",
       "temporal_texture": "Line weight remains perfectly uniform and locked to the geometry, with zero edge boiling or color flicker.",
       "avoid": "Avoid depth of field, motion blur, 3D shading, organic turbulence, or any variation in line thickness."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "gestural-contour",
@@ -599,7 +612,8 @@
       "camera": "Static locked-off camera to emphasize the 2D graphic nature of the flat color blocks and line work.",
       "temporal_texture": "The rough greyscale marker shading and loose ink intersections boil continuously, maintaining the raw, spontaneous offset print aesthetic.",
       "avoid": "Smooth interpolations, 3D camera rotations, realistic physics, soft gradients, and perfect alignment of lines and colors."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "organic-cutout",
@@ -640,7 +654,8 @@
       "camera": "Locked, static orthographic framing with zero perspective shifts.",
       "temporal_texture": "Edges maintain a sharp, solid, non-flickering contour, with colors remaining absolutely flat and unshaded throughout the animation.",
       "avoid": "3D rotation, lighting changes, shadows, gradients, motion blur, and internal line drawing."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "crayon-sketch",
@@ -683,7 +698,8 @@
       "camera": "Static or slow, stepped panning that mimics a multiplane camera moving over a flat textured canvas.",
       "temporal_texture": "The heavy paper tooth remains locked in screen space while the granular crayon strokes boil and shift dynamically on top of it.",
       "avoid": "Smooth interpolations, 3D camera sweeps, motion blur, and seamless digital gradients."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "impressionist-ripples",
@@ -724,7 +740,8 @@
       "camera": "Slow, steady panning or subtle dollying to emphasize the three-dimensional topography of the impasto paint.",
       "temporal_texture": "The thick paint ridges, brushstroke textures, and canvas weave must remain strictly locked to the surface forms, preventing boiling or swimming textures.",
       "avoid": "Avoid rapid movements, sharp vector transitions, digital morphing, or flattening of the 3D paint texture."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "luminous-noise",
@@ -765,7 +782,8 @@
       "camera": "A completely static camera, treating the composition as a flat, moving poster rather than a navigable 3D space.",
       "temporal_texture": "The heavy stipple grain must boil rapidly and uniformly across the entire frame, while the crisp outer edges of the silhouettes remain perfectly stable and anti-aliased.",
       "avoid": "Avoid any 3D camera rotation, soft or blurry outer edges, realistic textures, or changes to the pitch-black void."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "charcoal-gesture",
@@ -805,7 +823,8 @@
       "camera": "A locked-off, static camera that allows the kinetic energy of the drawing process to serve as the primary movement.",
       "temporal_texture": "The coarse paper grain remains entirely fixed while the raw charcoal pigment flickers slightly, simulating varying pressure and subtle smudging over time.",
       "avoid": "Avoid smooth 3D rotations, clean vector morphing, or any camera pans that disrupt the illusion of a flat, 2D sketched canvas."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "vandalized-realism",
@@ -847,7 +866,8 @@
       "camera": "A slow, steady dolly-in that emphasizes the parallax between the flat 2D graphic overlay and the deep 3D realistic underpainting.",
       "temporal_texture": "The canvas weave and soft oil brushstrokes must remain locked to the background, while the flat graphic lines must maintain absolute opacity and uniform thickness without any lighting changes.",
       "avoid": "Avoid any 3D rotation that breaks the illusion of the flat 2D overlay, and prevent the graphic lines from casting shadows onto the realistic painting."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "eclectic-collage",
@@ -889,7 +909,8 @@
       "camera": "Camera remains orthographic and locked, relying on 2D panning and zooming to explore the layered collage.",
       "temporal_texture": "Paper grain, halftone dots, and canvas textures remain static to the screen space, while thick ink contours boil subtly with a low-framerate hand-drawn effect.",
       "avoid": "Avoid smooth 3D camera rotations, realistic physics, motion blur, and seamless volumetric transitions."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "miniature-diorama",
@@ -929,7 +950,8 @@
       "camera": "The camera remains mostly locked or performs extremely slow, smooth lateral tracking shots that maintain the fixed horizontal plane of sharp focus.",
       "temporal_texture": "The heavy optical blur, bokeh shapes, and crisp focal plane must remain perfectly stable, avoiding any focus hunting or flickering in the global illumination.",
       "avoid": "Avoid rapid camera pans, deep focus, handheld shake, motion blur on fast objects, or realistic fluid dynamics that break the miniature scale illusion."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "grainy-serigraph",
@@ -969,7 +991,8 @@
       "camera": "Static or slow linear orthographic panning, maintaining the flat layered depth.",
       "temporal_texture": "The heavy paper grain and ragged ink-bleed edges must boil subtly over time, maintaining the printed materiality.",
       "avoid": "Smooth 3D interpolations, gradient lighting shifts, motion blur, and clean vector edges."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "retro-pixel",
@@ -1010,7 +1033,8 @@
       "camera": "Camera movement is restricted to strict 2D panning along the X and Y axes, shifting by whole pixels to prevent sub-pixel blurring.",
       "temporal_texture": "The pixel grid and aliased edges must remain absolutely static and sharp; dithering patterns should not swim or anti-alias during motion.",
       "avoid": "Avoid smooth motion blur, sub-pixel rendering, high-framerate interpolation, and any form of anti-aliasing or gradient blending between frames."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "scribble-analog",
@@ -1053,7 +1077,8 @@
       "camera": "A slow, deliberate push-in or subtle parallax pan that emphasizes the separation between the flat vector lines and the spatial depth of the grainy photograph.",
       "temporal_texture": "Heavy 35mm film grain shimmers continuously in the photographic base layer, while the crisp vector lines remain perfectly sharp and aliased without any degradation.",
       "avoid": "Avoid fast cuts, 3D camera rotations, pressure-sensitive line variations, or perfectly aligning the vector lines with the underlying photographic contours."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "sunlit-anime",
@@ -1095,7 +1120,8 @@
       "camera": "Camera movements should be slow pans or zooms, maintaining the flat, 2D illustrative nature of the engraving.",
       "temporal_texture": "The cross-hatching and linework must remain absolutely stable and locked to the forms; lines should not boil, jitter, or redraw between frames.",
       "avoid": "Avoid smooth 3D rotations, motion blur, soft gradients blending, or boiling linework that breaks the illusion of a static etched print."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "naive-gouache",
@@ -1136,7 +1162,8 @@
       "camera": "Locked-off camera with zero 3D parallax, maintaining the flat 2D perspective.",
       "temporal_texture": "Brushstrokes and paper grain subtly jitter and redraw every few frames to emphasize the handcrafted medium.",
       "avoid": "Smooth tweening, 3D camera moves, dynamic lighting changes, or realistic motion blur."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "risograph-pop",
@@ -1178,7 +1205,8 @@
       "camera": "Static locked-off camera or perfectly linear 2D panning, strictly avoiding any 3D parallax or perspective distortion.",
       "temporal_texture": "The heavy risograph grain must boil and randomize rapidly on every frame, while the solid color fills and monoweight outlines remain sharply defined.",
       "avoid": "Avoid smooth 60fps interpolation, 3D camera sweeps, motion blur, dynamic lighting changes, shadows, or soft gradients."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "solar-gouache",
@@ -1220,7 +1248,8 @@
       "camera": "Locked-off static tripod shots with zero perspective distortion, panning, or camera drift.",
       "temporal_texture": "Color fills must remain perfectly solid and flicker-free, with shadow edges maintaining their razor-sharp, unblended vector quality throughout the animation.",
       "avoid": "Avoid any 3D lighting shifts, motion blur, gradient transitions, noisy textures, or soft blending of edges."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "phosphor-topology",
@@ -1261,7 +1290,8 @@
       "camera": "Static orthographic camera with slow, linear panning.",
       "temporal_texture": "Line weights and flat color fills remain perfectly stable, with zero boiling, grain, or flicker.",
       "avoid": "Smooth 60fps interpolation, 3D camera rotations, motion blur, and dynamic lighting changes."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "vivid-pulp",
@@ -1303,7 +1333,8 @@
       "camera": "The camera utilizes slow, dramatic push-ins or stark, locked-off low angles, maintaining a rigid, graphic composition.",
       "temporal_texture": "The smooth gradients and deep black shadow boundaries remain perfectly crisp and stable, while a subtle, uniform film grain shimmers evenly across the frame.",
       "avoid": "Avoid motion blur, soft shadow transitions, realistic ambient occlusion, or erratic, handheld camera shaking that breaks the polished graphic aesthetic."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "solar-ligne-claire",
@@ -1345,7 +1376,8 @@
       "camera": "Slow, sweeping pans that emphasize the vast scale and deep perspective of the landscapes.",
       "temporal_texture": "Ink outlines remain perfectly stable and uniform, while flat color fills and stippled shadows resist boiling or flickering.",
       "avoid": "Avoid motion blur, soft volumetric lighting shifts, 3D camera sweeps, and boiling lines that break the crisp comic aesthetic."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "planetary-ligne",
@@ -1388,7 +1420,8 @@
       "camera": "Slow, deliberate pans or static wide shots that emphasize the deep focus and clear spatial layers.",
       "temporal_texture": "The uniform black outlines and stippled ink textures remain perfectly stable, avoiding any line boiling or flickering.",
       "avoid": "Avoid motion blur, depth of field changes, 3D camera sweeps, gradient shading, and line boiling."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "luminous-gouache",
@@ -1430,7 +1463,8 @@
       "camera": "Camera remains static or uses slow, locked-off 2D pans, strictly avoiding any 3D parallax or perspective shifts.",
       "temporal_texture": "The crayon-like grain on the outlines boils constantly, while the flat color fills remain perfectly solid and unshaded throughout the motion.",
       "avoid": "Avoid smooth 60fps interpolation, 3D camera rotations, gradient shading, and motion blur, which destroy the flat, hand-drawn editorial aesthetic."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "cozy-isometric",
@@ -1471,7 +1505,8 @@
       "camera": "Camera movement is restricted to rigid horizontal or vertical scrolling, locking to the pixel grid without smooth easing.",
       "temporal_texture": "The pixel grid remains absolutely static and locked to the screen space, with no shimmering or anti-aliasing artifacts introduced during movement.",
       "avoid": "Avoid smooth 60fps interpolation, sub-pixel movement, motion blur, anti-aliasing, and modern dynamic lighting gradients."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "constructive-draft",
@@ -1519,7 +1554,8 @@
       "camera": "Static camera mimicking a fixed overhead view of a drafting table.",
       "temporal_texture": "Paper grain remains static while marker bleed and ink hatching build up sequentially without flickering.",
       "avoid": "Smooth 3D rotations, photorealistic lighting, or fluid warping that breaks the dry 2D marker medium."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "retro-low-poly",
@@ -1562,7 +1598,8 @@
       "camera": "Static or slow, steady lateral pans that maintain the flattened, graphic 2D perspective.",
       "temporal_texture": "The paper grain remains static while the translucent color washes exhibit a gentle, rhythmic flickering in their opacity and edge pooling.",
       "avoid": "Smooth 3D CGI rotations, volumetric lighting shifts, motion blur, and perfectly rigid vector outlines."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "technical-isometry",
@@ -1605,7 +1642,8 @@
       "camera": "Static isometric or orthogonal camera, panning strictly along perfectly horizontal or vertical paths.",
       "temporal_texture": "Line weight, flat color fills, and crisp vector edges remain perfectly stable with zero jitter, noise, or lighting shifts.",
       "avoid": "Avoid organic movement, perspective distortion, gradient shifts, depth of field blur, and hand-drawn line boiling."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "graphite-chiaroscuro",
@@ -1647,7 +1685,8 @@
       "camera": "Static or slow, deliberate panning that allows the hatched shading to redraw dynamically as perspective shifts.",
       "temporal_texture": "The diagonal hatching lines and paper grain must boil slightly, with strokes rapidly redrawing and shifting position between frames while maintaining overall volume and lighting.",
       "avoid": "Smooth digital tweening, 3D camera sweeps, motion blur, or seamless gradient shading."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "matte-plasticine",
@@ -1688,7 +1727,8 @@
       "camera": "A static or extremely slow, linear tracking shot on a long lens, maintaining the diorama-like orthographic feel.",
       "temporal_texture": "Lighting, ambient occlusion shadows, and matte surface textures remain perfectly stable and noise-free, maintaining a pristine 3D rendered look.",
       "avoid": "Avoid motion blur, fast camera pans, jittery keyframes, realistic physics, glossy reflections, or changes in lighting intensity."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "hybrid-daydream",
@@ -1729,7 +1769,8 @@
       "camera": "A locked-off or slowly panning tripod shot that emphasizes the surreal juxtaposition between the static background and the dynamic 2D foreground.",
       "temporal_texture": "The photographic background maintains photorealistic stability and a high frame rate, while the 2D elements maintain perfectly uniform black outlines and solid color fills without any rendering flicker or gradient shifts.",
       "avoid": "Avoid blending the 2D and 3D elements via depth-of-field blur on the cartoon characters, and avoid adding realistic shading, gradients, or 3D lighting to the flat vector elements."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "tactile-diorama",
@@ -1770,7 +1811,8 @@
       "camera": "Slow, sweeping dolly or subtle parallax pans that emphasize 3D depth and clean geometries.",
       "temporal_texture": "Lighting gradients, soft shadows, and matte surface textures remain perfectly stable and noise-free throughout the animation.",
       "avoid": "Jittery frame rates, motion blur, noisy grain, or sudden realistic physics that break the stylized illusion."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "nostalgic-opulence",
@@ -1811,7 +1853,8 @@
       "camera": "A static camera or a very slow, smooth push-in that maintains the shallow depth of field.",
       "temporal_texture": "Analog film grain must boil consistently across frames, while halation around bright areas pulses softly with movement.",
       "avoid": "Avoid fast cuts, digital sharpness, modern LED lighting aesthetics, or perfectly clean, noise-free rendering."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "granular-airbrush",
@@ -1852,7 +1895,8 @@
       "camera": "A locked-off shot or extremely slow, subtle handheld drift to mimic intimate, voyeuristic 35mm cinematography.",
       "temporal_texture": "Film grain and chromatic noise must remain highly active and chaotic frame-to-frame, while the soft light leaks maintain smooth, liquid-like transitions.",
       "avoid": "Sharp digital pans, fast zooms, clean noise-free rendering, or perfectly sharp deep-focus backgrounds."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "burin-intaglio",
@@ -1896,7 +1940,8 @@
       "camera": "Utilize a macro lens aesthetic with slow, sweeping dolly movements or subtle orbits to emphasize the shallow depth of field.",
       "temporal_texture": "The dense flocking and micro-fiber textures must remain temporally locked to the geometry without jittering, crawling, or sparkling.",
       "avoid": "Avoid motion blur, rigid mechanical movements, sharp camera cuts, and flickering fur simulations."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "graphic-monoline",
@@ -1936,7 +1981,8 @@
       "camera": "Completely static orthographic camera with zero parallax, maintaining a locked-off 2D perspective.",
       "temporal_texture": "Stroke thickness and color values must remain mathematically perfect and uniform, with zero flickering, noise, or lighting changes across frames.",
       "avoid": "Avoid any 3D rotation, depth of field blur, lighting shifts, shadow casting, varying line weight, or organic morphing."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "chromatic-flatland",
@@ -1977,7 +2023,8 @@
       "camera": "A static orthographic camera or slow, perfectly linear 2D panning without any perspective distortion or parallax depth.",
       "temporal_texture": "Colors, edges, and shapes remain absolutely stable and mathematically precise frame-to-frame, with zero flickering, noise, or lighting changes.",
       "avoid": "Avoid 3D camera rotations, motion blur, organic morphing, gradient shifts, or any introduction of dynamic lighting and shadows."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "radiant-scumble",
@@ -2019,7 +2066,8 @@
       "camera": "Slow, steady push-in or subtle parallax drift to enhance the atmospheric depth and layers.",
       "temporal_texture": "Brushstrokes and painterly textures must remain locked to the surfaces of objects, avoiding boiling or flickering edges.",
       "avoid": "Avoid fast, jerky movements, high frame rate photorealism, sharp vector-like scaling, or anything that breaks the painted illusion."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "stippled-mirage",
@@ -2060,7 +2108,8 @@
       "camera": "Slow, smooth pans or subtle zooms that emphasize the shifting light and color fields.",
       "temporal_texture": "The heavy stippled noise must remain consistent and act as a static overlay or gently undulating grain, avoiding distracting flicker, while color gradients transition smoothly.",
       "avoid": "Sharp, sudden movements, high-contrast lighting shifts, hard edges, and clean, untextured surfaces."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "block-silhouette",
@@ -2099,7 +2148,8 @@
       "camera": "Static locked-off camera with zero perspective shifts or 3D rotations, maintaining a strictly orthographic view.",
       "temporal_texture": "Edge crispness and solid color fills remain perfectly stable with zero flickering, noise, or gradient banding over time.",
       "avoid": "Avoid 3D rotations, motion blur, gradient transitions, organic morphing, or any variation in lighting intensity."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "aliased-lowpoly",
@@ -2143,7 +2193,8 @@
       "camera": "The camera should pan or orbit on a fixed, rigid track, avoiding any handheld shake, maintaining a steady, mathematical trajectory.",
       "temporal_texture": "Textures must suffer from slight affine texture mapping warping (texture swimming) during camera movement, while the aliased jagged edges crawl and shimmer consistently.",
       "avoid": "Avoid smooth motion blur, fluid dynamics, soft dynamic shadows, modern anti-aliasing, and high-framerate interpolations that break the retro 30fps illusion."
-    }
+    },
+    "model": "prunaai/z-image-turbo"
   },
   {
     "id": "muted-cel",
@@ -2186,6 +2237,7 @@
       "avoid": "Smooth 60fps interpolation, 3D camera movements, motion blur, complex lighting shifts, and realistic physics."
     },
     "backgroundType": 2,
-    "createdAt": "2026-10-06T13:58:17.480Z"
+    "createdAt": "2026-10-06T13:58:17.480Z",
+    "model": "prunaai/z-image-turbo"
   }
 ]

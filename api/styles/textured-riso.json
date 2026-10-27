@@ -40,5 +40,6 @@
     "camera": "Static 2D camera with zero parallax or perspective shifts, maintaining a completely flat graphic plane.",
     "temporal_texture": "The drybrush textures, stippling, and canvas noise boil constantly, creating a flickering, hand-painted tactile energy.",
     "avoid": "Avoid smooth 3D interpolation, volumetric shadows, gradient morphing, or realistic motion blur."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

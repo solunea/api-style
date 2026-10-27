@@ -39,5 +39,6 @@
     "camera": "Slow, linear dolly or gentle isometric panning with a locked focal length.",
     "temporal_texture": "The subtle render grain must remain consistent and uniform, while matte reflections and soft shadows shift smoothly without flickering.",
     "avoid": "Fast cuts, motion blur, harsh directional lighting, specular glares, or jagged polygon edges."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

@@ -38,5 +38,6 @@
     "camera": "Slow, sweeping pans that emphasize the vast scale and deep perspective of the landscapes.",
     "temporal_texture": "Ink outlines remain perfectly stable and uniform, while flat color fills and stippled shadows resist boiling or flickering.",
     "avoid": "Avoid motion blur, soft volumetric lighting shifts, 3D camera sweeps, and boiling lines that break the crisp comic aesthetic."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

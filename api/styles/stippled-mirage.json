@@ -37,5 +37,6 @@
     "camera": "Slow, smooth pans or subtle zooms that emphasize the shifting light and color fields.",
     "temporal_texture": "The heavy stippled noise must remain consistent and act as a static overlay or gently undulating grain, avoiding distracting flicker, while color gradients transition smoothly.",
     "avoid": "Sharp, sudden movements, high-contrast lighting shifts, hard edges, and clean, untextured surfaces."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

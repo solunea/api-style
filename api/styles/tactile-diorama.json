@@ -37,5 +37,6 @@
     "camera": "Slow, sweeping dolly or subtle parallax pans that emphasize 3D depth and clean geometries.",
     "temporal_texture": "Lighting gradients, soft shadows, and matte surface textures remain perfectly stable and noise-free throughout the animation.",
     "avoid": "Jittery frame rates, motion blur, noisy grain, or sudden realistic physics that break the stylized illusion."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

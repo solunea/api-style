@@ -39,5 +39,6 @@
     "camera": "Static or slow, stepped panning that mimics a multiplane camera moving over a flat textured canvas.",
     "temporal_texture": "The heavy paper tooth remains locked in screen space while the granular crayon strokes boil and shift dynamically on top of it.",
     "avoid": "Smooth interpolations, 3D camera sweeps, motion blur, and seamless digital gradients."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

@@ -364,6 +364,7 @@ function openModal(editId) {
     submitBtn.textContent = 'Enregistrer';
     document.getElementById('form-editing-id').value = style.id;
     document.getElementById('form-title').value = style.title;
+    document.getElementById('form-model').value = style.model || 'prunaai/z-image-turbo';
     document.getElementById('form-description-fr').value = style.description_fr || style.description || '';
     document.getElementById('form-description-en').value = style.description_en || '';
     switchDescLang('fr');
@@ -510,7 +511,8 @@ async function handleSubmit(e) {
     const preview_image = document.getElementById('form-preview-image').value.trim();
     const preview_image_removebg = document.getElementById('form-preview-image-removebg').value.trim();
     const backgroundType = parseInt(document.getElementById('form-background-type').value, 10);
-    const data = { title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined, backgroundType, video };
+    const model = document.getElementById('form-model').value;
+    const data = { model, title, description, description_en, description_fr, prompt, prompt_removebg, background_prompt, background_prompt_removebg, image, preview_image, preview_image_removebg, tags, variables: variables.length > 0 ? variables : undefined, backgroundType, video };
 
     if (editingId) {
       await updateStyle(editingId, data);
@@ -671,7 +673,7 @@ async function generatePreview() {
   const mode = localStorage.getItem('preview-mode') || 'direct';
 
   try {
-    const body = { prompt, mode, preview_settings: getPreviewSettings() };
+    const body = { prompt, model: document.getElementById('form-model').value, mode, preview_settings: getPreviewSettings() };
     if (generatedPrompts.removebg) body.prompt_removebg = generatedPrompts.removebg;
     if (referenceImage) body.reference_image = referenceImage;
     if (styleId) body.style_id = styleId;

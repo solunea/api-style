@@ -36,5 +36,6 @@
     "camera": "The camera remains mostly locked or performs extremely slow, smooth lateral tracking shots that maintain the fixed horizontal plane of sharp focus.",
     "temporal_texture": "The heavy optical blur, bokeh shapes, and crisp focal plane must remain perfectly stable, avoiding any focus hunting or flickering in the global illumination.",
     "avoid": "Avoid rapid camera pans, deep focus, handheld shake, motion blur on fast objects, or realistic fluid dynamics that break the miniature scale illusion."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

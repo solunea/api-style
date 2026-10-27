@@ -36,5 +36,6 @@
     "camera": "Completely static orthographic camera with zero parallax, maintaining a locked-off 2D perspective.",
     "temporal_texture": "Stroke thickness and color values must remain mathematically perfect and uniform, with zero flickering, noise, or lighting changes across frames.",
     "avoid": "Avoid any 3D rotation, depth of field blur, lighting shifts, shadow casting, varying line weight, or organic morphing."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

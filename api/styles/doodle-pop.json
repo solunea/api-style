@@ -41,5 +41,6 @@
     "camera": "Use mostly locked framing with occasional quick but readable push-ins or pans that feel like a comic panel coming alive.",
     "temporal_texture": "Ink outlines, flat fills, graphic marks, patterns, and hand-drawn irregularities should remain coherent and not crawl randomly.",
     "avoid": "Avoid realistic motion capture, smeared anatomy, noisy line jitter, uncontrolled morphing, and cinematic blur that weakens the graphic readability."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

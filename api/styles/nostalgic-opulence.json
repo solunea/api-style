@@ -37,5 +37,6 @@
     "camera": "A static camera or a very slow, smooth push-in that maintains the shallow depth of field.",
     "temporal_texture": "Analog film grain must boil consistently across frames, while halation around bright areas pulses softly with movement.",
     "avoid": "Avoid fast cuts, digital sharpness, modern LED lighting aesthetics, or perfectly clean, noise-free rendering."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

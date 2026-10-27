@@ -39,5 +39,6 @@
     "camera": "A slow, deliberate push-in or subtle parallax pan that emphasizes the separation between the flat vector lines and the spatial depth of the grainy photograph.",
     "temporal_texture": "Heavy 35mm film grain shimmers continuously in the photographic base layer, while the crisp vector lines remain perfectly sharp and aliased without any degradation.",
     "avoid": "Avoid fast cuts, 3D camera rotations, pressure-sensitive line variations, or perfectly aligning the vector lines with the underlying photographic contours."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

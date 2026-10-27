@@ -38,5 +38,6 @@
     "camera": "Static orthographic camera with zero parallax; framing remains permanently locked.",
     "temporal_texture": "Vector edges remain infinitely sharp and color fills completely solid, with zero noise or temporal flickering.",
     "avoid": "Avoid 3D rotations, motion blur, gradients, overlapping transparency, or organic physics."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

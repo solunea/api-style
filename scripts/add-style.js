@@ -1,3 +1,4 @@
+import { STYLE_MODELS, DEFAULT_STYLE_MODEL, normalizeStyleModel } from '../style-model.js';
 import { readFileSync, writeFileSync, existsSync, copyFileSync, mkdirSync } from 'fs';
 import { join, dirname, resolve, extname } from 'path';
 import { fileURLToPath } from 'url';
@@ -28,6 +29,7 @@ async function main() {
 
   const description = await ask('Description : ');
   const prompt = await ask('Prompt : ');
+  const model = normalizeStyleModel((await ask(`Modèle (${STYLE_MODELS.join(', ')}) [${DEFAULT_STYLE_MODEL}] : `)).trim() || DEFAULT_STYLE_MODEL);
   const tagsRaw = await ask('Tags (séparés par des virgules) : ');
   const tags = tagsRaw.split(',').map((t) => t.trim()).filter(Boolean);
 
@@ -51,6 +53,7 @@ async function main() {
 
   const style = {
     id,
+    model,
     title,
     description,
     prompt,

@@ -40,5 +40,6 @@
     "camera": "Utilize a macro lens aesthetic with slow, sweeping dolly movements or subtle orbits to emphasize the shallow depth of field.",
     "temporal_texture": "The dense flocking and micro-fiber textures must remain temporally locked to the geometry without jittering, crawling, or sparkling.",
     "avoid": "Avoid motion blur, rigid mechanical movements, sharp camera cuts, and flickering fur simulations."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

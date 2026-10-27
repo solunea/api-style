@@ -37,5 +37,6 @@
     "camera": "Locked off, orthographic or static perspective with zero lens distortion.",
     "temporal_texture": "Line weight remains perfectly uniform and locked to the geometry, with zero edge boiling or color flicker.",
     "avoid": "Avoid depth of field, motion blur, 3D shading, organic turbulence, or any variation in line thickness."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

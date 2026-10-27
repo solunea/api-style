@@ -37,5 +37,6 @@
     "camera": "A locked-off shot or extremely slow, subtle handheld drift to mimic intimate, voyeuristic 35mm cinematography.",
     "temporal_texture": "Film grain and chromatic noise must remain highly active and chaotic frame-to-frame, while the soft light leaks maintain smooth, liquid-like transitions.",
     "avoid": "Sharp digital pans, fast zooms, clean noise-free rendering, or perfectly sharp deep-focus backgrounds."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

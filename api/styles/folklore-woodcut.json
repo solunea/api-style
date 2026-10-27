@@ -41,5 +41,6 @@
     "camera": "Completely static 2D camera with zero parallax; panning occurs strictly along the flat X and Y axes.",
     "temporal_texture": "The stippled risograph noise overlay boils rapidly, while the flat color fills and sharp graphic edges remain perfectly stable over time.",
     "avoid": "Avoid 3D camera rotations, motion blur, smooth tweening, gradient shifts, or dynamic lighting changes."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

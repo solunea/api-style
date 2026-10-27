@@ -39,5 +39,6 @@
     "avoid": "Smooth 60fps interpolation, 3D camera movements, motion blur, complex lighting shifts, and realistic physics."
   },
   "backgroundType": 2,
-  "createdAt": "2026-10-06T13:58:17.480Z"
+  "createdAt": "2026-10-06T13:58:17.480Z",
+  "model": "prunaai/z-image-turbo"
 }

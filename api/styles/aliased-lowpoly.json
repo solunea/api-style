@@ -40,5 +40,6 @@
     "camera": "The camera should pan or orbit on a fixed, rigid track, avoiding any handheld shake, maintaining a steady, mathematical trajectory.",
     "temporal_texture": "Textures must suffer from slight affine texture mapping warping (texture swimming) during camera movement, while the aliased jagged edges crawl and shimmer consistently.",
     "avoid": "Avoid smooth motion blur, fluid dynamics, soft dynamic shadows, modern anti-aliasing, and high-framerate interpolations that break the retro 30fps illusion."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

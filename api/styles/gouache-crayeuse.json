@@ -42,5 +42,6 @@
     "camera": "The camera remains mostly static or performs slow, flat 2D pans without any 3D perspective shifts.",
     "temporal_texture": "The heavy paper grain, chalky scumbling, and scratchy pencil details must boil slightly, refreshing their texture patterns every few frames to mimic traditional animation.",
     "avoid": "Avoid smooth 60fps interpolation, 3D camera rotations, dynamic changing shadows, motion blur, and clean vector-like scaling."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

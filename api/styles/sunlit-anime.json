@@ -38,5 +38,6 @@
     "camera": "Camera movements should be slow pans or zooms, maintaining the flat, 2D illustrative nature of the engraving.",
     "temporal_texture": "The cross-hatching and linework must remain absolutely stable and locked to the forms; lines should not boil, jitter, or redraw between frames.",
     "avoid": "Avoid smooth 3D rotations, motion blur, soft gradients blending, or boiling linework that breaks the illusion of a static etched print."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

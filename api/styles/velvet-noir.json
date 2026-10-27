@@ -37,5 +37,6 @@
     "camera": "Slow, deliberate dolly pushes with rack focus to emphasize the shallow depth of field and bokeh.",
     "temporal_texture": "Film grain and halation around highlights remain constant, with shadows pooling consistently without digital flickering.",
     "avoid": "Avoid erratic camera movements, sudden exposure changes, or sharp digital clarity that breaks the vintage film aesthetic."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

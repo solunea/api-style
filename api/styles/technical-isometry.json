@@ -39,5 +39,6 @@
     "camera": "Static isometric or orthogonal camera, panning strictly along perfectly horizontal or vertical paths.",
     "temporal_texture": "Line weight, flat color fills, and crisp vector edges remain perfectly stable with zero jitter, noise, or lighting shifts.",
     "avoid": "Avoid organic movement, perspective distortion, gradient shifts, depth of field blur, and hand-drawn line boiling."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

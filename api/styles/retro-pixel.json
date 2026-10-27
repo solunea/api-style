@@ -37,5 +37,6 @@
     "camera": "Camera movement is restricted to strict 2D panning along the X and Y axes, shifting by whole pixels to prevent sub-pixel blurring.",
     "temporal_texture": "The pixel grid and aliased edges must remain absolutely static and sharp; dithering patterns should not swim or anti-alias during motion.",
     "avoid": "Avoid smooth motion blur, sub-pixel rendering, high-framerate interpolation, and any form of anti-aliasing or gradient blending between frames."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

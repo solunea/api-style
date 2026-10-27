@@ -1,3 +1,4 @@
+import { normalizeStyleModel } from '../style-model.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -9,15 +10,16 @@ const API_DIR = join(ROOT, 'api');
 const STYLES_DIR = join(API_DIR, 'styles');
 
 // Lecture des données source
-const styles = JSON.parse(readFileSync(DATA_FILE, 'utf-8'));
+const styles = JSON.parse(readFileSync(DATA_FILE, 'utf-8')).map(style => ({ ...style, model: normalizeStyleModel(style.model) }));
 
 // Création des dossiers API
 if (!existsSync(API_DIR)) mkdirSync(API_DIR, { recursive: true });
 if (!existsSync(STYLES_DIR)) mkdirSync(STYLES_DIR, { recursive: true });
 
 // Génération de l'index : api/styles.json (liste complète)
-const index = styles.map(({ id, title, description, description_en, description_fr, image, preview_image, preview_image_removebg, tags, video, backgroundType, createdAt }) => ({
+const index = styles.map(({ id, model, title, description, description_en, description_fr, image, preview_image, preview_image_removebg, tags, video, backgroundType, createdAt }) => ({
   id,
+  model,
   title,
   description,
   description_en,

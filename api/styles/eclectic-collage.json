@@ -38,5 +38,6 @@
     "camera": "Camera remains orthographic and locked, relying on 2D panning and zooming to explore the layered collage.",
     "temporal_texture": "Paper grain, halftone dots, and canvas textures remain static to the screen space, while thick ink contours boil subtly with a low-framerate hand-drawn effect.",
     "avoid": "Avoid smooth 3D camera rotations, realistic physics, motion blur, and seamless volumetric transitions."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

@@ -38,5 +38,6 @@
     "camera": "The camera utilizes slow, dramatic push-ins or stark, locked-off low angles, maintaining a rigid, graphic composition.",
     "temporal_texture": "The smooth gradients and deep black shadow boundaries remain perfectly crisp and stable, while a subtle, uniform film grain shimmers evenly across the frame.",
     "avoid": "Avoid motion blur, soft shadow transitions, realistic ambient occlusion, or erratic, handheld camera shaking that breaks the polished graphic aesthetic."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

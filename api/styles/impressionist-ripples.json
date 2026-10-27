@@ -37,5 +37,6 @@
     "camera": "Slow, steady panning or subtle dollying to emphasize the three-dimensional topography of the impasto paint.",
     "temporal_texture": "The thick paint ridges, brushstroke textures, and canvas weave must remain strictly locked to the surface forms, preventing boiling or swimming textures.",
     "avoid": "Avoid rapid movements, sharp vector transitions, digital morphing, or flattening of the 3D paint texture."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

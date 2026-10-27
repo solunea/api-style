@@ -38,5 +38,6 @@
     "camera": "Static or slow, deliberate panning that allows the hatched shading to redraw dynamically as perspective shifts.",
     "temporal_texture": "The diagonal hatching lines and paper grain must boil slightly, with strokes rapidly redrawing and shifting position between frames while maintaining overall volume and lighting.",
     "avoid": "Smooth digital tweening, 3D camera sweeps, motion blur, or seamless gradient shading."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

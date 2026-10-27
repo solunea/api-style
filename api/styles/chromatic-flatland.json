@@ -37,5 +37,6 @@
     "camera": "A static orthographic camera or slow, perfectly linear 2D panning without any perspective distortion or parallax depth.",
     "temporal_texture": "Colors, edges, and shapes remain absolutely stable and mathematically precise frame-to-frame, with zero flickering, noise, or lighting changes.",
     "avoid": "Avoid 3D camera rotations, motion blur, organic morphing, gradient shifts, or any introduction of dynamic lighting and shadows."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

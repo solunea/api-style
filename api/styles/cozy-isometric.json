@@ -37,5 +37,6 @@
     "camera": "Camera movement is restricted to rigid horizontal or vertical scrolling, locking to the pixel grid without smooth easing.",
     "temporal_texture": "The pixel grid remains absolutely static and locked to the screen space, with no shimmering or anti-aliasing artifacts introduced during movement.",
     "avoid": "Avoid smooth 60fps interpolation, sub-pixel movement, motion blur, anti-aliasing, and modern dynamic lighting gradients."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

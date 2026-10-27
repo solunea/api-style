@@ -38,5 +38,6 @@
     "camera": "Camera remains static or uses slow, locked-off 2D pans, strictly avoiding any 3D parallax or perspective shifts.",
     "temporal_texture": "The crayon-like grain on the outlines boils constantly, while the flat color fills remain perfectly solid and unshaded throughout the motion.",
     "avoid": "Avoid smooth 60fps interpolation, 3D camera rotations, gradient shading, and motion blur, which destroy the flat, hand-drawn editorial aesthetic."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

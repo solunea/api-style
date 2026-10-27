@@ -29,6 +29,7 @@ api-style/
 {
   "id": "neon-glow",
   "title": "Neon Glow",
+  "model": "prunaai/z-image-turbo",
   "description": "Style néon lumineux aux couleurs vives et contrastées.",
   "prompt": "A vibrant neon-lit illustration of {{subject}} with {{primary_color}} glow and {{accent_color}} highlights...",
   "background_prompt": "A dark cityscape environment with glowing {{primary_color}} neon signs and {{accent_color}} light reflections on wet surfaces...",
@@ -45,6 +46,7 @@ api-style/
 
 | Champ | Description |
 |---|---|
+| `model` | Modèle de génération du style : `prunaai/z-image-turbo` (par défaut, y compris si le champ est absent) ou `prunaai/p-image-ideogram`. Utilisé par les aperçus et par Cannelle. |
 | `prompt` | Prompt principal pour générer une image dans ce style. Utilise des `{{variables}}` remplaçables. |
 | `background_prompt` | Prompt dédié au décor/environnement. Fonctionne en arrière-plan ET en premier plan (profondeur). |
 | `variables` | Liste des variables détectées dans le prompt (`subject`, `primary_color`, `accent_color`, etc.). |
@@ -66,6 +68,10 @@ Ouvre http://localhost:3003 — permet de :
 - **Auto-remplir les champs avec l'IA** (Gemini 3 Pro via Replicate) à partir d'une image
 - Re-analyser les images existantes avec l'IA
 - Publier sur GitHub en un clic
+
+Le sélecteur **Modèle de génération** définit le modèle du style pour ses images et ses décors. Les aperçus avec et sans fond utilisent ce choix ; la génération en lot respecte le modèle de chaque style. Avec P-Image Ideogram et une image de référence, l'image est automatiquement décrite par le VLM avant la génération, même en mode direct. Z-Image Turbo conserve son mode img2img direct.
+
+Les routes de création/modification acceptent le champ `model`. Une création sans ce champ utilise Z-Image Turbo ; une modification sans ce champ conserve le choix existant. Une valeur non prise en charge renvoie une erreur 400. La route `/api/generate-preview` accepte aussi `model` pour tester un choix avant sauvegarde ; à défaut, elle utilise le modèle du `style_id`, puis Z-Image Turbo. Les exports liste et détail incluent ce champ.
 
 ### Auto-remplissage IA
 

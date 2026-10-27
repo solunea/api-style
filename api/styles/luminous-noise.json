@@ -37,5 +37,6 @@
     "camera": "A completely static camera, treating the composition as a flat, moving poster rather than a navigable 3D space.",
     "temporal_texture": "The heavy stipple grain must boil rapidly and uniformly across the entire frame, while the crisp outer edges of the silhouettes remain perfectly stable and anti-aliased.",
     "avoid": "Avoid any 3D camera rotation, soft or blurry outer edges, realistic textures, or changes to the pitch-black void."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

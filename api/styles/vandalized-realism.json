@@ -38,5 +38,6 @@
     "camera": "A slow, steady dolly-in that emphasizes the parallax between the flat 2D graphic overlay and the deep 3D realistic underpainting.",
     "temporal_texture": "The canvas weave and soft oil brushstrokes must remain locked to the background, while the flat graphic lines must maintain absolute opacity and uniform thickness without any lighting changes.",
     "avoid": "Avoid any 3D rotation that breaks the illusion of the flat 2D overlay, and prevent the graphic lines from casting shadows onto the realistic painting."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

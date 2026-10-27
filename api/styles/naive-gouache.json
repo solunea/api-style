@@ -37,5 +37,6 @@
     "camera": "Locked-off camera with zero 3D parallax, maintaining the flat 2D perspective.",
     "temporal_texture": "Brushstrokes and paper grain subtly jitter and redraw every few frames to emphasize the handcrafted medium.",
     "avoid": "Smooth tweening, 3D camera moves, dynamic lighting changes, or realistic motion blur."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

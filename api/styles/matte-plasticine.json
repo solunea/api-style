@@ -37,5 +37,6 @@
     "camera": "A static or extremely slow, linear tracking shot on a long lens, maintaining the diorama-like orthographic feel.",
     "temporal_texture": "Lighting, ambient occlusion shadows, and matte surface textures remain perfectly stable and noise-free, maintaining a pristine 3D rendered look.",
     "avoid": "Avoid motion blur, fast camera pans, jittery keyframes, realistic physics, glossy reflections, or changes in lighting intensity."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

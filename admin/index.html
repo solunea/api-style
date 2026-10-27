@@ -102,6 +102,15 @@
           </div>
 
           <div class="form-group">
+            <label for="form-model">Modèle de génération</label>
+            <select id="form-model">
+              <option value="prunaai/z-image-turbo">Z-Image Turbo</option>
+              <option value="prunaai/p-image-ideogram">P-Image Ideogram</option>
+            </select>
+            <small>Avec P-Image Ideogram, une image de référence est décrite avant la génération.</small>
+          </div>
+
+          <div class="form-group">
             <div style="display:flex;align-items:center;justify-content:space-between">
               <label for="form-description-en">Description</label>
               <div class="tab-switch" style="margin:0">

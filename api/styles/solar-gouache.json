@@ -38,5 +38,6 @@
     "camera": "Locked-off static tripod shots with zero perspective distortion, panning, or camera drift.",
     "temporal_texture": "Color fills must remain perfectly solid and flicker-free, with shadow edges maintaining their razor-sharp, unblended vector quality throughout the animation.",
     "avoid": "Avoid any 3D lighting shifts, motion blur, gradient transitions, noisy textures, or soft blending of edges."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

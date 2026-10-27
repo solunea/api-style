@@ -1,6 +1,7 @@
 [
   {
     "id": "gouache-crayeuse",
+    "model": "prunaai/z-image-turbo",
     "title": "Chalky Gouache",
     "description": "Style d'illustration de livre pour enfants du milieu du siècle utilisant de la gouache numérique et des techniques de pinceau sec. Présente des blocs de couleurs mates et plates avec des bords irréguliers et des accents de crayons de couleur griffonnés, créant une perspective chaleureuse, aplatie et naïve.",
     "description_en": "Mid-century children's book illustration style utilizing digital gouache and dry brush techniques. Features flat, matte color blocks with ragged edges and scratchy colored pencil accents, creating a warm, flattened, naive perspective.",
@@ -34,6 +35,7 @@
   },
   {
     "id": "doodle-pop",
+    "model": "prunaai/z-image-turbo",
     "title": "Graphic Doodle",
     "description": "Ce style présente une esthétique de gribouillage contemporaine et ludique, caractérisée par des contours expressifs à l'encre noire et des remplissages vectoriels plats et sans ombres. Il utilise une palette de couleurs très restreinte, s'appuyant sur des contrastes saisissants entre des zones blanches nettes, des motifs géométriques noirs denses et des couleurs d'accentuation vibrantes. La composition est dynamisée par des éléments graphiques flottants, des lignes d'action rayonnantes et une typographie fantaisiste qui créent une atmosphère dynamique de carnet de croquis.",
     "description_en": "This style features a contemporary, playful doodle aesthetic characterized by bold, expressive black ink outlines and flat, unshaded vector fills. It utilizes a highly restricted color palette, relying on stark contrasts between crisp white areas, heavy black geometric patterns, and vibrant accent colors. The composition is energized by floating graphic elements, radiating action lines, and whimsical typography that create a dynamic, sketchbook-like atmosphere.",
@@ -66,6 +68,7 @@
   },
   {
     "id": "vibrant-vector",
+    "model": "prunaai/z-image-turbo",
     "title": "Geometric Pop",
     "description": "Illustration vectorielle nette aux contours rigides, caractérisée par des aplats de couleurs et un ombrage en cel-shading géométrique. Elle présente des silhouettes acérées, l'absence totale de dégradés et une palette audacieuse et contrastée rappelant le design graphique éditorial moderne.",
     "description_en": "Clean, hard-edged vector illustration characterized by flat color blocking and geometric cel-shading. It features razor-sharp silhouettes, an absolute absence of gradients, and bold, high-contrast palettes reminiscent of modern editorial graphic design.",
@@ -96,6 +99,7 @@
   },
   {
     "id": "pastel-clay",
+    "model": "prunaai/z-image-turbo",
     "title": "Pastel Claymorphism",
     "description": "Un style de rendu 3D minimaliste caractérisé par des matériaux mats et doux, des bords géométriques arrondis et une palette pastel. L'éclairage repose sur une lumière de studio diffuse avec une douce occlusion ambiante et un grain de rendu uniforme.",
     "description_en": "A minimalist 3D rendering style characterized by soft, matte materials, rounded geometric edges, and a gentle pastel palette. Illumination relies on diffuse studio lighting with soft ambient occlusion and a subtle, uniform render grain.",
@@ -126,6 +130,7 @@
   },
   {
     "id": "risograph-spotlight",
+    "model": "prunaai/z-image-turbo",
     "title": "Grainy Flat",
     "description": "Illustration éditoriale numérique contemporaine définie par des aplats de couleurs et une texture granuleuse uniforme rappelant la craie. Elle présente une perspective forcée, des lignes tremblantes et des cônes de lumière géométriques superposés.",
     "description_en": "Contemporary digital editorial illustration defined by flat color blocking and a heavy, uniform chalk-like grain texture. It features forced perspective, thin wobbly linework, and stark, geometric light cones overlaying muted palettes.",
@@ -156,6 +161,7 @@
   },
   {
     "id": "folklore-woodcut",
+    "model": "prunaai/z-image-turbo",
     "title": "Folkloric Silkscreen",
     "description": "Art folklorique numérique contemporain imitant la sérigraphie du milieu du siècle. Défini par une palette strictement limitée et très contrastée de couleurs unies, utilisant des textures risographiques pointillées et des motifs botaniques décoratifs au lieu d'ombrages traditionnels.",
     "description_en": "Contemporary digital folk art mimicking mid-century silkscreen prints. Defined by a strictly limited, high-contrast palette of solid flat colors, utilizing stippled risograph textures and decorative botanical motifs instead of traditional shading.",
@@ -188,6 +194,7 @@
   },
   {
     "id": "bauhaus-geometry",
+    "model": "prunaai/z-image-turbo",
     "title": "Bauhaus Geometry",
     "description": "Design graphique vectoriel minimaliste inspiré des mouvements Bauhaus et De Stijl. Il présente des primitives géométriques planes et sans ombres qui s'entrecroisent avec des bords nets.",
     "description_en": "Minimalist vector graphic design inspired by the Bauhaus and De Stijl movements. It features flat, unshaded geometric primitives intersecting cleanly with razor-sharp edges.",
@@ -217,6 +224,7 @@
   },
   {
     "id": "felted-whimsy",
+    "model": "prunaai/z-image-turbo",
     "title": "Needle Felt",
     "description": "Une esthétique de diorama miniature tactile imitant l'artisanat de la laine feutrée à l'aiguille. Elle présente des palettes pastel douces, une macrophotographie avec une profondeur de champ extrêmement faible et des textures duveteuses et fibreuses éclairées par une lumière de studio douce et diffuse.",
     "description_en": "A tactile, miniature diorama aesthetic mimicking needle-felted wool craft. It features soft pastel palettes, macro photography with extreme shallow depth of field, and fuzzy, fibrous textures illuminated by gentle, diffused studio lighting.",
@@ -247,6 +255,7 @@
   },
   {
     "id": "soft-vector",
+    "model": "prunaai/z-image-turbo",
     "title": "Minimalist Vector",
     "description": "Illustration vectorielle contemporaine et épurée, caractérisée par des palettes pastel douces, des personnages sans visage et un éclairage directionnel doux. Les formes sont définies par des bords nets et des dégradés subtils sans contours, créant une atmosphère calme.",
     "description_en": "Clean, contemporary vector illustration characterized by muted pastel palettes, faceless figures, and soft directional lighting. Shapes are defined by crisp edges and subtle gradients rather than outlines, creating a calm, editorial atmosphere.",
@@ -276,6 +285,7 @@
   },
   {
     "id": "textured-riso",
+    "model": "prunaai/z-image-turbo",
     "title": "Fauvist Pop",
     "description": "Un style d'illustration numérique contemporain mêlant le blocage des couleurs fauvistes à des textures expressives au pinceau sec. Il se caractérise par des lignes d'encre déconnectées et ondulées, des pointillés texturés et des formes géométriques plates et très saturées pour déconstruire les formes.",
     "description_en": "A contemporary digital illustration style blending Fauvist color blocking with expressive drybrush textures. It features disconnected, squiggly ink lines, textural stippling, and flat, highly saturated geometric shapes to deconstruct forms.",
@@ -307,6 +317,7 @@
   },
   {
     "id": "carved-linocut",
+    "model": "prunaai/z-image-turbo",
     "title": "Blockprint Graphic",
     "description": "Un style graphique très contrasté imitant la linogravure ou l'impression au bloc. Il présente des silhouettes épaisses et massives avec des détails nets sculptés dans l'espace négatif et des contours géométriques irréguliers, sous forme d'art vectoriel bicolore plat.",
     "description_en": "A high-contrast graphic style mimicking traditional linocut or block printing. It features thick, chunky silhouettes with crisp, carved negative space details and irregular geometric contours, rendered as flat duotone vector art.",
@@ -337,6 +348,7 @@
   },
   {
     "id": "velvet-noir",
+    "model": "prunaai/z-image-turbo",
     "title": "Noir Chiaroscuro",
     "description": "Photographie monochrome très contrastée rappelant le film noir des années 1940. Caractérisée par un éclairage clair-obscur dramatique, des contre-jours marqués, une brume atmosphérique et une faible profondeur de champ avec un bokeh prononcé.",
     "description_en": "High-contrast monochrome photography reminiscent of 1940s film noir. Features dramatic chiaroscuro lighting, strong rim lights, atmospheric haze, and shallow depth of field with pronounced bokeh.",
@@ -367,6 +379,7 @@
   },
   {
     "id": "tech-vector",
+    "model": "prunaai/z-image-turbo",
     "title": "Flat Monoline",
     "description": "Illustration vectorielle numérique moderne caractérisée par des contours monolignes uniformes et des aplats de couleurs. Elle présente une esthétique minimaliste non éclairée avec des dispositions spatiales pseudo-3D flottantes et des accents géométriques abstraits.",
     "description_en": "Modern digital vector illustration characterized by uniform monoline contours and flat color fills. It features a minimalist, unlit aesthetic with floating pseudo-3D spatial arrangements and abstract geometric accents.",
@@ -397,6 +410,7 @@
   },
   {
     "id": "gestural-contour",
+    "model": "prunaai/z-image-turbo",
     "title": "Gestural Offset",
     "description": "Illustration éditoriale moderne du milieu du siècle caractérisée par des lignes de contour rapides et continues à l'encre noire sur des blocs de couleurs géométriques plats et mal alignés. Le style utilise des effets d'impression décalés, où des teintes unies et des ombrages rugueux au marqueur gris flottent indépendamment du tracé lâche et gestuel.",
     "description_en": "Mid-century modern editorial illustration featuring rapid, continuous black ink contour lines over misaligned, flat geometric color blocks. The style uses intentional offset printing effects, where solid hues and rough greyscale marker shading float independently of the loose, gestural linework.",
@@ -429,6 +443,7 @@
   },
   {
     "id": "organic-cutout",
+    "model": "prunaai/z-image-turbo",
     "title": "Organic Cutout",
     "description": "Un style graphique minimaliste à fort contraste, caractérisé par des silhouettes pleines et ondulantes. Rappelant les papiers découpés du milieu du siècle, il repose sur des aplats de couleurs et un jeu audacieux d'espace positif/négatif sans aucun ombrage ni détail interne.",
     "description_en": "A minimalist, high-contrast graphic style featuring solid, undulating silhouettes. Reminiscent of mid-century paper cut-outs, it relies entirely on flat colors and bold positive/negative space interplay without any shading or internal details.",
@@ -459,6 +474,7 @@
   },
   {
     "id": "crayon-sketch",
+    "model": "prunaai/z-image-turbo",
     "title": "Wax Impressionism",
     "description": "Un style d'illustration naïf et vibrant imitant le crayon de cire épais ou le pastel à l'huile sur papier texturé à gros grain. Il repose sur des hachures directionnelles agressives et un mélange optique des couleurs plutôt que sur des fondus, créant une surface très tactile.",
     "description_en": "A vibrant, naive illustration style mimicking heavy wax crayon or oil pastel on coarse textured paper. It relies on aggressive, directional hatching and optical color mixing rather than smooth blending, creating a highly tactile, energetic surface.",
@@ -491,6 +507,7 @@
   },
   {
     "id": "impressionist-ripples",
+    "model": "prunaai/z-image-turbo",
     "title": "Vibrant Impasto",
     "description": "Un style de peinture à l'huile impressionniste moderne caractérisé par des coups de pinceau empâtés épais et des éraflures au couteau à palette. Il utilise un mélange optique de couleurs vibrantes, un éclairage très contrasté et des surfaces de peinture très texturées aux bords déchiquetés.",
     "description_en": "A modern impressionist oil painting style characterized by thick, expressive impasto brushwork and palette knife scrapes. Employs vibrant optical color mixing, high-contrast lighting, and highly textured, tactile paint surfaces with ragged, painterly edges.",
@@ -521,6 +538,7 @@
   },
   {
     "id": "luminous-noise",
+    "model": "prunaai/z-image-turbo",
     "title": "Luminous Grain",
     "description": "Un style d'illustration numérique minimaliste défini par des silhouettes nettes illuminées par des dégradés vibrants sur un fond noir absolu. Un grain de pointillé dense et uniforme recouvre l'image, apportant une texture tactile façon risographie aux contours vectoriels.",
     "description_en": "A minimalist digital illustration style defined by razor-sharp silhouettes illuminated by vibrant, smooth gradients against a stark, pitch-black void. Heavy, uniform stipple grain overlays the entire image, giving a tactile, risograph-like texture to the pristine vector contours.",
@@ -551,6 +569,7 @@
   },
   {
     "id": "charcoal-gesture",
+    "model": "prunaai/z-image-turbo",
     "title": "Gestural Charcoal",
     "description": "Un croquis minimaliste au fusain utilisant des traits verticaux rapides et appuyés ainsi que des boucles chaotiques. La forme est suggérée par des traînées de pigments denses et non estompées sur un papier fortement texturé.",
     "description_en": "A minimalist, gestural charcoal sketch utilizing rapid, heavy vertical strokes and chaotic looping lines. Form is suggested through dense, unblended pigment drags and ample negative space on heavily textured paper.",
@@ -580,6 +599,7 @@
   },
   {
     "id": "vandalized-realism",
+    "model": "prunaai/z-image-turbo",
     "title": "Graphic Overlay",
     "description": "Une juxtaposition saisissante d'une peinture à l'huile réaliste très détaillée, recouverte de lignes vectorielles graphiques épaisses, plates et sans ombres. Le rendu sous-jacent présente un mélange doux et un éclairage naturaliste, tandis que les lignes de contour uniformes aplatissent la perspective dans un style pop-art audacieux.",
     "description_en": "A striking juxtaposition of highly detailed, realistic oil painting overlaid with thick, flat, unshaded graphic vector lines. The underlying rendering features soft blending and naturalistic lighting, while the stark, uniform contour lines flatten the perspective in a bold pop-art style.",
@@ -611,6 +631,7 @@
   },
   {
     "id": "eclectic-collage",
+    "model": "prunaai/z-image-turbo",
     "title": "Gestural Collage",
     "description": "Un style vibrant en techniques mixtes mêlant des coups de pinceau expressifs à des graphiques vectoriels et de la typographie. Il présente une composition superposée et fragmentée utilisant des trames de demi-teintes, des textures de papier épaisses et des lignes gestuelles audacieuses. L'esthétique fusionne le pop art avec l'illustration éditoriale contemporaine grâce à des couleurs très contrastées et des plans 2D superposés.",
     "description_en": "A vibrant mixed-media style blending expressive painterly brushstrokes with crisp vector graphics and typography. It features a layered, fragmented composition using halftone patterns, heavy paper textures, and bold gestural linework. The aesthetic merges pop art sensibilities with contemporary editorial illustration through high-contrast colors and overlapping 2D planes.",
@@ -642,6 +663,7 @@
   },
   {
     "id": "miniature-diorama",
+    "model": "prunaai/z-image-turbo",
     "title": "Tilt-Shift Diorama",
     "description": "Un style photographique tilt-shift photoréaliste qui transforme les scènes en modèles réduits miniatures. Il se caractérise par une profondeur de champ extrêmement faible avec une bande étroite de mise au point nette, un flou agressif au premier plan et à l'arrière-plan, et des textures lisses rappelant des jouets.",
     "description_en": "A photorealistic tilt-shift photography style that transforms scenes into miniature scale models. It features an extremely shallow depth of field with a narrow band of sharp focus, aggressive foreground and background blur, and smooth, toy-like material textures.",
@@ -671,6 +693,7 @@
   },
   {
     "id": "grainy-serigraph",
+    "model": "prunaai/z-image-turbo",
     "title": "Textured Serigraph",
     "description": "Un style d'illustration minimaliste à couleurs plates imitant la sérigraphie vintage et le risographe. Il présente des blocs de couleurs audacieux sans dégradés, des ombres portées nettes, des bords organiques irréguliers et une texture de grain de papier uniforme omniprésente.",
     "description_en": "A minimalist, flat-color illustration style mimicking vintage screen printing and risograph techniques. It features bold, unshaded color blocks, stark cast shadows, organic ragged edges, and a pervasive, uniform paper grain texture.",
@@ -700,6 +723,7 @@
   },
   {
     "id": "retro-pixel",
+    "model": "prunaai/z-image-turbo",
     "title": "Aliased Arcade",
     "description": "Un style nostalgique de pixel art 8 à 16 bits, caractérisé par des bords nets et en escalier ainsi qu'une palette de couleurs strictement limitée. Le rendu s'appuie sur des blocs de couleurs durs, des contours crénelés et un tramage en damier occasionnel, évoquant l'esthétique des jeux vidéo rétro.",
     "description_en": "A nostalgic 8-bit to 16-bit pixel art style characterized by sharp, jagged edges and a strictly limited color palette. Rendering relies on hard color blocking, aliased contours, and occasional checkerboard dithering, evoking classic retro video game aesthetics.",
@@ -730,6 +754,7 @@
   },
   {
     "id": "scribble-analog",
+    "model": "prunaai/z-image-turbo",
     "title": "Ghosted Contour",
     "description": "Un style technique mixte associant une photographie monochrome vintage douce à un tracé vectoriel décalé et saisissant. L'image sous-jacente présente un grain de film marqué, tandis qu'une ligne continue crée une aura surréaliste en suivant lâchement les contours.",
     "description_en": "A mixed-media style combining soft, vintage monochromatic photography with stark, offset vector line art. The underlying image features heavy film grain and diffused lighting, while continuous line tracing creates a surreal aura by loosely following contours.",
@@ -762,6 +787,7 @@
   },
   {
     "id": "sunlit-anime",
+    "model": "prunaai/z-image-turbo",
     "title": "Intaglio Etching",
     "description": "Un style d'illustration très détaillé, monochrome, imitant la gravure sur acier classique ou la taille-douce. L'image est entièrement construite par des réseaux complexes de ridules sombres et de hachures croisées sur un fond chaud semblable à du papier non texturé.",
     "description_en": "A highly detailed, monochromatic illustration style mimicking classical steel engraving or intaglio printmaking. The image is constructed entirely through intricate networks of fine, dark linework and cross-hatching against a warm, untextured paper-like background.",
@@ -794,6 +820,7 @@
   },
   {
     "id": "naive-gouache",
+    "model": "prunaai/z-image-turbo",
     "title": "Naive Gouache",
     "description": "Illustration naïve contemporaine à la gouache opaque. Caractérisée par des aplats de couleurs vibrantes, des textures de pinceau sec et des contours lâches avec une perspective aplatie.",
     "description_en": "Contemporary naive illustration using opaque gouache. Features flat, vibrant color blocking, dry brush textures, and loose, sketchy outlines with flattened perspective.",
@@ -824,6 +851,7 @@
   },
   {
     "id": "risograph-pop",
+    "model": "prunaai/z-image-turbo",
     "title": "Grainy Ligne-Claire",
     "description": "Illustration pop-art plate et très saturée, définie par des contours noirs uniformes. Caractérisée par l'absence totale d'ombrage, des aplats de couleurs unies et une forte texture granuleuse de type risographie.",
     "description_en": "Flat, highly saturated pop-art illustration defined by uniform black monoweight outlines. Characterized by a total absence of shading, solid color fills, and a heavy, uniform risograph-style paper grain overlay.",
@@ -855,6 +883,7 @@
   },
   {
     "id": "solar-gouache",
+    "model": "prunaai/z-image-turbo",
     "title": "Sunlit Gouache",
     "description": "Un style d'illustration vibrant et ensoleillé rappelant l'esthétique City Pop japonaise des années 1980. Il se caractérise par des aplats de couleurs opaques, des ombres portées nettes et une absence totale de contours ou de dégradés, offrant un rendu vectoriel graphique, net et tranquille.",
     "description_en": "A vibrant, sun-drenched illustration style reminiscent of 1980s Japanese City Pop aesthetics. It features flat, opaque color blocking, razor-sharp cast shadows, and a complete absence of outlines or gradients, resulting in a crisp, tranquil, and highly graphic vector-like finish.",
@@ -886,6 +915,7 @@
   },
   {
     "id": "phosphor-topology",
+    "model": "prunaai/z-image-turbo",
     "title": "Cozy Orthographic",
     "description": "Un style d'illustration numérique 2D chaleureux, caractérisé par des contours sombres épais et irréguliers et des aplats de couleurs. Il présente une perspective pseudo-isométrique, un ombrage minimaliste et une finition nette rappelant les jeux indépendants.",
     "description_en": "A wholesome digital 2D illustration style characterized by thick, irregular dark outlines and flat color fills. It features a pseudo-isometric perspective, minimalistic cel-shading, and a clean, untextured finish reminiscent of indie games.",
@@ -916,6 +946,7 @@
   },
   {
     "id": "vivid-pulp",
+    "model": "prunaai/z-image-turbo",
     "title": "Graphic Chiaroscuro",
     "description": "Illustration numérique à fort contraste fusionnant l'esthétique des comics pulp des années 80 avec un rendu lisse à l'aérographe. Définie par un éclairage directionnel dur, des ombres noires pures et écrasantes, et des arrière-plans unis hyper-saturés créant une intensité saisissante de type affiche.",
     "description_en": "High-contrast digital illustration merging 1980s pulp comic aesthetics with smooth, airbrushed rendering. Defined by harsh directional lighting, crushing pure black shadows, and hyper-saturated solid backgrounds that create a stark, poster-like intensity.",
@@ -947,6 +978,7 @@
   },
   {
     "id": "solar-ligne-claire",
+    "model": "prunaai/z-image-turbo",
     "title": "Clear-Line Frontier",
     "description": "Une esthétique de bande dessinée européenne définie par des contours noirs nets et uniformes (ligne claire) et des aplats de couleurs vibrantes. Elle contraste de vastes dégradés lisses avec un travail à l'encre hyper-détaillé sur les structures.",
     "description_en": "A European comic book aesthetic defined by crisp, uniform black outlines (ligne claire) and flat, vibrant color washes. It contrasts vast, smooth gradients with hyper-detailed, intricate ink linework on structures and terrain.",
@@ -978,6 +1010,7 @@
   },
   {
     "id": "planetary-ligne",
+    "model": "prunaai/z-image-turbo",
     "title": "Pastel Ink",
     "description": "Un style de bande dessinée européenne Ligne Claire caractérisé par des contours noirs nets et uniformes et des couleurs pastel délavées par le soleil. Les textures sont rendues par des pointillés à l'encre minutieux, tandis que la lumière crue est représentée par des ombres portées nettes et sans dégradé.",
     "description_en": "A European Ligne Claire comic book style characterized by crisp, uniform black outlines and flat, sun-bleached pastel colors. Textures are rendered through meticulous ink stippling and sparse hatching, while harsh light is depicted with stark, unblended solid drop shadows.",
@@ -1010,6 +1043,7 @@
   },
   {
     "id": "luminous-gouache",
+    "model": "prunaai/z-image-turbo",
     "title": "Textured Editorial",
     "description": "Illustration éditoriale numérique plate combinant des blocs de couleurs sans ombres avec des contours texturés au fusain ou au crayon. Les formes sont définies par des teintes unies superposées et des lignes organiques légèrement décalées, créant une esthétique moderne et naïve sans dégradés.",
     "description_en": "Flat digital editorial illustration combining unshaded color blocking with loose, textured charcoal or crayon outlines. Forms are defined by overlapping flat hues and slightly misregistered, organic linework, creating a modern, naive aesthetic devoid of gradient shading.",
@@ -1041,6 +1075,7 @@
   },
   {
     "id": "cozy-isometric",
+    "model": "prunaai/z-image-turbo",
     "title": "Sunlit Pixel",
     "description": "Un style pixel art nostalgique 16 à 32 bits, caractérisé par un crénelage aux bords nets et une palette de couleurs restreinte et baignée de soleil. L'éclairage est défini par de forts contrastes directionnels et des ombres portées en blocs, créant de la profondeur via des grappes de pixels sans anticrénelage.",
     "description_en": "A nostalgic 16-bit to 32-bit pixel art style characterized by hard-edged aliasing and a restricted, sun-drenched color palette. Lighting is defined by strong directional contrasts and blocky cast shadows, creating depth through pixel clusters rather than anti-aliasing.",
@@ -1071,6 +1106,7 @@
   },
   {
     "id": "constructive-draft",
+    "model": "prunaai/z-image-turbo",
     "title": "Industrial Sketch",
     "description": "Croquis de présentation en design industriel combinant des traits d'encre rapides et lâches avec de larges coups de marqueur à alcool translucides. Présente des lignes de construction visibles, des ombres hachurées, des annotations manuscrites et un bloc graphique de couleur en arrière-plan sur papier texturé.",
     "description_en": "Industrial design presentation sketch combining loose, rapid ink linework with broad, translucent alcohol marker strokes. Features visible construction lines, hatched shadows, handwritten annotations, and a stark graphic block of background color on textured paper.",
@@ -1108,6 +1144,7 @@
   },
   {
     "id": "retro-low-poly",
+    "model": "prunaai/z-image-turbo",
     "title": "Fauvist Marker",
     "description": "Un style d'illustration libre et expressif utilisant de larges coups de pinceau au feutre ou à la gouache dans une palette très restreinte. Les formes sont définies par l'espace négatif et des lavis translucides de couleurs vives plutôt que par des contours stricts.",
     "description_en": "A loose, expressive illustration style using broad marker or gouache brushstrokes in a highly restricted palette. Forms are defined by negative space and overlapping translucent washes of bold color rather than strict outlines.",
@@ -1140,6 +1177,7 @@
   },
   {
     "id": "technical-isometry",
+    "model": "prunaai/z-image-turbo",
     "title": "Technical Exploded",
     "description": "Dessin vectoriel isométrique épuré rappelant les schémas techniques et les manuels d'instructions. Il présente des contours noirs uniformes, des lignes de flux en pointillés et des accents de couleurs plates sans ombres sur un fond immaculé.",
     "description_en": "Clean, isometric vector line art resembling technical diagrams and instruction manuals. Features uniform black outlines, dashed flow lines, and flat, unshaded color accents on a pristine background.",
@@ -1172,6 +1210,7 @@
   },
   {
     "id": "graphite-chiaroscuro",
+    "model": "prunaai/z-image-turbo",
     "title": "Graphite Hatching",
     "description": "Croquis expressif au crayon traditionnel défini par des hachures diagonales rapides et audacieuses et des lignes de contour à pression variable. L'ombrage est réalisé entièrement par des traits parallèles sans estompage, laissant le grain du papier texturé visible dans les hautes lumières.",
     "description_en": "Expressive traditional pencil sketch defined by rapid, bold diagonal hatching and variable-pressure contour lines. Shading is achieved entirely through parallel strokes without blending, leaving the textured paper grain visible in the highlights.",
@@ -1203,6 +1242,7 @@
   },
   {
     "id": "matte-plasticine",
+    "model": "prunaai/z-image-turbo",
     "title": "Matte Diorama",
     "description": "Style d'illustration 3D caractérisé par des surfaces lisses et mates, évoquant l'esthétique des jouets en vinyle. L'éclairage est doux et diffus, projetant de légères ombres d'occlusion ambiante sur un fond sans couture pour créer une composition minimaliste et calme.",
     "description_en": "3D illustration style featuring smooth, matte surfaces and a vinyl toy aesthetic. Lighting is soft and diffused, casting gentle ambient occlusion shadows against a seamless backdrop to create a calm, minimalist composition.",
@@ -1233,6 +1273,7 @@
   },
   {
     "id": "hybrid-daydream",
+    "model": "prunaai/z-image-turbo",
     "title": "Cel Composite",
     "description": "Une esthétique mixte combinant des illustrations vectorielles plates en cel-shading superposées à des arrière-plans photographiques vibrants et haute résolution. Les éléments illustrés de premier plan présentent des contours noirs nets et des aplats de couleurs, interagissant avec l'environnement réaliste par le biais de reflets simulés.",
     "description_en": "A mixed-media aesthetic combining flat, 2D cel-shaded vector illustrations superimposed onto vibrant, high-resolution photographic backgrounds. The illustrated foreground elements feature crisp black outlines and solid color fills, interacting seamlessly with the realistic environment through simulated reflections and spatial grounding.",
@@ -1263,6 +1304,7 @@
   },
   {
     "id": "tactile-diorama",
+    "model": "prunaai/z-image-turbo",
     "title": "Matte 3D",
     "description": "Une approche de rendu 3D propre et stylisée, courante dans l'image de marque technologique moderne. Elle présente des géométries lisses, des matériaux mats avec des textures tactiles subtiles et un éclairage de studio doux.",
     "description_en": "A clean, stylized 3D rendering approach common in modern tech branding. It features smooth geometries, matte materials with subtle tactile textures, and soft studio lighting for a friendly, approachable aesthetic.",
@@ -1293,6 +1335,7 @@
   },
   {
     "id": "nostalgic-opulence",
+    "model": "prunaai/z-image-turbo",
     "title": "Opulent Nostalgia",
     "description": "Un style photographique cinématographique vintage imitant le film 35 mm avec un flash frontal direct. Il présente une esthétique maximaliste, un grain de film prononcé et un doux halo, contrastant des sujets pastel avec des ombres profondes, chaudes et encombrées.",
     "description_en": "A vintage cinematic photographic style mimicking 35mm film with direct frontal flash. It features a maximalist aesthetic, heavy film grain, and soft halation, contrasting pastel subjects against deep, warm, cluttered shadows.",
@@ -1323,6 +1366,7 @@
   },
   {
     "id": "granular-airbrush",
+    "model": "prunaai/z-image-turbo",
     "title": "Lomographic Haze",
     "description": "Émule la photographie argentique 35 mm vintage caractérisée par un grain chromatique prononcé, une faible profondeur de champ et d'importantes fuites de lumière. L'esthétique repose sur des lavis de couleurs doux et oniriques et un halo cinématographique qui débordent sur le cadre.",
     "description_en": "Emulates vintage 35mm film photography characterized by heavy chromatic grain, shallow depth of field, and prominent optical light leaks. The aesthetic relies on soft, dreamy color washes and cinematic halation that bleed across the frame.",
@@ -1353,6 +1397,7 @@
   },
   {
     "id": "burin-intaglio",
+    "model": "prunaai/z-image-turbo",
     "title": "Flocked CGI",
     "description": "Rendu 3D haut de gamme caractérisé par un flocage dense et uniforme et des textures feutrées appliquées à des formes géométriques arrondies. Des couleurs hyper-vibrantes, un éclairage global doux et une faible profondeur de champ créent une esthétique tactile de jouet de créateur.",
     "description_en": "High-end 3D rendering characterized by dense, uniform flocking and felt-like textures applied to rounded geometric forms. Hyper-vibrant colors, soft global illumination, and shallow depth of field create a tactile, premium designer-toy aesthetic.",
@@ -1386,6 +1431,7 @@
   },
   {
     "id": "graphic-monoline",
+    "model": "prunaai/z-image-turbo",
     "title": "Geometric Monoline",
     "description": "Un style vectoriel numérique minimaliste utilisant des lignes uniformes et sans ombrage sur un fond uni. Les sujets sont construits à partir de formes géométriques nettes, de lignes parallèles et de courbes parfaites, avec des extrémités de trait arrondies et une esthétique plate non éclairée.",
     "description_en": "A minimalist digital vector style utilizing uniform, unshaded line art against a solid background. Subjects are constructed from crisp geometric shapes, parallel lines, and perfect curves, featuring rounded stroke caps and a flat, unlit aesthetic.",
@@ -1415,6 +1461,7 @@
   },
   {
     "id": "chromatic-flatland",
+    "model": "prunaai/z-image-turbo",
     "title": "Midcentury Geometric",
     "description": "Ce style utilise des formes géométriques plates et sans ombres, caractéristiques de l'illustration moderne du milieu du siècle et de l'art vectoriel minimaliste. Il présente des bords tranchants, une absence de contours et s'appuie entièrement sur des blocs de couleurs mates à fort contraste pour définir les formes et la profondeur spatiale.",
     "description_en": "This style utilizes flat, unshaded geometric shapes characteristic of mid-century modern illustration and minimalist vector art. It features razor-sharp edges, an absence of outlines, and relies entirely on high-contrast, matte color blocking to define forms and spatial depth.",
@@ -1445,6 +1492,7 @@
   },
   {
     "id": "radiant-scumble",
+    "model": "prunaai/z-image-turbo",
     "title": "Luminous Painterly",
     "description": "Un style d'illustration numérique contemporain caractérisé par des coups de pinceau texturés et un éclairage atmosphérique radieux. Les formes sont définies par des blocs de couleurs lumineuses sans contours, utilisant de forts contrastes de température.",
     "description_en": "A contemporary digital illustration style characterized by blocky, textured brushstrokes and glowing atmospheric lighting. Forms are defined by luminous color blocking rather than line work, utilizing strong temperature contrasts between warm focal glows and cool shadows.",
@@ -1476,6 +1524,7 @@
   },
   {
     "id": "stippled-mirage",
+    "model": "prunaai/z-image-turbo",
     "title": "Prismatic Grain",
     "description": "Un style d'illustration numérique doux et onirique, caractérisé par un bruit pointillé dense et uniforme et des dégradés de couleurs vibrants et irisés. Les sujets sont rendus sans contours nets, s'appuyant sur des teintes changeantes et un éclairage lumineux et dispersé pour définir le volume et la forme.",
     "description_en": "A soft, dreamlike digital illustration style characterized by heavy, uniform stippled noise and vibrant, iridescent color gradients. Subjects are rendered without harsh outlines, relying on shifting hues and luminous, dispersed lighting to define volume and form.",
@@ -1506,6 +1555,7 @@
   },
   {
     "id": "block-silhouette",
+    "model": "prunaai/z-image-turbo",
     "title": "Silhouette Paneling",
     "description": "Style graphique vectoriel plat présentant des silhouettes noires unies sur des blocs de couleurs unies et sourdes. Caractérisé par des bords nets et précis, une composition structurelle en grille et l'absence totale de dégradés ou de détails internes.",
     "description_en": "Flat vector graphic style featuring solid black silhouettes against unshaded, muted color blocks. Characterized by crisp, razor-sharp edges, a grid-like structural composition, and a complete absence of gradients or internal detailing.",
@@ -1534,6 +1584,7 @@
   },
   {
     "id": "aliased-lowpoly",
+    "model": "prunaai/z-image-turbo",
     "title": "Y2K Polygon",
     "description": "Graphismes 3D de consoles de sixième génération du début des années 2000, caractérisés par une géométrie low-poly et des bords crénelés. Les textures sont en basse résolution avec des éclairages et des ombres pré-calculés, sans anticrénelage moderne ni illumination dynamique.",
     "description_en": "Early 2000s 6th-generation console 3D graphics featuring low-polygon geometry and strictly aliased, jagged edges. Textures are low-resolution with baked-in lighting and shadows, lacking modern anti-aliasing or dynamic illumination.",
@@ -1567,6 +1618,7 @@
   },
   {
     "id": "muted-cel",
+    "model": "prunaai/z-image-turbo",
     "title": "Muted Cel",
     "description": "Un style d'illustration 2D chaleureux et lo-fi, caractérisé par des contours fins, organiques et légèrement tremblants, ainsi qu'une géométrie imparfaite dessinée à la main. Il utilise une palette pastel douce avec des couleurs en aplat et un ombrage ambiant minimal.",
     "description_en": "A cozy, lo-fi 2D illustration style characterized by thin, slightly wobbly organic outlines and imperfect hand-drawn geometry. It utilizes a high-key, muted pastel palette with completely flat colors and minimal, soft ambient shading.",

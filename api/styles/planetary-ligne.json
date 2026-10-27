@@ -39,5 +39,6 @@
     "camera": "Slow, deliberate pans or static wide shots that emphasize the deep focus and clear spatial layers.",
     "temporal_texture": "The uniform black outlines and stippled ink textures remain perfectly stable, avoiding any line boiling or flickering.",
     "avoid": "Avoid motion blur, depth of field changes, 3D camera sweeps, gradient shading, and line boiling."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

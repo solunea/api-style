@@ -36,5 +36,6 @@
     "camera": "Static or slow linear orthographic panning, maintaining the flat layered depth.",
     "temporal_texture": "The heavy paper grain and ragged ink-bleed edges must boil subtly over time, maintaining the printed materiality.",
     "avoid": "Smooth 3D interpolations, gradient lighting shifts, motion blur, and clean vector edges."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

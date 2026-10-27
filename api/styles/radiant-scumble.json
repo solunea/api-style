@@ -38,5 +38,6 @@
     "camera": "Slow, steady push-in or subtle parallax drift to enhance the atmospheric depth and layers.",
     "temporal_texture": "Brushstrokes and painterly textures must remain locked to the surfaces of objects, avoiding boiling or flickering edges.",
     "avoid": "Avoid fast, jerky movements, high frame rate photorealism, sharp vector-like scaling, or anything that breaks the painted illusion."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

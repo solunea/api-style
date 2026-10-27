@@ -38,5 +38,6 @@
     "camera": "Static locked-off camera or slow, linear 2D panning across the vector layers.",
     "temporal_texture": "Vector edges remain razor-sharp and gradients stay perfectly smooth without any flickering, noise, or boiling lines.",
     "avoid": "Avoid motion blur, 3D camera rotations, organic fluid simulations, or jittery frame-by-frame traditional animation."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

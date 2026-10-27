@@ -37,5 +37,6 @@
     "camera": "A locked-off or slowly panning tripod shot that emphasizes the surreal juxtaposition between the static background and the dynamic 2D foreground.",
     "temporal_texture": "The photographic background maintains photorealistic stability and a high frame rate, while the 2D elements maintain perfectly uniform black outlines and solid color fills without any rendering flicker or gradient shifts.",
     "avoid": "Avoid blending the 2D and 3D elements via depth-of-field blur on the cartoon characters, and avoid adding realistic shading, gradients, or 3D lighting to the flat vector elements."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

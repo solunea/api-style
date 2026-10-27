@@ -38,5 +38,6 @@
     "camera": "Static locked-off camera or perfectly linear 2D panning, strictly avoiding any 3D parallax or perspective distortion.",
     "temporal_texture": "The heavy risograph grain must boil and randomize rapidly on every frame, while the solid color fills and monoweight outlines remain sharply defined.",
     "avoid": "Avoid smooth 60fps interpolation, 3D camera sweeps, motion blur, dynamic lighting changes, shadows, or soft gradients."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

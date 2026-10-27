@@ -36,5 +36,6 @@
     "camera": "A locked-off, static camera that allows the kinetic energy of the drawing process to serve as the primary movement.",
     "temporal_texture": "The coarse paper grain remains entirely fixed while the raw charcoal pigment flickers slightly, simulating varying pressure and subtle smudging over time.",
     "avoid": "Avoid smooth 3D rotations, clean vector morphing, or any camera pans that disrupt the illusion of a flat, 2D sketched canvas."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

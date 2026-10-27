@@ -39,5 +39,6 @@
     "camera": "Fixed, static camera with zero parallax, maintaining the flattened, forced perspective.",
     "temporal_texture": "The heavy chalk grain and stipple noise must boil continuously, while geometric light cones remain locked in place.",
     "avoid": "Avoid 3D camera rotations, motion blur, smooth 60fps tweening, and realistic dynamic lighting changes."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

@@ -37,5 +37,6 @@
     "camera": "The camera remains entirely static, treating the composition as a fixed 2D graphic poster without any parallax or perspective shifts.",
     "temporal_texture": "The solid ink colors and sharp carved edges remain completely uniform and flicker-free, avoiding any organic grain or lighting changes.",
     "avoid": "Avoid smooth 60fps interpolation, 3D camera sweeps, motion blur, gradient transitions, or any dynamic lighting effects."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

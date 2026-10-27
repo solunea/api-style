@@ -39,5 +39,6 @@
     "camera": "Static locked-off camera to emphasize the 2D graphic nature of the flat color blocks and line work.",
     "temporal_texture": "The rough greyscale marker shading and loose ink intersections boil continuously, maintaining the raw, spontaneous offset print aesthetic.",
     "avoid": "Smooth interpolations, 3D camera rotations, realistic physics, soft gradients, and perfect alignment of lines and colors."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

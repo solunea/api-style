@@ -39,5 +39,6 @@
     "camera": "A locked-off orthographic camera that employs hard cuts or swift, linear 2D panning without parallax.",
     "temporal_texture": "Vector edges remain flawlessly sharp, and flat color fills stay perfectly solid without any flickering, noise, or lighting shifts.",
     "avoid": "Avoid motion blur, 3D camera rotation, organic flowing movements, lighting changes, or any introduction of gradients and textures."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

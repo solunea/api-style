@@ -44,5 +44,6 @@
     "camera": "Static camera mimicking a fixed overhead view of a drafting table.",
     "temporal_texture": "Paper grain remains static while marker bleed and ink hatching build up sequentially without flickering.",
     "avoid": "Smooth 3D rotations, photorealistic lighting, or fluid warping that breaks the dry 2D marker medium."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

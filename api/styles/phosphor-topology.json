@@ -37,5 +37,6 @@
     "camera": "Static orthographic camera with slow, linear panning.",
     "temporal_texture": "Line weights and flat color fills remain perfectly stable, with zero boiling, grain, or flicker.",
     "avoid": "Smooth 60fps interpolation, 3D camera rotations, motion blur, and dynamic lighting changes."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

@@ -39,5 +39,6 @@
     "camera": "Static or slow, steady lateral pans that maintain the flattened, graphic 2D perspective.",
     "temporal_texture": "The paper grain remains static while the translucent color washes exhibit a gentle, rhythmic flickering in their opacity and edge pooling.",
     "avoid": "Smooth 3D CGI rotations, volumetric lighting shifts, motion blur, and perfectly rigid vector outlines."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

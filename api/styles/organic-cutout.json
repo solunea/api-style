@@ -37,5 +37,6 @@
     "camera": "Locked, static orthographic framing with zero perspective shifts.",
     "temporal_texture": "Edges maintain a sharp, solid, non-flickering contour, with colors remaining absolutely flat and unshaded throughout the animation.",
     "avoid": "3D rotation, lighting changes, shadows, gradients, motion blur, and internal line drawing."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }

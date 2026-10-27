@@ -35,5 +35,6 @@
     "camera": "Static locked-off camera with zero perspective shifts or 3D rotations, maintaining a strictly orthographic view.",
     "temporal_texture": "Edge crispness and solid color fills remain perfectly stable with zero flickering, noise, or gradient banding over time.",
     "avoid": "Avoid 3D rotations, motion blur, gradient transitions, organic morphing, or any variation in lighting intensity."
-  }
+  },
+  "model": "prunaai/z-image-turbo"
 }
