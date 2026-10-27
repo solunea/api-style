@@ -473,8 +473,8 @@ const DEFAULT_PREVIEW_SETTINGS = {
   secondary_color: 'ivory',
   background_color: 'white',
   strength: 0.75,
-  width: 2048,
-  height: 2048,
+  width: 512,
+  height: 512,
 };
 const PROMPT_VARIABLE_FALLBACKS = {
   mood: 'cinematic and polished',
@@ -538,8 +538,8 @@ function getPreviewSettings(input = {}) {
     }
   }
   settings.strength = clampNumber(input.strength, DEFAULT_PREVIEW_SETTINGS.strength, 0, 1);
-  settings.width = clampNumber(input.width, DEFAULT_PREVIEW_SETTINGS.width, 256, 2048);
-  settings.height = clampNumber(input.height, DEFAULT_PREVIEW_SETTINGS.height, 256, 2048);
+  settings.width = clampNumber(input.width, DEFAULT_PREVIEW_SETTINGS.width, 256, 1024);
+  settings.height = clampNumber(input.height, DEFAULT_PREVIEW_SETTINGS.height, 256, 1024);
   return settings;
 }
 

@@ -71,8 +71,6 @@ Ouvre http://localhost:3003 — permet de :
 
 Le sélecteur **Modèle de génération** définit le modèle du style pour ses images et ses décors. Les aperçus avec et sans fond utilisent ce choix ; la génération en lot respecte le modèle de chaque style. Avec P-Image Ideogram et une image de référence, l'image est automatiquement décrite par le VLM avant la génération, même en mode direct. Z-Image Turbo conserve son mode img2img direct.
 
-Les nouveaux aperçus sont générés en **2048 × 2048** par défaut. `/api/generate-preview` et `/api/generate-all-previews` acceptent `preview_settings.width` et `preview_settings.height` entre 256 et 2048. P-Image Ideogram reçoit ces dimensions en mode `custom`, arrondies au multiple de 16 le plus proche, avec `image_size: "2K"` au-delà de 1024 pixels sur un côté (`"1K"` sinon). Dans Cannelle, les dimensions calculées depuis la résolution et le format sélectionnés suivent la même règle, dans la limite de 2560 pixels par côté du modèle.
-
 Les routes de création/modification acceptent le champ `model`. Une création sans ce champ utilise Z-Image Turbo ; une modification sans ce champ conserve le choix existant. Une valeur non prise en charge renvoie une erreur 400. La route `/api/generate-preview` accepte aussi `model` pour tester un choix avant sauvegarde ; à défaut, elle utilise le modèle du `style_id`, puis Z-Image Turbo. Les exports liste et détail incluent ce champ.
 
 ### Auto-remplissage IA
