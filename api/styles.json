@@ -1737,5 +1737,37 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-11-07T09:19:32.439Z"
+  },
+  {
+    "id": "kinetic-flat",
+    "model": "prunaai/z-image-turbo",
+    "title": "Kinetic Flat",
+    "description": "Un style d'illustration numérique très dynamique, caractérisé par une perspective forcée extrême et des blocs de couleurs vibrantes. Il fusionne des formes vectorielles nettes sans contours avec de doux dégradés granuleux et des lignes de vitesse stylisées pour exprimer un mouvement intense.",
+    "description_en": "A highly dynamic digital illustration style characterized by extreme forced perspective and vibrant color blocking. It merges crisp, lineless vector shapes with soft, stippled grain gradients and stylized speed lines to convey intense motion.",
+    "description_fr": "Un style d'illustration numérique très dynamique, caractérisé par une perspective forcée extrême et des blocs de couleurs vibrantes. Il fusionne des formes vectorielles nettes sans contours avec de doux dégradés granuleux et des lignes de vitesse stylisées pour exprimer un mouvement intense.",
+    "image": "images/54b5396f68adf156549e0c1e7ed2898e.jpg",
+    "preview_image": "images/preview-1794045824296-kx3c.webp",
+    "preview_image_removebg": "images/preview-1794045824805-lctd.webp",
+    "tags": [
+      "forced-perspective",
+      "stippled-gradient",
+      "lineless-vector",
+      "speed-lines",
+      "digital-grain",
+      "editorial-illustration",
+      "colorful",
+      "vector",
+      "dynamic",
+      "playful",
+      "drawing"
+    ],
+    "video": {
+      "motion": "Subjects and background elements streak across the frame with stylized, horizontal motion blur and dynamic speed lines, emphasizing extreme velocity.",
+      "camera": "The camera maintains a dramatic, low-angle forced perspective, tracking forward rapidly to enhance the sensation of speed.",
+      "temporal_texture": "Digital grain and stippled shading remain locked to the surfaces of moving objects, while background speed lines continuously streak and regenerate.",
+      "avoid": "Avoid realistic physics, smooth 3D motion blur, static compositions, or the loss of the textured, grainy gradient aesthetic during movement."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-11-07T10:03:54.747Z"
   }
 ]

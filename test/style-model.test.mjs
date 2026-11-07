@@ -9,9 +9,10 @@ import {DEFAULT_STYLE_MODEL, IDEOGRAM_STYLE_MODEL as pImage, normalizeStyleModel
 const root = fileURLToPath(new URL('../', import.meta.url));
 const reference = 'images/reference.png';
 const scene = 'A forest beside a lake. The sign reads "R&D $& {{primary_color}}".';
+const subjectDetails = 'One black cat with pointed ears, large white eyes and thin whiskers.';
 
 // Exercise the real routes and export builder against in-memory storage and Replicate.
-function server(styles = []) {
+function server(styles = [], { failSubjectDescription = false } = {}) {
   const files = new Map([
     [path.join(root, 'data', 'styles.json'), JSON.stringify(styles)],
     [path.join(root, reference), Buffer.from('image')]
@@ -23,7 +24,13 @@ function server(styles = []) {
   const replicate = {run: async (model, {input}) => {
     calls.push({model, input});
     if (model === 'google/gemini-3.1-pro') return JSON.stringify({prompt: '{{subject}}'});
-    if (model === 'openai/gpt-5-nano') return [scene];
+    if (model === 'openai/gpt-5-nano') {
+      if (input.prompt.startsWith("Describe the main subject's visual identity")) {
+        if (failSubjectDescription) throw new Error('Vision unavailable');
+        return [subjectDetails];
+      }
+      return [scene];
+    }
     return ['https://example.test/image.webp'];
   }};
   const source = readFileSync(new URL('../server.js', import.meta.url), 'utf8')
@@ -34,7 +41,7 @@ function server(styles = []) {
     readFileSync: file => files.get(file), writeFileSync: (file, data) => files.set(file, data),
     existsSync: file => files.has(file), mkdirSync() {}, unlinkSync: file => files.delete(file),
     promisify: () => () => {}, execCb() {},
-    process: {env: {}}, console: {log() {}, error() {}}, Buffer,
+    process: {env: {}}, console: {log() {}, error() {}, warn() {}}, Buffer,
     fetch: async () => ({ok: true, arrayBuffer: async () => new ArrayBuffer(8)})
   });
   return {
@@ -128,9 +135,46 @@ test('single preview uses an unsaved model selection and describes a reference o
   assert.ok(result.body.url_removebg);
 });
 
-test('batch previews use each style model and share the VLM description', async () => {
+test('direct Z-Image previews use the same subject details and original image for both variants', async () => {
+  const api = server();
+  const result = await api.request('post', '/api/generate-preview', {
+    mode: 'direct', reference_image: reference, preview_settings: {strength: 0.6},
+    prompt: '{{subject}} Ink illustration', prompt_removebg: 'Uniform {{background_color}} backdrop'
+  });
+  assert.equal(result.status, 200, JSON.stringify(result.body));
+  assert.ok(result.body.url_removebg);
+  assert.equal(api.calls.length, 3);
+  const [vision, standard, cutout] = api.calls;
+  assert.equal(vision.model, 'openai/gpt-5-nano');
+  assert.match(vision.input.prompt, /ear shape, eye size and color/);
+  const [image] = vision.input.image_input;
+  assert.match(image, /^data:image\/png;base64,/);
+  for (const call of [standard, cutout]) {
+    assert.match(call.model, /^prunaai\/z-image-turbo-img2img:/);
+    assert.equal(call.input.image, image);
+    assert.equal(call.input.strength, 0.6);
+  }
+  assert.equal(standard.input.prompt, `${subjectDetails} Ink illustration`);
+  assert.equal(cutout.input.prompt, `${subjectDetails} Uniform white backdrop`);
+});
+
+test('direct Z-Image previews still use the original image when the subject analysis fails', async () => {
+  const api = server([], {failSubjectDescription: true});
+  const result = await api.request('post', '/api/generate-preview', {
+    mode: 'direct', reference_image: 'https://example.test/reference.png', prompt: '{{subject}} Ink illustration'
+  });
+  assert.equal(result.status, 200, JSON.stringify(result.body));
+  assert.equal(api.calls.length, 2);
+  const {input} = api.calls[1];
+  assert.equal(input.image, 'https://example.test/reference.png');
+  assert.match(input.prompt, /the scene in the input image/);
+  assert.doesNotMatch(input.prompt, /luxury perfume bottle/);
+});
+
+test('batch previews reuse one description per model in direct mode', async () => {
   const api = server([
     {id: 'z', prompt: 'Z {{subject}}', model: DEFAULT_STYLE_MODEL},
+    {id: 'other-z', prompt: 'Ink illustration'},
     {id: 'p', prompt: 'P {{subject}}', prompt_removebg: 'Cutout {{subject}}', model: pImage},
     {id: 'other-p', prompt: 'P {{subject}}', model: pImage}
   ]);
@@ -138,14 +182,20 @@ test('batch previews use each style model and share the VLM description', async 
     mode: 'direct', reference_image: 'https://example.test/reference.png'
   });
   assert.equal(result.status, 200, JSON.stringify(result.body));
-  assert.equal(result.body.generated.length, 3);
-  const img2img = api.calls.find(call => call.input.image);
-  assert.match(img2img.model, /^prunaai\/z-image-turbo-img2img:[a-f0-9]{64}$/);
-  assert.deepEqual(api.calls.filter(call => call !== img2img).map(call => call.model).sort(), ['openai/gpt-5-nano', pImage, pImage, pImage].sort());
-  assert.equal(img2img.input.image, 'https://example.test/reference.png');
-  assert.equal(img2img.input.strength, 0.75);
-  assert.equal('width' in img2img.input, false);
-  assert.match(img2img.input.prompt, /the scene in the input image/);
+  assert.equal(result.body.generated.length, 4);
+  const descriptions = api.calls.filter(call => call.model === 'openai/gpt-5-nano');
+  assert.equal(descriptions.length, 2);
+  assert.match(descriptions[0].input.prompt, /main subject's visual identity/);
+  assert.match(descriptions[1].input.prompt, /visible scene for P-Image-Ideogram/);
+  const img2img = api.calls.filter(call => call.input.image);
+  assert.equal(img2img.length, 2);
+  for (const {model, input} of img2img) {
+    assert.match(model, /^prunaai\/z-image-turbo-img2img:[a-f0-9]{64}$/);
+    assert.equal(input.image, 'https://example.test/reference.png');
+    assert.equal(input.strength, 0.75);
+    assert.equal('width' in input, false);
+    assert.ok(input.prompt.includes(subjectDetails));
+  }
   assert.match(api.calls.find(call => call.model === pImage).input.prompt, /A forest beside a lake/);
 });
 
