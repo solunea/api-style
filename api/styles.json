@@ -1653,30 +1653,29 @@
     "id": "breezy-ligne-claire",
     "model": "prunaai/p-image-ideogram",
     "title": "Breezy Ligne-Claire",
-    "description": "Un style d'illustration ludique aux aplats de couleurs, caractérisé par des contours noirs organiques légèrement tremblants et des couleurs vives sans ombrage. Il s'inspire de la ligne claire classique de la bande dessinée tout en y ajoutant une souplesse décontractée dessinée à la main et un charme naïf.",
-    "description_en": "A playful, flat-color illustration style characterized by slightly wobbly, organic black outlines and vibrant, unshaded fill colors. It draws inspiration from classic ligne claire comics but adds a relaxed, hand-drawn looseness and naive charm.",
-    "description_fr": "Un style d'illustration ludique aux aplats de couleurs, caractérisé par des contours noirs organiques légèrement tremblants et des couleurs vives sans ombrage. Il s'inspire de la ligne claire classique de la bande dessinée tout en y ajoutant une souplesse décontractée dessinée à la main et un charme naïf.",
+    "description": "Un style d'illustration ludique aux couleurs plates, caractérisé par des contours noirs distincts et légèrement irréguliers, ainsi que des remplissages sans ombrage. L'esthétique s'inspire des traditions de la bande dessinée à ligne claire, mais injecte une touche décontractée et tremblotante dans le tracé.",
+    "description_en": "A playful, flat-color illustration style characterized by distinct, slightly irregular black outlines and unshaded color fills. The aesthetic draws from clear-line comic traditions but injects a casual, hand-drawn wobble into the linework.",
+    "description_fr": "Un style d'illustration ludique aux couleurs plates, caractérisé par des contours noirs distincts et légèrement irréguliers, ainsi que des remplissages sans ombrage. L'esthétique s'inspire des traditions de la bande dessinée à ligne claire, mais injecte une touche décontractée et tremblotante dans le tracé.",
     "image": "images/f112e98855c6d2810550f1d9a7b9793c.jpg",
-    "preview_image": "images/preview-1793105066794-mju2.webp",
-    "preview_image_removebg": "images/preview-1793105066452-dyo2.webp",
+    "preview_image": "images/preview-1794044494531-582m.webp",
+    "preview_image_removebg": "images/preview-1794044493626-fqhm.webp",
     "tags": [
       "ligne-claire",
       "flat-color",
-      "naive-art",
-      "wobbly-lines",
+      "wobbly-line",
+      "ink-outline",
       "unshaded",
-      "childlike",
       "playful",
+      "comic",
       "drawing",
       "colorful",
-      "minimalist",
-      "comic"
+      "minimalist"
     ],
     "video": {
-      "motion": "Characters and objects should animate with a slight boil or subtle jitter in their outlines, mimicking traditional hand-drawn animation. Movement should be snappy and playful, keeping elements strictly 2D.",
-      "camera": "Keep the camera locked or use simple, flat 2D panning without parallax depth.",
-      "temporal_texture": "The wobbly black outlines should maintain a consistent line weight but boil slightly frame-to-frame, while the solid color fills remain perfectly flat and flicker-free.",
-      "avoid": "Avoid any 3D rotation, smooth motion blur, gradients, shading, or realistic physics that break the flat, naive aesthetic."
+      "motion": "Characters and objects should move with a slight boil or jitter to match the wobbly linework, using stepped keyframes (e.g., 12fps) for a hand-drawn animation feel.",
+      "camera": "Static or slow, flat 2D panning; avoid 3D camera moves or perspective distortion.",
+      "temporal_texture": "The wobbly black outlines must exhibit a continuous 'line boil' effect, while the flat color fills remain perfectly stable and unshaded.",
+      "avoid": "Smooth 60fps interpolation, 3D depth, shading, gradients, motion blur, and perfectly rigid vector lines."
     },
     "backgroundType": 2,
     "createdAt": "2026-10-27T12:44:35.881Z"
@@ -1710,5 +1709,38 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-10-27T12:49:44.610Z"
+  },
+  {
+    "id": "axonometric-pop",
+    "model": "prunaai/z-image-turbo",
+    "title": "Axonometric Pop",
+    "description": "Ce style associe une perspective axonométrique en plongée aux techniques d'illustration en ligne claire. Il se caractérise par une palette pastel douce, des contours sombres et uniformes, ainsi que des ombres portées nettes texturées d'un léger grain numérique.",
+    "description_en": "This style combines high-angle axonometric perspective with classic ligne-claire illustration techniques. It features a soft pastel palette, uniform dark outlines, and sharp, directional cel-shaded shadows enhanced with subtle digital grain for a stylized, architectural feel.",
+    "description_fr": "Ce style associe une perspective axonométrique en plongée aux techniques d'illustration en ligne claire. Il se caractérise par une palette pastel douce, des contours sombres et uniformes, ainsi que des ombres portées nettes texturées d'un léger grain numérique.",
+    "image": "images/24eb3c68ad625e09c09d0dcd022083ed.jpg",
+    "preview_image": "images/preview-1794043157536-sq1c.webp",
+    "preview_image_removebg": "images/preview-1794043161191-lcoq.webp",
+    "tags": [
+      "ligne-claire",
+      "axonometric",
+      "cel-shading",
+      "risograph-texture",
+      "stippled-shadows",
+      "flat-color",
+      "colorful",
+      "minimalist",
+      "geometric",
+      "drawing",
+      "comic",
+      "retro"
+    ],
+    "video": {
+      "motion": "Elements translate smoothly along isometric axes with rigid, linear motion. Moving objects cast dynamically shifting, sharp diagonal shadows that maintain their stippled texture.",
+      "camera": "Static high-angle isometric framing or slow, perfectly linear diagonal panning across the scene.",
+      "temporal_texture": "The uniform dark outlines remain perfectly stable, while the stippled digital grain within the shadows softly boils at a low frame rate.",
+      "avoid": "Perspective distortion, motion blur, soft shadow gradients, and organic camera shake."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-11-07T09:19:32.439Z"
   }
 ]

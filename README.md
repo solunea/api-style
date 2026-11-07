@@ -77,6 +77,8 @@ Les routes de création/modification acceptent le champ `model`. Une création s
 
 L'IA analyse l'image uploadée et génère automatiquement : titre, description, prompt, background prompt et tags.
 
+Choisissez le modèle avant de cliquer sur **Auto-remplir avec IA**. P-Image Ideogram utilise des descriptions courtes qui privilégient la composition et les traits distinctifs du style. Z-Image Turbo utilise des descriptions plus détaillées du rendu, notamment des contours, des ombres et des textures. Chaque modèle produit des variantes pour le fond et le détourage. La régénération en lot utilise le modèle enregistré de chaque style. Pour appliquer ces consignes à un style existant, relancez son auto-remplissage puis enregistrez le résultat.
+
 Les tags combinent 4 à 8 termes précis avec 3 à 6 mots-clés généraux en anglais, selon le style :
 - Ambiance : `childlike`, `playful`, `serious`, `professional`, `soft`, `colorful`, `dark`, `dreamy`.
 - Technique et médium : `technical`, `pencil`, `drawing`, `sketch`, `painting`, `watercolor`, `gouache`, `ink`, `charcoal`, `engraving`, `collage`, `photography`, `3d`, `vector`, `handcrafted`.

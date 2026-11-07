@@ -1,0 +1,44 @@
+{
+  "id": "axonometric-pop",
+  "model": "prunaai/z-image-turbo",
+  "title": "Axonometric Pop",
+  "description": "Ce style associe une perspective axonométrique en plongée aux techniques d'illustration en ligne claire. Il se caractérise par une palette pastel douce, des contours sombres et uniformes, ainsi que des ombres portées nettes texturées d'un léger grain numérique.",
+  "description_en": "This style combines high-angle axonometric perspective with classic ligne-claire illustration techniques. It features a soft pastel palette, uniform dark outlines, and sharp, directional cel-shaded shadows enhanced with subtle digital grain for a stylized, architectural feel.",
+  "description_fr": "Ce style associe une perspective axonométrique en plongée aux techniques d'illustration en ligne claire. Il se caractérise par une palette pastel douce, des contours sombres et uniformes, ainsi que des ombres portées nettes texturées d'un léger grain numérique.",
+  "prompt": "Digital ligne-claire illustration employing a stylized high-angle or axonometric perspective. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork is rendered with crisp, uniform, thin dark ink outlines that meticulously define every structural edge, contour, and interior detail without pressure sensitivity. The color science utilizes a soft, high-key pastel palette heavily featuring {{primary_color}} as the foundation, beautifully contrasted by {{accent_color}} highlights and grounded by {{secondary_color}} midtones. Lighting behaves with intense, clear directionality, simulating harsh sunlight that casts sharp, elongated, diagonal geometric shadows across the underlying surfaces. These shadow regions are distinctly cool-toned and infused with a subtle, stippled digital grain or risograph halftone texture, providing a tactile contrast against the otherwise smooth, flatly colored illuminated areas. Forms are slightly simplified and heavily stylized, emphasizing rigid architectural geometry, clean spatial arrangements, and a graphic, pop-art sensibility. The depth is intentionally flattened, evoking vintage European comic book backgrounds or modern indie editorial illustrations. Every element maintains a clean vector-like precision while retaining an organic, hand-drawn warmth through the subtle textural noise in the shaded regions. The composition prioritizes readable volumes and clear overlapping planes over realistic atmospheric perspective. The image MUST occupy the absolute ENTIRE dedicated space as a canvas rule: NO borders, NO frames, NO white margins, NO canvas edges, FULL BLEED to all four corners.",
+  "prompt_removebg": "Digital ligne-claire illustration employing a stylized high-angle or axonometric perspective. Apply this style to the complete scene described by {{subject}}, preserving its factual content, camera angle, framing, spatial layout, and stated exclusions. The artwork is rendered with crisp, uniform, thin dark ink outlines that meticulously define every structural edge, contour, and interior detail without pressure sensitivity. The color science utilizes a soft, high-key pastel palette heavily featuring {{primary_color}} as the foundation, beautifully contrasted by {{accent_color}} highlights and grounded by {{secondary_color}} midtones. Lighting behaves with intense, clear directionality, simulating harsh sunlight that casts sharp, elongated, diagonal geometric shadows across the underlying surfaces. These shadow regions are distinctly cool-toned and infused with a subtle, stippled digital grain or risograph halftone texture, providing a tactile contrast against the otherwise smooth, flatly colored illuminated areas. Forms are slightly simplified and heavily stylized, emphasizing rigid architectural geometry, clean spatial arrangements, and a graphic, pop-art sensibility. The depth is intentionally flattened, evoking vintage European comic book backgrounds or modern indie editorial illustrations, composited on a clean {{background_color}} surface. The sharp, uniform outlines of the {{subject}} create a clean, graphic silhouette against the {{background_color}} backdrop, explicitly allowing intentional overflow where parts of the {{subject}} can extend beyond the visible frame (cropped by the image boundaries). Every element maintains a clean vector-like precision while retaining an organic, hand-drawn warmth through the subtle textural noise in the shaded regions. The composition prioritizes readable volumes and clear overlapping planes over realistic atmospheric perspective.",
+  "background_prompt": "A pure background scene featuring a sprawling, abstract geometric landscape in a stylized axonometric perspective. Crisp, uniform dark outlines define intersecting flat planes and simplified structural blocks. The environment is bathed in strong directional light, casting sharp, elongated diagonal shadows across the surfaces. Illuminated areas feature smooth, flat {{primary_color}} and {{accent_color}} tones, while the cool-toned {{secondary_color}} shadow regions are textured with a subtle stippled digital grain. No foreground elements.",
+  "background_prompt_removebg": "A pure background scene featuring a sprawling, abstract geometric landscape in a stylized axonometric perspective. Crisp, uniform dark outlines define intersecting flat planes and simplified structural blocks. The environment is bathed in strong directional light, casting sharp, elongated diagonal shadows across the surfaces. Illuminated areas feature smooth, flat {{primary_color}} and {{accent_color}} tones, while the cool-toned {{secondary_color}} shadow regions are textured with a subtle stippled digital grain. A decorative, geometric linear border matching the uniform ink style acts as a foreground overlay in front of the invisible subject, framing the composition. The entire scene and frame transition cleanly into the flat {{background_color}} surface, creating a distinct graphic pop.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "accent_color",
+    "secondary_color",
+    "background_color"
+  ],
+  "image": "images/24eb3c68ad625e09c09d0dcd022083ed.jpg",
+  "preview_image": "images/preview-1794043157536-sq1c.webp",
+  "preview_image_removebg": "images/preview-1794043161191-lcoq.webp",
+  "tags": [
+    "ligne-claire",
+    "axonometric",
+    "cel-shading",
+    "risograph-texture",
+    "stippled-shadows",
+    "flat-color",
+    "colorful",
+    "minimalist",
+    "geometric",
+    "drawing",
+    "comic",
+    "retro"
+  ],
+  "video": {
+    "motion": "Elements translate smoothly along isometric axes with rigid, linear motion. Moving objects cast dynamically shifting, sharp diagonal shadows that maintain their stippled texture.",
+    "camera": "Static high-angle isometric framing or slow, perfectly linear diagonal panning across the scene.",
+    "temporal_texture": "The uniform dark outlines remain perfectly stable, while the stippled digital grain within the shadows softly boils at a low frame rate.",
+    "avoid": "Perspective distortion, motion blur, soft shadow gradients, and organic camera shake."
+  },
+  "backgroundType": 2,
+  "createdAt": "2026-11-07T09:19:32.439Z"
+}

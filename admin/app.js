@@ -27,7 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('search-input').addEventListener('input', handleSearch);
-  document.getElementById('form-prompt').addEventListener('input', showPreviewSection);
+  document.getElementById('form-prompt').addEventListener('input', (e) => {
+    generatedPrompts[currentPromptMode] = e.target.value;
+    showPreviewSection();
+  });
+  document.getElementById('form-background-prompt').addEventListener('input', (e) => {
+    generatedBgPrompts[currentPromptMode] = e.target.value;
+  });
 
   // Drag & drop on upload zone
   const zone = document.getElementById('upload-zone');
@@ -368,8 +374,6 @@ function openModal(editId) {
     document.getElementById('form-description-fr').value = style.description_fr || style.description || '';
     document.getElementById('form-description-en').value = style.description_en || '';
     switchDescLang('fr');
-    document.getElementById('form-prompt').value = style.prompt || '';
-    document.getElementById('form-background-prompt').value = style.background_prompt || '';
     document.getElementById('form-tags').value = (style.tags || []).join(', ');
     document.getElementById('form-video-motion').value = (style.video && style.video.motion) || '';
     document.getElementById('form-video-camera').value = (style.video && style.video.camera) || '';
@@ -470,8 +474,10 @@ async function handleSubmit(e) {
   const description_en = document.getElementById('form-description-en').value.trim();
   const description_fr = document.getElementById('form-description-fr').value.trim();
   const description = description_fr;
-  const prompt = document.getElementById('form-prompt').value.trim();
-  const background_prompt = document.getElementById('form-background-prompt').value.trim();
+  const prompt = generatedPrompts.standard.trim();
+  const prompt_removebg = generatedPrompts.removebg.trim();
+  const background_prompt = generatedBgPrompts.standard.trim();
+  const background_prompt_removebg = generatedBgPrompts.removebg.trim();
   const tagsRaw = document.getElementById('form-tags').value;
   const tags = tagsRaw.split(',').map((t) => t.trim()).filter(Boolean);
   const video = {
@@ -503,11 +509,9 @@ async function handleSubmit(e) {
     }
 
     // Auto-detect variables from all prompt variants
-    const allPromptText = [prompt, generatedPrompts.removebg, background_prompt, generatedBgPrompts.removebg].join(' ');
+    const allPromptText = [prompt, prompt_removebg, background_prompt, background_prompt_removebg].join(' ');
     const varMatches = [...allPromptText.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]);
     const variables = [...new Set(varMatches)];
-    const prompt_removebg = generatedPrompts.removebg || '';
-    const background_prompt_removebg = generatedBgPrompts.removebg || '';
     const preview_image = document.getElementById('form-preview-image').value.trim();
     const preview_image_removebg = document.getElementById('form-preview-image-removebg').value.trim();
     const backgroundType = parseInt(document.getElementById('form-background-type').value, 10);
@@ -550,20 +554,19 @@ async function analyzeImage() {
   const btn = document.getElementById('analyze-btn');
   const urlBtn = document.getElementById('analyze-url-btn');
   const activeBtn = useExisting ? urlBtn : btn;
-  activeBtn.disabled = true;
+  const modelField = document.getElementById('form-model');
+  btn.disabled = urlBtn.disabled = modelField.disabled = true;
   activeBtn.innerHTML = '<span class="spinner"></span> Analyse en cours...';
 
   try {
-    let res;
+    const formData = new FormData();
+    formData.append('model', modelField.value);
     if (useExisting) {
-      const formData = new FormData();
       formData.append('image_path', imageUrl);
-      res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     } else {
-      const formData = new FormData();
       formData.append('image', selectedFile);
-      res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
     }
+    const res = await fetch(`${API}/api/analyze`, { method: 'POST', body: formData });
 
     if (!res.ok) {
       const err = await res.json();
@@ -596,7 +599,7 @@ async function analyzeImage() {
   } catch (err) {
     showToast(err.message, 'error');
   } finally {
-    activeBtn.disabled = false;
+    btn.disabled = urlBtn.disabled = modelField.disabled = false;
     activeBtn.innerHTML = '🤖 Auto-remplir avec IA';
   }
 }
@@ -604,7 +607,7 @@ async function analyzeImage() {
 // --- AI Preview ---
 
 function showPreviewSection() {
-  const prompt = document.getElementById('form-prompt').value.trim();
+  const prompt = generatedPrompts.standard.trim();
   const section = document.getElementById('preview-section');
   section.style.display = prompt ? '' : 'none';
 }
@@ -656,7 +659,8 @@ async function handleRefFileSelect(e) {
 }
 
 async function generatePreview() {
-  const prompt = document.getElementById('form-prompt').value.trim();
+  const prompt = generatedPrompts.standard.trim();
+  const promptRemovebg = generatedPrompts.removebg.trim();
   if (!prompt) return showToast('Remplissez d\'abord le prompt', 'error');
 
   const btn = document.getElementById('generate-preview-btn');
@@ -674,7 +678,7 @@ async function generatePreview() {
 
   try {
     const body = { prompt, model: document.getElementById('form-model').value, mode, preview_settings: getPreviewSettings() };
-    if (generatedPrompts.removebg) body.prompt_removebg = generatedPrompts.removebg;
+    if (promptRemovebg) body.prompt_removebg = promptRemovebg;
     if (referenceImage) body.reference_image = referenceImage;
     if (styleId) body.style_id = styleId;
 
@@ -773,20 +777,14 @@ function switchPromptMode(mode) {
   document.getElementById('bg-prompt-tab-standard').classList.toggle('active', mode === 'standard');
   document.getElementById('bg-prompt-tab-removebg').classList.toggle('active', mode === 'removebg');
 
-  if (generatedPrompts.standard || generatedPrompts.removebg) {
-    document.getElementById('form-prompt').value = mode === 'removebg' ? (generatedPrompts.removebg || '') : (generatedPrompts.standard || '');
-    document.getElementById('form-background-prompt').value = mode === 'removebg' ? (generatedBgPrompts.removebg || '') : (generatedBgPrompts.standard || '');
-  }
+  document.getElementById('form-prompt').value = generatedPrompts[mode];
+  document.getElementById('form-background-prompt').value = generatedBgPrompts[mode];
 }
 
 function resetGeneratedPrompts() {
   generatedPrompts = { standard: '', removebg: '' };
   generatedBgPrompts = { standard: '', removebg: '' };
-  currentPromptMode = 'standard';
-  document.getElementById('prompt-tab-standard').classList.add('active');
-  document.getElementById('prompt-tab-removebg').classList.remove('active');
-  document.getElementById('bg-prompt-tab-standard').classList.add('active');
-  document.getElementById('bg-prompt-tab-removebg').classList.remove('active');
+  switchPromptMode('standard');
 }
 
 // --- Toast ---
