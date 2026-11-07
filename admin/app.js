@@ -622,7 +622,7 @@ function switchPreviewMode(mode) {
   document.getElementById('mode-tab-direct').classList.toggle('active', mode === 'direct');
   document.getElementById('mode-tab-vlm').classList.toggle('active', mode === 'vlm');
   document.getElementById('preview-mode-hint').textContent = mode === 'direct'
-    ? 'img2img'
+    ? 'img2img + détails du sujet'
     : 'VLM → text-to-image';
 }
 

@@ -69,7 +69,7 @@ Ouvre http://localhost:3003 — permet de :
 - Re-analyser les images existantes avec l'IA
 - Publier sur GitHub en un clic
 
-Le sélecteur **Modèle de génération** définit le modèle du style pour ses images et ses décors. Les aperçus avec et sans fond utilisent ce choix ; la génération en lot respecte le modèle de chaque style. Avec P-Image Ideogram et une image de référence, l'image est automatiquement décrite par le VLM avant la génération, même en mode direct. Z-Image Turbo conserve son mode img2img direct.
+Le sélecteur **Modèle de génération** définit le modèle du style pour ses images et ses décors. Les aperçus avec et sans fond utilisent ce choix. La génération en lot respecte le modèle de chaque style. Avec P-Image Ideogram et une image de référence, le VLM décrit la scène avant la génération, même en mode direct. En mode **Image directe**, Z-Image Turbo reçoit l'image originale et une courte description des traits distinctifs du sujet. Une seule analyse alimente les deux variantes d'aperçu et les styles Z-Image Turbo du lot. Si l'analyse échoue, la génération se poursuit à partir de l'image. La **Force img2img** règle l'intensité de la transformation. Une valeur plus basse conserve davantage de détails de la référence.
 
 Les routes de création/modification acceptent le champ `model`. Une création sans ce champ utilise Z-Image Turbo ; une modification sans ce champ conserve le choix existant. Une valeur non prise en charge renvoie une erreur 400. La route `/api/generate-preview` accepte aussi `model` pour tester un choix avant sauvegarde ; à défaut, elle utilise le modèle du `style_id`, puis Z-Image Turbo. Les exports liste et détail incluent ce champ.
 

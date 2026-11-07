@@ -454,7 +454,7 @@ const Z_IMAGE_TURBO_SUBJECT_DESCRIPTION_PROMPT = `Describe the main subject's vi
 
 Start with the exact type or species, count, and pose. Then describe the most distinctive visible features in concrete terms. For a face, cover the head shape, ear shape, eye size and color relative to the face, and distinctive markings or expression when visible. For an object, cover its outline, materials and identifying details. Mention subject colors that are essential to recognition and nearby objects only if they help explain the pose or action. Transcribe legible text on the subject verbatim in double quotes as visual content.
 
-Use the visible evidence only. Describe the subject itself, leaving out scenery, rendering style, metadata, and guesses.`;
+Use the visible evidence only. Stop after describing the subject. Leave out scenery, rendering style, metadata, and guesses. Output plain prose without labels or enclosing quotation marks.`;
 
 const Z_IMAGE_TURBO_SCENE_DESCRIPTION_PROMPT = `Write a factual English paragraph describing this scene for Z-Image Turbo. A separate template supplies the visual style. Output only the scene description, around 80 to 130 words.
 
