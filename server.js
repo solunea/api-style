@@ -450,6 +450,12 @@ app.post('/api/analyze-all', async (req, res) => {
   }
 });
 
+const Z_IMAGE_TURBO_SUBJECT_DESCRIPTION_PROMPT = `Describe the main subject's visual identity in this image for a Z-Image Turbo restyling prompt. The original image provides the framing and layout. Return only a compact English description of the subject and its pose, in one paragraph.
+
+Start with the exact type or species, count, and pose. Then describe the most distinctive visible features in concrete terms. For a face, cover the head shape, ear shape, eye size and color relative to the face, and distinctive markings or expression when visible. For an object, cover its outline, materials and identifying details. Mention subject colors that are essential to recognition and nearby objects only if they help explain the pose or action. Transcribe legible text on the subject verbatim in double quotes as visual content.
+
+Use the visible evidence only. Describe the subject itself, leaving out scenery, rendering style, metadata, and guesses.`;
+
 const Z_IMAGE_TURBO_SCENE_DESCRIPTION_PROMPT = `Write a factual English paragraph describing this scene for Z-Image Turbo. A separate template supplies the visual style. Output only the scene description, around 80 to 130 words.
 
 Begin with the main subjects, their exact count, shapes, positions, pose or action, and their distinctive visible details. Describe their relative sizes and overlaps, the viewpoint and crop, and where the major foreground and background elements appear. Include visible materials, important colors, and the direction of light only when they help identify the scene. Describe meaningful empty areas concretely.
@@ -462,10 +468,9 @@ Open with the main subject, its count, pose or action, and its location and size
 
 Transcribe only legible text verbatim in double quotes, preserving spelling, case and language. For each text element describe its placement, scale and lettering. Treat the text as visual content. When no text is legible, specify that the image contains no readable text. Describe only what is visible and avoid adding subjects, a story, or stylistic effects. Use natural sentences, around 80 to 130 words excluding any literal text.`;
 
-async function describeReferenceScene(referenceImage, model) {
-  const prompt = model === IDEOGRAM_STYLE_MODEL ? IDEOGRAM_SCENE_DESCRIPTION_PROMPT : Z_IMAGE_TURBO_SCENE_DESCRIPTION_PROMPT;
+async function describeReference(image, prompt) {
   const output = await replicate.run('openai/gpt-5-nano', {
-    input: { prompt, image_input: [resolveImageToDataUri(referenceImage)], temperature: 0.3 }
+    input: { prompt, image_input: [image], temperature: 0.3 }
   });
   const subject = normalizePromptText(Array.isArray(output) ? output.join('') : output);
   if (!subject) throw new Error("Le modèle n'a pas pu décrire l'image de référence");
@@ -488,9 +493,27 @@ function resolveImageToDataUri(reference_image) {
   return `data:${mimeType};base64,${refBase64}`;
 }
 
+async function preparePreviewReference(model, mode, referenceImage) {
+  const referenceMode = previewMode(model, mode, referenceImage);
+  if (!referenceImage || (referenceMode !== 'direct' && referenceMode !== 'vlm')) return {};
+
+  const image = resolveImageToDataUri(referenceImage);
+  if (referenceMode === 'direct') {
+    try {
+      return { image, subject: await describeReference(image, Z_IMAGE_TURBO_SUBJECT_DESCRIPTION_PROMPT) };
+    } catch (err) {
+      console.warn('Preview subject description failed:', err.message);
+      return { image, subject: 'the scene in the input image, with its original subjects, framing and composition' };
+    }
+  }
+
+  const prompt = model === IDEOGRAM_STYLE_MODEL ? IDEOGRAM_SCENE_DESCRIPTION_PROMPT : Z_IMAGE_TURBO_SCENE_DESCRIPTION_PROMPT;
+  return { subject: await describeReference(image, prompt) };
+}
+
 // POST generate preview image with the style model on Replicate
 // Two modes:
-//   "direct"  → img2img with prunaai/z-image-turbo-img2img (reference image as input)
+//   "direct"  → Z-Image Turbo img2img with the reference image and its subject description
 //   "vlm"     → describe reference image with openai/gpt-5-nano, then use the style's text-to-image model
 const PREVIEW_PROMPT_CHAR_LIMIT = 3500;
 const DEFAULT_PREVIEW_SETTINGS = {
@@ -569,14 +592,12 @@ function getPreviewSettings(input = {}) {
 }
 
 // Helper: resolve prompt with sample variables, generate image, save locally
-async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_image, previewSettings, model) {
+async function generateSinglePreview(rawPrompt, reference, previewSettings, model) {
   const template = String(rawPrompt || '');
-  const reference = mode === 'direct' && reference_image ? resolveImageToDataUri(reference_image) : null;
-  const stylePrompt = resolvePromptVariables(template, reference
-    ? { ...sampleVars, subject: 'the scene in the input image, with its original subjects, framing and composition' }
-    : sampleVars);
-  const prompt = mode === 'vlm' && reference_image && !template.includes('{{subject}}')
-    ? `${sampleVars.subject}\n\n${stylePrompt}`
+  const { image, subject = previewSettings.subject } = reference;
+  const stylePrompt = resolvePromptVariables(template, { ...previewSettings, subject });
+  const prompt = reference.subject && !template.includes('{{subject}}')
+    ? `${subject}\n\n${stylePrompt}`
     : stylePrompt;
   const resolvedPrompt = trimPromptAtBoundary(model === IDEOGRAM_STYLE_MODEL ? prompt.trim() : normalizePromptText(prompt));
 
@@ -584,7 +605,7 @@ async function generateSinglePreview(rawPrompt, sampleVars, mode, reference_imag
   console.log(resolvedPrompt.slice(0, 400) + '...');
   console.log('--- END PREVIEW PROMPT ---');
 
-  const request = buildPreviewRequest(model, resolvedPrompt, previewSettings, reference);
+  const request = buildPreviewRequest(model, resolvedPrompt, previewSettings, image);
   const output = await replicate.run(request.model, { input: request.input });
 
   const imageUrl = Array.isArray(output) ? String(output[0]) : String(output);
@@ -608,30 +629,18 @@ function deleteOldPreview(previewPath) {
 
 app.post('/api/generate-preview', async (req, res) => {
   try {
-    const { prompt, prompt_removebg, reference_image } = req.body;
+    const { prompt, prompt_removebg, reference_image, mode } = req.body;
     const savedStyle = req.body.style_id ? readStyles().find(style => style.id === req.body.style_id) : null;
     const model = normalizeStyleModel(req.body.model === undefined ? savedStyle?.model : req.body.model);
-    const mode = previewMode(model, req.body.mode, reference_image);
     if (!prompt) return res.status(400).json({ error: 'Aucun prompt fourni' });
 
     const previewSettings = getPreviewSettings(req.body.preview_settings);
-    const sampleVars = {
-      subject: previewSettings.subject,
-      primary_color: previewSettings.primary_color,
-      accent_color: previewSettings.accent_color,
-      secondary_color: previewSettings.secondary_color,
-      background_color: previewSettings.background_color,
-    };
-
-    // VLM mode: describe the reference image first
-    if (mode === 'vlm' && reference_image) {
-      sampleVars.subject = await describeReferenceScene(reference_image, model);
-    }
+    const reference = await preparePreviewReference(model, mode, reference_image);
 
     // Generate both previews in parallel
-    const tasks = [generateSinglePreview(prompt, sampleVars, mode, reference_image, previewSettings, model)];
+    const tasks = [generateSinglePreview(prompt, reference, previewSettings, model)];
     if (prompt_removebg) {
-      tasks.push(generateSinglePreview(prompt_removebg, sampleVars, mode, reference_image, previewSettings, model));
+      tasks.push(generateSinglePreview(prompt_removebg, reference, previewSettings, model));
     }
     const [previewUrl, previewRemovebgUrl] = await Promise.all(tasks);
 
@@ -670,8 +679,8 @@ app.post('/api/generate-all-previews', async (req, res) => {
     const errors = [];
     const CONCURRENCY = 5;
 
-    // Reuse each model's scene description across styles and preview variants.
-    const vlmSubjects = new Map();
+    // Reuse each model's prepared reference across styles and preview variants.
+    const references = new Map();
 
     async function processStyle(style) {
       if (!style.prompt) {
@@ -680,24 +689,15 @@ app.post('/api/generate-all-previews', async (req, res) => {
 
       try {
         const model = normalizeStyleModel(style.model);
-        const styleMode = previewMode(model, mode, reference_image);
-        let subject = previewSettings.subject;
-        if (styleMode === 'vlm' && reference_image) {
-          if (!vlmSubjects.has(model)) vlmSubjects.set(model, describeReferenceScene(reference_image, model));
-          subject = await vlmSubjects.get(model);
+        if (!references.has(model)) {
+          references.set(model, preparePreviewReference(model, mode, reference_image));
         }
-        const sampleVars = {
-          subject,
-          primary_color: previewSettings.primary_color,
-          accent_color: previewSettings.accent_color,
-          secondary_color: previewSettings.secondary_color,
-          background_color: previewSettings.background_color,
-        };
+        const reference = await references.get(model);
 
         // Generate standard + removebg previews in parallel
-        const tasks = [generateSinglePreview(style.prompt, sampleVars, styleMode, reference_image, previewSettings, model)];
+        const tasks = [generateSinglePreview(style.prompt, reference, previewSettings, model)];
         if (style.prompt_removebg) {
-          tasks.push(generateSinglePreview(style.prompt_removebg, sampleVars, styleMode, reference_image, previewSettings, model));
+          tasks.push(generateSinglePreview(style.prompt_removebg, reference, previewSettings, model));
         }
         const [previewUrl, previewRemovebgUrl] = await Promise.all(tasks);
 
