@@ -38,6 +38,6 @@
     "temporal_texture": "The stippled grain texture must boil rapidly at a low frame rate while the thin contour lines remain absolutely rigid and fixed.",
     "avoid": "Avoid motion blur, 3D camera rotations, soft shadow transitions, or fluid organic deformations."
   },
-  "backgroundType": 2,
+  "backgroundType": 1,
   "createdAt": "2026-11-07T09:19:32.439Z"
 }

@@ -29,7 +29,7 @@
     "technical",
     "serious"
   ],
-  "backgroundType": 0,
+  "backgroundType": 2,
   "createdAt": "2026-06-08T08:05:08.409Z",
   "video": {
     "motion": "Animation should feel slightly stiff and mechanical, mimicking early motion capture or keyframed 3D animation with limited interpolation. Background elements remain static, while interactive objects rotate on rigid axes.",

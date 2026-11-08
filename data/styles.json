@@ -2182,7 +2182,7 @@
       "technical",
       "serious"
     ],
-    "backgroundType": 0,
+    "backgroundType": 2,
     "createdAt": "2026-06-08T08:05:08.409Z",
     "video": {
       "motion": "Animation should feel slightly stiff and mechanical, mimicking early motion capture or keyframed 3D animation with limited interpolation. Background elements remain static, while interactive objects rotate on rigid axes.",
@@ -2359,7 +2359,7 @@
       "temporal_texture": "The stippled grain texture must boil rapidly at a low frame rate while the thin contour lines remain absolutely rigid and fixed.",
       "avoid": "Avoid motion blur, 3D camera rotations, soft shadow transitions, or fluid organic deformations."
     },
-    "backgroundType": 2,
+    "backgroundType": 1,
     "createdAt": "2026-11-07T09:19:32.439Z"
   },
   {
@@ -2444,5 +2444,47 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-11-08T10:59:03.574Z"
+  },
+  {
+    "id": "spotlight-isometric",
+    "model": "prunaai/p-image-ideogram",
+    "title": "Spotlight Isometric",
+    "description": "Illustration vectorielle numérique nette définie par un projecteur géométrique dramatique traversant un environnement monochromatique sombre. Présente des bords tranchants, des dégradés fluides avec une subtile texture de bruit et des ombres portées isométriques marquées.",
+    "description_en": "Crisp digital vector illustration defined by a dramatic, geometric spotlight cutting through a dark monochromatic environment. Features razor-sharp edges, smooth gradients with subtle noise texture, and stark isometric drop shadows.",
+    "description_fr": "Illustration vectorielle numérique nette définie par un projecteur géométrique dramatique traversant un environnement monochromatique sombre. Présente des bords tranchants, des dégradés fluides avec une subtile texture de bruit et des ombres portées isométriques marquées.",
+    "prompt": "{{subject}}\nCrisp digital vector illustration. A deep {{primary_color}} monochromatic environment is dramatically pierced by a stark, perfect circular spotlight glowing in warm {{secondary_color}}. High-contrast {{accent_color}} details pop vibrantly within the illuminated zone. The scene features forced isometric perspective, clean razor-sharp edges, and smooth gradients overlaid with a subtle, tactile noise texture. Stark, geometric drop shadows create distinct layers of depth. Full-bleed composition.",
+    "prompt_removebg": "{{subject}}\nCrisp digital vector illustration. The subjects are dramatically illuminated by a stark, perfect circular spotlight glowing in warm {{secondary_color}}, featuring high-contrast {{accent_color}} details and deep {{primary_color}} geometric shadows. The rendering utilizes forced isometric perspective, clean razor-sharp edges, and smooth gradients overlaid with a subtle, tactile noise texture. Set perfectly against a solid {{background_color}} backdrop, preserving the stark lighting and crisp silhouettes.",
+    "background_prompt": "A minimalist, empty environment rendered in a crisp digital vector style. A deep {{primary_color}} monochromatic surface is dramatically pierced by a stark, perfect circular spotlight glowing in warm {{secondary_color}}, casting stark, offset {{primary_color}} shadows. Small {{accent_color}} geometric accents sit at the periphery, leaving the center open. The scene features forced isometric perspective, clean razor-sharp edges, and smooth gradients overlaid with a subtle, tactile noise texture.",
+    "background_prompt_removebg": "A minimalist, empty environment rendered in a crisp digital vector style. A stark, perfect circular spotlight glowing in warm {{secondary_color}} frames the open center, accented by {{accent_color}} details and deep {{primary_color}} geometric shadow shapes around the edges. The rendering features forced isometric perspective, clean razor-sharp edges, and smooth gradients overlaid with a subtle noise texture, transitioning cleanly into a solid {{background_color}} backdrop.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "secondary_color",
+      "accent_color",
+      "background_color"
+    ],
+    "image": "images/6d81809010ebf9a77c5bc6068e1555b3.jpg",
+    "preview_image": "images/preview-1794138405028-3kv8.webp",
+    "preview_image_removebg": "images/preview-1794138404497-36m0.webp",
+    "tags": [
+      "vector",
+      "isometric",
+      "spotlight",
+      "noise-texture",
+      "flat-design",
+      "geometric",
+      "digital",
+      "minimalist",
+      "professional",
+      "colorful"
+    ],
+    "video": {
+      "motion": "Elements slide into place with smooth, linear easing. The stark circular spotlight pans slowly across the scene, revealing details and casting shifting geometric shadows.",
+      "camera": "A static, locked-off isometric camera angle.",
+      "temporal_texture": "The subtle noise texture remains static over the screen while vector shapes and crisp shadow edges maintain perfect, aliased sharpness without flickering.",
+      "avoid": "Avoid depth-of-field blur, 3D camera rotations, organic fluid motion, or soft feathered shadow transitions."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-11-08T11:46:55.941Z"
   }
 ]
