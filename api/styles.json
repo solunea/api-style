@@ -723,14 +723,14 @@
   },
   {
     "id": "retro-pixel",
-    "model": "prunaai/z-image-turbo",
+    "model": "prunaai/p-image-ideogram",
     "title": "Aliased Arcade",
     "description": "Un style nostalgique de pixel art 8 à 16 bits, caractérisé par des bords nets et en escalier ainsi qu'une palette de couleurs strictement limitée. Le rendu s'appuie sur des blocs de couleurs durs, des contours crénelés et un tramage en damier occasionnel, évoquant l'esthétique des jeux vidéo rétro.",
     "description_en": "A nostalgic 8-bit to 16-bit pixel art style characterized by sharp, jagged edges and a strictly limited color palette. Rendering relies on hard color blocking, aliased contours, and occasional checkerboard dithering, evoking classic retro video game aesthetics.",
     "description_fr": "Un style nostalgique de pixel art 8 à 16 bits, caractérisé par des bords nets et en escalier ainsi qu'une palette de couleurs strictement limitée. Le rendu s'appuie sur des blocs de couleurs durs, des contours crénelés et un tramage en damier occasionnel, évoquant l'esthétique des jeux vidéo rétro.",
     "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
-    "preview_image": "images/preview-1781610355347-v7y9.webp",
-    "preview_image_removebg": "images/preview-1781610355630-g3zy.webp",
+    "preview_image": "images/preview-1794138755919-n6am.webp",
+    "preview_image_removebg": "images/preview-1794138755763-jp8d.webp",
     "tags": [
       "pixel art",
       "8-bit",

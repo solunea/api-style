@@ -1012,8 +1012,8 @@
       "background_color"
     ],
     "image": "images/405357576f4d3a3a65ffdcc456d913b8.jpg",
-    "preview_image": "images/preview-1781610355347-v7y9.webp",
-    "preview_image_removebg": "images/preview-1781610355630-g3zy.webp",
+    "preview_image": "images/preview-1794138755919-n6am.webp",
+    "preview_image_removebg": "images/preview-1794138755763-jp8d.webp",
     "tags": [
       "pixel art",
       "8-bit",
@@ -1034,7 +1034,7 @@
       "temporal_texture": "The pixel grid and aliased edges must remain absolutely static and sharp; dithering patterns should not swim or anti-alias during motion.",
       "avoid": "Avoid smooth motion blur, sub-pixel rendering, high-framerate interpolation, and any form of anti-aliasing or gradient blending between frames."
     },
-    "model": "prunaai/z-image-turbo"
+    "model": "prunaai/p-image-ideogram"
   },
   {
     "id": "scribble-analog",
