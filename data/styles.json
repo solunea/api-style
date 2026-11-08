@@ -2404,5 +2404,45 @@
     },
     "backgroundType": 2,
     "createdAt": "2026-11-07T10:03:54.747Z"
+  },
+  {
+    "id": "vibrant-stipple",
+    "model": "prunaai/p-image-ideogram",
+    "title": "Vibrant Stipple",
+    "description": "Un style d'illustration numérique rétro défini par un bruit extrême et des dégradés en pointillé. Les formes sont construites avec des aplats de couleurs vives et un tramage dense sans contours, créant une esthétique très texturée rappelant la risographie.",
+    "description_en": "A retro-digital illustration style defined by extreme, coarse noise and stippled gradients. Forms are built using vibrant flat colors and dense dithering instead of outlines, creating a highly textured, risograph-like aesthetic.",
+    "description_fr": "Un style d'illustration numérique rétro défini par un bruit extrême et des dégradés en pointillé. Les formes sont construites avec des aplats de couleurs vives et un tramage dense sans contours, créant une esthétique très texturée rappelant la risographie.",
+    "prompt": "{{subject}}\nRendered as a vibrant digital illustration defined entirely by extreme, coarse noise and heavy stippling. The composition relies on dense, dithered gradients and bold flat color blocking rather than drawn outlines. The palette is highly saturated, utilizing {{primary_color}} as the dominant hue, punctuated by bright, contrasting {{accent_color}} and {{secondary_color}} accents. Form and volume are established through intense pointillist shading, where transitions between light and shadow are created by varying dot density. Strong, directional lighting casts deep, heavy shadows that are entirely composed of clustered, grainy pixels. The tactile quality mimics retro risograph printing or early digital airbrush techniques, with the intense, granular texture covering the entire canvas from edge to edge. Edges of subjects appear slightly ragged and organic due to the pervasive noise effect, dissolving softly into the surrounding environment while maintaining high-contrast graphic impact.",
+    "prompt_removebg": "{{subject}}\nRendered as a vibrant digital illustration defined entirely by extreme, coarse noise and heavy stippling. The composition relies on dense, dithered gradients and bold flat color blocking rather than drawn outlines. The palette is highly saturated, utilizing {{primary_color}} as the dominant hue, punctuated by bright, contrasting {{accent_color}} and {{secondary_color}} accents. Form and volume are established through intense pointillist shading, where transitions between light and shadow are created by varying dot density. Strong, directional lighting casts deep, heavy shadows composed of clustered, grainy pixels. The intense, granular texture mimics retro risograph printing. All elements are set against a solid, uniform {{background_color}} background, cleanly separating the subject's ragged, stippled silhouette for easy compositing while preserving the internal noise shading and intentional edge clipping.",
+    "background_prompt": "An empty, subject-free environment rendered as a vibrant digital illustration defined entirely by extreme, coarse noise and heavy stippling. The spatial arrangement relies on dense, dithered gradients and bold flat color blocking without drawn outlines. The highly saturated palette utilizes {{primary_color}} as the dominant hue, punctuated by bright, contrasting {{accent_color}} and {{secondary_color}} accents. Depth is established through intense pointillist shading, where transitions between light and shadow are created by varying dot density. Strong, directional lighting casts deep, heavy shadows composed entirely of clustered, grainy pixels across the surfaces. The tactile quality mimics retro risograph printing or early digital airbrush techniques, with the intense, noisy texture covering the entire canvas from edge to edge. The foreground remains completely open and empty.",
+    "background_prompt_removebg": "An empty environment rendered as a vibrant digital illustration defined entirely by extreme, coarse noise and heavy stippling. The spatial arrangement relies on dense, dithered gradients and bold flat color blocking using {{primary_color}} as the dominant hue, punctuated by {{accent_color}} and {{secondary_color}} accents. Depth is established through intense pointillist shading and strong, directional lighting casting deep, granular shadows. A style-matched, heavily grained decorative overlay frames the foreground, keeping the center completely open. The intensely granular, stippled edges of the overlay transition cleanly into a solid, uniform {{background_color}} background. This isolates the ragged, risograph-like texture along the inner silhouette, allowing the coarse, speckled gradients to frame the empty space perfectly.",
+    "variables": [
+      "subject",
+      "primary_color",
+      "accent_color",
+      "secondary_color",
+      "background_color"
+    ],
+    "image": "images/cf0244a0c3b33b4b0e1eb75a0e8c8f4b.jpg",
+    "preview_image": "images/preview-1794135533400-u36u.webp",
+    "preview_image_removebg": "images/preview-1794135533716-5a7r.webp",
+    "tags": [
+      "stippling",
+      "dithering",
+      "risograph",
+      "noise",
+      "colorful",
+      "retro",
+      "drawing",
+      "playful"
+    ],
+    "video": {
+      "motion": "Elements should shift with slightly stepped, stop-motion-like frame rates. Colors can pulse subtly through the stippled gradients.",
+      "camera": "Static or slow, orthographic-style panning to maintain the flat, graphic composition.",
+      "temporal_texture": "The coarse noise and stippling must boil and animate dynamically across frames, preventing a static overlay look.",
+      "avoid": "Smooth 3D rendering, continuous gradients, motion blur, and clean vector edges."
+    },
+    "backgroundType": 2,
+    "createdAt": "2026-11-08T10:59:03.574Z"
   }
 ]
