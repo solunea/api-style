@@ -1,0 +1,42 @@
+{
+  "id": "drawn-reality",
+  "model": "prunaai/p-image-ideogram",
+  "title": "Drawn Reality",
+  "description": "Ce style fusionne une photographie de studio nette avec des superpositions graphiques abstraites et énergiques. Des coups de pinceau acryliques épais, des éclats d'aérographe et des gribouillis de marqueur encadrent le sujet réaliste, créant un look éditorial contemporain ludique et très contrasté.",
+  "description_en": "This style merges clean studio photography with energetic, abstract graphic overlays. Thick acrylic brushstrokes, soft airbrush bursts, and bold marker scribbles frame the realistic subject, creating a playful, high-contrast contemporary editorial look.",
+  "description_fr": "Ce style fusionne une photographie de studio nette avec des superpositions graphiques abstraites et énergiques. Des coups de pinceau acryliques épais, des éclats d'aérographe et des gribouillis de marqueur encadrent le sujet réaliste, créant un look éditorial contemporain ludique et très contrasté.",
+  "prompt": "{{subject}}.\nA mixed-media composition blending crisp studio photography with vibrant, abstract graphic overlays. The central photographic subject is captured with soft, even studio lighting, smooth continuous tones, and sharp lens focus against a seamless backdrop. Surrounding, framing, and overlapping the subject in the foreground are energetic, hand-drawn digital art elements. These include thick, opaque acrylic brushstrokes with dry, ragged edges, bold marker-like zig-zag lines, flat geometric cutouts, and soft, diffused airbrush gradients. These expressive, unrefined marks use highly saturated {{primary_color}}, {{secondary_color}}, and {{accent_color}} to create a dynamic, playful contrast against the realistic photography. The graphic elements scatter organically across the canvas to all four edges, combining flat vector precision with tactile, grainy paint textures to achieve a contemporary, high-contrast editorial collage aesthetic.",
+  "prompt_removebg": "{{subject}}.\nA mixed-media composition blending crisp studio photography with vibrant, abstract graphic overlays, isolated against a uniform {{background_color}} background. The central photographic subject is sharply focused with soft, even studio lighting and smooth continuous tones. Surrounding and overlapping the subject's silhouette are energetic, hand-drawn graphic elements: thick acrylic brushstrokes with dry, ragged edges, bold marker zig-zags, flat geometric cutouts, and soft airbrush gradients. These expressive overlays use highly saturated {{primary_color}}, {{secondary_color}}, and {{accent_color}}, extending outward from the subject to frame the composition. The dynamic mix of flat vector precision and tactile, grainy paint textures cleanly separates from the {{background_color}} background, maintaining an editorial collage aesthetic while preserving intentional clipping and organic edge overlap.",
+  "background_prompt": "A mixed-media abstract environment blending soft photographic depth with vibrant graphic overlays. The scene features a smooth, seamless studio backdrop with soft, even lighting, heavily overlaid with energetic, hand-drawn digital art elements. Thick, opaque acrylic brushstrokes with dry, ragged edges, bold marker-like zig-zag lines, flat geometric cutouts, and diffused airbrush gradients scatter organically across the open foreground and stretch to all four edges. These expressive marks use highly saturated {{primary_color}}, {{secondary_color}}, and {{accent_color}} to create dynamic, playful contrast. The composition combines flat vector precision with tactile, grainy paint textures, leaving the center completely open and empty to serve as a framing device for a contemporary editorial collage aesthetic.",
+  "background_prompt_removebg": "A mixed-media abstract environment featuring vibrant graphic overlays, cleanly isolated against a uniform {{background_color}} background. Energetic, hand-drawn digital art elements frame a completely empty center: thick acrylic brushstrokes with dry, ragged edges, bold marker zig-zag lines, flat geometric cutouts, and soft airbrush gradients scatter across the foreground. These expressive overlays use highly saturated {{primary_color}}, {{secondary_color}}, and {{accent_color}}, combining flat vector precision with tactile, grainy paint textures. The dynamic graphic elements extend outward and transition cleanly to the {{background_color}} background. This creates a bold, playful border of abstract shapes and strokes, leaving an open central space perfectly prepared for compositing in a contemporary editorial collage style.",
+  "variables": [
+    "subject",
+    "primary_color",
+    "secondary_color",
+    "accent_color",
+    "background_color"
+  ],
+  "image": "images/6163bf4fa05040960d379eaa8d78a32d.jpg",
+  "preview_image": "images/preview-1794144321331-5dnm.webp",
+  "preview_image_removebg": "images/preview-1794144321313-47mr.webp",
+  "tags": [
+    "mixed-media",
+    "photo-collage",
+    "graphic-overlay",
+    "abstract-doodles",
+    "editorial-composite",
+    "photography",
+    "playful",
+    "colorful",
+    "collage",
+    "painting"
+  ],
+  "video": {
+    "motion": "Graphic overlays should animate with stop-motion jitter or snappy pop-ins, while the photographic subject moves with smooth, realistic cinematic motion.",
+    "camera": "A static or slow push-in camera to maintain focus on the interplay between the 2D graphics and the 3D subject.",
+    "temporal_texture": "Paint strokes and marker lines should exhibit a slight boiling effect, while the photographic elements remain clean and stable.",
+    "avoid": "Avoid 3D rotation of the 2D graphic elements, depth-of-field blurring on the flat overlays, or motion blur that softens the crisp paint edges."
+  },
+  "backgroundType": 2,
+  "createdAt": "2026-11-08T13:25:28.591Z"
+}

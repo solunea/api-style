@@ -235,7 +235,7 @@ Perform an exhaustive forensic analysis of the artistic execution of this image,
 - **Artistic lineage**: Which art movement(s), historical period(s), or contemporary digital trend(s) does this style reference? (e.g. "reminiscent of Alphonse Mucha's lithographic line work"). Do NOT be generic.
 - **Rendering technique & medium**: Is this digital painting, cel-shading, vector flat design, impasto oil, watercolor wash, linocut, 3D subsurface scattering? Describe the exact stroke behavior: visible brushstrokes or seamless blending? Hard geometric edges or organic flowing contours?
 - **Line work & contouring**: Describe outline weight, line quality, and whether contours are uniform or express pressure sensitivity.
-- **Color science**: Specify: hue temperature shifts, chroma intensity, value range, color harmony scheme, and any color grading.
+- **Color science**: Identify where each significant color appears, its relative coverage, and its visual function in the reference. Note hue temperature, saturation, lightness and contrast.
 - **Lighting anatomy**: Identify the exact lighting setup: key light direction and quality, fill ratio, presence of rim/edge/kicker lights, light source type. Describe how light interacts with surfaces.
 - **Texture & materiality**: Describe the tactile quality. Is there noise, film grain, halftone dots, canvas weave, paper fiber visible?
 - **Composition & spatial dynamics**: Describe the structural approach to space, depth cues, and perspective style (e.g., flat 2D, forced perspective, isometric).
@@ -244,27 +244,34 @@ Perform an exhaustive forensic analysis of the artistic execution of this image,
 - **Edge treatment**: How do subject edges behave in this style? Clean vector-cut silhouette, soft feathered transitions, painterly ragged edges?
 
 STEP 2 — GENERATE ALL PROMPT VARIANTS IN ONE PASS
-Variables available (use ONLY these, no others): {{subject}} (complete user scene brief — USE THIS INSTEAD OF THE ACTUAL IMAGE CONTENT), {{primary_color}} (dominant color), {{accent_color}} (accent color), {{secondary_color}} (secondary/supporting color), {{background_color}} (solid surface color for remove-bg compositing only).`;
+Variables available (use ONLY these, no others): {{subject}} (complete user scene brief — USE THIS INSTEAD OF THE ACTUAL IMAGE CONTENT), {{primary_color}}, {{secondary_color}}, {{accent_color}}, {{background_color}} (solid surface color for remove-bg compositing only).
+
+COLOR PLACEMENT — Apply these rules to all four prompt variants:
+- Before writing, group the observed colors by hue family. Dark, pale, muted, or vivid versions of the same hue belong to one adjustable color, even across different surfaces or depth planes. Fixed neutral ink or bare paper may remain explicit without adding a palette variable.
+- Use at most one variable per hue family. A monochrome style uses only {{primary_color}}. For two hue families, use {{primary_color}} for the dominant family and choose exactly one of {{secondary_color}} for supporting areas or {{accent_color}} for small contrasting details. Use all three only when the reference supports all three distinct roles and hue families.
+- Place each variable directly in the sentence describing where its color is applied. Specify the surface or mark, its position relative to the forms, and its coverage. Base these choices on the reference's distribution and contrast. Describe reusable visual roles so that the style can apply to a different scene, and preserve any subject colors specified in the scene brief.
+- Worked example: dark blue shapes on a pale blue field use one variable: "Dark {{primary_color}} fills the main shapes, with a pale tint of the same hue across the surrounding field." If those shapes also have small orange marks, add "Tiny {{accent_color}} marks punctuate a few edges." The palette now has two variables. The pale blue field still uses a tint of the primary hue because the field and shapes share the same hue family.
+- Keep each variable tied to the same role across variants. If its area is removed, drop that placement instead of moving the color to a different element. Use {{background_color}} only for the compositing surface. Before returning the JSON, check each variant against the number of hue families observed in the reference.`;
 
 const Z_IMAGE_TURBO_STYLE_PROMPT_RULES = `
 Write four reusable English prompt strings for Z-Image Turbo. Describe the finished image in detailed, concrete sentences. Specify visible characteristics such as the thickness and regularity of contours, the shape and density of marks, the direction and hardness of shadows, and the scale and distribution of texture when they distinguish the reference style. Describe the intended appearance affirmatively, for example "uniform flat color fills" or "an open, empty foreground." Avoid negative-prompt blocks, tag lists, weighting syntax, quality labels, and abstract comparisons. Only the outer response is JSON.
 
-Keep the scene brief's subject count, placement, viewpoint, framing, and exact text. Do not invent content, fixed camera angles, or typography. Use literal text only from the scene brief and preserve its wording, case, and placement. Use {{primary_color}}, {{accent_color}}, and {{secondary_color}} for specific roles while retaining the reference style's contrast, saturation, and color relationships.
+Keep the scene brief's subject count, placement, viewpoint, framing, and exact text. Do not invent content, fixed camera angles, or typography. Use literal text only from the scene brief and preserve its wording, case, and placement.
 
 - "prompt": begin with the literal {{subject}} on its own line. Then write a detailed rendering description of around 130 to 190 words, prioritizing the medium and signature marks first, then color, lighting, texture, and depth. Describe how the rendering carries across the full canvas to all four edges.
 - "prompt_removebg": start with the same {{subject}} and retain the same rendering details. Replace the full-canvas treatment with a uniform {{background_color}} surface that cleanly separates the subject's silhouette. Preserve the subject placement and crop, including intentional clipping at an edge.
-- "background_prompt": describe a subject-free environment in the same medium and palette. Specify the arrangement, depth, lighting, materials and texture, with an open foreground. Use the three palette variables and omit {{subject}}.
-- "background_prompt_removebg": retain that environment and add a style-matched decorative overlay in the foreground, keeping the center open. Describe its placement, scale, and transition to {{background_color}}. Use the three palette variables and omit {{subject}}.`;
+- "background_prompt": describe a subject-free environment in the same medium and palette. Specify the arrangement, depth, lighting, materials and texture, with an open foreground. Omit {{subject}}.
+- "background_prompt_removebg": retain that environment and add a style-matched decorative overlay in the foreground, keeping the center open. Describe its placement, scale, and transition to {{background_color}}. Omit {{subject}}.`;
 
 const IDEOGRAM_STYLE_PROMPT_RULES = `
 Write four reusable English prompt strings for Pruna P-Image-Ideogram. Use short natural-language descriptions of the finished image, with concrete visual details and affirmative phrasing. Avoid keyword stacks, weight syntax, quality boosters, repetitive prohibitions, and references to an input image the generator cannot see. Only the outer response is JSON.
 
-Capture the reference's most distinctive visible traits first. Describe observable marks, edges, shapes, light and shadow, and surface texture using concrete terms. Preserve the reference's palette relationships (value, saturation, contrast, and placement) while assigning {{primary_color}}, {{accent_color}}, and {{secondary_color}} to their actual visual roles. Include only characteristics supported by the image. Keep perspective and composition flexible so the style can follow the scene brief.
+Capture the reference's most distinctive visible traits first. Describe observable marks, edges, shapes, light and shadow, and surface texture using concrete terms. Include only characteristics supported by the image. Keep perspective and composition flexible so the style can follow the scene brief.
 
 - "prompt": begin with the literal {{subject}} on its own line, then describe the rendering in a compact paragraph of around 70 to 110 words. The scene brief determines the framing, subject count, spatial relationships and any literal in-image text. Use a single positive instruction for a full-bleed composition.
 - "prompt_removebg": keep the same opening {{subject}} and the same rendering details. Replace the full-bleed instruction with a clean, uniform {{background_color}} backdrop behind the scene's main elements, preserving their positions, crop and silhouettes. This backdrop replaces the environmental background.
-- "background_prompt": describe a cohesive, empty environment in the same medium, palette, lighting and texture. Give concrete spatial cues and keep the foreground open. Use the three palette variables and omit {{subject}}.
-- "background_prompt_removebg": keep the same environment, add a style-matched foreground overlay around the edges with an open center, and describe its transition to {{background_color}}. Use the three palette variables and omit {{subject}}.`;
+- "background_prompt": describe a cohesive, empty environment in the same medium, palette, lighting and texture. Give concrete spatial cues and keep the foreground open. Omit {{subject}}.
+- "background_prompt_removebg": keep the same environment, add a style-matched foreground overlay around the edges with an open center, and describe its transition to {{background_color}}. Omit {{subject}}.`;
 
 const STYLE_METADATA_PROMPT = `
 
