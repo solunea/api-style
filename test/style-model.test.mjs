@@ -125,6 +125,7 @@ test('single preview uses an unsaved model selection and describes a reference o
   assert.equal(api.calls[2].input.prompt, `${scene}\n\nCutout`);
   for (const {input} of api.calls.slice(1)) {
     assert.match(input.prompt, /A forest beside a lake/);
+    assert.equal(input.thinking, 'very low');
     assert.equal(input.aspect_ratio, 'custom');
     assert.equal(input.width, 512);
     assert.equal(input.height, 512);

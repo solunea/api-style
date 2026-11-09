@@ -19,7 +19,7 @@ export function buildPreviewRequest(model, prompt, settings, referenceImage) {
     return {
       model,
       input: {
-        prompt, thinking: 'low', prompt_upsampling: true,
+        prompt, thinking: 'very low', prompt_upsampling: true,
         aspect_ratio: 'custom',
         width: Math.round(settings.width / 16) * 16,
         height: Math.round(settings.height / 16) * 16,
